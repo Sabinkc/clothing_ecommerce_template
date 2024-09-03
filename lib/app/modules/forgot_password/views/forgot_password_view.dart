@@ -1,0 +1,63 @@
+import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
+import 'package:flutter/material.dart';
+
+import 'package:get/get.dart';
+
+import '../controllers/forgot_password_controller.dart';
+
+class ForgotPasswordView extends GetView<ForgotPasswordController> {
+  final forgotPassword = TextEditingController();
+
+  ForgotPasswordView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(''),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+      ),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        color: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Forgot Password",
+                style: TextStyle(
+                  fontSize: TextSize.medium,
+                  fontWeight: FontWeight.w900,
+                  color: AppColors.lightBlue,
+                ),
+              ),
+              SizedBox(height: 40),
+              Text(
+                "Email",
+                style: TextStyle(fontSize: TextSize.small),
+              ),
+              SizedBox(height: 10),
+              TextFormFieldReusable(
+                hint: "your_email@gmail.com",
+                icon: Icon(
+                  Icons.mail,
+                ),
+                isObscure: true,
+                textEditingController: forgotPassword,
+              ),
+              SizedBox(height: 40),
+              LargeButtonReusable(title: "Submit")
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -1,3 +1,5 @@
+import 'package:d_and_s/app/modules/forgot_password/views/forgot_password_view.dart';
+import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -62,16 +64,19 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                         color: AppColors.silver, fontWeight: FontWeight.w900),
                   ),
                   Spacer(),
-                  Text(
-                    "Forgot Password ?",
-                    style: TextStyle(
-                        color: AppColors.lightBlue,
-                        fontWeight: FontWeight.w900),
+                  GestureDetector(
+                    onTap: (){Get.to(ForgotPasswordView());},
+                    child: Text(
+                      "Forgot Password ?",
+                      style: TextStyle(
+                          color: AppColors.lightBlue,
+                          fontWeight: FontWeight.w900),
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 20),
-              LargeButtonReusable(title: "Log in"),
+              GestureDetector(onTap:()=>Get.to(HomeView()),child: LargeButtonReusable(title: "Log in")),
               SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
