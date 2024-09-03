@@ -13,7 +13,7 @@ class LargeButtonReusable extends StatelessWidget {
       width: double.infinity,
       height: 50,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(6),color: AppColors.lightBlue),
-      child: Center(child: Text(title,style: TextStyle(fontSize: TextSize.big,color: Colors.white,fontWeight: FontWeight.w900),),),
+      child: Center(child: Text(title,style: TextStyle(fontSize: TextSize.medium,color: Colors.white,fontWeight: FontWeight.w900),),),
     );
   }
 }

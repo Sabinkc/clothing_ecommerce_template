@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import 'app/routes/app_pages.dart';
 
@@ -22,10 +23,13 @@ void main() async{
   runApp(
     DevicePreview(
       enabled: !kReleaseMode,
-      builder: (context) => MyApp(), // Wrap your app
+      builder: (context) => ResponsiveSizer(
+        builder: (context, orientation, screenType) {
+          return MyApp(); // Your actual app
+        },
+      ),
     ),
   );
-
 }
 class MyApp extends StatelessWidget {
   @override

@@ -13,6 +13,7 @@ dependencies:
   keyboard_dismisser:
   flutter_svg:
   device_preview:
+  responsive_sizer:
   flutter_native_splash: ^2.2.4
 
 flutter_native_splash:
