@@ -15,6 +15,7 @@ dependencies:
   device_preview:
   responsive_sizer:
   carousel_slider:
+  molten_navigationbar_flutter:
   flutter_native_splash: ^2.2.4
 
 flutter_native_splash:

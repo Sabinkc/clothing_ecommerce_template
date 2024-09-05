@@ -1,11 +1,8 @@
-
 import 'package:get/get.dart';
 
-import '../views/home_tabBar/home_tabBar_tabs.dart';
+class BottomNavigationController extends GetxController {
+  //TODO: Implement BottomNavigationController
 
-class HomeController extends GetxController {
-  //TODO: Implement HomeController
-  var index = 0.obs;
   final count = 0.obs;
   @override
   void onInit() {
@@ -21,11 +18,6 @@ class HomeController extends GetxController {
   void onClose() {
     super.onClose();
   }
-  // changeView(){
-  //   if(index.value == 0){
-  //     return BottomContainer();
-  //   }
-  // }
 
   void increment() => count.value++;
 }

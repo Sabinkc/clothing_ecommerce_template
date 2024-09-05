@@ -25,6 +25,7 @@ void main() async{
       enabled: !kReleaseMode,
       builder: (context) => ResponsiveSizer(
         builder: (context, orientation, screenType) {
+
           return MyApp(); // Your actual app
         },
       ),

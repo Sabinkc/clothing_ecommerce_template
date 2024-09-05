@@ -24,16 +24,78 @@ class HomeTabBarTabs extends StatelessWidget {
     "1,000",
     "1,000",
   ];
+
+  final List categoriesWatches = [
+    "WatchesWatchesWatchesWatches",
+    "Shirts",
+    "Bags",
+    "Clothing",
+    "Accessories Accessories dafasdfsdf",
+    "Shoes",
+    "Socks",
+    "More",
+  ];
+  final List priceWatches = [
+    "1,000",
+    "1,000",
+    "1,000",
+    "1,000",
+    "1,000 Accessories Accessories",
+    "1,000",
+    "1,000",
+    "1,000",
+  ];
+  final List categoriesShirts = [
+    "WatchesWatchesWatchesWatches",
+    "Shirts",
+    "Bags",
+    "Clothing",
+    "Accessories Accessories dafasdfsdf",
+    "Shoes",
+    "Socks",
+    "More",
+  ];
+  final List priceShrits = [
+    "1,000",
+    "1,000",
+    "1,000",
+    "1,000",
+    "1,000 Accessories Accessories",
+    "1,000",
+    "1,000",
+    "1,000",
+  ];
+  final List categoriesBags = [
+    "WatchesWatchesWatchesWatches",
+    "Shirts",
+    "Bags",
+    "Clothing",
+    "Accessories Accessories dafasdfsdf",
+    "Shoes",
+    "Socks",
+    "More",
+  ];
+  final List priceBags = [
+    "1,000",
+    "1,000",
+    "1,000",
+    "1,000",
+    "1,000 Accessories Accessories",
+    "1,000",
+    "1,000",
+    "1,000",
+  ];
+
    HomeTabBarTabs({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: double.infinity,
-      width: double.infinity,
+      // height: double.infinity,
+      // width: double.infinity,
       child: GridView.builder(
         shrinkWrap: true,
-        // physics: NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
         itemCount: categories.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,

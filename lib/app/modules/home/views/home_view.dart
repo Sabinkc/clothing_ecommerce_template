@@ -1,14 +1,18 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/home/views/home_grid_view.dart';
+import 'package:d_and_s/app/modules/home/views/home_tabBar/home_custom_tab.dart';
 import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar.dart';
 import 'package:d_and_s/app/modules/home/views/home_static_container.dart';
+import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
+
 import 'package:d_and_s/app/modules/reusable_widgets/AppBarMainPage.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../constants/colors.dart';
 import '../controllers/home_controller.dart';
@@ -16,6 +20,8 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetView<HomeController> {
   List<int> list = [1, 2, 3, 4, 5];
   final search = TextEditingController();
+  var index = 0.obs;
+  final homeViewController = Get.put(HomeController());
 
   final List<String> imgList = [
     'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png',
@@ -42,6 +48,7 @@ class HomeView extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(HomeController());
     return DefaultTabController(
       initialIndex: 1,
       length: 3,
@@ -54,42 +61,58 @@ class HomeView extends GetView<HomeController> {
           ),
         ),
         body: Container(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-            child: SingleChildScrollView(
-              child: Column(children: [
-                TextFormFieldReusable(
-                    hint: "What are you looking for ?",
-                    icon: Icon(Icons.search),
-                    textEditingController: search),
-                SizedBox(height: 10),
-                CarouselSliderReusable(imgList: imgList),
-
-                SizedBox(height: 20),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.category_outlined,
-                      color: Colors.red,
+          color: Colors.white,
+          child: NestedScrollView(
+            headerSliverBuilder:
+                (BuildContext context, bool innerBoxIsScrolled) {
+              return [
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        TextFormFieldReusable(
+                          hint: "What are you looking for?",
+                          icon: Icon(Icons.search),
+                          textEditingController: search,
+                        ),
+                        SizedBox(height: 10),
+                        CarouselSliderReusable(imgList: imgList),
+                        SizedBox(height: 20),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.category_outlined,
+                              color: Colors.red,
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "Categories",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w100,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        HomeGridView(),
+                        SizedBox(height: 10),
+                      ],
                     ),
-                    SizedBox(width: 10),
-                    Text(
-                      "Categories",
-                      style: TextStyle(
-                          fontSize: TextSize.normal,
-                          fontWeight: FontWeight.w100),
-                    )
-                  ],
+                  ),
                 ),
-                SizedBox(height: 10),
-                HomeGridView(),
-
-                SizedBox(height: 10),
-                // HomeStaticContainer(),
-                SizedBox(height: 15),
-                Container(height: 500,child: HomeTabBar())
-
-              ]),
+                SliverAppBar(
+                  title: HomeCustomTab(),
+                  floating: true,
+                  pinned: true,
+                ),
+              ];
+            },
+            body: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+              child: HomeTabBarTabs(),
             ),
           ),
         ),

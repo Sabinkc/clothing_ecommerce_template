@@ -1,78 +1,69 @@
+import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
+import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 
-class BottomNavigationBarExample extends StatefulWidget {
-  const BottomNavigationBarExample({super.key});
 
+class BottomNavBar extends StatefulWidget {
   @override
-  State<BottomNavigationBarExample> createState() =>
-      _BottomNavigationBarExampleState();
+  _BottomNavBarState createState() => _BottomNavBarState();
 }
 
-class _BottomNavigationBarExampleState
-    extends State<BottomNavigationBarExample> {
+class _BottomNavBarState extends State<BottomNavBar> {
+  // a variable to store the current selected tab. can be used to control PageView
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
+    static List<Widget> _widgetOptions = <Widget>[
+    HomeView(),
     Text(
       'Index 1: Business',
-      style: optionStyle,
     ),
     Text(
       'Index 2: School',
-      style: optionStyle,
     ),
-    Text(
-      'Index 3: Settings',
-      style: optionStyle,
-    ),
-  ];
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
+    return MaterialApp(
+      theme: Theme.of(context).copyWith(
+        // primaryColor: Colors.deepPurple[400],
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.deepPurple,
+        ),
       ),
-      body: Center(
+      home: Scaffold(
+        body:
+      Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-            backgroundColor: Colors.red,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
-            backgroundColor: Colors.green,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
-            backgroundColor: Colors.purple,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-            backgroundColor: Colors.pink,
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
-        onTap: _onItemTapped,
+        bottomNavigationBar: MoltenBottomNavigationBar(
+          selectedIndex: _selectedIndex,
+          domeHeight: 25,
+          // specify what will happen when a tab is clicked
+          onTabChange: (clickedIndex) {
+            setState(() {
+              _selectedIndex = clickedIndex;
+            });
+          },
+          // ansert as many tabs as you like
+          tabs: [
+            MoltenTab(
+              icon: Icon(Icons.home),
+              title: Text('home'),
+              // selectedColor: Colors.yellow,
+            ),
+            MoltenTab(
+              icon: Icon(Icons.search),
+
+              // selectedColor: Colors.yellow,
+            ),
+
+            MoltenTab(
+              icon: Icon(Icons.person),
+              // selectedColor: Colors.yellow,
+            ),
+          ],
+        ),
       ),
     );
   }
