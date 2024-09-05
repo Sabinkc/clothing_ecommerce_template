@@ -1,11 +1,10 @@
-
 import 'package:get/get.dart';
 
 import '../views/home_tabBar/home_tabBar_tabs.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
-  var index = 0.obs;
+  var index = 'Watches'.obs;
 
   @override
   void onInit() {

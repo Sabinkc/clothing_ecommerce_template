@@ -37,13 +37,13 @@ class HomeCustomTab extends StatelessWidget {
                 () => Container(
                   child: GestureDetector(
                     onTap: () {
-                      controller.index.value = index;
+                      controller.index.value = items_tabs[index];
                     },
                     child: Text(
                       items_tabs[index],
                       style: TextStyle(
                         fontSize: TextSize.small,
-                        color: controller.index.value == index
+                        color: controller.index.value == items_tabs[index]
                             ? Colors.red
                             : Colors.black,
                       ),
