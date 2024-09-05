@@ -111,7 +111,7 @@ class HomeView extends GetView<HomeController> {
               ];
             },
             body: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: HomeTabBarTabs(),
             ),
           ),

@@ -6,7 +6,7 @@ import '../views/home_tabBar/home_tabBar_tabs.dart';
 class HomeController extends GetxController {
   //TODO: Implement HomeController
   var index = 0.obs;
-  final count = 0.obs;
+
   @override
   void onInit() {
     super.onInit();
@@ -27,5 +27,5 @@ class HomeController extends GetxController {
   //   }
   // }
 
-  void increment() => count.value++;
+  // void increment() => count.value++;
 }

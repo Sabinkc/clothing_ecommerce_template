@@ -2,7 +2,6 @@ import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 
-
 class BottomNavBar extends StatefulWidget {
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
@@ -11,7 +10,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   // a variable to store the current selected tab. can be used to control PageView
   int _selectedIndex = 0;
-    static List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     HomeView(),
     Text(
       'Index 1: Business',
@@ -19,7 +18,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
     Text(
       'Index 2: School',
     ),
-
   ];
 
   @override
@@ -32,10 +30,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
         ),
       ),
       home: Scaffold(
-        body:
-      Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+        body: Center(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
         bottomNavigationBar: MoltenBottomNavigationBar(
           selectedIndex: _selectedIndex,
           domeHeight: 25,
@@ -57,7 +54,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
               // selectedColor: Colors.yellow,
             ),
-
             MoltenTab(
               icon: Icon(Icons.person),
               // selectedColor: Colors.yellow,

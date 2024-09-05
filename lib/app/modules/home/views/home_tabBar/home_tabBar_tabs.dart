@@ -1,15 +1,18 @@
+import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../constants/text_size.dart';
 
 class HomeTabBarTabs extends StatelessWidget {
+  // final Function(int) onIndexChange;
+
   final List categories = [
     "WatchesWatchesWatchesWatches",
     "Shirts",
     "Bags",
     "Clothing",
-    "Accessories Accessories dafasdfsdf",
     "Shoes",
     "Socks",
     "More",
@@ -86,10 +89,13 @@ class HomeTabBarTabs extends StatelessWidget {
     "1,000",
   ];
 
-   HomeTabBarTabs({super.key});
+  HomeTabBarTabs({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(HomeController());
     return Container(
       // height: double.infinity,
       // width: double.infinity,
@@ -105,8 +111,7 @@ class HomeTabBarTabs extends StatelessWidget {
         ),
         itemBuilder: (BuildContext context, index) => Container(
           decoration: BoxDecoration(
-              border: Border.all(
-                  color: AppColors.silverBorder, width: 5),
+              border: Border.all(color: AppColors.silverBorder, width: 5),
               borderRadius: BorderRadius.circular(16)),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -124,11 +129,13 @@ class HomeTabBarTabs extends StatelessWidget {
                 ),
                 // Icon(categoriesIcons[index],),
                 SizedBox(height: 10),
-                Text(
-                  categories[index],
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.start,
-                  // style: TextStyle(color: Colors.grey),
+                Obx(
+                  () => Text(
+                    categories[controller.index.value],
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.start,
+                    // style: TextStyle(color: Colors.grey),
+                  ),
                 ),
                 Expanded(
                   child: Row(
@@ -146,8 +153,7 @@ class HomeTabBarTabs extends StatelessWidget {
                           price[index],
                           overflow: TextOverflow.ellipsis,
                           maxLines: 1,
-                          style:
-                          TextStyle(fontWeight: FontWeight.w800),
+                          style: TextStyle(fontWeight: FontWeight.w800),
                         ),
                       ),
                     ],

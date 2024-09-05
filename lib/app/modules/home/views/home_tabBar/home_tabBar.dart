@@ -78,11 +78,11 @@ class HomeTabBar extends StatelessWidget {
           Expanded(
             child: TabBarView(
               children: [
-                HomeTabBarTabs(),
-                HomeTabBarTabs(),
-                HomeTabBarTabs(),
-                HomeTabBarTabs(),
-                HomeTabBarTabs(),
+                // HomeTabBarTabs(),
+                // HomeTabBarTabs(),
+                // HomeTabBarTabs(),
+                // HomeTabBarTabs(),
+                // HomeTabBarTabs(),
               ],
             ),
           ),
