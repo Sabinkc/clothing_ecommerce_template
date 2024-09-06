@@ -5,6 +5,9 @@ import '../views/home_tabBar/home_tabBar_tabs.dart';
 class HomeController extends GetxController {
   //TODO: Implement HomeController
   var index = 'Watches'.obs;
+  var detailViewProductTitleShow = false.obs;
+  var detailViewProductDescShow = false.obs;
+  var detailViewProductCustomClickableContainer = 0.obs;
 
   @override
   void onInit() {
