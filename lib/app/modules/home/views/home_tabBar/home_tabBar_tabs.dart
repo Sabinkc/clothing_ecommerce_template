@@ -19,11 +19,61 @@ class HomeTabBarTabs extends StatelessWidget {
         "description":
             "Lenovo IdeaPad 1 15IGL7 11TH GEN PRCOESSOR INTEL CELERON N4020 8GB DDR4 RAM 256GB SSD 15.6 HD Display",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "b",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "Sports Watch",
         "price": "20,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "a",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     "Shirts": [
@@ -31,11 +81,51 @@ class HomeTabBarTabs extends StatelessWidget {
         "name": "Casual Shirt",
         "price": "2,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "b",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "Formal Shirt",
         "price": "3,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     "Bags": [
@@ -43,11 +133,51 @@ class HomeTabBarTabs extends StatelessWidget {
         "name": "Leather Bag",
         "price": "5,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "Backpack",
         "price": "3,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     "Clothing": [
@@ -55,11 +185,51 @@ class HomeTabBarTabs extends StatelessWidget {
         "name": "Clothing",
         "price": "5,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "Clothing",
         "price": "3,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     "Shoes": [
@@ -67,11 +237,51 @@ class HomeTabBarTabs extends StatelessWidget {
         "name": "Shoes",
         "price": "5,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "Shoes",
         "price": "3,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     "Socks": [
@@ -79,11 +289,51 @@ class HomeTabBarTabs extends StatelessWidget {
         "name": "Socks",
         "price": "5,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "Socks",
         "price": "3,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     "More": [
@@ -91,11 +341,51 @@ class HomeTabBarTabs extends StatelessWidget {
         "name": "More",
         "price": "5,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
       {
         "name": "More",
         "price": "3,000",
         "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+        "reviews": [
+          {
+            "profile_pic":
+                "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "name": "Round Neck",
+            "date": "1/2/2024",
+            "review":
+                "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+            "reviews_img":
+                "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+          },
+        ],
+        "attributes": {
+          "Neckline": "Round Neck",
+          "Style": "Casual",
+          "Details": "Backless, Pleated, Zipper",
+          "Color": "Pink",
+          "Pattern Type": "Plain",
+          "Item id": "123456789",
+        },
       },
     ],
     // Add more categories here...
@@ -138,20 +428,24 @@ class HomeTabBarTabs extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                      
                         var productColors = (product["color"] as List<dynamic>)
                             .map((e) => e as int)
                             .toList();
-
-                       
-                        Get.to(ProductDetailView(
+                        var reviews = product["reviews"] as List<dynamic>;
+                        var firstReview =
+                            reviews.isNotEmpty ? reviews[0] : null;
+                        Get.to(
+                          ProductDetailView(
                             title: product["title"] ?? "NO TITLE",
                             description:
                                 product["description"] ?? "NO DESCRIPTION",
-                            productColors: productColors
+                            productColors: productColors,
+
+                            reviewdata: product, attributesdata: products,
                             // product["color"],
                             // productColors: productColors,
-                            ));
+                          ),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(

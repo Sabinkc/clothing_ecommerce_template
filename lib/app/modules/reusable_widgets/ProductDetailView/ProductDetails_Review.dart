@@ -8,31 +8,13 @@ import '../../../constants/text_size.dart';
 import 'ProductDetailViewReusableRow.dart';
 
 class ProductDetailReview extends StatelessWidget {
-  List reviews = [
-    "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
-    "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
-    "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
-  ];
-  List img = [
-    'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png',
-    '',
-    'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png',
-  ];
-  List names = [
-    "ramramramramramramramramramram",
-    "Hari",
-    "shyam",
-  ];
-  List dates = [
-    "1/2/2024",
-    "2/3/20204",
-    "3/4/20204",
-  ];
-
-  ProductDetailReview({super.key});
+  final List reviews;
+  ProductDetailReview({
+    super.key,
+    required this.reviews,
+  });
 
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text("Reviews"),
@@ -40,6 +22,7 @@ class ProductDetailReview extends StatelessWidget {
       body: Container(
         // height: 900,
         // color: AppColors.lightSilver,
+        color: Colors.white,
         padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,34 +45,16 @@ class ProductDetailReview extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              reviews[index],
-                              style: TextStyle(fontSize: TextSize.small),
-                            ),
-                            SizedBox(height: 10),
-                            if (img[index].isNotEmpty)
-                              Container(
-                                height: 200,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16),
-                                  image: DecorationImage(
-                                    image: NetworkImage(img[index]),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            SizedBox(height: 10),
                             Row(
                               children: [
                                 CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 15,
+                                  backgroundImage: NetworkImage(
+                                      reviews[index]["profile_pic"]),
                                 ),
                                 SizedBox(width: 8),
                                 Expanded(
                                   child: Text(
-                                    names[index],
+                                    reviews[index]["name"],
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(
                                       fontWeight: FontWeight.w600,
@@ -100,13 +65,33 @@ class ProductDetailReview extends StatelessWidget {
                                 Icon(Icons.date_range_rounded, size: 30),
                                 SizedBox(width: 4),
                                 Text(
-                                  dates[index],
+                                  reviews[index]["date"],
                                   style: TextStyle(color: Colors.blue),
                                 ),
                               ],
                             ),
                             SizedBox(height: 10),
                             Divider(thickness: 1, color: Colors.grey[300]),
+                            Text(
+                              reviews[index]["review"],
+                              style: TextStyle(fontSize: TextSize.small),
+                            ),
+                            SizedBox(height: 10),
+                            if (reviews[index]["reviews_img"].isNotEmpty)
+                              Container(
+                                height: 200,
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(16),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        reviews[index]["reviews_img"]),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            SizedBox(height: 10),
+                            SizedBox(height: 10),
                           ],
                         ),
                       ),

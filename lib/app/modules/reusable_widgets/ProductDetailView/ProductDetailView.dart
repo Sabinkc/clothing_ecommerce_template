@@ -27,17 +27,22 @@ class ProductDetailView extends StatelessWidget {
   final String description;
   final List<int> productColors;
 
+  final Map reviewdata;
+  final Map attributesdata;
   ProductDetailView({
     super.key,
     required this.title,
     required this.description,
     required this.productColors,
+    required this.reviewdata,
+    required this.attributesdata,
   });
 
   @override
   Widget build(BuildContext context) {
     var titleShow = controller.detailViewProductTitleShow;
     var descriptionShow = controller.detailViewProductDescShow;
+    Map test = reviewdata["attributes"];
     return Scaffold(
       appBar: AppBar(
         title: Text("Product Details"),
@@ -74,7 +79,7 @@ class ProductDetailView extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Text(
-                                title,
+                                reviewdata["name"],
                                 style: TextStyle(
                                   fontSize: TextSize.normal,
                                   fontWeight: titleShow.value == true
@@ -170,7 +175,9 @@ class ProductDetailView extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 10),
-                    ProductDetailSpecifications(),
+                    ProductDetailSpecifications(
+                      attributes: reviewdata["attributes"],
+                    ),
                     Divider(
                       color: AppColors.lightSilver, // Color of the line
                       thickness: 5, // Thickness of the line
@@ -178,7 +185,9 @@ class ProductDetailView extends StatelessWidget {
                     SizedBox(height: 10),
                     GestureDetector(
                       onTap: () {
-                        Get.to(ProductDetailReview());
+                        Get.to(ProductDetailReview(
+                          reviews: reviewdata["reviews"],
+                        ));
                       },
                       child: ProductDetailViewReusableRow(
                         title: "Reviews",

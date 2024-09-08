@@ -7,30 +7,30 @@ import '../../../constants/text_size.dart';
 import 'ProductDetailViewReusableRow.dart';
 
 class ProductDetailSpecifications extends StatelessWidget {
-  Map<String, dynamic> description = {
-    "Description": [
-      {
-        "Neckline": "Round Neck",
-      },
-      {
-        "Style": "Casual",
-      },
-      {
-        "Details": "Backless, Pleated, Zipper",
-      },
-      {
-        "Color": "Pink",
-      },
-      {
-        "Pattern Type": "Plain",
-      },
-      {
-        "Item id": "123456789",
-      },
-    ],
-  };
-
-  ProductDetailSpecifications({super.key});
+  // Map<String, dynamic> description = {
+  //   "Description": [
+  //     {
+  //       "Neckline": "Round Neck",
+  //     },
+  //     {
+  //       "Style": "Casual",
+  //     },
+  //     {
+  //       "Details": "Backless, Pleated, Zipper",
+  //     },
+  //     {
+  //       "Color": "Pink",
+  //     },
+  //     {
+  //       "Pattern Type": "Plain",
+  //     },
+  //     {
+  //       "Item id": "123456789",
+  //     },
+  //   ],
+  // };
+  final Map attributes;
+  ProductDetailSpecifications({super.key, required this.attributes});
 
   @override
   Widget build(BuildContext context) {
@@ -61,46 +61,78 @@ class ProductDetailSpecifications extends StatelessWidget {
                     SizedBox(height: 10),
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Colors.white,
-                        ),
-                        child: ListView.builder(
-                          itemCount: description["Description"].length,
-                          itemBuilder: (BuildContext context, int index) {
-                            Map<String, dynamic> item =
-                                description["Description"][index];
-                            String key = item.keys.first;
-                            String value = item.values.first;
-                            return Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text(
-                                        '$key : ',
-                                        style: TextStyle(
-                                          fontSize: TextSize.small,
-                                          fontWeight: FontWeight.w700,
-                                        ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            color: Colors.white,
+                          ),
+                          child: ListView(
+                            shrinkWrap: true,
+                            children: attributes.entries
+                                .map((e) => Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 10, 20, 10),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text(
+                                                "${e.key} : " ?? "",
+                                                style: TextStyle(
+                                                  fontSize: TextSize.small,
+                                                  fontWeight: FontWeight.w700,
+                                                ),
+                                              ),
+                                              Text(
+                                                e.value ?? "",
+                                                style: TextStyle(
+                                                  fontSize: TextSize.small,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
                                       ),
-                                      Text(
-                                        '$value',
-                                        style: TextStyle(
-                                          fontSize: TextSize.small,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            );
-                          },
-                        ),
-                      ),
+                                    ))
+                                .toList(),
+                          )
+
+                          //  ListView.builder(
+                          //   itemCount: attributes.length,
+                          //   itemBuilder: (BuildContext context, int index) {
+                          //     // Map<String, dynamic> item = attributes[index];
+                          //     String key = attributes.;
+                          //     String value = attributes.values.first;
+                          //     return Padding(
+                          //       padding:
+                          //           const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                          //       child: Column(
+                          //         crossAxisAlignment: CrossAxisAlignment.start,
+                          //         children: [
+                          //           Row(
+                          //             children: [
+                          //               Text(
+                          //                 key,
+                          //                 style: TextStyle(
+                          //                   fontSize: TextSize.small,
+                          //                   fontWeight: FontWeight.w700,
+                          //                 ),
+                          //               ),
+                          //               Text(
+                          //                 '$value' ?? "",
+                          //                 style: TextStyle(
+                          //                   fontSize: TextSize.small,
+                          //                 ),
+                          //               ),
+                          //             ],
+                          //           ),
+                          //         ],
+                          //       ),
+                          //     );
+                          //   },
+                          // ),
+                          ),
                     ),
                   ],
                 ),
