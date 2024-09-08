@@ -1,5 +1,5 @@
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetailView.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
