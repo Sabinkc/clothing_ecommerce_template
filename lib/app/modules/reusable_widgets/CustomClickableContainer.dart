@@ -24,14 +24,16 @@ class CustomClickableContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var count = controller.detailViewProductCustomClickableContainer;
-    // return Obx(() {
-    //   return Column(
-    //     children: controller.selectedImages.map((imageUrl) {
-    //       return Image.network(
-    //           imageUrl); // Display the images based on the selected color
-    //     }).toList(),
-    //   );
-    // });
+//     return Obx(() {
+//       return Column(
+//         children: controller.selectedImages.map((imageUrl) {
+//           return Image.network(
+//               imageUrl); // Display the images based on the selected color
+//         }).toList(),
+//       );
+//     });
+//   }
+// }
     return Obx(
       () => Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,18 +46,16 @@ class CustomClickableContainer extends StatelessWidget {
               borderRadius: BorderRadius.circular(0),
               image: DecorationImage(
                 image: NetworkImage(
-                  controller.selectedImages[count.value],
+                  controller.selectedImages.isNotEmpty
+                      ? controller.selectedImages[count.value]
+                      : 'https://example.com/static-image.jpg',
                 ),
+                // image: NetworkImage(
+                //   controller.selectedImages[count.value] ??
+                //       'https://example.com/static-image.jpg',
+                // ),
                 fit: BoxFit.cover,
               ),
-              // boxShadow: [
-              //   BoxShadow(
-              //     color: Colors.grey.withOpacity(0.5),
-              //     spreadRadius: 3,
-              //     blurRadius: 7,
-              //     offset: Offset(0, 3), // changes position of shadow
-              //   ),
-              // ],
             ),
           ),
           SizedBox(height: 20),
@@ -86,7 +86,13 @@ class CustomClickableContainer extends StatelessWidget {
                               count.value == index ? Colors.blue : Colors.white,
                           width: 2),
                       image: DecorationImage(
-                        image: NetworkImage(controller.selectedImages[index]),
+                        image: NetworkImage(
+                          controller.selectedImages[index],
+                        ),
+                        //   controller.selectedImages.isNotEmpty
+                        //       ? controller.selectedImages[index]
+                        //       : 'https://example.com/default-image.jpg',
+                        // ),
                         fit: BoxFit.cover,
                       ),
                     ),

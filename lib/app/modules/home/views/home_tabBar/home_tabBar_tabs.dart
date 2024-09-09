@@ -460,6 +460,9 @@ class HomeTabBarTabs extends StatelessWidget {
                         var reviews = product["reviews"] as List<dynamic>;
                         var firstReview =
                             reviews.isNotEmpty ? reviews[0] : null;
+                        Map images = product["color"];
+                        List test = images.entries.first.value;
+                        controller.selectedImages.assignAll(test);
                         Get.to(
                           ProductDetailView(
                             title: product["title"] ?? "NO TITLE",

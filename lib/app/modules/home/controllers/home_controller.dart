@@ -12,7 +12,7 @@ class HomeController extends GetxController {
   var selectedColor = 0.obs; // To store the selected color
   var selectedImages = [].obs; // To store the images associated with the color
 
-  void updateSelectedColor(int color, List images) {
+  void updateSelectedColor(int color, List<String> images) {
     selectedColor.value = color;
     selectedImages.assignAll(images);
   }
