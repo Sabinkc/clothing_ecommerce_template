@@ -1,14 +1,18 @@
+import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProductDetailCircularColoredContainer extends StatelessWidget {
   final Map colorList;
-  const ProductDetailCircularColoredContainer({
+  ProductDetailCircularColoredContainer({
     super.key,
     required this.colorList,
   });
+  final controller = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {
+    // controller.a.value = colorList.values.first;
     return Container(
       height: 40,
       child: ListView(
@@ -16,27 +20,32 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
         shrinkWrap: true,
         children: colorList.entries
             .map(
-              (e) => Padding(
-                padding: const EdgeInsets.only(right: 10),
-                child: Container(
-                  height: 40,
-                  width: 40,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color:
-                          Color(e.key), // Use e.key as the color for the border
-                      width: 2.0,
+              (e) => GestureDetector(
+                onTap: () {
+                  controller.updateSelectedColor(e.key, e.value);
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Color(
+                            e.key), // Use e.key as the color for the border
+                        width: 2.0,
+                      ),
                     ),
-                  ),
-                  child: Center(
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Color(e
-                            .key), // Use e.value as the color for the inner circle
+                    child: Center(
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color(e
+                              .key), // Use e.value as the color for the inner circle
+                        ),
                       ),
                     ),
                   ),

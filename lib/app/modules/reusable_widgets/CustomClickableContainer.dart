@@ -17,12 +17,21 @@ class CustomClickableContainer extends StatelessWidget {
   // final String img;
   final Map coloredImgUrl;
   CustomClickableContainer({
-    super.key, required this.coloredImgUrl,
+    super.key,
+    required this.coloredImgUrl,
   });
 
   @override
   Widget build(BuildContext context) {
     var count = controller.detailViewProductCustomClickableContainer;
+    // return Obx(() {
+    //   return Column(
+    //     children: controller.selectedImages.map((imageUrl) {
+    //       return Image.network(
+    //           imageUrl); // Display the images based on the selected color
+    //     }).toList(),
+    //   );
+    // });
     return Obx(
       () => Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,7 +44,7 @@ class CustomClickableContainer extends StatelessWidget {
               borderRadius: BorderRadius.circular(0),
               image: DecorationImage(
                 image: NetworkImage(
-                  imgList[count.value],
+                  controller.selectedImages[count.value],
                 ),
                 fit: BoxFit.cover,
               ),
@@ -57,8 +66,12 @@ class CustomClickableContainer extends StatelessWidget {
             margin: EdgeInsets.symmetric(horizontal: 0),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: imgList.length,
+              itemCount: controller.selectedImages.length,
               itemBuilder: (BuildContext context, int index) {
+                // Map<String, dynamic> item = coloredImgUrl[count.value][index];
+                // String key = item.keys.first;
+                // String value = item.values.first;
+
                 return GestureDetector(
                   onTap: () {
                     count.value = index;
@@ -73,7 +86,7 @@ class CustomClickableContainer extends StatelessWidget {
                               count.value == index ? Colors.blue : Colors.white,
                           width: 2),
                       image: DecorationImage(
-                        image: NetworkImage(imgList[index]),
+                        image: NetworkImage(controller.selectedImages[index]),
                         fit: BoxFit.cover,
                       ),
                     ),

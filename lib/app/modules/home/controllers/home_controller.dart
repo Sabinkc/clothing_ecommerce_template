@@ -8,6 +8,14 @@ class HomeController extends GetxController {
   var detailViewProductTitleShow = false.obs;
   var detailViewProductDescShow = false.obs;
   var detailViewProductCustomClickableContainer = 0.obs;
+  var a = ''.obs;
+  var selectedColor = 0.obs; // To store the selected color
+  var selectedImages = [].obs; // To store the images associated with the color
+
+  void updateSelectedColor(int color, List images) {
+    selectedColor.value = color;
+    selectedImages.assignAll(images);
+  }
 
   @override
   void onInit() {
