@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import '../../../constants/text_size.dart';
 import 'ProductDetailViewReusableRow.dart';
 
-class ProductDetailSpecifications extends StatelessWidget {
+class ProductDetailAttributes extends StatelessWidget {
   // Map<String, dynamic> description = {
   //   "Description": [
   //     {
@@ -30,7 +30,7 @@ class ProductDetailSpecifications extends StatelessWidget {
   //   ],
   // };
   final Map attributes;
-  ProductDetailSpecifications({super.key, required this.attributes});
+  ProductDetailAttributes({super.key, required this.attributes});
 
   @override
   Widget build(BuildContext context) {

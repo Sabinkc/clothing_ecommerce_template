@@ -3,7 +3,7 @@ import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetail_Specificatiions.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetail_Attributes.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetails_Review.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,24 +25,24 @@ class ProductDetailView extends StatelessWidget {
   final controller = Get.put(HomeController());
   final String title;
   final String description;
-  final List<int> productColors;
+  // final List<int> productColors;
 
-  final Map reviewdata;
-  final Map attributesdata;
+  final Map data;
+  // final Map attributesdata;
   ProductDetailView({
     super.key,
     required this.title,
     required this.description,
-    required this.productColors,
-    required this.reviewdata,
-    required this.attributesdata,
+    // required this.productColors,
+    required this.data,
+    // required this.attributesdata,
   });
 
   @override
   Widget build(BuildContext context) {
     var titleShow = controller.detailViewProductTitleShow;
     var descriptionShow = controller.detailViewProductDescShow;
-    Map test = reviewdata["attributes"];
+    // Map test = data["attributes"];
     return Scaffold(
       appBar: AppBar(
         title: Text("Product Details"),
@@ -55,7 +55,7 @@ class ProductDetailView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // CarouselSliderReusable(imgList: imgList),
-              CustomClickableContainer(),
+              CustomClickableContainer(coloredImgUrl: data["color"],),
               SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -79,7 +79,7 @@ class ProductDetailView extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Text(
-                                reviewdata["name"],
+                                data["name"],
                                 style: TextStyle(
                                   fontSize: TextSize.normal,
                                   fontWeight: titleShow.value == true
@@ -133,7 +133,7 @@ class ProductDetailView extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     ProductDetailCircularColoredContainer(
-                        colorList: productColors),
+                        colorList: data["color"]),
                     SizedBox(height: 10),
                     Text(
                       "Descriptions",
@@ -175,8 +175,8 @@ class ProductDetailView extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 10),
-                    ProductDetailSpecifications(
-                      attributes: reviewdata["attributes"],
+                    ProductDetailAttributes(
+                      attributes: data["attributes"] ?? "",
                     ),
                     Divider(
                       color: AppColors.lightSilver, // Color of the line
@@ -186,7 +186,7 @@ class ProductDetailView extends StatelessWidget {
                     GestureDetector(
                       onTap: () {
                         Get.to(ProductDetailReview(
-                          reviews: reviewdata["reviews"],
+                          reviews: data["reviews"] ?? "",
                         ));
                       },
                       child: ProductDetailViewReusableRow(

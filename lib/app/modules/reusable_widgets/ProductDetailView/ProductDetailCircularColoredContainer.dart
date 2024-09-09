@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProductDetailCircularColoredContainer extends StatelessWidget {
-  final List<int> colorList;
+  final Map colorList;
   const ProductDetailCircularColoredContainer({
     super.key,
     required this.colorList,
@@ -11,11 +11,12 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 40,
-      child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          shrinkWrap: true,
-          itemCount: colorList.length,
-          itemBuilder: (BuildContext context, index) => Padding(
+      child: ListView(
+        scrollDirection: Axis.horizontal, // Make it horizontal if needed
+        shrinkWrap: true,
+        children: colorList.entries
+            .map(
+              (e) => Padding(
                 padding: const EdgeInsets.only(right: 10),
                 child: Container(
                   height: 40,
@@ -23,7 +24,8 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(
-                      color: Color(colorList[index]),
+                      color:
+                          Color(e.key), // Use e.key as the color for the border
                       width: 2.0,
                     ),
                   ),
@@ -32,12 +34,52 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                       height: 30,
                       width: 30,
                       decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Color(colorList[index])),
+                        shape: BoxShape.circle,
+                        color: Color(e
+                            .key), // Use e.value as the color for the inner circle
+                      ),
                     ),
                   ),
                 ),
-              )),
+              ),
+            )
+            .toList(),
+      ),
     );
   }
 }
+      // ListView.builder(
+      //     scrollDirection: Axis.horizontal,
+      //     shrinkWrap: true,
+      //     itemCount: colorList.length,
+      //     itemBuilder: (BuildContext context, index) => 
+      //     Map<String, dynamic> item = colorList[index]; // Access the map at index
+      //     String key = item.keys.first;  // Get the first key (if necessary)
+      //     String value = item.values.first;  // Assuming values are color codes
+
+      //     Padding(
+      //           padding: const EdgeInsets.only(right: 10),
+      //           child: Container(
+      //             height: 40,
+      //             width: 40,
+      //             decoration: BoxDecoration(
+      //               shape: BoxShape.circle,
+      //               border: Border.all(
+      //                 color: Color(key),
+      //                 width: 2.0,
+      //               ),
+      //             ),
+      //             child: Center(
+      //               child: Container(
+      //                 height: 30,
+      //                 width: 30,
+      //                 decoration: BoxDecoration(
+      //                     shape: BoxShape.circle,
+      //                     color: Color(value)),
+      //               ),
+      //             ),
+      //           ),
+      //         ),),
+//     );
+//   }
+// }
