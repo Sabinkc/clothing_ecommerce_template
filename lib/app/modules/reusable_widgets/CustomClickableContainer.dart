@@ -76,24 +76,28 @@ class CustomClickableContainer extends StatelessWidget {
                   onTap: () {
                     count.value = index;
                   },
-                  child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: 8),
-                    width: 70,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                          color:
-                              count.value == index ? Colors.blue : Colors.white,
-                          width: 2),
-                      image: DecorationImage(
-                        image: NetworkImage(
-                          controller.selectedImages[index],
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Container(
+                      // margin: EdgeInsets.symmetric(horizontal: 8),
+                      width: 70,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                            color: count.value == index
+                                ? Colors.blue
+                                : Colors.white,
+                            width: 2),
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            controller.selectedImages[index],
+                          ),
+                          //   controller.selectedImages.isNotEmpty
+                          //       ? controller.selectedImages[index]
+                          //       : 'https://example.com/default-image.jpg',
+                          // ),
+                          fit: BoxFit.cover,
                         ),
-                        //   controller.selectedImages.isNotEmpty
-                        //       ? controller.selectedImages[index]
-                        //       : 'https://example.com/default-image.jpg',
-                        // ),
-                        fit: BoxFit.cover,
                       ),
                     ),
                   ),

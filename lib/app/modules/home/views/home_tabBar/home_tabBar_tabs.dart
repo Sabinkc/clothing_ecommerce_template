@@ -13,7 +13,7 @@ class HomeTabBarTabs extends StatelessWidget {
     "Watches": [
       {
         "name": "Luxury Watch",
-        "price": "50,000",
+        // "price": "50,000",
         "title":
             "Lenovo IdeaPad 1 15IGL7 11TH GEN PRCOESSOR INTEL CELERON N4020 8GB DDR4 RAM 256GB SSD 15.6 HD Display",
         "description":
@@ -32,6 +32,13 @@ class HomeTabBarTabs extends StatelessWidget {
             "https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80",
           ]
         },
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL",
+        ],
         "reviews": [
           {
             "profile_pic":
@@ -465,12 +472,12 @@ class HomeTabBarTabs extends StatelessWidget {
                         controller.selectedImages.assignAll(test);
                         Get.to(
                           ProductDetailView(
-                            title: product["title"] ?? "NO TITLE",
-                            description:
-                                product["description"] ?? "NO DESCRIPTION",
+                            // title: product["title"] ?? "NO TITLE",
+                            // description:
+                            //     product["description"] ?? "NO DESCRIPTION",
                             // productColors: productColors,
 
-                            data: product, 
+                            data: product,
                             // attributesdata: products,
                             // product["color"],
                             // productColors: productColors,

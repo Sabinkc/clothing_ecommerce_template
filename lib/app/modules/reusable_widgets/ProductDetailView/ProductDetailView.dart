@@ -3,7 +3,10 @@ import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetail_Attributes.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetail_NavBar.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetail_Size.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetails_Review.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,29 +26,28 @@ class ProductDetailView extends StatelessWidget {
   ];
 
   final controller = Get.put(HomeController());
-  final String title;
-  final String description;
-  // final List<int> productColors;
 
   final Map data;
-  // final Map attributesdata;
+
   ProductDetailView({
     super.key,
-    required this.title,
-    required this.description,
-    // required this.productColors,
     required this.data,
-    // required this.attributesdata,
   });
 
   @override
   Widget build(BuildContext context) {
     var titleShow = controller.detailViewProductTitleShow;
     var descriptionShow = controller.detailViewProductDescShow;
-    // Map test = data["attributes"];
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Product Details"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Icon(Icons.favorite),
+          ),
+        ],
       ),
       body: Container(
         height: double.infinity,
@@ -55,8 +57,10 @@ class ProductDetailView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // CarouselSliderReusable(imgList: imgList),
-              CustomClickableContainer(coloredImgUrl: data["color"],),
-              SizedBox(height: 10),
+              CustomClickableContainer(
+                coloredImgUrl: data["color"],
+              ),
+              SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                 child: Column(
@@ -79,7 +83,7 @@ class ProductDetailView extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Text(
-                                data["name"],
+                                data["name"] ?? "No Nmae",
                                 style: TextStyle(
                                   fontSize: TextSize.normal,
                                   fontWeight: titleShow.value == true
@@ -133,7 +137,20 @@ class ProductDetailView extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     ProductDetailCircularColoredContainer(
-                        colorList: data["color"]),
+                      colorList: data["color"],
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      "Size",
+                      style: TextStyle(
+                        fontSize: TextSize.normal,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    ProductDetailSize(
+                      sizeList: data["size"] ?? [""],
+                    ),
                     SizedBox(height: 10),
                     Text(
                       "Descriptions",
@@ -148,7 +165,7 @@ class ProductDetailView extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            description,
+                            data["description"] ?? "No Description",
                             style: TextStyle(
                               fontSize: TextSize.small,
                               overflow: descriptionShow.value == true
@@ -204,6 +221,9 @@ class ProductDetailView extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: ProductDetailNavBar(
+        price: data["price"] ?? "",
       ),
     );
   }
