@@ -9,6 +9,8 @@ abstract class Routes {
   static const REGISTER = _Paths.REGISTER;
   static const FORGOT_PASSWORD = _Paths.FORGOT_PASSWORD;
   static const BOTTOM_NAVIGATION = _Paths.BOTTOM_NAVIGATION;
+  static const PRODUCT_DETAIL = _Paths.PRODUCT_DETAIL;
+  static const ADD_TO_CART = _Paths.ADD_TO_CART;
 }
 
 abstract class _Paths {
@@ -19,4 +21,6 @@ abstract class _Paths {
   static const REGISTER = '/register';
   static const FORGOT_PASSWORD = '/forgot-password';
   static const BOTTOM_NAVIGATION = '/bottom-navigation';
+  static const PRODUCT_DETAIL = '/product-detail';
+  static const ADD_TO_CART = '/add-to-cart';
 }

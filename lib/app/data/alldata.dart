@@ -3,6 +3,8 @@ final Map products = {
     {
       "name": "Luxury Watch",
       "price": "50,000",
+      "realprice": "55,000",
+      "discount": "-10%",
       "title":
           "Lenovo IdeaPad 1 15IGL7 11TH GEN PRCOESSOR INTEL CELERON N4020 8GB DDR4 RAM 256GB SSD 15.6 HD Display",
       "description":

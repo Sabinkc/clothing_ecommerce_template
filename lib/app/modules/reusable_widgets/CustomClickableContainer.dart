@@ -1,10 +1,11 @@
+import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../home/controllers/home_controller.dart';
 
 class CustomClickableContainer extends StatelessWidget {
-  final controller = Get.put(HomeController());
+  final controller = Get.put(ProductDetailController());
   // var currentIndex = 0.obs;
   final List<String> imgList = [
     'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png',

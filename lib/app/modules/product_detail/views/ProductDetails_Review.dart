@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../constants/text_size.dart';
-import 'ProductDetailViewReusableRow.dart';
+
 
 class ProductDetailReview extends StatelessWidget {
   final List reviews;

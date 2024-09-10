@@ -6,29 +6,9 @@ import 'package:get/get.dart';
 import '../../../constants/text_size.dart';
 import 'ProductDetailViewReusableRow.dart';
 
+
 class ProductDetailAttributes extends StatelessWidget {
-  // Map<String, dynamic> description = {
-  //   "Description": [
-  //     {
-  //       "Neckline": "Round Neck",
-  //     },
-  //     {
-  //       "Style": "Casual",
-  //     },
-  //     {
-  //       "Details": "Backless, Pleated, Zipper",
-  //     },
-  //     {
-  //       "Color": "Pink",
-  //     },
-  //     {
-  //       "Pattern Type": "Plain",
-  //     },
-  //     {
-  //       "Item id": "123456789",
-  //     },
-  //   ],
-  // };
+
   final Map attributes;
   ProductDetailAttributes({super.key, required this.attributes});
 

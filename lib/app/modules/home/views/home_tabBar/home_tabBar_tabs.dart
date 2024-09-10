@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
+import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetailView.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -6,12 +7,14 @@ import 'package:get/get.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/text_size.dart';
 import '../../../../data/alldata.dart';
+import '../../../product_detail/views/product_detail_view.dart';
 
 class HomeTabBarTabs extends StatelessWidget {
   HomeTabBarTabs({
     super.key,
   });
   final controller = Get.put(HomeController());
+  final controller_product = Get.put(ProductDetailController());
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +56,7 @@ class HomeTabBarTabs extends StatelessWidget {
                             reviews.isNotEmpty ? reviews[0] : null;
                         Map images = product["color"];
                         List test = images.entries.first.value;
-                        controller.selectedImages.assignAll(test);
+                        controller_product.selectedImages.assignAll(test);
                         Get.to(
                           ProductDetailView(
                             // title: product["title"] ?? "NO TITLE",

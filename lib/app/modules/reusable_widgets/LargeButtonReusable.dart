@@ -6,11 +6,13 @@ import 'package:flutter/material.dart';
 class LargeButtonReusable extends StatelessWidget {
   final String title;
   final double? width;
+  final Color? color;
 
   const LargeButtonReusable({
     super.key,
     required this.title,
     this.width = double.infinity,
+    this.color = AppColors.lightBlue,
   });
 
   @override
@@ -18,13 +20,13 @@ class LargeButtonReusable extends StatelessWidget {
     return Container(
       width: width,
       height: 50,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(6), color: AppColors.lightBlue),
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(6), color: color),
       child: Center(
         child: Text(
           title,
           style: TextStyle(
-              fontSize: TextSize.normal,
+              fontSize: TextSize.small,
               color: Colors.white,
               fontWeight: FontWeight.w900),
         ),
