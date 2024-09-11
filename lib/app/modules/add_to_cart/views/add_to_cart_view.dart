@@ -1,4 +1,9 @@
+import 'dart:ffi';
+
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_quantity.dart';
+import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
+import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
+import 'package:d_and_s/app/modules/product_detail/views/product_detail_quantity.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -10,8 +15,9 @@ import '../../product_detail/views/ProductDetail_Size.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../controllers/add_to_cart_controller.dart';
 
-class AddToCartView extends StatelessWidget {
+class AddToCartView extends GetView<AddToCartController> {
   final Map addToCartData;
+  final controller_productDetail = Get.put(ProductDetailController());
   AddToCartView({
     super.key,
     required this.addToCartData,
@@ -20,6 +26,8 @@ class AddToCartView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        // controller.quantityIndex.value = 1;
+
         showModalBottomSheet<void>(
           context: context,
           builder: (BuildContext context) {
@@ -39,15 +47,21 @@ class AddToCartView extends StatelessWidget {
                         height: 100,
                         child: Row(
                           children: [
-                            Container(
-                              width: 100,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16),
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                        "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
-                                      ),
-                                      fit: BoxFit.cover)),
+                            Obx(
+                              () => Container(
+                                width: 100,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                          controller_productDetail
+                                                  .selectedImages[
+                                              controller_productDetail
+                                                  .detailViewProductCustomClickableContainer
+                                                  .value],
+                                        ),
+                                        fit: BoxFit.cover)),
+                              ),
                             ),
                             SizedBox(width: 20),
                             Column(
@@ -96,7 +110,7 @@ class AddToCartView extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(2.0),
                                     child: Text(
-                                      addToCartData["discount"] ?? "",
+                                      addToCartData["discount"] ?? " -0% ",
                                       // priceDetails["discount"] ?? " -100% ",
                                       style: TextStyle(
                                         fontSize: TextSize.small,
@@ -120,8 +134,9 @@ class AddToCartView extends StatelessWidget {
                       Text(
                         "Color",
                         style: TextStyle(
-                            fontSize: TextSize.normal,
-                            fontWeight: FontWeight.w800),
+                          fontSize: TextSize.normal,
+                          // fontWeight: FontWeight.w800,
+                        ),
                       ),
                       SizedBox(height: 10),
                       ProductDetailCircularColoredContainer(
@@ -136,12 +151,14 @@ class AddToCartView extends StatelessWidget {
                       Text(
                         "Size",
                         style: TextStyle(
-                            fontSize: TextSize.normal,
-                            fontWeight: FontWeight.w800),
+                          fontSize: TextSize.normal,
+                          // fontWeight: FontWeight.w800,
+                        ),
                       ),
                       SizedBox(height: 10),
                       ProductDetailSize(
                         sizeList: addToCartData["size"] ?? [""],
+                        //  sizeList: controller_two.sizeList,
                       ),
                       SizedBox(height: 10),
                       Divider(
@@ -150,17 +167,59 @@ class AddToCartView extends StatelessWidget {
                       ),
                       SizedBox(height: 10),
                       // POINTER TO BE ADDED
-                      AddToCartQuantity(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Quantity",
+                            style: TextStyle(
+                              fontSize: TextSize.normal,
+                              // fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          ProductDetailQuantity(),
+                        ],
+                      ),
                       SizedBox(height: 10),
                       Divider(
                         color: AppColors.lightSilver, // Color of the line
                         thickness: 5, // Thickness of the line
                       ),
                       SizedBox(height: 10),
-                      LargeButtonReusable(
-                        title: "Add to Cart",
-                        width: double.infinity,
-                        color: Colors.redAccent,
+                      GestureDetector(
+                        onTap: () {
+                          // final String cartId = UniqueKey().toString();
+                          controller.cartProducts.add(
+                            {
+                              "title": addToCartData["title"],
+                              "cartId": UniqueKey().toString(),
+                              "price": addToCartData["price"],
+                              "discount": addToCartData["discount"],
+                              "realprice": addToCartData["realprice"],
+                              "size":
+                                  controller_productDetail.selectedSize.value,
+                              "quantity":
+                                  controller_productDetail.quantityIndex.value,
+                              "image": controller_productDetail.selectedImages[
+                                  controller_productDetail
+                                      .detailViewProductCustomClickableContainer
+                                      .value],
+                              "color":
+                                  controller_productDetail.selectedColor.value,
+                            },
+                          );
+                          Get.to(AddedCart(
+                              // addedCartData: addToCartData,
+
+                              // sizeList: sizeList,
+                              // sizeList: controller_two.sizeList,
+                              ));
+                        },
+                        child: LargeButtonReusable(
+                          title: "Add to Cart",
+                          width: double.infinity,
+                          color: Colors.redAccent,
+                        ),
                       ),
                     ],
                   ),

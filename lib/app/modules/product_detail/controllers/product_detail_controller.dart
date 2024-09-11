@@ -8,7 +8,9 @@ class ProductDetailController extends GetxController {
   var selectedColor = 0.obs; // To store the selected color
   var selectedImages = [].obs; // To store the images associated with the color
   var sizeIndex = 0.obs; //["S","M","L","XL","XXL"]
-  // var a = ''.obs;
+  var quantityIndex = 1.obs; //["+1,2,3,4"]
+  var selectedSize = "".obs;
+ 
 
   void updateSelectedColor(int color, List<String> images) {
     selectedColor.value = color;

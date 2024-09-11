@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 
 import '../../../constants/text_size.dart';
 
-
 class ProductDetailReview extends StatelessWidget {
   final List reviews;
   ProductDetailReview({
@@ -41,7 +40,7 @@ class ProductDetailReview extends StatelessWidget {
                             Border.all(color: AppColors.lightSilver, width: 5),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(20),
+                        padding: const EdgeInsets.all(10),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -70,7 +69,7 @@ class ProductDetailReview extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 10),
+                            // SizedBox(height: 10),
                             Divider(thickness: 1, color: Colors.grey[300]),
                             Text(
                               reviews[index]["review"],
@@ -79,7 +78,7 @@ class ProductDetailReview extends StatelessWidget {
                             SizedBox(height: 10),
                             if (reviews[index]["reviews_img"].isNotEmpty)
                               Container(
-                                height: 200,
+                                height: 120,
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(16),
@@ -90,8 +89,8 @@ class ProductDetailReview extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                            SizedBox(height: 10),
-                            SizedBox(height: 10),
+                            // SizedBox(height: 10),
+                            // SizedBox(height: 10),
                           ],
                         ),
                       ),

@@ -6,13 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ProductDetailSize extends StatelessWidget {
-  final List a = [
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL",
-  ];
+
   final List sizeList;
   final controller = Get.put(ProductDetailController());
   ProductDetailSize({super.key, required this.sizeList});
@@ -27,33 +21,40 @@ class ProductDetailSize extends StatelessWidget {
         itemCount: sizeList.length,
         itemBuilder: (BuildContext context, index) => Padding(
           padding: const EdgeInsets.only(right: 10),
-          child: Obx(
-            () => GestureDetector(
-              onTap: () {
-                controller.sizeIndex.value = index;
-              },
-              child: Container(
-                // width: 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: controller.sizeIndex.value == index
-                        ? AppColors.lightBlue
-                        : Colors.white,
-                    // width: 5,
-                  ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                  child: Center(
-                    child: Text(sizeList[index]),
-                  ),
-                ),
-              ),
-            ),
+          child:
+              // Obx(
+              //   () =>
+              GestureDetector(
+            onTap: () {
+              controller.selectedSize.value = sizeList[index];
+              controller.sizeIndex.value = index;
+            },
+            child: sizeList[index].isNotEmpty
+                ? Obx(
+                    () => Container(
+                      // width: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(
+                          color: controller.sizeIndex.value == index
+                              ? AppColors.lightBlue
+                              : Colors.white,
+                          // width: 5,
+                        ),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        child: Center(
+                          child: Text(sizeList[index]),
+                        ),
+                      ),
+                    ),
+                  )
+                : SizedBox(),
           ),
         ),
       ),
+      // ),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,7 @@ import '../../../constants/text_size.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 
 class ProductDetailNavBar extends StatelessWidget {
+  final controller = Get.put(AddToCartController());
   final Map navBarData;
   ProductDetailNavBar({
     super.key,
@@ -38,6 +40,7 @@ class ProductDetailNavBar extends StatelessWidget {
             color: Colors.orange,
           ),
           SizedBox(width: 20),
+
           AddToCartView(
             addToCartData: navBarData,
           ),

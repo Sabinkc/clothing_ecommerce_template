@@ -1,3 +1,5 @@
+import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
+import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
@@ -12,9 +14,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomeView(),
-    Text(
-      'Index 1: Business',
-    ),
+    AddedCart(),
     Text(
       'Index 2: School',
     ),
@@ -50,8 +50,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(
-              icon: Icon(Icons.search),
-
+              icon: Icon(Icons.shopping_cart),
+              title: Text('home'),
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(

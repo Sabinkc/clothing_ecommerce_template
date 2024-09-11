@@ -37,24 +37,25 @@ class ProductDetailPrice extends StatelessWidget {
           ),
         ),
         SizedBox(width: 10),
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(color: Colors.redAccent),
-            // color: Colors.redAccent,
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(2.0),
-            child: Text(
-              priceDetails["discount"] ?? " -0% ",
-              style: TextStyle(
-                fontSize: TextSize.small,
-                color: Colors.redAccent,
-                fontWeight: FontWeight.w900,
+        if (priceDetails["discount"] != null &&
+            priceDetails["discount"].isNotEmpty)
+          Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.redAccent),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(2.0),
+              child: Text(
+                priceDetails["discount"],
+                style: TextStyle(
+                  fontSize: TextSize.small,
+                  color: Colors.redAccent,
+                  fontWeight: FontWeight.w900,
+                ),
               ),
             ),
           ),
-        ),
       ],
     );
   }

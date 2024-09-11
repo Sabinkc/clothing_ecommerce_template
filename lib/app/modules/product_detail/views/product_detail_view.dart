@@ -1,4 +1,7 @@
+import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
+import 'package:d_and_s/app/modules/product_detail/views/product_detail_quantity.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -16,6 +19,7 @@ import 'ProductDetail_Size.dart';
 import 'ProductDetails_Review.dart';
 
 class ProductDetailView extends GetView<ProductDetailController> {
+  final search = TextEditingController();
   // final controller = Get.put(HomeController());
 
   final Map data;
@@ -32,13 +36,35 @@ class ProductDetailView extends GetView<ProductDetailController> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Product Details"),
+        title: Padding(
+          padding: const EdgeInsets.fromLTRB(0, 5, 20, 5),
+          child: TextFormFieldReusable(
+            hint: "Search Products",
+            icon: Icon(Icons.search),
+            textEditingController: search,
+          ),
+        ),
+        // leading: GestureDetector(
+        //     onTap: () {
+        //       controller.quantityIndex.value = 1;
+        //       Navigator.pop(context);
+        //     },
+        //     child: Icon(Icons.arrow_back_ios)),
         actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: GestureDetector(
+                onTap: () {
+                  Get.to(AddedCart());
+                },
+                child: Icon(Icons.shopping_cart)),
+          ),
           Padding(
             padding: const EdgeInsets.only(right: 10),
             child: Icon(Icons.favorite),
           ),
         ],
+        centerTitle: false,
       ),
       body: Container(
         height: double.infinity,
@@ -47,6 +73,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(height: 10),
               // CarouselSliderReusable(imgList: imgList),
               CustomClickableContainer(
                 coloredImgUrl: data["color"],
@@ -145,7 +172,21 @@ class ProductDetailView extends GetView<ProductDetailController> {
                     ProductDetailSize(
                       sizeList: data["size"] ?? [""],
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Quantity",
+                          style: TextStyle(
+                            fontSize: TextSize.normal,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        ProductDetailQuantity(),
+                      ],
+                    ),
+                    SizedBox(height: 20),
                     Text(
                       "Descriptions",
                       style: TextStyle(
@@ -217,7 +258,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
         ),
       ),
       bottomNavigationBar: ProductDetailNavBar(
-        navBarData: data ,
+        navBarData: data,
         // price: data["price"] ?? "",
       ),
     );
