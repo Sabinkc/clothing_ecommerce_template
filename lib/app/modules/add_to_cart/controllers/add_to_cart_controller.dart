@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 class AddToCartController extends GetxController {
   RxList cartProducts = [].obs;
   RxList selectedProducts = [].obs;
-
+  RxList checkoutList = [].obs;
   // var isSelected = controller.selectedProducts.contains(item["cartId"]).obs;
   // void toogleSelected(){
   //   if (valueCheckBox == true) {
@@ -15,6 +15,17 @@ class AddToCartController extends GetxController {
   //TODO: Implement AddToCartController
 
   RxInt totalPrice = 0.obs;
+  void sendDataToCheckout() {
+    checkoutList.value = [];
+    for (var checkoutItem in cartProducts) {
+      if (selectedProducts.contains(checkoutItem["cartId"])) {
+        bool test = checkoutList
+            .any((element) => element["cartId"] == checkoutItem["cartId"]);
+        if (!test) checkoutList.add(checkoutItem);
+        print(test);
+      }
+    }
+  }
 
   void calculateTotalPrice() {
     num total = 0;

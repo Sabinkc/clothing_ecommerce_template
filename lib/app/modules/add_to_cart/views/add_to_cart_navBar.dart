@@ -1,5 +1,6 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
+import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,7 +8,7 @@ import 'package:get/get.dart';
 class AddToCartNavBar extends StatelessWidget {
   final String price;
   final controller = Get.put(AddToCartController());
-   AddToCartNavBar({super.key, required this.price});
+  AddToCartNavBar({super.key, required this.price});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +48,13 @@ class AddToCartNavBar extends StatelessWidget {
               ],
             ),
             // Price Section
-            LargeButtonReusable(width: 200, title: "Checkout")
+            GestureDetector(
+                onTap: () {
+                  controller.sendDataToCheckout();
+                  Get.to(AddToCartCheckout());
+                  // print(controller.checkoutList.toString());
+                },
+                child: LargeButtonReusable(width: 200, title: "Checkout"))
           ],
         ),
       ),
