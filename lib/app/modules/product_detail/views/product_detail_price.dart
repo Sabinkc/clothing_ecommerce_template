@@ -17,7 +17,7 @@ class ProductDetailPrice extends StatelessWidget {
           ),
         ),
         Text(
-          priceDetails["price"] ?? "",
+          "${priceDetails["price"]}" ?? "",
           style: TextStyle(
             fontSize: TextSize.normal,
             color: Colors.red,
@@ -26,7 +26,7 @@ class ProductDetailPrice extends StatelessWidget {
         ),
         SizedBox(width: 10),
         Text(
-          priceDetails["realprice"] ?? "",
+          "${priceDetails["realprice"]}" ?? "",
           style: TextStyle(
             decoration: TextDecoration.lineThrough,
             decorationThickness: 5,

@@ -2,6 +2,10 @@ import 'package:get/get.dart';
 
 class LoginController extends GetxController {
   //TODO: Implement LoginController
+  RxBool isSelected = false.obs;
+  void toogleIsSelected() {
+    isSelected.value = !isSelected.value;
+  }
 
   final count = 0.obs;
   @override

@@ -31,15 +31,16 @@ class ProductDetailNavBar extends StatelessWidget {
         ],
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          Icon(Icons.favorite),
           // Price Section
           LargeButtonReusable(
             title: "Buy Now",
             width: 150,
             color: Colors.orange,
           ),
-          SizedBox(width: 20),
+          // SizedBox(width: 20),
 
           AddToCartView(
             addToCartData: navBarData,

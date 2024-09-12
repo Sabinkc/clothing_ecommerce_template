@@ -1,6 +1,7 @@
 import 'package:d_and_s/app/modules/bottom_navigation/buttom_navigation.dart';
 import 'package:d_and_s/app/modules/forgot_password/views/forgot_password_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
+import 'package:d_and_s/app/modules/login/controllers/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -12,6 +13,7 @@ import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../../reusable_widgets/TextFormFieldReusable.dart';
 
 class LoginWhiteSmallContainer extends StatelessWidget {
+  final controller = Get.put(LoginController());
   final email = TextEditingController();
   final password = TextEditingController();
 
@@ -58,7 +60,14 @@ class LoginWhiteSmallContainer extends StatelessWidget {
               SizedBox(height: 20),
               Row(
                 children: [
-                  CheckboxReusable(),
+                  Obx(
+                    () => CheckboxReusable(
+                      checkboxFunc: () {
+                        controller.toogleIsSelected();
+                      },
+                      valueCheckBox: controller.isSelected.value,
+                    ),
+                  ),
                   Text(
                     "Remember me",
                     style: TextStyle(
@@ -66,7 +75,9 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                   ),
                   Spacer(),
                   GestureDetector(
-                    onTap: (){Get.to(ForgotPasswordView());},
+                    onTap: () {
+                      Get.to(ForgotPasswordView());
+                    },
                     child: Text(
                       "Forgot Password ?",
                       style: TextStyle(
@@ -77,7 +88,9 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              GestureDetector(onTap:()=>Get.to(BottomNavBar()),child: LargeButtonReusable(title: "Log in")),
+              GestureDetector(
+                  onTap: () => Get.to(BottomNavBar()),
+                  child: LargeButtonReusable(title: "Log in")),
               SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

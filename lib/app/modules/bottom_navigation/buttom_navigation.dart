@@ -46,12 +46,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
           tabs: [
             MoltenTab(
               icon: Icon(Icons.home),
-              title: Text('home'),
+              // title: Text('home'),
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(
               icon: Icon(Icons.shopping_cart),
-              title: Text('home'),
+              // title: Text('cart'),
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(

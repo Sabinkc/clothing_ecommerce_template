@@ -52,17 +52,17 @@ class ProductDetailView extends GetView<ProductDetailController> {
         //     child: Icon(Icons.arrow_back_ios)),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 10),
+            padding: const EdgeInsets.only(right: 20),
             child: GestureDetector(
                 onTap: () {
                   Get.to(AddedCart());
                 },
                 child: Icon(Icons.shopping_cart)),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 10),
-            child: Icon(Icons.favorite),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.only(right: 10),
+          //   child: Icon(Icons.favorite),
+          // ),
         ],
         centerTitle: false,
       ),
@@ -73,7 +73,7 @@ class ProductDetailView extends GetView<ProductDetailController> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               // CarouselSliderReusable(imgList: imgList),
               CustomClickableContainer(
                 coloredImgUrl: data["color"],

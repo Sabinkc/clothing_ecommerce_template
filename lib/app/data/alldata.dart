@@ -2,8 +2,8 @@ final Map products = {
   "Watches": [
     {
       "name": "Luxury Watch",
-      "price": "50,000",
-      "realprice": "55,000",
+      "price": 50000,
+      "realprice": 55000,
       "discount": "-10%",
       "title":
           "Lenovo IdeaPad 1 15IGL7 11TH GEN PRCOESSOR INTEL CELERON N4020 8GB DDR4 RAM 256GB SSD 15.6 HD Display",
@@ -63,7 +63,7 @@ final Map products = {
     },
     {
       "name": "Sports Watch",
-      "price": "20,000",
+      "price": 2000,
       "color": {
         0xffFF0000: [
           "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
@@ -107,58 +107,58 @@ final Map products = {
       },
     },
   ],
-  // "Shirts": [
-  //   {
-  //     "name": "Casual Shirt",
-  //     "price": "2,000",
-  //     "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
-  //     "reviews": [
-  //       {
-  //         "profile_pic":
-  //             "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
-  //         "name": "b",
-  //         "date": "1/2/2024",
-  //         "review":
-  //             "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
-  //         "reviews_img":
-  //             "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
-  //       },
-  //     ],
-  //     "attributes": {
-  //       "Neckline": "Round Neck",
-  //       "Style": "Casual",
-  //       "Details": "Backless, Pleated, Zipper",
-  //       "Color": "Pink",
-  //       "Pattern Type": "Plain",
-  //       "Item id": "123456789",
-  //     },
-  //   },
-  //   {
-  //     "name": "Formal Shirt",
-  //     "price": "3,000",
-  //     "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
-  //     "reviews": [
-  //       {
-  //         "profile_pic":
-  //             "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
-  //         "name": "Round Neck",
-  //         "date": "1/2/2024",
-  //         "review":
-  //             "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
-  //         "reviews_img":
-  //             "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
-  //       },
-  //     ],
-  //     "attributes": {
-  //       "Neckline": "Round Neck",
-  //       "Style": "Casual",
-  //       "Details": "Backless, Pleated, Zipper",
-  //       "Color": "Pink",
-  //       "Pattern Type": "Plain",
-  //       "Item id": "123456789",
-  //     },
-  //   },
-  // ],
+  "Shirts": [
+    {
+      "name": "Casual Shirt",
+      "price": "2,000",
+      "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+      "reviews": [
+        {
+          "profile_pic":
+              "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+          "name": "b",
+          "date": "1/2/2024",
+          "review":
+              "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+          "reviews_img":
+              "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+        },
+      ],
+      "attributes": {
+        "Neckline": "Round Neck",
+        "Style": "Casual",
+        "Details": "Backless, Pleated, Zipper",
+        "Color": "Pink",
+        "Pattern Type": "Plain",
+        "Item id": "123456789",
+      },
+    },
+    {
+      "name": "Formal Shirt",
+      "price": "3,000",
+      "color": [0xffFF0000, 0xff00FF00, 0xff0000FF],
+      "reviews": [
+        {
+          "profile_pic":
+              "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+          "name": "Round Neck",
+          "date": "1/2/2024",
+          "review":
+              "A review is an evaluation of a publication, product, service, or company or a critical take on current affairs in literature, politics or culture. In addition to a critical evaluation, the review's author may assign the work a rating to indicate its relative merit.",
+          "reviews_img":
+              "https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png",
+        },
+      ],
+      "attributes": {
+        "Neckline": "Round Neck",
+        "Style": "Casual",
+        "Details": "Backless, Pleated, Zipper",
+        "Color": "Pink",
+        "Pattern Type": "Plain",
+        "Item id": "123456789",
+      },
+    },
+  ],
   // "Bags": [
   //   {
   //     "name": "Leather Bag",

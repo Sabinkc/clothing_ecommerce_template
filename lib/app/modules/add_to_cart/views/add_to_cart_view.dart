@@ -77,7 +77,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                       ),
                                     ),
                                     Text(
-                                      addToCartData["price"] ?? "",
+                                      "${addToCartData["price"]}" ?? "",
                                       // priceDetails["price"] ?? "",
                                       style: TextStyle(
                                         fontSize: TextSize.normal,
@@ -89,7 +89,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                 ),
                                 SizedBox(width: 10),
                                 Text(
-                                  addToCartData["realprice"] ?? "",
+                                  "${addToCartData["realprice"]}" ?? "",
                                   // priceDetails["realprice"] ?? "",
                                   style: TextStyle(
                                     decoration: TextDecoration.lineThrough,
@@ -101,25 +101,28 @@ class AddToCartView extends GetView<AddToCartController> {
                                   ),
                                 ),
                                 SizedBox(width: 10),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.redAccent),
-                                    // color: Colors.redAccent,
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(2.0),
-                                    child: Text(
-                                      addToCartData["discount"] ?? " -0% ",
-                                      // priceDetails["discount"] ?? " -100% ",
-                                      style: TextStyle(
-                                        fontSize: TextSize.small,
-                                        color: Colors.redAccent,
-                                        fontWeight: FontWeight.w900,
+                                if (addToCartData["discount"] != null &&
+                                    addToCartData["discount"].isNotEmpty)
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      border:
+                                          Border.all(color: Colors.redAccent),
+                                      // color: Colors.redAccent,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(2.0),
+                                      child: Text(
+                                        addToCartData["discount"],
+                                        // priceDetails["discount"] ?? " -100% ",
+                                        style: TextStyle(
+                                          fontSize: TextSize.small,
+                                          color: Colors.redAccent,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ),
                               ],
                             ),
                           ],
