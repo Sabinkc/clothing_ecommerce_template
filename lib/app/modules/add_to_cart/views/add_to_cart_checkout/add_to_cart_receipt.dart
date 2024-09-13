@@ -1,8 +1,5 @@
-import 'package:d_and_s/app/constants/colors.dart';
-import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +21,7 @@ class AddToCartReceipt extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
+            const Center(
               child: Text(
                 "Receipt",
                 style: TextStyle(
@@ -38,12 +35,12 @@ class AddToCartReceipt extends StatelessWidget {
             AddToCartReceiptRow(
               title: "Amount",
               subtitle: "Rs ${controller.totalPrice.value}",
-              icon: Icon(
+              icon: const Icon(
                 Icons.attach_money,
                 color: Colors.grey,
               ), // Money icon for amount
             ),
-            AddToCartReceiptRow(
+            const AddToCartReceiptRow(
               title: "Shipping Charge",
               subtitle: "Rs. 100",
               icon: Icon(
@@ -55,14 +52,14 @@ class AddToCartReceipt extends StatelessWidget {
               title: "Total Amount",
               subtitle: "Rs ${controller.totalPrice.value + 100}",
               isTotal: true,
-              icon: Icon(
+              icon: const Icon(
                 Icons.calculate,
                 color: Colors.grey,
               ), // Calculation icon for total
             ),
             const Divider(
                 height: 30, color: Colors.grey), // Adds a divider line
-            Center(
+            const Center(
               child: Text(
                 "Info",
                 style: TextStyle(
@@ -72,7 +69,7 @@ class AddToCartReceipt extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            AddToCartReceiptRow(
+            const AddToCartReceiptRow(
               title: "User Name",
               subtitle: "Aman Shrestha",
               icon: Icon(
@@ -80,7 +77,7 @@ class AddToCartReceipt extends StatelessWidget {
                 color: Colors.grey,
               ), // Person icon for user name
             ),
-            AddToCartReceiptRow(
+            const AddToCartReceiptRow(
               title: "Contact Details",
               subtitle: "+977-9812345678",
               icon: Icon(
@@ -88,7 +85,7 @@ class AddToCartReceipt extends StatelessWidget {
                 color: Colors.grey,
               ), // Phone icon for contact details
             ),
-            AddToCartReceiptRow(
+            const AddToCartReceiptRow(
               title: "Location",
               subtitle: "Kuleshwor, Kathmandu",
               icon: Icon(
@@ -98,7 +95,7 @@ class AddToCartReceipt extends StatelessWidget {
             ),
             const Divider(
                 height: 30, color: Colors.grey), // Adds a divider line
-            Center(
+            const Center(
               child: Text(
                 "Payment",
                 style: TextStyle(
@@ -108,7 +105,7 @@ class AddToCartReceipt extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            AddToCartReceiptRow(
+            const AddToCartReceiptRow(
               title: "Cash On Delivery",
               subtitle: "Aman Shrestha",
               icon: Icon(
@@ -144,7 +141,7 @@ class AddToCartReceiptRow extends StatelessWidget {
       child: Row(
         children: [
           icon,
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Text(
             title,
             style: TextStyle(
@@ -156,7 +153,7 @@ class AddToCartReceiptRow extends StatelessWidget {
                   : Colors.black, // Darker color for total
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Text(
             subtitle,
             style: TextStyle(

@@ -11,7 +11,7 @@ class HomeCustomTab extends StatelessWidget {
     "Watches",
     "Shirts",
     "Bags",
-    "Clothing",
+    "Jeans",
     "Shoes",
     "Socks",
     "More",

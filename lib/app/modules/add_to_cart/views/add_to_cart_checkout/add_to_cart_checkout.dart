@@ -1,6 +1,6 @@
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class AddToCartCheckout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Checkout"),
+        title: const Text("Checkout"),
         centerTitle: false,
         backgroundColor: Colors.white,
       ),
@@ -142,8 +142,8 @@ class AddToCartCheckout extends StatelessWidget {
                   }).toList(),
                 ),
                 AddToCartReceipt(),
-                SizedBox(height: 20),
-                LargeButtonReusable(title: "Place Order"),
+                const SizedBox(height: 20),
+                const LargeButtonReusable(title: "Place Order"),
               ],
             ),
           ),

@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
+
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';

@@ -1,11 +1,10 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_navBar.dart';
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_recommended.dart';
+
 import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
-import 'package:d_and_s/app/modules/product_detail/views/product_detail_quantity.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/CheckBoxReusable.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -56,7 +55,7 @@ class AddedCart extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(width: 5),
+                          const SizedBox(width: 5),
 
                           // Checkbox
                           Checkbox(
@@ -68,7 +67,7 @@ class AddedCart extends StatelessWidget {
                             },
                           ),
 
-                          SizedBox(width: 5),
+                          const SizedBox(width: 5),
                           // Product Image
                           Container(
                             height: 100,
@@ -190,7 +189,7 @@ class AddedCart extends StatelessWidget {
                 style: TextStyle(
                     fontSize: TextSize.normal, color: AppColors.lightBlue),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               HomeTabBarTabs(),
             ],
           ),

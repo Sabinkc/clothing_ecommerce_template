@@ -76,19 +76,23 @@ class ProductDetailReview extends StatelessWidget {
                               style: TextStyle(fontSize: TextSize.small),
                             ),
                             SizedBox(height: 10),
-                            if (reviews[index]["reviews_img"].isNotEmpty)
-                              Container(
-                                height: 120,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16),
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                        reviews[index]["reviews_img"]),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
+                            // if (reviews[index]["reviews_img"].isNotEmpty &&
+                            //     reviews[index]["reviews_img"] != null)
+                            reviews[index]["reviews_img"] != null
+                                ? Container(
+                                    height: 120,
+                                    width: double.infinity,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(reviews[index]
+                                                ["reviews_img"] ??
+                                            ""),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  )
+                                : SizedBox(),
                             // SizedBox(height: 10),
                             // SizedBox(height: 10),
                           ],

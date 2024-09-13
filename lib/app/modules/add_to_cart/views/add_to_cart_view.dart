@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_quantity.dart';
@@ -41,8 +39,8 @@ class AddToCartView extends GetView<AddToCartController> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      SizedBox(height: 10),
-                      Container(
+                      const SizedBox(height: 10),
+                      SizedBox(
                         height: 100,
                         child: Row(
                           children: [
@@ -62,7 +60,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                         fit: BoxFit.cover)),
                               ),
                             ),
-                            SizedBox(width: 20),
+                            const SizedBox(width: 20),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -76,7 +74,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                       ),
                                     ),
                                     Text(
-                                      "${addToCartData["price"]}" ?? "",
+                                      "${addToCartData["price"]}",
                                       // priceDetails["price"] ?? "",
                                       style: TextStyle(
                                         fontSize: TextSize.normal,
@@ -86,9 +84,9 @@ class AddToCartView extends GetView<AddToCartController> {
                                     ),
                                   ],
                                 ),
-                                SizedBox(width: 10),
+                                const SizedBox(width: 10),
                                 Text(
-                                  "${addToCartData["realprice"]}" ?? "",
+                                  "${addToCartData["realprice"]}",
                                   // priceDetails["realprice"] ?? "",
                                   style: TextStyle(
                                     decoration: TextDecoration.lineThrough,
@@ -99,7 +97,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                     fontWeight: FontWeight.w900,
                                   ),
                                 ),
-                                SizedBox(width: 10),
+                                const SizedBox(width: 10),
                                 if (addToCartData["discount"] != null &&
                                     addToCartData["discount"].isNotEmpty)
                                   Container(
@@ -127,12 +125,12 @@ class AddToCartView extends GetView<AddToCartController> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         color: AppColors.lightSilver, // Color of the line
                         thickness: 5, // Thickness of the line
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         "Color",
                         style: TextStyle(
@@ -140,16 +138,16 @@ class AddToCartView extends GetView<AddToCartController> {
                           // fontWeight: FontWeight.w800,
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       ProductDetailCircularColoredContainer(
                         colorList: addToCartData["color"],
                       ),
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         color: AppColors.lightSilver, // Color of the line
                         thickness: 5, // Thickness of the line
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         "Size",
                         style: TextStyle(
@@ -157,17 +155,17 @@ class AddToCartView extends GetView<AddToCartController> {
                           // fontWeight: FontWeight.w800,
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       ProductDetailSize(
                         sizeList: addToCartData["size"] ?? [""],
                         //  sizeList: controller_two.sizeList,
                       ),
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         color: AppColors.lightSilver, // Color of the line
                         thickness: 5, // Thickness of the line
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       // POINTER TO BE ADDED
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -182,12 +180,12 @@ class AddToCartView extends GetView<AddToCartController> {
                           ProductDetailQuantity(),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Divider(
+                      const SizedBox(height: 10),
+                      const Divider(
                         color: AppColors.lightSilver, // Color of the line
                         thickness: 5, // Thickness of the line
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       GestureDetector(
                         onTap: () {
                           // final String cartId = UniqueKey().toString();
@@ -217,7 +215,7 @@ class AddToCartView extends GetView<AddToCartController> {
                               // sizeList: controller_two.sizeList,
                               ));
                         },
-                        child: LargeButtonReusable(
+                        child: const LargeButtonReusable(
                           title: "Add to Cart",
                           width: double.infinity,
                           color: Colors.redAccent,
@@ -231,7 +229,7 @@ class AddToCartView extends GetView<AddToCartController> {
           },
         );
       },
-      child: LargeButtonReusable(
+      child: const LargeButtonReusable(
         title: "Add to Cart",
         width: 150,
         color: Colors.redAccent,

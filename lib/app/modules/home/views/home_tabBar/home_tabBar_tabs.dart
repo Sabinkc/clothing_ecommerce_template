@@ -35,7 +35,12 @@ class HomeTabBarTabs extends StatelessWidget {
           ),
           itemBuilder: (BuildContext context, index) {
             var product = selectedProducts[index];
-
+            Map colorMap = product["color"];
+            List imageUrls = colorMap.entries.first
+                .value; // Gets the list of images for the first color
+            String imageUrl = imageUrls.isNotEmpty
+                ? imageUrls[0]
+                : ''; // First image URL of the first color
             return Container(
               decoration: BoxDecoration(
                 border: Border.all(color: AppColors.silverBorder, width: 5),
@@ -64,7 +69,7 @@ class HomeTabBarTabs extends StatelessWidget {
                             //     product["description"] ?? "NO DESCRIPTION",
                             // productColors: productColors,
 
-                            data: product,
+                            data: product ?? {},
                             // attributesdata: products,
                             // product["color"],
                             // productColors: productColors,
@@ -75,7 +80,7 @@ class HomeTabBarTabs extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: NetworkImage(
-                                'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png'), // Replace with actual image URL
+                                imageUrl), // Replace with actual image URL
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -90,7 +95,7 @@ class HomeTabBarTabs extends StatelessWidget {
                     ),
                     SizedBox(height: 5),
                     Text(
-                      "Rs. ${product["price"]}",
+                      "Rs. ${product["price"] ?? ""}",
                       style: TextStyle(
                         fontSize: TextSize.small,
                         fontWeight: FontWeight.bold,

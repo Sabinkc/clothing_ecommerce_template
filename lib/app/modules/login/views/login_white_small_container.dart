@@ -68,6 +68,7 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                       valueCheckBox: controller.isSelected.value,
                     ),
                   ),
+                  SizedBox(width: 5),
                   Text(
                     "Remember me",
                     style: TextStyle(
