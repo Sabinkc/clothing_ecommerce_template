@@ -33,6 +33,10 @@ class ProductDetailView extends GetView<ProductDetailController> {
   Widget build(BuildContext context) {
     var titleShow = controller.detailViewProductTitleShow;
     var descriptionShow = controller.detailViewProductDescShow;
+    Map attributes = data["attributes"] ?? {};
+    List size = data["size"] ?? [];
+    List reviewdata = data["reviews"] ?? [];
+    Map colordata = data["color"] ?? {};
 
     return Scaffold(
       appBar: AppBar(
@@ -76,7 +80,13 @@ class ProductDetailView extends GetView<ProductDetailController> {
               SizedBox(height: 20),
               // CarouselSliderReusable(imgList: imgList),
               CustomClickableContainer(
-                coloredImgUrl: data["color"],
+                coloredImgUrl: colordata.isNotEmpty
+                    ? data["color"]
+                    : {
+                        0x00000000: [
+                          'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                        ],
+                      },
               ),
               SizedBox(height: 15),
               Padding(
@@ -158,7 +168,13 @@ class ProductDetailView extends GetView<ProductDetailController> {
                     ),
                     SizedBox(height: 10),
                     ProductDetailCircularColoredContainer(
-                      colorList: data["color"],
+                      colorList: colordata.isNotEmpty
+                          ? data["color"]
+                          : {
+                              0x00000000: [
+                                'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                              ],
+                            },
                     ),
                     SizedBox(height: 10),
                     Text(
@@ -169,9 +185,11 @@ class ProductDetailView extends GetView<ProductDetailController> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    ProductDetailSize(
-                      sizeList: data["size"] ?? [""],
-                    ),
+                    size.isNotEmpty
+                        ? ProductDetailSize(
+                            sizeList: data["size"],
+                          )
+                        : SizedBox(),
                     SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -227,25 +245,30 @@ class ProductDetailView extends GetView<ProductDetailController> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    ProductDetailAttributes(
-                      attributes: data["attributes"] ?? "",
-                    ),
+                    attributes.isNotEmpty
+                        ? ProductDetailAttributes(
+                            attributes: data["attributes"])
+                        : SizedBox(),
                     Divider(
                       color: AppColors.lightSilver, // Color of the line
                       thickness: 5, // Thickness of the line
                     ),
                     SizedBox(height: 10),
                     GestureDetector(
-                      onTap: () {
-                        Get.to(ProductDetailReview(
-                          reviews: data["reviews"] ?? "",
-                        ));
-                      },
-                      child: ProductDetailViewReusableRow(
-                        title: "Reviews",
-                        icons: Icon(Icons.reviews),
-                      ),
-                    ),
+                        onTap: () {
+                          Get.to(
+                            ProductDetailReview(reviews: reviewdata
+                                // ??
+                                //     [
+                                //       {"review": "Review is empty"},
+                                //     ],
+                                ),
+                          );
+                        },
+                        child: ProductDetailViewReusableRow(
+                          title: "Reviews",
+                          icons: Icon(Icons.reviews),
+                        )),
                     Divider(
                       color: AppColors.lightSilver, // Color of the line
                       thickness: 5, // Thickness of the line

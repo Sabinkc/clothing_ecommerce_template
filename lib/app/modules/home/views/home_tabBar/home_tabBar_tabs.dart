@@ -35,12 +35,16 @@ class HomeTabBarTabs extends StatelessWidget {
           ),
           itemBuilder: (BuildContext context, index) {
             var product = selectedProducts[index];
-            Map colorMap = product["color"];
-            List imageUrls = colorMap.entries.first
-                .value; // Gets the list of images for the first color
-            String imageUrl = imageUrls.isNotEmpty
-                ? imageUrls[0]
-                : ''; // First image URL of the first color
+            Map colorMap = product["color"] ?? {};
+            List imageUrls = colorMap.isNotEmpty
+                ? colorMap.entries.first.value
+                : [
+                    'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                  ]; // Gets the list of images for the first color
+            String imageUrl = imageUrls[0];
+            // imageUrls.isNotEmpty
+            // ? imageUrls[0]
+            // : 'https://static-00.iconduck.com/assets.00/no-image-icon-512x512-lfoanl0w.png'; // First image URL of the first color
             return Container(
               decoration: BoxDecoration(
                 border: Border.all(color: AppColors.silverBorder, width: 5),
@@ -56,24 +60,31 @@ class HomeTabBarTabs extends StatelessWidget {
                         // var productColors = (product["color"] as List<dynamic>)
                         //     .map((e) => e as int)
                         //     .toList();
-                        var reviews = product["reviews"] as List<dynamic>;
-                        var firstReview =
-                            reviews.isNotEmpty ? reviews[0] : null;
-                        Map images = product["color"];
+                        // var reviews = product["reviews"];
+                        // var firstReview =
+                        //     reviews.isNotEmpty ? reviews[0] : null;
+                        Map imageStore = product["color"] ?? {};
+                        Map images = imageStore.isNotEmpty
+                            ? product["color"]
+                            : {
+                                0x00000000: [
+                                  'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                                ],
+                              };
                         List test = images.entries.first.value;
                         controller_product.selectedImages.assignAll(test);
                         Get.to(
                           ProductDetailView(
-                            // title: product["title"] ?? "NO TITLE",
-                            // description:
-                            //     product["description"] ?? "NO DESCRIPTION",
-                            // productColors: productColors,
+                              // title: product["title"] ?? "NO TITLE",
+                              // description:
+                              //     product["description"] ?? "NO DESCRIPTION",
+                              // productColors: productColors,
 
-                            data: product ?? {},
-                            // attributesdata: products,
-                            // product["color"],
-                            // productColors: productColors,
-                          ),
+                              data: product
+                              // attributesdata: products,
+                              // product["color"],
+                              // productColors: productColors,
+                              ),
                         );
                       },
                       child: Container(

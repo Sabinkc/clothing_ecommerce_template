@@ -188,11 +188,35 @@ class AddToCartView extends GetView<AddToCartController> {
                       const SizedBox(height: 10),
                       GestureDetector(
                         onTap: () {
-                          // final String cartId = UniqueKey().toString();
+                          if (controller_productDetail.selectedColor.value ==
+                              0) {
+                            Get.snackbar(
+                              'Selection Error',
+                              'Please select a color.',
+                              snackPosition: SnackPosition.BOTTOM,
+                              backgroundColor: Colors.redAccent,
+                              colorText: Colors.white,
+                            );
+                            return;
+                          }
+
+                          if (controller_productDetail
+                              .selectedSize.value.isEmpty) {
+                            Get.snackbar(
+                              'Selection Error',
+                              'Please select a size.',
+                              snackPosition: SnackPosition.BOTTOM,
+                              backgroundColor: Colors.redAccent,
+                              colorText: Colors.white,
+                            );
+                            return;
+                          }
+
+                          final String cartId = UniqueKey().toString();
                           controller.cartProducts.add(
                             {
                               "title": addToCartData["title"],
-                              "cartId": UniqueKey().toString(),
+                              "cartId": cartId,
                               "price": addToCartData["price"],
                               "discount": addToCartData["discount"],
                               "realprice": addToCartData["realprice"],
@@ -208,6 +232,8 @@ class AddToCartView extends GetView<AddToCartController> {
                                   controller_productDetail.selectedColor.value,
                             },
                           );
+                          // controller.selectedProducts.add(cartId);
+                          controller.toggleSelected(cartId);
                           Get.to(AddedCart(
                               // addedCartData: addToCartData,
 

@@ -6,9 +6,7 @@ import 'package:get/get.dart';
 import '../../../constants/text_size.dart';
 import 'ProductDetailViewReusableRow.dart';
 
-
 class ProductDetailAttributes extends StatelessWidget {
-
   final Map attributes;
   ProductDetailAttributes({super.key, required this.attributes});
 
@@ -32,7 +30,7 @@ class ProductDetailAttributes extends StatelessWidget {
                     SizedBox(height: 10),
                     Center(
                       child: Text(
-                        'Specifications',
+                        'Attributes',
                         style: TextStyle(
                             fontSize: TextSize.normal,
                             fontWeight: FontWeight.w700),
@@ -122,8 +120,8 @@ class ProductDetailAttributes extends StatelessWidget {
         );
       },
       child: ProductDetailViewReusableRow(
-        title: "Specifications",
-        icons: Icon(Icons.memory),
+        title: "Attributes",
+        icons: Icon(Icons.checkroom),
       ),
     );
   }

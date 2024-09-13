@@ -10,10 +10,10 @@ class ProductDetailController extends GetxController {
   var sizeIndex = 0.obs; //["S","M","L","XL","XXL"]
   var quantityIndex = 1.obs; //["+1,2,3,4"]
   var selectedSize = "".obs;
- 
 
   void updateSelectedColor(int color, List<String> images) {
     selectedColor.value = color;
+    // (color != 0) ? color : 0xffFF0000;
     selectedImages.assignAll(images);
   }
   //TODO: Implement ProductDetailController

@@ -64,6 +64,7 @@ class AddedCart extends StatelessWidget {
                             onChanged: (bool? value) {
                               controller.toggleSelected(item["cartId"]);
                               controller.quantityIndex.value;
+                            
                             },
                           ),
 
