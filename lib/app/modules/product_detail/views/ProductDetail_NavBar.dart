@@ -1,6 +1,8 @@
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
+import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
+import 'package:d_and_s/app/modules/favourites/views/favourites_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
@@ -9,6 +11,7 @@ import '../controllers/product_detail_controller.dart';
 class ProductDetailNavBar extends StatelessWidget {
   final controller = Get.put(AddToCartController());
   final controller_productDetail = Get.put(ProductDetailController());
+  final controller_favorites = Get.put(FavouritesController());
   final Map navBarData;
   ProductDetailNavBar({
     super.key,
@@ -32,7 +35,51 @@ class ProductDetailNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(Icons.favorite),
+          GestureDetector(
+            onTap: () {
+              if (controller_productDetail.selectedColor.value == 0) {
+                Get.snackbar(
+                  'Selection Error',
+                  'Please select a color.',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.redAccent,
+                  colorText: Colors.white,
+                );
+                return;
+              }
+
+              if (controller_productDetail.selectedSize.value.isEmpty) {
+                Get.snackbar(
+                  'Selection Error',
+                  'Please select a size.',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.redAccent,
+                  colorText: Colors.white,
+                );
+                return;
+              }
+
+              final String cartId = UniqueKey().toString();
+              controller_favorites.favouritesList.add({
+                "title": navBarData["title"],
+                "cartId": cartId,
+                "price": navBarData["price"],
+                "discount": navBarData["discount"],
+                "realprice": navBarData["realprice"],
+                "size": controller_productDetail.selectedSize.value,
+                "quantity": controller_productDetail.quantityIndex.value,
+                "image": controller_productDetail.selectedImages[
+                    controller_productDetail
+                        .detailViewProductCustomClickableContainer.value],
+                "color": controller_productDetail.selectedColor.value,
+              });
+              Get.to(FavouritesView());
+            },
+            child: Icon(
+              Icons.favorite,
+              color: Colors.green,
+            ),
+          ),
           // Price Section
           GestureDetector(
             onTap: () {

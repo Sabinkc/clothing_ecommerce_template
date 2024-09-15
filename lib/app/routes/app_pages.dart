@@ -4,6 +4,8 @@ import '../modules/add_to_cart/bindings/add_to_cart_binding.dart';
 import '../modules/add_to_cart/views/add_to_cart_view.dart';
 import '../modules/bottom_navigation/bindings/bottom_navigation_binding.dart';
 import '../modules/bottom_navigation/views/bottom_navigation_view.dart';
+import '../modules/favourites/bindings/favourites_binding.dart';
+import '../modules/favourites/views/favourites_view.dart';
 import '../modules/forgot_password/bindings/forgot_password_binding.dart';
 import '../modules/forgot_password/views/forgot_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -64,8 +66,15 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.ADD_TO_CART,
-      page: () =>  AddToCartView(addToCartData: {},),
+      page: () => AddToCartView(
+        addToCartData: {},
+      ),
       binding: AddToCartBinding(),
+    ),
+    GetPage(
+      name: _Paths.FAVOURITES,
+      page: () => FavouritesView(),
+      binding: FavouritesBinding(),
     ),
   ];
 }

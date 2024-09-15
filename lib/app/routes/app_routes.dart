@@ -11,6 +11,7 @@ abstract class Routes {
   static const BOTTOM_NAVIGATION = _Paths.BOTTOM_NAVIGATION;
   static const PRODUCT_DETAIL = _Paths.PRODUCT_DETAIL;
   static const ADD_TO_CART = _Paths.ADD_TO_CART;
+  static const FAVOURITES = _Paths.FAVOURITES;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const BOTTOM_NAVIGATION = '/bottom-navigation';
   static const PRODUCT_DETAIL = '/product-detail';
   static const ADD_TO_CART = '/add-to-cart';
+  static const FAVOURITES = '/favourites';
 }
