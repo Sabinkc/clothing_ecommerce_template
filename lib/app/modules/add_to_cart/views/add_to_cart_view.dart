@@ -98,28 +98,27 @@ class AddToCartView extends GetView<AddToCartController> {
                                   ),
                                 ),
                                 const SizedBox(width: 10),
-                                if (addToCartData["discount"] != null &&
-                                    addToCartData["discount"].isNotEmpty)
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      border:
-                                          Border.all(color: Colors.redAccent),
-                                      // color: Colors.redAccent,
-                                      borderRadius: BorderRadius.circular(8),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(2.0),
-                                      child: Text(
-                                        addToCartData["discount"],
-                                        // priceDetails["discount"] ?? " -100% ",
-                                        style: TextStyle(
-                                          fontSize: TextSize.small,
-                                          color: Colors.redAccent,
-                                          fontWeight: FontWeight.w900,
-                                        ),
+                                // if (addToCartData["discount"] != null &&
+                                //     addToCartData["discount"].isNotEmpty)
+                                Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.redAccent),
+                                    // color: Colors.redAccent,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(2.0),
+                                    child: Text(
+                                      "${addToCartData["discount"]}",
+                                      // priceDetails["discount"] ?? " -100% ",
+                                      style: TextStyle(
+                                        fontSize: TextSize.small,
+                                        color: Colors.redAccent,
+                                        fontWeight: FontWeight.w900,
                                       ),
                                     ),
                                   ),
+                                ),
                               ],
                             ),
                           ],
@@ -188,6 +187,7 @@ class AddToCartView extends GetView<AddToCartController> {
                       const SizedBox(height: 10),
                       GestureDetector(
                         onTap: () {
+
                           if (controller_productDetail.selectedColor.value ==
                               0) {
                             Get.snackbar(

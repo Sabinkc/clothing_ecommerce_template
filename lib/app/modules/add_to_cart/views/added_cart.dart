@@ -32,7 +32,7 @@ class AddedCart extends StatelessWidget {
                   controller.selectedProducts.contains(item["cartId"]));
               controller.selectedProducts
                   .clear(); // Clear the selected products after deletion
-              controller.calculateTotalPrice();
+              controller.calculateTotalPrice("cart");
             },
           ),
         ],
@@ -64,7 +64,6 @@ class AddedCart extends StatelessWidget {
                             onChanged: (bool? value) {
                               controller.toggleSelected(item["cartId"]);
                               controller.quantityIndex.value;
-                            
                             },
                           ),
 
@@ -198,7 +197,7 @@ class AddedCart extends StatelessWidget {
       }),
       bottomNavigationBar: Obx(
         () => AddToCartNavBar(
-          price: "${controller.totalPrice.value}",
+          price: "${controller.calculateTotalPrice("cart")}",
         ),
       ),
     );

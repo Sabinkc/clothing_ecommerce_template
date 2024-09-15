@@ -4,6 +4,7 @@ class AddToCartController extends GetxController {
   RxList cartProducts = [].obs;
   RxList selectedProducts = [].obs;
   RxList checkoutList = [].obs;
+
   // var isSelected = controller.selectedProducts.contains(item["cartId"]).obs;
   // void toogleSelected(){
   //   if (valueCheckBox == true) {
@@ -27,14 +28,32 @@ class AddToCartController extends GetxController {
     }
   }
 
-  void calculateTotalPrice() {
+  void calculateBuyNow() {
     num total = 0;
-    for (var product in cartProducts) {
-      if (selectedProducts.contains(product["cartId"])) {
-        total += (product["price"] * product["quantity"]);
-      }
+    for (var buy in checkoutList) {
+      total += buy["price"] * buy["quantity"];
     }
     totalPrice.value = total.toInt();
+  }
+
+  int calculateTotalPrice(String test) {
+    num total = 0;
+    if (test == "cart") {
+      for (var product in cartProducts) {
+        if (selectedProducts.contains(product["cartId"])) {
+          total += (product["price"] * product["quantity"]);
+        }
+      }
+      totalPrice.value = total.toInt();
+      return total.toInt();
+    } else if (test == "buy") {
+      for (var buy in checkoutList) {
+        total += buy["price"] * buy["quantity"];
+      }
+      totalPrice.value = total.toInt();
+      return total.toInt();
+    }
+    return 0;
   }
 
   void toggleSelected(String cartId) {
@@ -43,7 +62,7 @@ class AddToCartController extends GetxController {
     } else {
       selectedProducts.add(cartId);
     }
-    calculateTotalPrice();
+    calculateTotalPrice("cart");
   }
 
   var quantityIndex = 1.obs;
@@ -55,7 +74,7 @@ class AddToCartController extends GetxController {
       }
     }
     cartProducts.refresh();
-    calculateTotalPrice();
+    calculateTotalPrice("cart");
   }
 
   void decrementQuantity(String cartId) {
@@ -65,7 +84,7 @@ class AddToCartController extends GetxController {
       }
     }
     cartProducts.refresh();
-    calculateTotalPrice();
+    calculateTotalPrice("cart");
   }
 
   @override

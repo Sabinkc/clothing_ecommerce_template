@@ -143,7 +143,11 @@ class AddToCartCheckout extends StatelessWidget {
                 ),
                 AddToCartReceipt(),
                 const SizedBox(height: 20),
-                const LargeButtonReusable(title: "Place Order"),
+                GestureDetector(
+                    onTap: () {
+                      // controller.totalPrice.value = 0;
+                    },
+                    child: const LargeButtonReusable(title: "Place Order")),
               ],
             ),
           ),

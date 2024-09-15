@@ -4,7 +4,7 @@ final Map products = {
       "name": "Luxury Watch",
       "price": 50000,
       "realprice": 55000,
-      "discount": "-10%",
+      "discount": 10,
       "title": "Luxury Watch with Stainless Steel Band",
       "description":
           "This luxury watch comes with a stainless steel band and water resistance. It offers both style and functionality with a chronograph display and a durable sapphire crystal.",
@@ -47,7 +47,7 @@ final Map products = {
       "name": "Sports Watch",
       "price": 2000,
       "realprice": 2500,
-      "discount": "-20%",
+      "discount": 20,
       "title": "Durable Sports Watch with Rubber Strap",
       "description":
           "A sports watch designed for an active lifestyle. It is shock-resistant, lightweight, and offers multiple fitness tracking features.",
@@ -99,7 +99,7 @@ final Map products = {
       "name": "Formal Shirt",
       "price": 1500,
       "realprice": 2000,
-      "discount": "-25%",
+      "discount": 10,
       "title": "Men's Classic Fit Formal Shirt",
       "description":
           "A classic fit formal shirt made from high-quality cotton, perfect for professional or formal occasions.",
@@ -139,7 +139,7 @@ final Map products = {
       "name": "Leather Jeans",
       "price": 1000,
       "realprice": 1200,
-      "discount": "-11%",
+      "discount": 10,
       "title": "Genuine Leather Travel Bag",
       "description":
           "This premium leather Jeans offers durability and ample space, perfect for weekend getaways or business trips.",
@@ -178,7 +178,7 @@ final Map products = {
       "name": "Air Force",
       "price": 8000,
       "realprice": 9000,
-      "discount": "-11%",
+      "discount": 10,
       "title": "Air Force",
       "description":
           "This premium leather travel Air Force offers durability and ample space, perfect for weekend getaways or business trips.",
@@ -216,7 +216,7 @@ final Map products = {
       "name": "Leather Bags",
       "price": 8000,
       "realprice": 9000,
-      "discount": "-11%",
+      "discount": 10,
       "title": "Bag",
       "description":
           "This premium leather travel Air Force offers durability and ample space, perfect for weekend getaways or business trips.",

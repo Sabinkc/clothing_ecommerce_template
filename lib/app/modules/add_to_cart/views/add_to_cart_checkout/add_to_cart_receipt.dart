@@ -1,4 +1,6 @@
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/DottedLine.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,115 +13,93 @@ class AddToCartReceipt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5,
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.grey.shade300),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Center(
-                child: Text(
-                  "Receipt",
-                  style: TextStyle(
-                    fontSize: 20, // Increased font size for header
-                    // fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(
-                  height: 20), // Adds spacing between header and content
-              AddToCartReceiptRow(
-                title: "Amount",
-                subtitle: "Rs ${controller.totalPrice.value}",
-                icon: const Icon(
-                  Icons.attach_money,
-                  color: Colors.grey,
-                ), // Money icon for amount
-              ),
-              const AddToCartReceiptRow(
-                title: "Shipping Charge",
-                subtitle: "Rs. 100",
-                icon: Icon(
-                  Icons.local_shipping,
-                  color: Colors.grey,
-                ), // Shipping icon
-              ),
-              AddToCartReceiptRow(
-                title: "Total Amount",
-                subtitle: "Rs ${controller.totalPrice.value + 100}",
-                isTotal: true,
-                icon: const Icon(
-                  Icons.calculate,
-                  color: Colors.grey,
-                ), // Calculation icon for total
-              ),
-              const Divider(
-                  height: 30, color: Colors.grey), // Adds a divider line
-              const Center(
-                child: Text(
-                  "Info",
-                  style: TextStyle(
-                    fontSize: 20, // Increased font size for header
-                    // fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const AddToCartReceiptRow(
-                title: "User Name",
-                subtitle: "Aman Shrestha",
-                icon: Icon(
-                  Icons.person,
-                  color: Colors.grey,
-                ), // Person icon for user name
-              ),
-              const AddToCartReceiptRow(
-                title: "Contact Details",
-                subtitle: "+977-9812345678",
-                icon: Icon(
-                  Icons.phone,
-                  color: Colors.grey,
-                ), // Phone icon for contact details
-              ),
-              const AddToCartReceiptRow(
-                title: "Location",
-                subtitle: "Kuleshwor, Kathmandu",
-                icon: Icon(
-                  Icons.location_on,
-                  color: Colors.grey,
-                ), // Location pin icon
-              ),
-              const Divider(
-                  height: 30, color: Colors.grey), // Adds a divider line
-              const Center(
-                child: Text(
-                  "Payment",
-                  style: TextStyle(
-                    fontSize: 20, // Increased font size for header
-                    // fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const AddToCartReceiptRow(
-                title: "Cash On Delivery",
-                subtitle: "Aman Shrestha",
-                icon: Icon(
-                  Icons.person,
-                  color: Colors.grey,
-                ), // Person icon for user name
-              ),
-            ],
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        AddToCartTitleRow(
+          title: "Receipt",
+          icon: Icon(
+            Icons.receipt,
+            color: Colors.green,
           ),
         ),
-      ),
+        const SizedBox(height: 20), // Adds spacing between header and content
+        AddToCartReceiptRow(
+          title: "Amount",
+          subtitle: "Rs ${controller.totalPrice.value}",
+          icon: const Icon(
+            Icons.attach_money,
+            color: Colors.grey,
+          ), // Money icon for amount
+        ),
+        const AddToCartReceiptRow(
+          title: "Shipping Charge",
+          subtitle: "Rs. 100",
+          icon: Icon(
+            Icons.local_shipping,
+            color: Colors.grey,
+          ), // Shipping icon
+        ),
+        AddToCartReceiptRow(
+          title: "Total Amount",
+          subtitle: "Rs ${controller.totalPrice.value + 100}",
+          isTotal: true,
+          icon: const Icon(
+            Icons.calculate,
+            // color: Colors.green,
+          ), // Calculation icon for total
+        ),
+        DottedLine(),
+        AddToCartTitleRow(
+          title: "Info",
+          icon: Icon(
+            Icons.info,
+            color: Colors.blue,
+          ),
+        ),
+        const SizedBox(height: 20),
+        const AddToCartReceiptRow(
+          title: "User Name",
+          subtitle: "Aman Shrestha",
+          icon: Icon(
+            Icons.person,
+            color: Colors.grey,
+          ), // Person icon for user name
+        ),
+        const AddToCartReceiptRow(
+          title: "Contact Details",
+          subtitle: "+977-9812345678",
+          icon: Icon(
+            Icons.phone,
+            color: Colors.grey,
+          ), // Phone icon for contact details
+        ),
+        const AddToCartReceiptRow(
+          title: "Location",
+          subtitle: "Kuleshwor, Kathmandu",
+          icon: Icon(
+            Icons.location_on,
+            color: Colors.grey,
+          ), // Location pin icon
+        ),
+        DottedLine(),
+        AddToCartTitleRow(
+          title: "Payment",
+          icon: Icon(
+            Icons.payment,
+            color: Colors.green,
+          ),
+        ),
+        const SizedBox(height: 20),
+        const AddToCartReceiptRow(
+          title: "Cash On Delivery",
+          subtitle: "Aman Shrestha",
+          icon: Icon(
+            Icons.person,
+            color: Colors.grey,
+          ), // Person icon for user name
+        ),
+      ],
     );
   }
 }
@@ -149,7 +129,7 @@ class AddToCartReceiptRow extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-              fontSize: 16,
+              fontSize: TextSize.small,
               fontWeight:
                   isTotal ? FontWeight.bold : FontWeight.w100, // Bold for total
               color: isTotal
@@ -160,8 +140,9 @@ class AddToCartReceiptRow extends StatelessWidget {
           const Spacer(),
           Text(
             subtitle,
+            // overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              fontSize: 16,
+              fontSize: TextSize.small,
               fontWeight: isTotal ? FontWeight.bold : FontWeight.normal,
               color: isTotal
                   ? Colors.redAccent
@@ -170,6 +151,30 @@ class AddToCartReceiptRow extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class AddToCartTitleRow extends StatelessWidget {
+  final String title;
+  final Icon icon;
+  AddToCartTitleRow({super.key, required this.title, required this.icon});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        icon,
+        SizedBox(width: 10),
+        Text(
+          title,
+          style: TextStyle(
+            fontSize: 15, // Increased font size for header
+            // fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
     );
   }
 }

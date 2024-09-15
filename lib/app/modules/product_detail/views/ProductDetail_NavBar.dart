@@ -1,15 +1,14 @@
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
+import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../constants/colors.dart';
-import '../../../constants/text_size.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
+import '../controllers/product_detail_controller.dart';
 
 class ProductDetailNavBar extends StatelessWidget {
   final controller = Get.put(AddToCartController());
+  final controller_productDetail = Get.put(ProductDetailController());
   final Map navBarData;
   ProductDetailNavBar({
     super.key,
@@ -35,10 +34,56 @@ class ProductDetailNavBar extends StatelessWidget {
         children: [
           Icon(Icons.favorite),
           // Price Section
-          LargeButtonReusable(
-            title: "Buy Now",
-            width: 150,
-            color: Colors.orange,
+          GestureDetector(
+            onTap: () {
+              if (controller_productDetail.selectedColor.value == 0) {
+                Get.snackbar(
+                  'Selection Error',
+                  'Please select a color.',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.redAccent,
+                  colorText: Colors.white,
+                );
+                return;
+              }
+
+              if (controller_productDetail.selectedSize.value.isEmpty) {
+                Get.snackbar(
+                  'Selection Error',
+                  'Please select a size.',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.redAccent,
+                  colorText: Colors.white,
+                );
+                return;
+              }
+
+              final String cartId = UniqueKey().toString();
+              controller.checkoutList.clear();
+
+              controller.checkoutList.add(
+                {
+                  "title": navBarData["title"],
+                  "cartId": cartId,
+                  "price": navBarData["price"],
+                  "discount": navBarData["discount"],
+                  "realprice": navBarData["realprice"],
+                  "size": controller_productDetail.selectedSize.value,
+                  "quantity": controller_productDetail.quantityIndex.value,
+                  "image": controller_productDetail.selectedImages[
+                      controller_productDetail
+                          .detailViewProductCustomClickableContainer.value],
+                  "color": controller_productDetail.selectedColor.value,
+                },
+              );
+              controller.calculateTotalPrice("buy");
+              Get.to(AddToCartCheckout());
+            },
+            child: LargeButtonReusable(
+              title: "Buy Now",
+              width: 150,
+              color: Colors.orange,
+            ),
           ),
           // SizedBox(width: 20),
 
