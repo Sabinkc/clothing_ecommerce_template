@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
+import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/views/home_grid_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_tabBar/home_custom_tab.dart';
 import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar.dart';
@@ -45,6 +46,7 @@ class HomeView extends GetView<HomeController> {
     "Contact"
   ];
   final controller_addToCart = Get.put(AddToCartController());
+  final controller_favorite = Get.put(FavouritesController());
   HomeView({Key? key}) : super(key: key);
 
   @override

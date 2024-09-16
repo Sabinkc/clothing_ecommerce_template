@@ -211,6 +211,7 @@ class AddToCartView extends GetView<AddToCartController> {
                             );
                             return;
                           }
+                          
 
                           final String cartId = UniqueKey().toString();
                           controller.cartProducts.add(

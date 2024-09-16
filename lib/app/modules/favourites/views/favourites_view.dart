@@ -10,7 +10,7 @@ import '../../../constants/text_size.dart';
 import '../../home/views/home_tabBar/home_tabBar_tabs.dart';
 import '../controllers/favourites_controller.dart';
 
-class FavouritesView extends GetView<FavouritesController> {
+class FavouritesView extends StatelessWidget {
   final controller = Get.put(FavouritesController());
 
   FavouritesView({Key? key}) : super(key: key);
@@ -32,21 +32,26 @@ class FavouritesView extends GetView<FavouritesController> {
             child: Obx(
               () => Column(
                 children: [
-                  controller.favouritesList.isEmpty
-                      ? Container(
-                          height: 400,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/noFavorites.png"), // Use AssetImage instead of Image.asset
-                              fit: BoxFit
-                                  .cover, // Optional: Adjust image fit if necessary
+                  controller.favoritesList.isEmpty
+                      ? GestureDetector(
+                          onTap: () {
+                            print(controller.favoritesList);
+                          },
+                          child: Container(
+                            height: 400,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/noFavorites.png"), // Use AssetImage instead of Image.asset
+                                fit: BoxFit
+                                    .cover, // Optional: Adjust image fit if necessary
+                              ),
                             ),
                           ),
                         )
                       : Column(
-                          children: controller.favouritesList.map((item) {
+                          children: controller.favoritesList.map((item) {
                             return Container(
                               margin: const EdgeInsets.only(bottom: 15),
                               padding:
@@ -158,7 +163,7 @@ class FavouritesView extends GetView<FavouritesController> {
                                             const Spacer(),
                                             GestureDetector(
                                               onTap: () {
-                                                controller.favouritesList
+                                                controller.favoritesList
                                                     .removeWhere(
                                                   (element) =>
                                                       element["product_id"] ==

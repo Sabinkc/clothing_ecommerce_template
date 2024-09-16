@@ -19,7 +19,9 @@ import 'ProductDetail_NavBar.dart';
 import 'ProductDetail_Size.dart';
 import 'ProductDetails_Review.dart';
 
-class ProductDetailView extends GetView<ProductDetailController> {
+class ProductDetailView extends StatelessWidget{
+  final controller = Get.put(ProductDetailController());
+// GetView<ProductDetailController> {
   final search = TextEditingController();
   // final controller = Get.put(HomeController());
 

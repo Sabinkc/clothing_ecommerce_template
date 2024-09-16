@@ -37,7 +37,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         ),
         bottomNavigationBar: MoltenBottomNavigationBar(
           selectedIndex: _selectedIndex,
-          domeHeight: 25,
+          domeHeight: 0,
           // specify what will happen when a tab is clicked
           onTabChange: (clickedIndex) {
             setState(() {

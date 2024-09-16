@@ -37,20 +37,16 @@ class ProductDetailNavBar extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              final String cartId = UniqueKey().toString();
-              controller_favorites.favouritesList.add(navBarData);
-              Get.snackbar(
-                'Added To Favorites',
-                'Go To Favorites To View Products',
-                snackPosition: SnackPosition.BOTTOM,
-                backgroundColor: Colors.redAccent,
-                colorText: Colors.white,
-              );
-              Get.to(FavouritesView());
+              controller_favorites.searchProductId(
+                  navBarData["product_id"], navBarData);
             },
-            child: Icon(
-              Icons.favorite,
-              color: Colors.green,
+            child: Obx(
+              () => Icon(
+                controller_favorites.isFavorite(navBarData["product_id"])
+                    ? Icons.favorite
+                    : Icons.favorite_border,
+                color: Colors.green,
+              ),
             ),
           ),
           // Price Section
