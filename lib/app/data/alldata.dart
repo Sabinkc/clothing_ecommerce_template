@@ -1,6 +1,7 @@
 final Map products = {
   "Watches": [
     {
+      "product_id": "watch1",
       "name": "Luxury Watch",
       "price": 50000,
       "realprice": 55000,
@@ -8,20 +9,20 @@ final Map products = {
       "title": "Luxury Watch with Stainless Steel Band",
       "description":
           "This luxury watch comes with a stainless steel band and water resistance. It offers both style and functionality with a chronograph display and a durable sapphire crystal.",
-      // "color": {
-      //   0xffFF0000: [
-      //     "https://globalboutique.com/wp-content/uploads/2023/02/featured-colourful-rolex-oysters.jpg",
-      //     "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2016/06/20JM3136-Edit-3-1.jpg",
-      //   ],
-      //   0xff00FF00: [
-      //     "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2021/03/Screen-Shot-2021-03-09-at-2.32.49-PM-1.jpg",
-      //     "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2021/10/20JM9752-2-Edit-5-1.jpg",
-      //   ],
-      //   0xff0000FF: [
-      //     "https://uploads.nationaljeweler.com/uploads/0a09491fcc240c6e6ad5b1888084c3d7.jpg",
-      //     "https://5.imimg.com/data5/SELLER/Default/2022/4/HM/JD/NJ/144217163/rolex-submariner-date-wrist-watch-500x500.jpg",
-      //   ]
-      // },
+      "color": {
+        0xffFF0000: [
+          "https://globalboutique.com/wp-content/uploads/2023/02/featured-colourful-rolex-oysters.jpg",
+          "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2016/06/20JM3136-Edit-3-1.jpg",
+        ],
+        0xff00FF00: [
+          "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2021/03/Screen-Shot-2021-03-09-at-2.32.49-PM-1.jpg",
+          "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2021/10/20JM9752-2-Edit-5-1.jpg",
+        ],
+        0xff0000FF: [
+          "https://uploads.nationaljeweler.com/uploads/0a09491fcc240c6e6ad5b1888084c3d7.jpg",
+          "https://5.imimg.com/data5/SELLER/Default/2022/4/HM/JD/NJ/144217163/rolex-submariner-date-wrist-watch-500x500.jpg",
+        ]
+      },
       "size": ["S", "M", "L", "XL"],
       "reviews": [
         {
@@ -44,6 +45,7 @@ final Map products = {
       },
     },
     {
+      "product_id": "watch2",
       "name": "Sports Watch",
       "price": 2000,
       "realprice": 2500,
@@ -96,6 +98,7 @@ final Map products = {
   ],
   "Shirts": [
     {
+      "product_id": "shirts1",
       "name": "Formal Shirt",
       "price": 1500,
       "realprice": 2000,
@@ -136,6 +139,7 @@ final Map products = {
   ],
   "Jeans": [
     {
+      "product_id": "jeans1",
       "name": "Leather Jeans",
       "price": 1000,
       "realprice": 1200,
@@ -175,6 +179,7 @@ final Map products = {
   ],
   "Shoes": [
     {
+      "product_id": "shoes1",
       "name": "Air Force",
       "price": 8000,
       "realprice": 9000,
@@ -213,6 +218,7 @@ final Map products = {
   ],
   "Bags": [
     {
+      "product_id": "bags1",
       "name": "Leather Bags",
       "price": 8000,
       "realprice": 9000,

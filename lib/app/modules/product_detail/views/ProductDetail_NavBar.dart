@@ -37,42 +37,15 @@ class ProductDetailNavBar extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              if (controller_productDetail.selectedColor.value == 0) {
-                Get.snackbar(
-                  'Selection Error',
-                  'Please select a color.',
-                  snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.redAccent,
-                  colorText: Colors.white,
-                );
-                return;
-              }
-
-              if (controller_productDetail.selectedSize.value.isEmpty) {
-                Get.snackbar(
-                  'Selection Error',
-                  'Please select a size.',
-                  snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.redAccent,
-                  colorText: Colors.white,
-                );
-                return;
-              }
-
               final String cartId = UniqueKey().toString();
-              controller_favorites.favouritesList.add({
-                "title": navBarData["title"],
-                "cartId": cartId,
-                "price": navBarData["price"],
-                "discount": navBarData["discount"],
-                "realprice": navBarData["realprice"],
-                "size": controller_productDetail.selectedSize.value,
-                "quantity": controller_productDetail.quantityIndex.value,
-                "image": controller_productDetail.selectedImages[
-                    controller_productDetail
-                        .detailViewProductCustomClickableContainer.value],
-                "color": controller_productDetail.selectedColor.value,
-              });
+              controller_favorites.favouritesList.add(navBarData);
+              Get.snackbar(
+                'Added To Favorites',
+                'Go To Favorites To View Products',
+                snackPosition: SnackPosition.BOTTOM,
+                backgroundColor: Colors.redAccent,
+                colorText: Colors.white,
+              );
               Get.to(FavouritesView());
             },
             child: Icon(
