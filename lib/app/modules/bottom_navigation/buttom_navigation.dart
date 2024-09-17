@@ -1,5 +1,6 @@
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
+import 'package:d_and_s/app/modules/user_account/views/user_account_view.dart';
 import 'package:flutter/material.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 
@@ -17,9 +18,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       'Categories',
     ),
     AddedCart(),
-    Text(
-      'Index 2: School',
-    ),
+    UserAccountView(),
   ];
 
   @override

@@ -1,5 +1,3 @@
-
-
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -10,10 +8,11 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 
 import 'app/routes/app_pages.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Keep the splash screen up until initialization is complete
-  FlutterNativeSplash.preserve(widgetsBinding: WidgetsFlutterBinding.ensureInitialized());
+  FlutterNativeSplash.preserve(
+      widgetsBinding: WidgetsFlutterBinding.ensureInitialized());
 
   await Future.delayed(Duration(seconds: 5));
 
@@ -25,17 +24,17 @@ void main() async{
       enabled: !kReleaseMode,
       builder: (context) => ResponsiveSizer(
         builder: (context, orientation, screenType) {
-
           return MyApp(); // Your actual app
         },
       ),
     ),
   );
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
+    return GetMaterialApp(
       useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
@@ -46,7 +45,6 @@ class MyApp extends StatelessWidget {
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
-
     );
   }
 }
