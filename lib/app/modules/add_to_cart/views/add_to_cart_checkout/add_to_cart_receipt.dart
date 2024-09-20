@@ -19,7 +19,7 @@ class AddToCartReceipt extends StatelessWidget {
         AddToCartTitleRow(
           title: "Receipt",
           icon: Icon(
-            Icons.receipt,
+            Icons.receipt_outlined,
             color: Colors.green,
           ),
         ),
@@ -28,7 +28,7 @@ class AddToCartReceipt extends StatelessWidget {
           title: "Amount",
           subtitle: "Rs ${controller.totalPrice.value}",
           icon: const Icon(
-            Icons.attach_money,
+            Icons.attach_money_outlined,
             color: Colors.grey,
           ), // Money icon for amount
         ),
@@ -36,7 +36,7 @@ class AddToCartReceipt extends StatelessWidget {
           title: "Shipping Charge",
           subtitle: "Rs. 100",
           icon: Icon(
-            Icons.local_shipping,
+            Icons.local_shipping_outlined,
             color: Colors.grey,
           ), // Shipping icon
         ),
@@ -45,7 +45,7 @@ class AddToCartReceipt extends StatelessWidget {
           subtitle: "Rs ${controller.totalPrice.value + 100}",
           isTotal: true,
           icon: const Icon(
-            Icons.calculate,
+            Icons.calculate_outlined,
             // color: Colors.green,
           ), // Calculation icon for total
         ),
@@ -53,7 +53,7 @@ class AddToCartReceipt extends StatelessWidget {
         AddToCartTitleRow(
           title: "Info",
           icon: Icon(
-            Icons.info,
+            Icons.info_outline,
             color: Colors.blue,
           ),
         ),
@@ -62,7 +62,7 @@ class AddToCartReceipt extends StatelessWidget {
           title: "User Name",
           subtitle: "Aman Shrestha",
           icon: Icon(
-            Icons.person,
+            Icons.person_outline,
             color: Colors.grey,
           ), // Person icon for user name
         ),
@@ -70,7 +70,7 @@ class AddToCartReceipt extends StatelessWidget {
           title: "Contact Details",
           subtitle: "+977-9812345678",
           icon: Icon(
-            Icons.phone,
+            Icons.phone_outlined,
             color: Colors.grey,
           ), // Phone icon for contact details
         ),
@@ -78,7 +78,7 @@ class AddToCartReceipt extends StatelessWidget {
           title: "Location",
           subtitle: "Kuleshwor, Kathmandu",
           icon: Icon(
-            Icons.location_on,
+            Icons.location_on_outlined,
             color: Colors.grey,
           ), // Location pin icon
         ),
@@ -95,7 +95,7 @@ class AddToCartReceipt extends StatelessWidget {
           title: "Cash On Delivery",
           subtitle: "Aman Shrestha",
           icon: Icon(
-            Icons.person,
+            Icons.person_outline,
             color: Colors.grey,
           ), // Person icon for user name
         ),

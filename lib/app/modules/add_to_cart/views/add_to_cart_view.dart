@@ -57,7 +57,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                                   .detailViewProductCustomClickableContainer
                                                   .value],
                                         ),
-                                        fit: BoxFit.cover)),
+                                        fit: BoxFit.contain)),
                               ),
                             ),
                             const SizedBox(width: 20),
@@ -109,7 +109,7 @@ class AddToCartView extends GetView<AddToCartController> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(2.0),
                                     child: Text(
-                                      "${addToCartData["discount"]}",
+                                      "-${addToCartData["discount"]}%",
                                       // priceDetails["discount"] ?? " -100% ",
                                       style: TextStyle(
                                         fontSize: TextSize.small,
@@ -187,7 +187,6 @@ class AddToCartView extends GetView<AddToCartController> {
                       const SizedBox(height: 10),
                       GestureDetector(
                         onTap: () {
-
                           if (controller_productDetail.selectedColor.value ==
                               0) {
                             Get.snackbar(
@@ -211,7 +210,6 @@ class AddToCartView extends GetView<AddToCartController> {
                             );
                             return;
                           }
-                          
 
                           final String cartId = UniqueKey().toString();
                           controller.cartProducts.add(

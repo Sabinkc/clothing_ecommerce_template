@@ -2,8 +2,8 @@ name: d_and_s
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
-  sdk: '>=3.2.3 <4.0.0'
+environment:
+  sdk: ">=3.2.3 <4.0.0"
 
 dependencies:
   flutter:
@@ -17,27 +17,21 @@ dependencies:
   carousel_slider:
   molten_navigationbar_flutter:
   flutter_native_splash: ^2.2.4
+  icons_plus:
+  font_awesome_flutter: ^10.0.0
 
 flutter_native_splash:
-
   background_image: assets/images/splash_screen.png # Path to your splash screen image
   android: true # Generate splash screen for Android
   ios: true # Generate splash screen for iOS
   web: true # Generate splash screen for Web (optional)
 
-
-
-
-
 dev_dependencies:
-
-
   flutter_lints: ^2.0.0
-  flutter_test: 
+  flutter_test:
     sdk: flutter
 
-
-flutter: 
+flutter:
   uses-material-design: true
   assets:
     - assets/icons/
@@ -46,5 +40,3 @@ flutter:
     - family: Open_Sans
       fonts:
         - asset: assets/Open_Sans/static/OpenSans-Regular.ttf
-
-

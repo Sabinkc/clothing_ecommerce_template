@@ -25,7 +25,7 @@ class AddedCart extends StatelessWidget {
         centerTitle: false,
         actions: [
           IconButton(
-            icon: const Icon(Icons.delete),
+            icon: const Icon(Icons.delete_outline),
             onPressed: () {
               // Add delete action
               controller.cartProducts.removeWhere((item) =>
@@ -89,7 +89,7 @@ class AddedCart extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(16),
                                     image: DecorationImage(
                                       image: NetworkImage(item["image"]),
-                                      fit: BoxFit.cover,
+                                      fit: BoxFit.contain,
                                     ),
                                   ),
                                 ),

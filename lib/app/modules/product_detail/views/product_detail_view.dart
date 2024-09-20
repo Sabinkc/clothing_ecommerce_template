@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_quantity.dart';
@@ -5,11 +6,12 @@ import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart'
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
 import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
-import '../../home/controllers/home_controller.dart';
+
 import '../../reusable_widgets/CustomClickableContainer.dart';
 import 'ProductDetailViewReusableRow.dart';
 import '../controllers/product_detail_controller.dart';
@@ -19,8 +21,9 @@ import 'ProductDetail_NavBar.dart';
 import 'ProductDetail_Size.dart';
 import 'ProductDetails_Review.dart';
 
-class ProductDetailView extends StatelessWidget{
+class ProductDetailView extends StatelessWidget {
   final controller = Get.put(ProductDetailController());
+  final addToCartController = Get.put(AddToCartController());
 // GetView<ProductDetailController> {
   final search = TextEditingController();
   // final controller = Get.put(HomeController());
@@ -62,18 +65,52 @@ class ProductDetailView extends StatelessWidget{
             //     },
             //     child: Icon(Icons.arrow_back_ios)),
             actions: [
-              Padding(
-                padding: const EdgeInsets.only(right: 20),
-                child: GestureDetector(
-                    onTap: () {
-                      Get.to(AddedCart());
-                    },
-                    child: Icon(Icons.shopping_cart)),
+              GestureDetector(
+                onTap: () {
+                  Get.to(() => AddedCart());
+                },
+                child: Stack(
+                  children: [
+                    Container(
+                      height: 50,
+                      child: Icon(
+                        Icons.shopping_cart_outlined,
+                        size: 30,
+                        // color: Colors.grey,
+                      ),
+                    ),
+                    Obx(
+                      () => addToCartController.cartProducts.isEmpty
+                          ? SizedBox()
+                          : Positioned(
+                              // bottom: 25,
+                              top: 2,
+                              right: 0,
+                              // left: 10,
+                              child: Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.red.withOpacity(0.8)),
+                                child: Center(
+                                  child: Text(
+                                    addToCartController.cartProducts.length
+                                        .toString(),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                ),
+                              ),
+                            ),
+                    ),
+                  ],
+                ),
               ),
-              // Padding(
-              //   padding: const EdgeInsets.only(right: 10),
-              //   child: Icon(Icons.favorite),
-              // ),
+              SizedBox(
+                width: 20,
+              )
             ],
             centerTitle: false,
           ),
@@ -105,7 +142,7 @@ class ProductDetailView extends StatelessWidget{
                         ProductDetailPrice(priceDetails: data),
                         SizedBox(height: 10),
                         Text(
-                          "Category: Others",
+                          "Category: ${data["category"]}",
                           style: TextStyle(
                             fontSize: TextSize.small,
                             color: AppColors.silver,
@@ -275,7 +312,7 @@ class ProductDetailView extends StatelessWidget{
                             },
                             child: ProductDetailViewReusableRow(
                               title: "Reviews",
-                              icons: Icon(Icons.reviews),
+                              icons: Icon(Icons.keyboard_outlined),
                             )),
                         Divider(
                           color: AppColors.lightSilver, // Color of the line

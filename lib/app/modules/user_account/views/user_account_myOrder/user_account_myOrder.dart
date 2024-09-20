@@ -1,7 +1,7 @@
-import 'package:d_and_s/app/modules/login/views/login_view.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 
 import '../../../../constants/text_size.dart';
 

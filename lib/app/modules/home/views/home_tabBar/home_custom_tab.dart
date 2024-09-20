@@ -1,20 +1,17 @@
-import 'dart:ffi';
-
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
-import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeCustomTab extends StatelessWidget {
   final List<String> items_tabs = [
-    "Watches",
-    "Shirts",
-    "Bags",
-    "Jeans",
     "Shoes",
-    "Socks",
-    "More",
+    "Hoodie",
+    "Shirts",
+    "Jacket",
+    "Watches",
+    "Jeans",
   ];
   HomeCustomTab({super.key});
 

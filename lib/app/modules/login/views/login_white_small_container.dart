@@ -1,6 +1,6 @@
 import 'package:d_and_s/app/modules/bottom_navigation/buttom_navigation.dart';
 import 'package:d_and_s/app/modules/forgot_password/views/forgot_password_view.dart';
-import 'package:d_and_s/app/modules/home/views/home_view.dart';
+
 import 'package:d_and_s/app/modules/login/controllers/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

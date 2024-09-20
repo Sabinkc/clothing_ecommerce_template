@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
+
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

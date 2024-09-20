@@ -1,11 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/views/home_grid_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_tabBar/home_custom_tab.dart';
-import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar.dart';
-import 'package:d_and_s/app/modules/home/views/home_static_container.dart';
+
 import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
 
 import 'package:d_and_s/app/modules/reusable_widgets/AppBarMainPage.dart';
@@ -14,9 +11,8 @@ import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart'
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../../constants/colors.dart';
+import '../../../constants/text_size.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -26,12 +22,17 @@ class HomeView extends GetView<HomeController> {
   final homeViewController = Get.put(HomeController());
 
   final List<String> imgList = [
-    'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png',
-    'https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368f45b0888aeb0b7b08e3a1084d3ede&auto=format&fit=crop&w=1950&q=80',
-    'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=94a1e718d89ca60a6337a6008341ca50&auto=format&fit=crop&w=1950&q=80',
-    'https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89719a0d55dd05e2deae4120227e6efc&auto=format&fit=crop&w=1953&q=80',
-    'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
-    'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
+    'https://i.ytimg.com/vi/V4K5yuPEDRM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBHQaEbs51ZMV3juYqbYxy7KdcNUw',
+    'https://media.gq-magazine.co.uk/photos/651ea0cb82e72cdf38c1655f/master/pass/jackets.jpg',
+    'https://d-s-two.vercel.app/images/slide2.jpg',
+    'https://www.realmenrealstyle.com/wp-content/uploads/2023/08/How-To-Fold-A-Pocket-Square-9-Different-Ways.jpg',
+    // 'https://lscoecomm.scene7.com/is/image/lscoecomm/24_SEP_SELVEDGE_16_6?fmt=webp&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=4000',
+    // 'https://globalboutique.com/wp-content/uploads/2023/02/featured-colourful-rolex-oysters.jpg',
+    // 'https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png',
+    // 'https://sneakernews.com/wp-content/uploads/2022/10/Nike-Air-Force-1-Color-Of-The-Month-FD7039-600-8.jpg',
+    // 'https://cdn2.reikojeans.com/34583-large_default_mobile/flare-trouser-grace-color-red-clay.jpg',
+    // 'https://www.bobswatches.com/rolex-blog/wp-content/uploads/2016/06/20JM3136-Edit-3-1.jpg',
+    'https://images.unsplash.com/photo-1679487042326-d1b7aae83256?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   ];
   final List<String> tabLabels = [
     "Home",
@@ -51,7 +52,7 @@ class HomeView extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(HomeController());
+    // final controller = Get.put(HomeController());
     return DefaultTabController(
       initialIndex: 1,
       length: 3,
@@ -71,43 +72,52 @@ class HomeView extends GetView<HomeController> {
               return [
                 SliverToBoxAdapter(
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+                    padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        TextFormFieldReusable(
-                          hint: "What are you looking for?",
-                          icon: Icon(Icons.search),
-                          textEditingController: search,
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                          child: TextFormFieldReusable(
+                            hint: "What are you looking for?",
+                            icon: Icon(Icons.search),
+                            textEditingController: search,
+                          ),
                         ),
-                        SizedBox(height: 10),
+                        SizedBox(height: 20),
                         CarouselSliderReusable(imgList: imgList),
                         SizedBox(height: 20),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.category_outlined,
-                              color: Colors.red,
-                            ),
-                            SizedBox(width: 10),
-                            Text(
-                              "Categories",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w100,
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.category_outlined,
+                                color: Colors.red,
                               ),
-                            ),
-                          ],
+                              SizedBox(width: 10),
+                              Text(
+                                "Categories",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w100,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         SizedBox(height: 10),
-                        HomeGridView(),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                          child: HomeGridView(),
+                        ),
                         SizedBox(height: 10),
                       ],
                     ),
                   ),
                 ),
                 SliverAppBar(
-                  title: HomeCustomTab(),
+                  title: HomeSectionTabBar(),
                   floating: true,
                   pinned: true,
                 ),
@@ -116,6 +126,58 @@ class HomeView extends GetView<HomeController> {
             body: Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
               child: HomeTabBarTabs(),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class HomeSectionTabBar extends StatelessWidget {
+  final List<String> items_tabs = [
+    "Latest Product",
+    "New IN",
+    "Deals",
+    "Popular",
+    "Best Seller",
+  ];
+  HomeSectionTabBar({super.key});
+
+  final controller = Get.put(HomeController());
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+      child: Container(
+        height: 20,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          shrinkWrap: true,
+          itemCount: items_tabs.length,
+          itemBuilder: (BuildContext context, index) => Container(
+            child: Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Obx(
+                () => Container(
+                  child: GestureDetector(
+                    onTap: () {
+                      print(controller.index.value);
+                      controller.index.value = items_tabs[index];
+                    },
+                    child: Text(
+                      items_tabs[index],
+                      style: TextStyle(
+                        fontSize: TextSize.small,
+                        color: controller.index.value == items_tabs[index]
+                            ? Colors.red
+                            : Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
         ),

@@ -1,6 +1,6 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../constants/colors.dart';

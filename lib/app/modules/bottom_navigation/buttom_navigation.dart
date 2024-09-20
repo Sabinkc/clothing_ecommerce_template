@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
+import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_view.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +15,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomeView(),
-    Text(
-      'Categories',
-    ),
+    CategoryView(),
     AddedCart(),
     UserAccountView(),
   ];
@@ -46,22 +45,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
           // ansert as many tabs as you like
           tabs: [
             MoltenTab(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.home_outlined),
               // title: Text('home'),
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(
-              icon: Icon(Icons.category),
+              icon: Icon(Icons.category_outlined),
               // title: Text('cart'),
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(
-              icon: Icon(Icons.shopping_cart),
+              icon: Icon(Icons.shopping_cart_outlined),
               // title: Text('cart'),
               // selectedColor: Colors.yellow,
             ),
             MoltenTab(
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.person_outline),
               // selectedColor: Colors.yellow,
             ),
           ],

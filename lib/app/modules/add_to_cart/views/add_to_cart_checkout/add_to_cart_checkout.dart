@@ -50,7 +50,7 @@ class AddToCartCheckout extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(16),
                                 image: DecorationImage(
                                     image: NetworkImage(item["image"]),
-                                    fit: BoxFit.fill)
+                                    fit: BoxFit.contain)
                                 // color: Colors.amber
                                 // image: DecorationImage(
                                 //   image: NetworkImage(item["image"]),
@@ -111,7 +111,7 @@ class AddToCartCheckout extends StatelessWidget {
                                   ],
                                 ),
                                 // const SizedBox(height: 5),
-
+                                SizedBox(height: 10),
                                 // Color and Quantity Selector
                                 Row(
                                   children: [

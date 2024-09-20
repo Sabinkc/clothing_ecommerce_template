@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/constants/text_size.dart';
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_container.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_myOrder/user_account_myOrder.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_others/user_account_others.dart';

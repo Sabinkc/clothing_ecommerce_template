@@ -4,6 +4,8 @@ import '../modules/add_to_cart/bindings/add_to_cart_binding.dart';
 import '../modules/add_to_cart/views/add_to_cart_view.dart';
 import '../modules/bottom_navigation/bindings/bottom_navigation_binding.dart';
 import '../modules/bottom_navigation/views/bottom_navigation_view.dart';
+import '../modules/category/bindings/category_binding.dart';
+import '../modules/category/views/category_view.dart';
 import '../modules/favourites/bindings/favourites_binding.dart';
 import '../modules/favourites/views/favourites_view.dart';
 import '../modules/forgot_password/bindings/forgot_password_binding.dart';
@@ -82,6 +84,11 @@ class AppPages {
       name: _Paths.USER_ACCOUNT,
       page: () => const UserAccountView(),
       binding: UserAccountBinding(),
+    ),
+    GetPage(
+      name: _Paths.CATEGORY,
+      page: () => const CategoryView(),
+      binding: CategoryBinding(),
     ),
   ];
 }

@@ -2,7 +2,7 @@ import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controll
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
-import 'package:d_and_s/app/modules/favourites/views/favourites_view.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';

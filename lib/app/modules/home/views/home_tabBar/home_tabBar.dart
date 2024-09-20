@@ -1,5 +1,4 @@
-import 'package:d_and_s/app/constants/colors.dart';
-import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../../../constants/text_size.dart';
@@ -20,7 +19,7 @@ class HomeTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 10,
+      length: 5,
       child: Column(
         children: [
           // TabBar(

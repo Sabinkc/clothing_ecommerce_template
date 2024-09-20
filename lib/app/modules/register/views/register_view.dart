@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/modules/login/views/login_view.dart';
+
 import 'package:d_and_s/app/modules/register/views/register_blue_container.dart';
 import 'package:d_and_s/app/modules/register/views/register_white_small_container.dart';
 import 'package:flutter/material.dart';
@@ -7,8 +7,7 @@ import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
 import '../../../constants/colors.dart';
-import '../../reusable_widgets/LargeButtonReusable.dart';
-import '../../reusable_widgets/TextFormFieldReusable.dart';
+
 import '../controllers/register_controller.dart';
 
 class RegisterView extends GetView<RegisterController> {

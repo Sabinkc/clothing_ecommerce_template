@@ -1,10 +1,7 @@
-import 'package:d_and_s/app/constants/text_size.dart';
+
 import 'package:d_and_s/app/modules/login/views/login_blue_container.dart';
 import 'package:d_and_s/app/modules/login/views/login_white_small_container.dart';
-import 'package:d_and_s/app/modules/register/views/register_view.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/CheckBoxReusable.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';

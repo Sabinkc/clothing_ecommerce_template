@@ -2,8 +2,6 @@ import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_co
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../home/controllers/home_controller.dart';
-
 class CustomClickableContainer extends StatelessWidget {
   final controller = Get.put(ProductDetailController());
   // var currentIndex = 0.obs;
@@ -55,7 +53,7 @@ class CustomClickableContainer extends StatelessWidget {
                 //   controller.selectedImages[count.value] ??
                 //       'https://example.com/static-image.jpg',
                 // ),
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
               ),
             ),
           ),
@@ -97,7 +95,7 @@ class CustomClickableContainer extends StatelessWidget {
                           //       ? controller.selectedImages[index]
                           //       : 'https://example.com/default-image.jpg',
                           // ),
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),

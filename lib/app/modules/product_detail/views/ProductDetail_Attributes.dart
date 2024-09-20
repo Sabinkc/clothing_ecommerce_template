@@ -1,7 +1,7 @@
-import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
-import 'package:flutter/foundation.dart';
+
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 
 import '../../../constants/text_size.dart';
 import 'ProductDetailViewReusableRow.dart';
@@ -56,7 +56,7 @@ class ProductDetailAttributes extends StatelessWidget {
                                           Row(
                                             children: [
                                               Text(
-                                                "${e.key} : " ?? "",
+                                                "${e.key} : " ,
                                                 style: TextStyle(
                                                   fontSize: TextSize.small,
                                                   fontWeight: FontWeight.w700,

@@ -9,7 +9,7 @@ import 'package:d_and_s/app/modules/splash_screen/views/splash_screen_view.dart'
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:d_and_s/main.dart';
+
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

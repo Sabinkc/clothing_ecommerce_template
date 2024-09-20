@@ -1,6 +1,6 @@
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/ProductDetailView/ProductDetailView.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -92,7 +92,7 @@ class HomeTabBarTabs extends StatelessWidget {
                           image: DecorationImage(
                             image: NetworkImage(
                                 imageUrl), // Replace with actual image URL
-                            fit: BoxFit.fill,
+                            fit: BoxFit.contain,
                           ),
                         ),
                         height: 100,

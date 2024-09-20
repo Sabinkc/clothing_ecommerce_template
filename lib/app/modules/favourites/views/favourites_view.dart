@@ -1,7 +1,7 @@
-import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
+
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+
 
 import 'package:get/get.dart';
 

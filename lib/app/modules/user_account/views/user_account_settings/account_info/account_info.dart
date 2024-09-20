@@ -1,6 +1,6 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
-import 'package:d_and_s/app/modules/login/views/login_view.dart';
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_settings/account_info/account_info_change.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
