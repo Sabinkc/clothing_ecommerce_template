@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/views/home_grid_view.dart';
@@ -14,6 +15,8 @@ import 'package:get/get.dart';
 
 import '../../../constants/text_size.dart';
 import '../controllers/home_controller.dart';
+import 'home_section_tabBar/home_section_tabBar.dart';
+import 'home_section_tabBar/home_section_tabBar_tabs.dart';
 
 class HomeView extends GetView<HomeController> {
   List<int> list = [1, 2, 3, 4, 5];
@@ -65,7 +68,7 @@ class HomeView extends GetView<HomeController> {
           ),
         ),
         body: Container(
-          color: Colors.white,
+          color: AppColors.lightSilver,
           child: NestedScrollView(
             headerSliverBuilder:
                 (BuildContext context, bool innerBoxIsScrolled) {
@@ -106,17 +109,18 @@ class HomeView extends GetView<HomeController> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 10),
+                        SizedBox(height: 20),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: HomeGridView(),
+                          child: HomeListView(),
                         ),
-                        SizedBox(height: 10),
+                        // SizedBox(height: 10),
                       ],
                     ),
                   ),
                 ),
                 SliverAppBar(
+                  backgroundColor: AppColors.lightSilver,
                   title: HomeSectionTabBar(),
                   floating: true,
                   pinned: true,
@@ -125,59 +129,7 @@ class HomeView extends GetView<HomeController> {
             },
             body: Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-              child: HomeTabBarTabs(),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class HomeSectionTabBar extends StatelessWidget {
-  final List<String> items_tabs = [
-    "Latest Product",
-    "New IN",
-    "Deals",
-    "Popular",
-    "Best Seller",
-  ];
-  HomeSectionTabBar({super.key});
-
-  final controller = Get.put(HomeController());
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-      child: Container(
-        height: 20,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          shrinkWrap: true,
-          itemCount: items_tabs.length,
-          itemBuilder: (BuildContext context, index) => Container(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: Obx(
-                () => Container(
-                  child: GestureDetector(
-                    onTap: () {
-                      print(controller.index.value);
-                      controller.index.value = items_tabs[index];
-                    },
-                    child: Text(
-                      items_tabs[index],
-                      style: TextStyle(
-                        fontSize: TextSize.small,
-                        color: controller.index.value == items_tabs[index]
-                            ? Colors.red
-                            : Colors.black,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              child: HomeSectionTabBarTabs(),
             ),
           ),
         ),

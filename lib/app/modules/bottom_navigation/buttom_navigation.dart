@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
@@ -34,6 +35,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           child: _widgetOptions.elementAt(_selectedIndex),
         ),
         bottomNavigationBar: MoltenBottomNavigationBar(
+          barColor: AppColors.lightSilver,
           selectedIndex: _selectedIndex,
           domeHeight: 0,
           // specify what will happen when a tab is clicked

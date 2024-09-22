@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 class HomeController extends GetxController {
   //TODO: Implement HomeController
   var index = 'Shoes'.obs;
+  var homeSectionindex = 'Latest Product'.obs;
 
   @override
   void onInit() {

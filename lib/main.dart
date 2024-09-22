@@ -15,7 +15,7 @@ void main() async {
       widgetsBinding: WidgetsFlutterBinding.ensureInitialized());
 
   await Future.delayed(Duration(seconds: 5));
-
+ 
   // Remove the splash screen
   FlutterNativeSplash.remove();
 

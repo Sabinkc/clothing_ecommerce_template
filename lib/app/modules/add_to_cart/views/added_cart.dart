@@ -19,8 +19,9 @@ class AddedCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.lightSilver,
       appBar: AppBar(
+        backgroundColor: AppColors.lightSilver,
         title: const Text("My Cart"),
         centerTitle: false,
         actions: [
@@ -86,6 +87,7 @@ class AddedCart extends StatelessWidget {
                                   height: 100,
                                   width: 100,
                                   decoration: BoxDecoration(
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(16),
                                     image: DecorationImage(
                                       image: NetworkImage(item["image"]),

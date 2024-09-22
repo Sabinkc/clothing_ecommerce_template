@@ -10,8 +10,8 @@ import '../../../../constants/text_size.dart';
 import '../../../../data/alldata.dart';
 import '../../../product_detail/views/product_detail_view.dart';
 
-class HomeTabBarTabs extends StatelessWidget {
-  HomeTabBarTabs({
+class HomeSectionTabBarTabs extends StatelessWidget {
+  HomeSectionTabBarTabs({
     super.key,
   });
   final controller = Get.put(HomeController());
@@ -22,9 +22,11 @@ class HomeTabBarTabs extends StatelessWidget {
     return Obx(
       () {
         // Get the selected tab's products list
-        List selectedProducts = products
-            .where((element) => element["category"] == controller.index.value)
-            .toList();
+        var selectedProducts = products
+                .where((element) =>
+                    element["featured"] == controller.homeSectionindex.value)
+                .toList() ??
+            [];
 
         return GridView.builder(
           shrinkWrap: true,
@@ -37,7 +39,7 @@ class HomeTabBarTabs extends StatelessWidget {
             childAspectRatio: 0.7,
           ),
           itemBuilder: (BuildContext context, index) {
-            Map product = selectedProducts[index];
+            var product = selectedProducts[index];
             Map colorMap = product["color"] ?? {};
             List imageUrls = colorMap.isNotEmpty
                 ? colorMap.entries.first.value

@@ -1,7 +1,5 @@
-
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_view.dart';
 import 'package:flutter/material.dart';
-
 
 import 'package:get/get.dart';
 
@@ -18,14 +16,14 @@ class FavouritesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.lightSilver,
         title: const Text('Favourites'),
         centerTitle: false,
       ),
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Colors.white,
+        color: AppColors.lightSilver,
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
