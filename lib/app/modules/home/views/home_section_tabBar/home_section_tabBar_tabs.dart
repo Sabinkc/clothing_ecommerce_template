@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../../../constants/colors.dart';
 import '../../../../constants/text_size.dart';
 import '../../../../data/alldata.dart';
 import '../../../product_detail/views/product_detail_view.dart';
@@ -23,10 +22,9 @@ class HomeSectionTabBarTabs extends StatelessWidget {
       () {
         // Get the selected tab's products list
         var selectedProducts = products
-                .where((element) =>
-                    element["featured"] == controller.homeSectionindex.value)
-                .toList() ??
-            [];
+            .where((element) =>
+                element["featured"] == controller.homeSectionindex.value)
+            .toList();
 
         return GridView.builder(
           shrinkWrap: true,
@@ -110,7 +108,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                           fontSize: TextSize.small,
-                          fontWeight: FontWeight.w900),
+                          fontWeight: FontWeight.w700),
                     ),
                     SizedBox(height: 5),
                     Text(

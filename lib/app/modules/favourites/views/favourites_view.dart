@@ -31,20 +31,15 @@ class FavouritesView extends StatelessWidget {
               () => Column(
                 children: [
                   controller.favoritesList.isEmpty
-                      ? GestureDetector(
-                          onTap: () {
-                            print(controller.favoritesList);
-                          },
-                          child: Container(
-                            height: 400,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              image: DecorationImage(
-                                image: AssetImage(
-                                    "assets/images/noFavorites.png"), // Use AssetImage instead of Image.asset
-                                fit: BoxFit
-                                    .cover, // Optional: Adjust image fit if necessary
-                              ),
+                      ? Container(
+                          height: 400,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/images/emptyWishList.png"), // Use AssetImage instead of Image.asset
+                              fit: BoxFit
+                                  .cover, // Optional: Adjust image fit if necessary
                             ),
                           ),
                         )
@@ -188,7 +183,8 @@ class FavouritesView extends StatelessWidget {
                   Text(
                     "Recommended Items",
                     style: TextStyle(
-                        fontSize: TextSize.normal, color: AppColors.lightBlue),
+                      fontSize: TextSize.normal,
+                    ),
                   ),
                   const SizedBox(height: 10),
                   HomeTabBarTabs(),

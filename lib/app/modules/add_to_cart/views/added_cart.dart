@@ -50,7 +50,7 @@ class AddedCart extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
                           image: AssetImage(
-                              "assets/images/noFavorites.png"), // Use AssetImage instead of Image.asset
+                              "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
                           fit: BoxFit
                               .cover, // Optional: Adjust image fit if necessary
                         ),
@@ -205,7 +205,8 @@ class AddedCart extends StatelessWidget {
               Text(
                 "Recommended Items",
                 style: TextStyle(
-                    fontSize: TextSize.normal, color: AppColors.lightBlue),
+                  fontSize: TextSize.normal,
+                ),
               ),
               const SizedBox(height: 10),
               HomeTabBarTabs(),

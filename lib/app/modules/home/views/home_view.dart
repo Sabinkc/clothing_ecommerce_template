@@ -1,10 +1,7 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
-import 'package:d_and_s/app/modules/home/views/home_grid_view.dart';
-import 'package:d_and_s/app/modules/home/views/home_tabBar/home_custom_tab.dart';
-
-import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
+import 'package:d_and_s/app/modules/home/views/home_category_view.dart';
 
 import 'package:d_and_s/app/modules/reusable_widgets/AppBarMainPage.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
@@ -13,7 +10,6 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../constants/text_size.dart';
 import '../controllers/home_controller.dart';
 import 'home_section_tabBar/home_section_tabBar.dart';
 import 'home_section_tabBar/home_section_tabBar_tabs.dart';
@@ -61,7 +57,7 @@ class HomeView extends GetView<HomeController> {
       length: 3,
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(50),
+          preferredSize: const Size.fromHeight(50),
           child: AppBarMainPage(
             title: 'Hi Aman',
             isLeading: true,
@@ -103,7 +99,7 @@ class HomeView extends GetView<HomeController> {
                                 "Categories",
                                 style: TextStyle(
                                   fontSize: 16,
-                                  fontWeight: FontWeight.w100,
+                                  fontWeight: FontWeight.w500,
                                 ),
                               ),
                             ],
@@ -111,8 +107,8 @@ class HomeView extends GetView<HomeController> {
                         ),
                         SizedBox(height: 20),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: HomeListView(),
+                          padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          child: HomeCategoryView(),
                         ),
                         // SizedBox(height: 10),
                       ],

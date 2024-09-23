@@ -1,4 +1,3 @@
-
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,9 +13,11 @@ class ProductDetailQuantity extends StatelessWidget {
         children: [
           GestureDetector(
               onTap: () {
-                controller.quantityIndex.value++;
+                if (controller.quantityIndex.value > 0) {
+                  controller.quantityIndex.value--;
+                }
               },
-              child: Icon(Icons.add)),
+              child: Icon(Icons.remove)),
           SizedBox(width: 20),
           Obx(
             () => Text(
@@ -26,11 +27,9 @@ class ProductDetailQuantity extends StatelessWidget {
           SizedBox(width: 20),
           GestureDetector(
               onTap: () {
-                if (controller.quantityIndex.value > 0) {
-                  controller.quantityIndex.value--;
-                }
+                controller.quantityIndex.value++;
               },
-              child: Icon(Icons.remove)),
+              child: Icon(Icons.add)),
         ],
       ),
     );
