@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -55,6 +56,28 @@ class CarouselSliderReusable extends StatelessWidget {
                     imgList[index.value],
                   ),
                   fit: BoxFit.fill),
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 20,
+          right: 30,
+          child: GestureDetector(
+            onTap: () {
+              Get.to(CategoryView());
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.white, width: 3)),
+              padding: EdgeInsets.all(10),
+              child: Text(
+                "Shop Now",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
             ),
           ),
         ),
