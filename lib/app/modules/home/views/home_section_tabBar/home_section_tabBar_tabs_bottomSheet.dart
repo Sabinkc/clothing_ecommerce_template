@@ -1,12 +1,12 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
+
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
-import 'package:d_and_s/app/modules/product_detail/views/product_detail_view.dart';
+
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../add_to_cart/views/added_cart.dart';
 import '../../../product_detail/controllers/product_detail_controller.dart';
@@ -32,6 +32,13 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
     return Container(
       height: 1000,
       width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(16),
+          topRight: Radius.circular(16),
+        ),
+        color: Colors.white,
+      ),
       child: SingleChildScrollView(
           child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -43,7 +50,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
               margin: EdgeInsets.all(0),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(0),
+                borderRadius: BorderRadius.circular(16),
                 image: DecorationImage(
                   image: NetworkImage(homeSectionTabsImg),
                   // image: NetworkImage(

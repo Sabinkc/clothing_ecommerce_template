@@ -61,15 +61,16 @@ class FavouritesView extends StatelessWidget {
                                     height: 100,
                                     width: 100,
                                     decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(16),
-                                        image: DecorationImage(
-                                            image: NetworkImage(item["color"]
-                                                    .entries
-                                                    .first
-                                                    .value[0]
-                                                // .entries.first.value,
-                                                ),
-                                            fit: BoxFit.fill)),
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            item["color"].entries.first.value[0]
+                                            // .entries.first.value,
+                                            ),
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
                                   ),
 
                                   const SizedBox(width: 10),

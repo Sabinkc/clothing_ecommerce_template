@@ -4,14 +4,17 @@ import 'package:flutter/material.dart';
 
 class TextFormFieldReusable extends StatelessWidget {
   final String hint;
-  final Icon icon;
+  Icon? icon;
   bool isObscure;
   final TextEditingController textEditingController;
 
-   TextFormFieldReusable(
-      {super.key,
-        this.isObscure = false, required this.hint, required this.icon, required this.textEditingController,
-      });
+  TextFormFieldReusable({
+    super.key,
+    this.isObscure = false,
+    required this.hint,
+    this.icon,
+    required this.textEditingController,
+  });
 
   @override
   Widget build(BuildContext context) {

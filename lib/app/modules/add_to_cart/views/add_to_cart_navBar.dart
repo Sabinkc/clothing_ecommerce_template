@@ -55,7 +55,11 @@ class AddToCartNavBar extends StatelessWidget {
                   Get.to(AddToCartCheckout());
                   // print(controller.checkoutList.toString());
                 },
-                child: LargeButtonReusable(width: 200, title: "Checkout"))
+                child: LargeButtonReusable(
+                  width: 200,
+                  title: "Checkout",
+                  color: Colors.black,
+                ))
           ],
         ),
       ),

@@ -1,9 +1,16 @@
-import 'package:d_and_s/app/modules/user_account/views/user_account_settings/user_account_settings.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
+import 'package:d_and_s/app/modules/login/views/login_view.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../add_to_cart/controllers/add_to_cart_controller.dart';
+import '../../favourites/controllers/favourites_controller.dart';
+
 class UserAccountContainer extends StatelessWidget {
-  const UserAccountContainer({super.key});
+  final favoriteController = Get.put(FavouritesController());
+  final addToCartController = Get.put(AddToCartController());
+  UserAccountContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,12 +61,14 @@ class UserAccountContainer extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 4),
-                      Text(
-                        "0",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blue,
+                      Obx(
+                        () => Text(
+                          favoriteController.favoritesList.length.toString(),
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          ),
                         ),
                       ),
                     ],
@@ -70,19 +79,21 @@ class UserAccountContainer extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Vouchers",
+                        "Cart",
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey.shade600,
                         ),
                       ),
                       SizedBox(height: 4),
-                      Text(
-                        "0",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blue,
+                      Obx(
+                        () => Text(
+                          addToCartController.cartProducts.length.toString(),
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          ),
                         ),
                       ),
                     ],
@@ -93,15 +104,23 @@ class UserAccountContainer extends StatelessWidget {
           ),
         ),
         // Settings Icon
-        IconButton(
-          icon: Icon(
-            Icons.settings,
-            color: Colors.grey.shade600,
-          ),
-          onPressed: () {
-            Get.to(UserAccountSettings());
-            // Handle settings press
-          },
+        Column(
+          children: [
+            IconButton(
+              icon: Icon(
+                Icons.logout,
+                color: Colors.grey.shade600,
+              ),
+              onPressed: () {
+                Get.to(LoginView());
+                // Handle settings press
+              },
+            ),
+            Text(
+              "Logout",
+              style: TextStyle(fontSize: TextSize.mini, color: Colors.grey),
+            ),
+          ],
         ),
       ],
     );

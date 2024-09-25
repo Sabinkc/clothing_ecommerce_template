@@ -101,7 +101,7 @@ class HomeTabBarTabs extends StatelessWidget {
                               image: DecorationImage(
                                 image: NetworkImage(
                                     imageUrl), // Replace with actual image URL
-                                fit: BoxFit.contain,
+                                fit: BoxFit.cover,
                               ),
                             ),
                             height: Adaptive.h(20),
@@ -134,37 +134,6 @@ class HomeTabBarTabs extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Positioned(
-                            right: 0,
-                            top: 40,
-                            child: GestureDetector(
-                              onTap: () {
-                                showModalBottomSheet<void>(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return HomeSectionTabBarTabsBottomSheet(
-                                      homeSectionTabsData: product,
-                                      homeSectionTabsImg: imageUrl,
-                                    );
-                                  },
-                                );
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: AppColors.lightSilver,
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(5.0),
-                                  child: Icon(
-                                    Icons.remove_red_eye_outlined,
-                                    size: 20,
-                                    color: Colors.black.withOpacity(0.7),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
                         ],
                       ),
                       SizedBox(height: 10),
@@ -176,13 +145,45 @@ class HomeTabBarTabs extends StatelessWidget {
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(height: 5),
-                      Text(
-                        "Rs. ${product["price"] ?? ""}",
-                        style: TextStyle(
-                          fontSize: TextSize.small,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red,
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Rs. ${product["price"] ?? ""}",
+                            style: TextStyle(
+                              fontSize: TextSize.small,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.red,
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              showModalBottomSheet<void>(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return HomeSectionTabBarTabsBottomSheet(
+                                    homeSectionTabsData: product,
+                                    homeSectionTabsImg: imageUrl,
+                                  );
+                                },
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: AppColors.lightSilver,
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Icon(
+                                  Icons.remove_red_eye_outlined,
+                                  size: 20,
+                                  color: Colors.black.withOpacity(0.7),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

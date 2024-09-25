@@ -98,7 +98,7 @@ class ProductDetailNavBar extends StatelessWidget {
             child: LargeButtonReusable(
               title: "Buy Now",
               width: 150,
-              color: Colors.orange,
+              color: Colors.black,
             ),
           ),
           // SizedBox(width: 20),

@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 
 class UserAccountController extends GetxController {
   //TODO: Implement UserAccountController
-
+  var tabBarIndex = 0.obs;
   final count = 0.obs;
   @override
   void onInit() {

@@ -257,7 +257,7 @@ class AddToCartView extends GetView<AddToCartController> {
       child: const LargeButtonReusable(
         title: "Add to Cart",
         width: 150,
-        color: Colors.redAccent,
+        color: Colors.black,
       ),
     );
   }

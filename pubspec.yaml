@@ -19,6 +19,7 @@ dependencies:
   flutter_native_splash: ^2.2.4
   icons_plus:
   font_awesome_flutter: ^10.0.0
+  dob_input_field:
 
 flutter_native_splash:
   background_image: assets/images/splash_screen.png # Path to your splash screen image

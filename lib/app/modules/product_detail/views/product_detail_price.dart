@@ -17,23 +17,23 @@ class ProductDetailPrice extends StatelessWidget {
           ),
         ),
         Text(
-          "${priceDetails["price"]}"  ,
+          "${priceDetails["price"]}",
           style: TextStyle(
             fontSize: TextSize.normal,
             color: Colors.red,
-            fontWeight: FontWeight.w900,
+            fontWeight: FontWeight.w500,
           ),
         ),
         SizedBox(width: 10),
         Text(
-          "${priceDetails["realprice"]}" ,
+          "${priceDetails["realprice"]}",
           style: TextStyle(
             decoration: TextDecoration.lineThrough,
-            decorationThickness: 5,
+            decorationThickness: 2,
             decorationColor: Colors.grey,
             fontSize: TextSize.small,
             color: Colors.grey,
-            fontWeight: FontWeight.w900,
+            fontWeight: FontWeight.w500,
           ),
         ),
         SizedBox(width: 10),
@@ -49,7 +49,7 @@ class ProductDetailPrice extends StatelessWidget {
               style: TextStyle(
                 fontSize: TextSize.small,
                 color: Colors.redAccent,
-                fontWeight: FontWeight.w900,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
