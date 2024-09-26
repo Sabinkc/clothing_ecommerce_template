@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/constants/colors.dart';
+
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 

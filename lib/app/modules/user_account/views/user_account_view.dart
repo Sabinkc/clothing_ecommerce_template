@@ -1,7 +1,6 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_container.dart';
-import 'package:d_and_s/app/modules/user_account/views/user_account_myOrder/user_account_myOrder.dart';
-import 'package:d_and_s/app/modules/user_account/views/user_account_others/user_account_others.dart';
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabBar.dart';
 import 'package:flutter/material.dart';
 

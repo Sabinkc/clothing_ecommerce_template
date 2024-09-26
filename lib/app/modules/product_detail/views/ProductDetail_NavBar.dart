@@ -1,10 +1,11 @@
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
+
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../add_to_cart/views/added_cart.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../controllers/product_detail_controller.dart';
 
@@ -21,7 +22,7 @@ class ProductDetailNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -49,6 +50,7 @@ class ProductDetailNavBar extends StatelessWidget {
               ),
             ),
           ),
+
           // Price Section
           GestureDetector(
             onTap: () {
@@ -101,11 +103,60 @@ class ProductDetailNavBar extends StatelessWidget {
               color: Colors.black,
             ),
           ),
-          // SizedBox(width: 20),
 
-          AddToCartView(
-            addToCartData: navBarData,
+          GestureDetector(
+            onTap: () {
+              if (controller_productDetail.selectedColor.value == 0) {
+                Get.snackbar(
+                  'Selection Error',
+                  'Please select a color.',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.redAccent,
+                  colorText: Colors.white,
+                );
+                return;
+              }
+
+              if (controller_productDetail.selectedSize.value.isEmpty) {
+                Get.snackbar(
+                  'Selection Error',
+                  'Please select a size.',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.redAccent,
+                  colorText: Colors.white,
+                );
+                return;
+              }
+
+              final String cartId = UniqueKey().toString();
+              controller.cartProducts.add(
+                {
+                  "title": navBarData["title"],
+                  "cartId": cartId,
+                  "price": navBarData["price"],
+                  "discount": navBarData["discount"],
+                  "realprice": navBarData["realprice"],
+                  "size": controller_productDetail.selectedSize.value,
+                  "quantity": controller_productDetail.quantityIndex.value,
+                  "image": controller_productDetail.selectedImages[
+                      controller_productDetail
+                          .detailViewProductCustomClickableContainer.value],
+                  "color": controller_productDetail.selectedColor.value,
+                },
+              );
+              // controller.selectedProducts.add(cartId);
+              controller.toggleSelected(cartId);
+              Get.to(AddedCart());
+            },
+            child: LargeButtonReusable(
+              title: "Add to Cart",
+              width: 150,
+              color: Colors.black,
+            ),
           ),
+          // AddToCartView(
+          //   addToCartData: navBarData,
+          // ),
         ],
       ),
     );

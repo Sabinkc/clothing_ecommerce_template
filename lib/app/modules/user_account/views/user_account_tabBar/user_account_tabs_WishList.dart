@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import '../../../../constants/text_size.dart';
 import '../../../favourites/controllers/favourites_controller.dart';
-import '../../../home/views/home_tabBar/home_tabBar_tabs.dart';
+
 import '../../../product_detail/views/product_detail_view.dart';
 
 class UserAccountTabsWishList extends StatelessWidget {

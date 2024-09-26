@@ -14,7 +14,7 @@ void main() async {
   FlutterNativeSplash.preserve(
       widgetsBinding: WidgetsFlutterBinding.ensureInitialized());
 
-  await Future.delayed(Duration(seconds: 5));
+  await Future.delayed(const Duration(seconds: 5));
  
   // Remove the splash screen
   FlutterNativeSplash.remove();
@@ -24,7 +24,7 @@ void main() async {
       enabled: !kReleaseMode,
       builder: (context) => ResponsiveSizer(
         builder: (context, orientation, screenType) {
-          return MyApp(); // Your actual app
+          return const MyApp(); // Your actual app
         },
       ),
     ),
@@ -32,6 +32,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(

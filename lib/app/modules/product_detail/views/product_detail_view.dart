@@ -52,10 +52,13 @@ class ProductDetailView extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.white,
-            title: TextFormFieldReusable(
-              hint: "Search Products",
-              icon: Icon(Icons.search),
-              textEditingController: search,
+            title: SizedBox(
+              height: 45,
+              child: TextFormFieldReusable(
+                hint: ".....",
+                icon: Icon(Icons.search),
+                textEditingController: search,
+              ),
             ),
 
             // leading: GestureDetector(

@@ -109,7 +109,7 @@ class UserAccountContainer extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.logout,
-                color: Colors.grey.shade600,
+                color: Colors.black,
               ),
               onPressed: () {
                 Get.to(LoginView());

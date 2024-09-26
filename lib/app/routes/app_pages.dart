@@ -71,7 +71,7 @@ class AppPages {
     GetPage(
       name: _Paths.ADD_TO_CART,
       page: () => AddToCartView(
-        addToCartData: {},
+        addToCartData:  {},
       ),
       binding: AddToCartBinding(),
     ),

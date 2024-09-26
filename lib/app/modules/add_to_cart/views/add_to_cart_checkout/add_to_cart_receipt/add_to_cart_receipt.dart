@@ -1,9 +1,16 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/CheckBoxReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/DottedLine.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+
+import '../../../../user_account/views/user_account_tabBar/user_account_tabs_address/user_account_tabs_address.dart';
+import 'add_to_cart_address_selection.dart';
+import 'add_to_cart_payment_selection.dart';
 
 class AddToCartReceipt extends StatelessWidget {
   final controller = Get.put(AddToCartController());
@@ -83,21 +90,70 @@ class AddToCartReceipt extends StatelessWidget {
           ), // Location pin icon
         ),
         DottedLine(),
-        AddToCartTitleRow(
-          title: "Payment",
-          icon: Icon(
-            Icons.payment,
-            color: Colors.green,
-          ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Icon(
+              Icons.local_shipping,
+              color: Colors.green,
+            ),
+            SizedBox(width: 10),
+            Text("Shipping"),
+            Spacer(),
+            GestureDetector(
+              onTap: () {
+                showBottomSheet(
+                    context: context,
+                    builder: (BuildContext context) => AddToCartAddress());
+              },
+              child: Container(
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Text(
+                  "CHANGE",
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ],
         ),
-        const SizedBox(height: 20),
-        const AddToCartReceiptRow(
-          title: "Cash On Delivery",
-          subtitle: "Aman Shrestha",
-          icon: Icon(
-            Icons.person_outline,
-            color: Colors.grey,
-          ), // Person icon for user name
+        const SizedBox(height: 10),
+        const DottedLine(),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Image.asset(
+              "assets/images/cashondelivery.png",
+              height: 25,
+            ),
+            SizedBox(width: 10),
+            Text("Cash On Delivery"),
+            Spacer(),
+            GestureDetector(
+              onTap: () {
+                showBottomSheet(
+                    context: context,
+                    builder: (BuildContext context) =>
+                        AddToCartPaymentSelection());
+              },
+              child: Container(
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Text(
+                  "CHANGE",
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+              ),
+            )
+          ],
         ),
       ],
     );

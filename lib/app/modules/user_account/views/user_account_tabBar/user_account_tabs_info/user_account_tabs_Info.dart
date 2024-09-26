@@ -1,10 +1,10 @@
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_info_detail.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_info_loginEdit.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../../constants/text_size.dart';
+
 
 class UserAccountTabsInfo extends StatelessWidget {
   const UserAccountTabsInfo({super.key});

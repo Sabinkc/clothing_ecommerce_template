@@ -1,5 +1,5 @@
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt.dart';
+import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt/add_to_cart_receipt.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -148,7 +148,10 @@ class AddToCartCheckout extends StatelessWidget {
                     onTap: () {
                       // controller.totalPrice.value = 0;
                     },
-                    child: const LargeButtonReusable(title: "Place Order")),
+                    child: const LargeButtonReusable(
+                      title: "Place Order",
+                      color: Colors.black,
+                    )),
               ],
             ),
           ),

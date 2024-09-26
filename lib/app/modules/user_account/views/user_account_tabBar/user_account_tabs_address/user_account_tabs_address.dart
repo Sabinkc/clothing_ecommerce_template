@@ -1,8 +1,6 @@
-import 'package:d_and_s/app/constants/colors.dart';
+
 import 'package:d_and_s/app/constants/text_size.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

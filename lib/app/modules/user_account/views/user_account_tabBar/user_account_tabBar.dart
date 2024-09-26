@@ -1,8 +1,6 @@
-import 'package:d_and_s/app/modules/favourites/views/favourites_view.dart';
+
 import 'package:d_and_s/app/modules/user_account/controllers/user_account_controller.dart';
-import 'package:d_and_s/app/modules/user_account/views/user_account_myOrder/user_account_myOrder.dart';
-import 'package:d_and_s/app/modules/user_account/views/user_account_others/user_account_others.dart';
-import 'package:d_and_s/app/modules/user_account/views/user_account_settings/user_account_settings.dart';
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_Info.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_WishList.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_address/user_account_tabs_address.dart';
@@ -10,8 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../constants/text_size.dart';
-import '../../../home/views/home_tabBar/home_tabBar_tabs.dart';
-import 'user_account_tabs_Order.dart';
+
+import 'user_account_tabs_order/user_account_tabs_Order.dart';
 
 class UserAccountTabBar extends StatelessWidget {
   final List<String> tabLabels = [
