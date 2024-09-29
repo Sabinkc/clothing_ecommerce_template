@@ -11,7 +11,7 @@ import 'package:get/get.dart';
 import '../../../constants/colors.dart';
 
 class AddedCart extends StatelessWidget {
-  final controller_productDetail = Get.put(ProductDetailController());
+  final controllerProductDetail = Get.put(ProductDetailController());
   final controller = Get.put(AddToCartController());
 
   AddedCart({super.key});
@@ -49,7 +49,7 @@ class AddedCart extends StatelessWidget {
                         height: 400,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: AssetImage(
                                 "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
                             fit: BoxFit
@@ -65,6 +65,7 @@ class AddedCart extends StatelessWidget {
                               padding: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
+                                color: Colors.white,
                                 border: Border.all(color: Colors.grey.shade300),
                               ),
                               child: Row(
@@ -227,7 +228,7 @@ class AddedCart extends StatelessWidget {
               ? AddToCartNavBar(
                   price: totalPrice.toString(),
                 )
-              : SizedBox
+              : const SizedBox
                   .shrink(); // Don't show anything when total price is zero
         },
       ),

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 
@@ -9,7 +11,7 @@ class CheckboxReusable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         width: 20,
         child: Checkbox(
           value: valueCheckBox,

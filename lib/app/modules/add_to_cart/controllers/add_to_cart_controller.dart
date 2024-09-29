@@ -13,7 +13,7 @@ class AddToCartController extends GetxController {
   //                         controller.selectedProducts.remove(item["cartId"]);
   //                       }
   // }
-  //TODO: Implement AddToCartController
+
 
   RxInt totalPrice = 0.obs;
   void sendDataToCheckout() {
@@ -23,7 +23,7 @@ class AddToCartController extends GetxController {
         bool test = checkoutList
             .any((element) => element["cartId"] == checkoutItem["cartId"]);
         if (!test) checkoutList.add(checkoutItem);
-        print(test);
+
       }
     }
   }
@@ -87,18 +87,18 @@ class AddToCartController extends GetxController {
     calculateTotalPrice("cart");
   }
 
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  // @override
+  // void onInit() {
+  //   super.onInit();
+  // }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  // @override
+  // void onReady() {
+  //   super.onReady();
+  // }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
+  // @override
+  // void onClose() {
+  //   super.onClose();
+  // }
 }

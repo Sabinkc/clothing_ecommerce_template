@@ -10,7 +10,7 @@ class Language extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Language"),
+        title: const Text("Language"),
         backgroundColor: AppColors.lightSilver,
         centerTitle: false,
       ),
@@ -23,7 +23,7 @@ class Language extends StatelessWidget {
           children: [
             Row(
               children: [
-                CheckboxExample(),
+                const CheckboxExample(),
                 Text(
                   "ENGLISH",
                   style: TextStyle(fontSize: TextSize.normal),
@@ -32,7 +32,7 @@ class Language extends StatelessWidget {
             ),
             Row(
               children: [
-                CheckboxExample(),
+                const CheckboxExample(),
                 Text(
                   "NEPALI",
                   style: TextStyle(fontSize: TextSize.normal),

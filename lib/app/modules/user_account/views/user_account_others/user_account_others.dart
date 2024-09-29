@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../constants/text_size.dart';
-import '../user_account_myOrder/user_account_myOrder.dart';
+import '../user_account_myOrder/user_account_myorder.dart';
 
 class UserAccountOthers extends StatelessWidget {
   const UserAccountOthers({super.key});
@@ -17,7 +17,7 @@ class UserAccountOthers extends StatelessWidget {
             fontSize: TextSize.normal,
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

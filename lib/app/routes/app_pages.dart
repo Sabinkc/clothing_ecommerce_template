@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:get/get.dart';
 
 import '../modules/add_to_cart/bindings/add_to_cart_binding.dart';
@@ -28,6 +30,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
+  // ignore: constant_identifier_names
   static const INITIAL = Routes.LOGIN;
 
   static final routes = [
@@ -38,12 +41,12 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SPLASH_SCREEN,
-      page: () => SplashScreenView(),
+      page: () => const SplashScreenView(),
       binding: SplashScreenBinding(),
     ),
     GetPage(
       name: _Paths.LOGIN,
-      page: () => LoginView(),
+      page: () => const LoginView(),
       binding: LoginBinding(),
     ),
     GetPage(
@@ -71,7 +74,7 @@ class AppPages {
     GetPage(
       name: _Paths.ADD_TO_CART,
       page: () => AddToCartView(
-        addToCartData:  {},
+        addToCartData: {},
       ),
       binding: AddToCartBinding(),
     ),

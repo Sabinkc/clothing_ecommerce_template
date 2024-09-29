@@ -10,7 +10,7 @@ class MessageSettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Message Settings"),
+        title: const Text("Message Settings"),
         backgroundColor: AppColors.lightSilver,
         centerTitle: false,
       ),
@@ -28,8 +28,8 @@ class MessageSettingsView extends StatelessWidget {
                   fontSize: TextSize.normal,
                 ),
               ),
-              SizedBox(height: 20),
-              MessageSettingsReusableRow(
+              const SizedBox(height: 20),
+              const MessageSettingsReusableRow(
                 title: 'Promotions',
                 subtitle: 'find out upcoming deals',
               ),
@@ -50,7 +50,7 @@ class MessageSettingsReusableRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
+      margin: const EdgeInsets.only(bottom: 10),
       child: Row(
         children: [
           Column(
@@ -69,8 +69,8 @@ class MessageSettingsReusableRow extends StatelessWidget {
               ),
             ],
           ),
-          Spacer(),
-          SwitchExample(),
+          const Spacer(),
+          const SwitchExample(),
         ],
       ),
     );

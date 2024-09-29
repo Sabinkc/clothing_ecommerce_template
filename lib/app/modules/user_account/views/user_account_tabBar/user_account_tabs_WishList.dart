@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +23,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                     height: 400,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage(
                             "assets/images/emptyWishList.png"), // Use AssetImage instead of Image.asset
                         fit: BoxFit
@@ -111,7 +113,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(height: 10),
+                                  const SizedBox(height: 10),
                                   Row(
                                     children: [
                                       // Product Color
@@ -147,7 +149,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                                                 item["product_id"],
                                           );
                                         },
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.delete,
                                           color: Colors.red,
                                         ),

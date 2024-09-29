@@ -20,7 +20,10 @@ class AppBarMainPage extends StatelessWidget {
       backgroundColor: AppColors.lightSilver,
       title: Padding(
         padding: const EdgeInsets.only(left: 10),
-        child: Text(title),
+        child: Text(
+          title,
+
+        ),
       ),
       centerTitle: false,
       // leading: Icon(Icons.camera),
@@ -28,11 +31,18 @@ class AppBarMainPage extends StatelessWidget {
       actions: [
         GestureDetector(
           onTap: () {
-            Get.to(FavouritesView());
+            Get.to(
+              FavouritesView(),
+              transition:
+                  Transition.leftToRightWithFade, // Professional fade-in effect
+              duration: const Duration(
+                  milliseconds: 500), // Smooth duration for the transition
+              curve: Curves.easeInOut, // Adds smoothness with easing in and out
+            );
           },
           child: Stack(
             children: [
-              Container(
+              const SizedBox(
                 height: 50,
                 child: Icon(
                   Icons.favorite_outline,
@@ -42,7 +52,7 @@ class AppBarMainPage extends StatelessWidget {
               ),
               Obx(
                 () => favoriteController.favoritesList.isEmpty
-                    ? SizedBox()
+                    ? const SizedBox()
                     : Positioned(
                         top: 2,
                         right: 0,
@@ -56,7 +66,7 @@ class AppBarMainPage extends StatelessWidget {
                             child: Text(
                               favoriteController.favoritesList.length
                                   .toString(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w800),
                             ),
@@ -67,14 +77,21 @@ class AppBarMainPage extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
         GestureDetector(
           onTap: () {
-            Get.to(() => AddedCart());
+            Get.to(
+              () => AddedCart(),
+              transition:
+                  Transition.leftToRightWithFade, // Professional fade-in effect
+              duration: const Duration(
+                  milliseconds: 500), // Smooth duration for the transition
+              curve: Curves.easeInOut, // Adds smoothness with easing in and out
+            );
           },
           child: Stack(
             children: [
-              Container(
+              const SizedBox(
                 height: 50,
                 child: Icon(
                   Icons.shopping_cart_outlined,
@@ -84,7 +101,7 @@ class AppBarMainPage extends StatelessWidget {
               ),
               Obx(
                 () => addToCartController.cartProducts.isEmpty
-                    ? SizedBox()
+                    ? const SizedBox()
                     : Positioned(
                         // bottom: 25,
                         top: 2,
@@ -100,7 +117,7 @@ class AppBarMainPage extends StatelessWidget {
                             child: Text(
                               addToCartController.cartProducts.length
                                   .toString(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w800),
                             ),
@@ -111,7 +128,7 @@ class AppBarMainPage extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
       ],
     );
   }

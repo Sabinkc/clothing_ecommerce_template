@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/colors.dart';
 
 import 'package:flutter/material.dart';
@@ -7,22 +9,23 @@ import '../../../constants/text_size.dart';
 
 class ProductDetailReview extends StatelessWidget {
   final List reviews;
-  ProductDetailReview({
+  const ProductDetailReview({
     super.key,
     required this.reviews,
   });
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Reviews"),
+          title: const Text("Reviews"),
         ),
         body: reviews.isNotEmpty
             ? Container(
                 // height: 900,
                 // color: AppColors.lightSilver,
                 color: Colors.white,
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -50,23 +53,23 @@ class ProductDetailReview extends StatelessWidget {
                                           backgroundImage: NetworkImage(
                                               reviews[index]["profile_pic"]),
                                         ),
-                                        SizedBox(width: 8),
+                                        const SizedBox(width: 8),
                                         Expanded(
                                           child: Text(
                                             reviews[index]["name"] ?? "",
                                             overflow: TextOverflow.ellipsis,
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                               fontWeight: FontWeight.w600,
                                             ),
                                           ),
                                         ),
-                                        Spacer(),
-                                        Icon(Icons.date_range_rounded,
+                                        const Spacer(),
+                                        const Icon(Icons.date_range_rounded,
                                             size: 30),
-                                        SizedBox(width: 4),
+                                        const SizedBox(width: 4),
                                         Text(
                                           reviews[index]["date"] ?? "",
-                                          style: TextStyle(color: Colors.blue),
+                                          style: const TextStyle(color: Colors.blue),
                                         ),
                                       ],
                                     ),
@@ -78,7 +81,7 @@ class ProductDetailReview extends StatelessWidget {
                                       style:
                                           TextStyle(fontSize: TextSize.small),
                                     ),
-                                    SizedBox(height: 10),
+                                    const SizedBox(height: 10),
                                     // if (reviews[index]["reviews_img"].isNotEmpty &&
                                     //     reviews[index]["reviews_img"] != null)
                                     reviews[index]["reviews_img"] != null
@@ -97,7 +100,7 @@ class ProductDetailReview extends StatelessWidget {
                                               ),
                                             ),
                                           )
-                                        : SizedBox(),
+                                        : const SizedBox(),
                                     // SizedBox(height: 10),
                                     // SizedBox(height: 10),
                                   ],

@@ -1,5 +1,5 @@
 import 'package:d_and_s/app/constants/colors.dart';
-import 'package:d_and_s/app/constants/text_size.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -19,7 +19,7 @@ class CategoryView extends GetView<CategoryController> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.lightSilver,
-        title: Text("Category"),
+        title: const Text("Category"),
         centerTitle: false,
       ),
       body: Container(
@@ -33,7 +33,7 @@ class CategoryView extends GetView<CategoryController> {
                   shrinkWrap: true,
                   // physics: NeverScrollableScrollPhysics(),
                   itemCount: categoryData.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount:
                         2, // Adjust this for wider layouts if needed
                     crossAxisSpacing: 12.0, // Space between grid items
@@ -46,7 +46,16 @@ class CategoryView extends GetView<CategoryController> {
                       onTap: () {
                         controllerHomeController.index.value =
                             categoryData[index]["category_name"];
-                        Get.to(HomeCategoryDetailView());
+                        Get.to(
+                          HomeCategoryDetailView(),
+                          transition: Transition
+                              .leftToRightWithFade, // Professional fade-in effect
+                          duration: const Duration(
+                              milliseconds:
+                                  500), // Smooth duration for the transition
+                          curve: Curves
+                              .easeInOut, // Adds smoothness with easing in and out
+                        );
                       },
                       child:
                           // ShortTopCourseCard(
@@ -55,7 +64,7 @@ class CategoryView extends GetView<CategoryController> {
                           //   image: categoryData[index]["category_image"],
                           // ),
                           LongCourseCard(
-                        background: Color(0xFFFFAA5B),
+                        background: const Color(0xFFFFAA5B),
                         title: categoryData[index]["category_name"],
                         image: categoryData[index]["category_image"],
                       ),
@@ -169,8 +178,8 @@ class LongCourseCard extends StatelessWidget {
                       letterSpacing: 1.2, // Slight letter spacing for elegance
                     ),
                   ),
-                  SizedBox(width: 5),
-                  Icon(
+                  const SizedBox(width: 5),
+                  const Icon(
                     EvaIcons.diagonal_arrow_right_up,
                     size: 20,
                     color: Colors.white,
@@ -181,60 +190,6 @@ class LongCourseCard extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class ShortTopCourseCard extends StatelessWidget {
-  final Color background;
-  final String title;
-
-  final String image;
-  const ShortTopCourseCard(
-      {Key? key,
-      required this.background,
-      required this.title,
-      required this.image})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 14),
-      width: 155,
-      height: 163,
-      decoration: BoxDecoration(
-          color: background,
-          borderRadius: BorderRadius.circular(34),
-          border: Border.all(color: Colors.white, width: 10),
-          boxShadow: [
-            BoxShadow(
-                blurRadius: 50,
-                color: const Color(0xFF0B0C2A).withOpacity(.09),
-                offset: const Offset(10, 10))
-          ]),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-        const SizedBox(height: 16),
-        Text(title,
-            style: TextStyle(
-                fontSize: TextSize.small,
-                color: Colors.white,
-                fontWeight: FontWeight.w900)),
-        Expanded(
-            child: Icon(
-          Icons.watch,
-          size: 100,
-          color: Colors.white,
-        )
-            // Container(
-            //   decoration: BoxDecoration(
-            //     image: DecorationImage(
-            //       image: NetworkImage(image),
-            //     ),
-            //   ),
-            // ),
-            ),
-      ]),
     );
   }
 }

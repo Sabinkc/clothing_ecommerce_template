@@ -10,7 +10,7 @@ class AddToCartAddress extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -29,14 +29,14 @@ class AddToCartAddress extends StatelessWidget {
                 child: Container(
                   width: 50,
                   height: 5,
-                  margin: EdgeInsets.only(bottom: 20),
+                  margin: const EdgeInsets.only(bottom: 20),
                   decoration: BoxDecoration(
                     color: Colors.grey[300],
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
-              UserAccountTabsAddress(),
+              const UserAccountTabsAddress(),
             ],
           ),
         ),

@@ -27,7 +27,7 @@ class RegisterWhiteSmallContainer extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20), color: Colors.white),
         child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           child: Expanded(
             child: SingleChildScrollView(
               child: Column(
@@ -36,99 +36,99 @@ class RegisterWhiteSmallContainer extends StatelessWidget {
                 children: [
                   ListView(
                     shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Full Name",
                             style: TextStyle(
                                 color: AppColors.textBlue,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           TextFormFieldReusable(
                             hint: 'Enter your full name',
-                            icon: Icon(Icons.person),
+                            icon: const Icon(Icons.person),
                             textEditingController: fullName,
                           ),
-                          SizedBox(height: 10),
-                          Text(
+                          const SizedBox(height: 10),
+                          const Text(
                             "Email",
                             style: TextStyle(
                                 color: AppColors.textBlue,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           TextFormFieldReusable(
                             hint: 'Enter your email',
-                            icon: Icon(Icons.mail),
+                            icon: const Icon(Icons.mail),
                             textEditingController: email,
                           ),
-                          SizedBox(height: 10),
-                          Text(
+                          const SizedBox(height: 10),
+                          const Text(
                             "Contact Details",
                             style: TextStyle(
                                 color: AppColors.textBlue,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           TextFormFieldReusable(
                             hint: 'Enter your contact details',
-                            icon: Icon(Icons.phone),
+                            icon: const Icon(Icons.phone),
                             textEditingController: contactDetails,
                           ),
-                          SizedBox(height: 10),
-                          Text(
+                          const SizedBox(height: 10),
+                          const Text(
                             "Password",
                             style: TextStyle(
                                 color: AppColors.textBlue,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           TextFormFieldReusable(
                             isObscure: true,
                             hint: 'Enter your password',
-                            icon: Icon(Icons.password),
+                            icon: const Icon(Icons.password),
                             textEditingController: password,
                           ),
-                          SizedBox(height: 10),
-                          Text(
+                          const SizedBox(height: 10),
+                          const Text(
                             "Confirm Password",
                             style: TextStyle(
                                 color: AppColors.textBlue,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           TextFormFieldReusable(
                             isObscure: true,
                             hint: 'ReEnter your Password',
-                            icon: Icon(Icons.password),
+                            icon: const Icon(Icons.password),
                             textEditingController: confirmPassword,
                           ),
                         ],
                       )
                     ],
                   ),
-                  SizedBox(height: 30),
-                  LargeButtonReusable(title: "Register"),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 30),
+                  const LargeButtonReusable(title: "Register"),
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         "Already have an account?",
                         style: TextStyle(
                             color: AppColors.silver,
                             fontWeight: FontWeight.w900),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       GestureDetector(
                         onTap: () {
-                          Get.to(LoginView());
+                          Get.to(const LoginView());
                         },
-                        child: Text(
+                        child: const Text(
                           "Log in",
                           style: TextStyle(
                               color: AppColors.lightBlue,

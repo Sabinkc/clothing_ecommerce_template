@@ -1,7 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/colors.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class TextFormFieldReusable extends StatelessWidget {
   final String hint;
   Icon? icon;
@@ -18,7 +21,7 @@ class TextFormFieldReusable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         height: 55,
         child: TextFormField(
             controller: textEditingController,

@@ -17,7 +17,7 @@ class UserAccountTabsInfoDetail extends StatelessWidget {
           // backgroundColor: AppColors.lightSilver,
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text("Edit Your Details"),
+            title: const Text("Edit Your Details"),
             centerTitle: false,
             backgroundColor: Colors.white,
           ),
@@ -34,12 +34,12 @@ class UserAccountTabsInfoDetail extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Entern Your Full Name",
                     textEditingController: fullNameController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "Date Of Birth",
                     style: TextStyle(
@@ -47,13 +47,13 @@ class UserAccountTabsInfoDetail extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   DOBInputField(
                     inputDecoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(
                             8.0), // You can customize the radius
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.black, // Customize border color
                           width: 1.0, // Customize border width
                         ),
@@ -69,7 +69,7 @@ class UserAccountTabsInfoDetail extends StatelessWidget {
                   //   hint: "Entern Your Old Password",
                   //   textEditingController: oldPasswordController,
                   // ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     "Gender",
                     style: TextStyle(
@@ -77,10 +77,10 @@ class UserAccountTabsInfoDetail extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   DropdownMenuExample(),
-                  SizedBox(height: 30),
-                  LargeButtonReusable(
+                  const SizedBox(height: 30),
+                  const LargeButtonReusable(
                     title: "Save Changes",
                     color: Colors.black,
                   )

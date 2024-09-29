@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/login/views/login_view.dart';
@@ -20,7 +22,7 @@ class UserAccountSettings extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings"),
+        title: const Text("Settings"),
         backgroundColor: AppColors.lightSilver,
         centerTitle: false,
       ),
@@ -45,28 +47,28 @@ class UserAccountSettings extends StatelessWidget {
                   title: "Message Settings",
                   icon: Icons.settings,
                   onclick: () {
-                    Get.to(MessageSettingsView());
+                    Get.to(const MessageSettingsView());
                   },
                 ),
                 UserAccountReusableContainer(
                   title: "Address",
                   icon: Icons.location_on_rounded,
                   onclick: () {
-                    Get.to(AddressView());
+                    Get.to(const AddressView());
                   },
                 ),
                 UserAccountReusableContainer(
                   title: "Language",
                   icon: Icons.language,
                   onclick: () {
-                    Get.to(Language());
+                    Get.to(const Language());
                   },
                 ),
                 UserAccountReusableContainer(
                   title: "Feedback",
                   icon: Icons.feedback,
                   onclick: () {
-                    Get.to(FeedbackView());
+                    Get.to(const FeedbackView());
                   },
                 ),
                 UserAccountReusableContainer(
@@ -85,23 +87,23 @@ class UserAccountSettings extends StatelessWidget {
                         title:
                             "This action cannot be undone. \nAll your data will be permanently removed.",
                         hintText: "Enter your Password",
-                        icon: Icon(Icons.password),
+                        icon: const Icon(Icons.password),
                         controller: passwordController,
                         onclick: () {},
                         confirmtitle: "Re-Enter your Password",
                         confirmhintText: "*******",
-                        confirmicon: Icon(Icons.password),
+                        confirmicon: const Icon(Icons.password),
                         confirmcontroller: confirmPasswordController,
                       ),
                     );
                   },
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 GestureDetector(
                     onTap: () {
-                      Get.offAll(LoginView());
+                      Get.offAll(const LoginView());
                     },
-                    child: LargeButtonReusable(title: "Logout"))
+                    child: const LargeButtonReusable(title: "Logout"))
               ],
             ),
           ),
@@ -116,7 +118,7 @@ class UserAccountReusableContainer extends StatelessWidget {
   final icon;
   final VoidCallback onclick;
   //add ontap here
-  UserAccountReusableContainer(
+  const UserAccountReusableContainer(
       {super.key,
       required this.title,
       required this.icon,
@@ -127,7 +129,7 @@ class UserAccountReusableContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onclick,
       child: Container(
-        margin: EdgeInsets.only(bottom: 10),
+        margin: const EdgeInsets.only(bottom: 10),
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
@@ -141,7 +143,7 @@ class UserAccountReusableContainer extends StatelessWidget {
                 icon,
                 color: Colors.grey.shade500,
               ),
-              SizedBox(width: 20),
+              const SizedBox(width: 20),
               Text(
                 title,
                 style: TextStyle(

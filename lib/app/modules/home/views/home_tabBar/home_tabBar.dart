@@ -38,7 +38,7 @@ class HomeTabBar extends StatelessWidget {
           TabBar(
             // indicatorSize: TabBarIndicatorSize.tab,
 
-            labelPadding: EdgeInsets.fromLTRB(0, 0, 25, 0),
+            labelPadding: const EdgeInsets.fromLTRB(0, 0, 25, 0),
             isScrollable: true,
             tabs: [
               Text(
@@ -73,8 +73,8 @@ class HomeTabBar extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 20),
-          Expanded(
+          const SizedBox(height: 20),
+          const Expanded(
             child: TabBarView(
               children: [
                 // HomeTabBarTabs(),

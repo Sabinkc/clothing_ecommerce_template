@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/colors.dart';
 
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
@@ -13,7 +15,7 @@ class ProductDetailSize extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 40,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -50,7 +52,7 @@ class ProductDetailSize extends StatelessWidget {
                       ),
                     ),
                   )
-                : SizedBox(),
+                : const SizedBox(),
           ),
         ),
       ),

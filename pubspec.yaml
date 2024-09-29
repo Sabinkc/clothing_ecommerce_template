@@ -41,3 +41,6 @@ flutter:
     - family: Open_Sans
       fonts:
         - asset: assets/Open_Sans/static/OpenSans-Regular.ttf
+    - family: Bai Jamjuree
+      fonts:
+        - asset: assets/Bai_Jamjuree/BaiJamjuree-Regular.ttf

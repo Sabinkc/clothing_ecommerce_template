@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 class FavouritesController extends GetxController {
   // static FavouritesController get instance => Get.find();
-  //TODO: Implement FavouritesController
+
   var favoritesList = [].obs;
   // var favouritesProductId = "".obs;
   final count = 0.obs;
@@ -41,20 +41,20 @@ class FavouritesController extends GetxController {
           };
   }
 
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  // @override
+  // void onInit() {
+  //   super.onInit();
+  // }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  // @override
+  // void onReady() {
+  //   super.onReady();
+  // }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
+  // @override
+  // void onClose() {
+  //   super.onClose();
+  // }
 
   void increment() => count.value++;
 }

@@ -26,7 +26,7 @@ class UserAccountTabBar extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        SizedBox(
           height: 40,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
@@ -37,15 +37,15 @@ class UserAccountTabBar extends StatelessWidget {
               },
               child: Obx(
                 () => Container(
-                  margin: EdgeInsets.only(right: 10),
-                  padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  margin: const EdgeInsets.only(right: 10),
+                  padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(16),
                     color: userAccController.tabBarIndex.value == index
                         ? Colors.black
                         // Color(0xff6B7280)
-                        : Color(0xffF3F4F6),
+                        : const Color(0xffF3F4F6),
                   ),
                   child: Text(
                     tabLabels[index],
@@ -63,7 +63,7 @@ class UserAccountTabBar extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         Obx(() => changeView())
       ],
     );
@@ -71,11 +71,11 @@ class UserAccountTabBar extends StatelessWidget {
 
   changeView() {
     if (userAccController.tabBarIndex.value == 0) {
-      return UserAccountTabsInfo();
+      return const UserAccountTabsInfo();
     } else if (userAccController.tabBarIndex.value == 1) {
-      return UserAccountTabsAddress();
+      return const UserAccountTabsAddress();
     } else if (userAccController.tabBarIndex.value == 2) {
-      return UserAccountTabsOrder();
+      return const UserAccountTabsOrder();
     } else {
       return UserAccountTabsWishList();
     }

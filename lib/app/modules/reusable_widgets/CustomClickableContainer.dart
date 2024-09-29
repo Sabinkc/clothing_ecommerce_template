@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -40,7 +42,7 @@ class CustomClickableContainer extends StatelessWidget {
           // Main Image Container
           Container(
             height: 300,
-            margin: EdgeInsets.all(0),
+            margin: const EdgeInsets.all(0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(0),
               image: DecorationImage(
@@ -57,12 +59,12 @@ class CustomClickableContainer extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           // Horizontal Image Scroller
           Container(
             height: 80,
-            margin: EdgeInsets.symmetric(horizontal: 0),
+            margin: const EdgeInsets.symmetric(horizontal: 0),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: controller.selectedImages.length,

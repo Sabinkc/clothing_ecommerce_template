@@ -11,7 +11,7 @@ class FeedbackView extends StatelessWidget {
   Widget build(BuildContext context) => KeyboardDismisser(
           child: Scaffold(
         appBar: AppBar(
-          title: Text("Feedback"),
+          title: const Text("Feedback"),
           backgroundColor: AppColors.lightSilver,
           centerTitle: false,
         ),
@@ -28,8 +28,8 @@ class FeedbackView extends StatelessWidget {
                   "Enter your Feedback",
                   style: TextStyle(fontSize: TextSize.normal),
                 ),
-                SizedBox(height: 20),
-                TextField(
+                const SizedBox(height: 20),
+                const TextField(
                   maxLength: 500,
                   maxLines: 5,
                   decoration: InputDecoration(
@@ -38,8 +38,8 @@ class FeedbackView extends StatelessWidget {
                     hintText: "Please write your feedback here",
                   ),
                 ),
-                SizedBox(height: 20),
-                LargeButtonReusable(title: "Submit"),
+                const SizedBox(height: 20),
+                const LargeButtonReusable(title: "Submit"),
               ],
             ),
           ),

@@ -1,7 +1,4 @@
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
 
 import '../../../../constants/text_size.dart';
 
@@ -21,7 +18,7 @@ class UserAccountMyOrder extends StatelessWidget {
                 fontSize: TextSize.normal,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               "View All Orders >",
               style: TextStyle(
@@ -31,7 +28,7 @@ class UserAccountMyOrder extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -57,7 +54,7 @@ class UserAccountMyOrder extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         UserAccountMyOrderReusableColumn(
           title: "Return\nCancel",
           icon: Icons.assignment_return,
@@ -70,7 +67,7 @@ class UserAccountMyOrder extends StatelessWidget {
 
 class UserAccountMyOrderReusableColumn extends StatelessWidget {
   final String title;
-  final icon;
+  final IconData icon;
   final VoidCallback ontap;
   const UserAccountMyOrderReusableColumn(
       {super.key,
@@ -82,25 +79,22 @@ class UserAccountMyOrderReusableColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: ontap,
-      child: Container(
-        // margin: Ed,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(
-              icon,
-              color: Colors.red,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Icon(
+            icon,
+            color: Colors.red,
+          ),
+          const SizedBox(height: 8),
+          Text(
+            title,
+            style: TextStyle(
+              overflow: TextOverflow.ellipsis,
+              fontSize: TextSize.small,
             ),
-            SizedBox(height: 8),
-            Text(
-              title,
-              style: TextStyle(
-                overflow: TextOverflow.ellipsis,
-                fontSize: TextSize.small,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

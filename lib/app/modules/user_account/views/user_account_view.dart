@@ -1,7 +1,7 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_container.dart';
 
-import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabBar.dart';
+import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabbar.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -17,7 +17,7 @@ class UserAccountView extends GetView<UserAccountController> {
       child: Scaffold(
         backgroundColor: AppColors.lightSilver,
         body: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           // color: Colors.white,
 
           child: SingleChildScrollView(
@@ -25,9 +25,9 @@ class UserAccountView extends GetView<UserAccountController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 UserAccountContainer(),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Divider(thickness: 1, color: Colors.grey.shade300),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 UserAccountTabBar(),
                 // MY ORDER BEGINS FROM HERE
                 // UserAccountMyOrder(),

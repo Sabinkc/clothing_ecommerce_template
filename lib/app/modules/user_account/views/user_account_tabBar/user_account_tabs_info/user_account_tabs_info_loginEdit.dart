@@ -19,7 +19,7 @@ class UserAccountTabsInfoLoginEdit extends StatelessWidget {
           // backgroundColor: AppColors.lightSilver,
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text("Edit Login Details"),
+            title: const Text("Edit Login Details"),
             centerTitle: false,
             backgroundColor: Colors.white,
           ),
@@ -36,12 +36,12 @@ class UserAccountTabsInfoLoginEdit extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Entern Your Email",
                     textEditingController: emailController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "Old Password",
                     style: TextStyle(
@@ -49,12 +49,12 @@ class UserAccountTabsInfoLoginEdit extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Entern Your Old Password",
                     textEditingController: oldPasswordController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "New Password",
                     style: TextStyle(
@@ -62,13 +62,13 @@ class UserAccountTabsInfoLoginEdit extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Entern Your New Password",
                     textEditingController: newPasswordController,
                   ),
-                  SizedBox(height: 30),
-                  LargeButtonReusable(
+                  const SizedBox(height: 30),
+                  const LargeButtonReusable(
                     title: "Save Changes",
                     color: Colors.black,
                   )

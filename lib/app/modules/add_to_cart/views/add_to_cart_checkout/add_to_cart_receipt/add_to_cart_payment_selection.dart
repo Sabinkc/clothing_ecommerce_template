@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -10,7 +12,7 @@ class AddToCartPaymentSelection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -28,14 +30,14 @@ class AddToCartPaymentSelection extends StatelessWidget {
               child: Container(
                 width: 50,
                 height: 5,
-                margin: EdgeInsets.only(bottom: 20),
+                margin: const EdgeInsets.only(bottom: 20),
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
             ),
-            Center(
+            const Center(
               child: Text(
                 "Select Your Payment Method",
                 style: TextStyle(
@@ -45,7 +47,7 @@ class AddToCartPaymentSelection extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
 
             // Cash on Delivery Option
             _paymentMethodTile(
@@ -58,12 +60,12 @@ class AddToCartPaymentSelection extends StatelessWidget {
                 // Handle payment selection
               },
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             // Mobile Banking Option
             _paymentMethodTile(
               context,
-              icon: Icon(FontAwesomeIcons.mobileAlt,
+              icon: const Icon(FontAwesomeIcons.mobileAlt,
                   size: 30, color: Colors.green),
               title: "Mobile Banking",
               subtitle: "Pay with your mobile banking app",
@@ -72,7 +74,7 @@ class AddToCartPaymentSelection extends StatelessWidget {
                 // Handle payment selection
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             )
           ],
@@ -92,7 +94,7 @@ class AddToCartPaymentSelection extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: Colors.grey[100],
           borderRadius: BorderRadius.circular(16),
@@ -107,18 +109,18 @@ class AddToCartPaymentSelection extends StatelessWidget {
         child: Row(
           children: [
             icon,
-            SizedBox(width: 15),
+            const SizedBox(width: 15),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
                   subtitle,
                   style: TextStyle(
@@ -128,7 +130,7 @@ class AddToCartPaymentSelection extends StatelessWidget {
                 ),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Icon(
               trailingIcon,
               size: 18,

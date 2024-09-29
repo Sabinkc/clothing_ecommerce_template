@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_interpolation_to_compose_strings, file_names
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_order/order_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -50,13 +52,13 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: img.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 8.0,
         mainAxisSpacing: 10.0,
-        childAspectRatio: 0.6,
+        childAspectRatio: 0.65,
       ),
       itemBuilder: (BuildContext context, index) {
         return GestureDetector(
@@ -121,14 +123,14 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     "State: " + state[index],
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                         fontSize: TextSize.small, fontWeight: FontWeight.w800),
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   Row(
                     children: [
                       Text(
@@ -154,35 +156,35 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Text(
-                        realPrice[index],
-                        style: TextStyle(
-                          fontSize: TextSize.small,
-                          decoration: TextDecoration.lineThrough,
-                          decorationThickness: 2,
-                          decorationColor: Colors.grey,
+                  const SizedBox(height: 5),
+                  // Row(
+                  //   children: [
+                  //     Text(
+                  //       realPrice[index],
+                  //       style: TextStyle(
+                  //         fontSize: TextSize.small,
+                  //         decoration: TextDecoration.lineThrough,
+                  //         decorationThickness: 2,
+                  //         decorationColor: Colors.grey,
 
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w500,
-                          // fontWeight: FontWeight.bold,
-                          // color: Colors.red,
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        price[index],
-                        style: TextStyle(
-                          fontSize: TextSize.small,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 5),
+                  //         color: Colors.grey,
+                  //         fontWeight: FontWeight.w500,
+                  //         // fontWeight: FontWeight.bold,
+                  //         // color: Colors.red,
+                  //       ),
+                  //     ),
+                  //     SizedBox(width: 10),
+                  //     Text(
+                  //       price[index],
+                  //       style: TextStyle(
+                  //         fontSize: TextSize.small,
+                  //         fontWeight: FontWeight.bold,
+                  //         color: Colors.red,
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
+                  const SizedBox(height: 5),
                   Row(
                     children: [
                       Text(

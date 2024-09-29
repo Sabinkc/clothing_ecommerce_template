@@ -1,10 +1,13 @@
+
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 import 'ProductDetailViewReusableRow.dart';
 
 class ProductDetailAttributes extends StatelessWidget {
   final Map attributes;
-  ProductDetailAttributes({super.key, required this.attributes});
+  const ProductDetailAttributes({super.key, required this.attributes});
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +15,14 @@ class ProductDetailAttributes extends StatelessWidget {
       onTap: () {
         showModalBottomSheet<void>(
           context: context,
-          shape: RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
           ),
           builder: (BuildContext context) {
             return Container(
               height: 400,
               padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
               ),
@@ -40,8 +43,8 @@ class ProductDetailAttributes extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 8.0),
                     child: Text(
                       'Attributes',
                       style: TextStyle(
@@ -51,7 +54,7 @@ class ProductDetailAttributes extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
 
                   // Attributes list
                   Expanded(
@@ -73,7 +76,7 @@ class ProductDetailAttributes extends StatelessWidget {
                                   flex: 3,
                                   child: Text(
                                     "${attribute.key}: ",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w600,
                                       color: Colors.black87,
@@ -84,7 +87,7 @@ class ProductDetailAttributes extends StatelessWidget {
                                   flex: 7,
                                   child: Text(
                                     attribute.value ?? "",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 16,
                                       color: Colors.black54,
                                     ),
@@ -103,7 +106,7 @@ class ProductDetailAttributes extends StatelessWidget {
           },
         );
       },
-      child: ProductDetailViewReusableRow(
+      child: const ProductDetailViewReusableRow(
         title: "Attributes",
         icons: Icon(Icons.checkroom),
       ),

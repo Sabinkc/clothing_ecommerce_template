@@ -1,4 +1,7 @@
 import 'package:d_and_s/app/constants/text_size.dart';
+
+import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
+import 'package:d_and_s/app/modules/favourites/views/favourites_view.dart';
 import 'package:d_and_s/app/modules/login/views/login_view.dart';
 
 import 'package:flutter/material.dart';
@@ -24,7 +27,7 @@ class UserAccountContainer extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(color: Colors.grey.shade300, width: 2),
-            image: DecorationImage(
+            image: const DecorationImage(
               image: NetworkImage(
                 "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
               ),
@@ -32,13 +35,13 @@ class UserAccountContainer extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(width: 16),
+        const SizedBox(width: 16),
         // User Information
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Aman",
                 style: TextStyle(
                   fontSize: 20,
@@ -46,57 +49,67 @@ class UserAccountContainer extends StatelessWidget {
                   color: Colors.black87,
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               Row(
                 children: [
                   // Wish List
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Wish List",
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey.shade600,
-                        ),
-                      ),
-                      SizedBox(height: 4),
-                      Obx(
-                        () => Text(
-                          favoriteController.favoritesList.length.toString(),
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(FavouritesView());
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Wish List",
                           style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blue,
+                            fontSize: 14,
+                            color: Colors.grey.shade600,
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(height: 4),
+                        Obx(
+                          () => Text(
+                            favoriteController.favoritesList.length.toString(),
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  SizedBox(width: 32),
+                  const SizedBox(width: 32),
                   // Vouchers
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Cart",
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey.shade600,
-                        ),
-                      ),
-                      SizedBox(height: 4),
-                      Obx(
-                        () => Text(
-                          addToCartController.cartProducts.length.toString(),
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(AddedCart());
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Cart",
                           style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blue,
+                            fontSize: 14,
+                            color: Colors.grey.shade600,
                           ),
                         ),
-                      ),
-                    ],
+                        const SizedBox(height: 4),
+                        Obx(
+                          () => Text(
+                            addToCartController.cartProducts.length.toString(),
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -107,12 +120,12 @@ class UserAccountContainer extends StatelessWidget {
         Column(
           children: [
             IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.logout,
                 color: Colors.black,
               ),
               onPressed: () {
-                Get.to(LoginView());
+                Get.to(const LoginView());
                 // Handle settings press
               },
             ),

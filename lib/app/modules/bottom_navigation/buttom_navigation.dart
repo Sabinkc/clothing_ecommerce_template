@@ -1,10 +1,8 @@
-
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_view.dart';
 import 'package:flutter/material.dart';
-
 
 // class BottomNavBar extends StatefulWidget {
 //   @override
@@ -86,13 +84,13 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
-  
+
   static final List<Widget> _widgetOptions = <Widget>[
     HomeView(),
     CategoryView(),
     AddedCart(),
     // AddedCart(),
-     UserAccountView(),
+    const UserAccountView(),
   ];
 
   void _onItemTapped(int index) {
@@ -104,6 +102,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'Bai Jamjuree',
+      ),
       home: Scaffold(
         body: Center(
           child: _widgetOptions.elementAt(_selectedIndex),
@@ -140,7 +141,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             fontSize: 10, // Reduce text size when unselected
           ),
           iconSize: 20, // Decrease the size of the icons
-        
+
           onTap: _onItemTapped,
         ),
       ),

@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
@@ -10,12 +11,12 @@ import 'package:get/get.dart';
 
 import '../../../add_to_cart/views/added_cart.dart';
 import '../../../product_detail/controllers/product_detail_controller.dart';
-import '../../../product_detail/views/ProductDetailCircularColoredContainer.dart';
+import '../../../product_detail/views/product_detail_circular_colored_container.dart';
 import '../../../product_detail/views/ProductDetail_Size.dart';
 import '../../../product_detail/views/product_detail_quantity.dart';
 
 class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
-  final controller_productDetail = Get.put(ProductDetailController());
+  final controllerProductDetail = Get.put(ProductDetailController());
   final controller = Get.put(AddToCartController());
   final Map homeSectionTabsData;
   final String homeSectionTabsImg;
@@ -27,12 +28,12 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List size = homeSectionTabsData["size"] ?? [];
-    List reviewdata = homeSectionTabsData["reviews"] ?? [];
+    // List reviewdata = homeSectionTabsData["reviews"] ?? [];
     Map colordata = homeSectionTabsData["color"] ?? {};
     return Container(
       height: 1000,
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(16),
           topRight: Radius.circular(16),
@@ -47,7 +48,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
           children: [
             Container(
               height: 200,
-              margin: EdgeInsets.all(0),
+              margin: const EdgeInsets.all(0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
@@ -61,15 +62,15 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               homeSectionTabsData["name"],
               style: TextStyle(
                   fontSize: TextSize.normal, fontWeight: FontWeight.w700),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             ProductDetailPrice(priceDetails: homeSectionTabsData),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               "Colors :",
               style: TextStyle(
@@ -77,7 +78,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             ProductDetailCircularColoredContainer(
               colorList: colordata.isNotEmpty
                   ? homeSectionTabsData["color"]
@@ -87,7 +88,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                       ],
                     },
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               "Size",
               style: TextStyle(
@@ -95,13 +96,13 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             size.isNotEmpty
                 ? ProductDetailSize(
                     sizeList: homeSectionTabsData["size"],
                   )
-                : SizedBox(),
-            SizedBox(height: 15),
+                : const SizedBox(),
+            const SizedBox(height: 15),
             Text(
               "Quantity",
               style: TextStyle(
@@ -109,12 +110,12 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             ProductDetailQuantity(),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             GestureDetector(
               onTap: () {
-                if (controller_productDetail.selectedColor.value == 0) {
+                if (controllerProductDetail.selectedColor.value == 0) {
                   Get.snackbar(
                     'Selection Error',
                     'Please select a color.',
@@ -125,7 +126,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                   return;
                 }
 
-                if (controller_productDetail.selectedSize.value.isEmpty) {
+                if (controllerProductDetail.selectedSize.value.isEmpty) {
                   Get.snackbar(
                     'Selection Error',
                     'Please select a size.',
@@ -144,12 +145,12 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                     "price": homeSectionTabsData["price"],
                     "discount": homeSectionTabsData["discount"],
                     "realprice": homeSectionTabsData["realprice"],
-                    "size": controller_productDetail.selectedSize.value,
-                    "quantity": controller_productDetail.quantityIndex.value,
-                    "image": controller_productDetail.selectedImages[
-                        controller_productDetail
+                    "size": controllerProductDetail.selectedSize.value,
+                    "quantity": controllerProductDetail.quantityIndex.value,
+                    "image": controllerProductDetail.selectedImages[
+                        controllerProductDetail
                             .detailViewProductCustomClickableContainer.value],
-                    "color": controller_productDetail.selectedColor.value,
+                    "color": controllerProductDetail.selectedColor.value,
                   },
                 );
                 // controller.selectedProducts.add(cartId);

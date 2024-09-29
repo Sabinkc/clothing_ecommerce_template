@@ -17,7 +17,7 @@ class AccountInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Account Information"),
+        title: const Text("Account Information"),
         centerTitle: false,
         backgroundColor: AppColors.lightSilver,
       ),
@@ -34,7 +34,7 @@ class AccountInfo extends StatelessWidget {
                 child: Container(
                   height: 100,
                   width: 100,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
                         image: NetworkImage(
@@ -44,14 +44,14 @@ class AccountInfo extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Center(
                 child: Text(
                   "Change Picture",
                   style: TextStyle(fontSize: TextSize.normal),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               AccountInfoReusableContainer(
                 title: "Full Name",
                 subtitle: 'Aman Shrestha',
@@ -61,7 +61,7 @@ class AccountInfo extends StatelessWidget {
                       appBarTitlte: 'Edit Full Name',
                       title: 'Enter New Name',
                       hintText: 'ram',
-                      icon: Icon(Icons.person),
+                      icon: const Icon(Icons.person),
                       controller: fullNameController,
                       onclick: () {},
                     ),
@@ -77,12 +77,12 @@ class AccountInfo extends StatelessWidget {
                       appBarTitlte: 'Change Password',
                       title: 'Enter New Password',
                       hintText: '*******',
-                      icon: Icon(Icons.password),
+                      icon: const Icon(Icons.password),
                       controller: passwordController,
                       onclick: () {},
                       confirmtitle: "Re-Enter Your Password",
                       confirmhintText: "*******",
-                      confirmicon: Icon(Icons.password),
+                      confirmicon: const Icon(Icons.password),
                       confirmcontroller: confirmpasswordController,
                     ),
                   );
@@ -97,7 +97,7 @@ class AccountInfo extends StatelessWidget {
                       appBarTitlte: 'Edit Phone Number',
                       title: 'Enter New Phone Number',
                       hintText: '1234567890',
-                      icon: Icon(Icons.phone),
+                      icon: const Icon(Icons.phone),
                       controller: phoneNoController,
                       onclick: () {},
                     ),
@@ -113,7 +113,7 @@ class AccountInfo extends StatelessWidget {
                       appBarTitlte: 'Edit Email',
                       title: 'Enter New Email',
                       hintText: 'ram@gmail.com',
-                      icon: Icon(Icons.email),
+                      icon: const Icon(Icons.email),
                       controller: emailController,
                       onclick: () {},
                     ),
@@ -144,7 +144,7 @@ class AccountInfoReusableContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onclick,
       child: Container(
-        margin: EdgeInsets.only(bottom: 10),
+        margin: const EdgeInsets.only(bottom: 10),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16), color: Colors.white),
         child: Padding(
@@ -159,7 +159,7 @@ class AccountInfoReusableContainer extends StatelessWidget {
                 ),
               ),
               Text(
-                subtitle + " >",
+                "$subtitle >",
                 style: TextStyle(fontSize: TextSize.small, color: Colors.blue),
               ),
             ],

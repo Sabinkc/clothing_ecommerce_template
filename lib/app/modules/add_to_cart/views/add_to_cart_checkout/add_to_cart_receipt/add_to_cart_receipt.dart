@@ -1,16 +1,12 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/CheckBoxReusable.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/DottedLine.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
+
+
 
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:get/get.dart';
 
-import '../../../../user_account/views/user_account_tabBar/user_account_tabs_address/user_account_tabs_address.dart';
-import 'add_to_cart_address_selection.dart';
-import 'add_to_cart_payment_selection.dart';
 
 class AddToCartReceipt extends StatelessWidget {
   final controller = Get.put(AddToCartController());
@@ -20,148 +16,139 @@ class AddToCartReceipt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        AddToCartTitleRow(
-          title: "Receipt",
-          icon: Icon(
-            Icons.receipt_outlined,
-            color: Colors.green,
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(16),
+            color: Colors.white,
+            // decoration: BoxDecoration(
+            //   boxShadow: [
+            //     BoxShadow(
+            //       color: Colors.grey.withOpacity(0.2),
+            //       spreadRadius: 2,
+            //       blurRadius: 6,
+            //       offset: const Offset(0, 3), // changes position of shadow
+            //     ),
+            //   ],
+            //   borderRadius: BorderRadius.circular(16),
+            //   color: Colors.white,
+            // ),
+            child: Column(
+              children: [
+                const AddToCartTitleRow(
+                  title: "Receipt",
+                  icon: Icon(
+                    Icons.receipt_outlined,
+                    color: Colors.green,
+                  ),
+                ),
+                const SizedBox(height: 20),
+                AddToCartReceiptRow(
+                  title: "Amount",
+                  subtitle: "Rs ${controller.totalPrice.value}",
+                  // icon: const Icon(
+                  //   Icons.attach_money,
+                  //   color: Colors.grey,
+                  // ), // Money icon for amount
+                ),
+                const SizedBox(height: 10),
+                const AddToCartReceiptRow(
+                  title: "Shipping Charge",
+                  subtitle: "Rs. 100",
+                  // icon: Icon(
+                  //   Icons.local_shipping_outlined,
+                  //   color: Colors.grey,
+                  // ), // Shipping icon
+                ),
+                const SizedBox(height: 10),
+                AddToCartReceiptRow(
+                  title: "Total Amount",
+                  subtitle: "Rs ${controller.totalPrice.value + 100}",
+                  isTotal: true,
+                  // icon: const Icon(
+                  //   Icons.calculate_outlined,
+                  //   // color: Colors.green,
+                  // ), // Calculation icon for total
+                ),
+
+                // Row(
+                //   children: [
+                //     const Icon(
+                //       Icons.local_shipping,
+                //       color: Colors.green,
+                //     ),
+                //     const SizedBox(width: 10),
+                //     const Text("Shipping"),
+                //     const Spacer(),
+                //     GestureDetector(
+                //       onTap: () {
+                //         showBottomSheet(
+                //             context: context,
+                //             builder: (BuildContext context) =>
+                //                 const AddToCartAddress());
+                //       },
+                //       child: Container(
+                //         padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.black,
+                //           borderRadius: BorderRadius.circular(16),
+                //         ),
+                //         child: const Text(
+                //           "CHANGE",
+                //           style: TextStyle(
+                //               color: Colors.white, fontWeight: FontWeight.bold),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
+                // const SizedBox(height: 10),
+                // const DottedLine(),
+                // const SizedBox(height: 10),
+                // Row(
+                //   children: [
+                //     Image.asset(
+                //       "assets/images/cashondelivery.png",
+                //       height: 25,
+                //     ),
+                //     const SizedBox(width: 10),
+                //     const Text("Cash On Delivery"),
+                //     const Spacer(),
+                //     GestureDetector(
+                //       onTap: () {
+                //         showBottomSheet(
+                //             context: context,
+                //             builder: (BuildContext context) =>
+                //                 const AddToCartPaymentSelection());
+                //       },
+                //       child: Container(
+                //         padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.black,
+                //           borderRadius: BorderRadius.circular(16),
+                //         ),
+                //         child: const Text(
+                //           "CHANGE",
+                //           style: TextStyle(
+                //               color: Colors.white, fontWeight: FontWeight.bold),
+                //         ),
+                //       ),
+                //     )
+                //   ],
+                // ),
+              ],
+            ),
           ),
-        ),
-        const SizedBox(height: 20), // Adds spacing between header and content
-        AddToCartReceiptRow(
-          title: "Amount",
-          subtitle: "Rs ${controller.totalPrice.value}",
-          icon: const Icon(
-            Icons.attach_money_outlined,
-            color: Colors.grey,
-          ), // Money icon for amount
-        ),
-        const AddToCartReceiptRow(
-          title: "Shipping Charge",
-          subtitle: "Rs. 100",
-          icon: Icon(
-            Icons.local_shipping_outlined,
-            color: Colors.grey,
-          ), // Shipping icon
-        ),
-        AddToCartReceiptRow(
-          title: "Total Amount",
-          subtitle: "Rs ${controller.totalPrice.value + 100}",
-          isTotal: true,
-          icon: const Icon(
-            Icons.calculate_outlined,
-            // color: Colors.green,
-          ), // Calculation icon for total
-        ),
-        DottedLine(),
-        AddToCartTitleRow(
-          title: "Info",
-          icon: Icon(
-            Icons.info_outline,
-            color: Colors.blue,
-          ),
-        ),
-        const SizedBox(height: 20),
-        const AddToCartReceiptRow(
-          title: "User Name",
-          subtitle: "Aman Shrestha",
-          icon: Icon(
-            Icons.person_outline,
-            color: Colors.grey,
-          ), // Person icon for user name
-        ),
-        const AddToCartReceiptRow(
-          title: "Contact Details",
-          subtitle: "+977-9812345678",
-          icon: Icon(
-            Icons.phone_outlined,
-            color: Colors.grey,
-          ), // Phone icon for contact details
-        ),
-        const AddToCartReceiptRow(
-          title: "Location",
-          subtitle: "Kuleshwor, Kathmandu",
-          icon: Icon(
-            Icons.location_on_outlined,
-            color: Colors.grey,
-          ), // Location pin icon
-        ),
-        DottedLine(),
-        const SizedBox(height: 10),
-        Row(
-          children: [
-            Icon(
-              Icons.local_shipping,
-              color: Colors.green,
-            ),
-            SizedBox(width: 10),
-            Text("Shipping"),
-            Spacer(),
-            GestureDetector(
-              onTap: () {
-                showBottomSheet(
-                    context: context,
-                    builder: (BuildContext context) => AddToCartAddress());
-              },
-              child: Container(
-                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Text(
-                  "CHANGE",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 10),
-        const DottedLine(),
-        const SizedBox(height: 10),
-        Row(
-          children: [
-            Image.asset(
-              "assets/images/cashondelivery.png",
-              height: 25,
-            ),
-            SizedBox(width: 10),
-            Text("Cash On Delivery"),
-            Spacer(),
-            GestureDetector(
-              onTap: () {
-                showBottomSheet(
-                    context: context,
-                    builder: (BuildContext context) =>
-                        AddToCartPaymentSelection());
-              },
-              child: Container(
-                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Text(
-                  "CHANGE",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ),
-            )
-          ],
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
 
 class AddToCartReceiptRow extends StatelessWidget {
-  final Icon icon;
+  final Icon? icon;
   final String title;
   final String subtitle;
   final bool isTotal; // Add flag for highlighting total
@@ -171,21 +158,22 @@ class AddToCartReceiptRow extends StatelessWidget {
     required this.title,
     required this.subtitle,
     this.isTotal = false,
-    required this.icon,
+    this.icon,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0), // Consistent padding
+      padding: const EdgeInsets.symmetric(vertical: 0.0), // Consistent padding
       child: Row(
         children: [
-          icon,
-          const SizedBox(width: 10),
+          icon ?? Container(),
+          // const SizedBox(width: 10),
           Text(
             title,
             style: TextStyle(
               fontSize: TextSize.small,
+
               fontWeight:
                   isTotal ? FontWeight.bold : FontWeight.w100, // Bold for total
               color: isTotal
@@ -200,9 +188,8 @@ class AddToCartReceiptRow extends StatelessWidget {
             style: TextStyle(
               fontSize: TextSize.small,
               fontWeight: isTotal ? FontWeight.bold : FontWeight.normal,
-              color: isTotal
-                  ? Colors.redAccent
-                  : Colors.grey, // Highlight total amount
+              color:
+                  isTotal ? Colors.blue : Colors.grey, // Highlight total amount
             ),
           ),
         ],
@@ -214,7 +201,7 @@ class AddToCartReceiptRow extends StatelessWidget {
 class AddToCartTitleRow extends StatelessWidget {
   final String title;
   final Icon icon;
-  AddToCartTitleRow({super.key, required this.title, required this.icon});
+  const AddToCartTitleRow({super.key, required this.title, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -222,10 +209,10 @@ class AddToCartTitleRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         icon,
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 15, // Increased font size for header
             // fontWeight: FontWeight.bold,
           ),

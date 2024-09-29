@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
@@ -21,7 +23,7 @@ class UserAccountEditAddress extends StatelessWidget {
           // backgroundColor: AppColors.lightSilver,
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: Text("Edit Your Details"),
+            title: const Text("Edit Your Details"),
             centerTitle: false,
             backgroundColor: Colors.white,
           ),
@@ -38,12 +40,12 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Ram Shrestha",
                     textEditingController: fullNameController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "Address",
                     style: TextStyle(
@@ -51,12 +53,12 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Kuleshwor",
                     textEditingController: addressController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "City",
                     style: TextStyle(
@@ -64,12 +66,12 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Kathmandu",
                     textEditingController: cityController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "State/Province",
                     style: TextStyle(
@@ -77,12 +79,12 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Bagmati",
                     textEditingController: stateController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "Zip Code",
                     style: TextStyle(
@@ -90,12 +92,12 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "11111",
                     textEditingController: zipCodeController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "Country",
                     style: TextStyle(
@@ -103,12 +105,12 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "Nepal",
                     textEditingController: countryController,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text(
                     "Phone Number",
                     style: TextStyle(
@@ -116,13 +118,13 @@ class UserAccountEditAddress extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: "+977-1234567890",
                     textEditingController: phoneController,
                   ),
-                  SizedBox(height: 30),
-                  LargeButtonReusable(
+                  const SizedBox(height: 30),
+                  const LargeButtonReusable(
                     title: "Update",
                     color: Colors.black,
                   )

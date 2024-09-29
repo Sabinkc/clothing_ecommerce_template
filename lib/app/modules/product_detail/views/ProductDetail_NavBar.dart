@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
 
@@ -11,8 +13,8 @@ import '../controllers/product_detail_controller.dart';
 
 class ProductDetailNavBar extends StatelessWidget {
   final controller = Get.put(AddToCartController());
-  final controller_productDetail = Get.put(ProductDetailController());
-  final controller_favorites = Get.put(FavouritesController());
+  final controllerProductDetail = Get.put(ProductDetailController());
+  final controllerFavorites = Get.put(FavouritesController());
   final Map navBarData;
   ProductDetailNavBar({
     super.key,
@@ -23,7 +25,7 @@ class ProductDetailNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         boxShadow: [
           BoxShadow(
@@ -38,12 +40,12 @@ class ProductDetailNavBar extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-              controller_favorites.searchProductId(
+              controllerFavorites.searchProductId(
                   navBarData["product_id"], navBarData);
             },
             child: Obx(
               () => Icon(
-                controller_favorites.isFavorite(navBarData["product_id"])
+                controllerFavorites.isFavorite(navBarData["product_id"])
                     ? Icons.favorite
                     : Icons.favorite_border,
                 color: Colors.green,
@@ -54,7 +56,7 @@ class ProductDetailNavBar extends StatelessWidget {
           // Price Section
           GestureDetector(
             onTap: () {
-              if (controller_productDetail.selectedColor.value == 0) {
+              if (controllerProductDetail.selectedColor.value == 0) {
                 Get.snackbar(
                   'Selection Error',
                   'Please select a color.',
@@ -65,7 +67,7 @@ class ProductDetailNavBar extends StatelessWidget {
                 return;
               }
 
-              if (controller_productDetail.selectedSize.value.isEmpty) {
+              if (controllerProductDetail.selectedSize.value.isEmpty) {
                 Get.snackbar(
                   'Selection Error',
                   'Please select a size.',
@@ -86,18 +88,26 @@ class ProductDetailNavBar extends StatelessWidget {
                   "price": navBarData["price"],
                   "discount": navBarData["discount"],
                   "realprice": navBarData["realprice"],
-                  "size": controller_productDetail.selectedSize.value,
-                  "quantity": controller_productDetail.quantityIndex.value,
-                  "image": controller_productDetail.selectedImages[
-                      controller_productDetail
+                  "size": controllerProductDetail.selectedSize.value,
+                  "quantity": controllerProductDetail.quantityIndex.value,
+                  "image": controllerProductDetail.selectedImages[
+                      controllerProductDetail
                           .detailViewProductCustomClickableContainer.value],
-                  "color": controller_productDetail.selectedColor.value,
+                  "color": controllerProductDetail.selectedColor.value,
                 },
               );
               controller.calculateTotalPrice("buy");
-              Get.to(AddToCartCheckout());
+              Get.to(
+                AddToCartCheckout(),
+                transition: Transition
+                    .leftToRightWithFade, // Professional fade-in effect
+                duration: const Duration(
+                    milliseconds: 500), // Smooth duration for the transition
+                curve:
+                    Curves.easeInOut, // Adds smoothness with easing in and out
+              );
             },
-            child: LargeButtonReusable(
+            child: const LargeButtonReusable(
               title: "Buy Now",
               width: 150,
               color: Colors.black,
@@ -106,7 +116,7 @@ class ProductDetailNavBar extends StatelessWidget {
 
           GestureDetector(
             onTap: () {
-              if (controller_productDetail.selectedColor.value == 0) {
+              if (controllerProductDetail.selectedColor.value == 0) {
                 Get.snackbar(
                   'Selection Error',
                   'Please select a color.',
@@ -117,7 +127,7 @@ class ProductDetailNavBar extends StatelessWidget {
                 return;
               }
 
-              if (controller_productDetail.selectedSize.value.isEmpty) {
+              if (controllerProductDetail.selectedSize.value.isEmpty) {
                 Get.snackbar(
                   'Selection Error',
                   'Please select a size.',
@@ -136,19 +146,27 @@ class ProductDetailNavBar extends StatelessWidget {
                   "price": navBarData["price"],
                   "discount": navBarData["discount"],
                   "realprice": navBarData["realprice"],
-                  "size": controller_productDetail.selectedSize.value,
-                  "quantity": controller_productDetail.quantityIndex.value,
-                  "image": controller_productDetail.selectedImages[
-                      controller_productDetail
+                  "size": controllerProductDetail.selectedSize.value,
+                  "quantity": controllerProductDetail.quantityIndex.value,
+                  "image": controllerProductDetail.selectedImages[
+                      controllerProductDetail
                           .detailViewProductCustomClickableContainer.value],
-                  "color": controller_productDetail.selectedColor.value,
+                  "color": controllerProductDetail.selectedColor.value,
                 },
               );
               // controller.selectedProducts.add(cartId);
               controller.toggleSelected(cartId);
-              Get.to(AddedCart());
+              Get.to(
+                AddedCart(),
+                transition: Transition
+                    .leftToRightWithFade, // Professional fade-in effect
+                duration: const Duration(
+                    milliseconds: 500), // Smooth duration for the transition
+                curve:
+                    Curves.easeInOut, // Adds smoothness with easing in and out
+              );
             },
-            child: LargeButtonReusable(
+            child: const LargeButtonReusable(
               title: "Add to Cart",
               width: 150,
               color: Colors.black,

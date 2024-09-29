@@ -7,14 +7,14 @@ import 'package:get/get.dart';
 
 import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
-import '../../product_detail/views/ProductDetailCircularColoredContainer.dart';
+import '../../product_detail/views/product_detail_circular_colored_container.dart';
 import '../../product_detail/views/ProductDetail_Size.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../controllers/add_to_cart_controller.dart';
 
 class AddToCartView extends GetView<AddToCartController> {
   final Map addToCartData;
-  final controller_productDetail = Get.put(ProductDetailController());
+  final controllerProductDetail = Get.put(ProductDetailController());
   AddToCartView({
     super.key,
     required this.addToCartData,
@@ -51,9 +51,9 @@ class AddToCartView extends GetView<AddToCartController> {
                                     borderRadius: BorderRadius.circular(16),
                                     image: DecorationImage(
                                         image: NetworkImage(
-                                          controller_productDetail
+                                          controllerProductDetail
                                                   .selectedImages[
-                                              controller_productDetail
+                                              controllerProductDetail
                                                   .detailViewProductCustomClickableContainer
                                                   .value],
                                         ),
@@ -187,7 +187,7 @@ class AddToCartView extends GetView<AddToCartController> {
                       const SizedBox(height: 10),
                       GestureDetector(
                         onTap: () {
-                          if (controller_productDetail.selectedColor.value ==
+                          if (controllerProductDetail.selectedColor.value ==
                               0) {
                             Get.snackbar(
                               'Selection Error',
@@ -199,7 +199,7 @@ class AddToCartView extends GetView<AddToCartController> {
                             return;
                           }
 
-                          if (controller_productDetail
+                          if (controllerProductDetail
                               .selectedSize.value.isEmpty) {
                             Get.snackbar(
                               'Selection Error',
@@ -210,7 +210,13 @@ class AddToCartView extends GetView<AddToCartController> {
                             );
                             return;
                           }
-
+                          Get.snackbar(
+                            'Added To Cart',
+                            'Go To Cart To View Products',
+                            snackPosition: SnackPosition.BOTTOM,
+                            backgroundColor: Colors.green,
+                            colorText: Colors.white,
+                          );
                           final String cartId = UniqueKey().toString();
                           controller.cartProducts.add(
                             {
@@ -220,25 +226,29 @@ class AddToCartView extends GetView<AddToCartController> {
                               "discount": addToCartData["discount"],
                               "realprice": addToCartData["realprice"],
                               "size":
-                                  controller_productDetail.selectedSize.value,
+                                  controllerProductDetail.selectedSize.value,
                               "quantity":
-                                  controller_productDetail.quantityIndex.value,
-                              "image": controller_productDetail.selectedImages[
-                                  controller_productDetail
+                                  controllerProductDetail.quantityIndex.value,
+                              "image": controllerProductDetail.selectedImages[
+                                  controllerProductDetail
                                       .detailViewProductCustomClickableContainer
                                       .value],
                               "color":
-                                  controller_productDetail.selectedColor.value,
+                                  controllerProductDetail.selectedColor.value,
                             },
                           );
                           // controller.selectedProducts.add(cartId);
                           controller.toggleSelected(cartId);
-                          Get.to(AddedCart(
-                              // addedCartData: addToCartData,
+                          Get.to(
+                            AddedCart(
 
-                              // sizeList: sizeList,
-                              // sizeList: controller_two.sizeList,
-                              ));
+                                // addedCartData: addToCartData,
+
+                                // sizeList: sizeList,
+                                // sizeList: controller_two.sizeList,
+                                ),
+                            // transition: Transition.circularReveal,
+                          );
                         },
                         child: const LargeButtonReusable(
                           title: "Add to Cart",

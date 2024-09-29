@@ -2,7 +2,6 @@ import 'package:d_and_s/app/constants/images.dart';
 
 import 'package:flutter/material.dart';
 
-
 import 'package:get/get.dart';
 
 import '../controllers/splash_screen_controller.dart';
@@ -16,13 +15,12 @@ class SplashScreenView extends GetView<SplashScreenController> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(AppImages.splash_screen_bg),
+            image: AssetImage(AppImages.splashScreenBg),
             fit: BoxFit.cover,
           ),
         ),
-
       ),
     );
   }

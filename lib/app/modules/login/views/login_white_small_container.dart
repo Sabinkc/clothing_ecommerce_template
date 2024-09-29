@@ -33,31 +33,31 @@ class LoginWhiteSmallContainer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Email",
                 style: TextStyle(
-                    color: AppColors.textBlue, fontWeight: FontWeight.w600),
+                    color: AppColors.lightBlue, fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormFieldReusable(
                 hint: 'Enter your email',
-                icon: Icon(Icons.person),
+                icon: const Icon(Icons.person),
                 textEditingController: email,
               ),
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 "Password",
                 style: TextStyle(
-                    color: AppColors.textBlue, fontWeight: FontWeight.w600),
+                    color: AppColors.lightBlue, fontWeight: FontWeight.w600),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormFieldReusable(
                 isObscure: true,
                 hint: 'Enter your Password',
-                icon: Icon(Icons.password),
+                icon: const Icon(Icons.password),
                 textEditingController: password,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 children: [
                   Obx(
@@ -68,18 +68,27 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                       valueCheckBox: controller.isSelected.value,
                     ),
                   ),
-                  SizedBox(width: 5),
-                  Text(
+                  const SizedBox(width: 5),
+                  const Text(
                     "Remember me",
                     style: TextStyle(
                         color: AppColors.silver, fontWeight: FontWeight.w900),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   GestureDetector(
                     onTap: () {
-                      Get.to(ForgotPasswordView());
+                      Get.to(
+                        ForgotPasswordView(),
+                        transition: Transition
+                            .leftToRightWithFade, // Professional fade-in effect
+                        duration: const Duration(
+                            milliseconds:
+                                500), // Smooth duration for the transition
+                        curve: Curves
+                            .easeInOut, // Adds smoothness with easing in and out
+                      );
                     },
-                    child: Text(
+                    child: const Text(
                       "Forgot Password ?",
                       style: TextStyle(
                           color: AppColors.lightBlue,
@@ -88,25 +97,46 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               GestureDetector(
-                  onTap: () => Get.to(BottomNavBar()),
-                  child: LargeButtonReusable(title: "Log in")),
-              SizedBox(height: 50),
+                  onTap: () => Get.to(
+                        const BottomNavBar(),
+                        transition: Transition
+                            .leftToRightWithFade, // Professional fade-in effect
+                        duration: const Duration(
+                            milliseconds:
+                                500), // Smooth duration for the transition
+                        curve: Curves
+                            .easeInOut, // Adds smoothness with easing in and out
+                      ),
+                  child: const LargeButtonReusable(
+                    title: "Log in",
+                    color: AppColors.lightBlue,
+                  )),
+              const SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Don't have an account?",
                     style: TextStyle(
                         color: AppColors.silver, fontWeight: FontWeight.w900),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   GestureDetector(
                     onTap: () {
-                      Get.to(RegisterView());
+                      Get.to(
+                        RegisterView(),
+                        transition: Transition
+                            .leftToRightWithFade, // Professional fade-in effect
+                        duration: const Duration(
+                            milliseconds:
+                                500), // Smooth duration for the transition
+                        curve: Curves
+                            .easeInOut, // Adds smoothness with easing in and out
+                      );
                     },
-                    child: Text(
+                    child: const Text(
                       "Sign UP",
                       style: TextStyle(
                           color: AppColors.lightBlue,

@@ -1,12 +1,11 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
 
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../../constants/colors.dart';
-
 class LoginBlueContainer extends StatelessWidget {
-  LoginBlueContainer({super.key});
+  const LoginBlueContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class LoginBlueContainer extends StatelessWidget {
         height: Adaptive.h(50),
         child: Column(
           children: [
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Center(
               child: Text(
                 "Sign in to your\n     Account",
@@ -29,10 +28,11 @@ class LoginBlueContainer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 10),
+            const Text(
               "Enter your email and password to log in",
-              style: TextStyle(color: Colors.white),
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
             ),
           ],
         ),

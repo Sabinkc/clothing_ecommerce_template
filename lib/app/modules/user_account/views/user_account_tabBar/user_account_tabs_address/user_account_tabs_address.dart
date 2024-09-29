@@ -24,7 +24,7 @@ class UserAccountTabsAddress extends StatelessWidget {
             style: TextStyle(
                 fontSize: TextSize.normal, fontWeight: FontWeight.w800),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Text(
             "Feel free to edit any of your address details below so your account is up to date.",
             textAlign: TextAlign.start,
@@ -32,18 +32,18 @@ class UserAccountTabsAddress extends StatelessWidget {
               fontSize: TextSize.normal,
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           GestureDetector(
             onTap: () {
               Get.to(UserAccountAddAddress());
             },
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(
-                  color: Color(0xff6B7280).withOpacity(0.5),
+                  color: const Color(0xff6B7280).withOpacity(0.5),
                 ),
               ),
               child: Column(
@@ -57,17 +57,17 @@ class UserAccountTabsAddress extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: 100),
-                  Icon(Icons.add)
+                  const SizedBox(height: 100),
+                  const Icon(Icons.add)
                 ],
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Stack(
             children: [
               Container(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
                     color: Colors.white,),
@@ -82,7 +82,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Text(
                       subtitle,
                       textAlign: TextAlign.start,
@@ -90,7 +90,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                         fontSize: TextSize.normal,
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Row(
                       children: [
                         GestureDetector(
@@ -107,7 +107,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(width: 20),
+                        const SizedBox(width: 20),
                         Text(
                           "Remove",
                           textAlign: TextAlign.start,
@@ -126,9 +126,9 @@ class UserAccountTabsAddress extends StatelessWidget {
                 right: 10,
                 top: 10,
                 child: Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.circle, color: Colors.black),
-                  child: Icon(
+                  child: const Icon(
                     Icons.check,
                     color: Colors.white,
                   ),

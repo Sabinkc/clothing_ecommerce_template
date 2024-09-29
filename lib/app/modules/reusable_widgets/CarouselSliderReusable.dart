@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +39,7 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 //     );
 //   }
 // }
+// ignore: must_be_immutable
 class CarouselSliderReusable extends StatelessWidget {
   var index = 0.obs;
   final List title = [
@@ -99,7 +102,7 @@ class CarouselSliderReusable extends StatelessWidget {
                     fontSize: TextSize.medium,
                   ),
                 ),
-                SizedBox(height: 15),
+                const SizedBox(height: 15),
                 Container(
                   // padding: const EdgeInsets.all(12),
                   width: Adaptive.w(70), // Ensures adaptive width

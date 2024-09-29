@@ -3,7 +3,7 @@ import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controll
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/views/home_category_view.dart';
 
-import 'package:d_and_s/app/modules/reusable_widgets/AppBarMainPage.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/app_bar_mainpage.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +14,7 @@ import '../controllers/home_controller.dart';
 import 'home_section_tabBar/home_section_tabBar.dart';
 import 'home_section_tabBar/home_section_tabBar_tabs.dart';
 
+// ignore: must_be_immutable
 class HomeView extends GetView<HomeController> {
   List<int> list = [1, 2, 3, 4, 5];
   final search = TextEditingController();
@@ -45,88 +46,84 @@ class HomeView extends GetView<HomeController> {
     "About",
     "Contact"
   ];
-  final controller_addToCart = Get.put(AddToCartController());
-  final controller_favorite = Get.put(FavouritesController());
+  final controllerAddToCart = Get.put(AddToCartController());
+  final controllerFavorite = Get.put(FavouritesController());
   HomeView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     // final controller = Get.put(HomeController());
-    return DefaultTabController(
-      initialIndex: 1,
-      length: 3,
-      child: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(50),
-          child: AppBarMainPage(
-            title: 'Hi Aman',
-            isLeading: true,
-          ),
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(50),
+        child: AppBarMainPage(
+          title: 'Hi Aman',
+          isLeading: true,
         ),
-        body: Container(
-          color: AppColors.lightSilver,
-          child: NestedScrollView(
-            headerSliverBuilder:
-                (BuildContext context, bool innerBoxIsScrolled) {
-              return [
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: TextFormFieldReusable(
-                            hint: "What are you looking for?",
-                            icon: Icon(Icons.search),
-                            textEditingController: search,
-                          ),
+      ),
+      body: Container(
+        color: AppColors.lightSilver,
+        child: NestedScrollView(
+          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            return [
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        child: TextFormFieldReusable(
+                          hint: "What are you looking for?",
+                          icon: const Icon(Icons.search),
+                          textEditingController: search,
                         ),
-                        SizedBox(height: 20),
-                        CarouselSliderReusable(imgList: imgList),
-                        SizedBox(height: 20),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.category_outlined,
-                                color: Colors.red,
+                      ),
+                      const SizedBox(height: 20),
+                      CarouselSliderReusable(imgList: imgList),
+                      const SizedBox(height: 20),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.category_outlined,
+                              color: Colors.red,
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "Categories",
+                              style: TextStyle(
+                                fontFamily: 'Bai Jamjuree',
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
                               ),
-                              SizedBox(width: 10),
-                              Text(
-                                "Categories",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                        SizedBox(height: 20),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                          child: HomeCategoryView(),
-                        ),
-                        // SizedBox(height: 10),
-                      ],
-                    ),
+                      ),
+                      const SizedBox(height: 20),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        child: HomeCategoryView(),
+                      ),
+                      // SizedBox(height: 10),
+                    ],
                   ),
                 ),
-                SliverAppBar(
-                  backgroundColor: AppColors.lightSilver,
-                  title: HomeSectionTabBar(),
-                  floating: true,
-                  pinned: true,
-                ),
-              ];
-            },
-            body: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-              child: HomeSectionTabBarTabs(),
-            ),
+              ),
+              SliverAppBar(
+                backgroundColor: AppColors.lightSilver,
+                title: HomeSectionTabBar(),
+                floating: true,
+                pinned: true,
+              ),
+            ];
+          },
+          body: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: HomeSectionTabBarTabs(),
           ),
         ),
       ),

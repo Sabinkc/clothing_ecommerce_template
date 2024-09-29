@@ -30,163 +30,143 @@ class OrderDetails extends StatelessWidget {
     int total = parsedPrice + 100;
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Order Details"),
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Order ID and Estimated Time
               OrderDetailTitleReusableRow(
-                title: "Order Id: ",
+                title: "Order ID: ",
                 subtitle: orderID,
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 12),
               OrderDetailTitleReusableRow(
                 title: "Estimated Arrival: ",
                 subtitle: estimatedTime,
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 20),
+
+              // Order Status
               Row(
                 children: [
-                  Text(
+                  const Text(
                     "Status: ",
                     style: TextStyle(
-                      fontSize: TextSize.normal,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color(0xffFFEDD5)),
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color(0xffFFEDD5),
+                    ),
                     child: Text(
                       status,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.red,
-                        fontSize: TextSize.normal,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 20),
-              Divider(),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
+              const Divider(),
+              const SizedBox(height: 20),
+
+              // Product List
               ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                itemCount: 1,
+                itemCount: 3,
                 itemBuilder: (BuildContext context, index) => Container(
                   margin: const EdgeInsets.only(bottom: 15),
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                  padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: Colors.grey.shade300),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 10,
+                        spreadRadius: 1,
+                      ),
+                    ],
                   ),
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       // Product Image
-                      Container(
-                        height: 100,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(16),
-                          image: DecorationImage(
-                            image: NetworkImage(img),
-                            fit: BoxFit.fill,
-                          ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: Image.network(
+                          img,
+                          height: 80,
+                          width: 80,
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 16),
 
                       // Product Details
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // Product Title
                             Text(
-                              // item["title"] ?? "No Title",
                               title,
-                              style: TextStyle(
-                                fontSize: TextSize.small,
-                                fontWeight: FontWeight.w700,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
                                 overflow: TextOverflow.ellipsis,
                               ),
                               maxLines: 2,
                             ),
-                            const SizedBox(height: 5),
-
-                            // Product Size
+                            const SizedBox(height: 6),
                             Text(
-                              "size: " + size,
-                              // "Size: ${item["size"]}",
+                              "Size: $size",
                               style: TextStyle(
-                                // color: Colors.blue,
-                                fontSize: TextSize.small,
+                                fontSize: 14,
+                                color: Colors.grey[700],
                               ),
                             ),
-                            const SizedBox(height: 5),
-
-                            // Price and Discounted Price
+                            const SizedBox(height: 6),
                             Row(
                               children: [
                                 Text(
-                                  price,
-                                  // "Rs. ${item["price"]}",
-                                  style: TextStyle(
-                                    fontSize: TextSize.small,
+                                  "Rs. $price",
+                                  style: const TextStyle(
+                                    fontSize: 14,
                                     color: Colors.red,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
                                 const SizedBox(width: 10),
-                                // if (item["realprice"] != null)
                                 Text(
-                                  realprice,
-                                  // "\$${item["realprice"]}",
+                                  "Rs. $realprice",
                                   style: const TextStyle(
                                     decoration: TextDecoration.lineThrough,
-                                    fontSize: 14,
+                                    fontSize: 12,
                                     color: Colors.grey,
                                   ),
                                 ),
                               ],
                             ),
-                            const SizedBox(height: 5),
+                            const SizedBox(height: 6),
                             Text(
-                              "Quantity: " + quantity,
+                              "Quantity: $quantity",
                               style: TextStyle(
-                                fontSize: TextSize.small,
+                                fontSize: 14,
+                                color: Colors.grey[700],
                               ),
-                            ),
-
-                            // Color and Quantity Selector
-                            Row(
-                              children: [
-                                // Product Color
-                                const SizedBox(width: 5),
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Colors.red,
-                                  ),
-                                ),
-                                const Spacer(),
-                                Text("Cash On Delivery"),
-                                SizedBox(width: 5),
-                                Image.asset(
-                                  "assets/images/cashondelivery.png",
-                                  height: 30,
-                                )
-                                // Quantity Selector
-                              ],
                             ),
                           ],
                         ),
@@ -195,30 +175,71 @@ class OrderDetails extends StatelessWidget {
                   ),
                 ),
               ),
-              Divider(),
-              SizedBox(height: 20),
+              // SizedBox(height: 20),
+              const Divider(),
+              const SizedBox(height: 20),
+
+              // Order Summary
               Container(
-                padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: Colors.grey.shade300),
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 10,
+                      spreadRadius: 1,
+                    ),
+                  ],
                 ),
                 child: Column(
                   children: [
                     OrderDetailReusableRow(
-                        title: "Subtotal", subtitle: "Rs." + price),
-                    SizedBox(height: 10),
+                        title: "Subtotal", subtitle: "Rs. $price"),
+                    const SizedBox(height: 12),
+                    const OrderDetailReusableRow(
+                        title: "Delivery", subtitle: "Rs. 100"),
+                    const SizedBox(height: 12),
+                    const Divider(),
+                    const SizedBox(height: 12),
                     OrderDetailReusableRow(
-                        title: "Delivery:", subtitle: "Rs.100"),
-                    SizedBox(height: 10),
-                    Divider(),
-                    SizedBox(height: 10),
-                    OrderDetailReusableRow(
-                        title: "Grand Total", subtitle: total.toString())
+                        title: "Grand Total", subtitle: "Rs. $total"),
                   ],
                 ),
-              )
+              ),
+              const SizedBox(height: 20),
+
+              // Payment Method
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 30,
+                        width: 30,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.red,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      const Text(
+                        "Cash On Delivery",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Image.asset(
+                    "assets/images/cashondelivery.png",
+                    height: 40,
+                  ),
+                ],
+              ),
             ],
           ),
         ),

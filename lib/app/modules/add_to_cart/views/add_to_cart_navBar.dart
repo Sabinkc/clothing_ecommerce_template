@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
@@ -16,7 +18,7 @@ class AddToCartNavBar extends StatelessWidget {
     return IntrinsicHeight(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: AppColors.lightSilver,
           // boxShadow: [
           //   BoxShadow(
@@ -40,7 +42,7 @@ class AddToCartNavBar extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Rs. " + price,
+                  "Rs. $price",
                   style: TextStyle(
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
@@ -55,7 +57,7 @@ class AddToCartNavBar extends StatelessWidget {
                   Get.to(AddToCartCheckout());
                   // print(controller.checkoutList.toString());
                 },
-                child: LargeButtonReusable(
+                child: const LargeButtonReusable(
                   width: 200,
                   title: "Checkout",
                   color: Colors.black,

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
@@ -18,8 +20,8 @@ class HomeSectionTabBarTabs extends StatelessWidget {
   });
   final controller = Get.put(HomeController());
 
-  final controller_product = Get.put(ProductDetailController());
-  final controller_favorites = Get.put(FavouritesController());
+  final controllerProduct = Get.put(ProductDetailController());
+  final controllerFavorites = Get.put(FavouritesController());
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +35,9 @@ class HomeSectionTabBarTabs extends StatelessWidget {
 
         return GridView.builder(
           shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           itemCount: selectedProducts.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 8.0,
             mainAxisSpacing: 10.0,
@@ -70,19 +72,16 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                         ],
                       };
                 List test = images.entries.first.value;
-                controller_product.selectedImages.assignAll(test);
+                controllerProduct.selectedImages.assignAll(test);
                 Get.to(
-                  ProductDetailView(
-                      // title: product["title"] ?? "NO TITLE",
-                      // description:
-                      //     product["description"] ?? "NO DESCRIPTION",
-                      // productColors: productColors,
+                  ProductDetailView(data: product),
 
-                      data: product
-                      // attributesdata: products,
-                      // product["color"],
-                      // productColors: productColors,
-                      ),
+                  transition: Transition
+                      .leftToRightWithFade, // Professional fade-in effect
+                  duration: const Duration(
+                      milliseconds: 500), // Smooth duration for the transition
+                  curve: Curves
+                      .easeInOut, // Adds smoothness with easing in and out
                 );
               },
               child: Container(
@@ -112,7 +111,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                             right: 0,
                             child: GestureDetector(
                               onTap: () {
-                                controller_favorites.searchProductId(
+                                controllerFavorites.searchProductId(
                                     product["product_id"], product);
                               },
                               child: Container(
@@ -124,7 +123,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                   padding: const EdgeInsets.all(5.0),
                                   child: Obx(
                                     () => Icon(
-                                      controller_favorites
+                                      controllerFavorites
                                               .isFavorite(product["product_id"])
                                           ? Icons.favorite
                                           : Icons.favorite_border,
@@ -138,7 +137,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         product["name"] ?? "",
                         overflow: TextOverflow.ellipsis,
@@ -146,7 +145,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                             fontSize: TextSize.small,
                             fontWeight: FontWeight.w700),
                       ),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

@@ -15,7 +15,7 @@ import '../../../constants/text_size.dart';
 import '../../reusable_widgets/CustomClickableContainer.dart';
 import 'ProductDetailViewReusableRow.dart';
 import '../controllers/product_detail_controller.dart';
-import 'ProductDetailCircularColoredContainer.dart';
+import 'product_detail_circular_colored_container.dart';
 import 'ProductDetail_Attributes.dart';
 import 'ProductDetail_NavBar.dart';
 import 'ProductDetail_Size.dart';
@@ -45,7 +45,7 @@ class ProductDetailView extends StatelessWidget {
     Map colordata = data["color"] ?? {};
     {
       return KeyboardDismisser(
-        gestures: [
+        gestures: const [
           GestureType.onTap,
           GestureType.onPanUpdateDownDirection,
         ],
@@ -56,7 +56,7 @@ class ProductDetailView extends StatelessWidget {
               height: 45,
               child: TextFormFieldReusable(
                 hint: ".....",
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
                 textEditingController: search,
               ),
             ),
@@ -70,11 +70,20 @@ class ProductDetailView extends StatelessWidget {
             actions: [
               GestureDetector(
                 onTap: () {
-                  Get.to(() => AddedCart());
+                  Get.to(
+                    () => AddedCart(),
+                    transition: Transition
+                        .leftToRightWithFade, // Professional fade-in effect
+                    duration: const Duration(
+                        milliseconds:
+                            500), // Smooth duration for the transition
+                    curve: Curves
+                        .easeInOut, // Adds smoothness with easing in and out
+                  );
                 },
                 child: Stack(
                   children: [
-                    Container(
+                    const SizedBox(
                       height: 50,
                       child: Icon(
                         Icons.shopping_cart_outlined,
@@ -84,7 +93,7 @@ class ProductDetailView extends StatelessWidget {
                     ),
                     Obx(
                       () => addToCartController.cartProducts.isEmpty
-                          ? SizedBox()
+                          ? const SizedBox()
                           : Positioned(
                               // bottom: 25,
                               top: 2,
@@ -100,7 +109,7 @@ class ProductDetailView extends StatelessWidget {
                                   child: Text(
                                     addToCartController.cartProducts.length
                                         .toString(),
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.w800),
                                   ),
@@ -111,7 +120,7 @@ class ProductDetailView extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               )
             ],
@@ -124,7 +133,7 @@ class ProductDetailView extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   // CarouselSliderReusable(imgList: imgList),
                   CustomClickableContainer(
                     coloredImgUrl: colordata.isNotEmpty
@@ -135,7 +144,7 @@ class ProductDetailView extends StatelessWidget {
                             ],
                           },
                   ),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: Column(
@@ -143,7 +152,7 @@ class ProductDetailView extends StatelessWidget {
                       children: [
                         //
                         ProductDetailPrice(priceDetails: data),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Text(
                           "Category: ${data["category"]}",
                           style: TextStyle(
@@ -151,7 +160,7 @@ class ProductDetailView extends StatelessWidget {
                             color: AppColors.silver,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Obx(
                           () => GestureDetector(
                             onTap: () {
@@ -188,14 +197,14 @@ class ProductDetailView extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.star_border,
                               color: Colors.red,
                             ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             Text(
                               "4.1 Reviews",
                               style: TextStyle(
@@ -205,7 +214,7 @@ class ProductDetailView extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Text(
                           "Colors :",
                           style: TextStyle(
@@ -213,7 +222,7 @@ class ProductDetailView extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         ProductDetailCircularColoredContainer(
                           colorList: colordata.isNotEmpty
                               ? data["color"]
@@ -223,7 +232,7 @@ class ProductDetailView extends StatelessWidget {
                                   ],
                                 },
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Text(
                           "Size",
                           style: TextStyle(
@@ -231,13 +240,13 @@ class ProductDetailView extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         size.isNotEmpty
                             ? ProductDetailSize(
                                 sizeList: data["size"],
                               )
-                            : SizedBox(),
-                        SizedBox(height: 20),
+                            : const SizedBox(),
+                        const SizedBox(height: 20),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -251,7 +260,7 @@ class ProductDetailView extends StatelessWidget {
                             ProductDetailQuantity(),
                           ],
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         Text(
                           "Descriptions",
                           style: TextStyle(
@@ -259,7 +268,7 @@ class ProductDetailView extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Obx(
                           () => Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -292,32 +301,33 @@ class ProductDetailView extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         attributes.isNotEmpty
                             ? ProductDetailAttributes(
                                 attributes: data["attributes"])
-                            : SizedBox(),
-                        Divider(
+                            : const SizedBox(),
+                        const Divider(
                           color: AppColors.lightSilver, // Color of the line
                           thickness: 5, // Thickness of the line
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         GestureDetector(
-                            onTap: () {
-                              Get.to(
-                                ProductDetailReview(reviews: reviewdata
-                                    // ??
-                                    //     [
-                                    //       {"review": "Review is empty"},
-                                    //     ],
-                                    ),
-                              );
-                            },
-                            child: ProductDetailViewReusableRow(
-                              title: "Reviews",
-                              icons: Icon(Icons.keyboard_outlined),
-                            )),
-                        Divider(
+                          onTap: () {
+                            Get.to(
+                              ProductDetailReview(reviews: reviewdata
+                                  // ??
+                                  //     [
+                                  //       {"review": "Review is empty"},
+                                  //     ],
+                                  ),
+                            );
+                          },
+                          child: const ProductDetailViewReusableRow(
+                            title: "Reviews",
+                            icons: Icon(Icons.keyboard_outlined),
+                          ),
+                        ),
+                        const Divider(
                           color: AppColors.lightSilver, // Color of the line
                           thickness: 5, // Thickness of the line
                         ),

@@ -14,7 +14,7 @@ class HomeCategoryView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 120,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -26,7 +26,7 @@ class HomeCategoryView extends StatelessWidget {
             Get.to(HomeCategoryDetailView());
           },
           child: Container(
-            margin: EdgeInsets.only(left: 25),
+            margin: const EdgeInsets.only(left: 25),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               // boxShadow: [
@@ -57,7 +57,7 @@ class HomeCategoryView extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   categoryData[index]["category_name"],
                   overflow: TextOverflow.ellipsis,
@@ -145,9 +145,9 @@ class HomeGridView extends StatelessWidget {
           padding: const EdgeInsets.all(12.0),
           child: GridView.builder(
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: categoryData.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3, // Adjust this for wider layouts if needed
               crossAxisSpacing: 12.0, // Space between grid items
               mainAxisSpacing: 10.0, // Space between grid items
@@ -208,7 +208,7 @@ class HomeGridView extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         categoryData[index]["category_name"],
                         overflow: TextOverflow.ellipsis,

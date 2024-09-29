@@ -5,6 +5,6 @@ import 'package:get/get.dart';
 
 class SplashServices{
   void isLogin(){
-    Timer(Duration(seconds: 3),()=>Get.toNamed(Routes.LOGIN));
+    Timer(const Duration(seconds: 3),()=>Get.toNamed(Routes.LOGIN));
   }
 }

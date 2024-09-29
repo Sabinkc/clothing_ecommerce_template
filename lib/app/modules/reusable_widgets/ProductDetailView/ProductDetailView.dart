@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 // import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:d_and_s/app/constants/colors.dart';
 // import 'package:d_and_s/app/constants/text_size.dart';

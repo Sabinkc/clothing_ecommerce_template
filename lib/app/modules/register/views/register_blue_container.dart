@@ -9,7 +9,7 @@ class RegisterBlueContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return    Align(
+    return Align(
       alignment: Alignment.topLeft,
       child: Container(
         color: AppColors.lightBlue, // Choose any color you want
@@ -17,7 +17,7 @@ class RegisterBlueContainer extends StatelessWidget {
         height: Adaptive.h(50),
         child: Column(
           children: [
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             Center(
               child: Text(
                 "Register Account",
@@ -28,8 +28,8 @@ class RegisterBlueContainer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 10),
+            const Text(
               "Enter your Credentails",
               style: TextStyle(color: Colors.white),
             ),

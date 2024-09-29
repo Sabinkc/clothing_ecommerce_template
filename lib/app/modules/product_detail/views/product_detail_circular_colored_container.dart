@@ -14,7 +14,7 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // controller.a.value = colorList.values.first;
-    return Container(
+    return SizedBox(
       height: 40,
       child: ListView(
         scrollDirection: Axis.horizontal, // Make it horizontal if needed

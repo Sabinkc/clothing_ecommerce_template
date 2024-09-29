@@ -12,7 +12,7 @@ class HomeStaticContainer extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          image: DecorationImage(image: NetworkImage('https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png'),fit: BoxFit.fill)
+          image: const DecorationImage(image: NetworkImage('https://omnitail.net/wp-content/uploads/2021/06/amazon-clothes-sm.png'),fit: BoxFit.fill)
         ),
       ),
     );

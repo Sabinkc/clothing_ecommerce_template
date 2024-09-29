@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
@@ -10,6 +12,7 @@ class AccountInfoChange extends StatelessWidget {
   final String title;
   final String hintText;
   final Icon icon;
+
   final controller;
   final VoidCallback onclick;
 
@@ -40,21 +43,21 @@ class AccountInfoChange extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     title,
                     style: TextStyle(fontSize: TextSize.normal),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     hint: hintText,
                     icon: icon,
                     textEditingController: controller,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   GestureDetector(
                       onTap: onclick,
-                      child: LargeButtonReusable(title: "Submit"))
+                      child: const LargeButtonReusable(title: "Submit"))
                 ],
               ),
             ),
@@ -106,34 +109,34 @@ class AccountInfoChangePassword extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                    title,
                     style: TextStyle(fontSize: TextSize.normal),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     isObscure: true,
                     hint: hintText,
                     icon: icon,
                     textEditingController: controller,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     confirmtitle,
                     style: TextStyle(fontSize: TextSize.normal),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormFieldReusable(
                     isObscure: true,
                     hint: confirmhintText,
                     icon: confirmicon,
                     textEditingController: confirmcontroller,
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   GestureDetector(
                       onTap: onclick,
-                      child: LargeButtonReusable(title: "Submit"))
+                      child: const LargeButtonReusable(title: "Submit"))
                 ],
               ),
             ),

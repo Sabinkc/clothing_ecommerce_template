@@ -1,4 +1,3 @@
-
 import 'package:d_and_s/app/modules/login/views/login_blue_container.dart';
 import 'package:d_and_s/app/modules/login/views/login_white_small_container.dart';
 
@@ -11,18 +10,15 @@ import '../../../constants/colors.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
-
-
-  LoginView({Key? key}) : super(key: key);
+  const LoginView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => KeyboardDismisser(
-        gestures: [
+        gestures: const [
           GestureType.onTap,
           GestureType.onPanUpdateDownDirection,
         ],
         child: Scaffold(
-        
           body: Container(
             color: AppColors.lightBlue,
             child: SafeArea(
@@ -36,9 +32,9 @@ class LoginView extends GetView<LoginController> {
                     color: AppColors.lightSilver,
                   ),
 
-                  LoginBlueContainer(),//THIS IS THE PART WHERE THE SIGN IN TO YOUR ACCOUNT TEXT SECTION
+                  const LoginBlueContainer(), //THIS IS THE PART WHERE THE SIGN IN TO YOUR ACCOUNT TEXT SECTION
 
-                  LoginWhiteSmallContainer(),// White container on top of the other containers
+                  LoginWhiteSmallContainer(), // White container on top of the other containers
                 ],
               ),
             ),

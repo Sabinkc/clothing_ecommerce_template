@@ -1,11 +1,13 @@
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_view.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/recommendation_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
-import '../../home/views/home_tabBar/home_tabBar_tabs.dart';
+
 import '../controllers/favourites_controller.dart';
 
 class FavouritesView extends StatelessWidget {
@@ -35,7 +37,7 @@ class FavouritesView extends StatelessWidget {
                           height: 400,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage(
                                   "assets/images/emptyWishList.png"), // Use AssetImage instead of Image.asset
                               fit: BoxFit
@@ -50,6 +52,7 @@ class FavouritesView extends StatelessWidget {
                               padding:
                                   const EdgeInsets.fromLTRB(10, 10, 10, 10),
                               decoration: BoxDecoration(
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
                                 border: Border.all(color: Colors.grey.shade300),
                               ),
@@ -127,7 +130,7 @@ class FavouritesView extends StatelessWidget {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(height: 10),
+                                        const SizedBox(height: 10),
                                         Row(
                                           children: [
                                             // Product Color
@@ -164,7 +167,7 @@ class FavouritesView extends StatelessWidget {
                                                       item["product_id"],
                                                 );
                                               },
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.delete,
                                                 color: Colors.red,
                                               ),
@@ -180,18 +183,49 @@ class FavouritesView extends StatelessWidget {
                             );
                           }).toList(),
                         ),
-                  const SizedBox(height: 10),
-                  Text(
-                    "Recommended Items",
-                    style: TextStyle(
-                      fontSize: TextSize.normal,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  HomeTabBarTabs(),
                 ],
               ),
             ),
+          ),
+        ),
+      ),
+      bottomNavigationBar: Container(
+        color: AppColors.lightSilver,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Recommended Items', // Improved typography
+                style: TextStyle(
+                  fontSize: 18, // Slightly larger for emphasis
+                  fontWeight: FontWeight
+                      .w600, // A bit lighter than bold for a more professional look
+                  color: Colors.grey, // Softer color for the text
+                ),
+              ),
+              const SizedBox(height: 12),
+              Container(
+                decoration: BoxDecoration(
+                  color: AppColors
+                      .lightSilver, // Background color for a clean look
+                  borderRadius: BorderRadius.circular(
+                      10), // Rounded corners for smoothness
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.1), // Soft shadow
+                      blurRadius: 10,
+                      offset: const Offset(0, 5), // Shadow direction
+                    ),
+                  ],
+                ),
+                padding: const EdgeInsets.all(10), // Padding inside the container
+                height: Adaptive.h(27),
+                child: RecommendationView(),
+              ),
+            ],
           ),
         ),
       ),

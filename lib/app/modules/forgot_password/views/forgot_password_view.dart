@@ -1,4 +1,3 @@
-import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
@@ -6,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../constants/colors.dart';
 import '../controllers/forgot_password_controller.dart';
 
 class ForgotPasswordView extends GetView<ForgotPasswordController> {
@@ -33,27 +33,29 @@ class ForgotPasswordView extends GetView<ForgotPasswordController> {
               Text(
                 "Forgot Password",
                 style: TextStyle(
-                  fontSize: TextSize.medium,
-                  fontWeight: FontWeight.w900,
-                  color: AppColors.lightBlue,
-                ),
+                    fontSize: TextSize.medium,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.lightBlue),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Text(
                 "Email",
                 style: TextStyle(fontSize: TextSize.small),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormFieldReusable(
                 hint: "your_email@gmail.com",
-                icon: Icon(
+                icon: const Icon(
                   Icons.mail,
                 ),
                 isObscure: true,
                 textEditingController: forgotPassword,
               ),
-              SizedBox(height: 40),
-              LargeButtonReusable(title: "Submit")
+              const SizedBox(height: 40),
+              const LargeButtonReusable(
+                title: "Submit",
+                color: AppColors.lightBlue,
+              )
             ],
           ),
         ),

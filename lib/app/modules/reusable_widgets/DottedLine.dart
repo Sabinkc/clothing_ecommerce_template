@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class DottedLine extends StatelessWidget {
@@ -6,7 +8,7 @@ class DottedLine extends StatelessWidget {
   final double spaceWidth;
   final Color color;
 
-  const DottedLine({
+  const DottedLine({super.key, 
     this.height = 2.0,
     this.dotWidth = 4.0,
     this.spaceWidth = 6.0,

@@ -1,5 +1,7 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_info_detail.dart';
-import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_info_loginEdit.dart';
+import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_info_loginedit.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +19,7 @@ class UserAccountTabsInfo extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "My Details",
             style: TextStyle(
               fontSize: 24, // Slightly larger for better readability
@@ -51,7 +53,7 @@ class UserAccountTabsInfo extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Personal Information",
                       style: TextStyle(
                         fontSize: 18,
@@ -74,7 +76,7 @@ class UserAccountTabsInfo extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Edit Personal Details",
                         style: TextStyle(
                             fontWeight: FontWeight.w800, color: Colors.white),
@@ -101,7 +103,7 @@ class UserAccountTabsInfo extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Login Information",
                       style: TextStyle(
                         fontSize: 18,
@@ -123,7 +125,7 @@ class UserAccountTabsInfo extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Edit Login Details",
                         style: TextStyle(
                           fontWeight: FontWeight.w800,

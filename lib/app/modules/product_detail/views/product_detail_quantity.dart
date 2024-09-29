@@ -8,30 +8,28 @@ class ProductDetailQuantity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: [
-          GestureDetector(
-              onTap: () {
-                if (controller.quantityIndex.value > 0) {
-                  controller.quantityIndex.value--;
-                }
-              },
-              child: Icon(Icons.remove)),
-          SizedBox(width: 20),
-          Obx(
-            () => Text(
-              controller.quantityIndex.value.toString(),
-            ),
+    return Row(
+      children: [
+        GestureDetector(
+            onTap: () {
+              if (controller.quantityIndex.value > 0) {
+                controller.quantityIndex.value--;
+              }
+            },
+            child: const Icon(Icons.remove)),
+        const SizedBox(width: 20),
+        Obx(
+          () => Text(
+            controller.quantityIndex.value.toString(),
           ),
-          SizedBox(width: 20),
-          GestureDetector(
-              onTap: () {
-                controller.quantityIndex.value++;
-              },
-              child: Icon(Icons.add)),
-        ],
-      ),
+        ),
+        const SizedBox(width: 20),
+        GestureDetector(
+            onTap: () {
+              controller.quantityIndex.value++;
+            },
+            child: const Icon(Icons.add)),
+      ],
     );
   }
 }

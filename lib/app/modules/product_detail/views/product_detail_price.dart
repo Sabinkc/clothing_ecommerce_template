@@ -24,7 +24,7 @@ class ProductDetailPrice extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Text(
           "${priceDetails["realprice"]}",
           style: TextStyle(
@@ -36,7 +36,7 @@ class ProductDetailPrice extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Container(
           decoration: BoxDecoration(
             border: Border.all(color: Colors.redAccent),

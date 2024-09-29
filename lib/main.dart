@@ -15,7 +15,7 @@ void main() async {
       widgetsBinding: WidgetsFlutterBinding.ensureInitialized());
 
   await Future.delayed(const Duration(seconds: 5));
- 
+
   // Remove the splash screen
   FlutterNativeSplash.remove();
 
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       title: "Application",
       theme: ThemeData(
-        fontFamily: 'Open_Sans',
+        fontFamily: 'Bai Jamjuree',
       ),
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
