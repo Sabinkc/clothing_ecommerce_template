@@ -5,11 +5,13 @@ import 'package:d_and_s/app/modules/home/views/home_category_view.dart';
 
 import 'package:d_and_s/app/modules/reusable_widgets/app_bar_mainpage.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
+import '../../reusable_widgets/filter_view/filter_view.dart';
 import '../controllers/home_controller.dart';
 import 'home_section_tabBar/home_section_tabBar.dart';
 import 'home_section_tabBar/home_section_tabBar_tabs.dart';
@@ -51,82 +53,126 @@ class HomeView extends GetView<HomeController> {
   HomeView({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    // final controller = Get.put(HomeController());
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(50),
-        child: AppBarMainPage(
-          title: 'Hi Aman',
-          isLeading: true,
-        ),
-      ),
-      body: Container(
-        color: AppColors.lightSilver,
-        child: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return [
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                        child: TextFormFieldReusable(
-                          hint: "What are you looking for?",
-                          icon: const Icon(Icons.search),
-                          textEditingController: search,
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-                      CarouselSliderReusable(imgList: imgList),
-                      const SizedBox(height: 20),
-                      const Padding(
-                        padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.category_outlined,
-                              color: Colors.red,
-                            ),
-                            SizedBox(width: 10),
-                            Text(
-                              "Categories",
-                              style: TextStyle(
-                                fontFamily: 'Bai Jamjuree',
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 20),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                        child: HomeCategoryView(),
-                      ),
-                      // SizedBox(height: 10),
-                    ],
-                  ),
-                ),
-              ),
-              SliverAppBar(
-                backgroundColor: AppColors.lightSilver,
-                title: HomeSectionTabBar(),
-                floating: true,
-                pinned: true,
-              ),
-            ];
-          },
-          body: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-            child: HomeSectionTabBarTabs(),
+  Widget build(BuildContext context) => KeyboardDismisser(
+
+          // final controller = Get.put(HomeController());
+          child: Scaffold(
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(50),
+          child: AppBarMainPage(
+            title: 'Hi Aman',
+            isLeading: true,
           ),
         ),
-      ),
-    );
-  }
+        body: Container(
+          color: AppColors.lightSilver,
+          child: NestedScrollView(
+            headerSliverBuilder:
+                (BuildContext context, bool innerBoxIsScrolled) {
+              return [
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                          child: TextFormField(
+                            controller: search,
+                            decoration: InputDecoration(
+                              hintText: "What are you looking for?",
+                              prefixIcon: const Icon(Icons.search),
+                              suffixIcon: GestureDetector(
+                                  onTap: () {
+                                    // Get.to(FilterView());
+                                    showModalBottomSheet(
+                                        shape: const RoundedRectangleBorder(
+                                          
+                                          borderRadius: BorderRadius.vertical(
+                                            top: Radius.circular(20),
+                                          ),
+                                          
+                                        ),
+                                        context: context,
+                                        builder: (BuildContext context) =>
+                                            FilterView());
+                                  },
+                                  child: const Icon(Icons.filter_list)),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(6),
+                                borderSide: const BorderSide(
+                                    width: 1, color: AppColors.lightBlue),
+                              ),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(6),
+                                borderSide: const BorderSide(
+                                    width: 1, color: Colors.red),
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(6),
+                                borderSide: const BorderSide(
+                                  width: 1,
+                                  color: Color(0xffAEAEAE),
+                                ),
+
+                                // // labelText: 'Tap to show the keyboard',
+                              ),
+                            ),
+                          ),
+                          // TextFormFieldReusable(
+                          //   hint: "What are you looking for?",
+                          //   icon: const Icon(Icons.search),
+                          //   suffixIcon: const Icon(Icons.filter_list),
+                          //   textEditingController: search,
+                          // ),
+                        ),
+                        const SizedBox(height: 20),
+                        CarouselSliderReusable(imgList: imgList),
+                        const SizedBox(height: 20),
+                        const Padding(
+                          padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.category_outlined,
+                                color: Colors.red,
+                              ),
+                              SizedBox(width: 10),
+                              Text(
+                                "Categories",
+                                style: TextStyle(
+                                  fontFamily: 'Bai Jamjuree',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 20),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          child: HomeCategoryView(),
+                        ),
+                        // SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                ),
+                SliverAppBar(
+                  backgroundColor: AppColors.lightSilver,
+                  title: HomeSectionTabBar(),
+                  floating: true,
+                  pinned: true,
+                ),
+              ];
+            },
+            body: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+              child: HomeSectionTabBarTabs(),
+            ),
+          ),
+        ),
+      ));
 }
