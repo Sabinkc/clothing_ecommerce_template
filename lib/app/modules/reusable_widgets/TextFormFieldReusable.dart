@@ -25,8 +25,9 @@ class TextFormFieldReusable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 55,
+    return Container(
+      color: Colors.white,
+      // height: 55,
       width: widthsize,
       child: TextFormField(
         controller: textEditingController,

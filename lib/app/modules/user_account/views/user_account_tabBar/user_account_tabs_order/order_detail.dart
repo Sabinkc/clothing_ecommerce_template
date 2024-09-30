@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +31,9 @@ class OrderDetails extends StatelessWidget {
     int total = parsedPrice + 100;
 
     return Scaffold(
+      backgroundColor: AppColors.lightSilver,
       appBar: AppBar(
+        backgroundColor: AppColors.lightSilver,
         title: const Text("Order Details"),
         centerTitle: true,
       ),
@@ -63,7 +66,8 @@ class OrderDetails extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       color: const Color(0xffFFEDD5),

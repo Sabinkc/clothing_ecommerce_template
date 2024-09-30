@@ -97,6 +97,7 @@ class ProductDetailNavBar extends StatelessWidget {
                 },
               );
               controller.calculateTotalPrice("buy");
+              controllerProductDetail.clear();
               Get.to(
                 AddToCartCheckout(),
                 transition: Transition
@@ -154,6 +155,7 @@ class ProductDetailNavBar extends StatelessWidget {
                   "color": controllerProductDetail.selectedColor.value,
                 },
               );
+              controllerProductDetail.clear();
               // controller.selectedProducts.add(cartId);
               controller.toggleSelected(cartId);
               Get.to(

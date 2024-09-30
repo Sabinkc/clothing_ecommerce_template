@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:d_and_s/app/data/sort_by.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -27,21 +28,20 @@ class HomeSectionTabBar extends StatelessWidget {
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
-          itemCount: itemsTabs.length,
+          itemCount: sortBy.length,
           itemBuilder: (BuildContext context, index) => Padding(
             padding: const EdgeInsets.only(right: 20),
             child: Obx(
               () => GestureDetector(
                 onTap: () {
                   // print(controller.homeSectionindex.value);
-                  controller.homeSectionindex.value = itemsTabs[index];
+                  controller.homeSectionindex.value = sortBy[index];
                 },
                 child: Text(
-                  itemsTabs[index],
+                  sortBy[index],
                   style: TextStyle(
                     fontSize: TextSize.small,
-                    color: controller.homeSectionindex.value ==
-                            itemsTabs[index]
+                    color: controller.homeSectionindex.value == sortBy[index]
                         ? Colors.red
                         : Colors.black,
                   ),

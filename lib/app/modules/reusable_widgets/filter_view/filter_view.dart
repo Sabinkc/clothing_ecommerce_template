@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/constants/text_size.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 
 import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/filter_view/filter_view_sort_by.dart';
@@ -8,6 +9,7 @@ import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
 import '../../../data/category_data.dart';
 
+import '../../../data/sort_by.dart';
 import '../../home/controllers/home_controller.dart';
 import '../../home/views/home_category_view.dart';
 
@@ -48,9 +50,13 @@ class FilterView extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 20),
+                    const Divider(),
+                    const SizedBox(height: 20),
                     Text(
                       "Price",
-                      style: TextStyle(fontSize: TextSize.normal),
+                      style: TextStyle(
+                          fontSize: TextSize.normal,
+                          fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 20),
                     Row(
@@ -72,7 +78,9 @@ class FilterView extends StatelessWidget {
                     const SizedBox(height: 20),
                     Text(
                       "Category",
-                      style: TextStyle(fontSize: TextSize.normal),
+                      style: TextStyle(
+                          fontSize: TextSize.normal,
+                          fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 20),
                     GridView.builder(
@@ -114,8 +122,12 @@ class FilterView extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.all(0.0),
                               child: Center(
-                                  child: Text(
-                                      categoryData[index]["category_name"])),
+                                child: Text(
+                                  categoryData[index]["category_name"],
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
                             ),
                           ),
                         );
@@ -124,13 +136,15 @@ class FilterView extends StatelessWidget {
                     // const SizedBox(height: 20),
                     Text(
                       "Sort By",
-                      style: TextStyle(fontSize: TextSize.normal),
+                      style: TextStyle(
+                          fontSize: TextSize.normal,
+                          fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 20),
                     GridView.builder(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
-                      itemCount: itemsTabs.length,
+                      itemCount: sortBy.length,
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount:
@@ -143,11 +157,18 @@ class FilterView extends StatelessWidget {
                       itemBuilder: (BuildContext context, index) {
                         return GestureDetector(
                           onTap: () {
-                            controller.homeSectionindex.value =
-                                itemsTabs[index];
-                            Get.to(FilterViewSortBy(
-                              title: itemsTabs[index],
-                            ));
+                            controller.homeSectionindex.value = sortBy[index];
+                            Get.to(
+                              FilterViewSortBy(
+                                title: sortBy[index],
+                              ),
+                              transition: Transition
+                                  .leftToRightWithFade, // Professional fade-in effect
+                              duration: const Duration(
+                                  milliseconds:
+                                      500), // Smooth duration for the transition
+                              curve: Curves.easeInOut,
+                            ); // Adds smoothness with easing in and out);
                             //   Get.to(
                             //     HomeCategoryDetailView(),
                             //     transition: Transition
@@ -170,7 +191,10 @@ class FilterView extends StatelessWidget {
                               padding: const EdgeInsets.all(0.0),
                               child: Center(
                                 child: Text(
-                                  itemsTabs[index],
+                                  sortBy[index],
+                                  style: const TextStyle(
+                                      // color: Colors.white,
+                                      fontWeight: FontWeight.bold),
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),
@@ -179,7 +203,10 @@ class FilterView extends StatelessWidget {
                         );
                       },
                     ),
-                    // HomeSectionTabBarTabs(),
+                    const LargeButtonReusable(
+                      title: "Save Filter",
+                      color: Colors.black,
+                    )
                   ],
                 ),
               ),

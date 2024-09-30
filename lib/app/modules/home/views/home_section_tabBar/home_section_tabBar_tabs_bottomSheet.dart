@@ -115,6 +115,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
             const SizedBox(height: 15),
             GestureDetector(
               onTap: () {
+                // controllerProductDetail.clear();
                 if (controllerProductDetail.selectedColor.value == 0) {
                   Get.snackbar(
                     'Selection Error',
@@ -155,6 +156,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                 );
                 // controller.selectedProducts.add(cartId);
                 controller.toggleSelected(cartId);
+                controllerProductDetail.clear();
                 Get.to(AddedCart(
                     // addedCartData: addToCartData,
 

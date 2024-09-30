@@ -26,6 +26,7 @@ class RegisterView extends GetView<RegisterController> {
           GestureType.onPanUpdateDownDirection,
         ],
         child: Scaffold(
+          backgroundColor: AppColors.lightSilver,
           body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(20.0),

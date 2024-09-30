@@ -12,30 +12,32 @@ class UserAccountView extends GetView<UserAccountController> {
   const UserAccountView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-    
-      child: Scaffold(
-        backgroundColor: AppColors.lightSilver,
-        body: Container(
-          padding: const EdgeInsets.all(20),
-          // color: Colors.white,
+    return Container(
+      color: AppColors.lightSilver,
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: AppColors.lightSilver,
+          body: Container(
+            padding: const EdgeInsets.all(20),
+            // color: Colors.white,
 
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                UserAccountContainer(),
-                const SizedBox(height: 20),
-                Divider(thickness: 1, color: Colors.grey.shade300),
-                const SizedBox(height: 20),
-                UserAccountTabBar(),
-                // MY ORDER BEGINS FROM HERE
-                // UserAccountMyOrder(),
-                // SizedBox(height: 20),
-                // Divider(thickness: 1, color: Colors.grey.shade300),
-                // SizedBox(height: 20),
-                // UserAccountOthers(),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  UserAccountContainer(),
+                  const SizedBox(height: 20),
+                  Divider(thickness: 1, color: Colors.grey.shade300),
+                  const SizedBox(height: 20),
+                  UserAccountTabBar(),
+                  // MY ORDER BEGINS FROM HERE
+                  // UserAccountMyOrder(),
+                  // SizedBox(height: 20),
+                  // Divider(thickness: 1, color: Colors.grey.shade300),
+                  // SizedBox(height: 20),
+                  // UserAccountOthers(),
+                ],
+              ),
             ),
           ),
         ),

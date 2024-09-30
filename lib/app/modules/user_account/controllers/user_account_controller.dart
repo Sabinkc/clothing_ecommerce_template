@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 
 class UserAccountController extends GetxController {
-
   var tabBarIndex = 0.obs;
+  var changeListAndGrid = true.obs;
   final count = 0.obs;
   // @override
   // void onInit() {

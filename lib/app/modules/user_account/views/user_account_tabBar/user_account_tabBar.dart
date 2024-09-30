@@ -75,7 +75,7 @@ class UserAccountTabBar extends StatelessWidget {
     } else if (userAccController.tabBarIndex.value == 1) {
       return const UserAccountTabsAddress();
     } else if (userAccController.tabBarIndex.value == 2) {
-      return const UserAccountTabsOrder();
+      return  UserAccountTabsOrder();
     } else {
       return UserAccountTabsWishList();
     }

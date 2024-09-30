@@ -64,7 +64,7 @@ class AddedCart extends StatelessWidget {
                               margin: const EdgeInsets.only(bottom: 15),
                               padding: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
+                                // borderRadius: BorderRadius.circular(16),
                                 color: Colors.white,
                                 border: Border.all(color: Colors.grey.shade300),
                               ),

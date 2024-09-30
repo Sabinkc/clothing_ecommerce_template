@@ -53,7 +53,7 @@ class FavouritesView extends StatelessWidget {
                                   const EdgeInsets.fromLTRB(10, 10, 10, 10),
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(16),
+                                // borderRadius: BorderRadius.circular(16),
                                 border: Border.all(color: Colors.grey.shade300),
                               ),
                               child: Row(
@@ -61,7 +61,7 @@ class FavouritesView extends StatelessWidget {
                                 children: [
                                   // Product Image
                                   Container(
-                                    height: 100,
+                                    height: 120,
                                     width: 100,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
@@ -94,7 +94,7 @@ class FavouritesView extends StatelessWidget {
                                           ),
                                           maxLines: 2,
                                         ),
-                                        const SizedBox(height: 5),
+                                        const SizedBox(height: 10),
 
                                         // Product Size
                                         // Text(
@@ -117,7 +117,7 @@ class FavouritesView extends StatelessWidget {
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                            const SizedBox(width: 10),
+                                            const SizedBox(width: 15),
                                             // if (item["realprice"] != null)
                                             Text(
                                               "\$${item["realprice"]}",
@@ -221,7 +221,8 @@ class FavouritesView extends StatelessWidget {
                     ),
                   ],
                 ),
-                padding: const EdgeInsets.all(10), // Padding inside the container
+                padding:
+                    const EdgeInsets.all(10), // Padding inside the container
                 height: Adaptive.h(27),
                 child: RecommendationView(),
               ),
