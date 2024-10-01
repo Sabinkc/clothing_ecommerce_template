@@ -33,8 +33,43 @@ final List products = [
         "date": "12/1/2023",
         "review":
             "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
-        "reviews_img":
-            "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+
+      },
+      {
+        "profile_pic":
+        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+
+      },
+      {
+        "profile_pic":
+        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        // "reviews_img": [
+        //   "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+        //   "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        //   "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+        //   "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        // ]
+
       }
     ],
     "attributes": {

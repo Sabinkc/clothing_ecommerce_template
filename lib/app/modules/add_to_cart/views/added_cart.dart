@@ -2,11 +2,13 @@ import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_navBar.dart';
 
-import 'package:d_and_s/app/modules/home/views/home_tabBar/home_tabBar_tabs.dart';
+
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/recommendation_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../constants/colors.dart';
 
@@ -214,7 +216,25 @@ class AddedCart extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                HomeTabBarTabs(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: AppColors
+                        .lightSilver, // Background color for a clean look
+                    borderRadius: BorderRadius.circular(
+                        10), // Rounded corners for smoothness
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1), // Soft shadow
+                        blurRadius: 10,
+                        offset: const Offset(0, 5), // Shadow direction
+                      ),
+                    ],
+                  ),
+                  padding:
+                      const EdgeInsets.all(10), // Padding inside the container
+                  height: Adaptive.h(27),
+                  child: RecommendationView(),
+                ),
               ],
             ),
           );

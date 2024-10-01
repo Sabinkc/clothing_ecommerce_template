@@ -68,7 +68,21 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
         ),
         itemBuilder: (BuildContext context, index) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Get.to(
+                OrderDetails(
+                  orderID: orderId[index],
+                  estimatedTime: "26 Spet 2024",
+                  title: "Product A",
+                  size: "S",
+                  price: price[index],
+                  img: img[index],
+                  realprice: realPrice[index],
+                  quantity: '1',
+                  status: state[index],
+                ),
+              );
+            },
             child: Container(
               decoration: const BoxDecoration(
                 // border: Border.all(color: AppColors.silverBorder, width: 5),
@@ -80,71 +94,54 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    GestureDetector(
-                      onTap: () {
-                        Get.to(
-                          OrderDetails(
-                            orderID: orderId[index],
-                            estimatedTime: "26 Spet 2024",
-                            title: "Product A",
-                            size: "S",
-                            price: price[index],
-                            img: img[index],
-                            realprice: realPrice[index],
-                            quantity: '1',
-                            status: state[index],
-                          ),
-                        );
-                      },
-                      child: Stack(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: NetworkImage(img[
-                                    index]), // Replace with actual image URL
-                                fit: BoxFit.cover,
-                              ),
+                    Stack(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  img[index]), // Replace with actual image URL
+                              fit: BoxFit.cover,
                             ),
-                            height: Adaptive.h(20),
                           ),
-                          Positioned(
-                            top: 5,
-                            right: 5,
-                            child: GestureDetector(
-                              onTap: () {
-                                Get.to(
-                                  OrderDetails(
-                                    orderID: orderId[index],
-                                    estimatedTime: "26 Spet 2024",
-                                    title: "Product A",
-                                    size: "S",
-                                    price: price[index],
-                                    img: img[index],
-                                    realprice: realPrice[index],
-                                    quantity: '1',
-                                    status: state[index],
-                                  ),
-                                );
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: AppColors.lightSilver,
+                          height: Adaptive.h(20),
+                        ),
+                        Positioned(
+                          top: 5,
+                          right: 5,
+                          child: GestureDetector(
+                            onTap: () {
+                              Get.to(
+                                OrderDetails(
+                                  orderID: orderId[index],
+                                  estimatedTime: "26 Spet 2024",
+                                  title: "Product A",
+                                  size: "S",
+                                  price: price[index],
+                                  img: img[index],
+                                  realprice: realPrice[index],
+                                  quantity: '1',
+                                  status: state[index],
                                 ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(5.0),
-                                  child: Icon(
-                                    Icons.remove_red_eye_outlined,
-                                    size: 20,
-                                    color: Colors.black.withOpacity(0.7),
-                                  ),
+                              );
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                color: AppColors.lightSilver,
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Icon(
+                                  Icons.remove_red_eye_outlined,
+                                  size: 20,
+                                  color: Colors.black.withOpacity(0.7),
                                 ),
                               ),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 10),
                     Text(

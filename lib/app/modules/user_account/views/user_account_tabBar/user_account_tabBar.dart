@@ -1,15 +1,16 @@
-
 import 'package:d_and_s/app/modules/user_account/controllers/user_account_controller.dart';
 
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_Info.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_WishList.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_address/user_account_tabs_address.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../constants/text_size.dart';
 
 import 'user_account_tabs_order/user_account_tabs_Order.dart';
+import 'user_account_tabs_review/user_account_tabs_review.dart';
 
 class UserAccountTabBar extends StatelessWidget {
   final List<String> tabLabels = [
@@ -17,6 +18,7 @@ class UserAccountTabBar extends StatelessWidget {
     "Add Address",
     "Order History",
     "WishList",
+    "Review"
   ];
   final userAccController = Get.put(UserAccountController());
   UserAccountTabBar({super.key});
@@ -75,9 +77,11 @@ class UserAccountTabBar extends StatelessWidget {
     } else if (userAccController.tabBarIndex.value == 1) {
       return const UserAccountTabsAddress();
     } else if (userAccController.tabBarIndex.value == 2) {
-      return  UserAccountTabsOrder();
-    } else {
+      return UserAccountTabsOrder();
+    } else if (userAccController.tabBarIndex.value == 3) {
       return UserAccountTabsWishList();
+    } else {
+      return UserAccountTabsReview();
     }
   }
 }

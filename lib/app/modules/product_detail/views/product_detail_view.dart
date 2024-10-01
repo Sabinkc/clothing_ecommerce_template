@@ -19,7 +19,7 @@ import 'product_detail_circular_colored_container.dart';
 import 'ProductDetail_Attributes.dart';
 import 'ProductDetail_NavBar.dart';
 import 'ProductDetail_Size.dart';
-import 'ProductDetails_Review.dart';
+import 'product_detail_review/ProductDetails_Review.dart';
 
 class ProductDetailView extends StatelessWidget {
   final controller = Get.put(ProductDetailController());
