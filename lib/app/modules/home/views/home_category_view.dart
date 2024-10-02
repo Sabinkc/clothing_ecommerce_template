@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../data/category_data.dart';
+import '../../shop/views/shop_view_sub_category.dart';
 import 'home_tabBar/home_tabBar_tabs.dart';
 
 class HomeCategoryView extends StatelessWidget {
@@ -83,31 +84,116 @@ class HomeCategoryDetailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
-        title: Text(controllerHomeController.index.value),
-        centerTitle: false,
-      ),
-      body: Container(
-        color: AppColors.lightSilver,
-        child: Padding(
-          padding: const EdgeInsets.only(top: 10),
-          child: Column(
-            children: [
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        HomeTabBarTabs(),
-                      ],
-                    ),
+    return MaterialApp(
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          backgroundColor: AppColors.lightSilver,
+          appBar: AppBar(
+            backgroundColor: AppColors.lightSilver,
+            title: Text(controllerHomeController.index.value),
+            centerTitle: false,
+            leading: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Icon(Icons.arrow_back),
+            ),
+            actions: [
+              Padding(
+                padding: const EdgeInsets.only(right: 20),
+                child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                      isScrollControlled: true,
+                      context: context,
+                      builder: (BuildContext context) => ShopViewSubCategory(),
+                    );
+                  },
+                  child: Row(
+                    children: [
+                      Text("Filter"),
+                      SizedBox(width: 5),
+                      Icon(Icons.filter_list),
+                    ],
                   ),
                 ),
               ),
             ],
+            bottom: TabBar(
+              indicatorSize: TabBarIndicatorSize.tab,
+              tabs: [
+                Text("Recommended"),
+                Text("Over Sized"),
+                Text("Most Popular"),
+              ],
+            ),
+          ),
+          body: Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: TabBarView(
+              children: [
+                Container(
+                  color: AppColors.lightSilver,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Column(
+                      children: [
+                        // ShopViewSubCategory(),
+
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                HomeTabBarTabs(),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  color: AppColors.lightSilver,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                HomeTabBarTabs(),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  color: AppColors.lightSilver,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                HomeTabBarTabs(),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -1,4 +1,4 @@
-final List products = [
+final List shopData = [
   {
     "featured": "For You",
     "product_id": "3",
@@ -8,7 +8,7 @@ final List products = [
     "discount": 10,
     "title": "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
     "description":
-        "This product has sustainability features recognized by trusted certifications.",
+    "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
     "color": {
       0xffFF0000: [
@@ -28,11 +28,11 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -90,7 +90,7 @@ final List products = [
     "discount": 10,
     "title": "Men's Classic Fit Formal Shirt",
     "description":
-        "A classic fit formal shirt made from high-quality cotton, perfect for professional or formal occasions.",
+    "A classic fit formal shirt made from high-quality cotton, perfect for professional or formal occasions.",
     "category": "Shirts",
     "color": {
       0xffFF0000: [
@@ -145,7 +145,7 @@ final List products = [
     "discount": 10,
     "title": "Genuine Leather Travel Bag",
     "description":
-        "This premium leather Jeans offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather Jeans offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Jeans",
     "color": {
       0xffFF0000: [
@@ -198,7 +198,7 @@ final List products = [
     "discount": 10,
     "title": "Air Force",
     "description":
-        "This premium leather travel Air Force offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Air Force offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Shoes",
     "color": {
       0xffFF0000: [
@@ -246,13 +246,13 @@ final List products = [
     "featured": "Latest Product",
     "product_id": "7",
     "name":
-        "Champion Men'S Jacket, Stadium Full-Zip Jacket, Wind Resistant, Water Resistant Jacket For Men",
+    "Champion Men'S Jacket, Stadium Full-Zip Jacket, Wind Resistant, Water Resistant Jacket For Men",
     "price": 8000,
     "realprice": 9000,
     "discount": 10,
     "title": "Bag",
     "description":
-        "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Bags",
     "color": {
       0xffFF0000: [
@@ -305,7 +305,7 @@ final List products = [
     "discount": 10,
     "title": "Bag",
     "description":
-        "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Hoodie",
     "color": {
       0xff000000: [
@@ -352,7 +352,7 @@ final List products = [
     "discount": 10,
     "title": "Shirts",
     "description":
-        "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Shirts",
     "color": {
       0xffFF0000: [
@@ -399,7 +399,7 @@ final List products = [
     "discount": 10,
     "title": "Shirts",
     "description":
-        "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Jeans",
     "color": {
       0xffFF0000: [
@@ -446,7 +446,7 @@ final List products = [
     "discount": 10,
     "title": "Jackets",
     "description":
-        "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Jackets",
     "color": {
       0xffFF0000: [
@@ -493,7 +493,7 @@ final List products = [
     "discount": 10,
     "title": "Jackets",
     "description":
-        "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
+    "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Shoes",
     "color": {
       0xffFF0000: [
@@ -531,7 +531,7 @@ final List products = [
       "Item id": "BAG001"
     },
   },
-  //NEW DATA 
+  //NEW DATA
   {
     "featured": "Latest Product",
     "product_id": "12",
@@ -541,7 +541,7 @@ final List products = [
     "discount": 15,
     "title": "Premium T-Shirt with Dri-Fit Technology",
     "description":
-        "Stay comfortable with breathable fabric that wicks sweat away.",
+    "Stay comfortable with breathable fabric that wicks sweat away.",
     "category": "Shirts",
     "color": {
       0xff000000: [
@@ -649,7 +649,7 @@ final List products = [
     "discount": 8,
     "title": "Lightweight Running Shoes with Breathable Mesh",
     "description":
-        "Designed for comfort and speed, these shoes offer great support for running.",
+    "Designed for comfort and speed, these shoes offer great support for running.",
     "category": "Shoes",
     "color": {
       0xff808080: [
@@ -703,7 +703,7 @@ final List products = [
     "discount": 10,
     "title": "Warm and Lightweight Puffer Jacket",
     "description":
-        "Insulated and lightweight, this jacket is perfect for cold weather.",
+    "Insulated and lightweight, this jacket is perfect for cold weather.",
     "category": "Jackets",
     "color": {
       0xff2F4F4F: [
@@ -757,7 +757,7 @@ final List products = [
     "discount": 10,
     "title": "Luxury Watch with Stainless Steel Band",
     "description":
-        "This product has sustainability features recognized by trusted certifications.",
+    "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
     "color": {
       0xffFF0000: [
@@ -816,7 +816,7 @@ final List products = [
     "discount": 15,
     "title": "Premium T-Shirt with Dri-Fit Technology",
     "description":
-        "Stay comfortable with breathable fabric that wicks sweat away.",
+    "Stay comfortable with breathable fabric that wicks sweat away.",
     "category": "Shirts",
     "color": {
       0xff000000: [
@@ -925,7 +925,7 @@ final List products = [
     "discount": 8,
     "title": "Lightweight Running Shoes with Breathable Mesh",
     "description":
-        "Designed for comfort and speed, these shoes offer great support for running.",
+    "Designed for comfort and speed, these shoes offer great support for running.",
     "category": "Shoes",
     "color": {
       0xff808080: [
@@ -979,7 +979,7 @@ final List products = [
     "discount": 10,
     "title": "Warm and Lightweight Puffer Jacket",
     "description":
-        "Insulated and lightweight, this jacket is perfect for cold weather.",
+    "Insulated and lightweight, this jacket is perfect for cold weather.",
     "category": "Jackets",
     "color": {
       0xff2F4F4F: [
@@ -1033,7 +1033,7 @@ final List products = [
     "discount": 10,
     "title": "Luxury Watch with Stainless Steel Band",
     "description":
-        "This product has sustainability features recognized by trusted certifications.",
+    "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
     "color": {
       0xffFF0000: [

@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
-
 import 'package:get/get.dart';
 
 import '../modules/add_to_cart/bindings/add_to_cart_binding.dart';
@@ -20,10 +18,14 @@ import '../modules/product_detail/bindings/product_detail_binding.dart';
 import '../modules/product_detail/views/product_detail_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
+import '../modules/shop/bindings/shop_binding.dart';
+import '../modules/shop/views/shop_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
 import '../modules/user_account/bindings/user_account_binding.dart';
 import '../modules/user_account/views/user_account_view.dart';
+
+// ignore_for_file: prefer_const_literals_to_create_immutables
 
 part 'app_routes.dart';
 
@@ -92,6 +94,11 @@ class AppPages {
       name: _Paths.CATEGORY,
       page: () => CategoryView(),
       binding: CategoryBinding(),
+    ),
+    GetPage(
+      name: _Paths.SHOP,
+      page: () =>  ShopView(),
+      binding: ShopBinding(),
     ),
   ];
 }

@@ -40,32 +40,35 @@ class ProductDetailReview extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Row(
-                    children: [
-                      // const Icon(Icons.sort),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Row(
+                      children: [
+                        // const Icon(Icons.sort),
 
-                      Text(
-                        "Sort: ",
-                        style: TextStyle(fontSize: TextSize.normal),
-                      ),
-                      const SizedBox(width: 10),
-                      DropDownReusable(
-                        dropDownValues: sortOptions,
-                        dropDownSelectedValue: 'Relevance',
-                      ),
-                      const Spacer(),
-                      // const Icon(Icons.filter_list_alt),
-                      // const SizedBox(width: 10),
-                      Text(
-                        "Filter: ",
-                        style: TextStyle(fontSize: TextSize.normal),
-                      ),
-                      const SizedBox(width: 10),
-                      DropDownReusable(
-                        dropDownValues: sortOptions,
-                        dropDownSelectedValue: 'Relevance',
-                      ),
-                    ],
+                        Text(
+                          "Sort: ",
+                          style: TextStyle(fontSize: TextSize.small),
+                        ),
+                        const SizedBox(width: 10),
+                        DropDownReusable(
+                          dropDownValues: sortOptions,
+                          dropDownSelectedValue: 'Relevance',
+                        ),
+                        const Spacer(),
+                        // const Icon(Icons.filter_list_alt),
+                        // const SizedBox(width: 10),
+                        Text(
+                          "Filter: ",
+                          style: TextStyle(fontSize: TextSize.small),
+                        ),
+                        const SizedBox(width: 10),
+                        DropDownReusable(
+                          dropDownValues: sortOptions,
+                          dropDownSelectedValue: 'Relevance',
+                        ),
+                      ],
+                    ),
                   ),
                   const Padding(
                     padding: EdgeInsets.all(20.0),

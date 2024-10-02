@@ -21,6 +21,7 @@ class HomeView extends GetView<HomeController> {
   List<int> list = [1, 2, 3, 4, 5];
   final search = TextEditingController();
   var index = 0.obs;
+  var searchQuery = ''.obs;
   final homeViewController = Get.put(HomeController());
 
   final List<String> imgList = [
@@ -51,128 +52,140 @@ class HomeView extends GetView<HomeController> {
   final controllerAddToCart = Get.put(AddToCartController());
   final controllerFavorite = Get.put(FavouritesController());
   HomeView({Key? key}) : super(key: key);
+  List<String> filteredList(List<String> originalList) {
+    if (searchQuery.isEmpty) {
+      return originalList;
+    } else {
+      return originalList
+          .where(
+              (item) => item.toLowerCase().contains(searchQuery.toLowerCase()))
+          .toList();
+    }
+  }
 
   @override
   Widget build(BuildContext context) => KeyboardDismisser(
-
-          // final controller = Get.put(HomeController());
-          child: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(50),
-          child: AppBarMainPage(
-            title: 'Hi Aman',
-            isLeading: true,
+        // final controller = Get.put(HomeController());
+        child: Scaffold(
+          appBar: PreferredSize(
+            preferredSize: const Size.fromHeight(50),
+            child: AppBarMainPage(
+              title: 'Hi Aman',
+              isLeading: true,
+            ),
           ),
-        ),
-        body: Container(
-          color: AppColors.lightSilver,
-          child: NestedScrollView(
-            headerSliverBuilder:
-                (BuildContext context, bool innerBoxIsScrolled) {
-              return [
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: TextFormField(
-                            controller: search,
-                            decoration: InputDecoration(
-                              hintText: "What are you looking for?",
-                              prefixIcon: const Icon(Icons.search),
-                              suffixIcon: GestureDetector(
-                                  onTap: () {
-                                    // Get.to(FilterView());
-                                    showModalBottomSheet(
-                                        shape: const RoundedRectangleBorder(
-                                          
-                                          borderRadius: BorderRadius.vertical(
-                                            top: Radius.circular(20),
+          body: Container(
+            color: AppColors.lightSilver,
+            child: NestedScrollView(
+              headerSliverBuilder:
+                  (BuildContext context, bool innerBoxIsScrolled) {
+                return [
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                            child: TextFormField(
+                              onChanged: (value) {
+                                searchQuery.value =
+                                    value; // Update search query in controller
+                              },
+                              controller: search,
+                              decoration: InputDecoration(
+                                hintText: "What are you looking for?",
+                                prefixIcon: const Icon(Icons.search),
+                                suffixIcon: GestureDetector(
+                                    onTap: () {
+                                      // Get.to(FilterView());
+                                      showModalBottomSheet(
+                                          shape: const RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.vertical(
+                                              top: Radius.circular(20),
+                                            ),
                                           ),
-                                          
-                                        ),
-                                        context: context,
-                                        builder: (BuildContext context) =>
-                                            FilterView());
-                                  },
-                                  child: const Icon(Icons.filter_list)),
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(6),
-                                borderSide: const BorderSide(
-                                    width: 1, color: AppColors.lightBlue),
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(6),
-                                borderSide: const BorderSide(
-                                    width: 1, color: Colors.red),
-                              ),
-                              enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(6),
-                                borderSide: const BorderSide(
-                                  width: 1,
-                                  color: Color(0xffAEAEAE),
+                                          context: context,
+                                          builder: (BuildContext context) =>
+                                              FilterView());
+                                    },
+                                    child: const Icon(Icons.filter_list)),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(6),
+                                  borderSide: const BorderSide(
+                                      width: 1, color: AppColors.lightBlue),
                                 ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(6),
+                                  borderSide: const BorderSide(
+                                      width: 1, color: Colors.red),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(6),
+                                  borderSide: const BorderSide(
+                                    width: 1,
+                                    color: Color(0xffAEAEAE),
+                                  ),
 
-                                // // labelText: 'Tap to show the keyboard',
+                                  // // labelText: 'Tap to show the keyboard',
+                                ),
                               ),
                             ),
+                            // TextFormFieldReusable(
+                            //   hint: "What are you looking for?",
+                            //   icon: const Icon(Icons.search),
+                            //   suffixIcon: const Icon(Icons.filter_list),
+                            //   textEditingController: search,
+                            // ),
                           ),
-                          // TextFormFieldReusable(
-                          //   hint: "What are you looking for?",
-                          //   icon: const Icon(Icons.search),
-                          //   suffixIcon: const Icon(Icons.filter_list),
-                          //   textEditingController: search,
-                          // ),
-                        ),
-                        const SizedBox(height: 20),
-                        CarouselSliderReusable(imgList: imgList),
-                        const SizedBox(height: 20),
-                        const Padding(
-                          padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.category_outlined,
-                                color: Colors.red,
-                              ),
-                              SizedBox(width: 10),
-                              Text(
-                                "Categories",
-                                style: TextStyle(
-                                  fontFamily: 'Bai Jamjuree',
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,
+                          const SizedBox(height: 20),
+                          CarouselSliderReusable(imgList: imgList),
+                          const SizedBox(height: 20),
+                          const Padding(
+                            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.category_outlined,
+                                  color: Colors.red,
                                 ),
-                              ),
-                            ],
+                                SizedBox(width: 10),
+                                Text(
+                                  "Categories",
+                                  style: TextStyle(
+                                    fontFamily: 'Bai Jamjuree',
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 20),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                          child: HomeCategoryView(),
-                        ),
-                        // SizedBox(height: 10),
-                      ],
+                          const SizedBox(height: 20),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                            child: HomeCategoryView(),
+                          ),
+                          // SizedBox(height: 10),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SliverAppBar(
-                  backgroundColor: AppColors.lightSilver,
-                  title: HomeSectionTabBar(),
-                  floating: true,
-                  pinned: true,
-                ),
-              ];
-            },
-            body: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-              child: HomeSectionTabBarTabs(),
+                  SliverAppBar(
+                    backgroundColor: AppColors.lightSilver,
+                    title: HomeSectionTabBar(),
+                    floating: true,
+                    pinned: true,
+                  ),
+                ];
+              },
+              body: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                child: HomeSectionTabBarTabs(),
+              ),
             ),
           ),
         ),
-      ));
+      );
 }

@@ -2,7 +2,6 @@ import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_navBar.dart';
 
-
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/recommendation_view.dart';
 
@@ -43,19 +42,22 @@ class AddedCart extends StatelessWidget {
       body: Obx(
         () {
           return SingleChildScrollView(
-            padding: const EdgeInsets.all(20),
+            // padding: const EdgeInsets.all(20),
             child: Column(
               children: [
                 controller.cartProducts.isEmpty
-                    ? Container(
-                        height: 400,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: const DecorationImage(
-                            image: AssetImage(
-                                "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
-                            fit: BoxFit
-                                .cover, // Optional: Adjust image fit if necessary
+                    ? Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Container(
+                          height: 400,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: const DecorationImage(
+                              image: AssetImage(
+                                  "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
+                              fit: BoxFit
+                                  .cover, // Optional: Adjust image fit if necessary
+                            ),
                           ),
                         ),
                       )
@@ -63,12 +65,14 @@ class AddedCart extends StatelessWidget {
                         children: controller.cartProducts.map(
                           (item) {
                             return Container(
-                              margin: const EdgeInsets.only(bottom: 15),
+                              // margin: const EdgeInsets.only(bottom: 15),
                               padding: const EdgeInsets.fromLTRB(0, 10, 10, 10),
                               decoration: BoxDecoration(
                                 // borderRadius: BorderRadius.circular(16),
                                 color: Colors.white,
-                                border: Border.all(color: Colors.grey.shade300),
+                                border: Border(
+                                    bottom: BorderSide(
+                                        color: Colors.grey.shade300, width: 1)),
                               ),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -92,10 +96,11 @@ class AddedCart extends StatelessWidget {
                                     width: 100,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
-                                      borderRadius: BorderRadius.circular(16),
+                                      // borderRadius: BorderRadius.circular(16),
+
                                       image: DecorationImage(
                                         image: NetworkImage(item["image"]),
-                                        fit: BoxFit.contain,
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
                                   ),
@@ -123,7 +128,6 @@ class AddedCart extends StatelessWidget {
                                         Text(
                                           "Size: ${item["size"]}",
                                           style: const TextStyle(
-                                            color: Colors.blue,
                                             fontSize: 14,
                                           ),
                                         ),
@@ -136,7 +140,6 @@ class AddedCart extends StatelessWidget {
                                               "Rs. ${item["price"]}",
                                               style: const TextStyle(
                                                 fontSize: 16,
-                                                color: Colors.red,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
@@ -208,32 +211,34 @@ class AddedCart extends StatelessWidget {
                           },
                         ).toList(),
                       ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 30),
                 Text(
                   "Recommended Items",
                   style: TextStyle(
                     fontSize: TextSize.normal,
                   ),
                 ),
-                const SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                    color: AppColors
-                        .lightSilver, // Background color for a clean look
-                    borderRadius: BorderRadius.circular(
-                        10), // Rounded corners for smoothness
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.1), // Soft shadow
-                        blurRadius: 10,
-                        offset: const Offset(0, 5), // Shadow direction
-                      ),
-                    ],
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: AppColors
+                          .lightSilver, // Background color for a clean look
+                      borderRadius: BorderRadius.circular(
+                          10), // Rounded corners for smoothness
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1), // Soft shadow
+                          blurRadius: 10,
+                          offset: const Offset(0, 5), // Shadow direction
+                        ),
+                      ],
+                    ),
+                    padding: const EdgeInsets.all(
+                        10), // Padding inside the container
+                    height: Adaptive.h(27),
+                    child: RecommendationView(),
                   ),
-                  padding:
-                      const EdgeInsets.all(10), // Padding inside the container
-                  height: Adaptive.h(27),
-                  child: RecommendationView(),
                 ),
               ],
             ),

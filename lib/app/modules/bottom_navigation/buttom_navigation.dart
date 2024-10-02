@@ -1,6 +1,7 @@
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
+import 'package:d_and_s/app/modules/shop/views/shop_view.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_view.dart';
 import 'package:flutter/material.dart';
 
@@ -88,6 +89,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     HomeView(),
     CategoryView(),
+    ShopView(),
     AddedCart(),
     // AddedCart(),
     const UserAccountView(),
@@ -119,6 +121,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
             BottomNavigationBarItem(
               icon: Icon(Icons.category),
               label: 'Category',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shop),
+              label: 'Shop',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart),

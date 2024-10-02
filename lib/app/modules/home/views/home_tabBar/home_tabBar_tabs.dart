@@ -89,7 +89,7 @@ class HomeTabBarTabs extends StatelessWidget {
                 decoration: BoxDecoration(
                   // border: Border.all(color: AppColors.silverBorder, width: 5),
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(16),
+                  // borderRadius: BorderRadius.circular(16),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),

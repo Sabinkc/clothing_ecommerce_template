@@ -36,7 +36,7 @@ class _DropDownReusableState extends State<DropDownReusable> {
           value: value,
           child: Text(
             value,
-            style: TextStyle(fontSize: TextSize.normal),
+            style: TextStyle(fontSize: TextSize.small),
           ),
         );
       }).toList(),
