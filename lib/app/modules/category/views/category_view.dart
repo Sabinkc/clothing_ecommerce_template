@@ -7,15 +7,18 @@ import 'package:icons_plus/icons_plus.dart';
 
 import '../../../data/category_data.dart';
 import '../../home/controllers/home_controller.dart';
-import '../../home/views/home_category_view.dart';
+
 
 import '../controllers/category_controller.dart';
+import 'category_detail_view.dart';
 
 class CategoryView extends GetView<CategoryController> {
   final controllerHomeController = Get.put(HomeController());
+  final controllerCategory = Get.put(CategoryController());
   CategoryView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.lightSilver,
@@ -46,8 +49,22 @@ class CategoryView extends GetView<CategoryController> {
                       onTap: () {
                         controllerHomeController.index.value =
                             categoryData[index]["category_name"];
+                        List selectedCategory = categoryData
+                            .where((element) =>
+                                element["category_name"] ==
+                                controllerHomeController.index.value)
+                            .toList();
+
+                        // Set the subCategory to the first item of the sub_category list
+                        if (selectedCategory.isNotEmpty &&
+                            selectedCategory[0]["sub_category"] != null) {
+                          controllerCategory.subCategory.value =
+                              selectedCategory[0]["sub_category"][0]
+                                  ["sub_category_id"];
+                        }
+                    
                         Get.to(
-                          HomeCategoryDetailView(),
+                          CategoryDetailView(),
                           transition: Transition
                               .leftToRightWithFade, // Professional fade-in effect
                           duration: const Duration(

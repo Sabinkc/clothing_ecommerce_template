@@ -1,6 +1,10 @@
-import 'package:d_and_s/app/constants/colors.dart';
+// ignore_for_file: must_be_immutable
+
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
+import 'package:d_and_s/app/modules/shop/controllers/shop_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../reusable_widgets/drop_down.dart';
 
@@ -11,9 +15,14 @@ class ShopViewSubCategory extends StatelessWidget {
     "L",
     "XL",
     "XXL",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
   ];
   final List<String> brand = [
-    "Levis",
+    "Harrington",
     "H&M",
     "Adidas",
     "LV",
@@ -36,80 +45,111 @@ class ShopViewSubCategory extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 450,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // The drag indicator at the top of the sheet
-            Padding(
-              padding: const EdgeInsets.only(top: 12),
-              child: Center(
-                child: Container(
-                  width: 50,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[400],
-                    borderRadius: BorderRadius.circular(8),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // The drag indicator at the top of the sheet
+              Padding(
+                padding: const EdgeInsets.only(top: 12),
+                child: Center(
+                  child: Container(
+                    width: 50,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                 ),
               ),
-            ),
-            // A header with a clear and apply button
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Filter Options',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
+              // A header with a clear and apply button
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Filter Options',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
-                ),
-                Icon(Icons.filter_list),
-              ],
-            ),
-            Divider(),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ShopViewReusableRow(
-                  title: "Size",
-                  selectedValue: "S",
-                  value: size,
-                ),
-                Divider(),
-                ShopViewReusableRow(
-                  title: "Brand",
-                  selectedValue: "Levis",
-                  value: brand,
-                ),
-                Divider(),
-                ShopViewReusableRow(
-                  title: "Product Type",
-                  selectedValue: "Hoodie",
-                  value: productType,
-                ),
-                Divider(),
-                ShopViewReusableRow(
-                  title: "Price",
-                  selectedValue: "High to Low",
-                  value: price,
-                ),
-                SizedBox(height: 20),
-                LargeButtonReusable(
-                  title: "Apply Filter",
-                  color: Colors.black,
-                )
-              ],
-            ),
-            // The apply button at the bottom of the sheet
-          ],
+                  Icon(Icons.filter_list),
+                ],
+              ),
+              const Divider(),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Size: ",
+                    style: TextStyle(
+                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  ShopViewReusableGridView(item: size.length, title: size),
+                  Text(
+                    "Brand: ",
+                    style: TextStyle(
+                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  ShopViewReusableGridView(item: brand.length, title: brand),
+                  Text(
+                    "Product Type: ",
+                    style: TextStyle(
+                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  ShopViewReusableGridView(
+                      item: productType.length, title: productType),
+                  Text(
+                    "Price: ",
+                    style: TextStyle(
+                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  ShopViewReusableGridView(item: price.length, title: price),
+                  // ShopViewReusableRow(
+                  //   title: "Size",
+                  //   selectedValue: "S",
+                  //   value: size,
+                  // ),
+                  // const Divider(),
+                  // ShopViewReusableRow(
+                  //   title: "Brand",
+                  //   selectedValue: "Levis",
+                  //   value: brand,
+                  // ),
+                  // const Divider(),
+                  // ShopViewReusableRow(
+                  //   title: "Product Type",
+                  //   selectedValue: "Hoodie",
+                  //   value: productType,
+                  // ),
+                  // const Divider(),
+                  // ShopViewReusableRow(
+                  //   title: "Price",
+                  //   selectedValue: "High to Low",
+                  //   value: price,
+                  // ),
+                  const SizedBox(height: 20),
+                  const LargeButtonReusable(
+                    title: "Apply Filter",
+                    color: Colors.black,
+                  )
+                ],
+              ),
+              // The apply button at the bottom of the sheet
+            ],
+          ),
         ),
       ),
     );
@@ -128,7 +168,7 @@ class ShopViewReusableRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 20),
+      margin: const EdgeInsets.only(right: 20),
       // decoration: BoxDecoration(
       //     borderRadius: BorderRadius.circular(5), color: Colors.white
       //     // color: Colors.grey.withOpacity(0.2),
@@ -138,12 +178,59 @@ class ShopViewReusableRow extends StatelessWidget {
         child: Row(
           children: [
             Text("$title :"),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             DropDownReusable(
               dropDownValues: value,
               dropDownSelectedValue: selectedValue,
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class ShopViewReusableGridView extends StatelessWidget {
+  final controllerShopController = Get.put(ShopController());
+  var count = 0.obs;
+  final List<String> title;
+  final int item;
+
+  ShopViewReusableGridView(
+      {super.key, required this.item, required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      physics: const NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: item,
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 4, crossAxisSpacing: 12.0, // Space between grid items
+        mainAxisSpacing: 10.0, // Space between grid items
+        childAspectRatio: 2,
+      ),
+      itemBuilder: (BuildContext context, index) => Obx(
+        () => GestureDetector(
+          onTap: () {
+            count.value = index;
+          },
+          child: Container(
+            decoration: BoxDecoration(
+                color: count.value == index ? Colors.black : Colors.white,
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(8)),
+            child: Center(
+              child: Text(
+                title[index],
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: count.value == index ? Colors.white : Colors.black),
+              ),
+            ),
+          ),
         ),
       ),
     );

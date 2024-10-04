@@ -10,6 +10,7 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
+    "sub_category_id":"Hoodie1",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
@@ -307,6 +308,7 @@ final List products = [
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Hoodie",
+    "sub_category_id":"Hoodie2",
     "color": {
       0xff000000: [
         "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
@@ -759,6 +761,7 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
+    "sub_category_id":"Hoodie3",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/51UStNtA3RL._AC_SX679_.jpg",
@@ -1035,6 +1038,7 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
+    "sub_category_id":"Hoodie4",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/61hBWi8erpL._AC_SX679_.jpg",

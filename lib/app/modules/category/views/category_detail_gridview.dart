@@ -1,26 +1,25 @@
-// ignore_for_file: file_names
 
-import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
-import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
-
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../../../constants/colors.dart';
-import '../../../../constants/text_size.dart';
-import '../../../../data/alldata.dart';
-import '../../../favourites/controllers/favourites_controller.dart';
-import '../../../product_detail/views/product_detail_view.dart';
-import '../home_section_tabBar/home_section_tabBar_tabs_bottomSheet.dart';
+import '../../../constants/text_size.dart';
+import '../../../data/alldata.dart';
+import '../../favourites/controllers/favourites_controller.dart';
+import '../../home/controllers/home_controller.dart';
+import '../../home/views/home_section_tabBar/home_section_tabBar_tabs_bottomSheet.dart';
+import '../../product_detail/controllers/product_detail_controller.dart';
+import '../../product_detail/views/product_detail_view.dart';
+import '../controllers/category_controller.dart';
 
-class HomeTabBarTabs extends StatelessWidget {
-  HomeTabBarTabs({
-    super.key,
-  });
-  final controller = Get.put(HomeController());
+class CategoryDetailGridView extends StatelessWidget {
+    final controller = Get.put(HomeController());
   final controllerProduct = Get.put(ProductDetailController());
   final controllerFavorites = Get.put(FavouritesController());
+  final controllerCategory = Get.put(CategoryController());
+   CategoryDetailGridView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,7 @@ class HomeTabBarTabs extends StatelessWidget {
       () {
         // Get the selected tab's products list
         List selectedProducts = products
-            .where((element) => element["category"] == controller.index.value)
+            .where((element) => element["sub_category_id"] == controllerCategory.subCategory.value)
             .toList();
 
         return GridView.builder(

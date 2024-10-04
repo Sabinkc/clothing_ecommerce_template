@@ -10,8 +10,9 @@ import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 import '../../../data/category_data.dart';
 
 import '../../../data/sort_by.dart';
+import '../../category/views/category_detail_view.dart';
 import '../../home/controllers/home_controller.dart';
-import '../../home/views/home_category_view.dart';
+
 
 class FilterView extends StatelessWidget {
   final List<String> itemsTabs = [
@@ -102,7 +103,7 @@ class FilterView extends StatelessWidget {
                             controllerHomeController.index.value =
                                 categoryData[index]["category_name"];
                             Get.to(
-                              HomeCategoryDetailView(),
+                              CategoryDetailView(),
                               transition: Transition
                                   .leftToRightWithFade, // Professional fade-in effect
                               duration: const Duration(

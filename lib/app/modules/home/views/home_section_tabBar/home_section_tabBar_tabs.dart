@@ -85,7 +85,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                 );
               },
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   // border: Border.all(color: AppColors.silverBorder, width: 5),
                   color: Colors.white,
                   // borderRadius: BorderRadius.circular(16),

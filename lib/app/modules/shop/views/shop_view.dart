@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/modules/reusable_widgets/drop_down.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
 import 'package:d_and_s/app/modules/shop/views/shop_view_sub_category.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +15,7 @@ import '../../product_detail/views/product_detail_view.dart';
 import '../controllers/shop_controller.dart';
 
 class ShopView extends GetView<ShopController> {
+  final searchController = TextEditingController();
   ShopView({Key? key}) : super(key: key);
   final controllerProduct = Get.put(ProductDetailController());
   final controllerFavorites = Get.put(FavouritesController());
@@ -37,7 +38,7 @@ class ShopView extends GetView<ShopController> {
                   builder: (BuildContext context) => ShopViewSubCategory(),
                 );
               },
-              child: Row(
+              child: const Row(
                 children: [
                   Text("Filter"),
                   SizedBox(width: 10),
@@ -54,8 +55,12 @@ class ShopView extends GetView<ShopController> {
           child: Column(
             children: [
               // ShopViewSubCategory(),
+              TextFormFieldReusable(
+                hint: "Search",
+                textEditingController: searchController,
+              ),
 
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
@@ -109,7 +114,7 @@ class ShopView extends GetView<ShopController> {
                       );
                     },
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         // border: Border.all(color: AppColors.silverBorder, width: 5),
                         color: Colors.white,
                         // borderRadius: BorderRadius.circular(16),

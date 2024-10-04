@@ -10,30 +10,125 @@ final List categoryData = [
     "category_name": "Hoodie",
     "category_image":
         "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
+    "sub_category":[
+      {
+        "sub_category_id":"Hoodie1",
+        "sub_category_name":"Oversize",
+        "sub_category_img":"https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+      },
+      {
+        "sub_category_id":"Hoodie2",
+        "sub_category_name":"Sports",
+        "sub_category_img":"https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+      },
+      {
+        "sub_category_id":"Hoodie3",
+        "sub_category_name":"Casual",
+        "sub_category_img":"https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+      },
+      {
+        "sub_category_id":"Hoodie4",
+        "sub_category_name":"EcoFriendly",
+        "sub_category_img":"https://media.istockphoto.com/id/845813120/photo/blank-hoodie-sweatshirt-color-green-front-view.jpg?s=612x612&w=0&k=20&c=EeXgy6I6rQqQosF0Ic22mJK3st6FbKarthAKdBAKzfg=",
+      },
+    ],
   },
   {
     "category_id": "3",
     "category_name": "Shirts",
     "category_image":
         "https://plus.unsplash.com/premium_photo-1708274147720-abd218b3a3bd?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "sub_category":[
+      {
+        "sub_category_id":"Shirts1",
+        "sub_category_name":"Oversize",
+      },
+      {
+        "sub_category_id":"Shirts2",
+        "sub_category_name":"Sports",
+      },
+      {
+        "sub_category_id":"Shirts3",
+        "sub_category_name":"Casual",
+      },
+      {
+        "sub_category_id":"Shirts4",
+        "sub_category_name":"EcoFriendly",
+      },
+    ],
   },
   {
     "category_id": "4",
     "category_name": "Jeans",
     "category_image":
         "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=3426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "sub_category":[
+      {
+        "sub_category_id":"Jeans1",
+        "sub_category_name":"Oversize",
+      },
+      {
+        "sub_category_id":"Jeans2",
+        "sub_category_name":"Sports",
+      },
+      {
+        "sub_category_id":"Jeans3",
+        "sub_category_name":"Casual",
+      },
+      {
+        "sub_category_id":"Jeans4",
+        "sub_category_name":"EcoFriendly",
+      },
+    ],
   },
   {
     "category_id": "5",
     "category_name": "Shoes",
     "category_image":
         "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "sub_category":[
+      {
+        "sub_category_id":"Shoes1",
+        "sub_category_name":"Oversize",
+      },
+      {
+        "sub_category_id":"Shoes2",
+        "sub_category_name":"Sports",
+      },
+      {
+        "sub_category_id":"Shoes3",
+        "sub_category_name":"Casual",
+      },
+      {
+        "sub_category_id":"Shoes4",
+        "sub_category_name":"EcoFriendly",
+      },
+    ],
+
   },
   {
     "category_id": "6",
     "category_name": "Jackets",
     "category_image":
         "https://images.unsplash.com/photo-1649178466381-8fc163d344fd?q=80&w=3168&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "sub_category":[
+      {
+        "sub_category_id":"Jackets1",
+        "sub_category_name":"Oversize",
+      },
+      {
+        "sub_category_id":"Jackets2",
+        "sub_category_name":"Sports",
+      },
+      {
+        "sub_category_id":"Jackets3",
+        "sub_category_name":"Casual",
+      },
+      {
+        "sub_category_id":"Jackets4",
+        "sub_category_name":"EcoFriendly",
+      },
+    ],
   },
   //COPIED
   {
