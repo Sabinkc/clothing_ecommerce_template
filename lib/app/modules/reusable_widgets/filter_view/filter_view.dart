@@ -13,7 +13,6 @@ import '../../../data/sort_by.dart';
 import '../../category/views/category_detail_view.dart';
 import '../../home/controllers/home_controller.dart';
 
-
 class FilterView extends StatelessWidget {
   final List<String> itemsTabs = [
     "Latest Product",
@@ -32,8 +31,9 @@ class FilterView extends StatelessWidget {
   Widget build(BuildContext context) => KeyboardDismisser(
         child: Scaffold(
           body: Container(
-            height: 500,
+            height: 600,
             decoration: const BoxDecoration(
+              color: Colors.white,
               // color: Colors.white,
               borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
             ),

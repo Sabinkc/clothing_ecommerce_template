@@ -1,3 +1,5 @@
+
+
 final List categoryData = [
   // {
   //   "category_id": "1",
@@ -42,18 +44,22 @@ final List categoryData = [
       {
         "sub_category_id":"Shirts1",
         "sub_category_name":"Oversize",
+        "sub_category_img":"https://media.istockphoto.com/id/1345634525/photo/young-man-in-blank-oversize-t-shirt-mockup-front-and-back-used-as-design-template-isolated-on.jpg?s=612x612&w=0&k=20&c=UIUD83m9xWlltRKw_sfTJ7WICKg730f41eIvaIGjUPE=",
       },
       {
         "sub_category_id":"Shirts2",
         "sub_category_name":"Sports",
+        "sub_category_img":"https://www.shutterstock.com/image-vector/tshirt-sport-design-template-soccer-260nw-1167772186.jpg",
       },
       {
         "sub_category_id":"Shirts3",
         "sub_category_name":"Casual",
+        "sub_category_img":"https://nicksonshirts.com/wp-content/uploads/2021/06/casual-shirt-model-front-picture-with-a-grey-background.jpg",
       },
       {
         "sub_category_id":"Shirts4",
         "sub_category_name":"EcoFriendly",
+        "sub_category_img":"https://static.vecteezy.com/system/resources/thumbnails/048/583/802/small/craft-clothes-tag-label-with-green-recycling-symbol-on-male-shirt-photo.jpg",
       },
     ],
   },
@@ -66,18 +72,22 @@ final List categoryData = [
       {
         "sub_category_id":"Jeans1",
         "sub_category_name":"Oversize",
+        "sub_category_img":"https://media.istockphoto.com/id/1307401279/photo/skinny-jeans-are-so-last-season.jpg?s=612x612&w=0&k=20&c=r0qAD-DIEGFypQsRmC1ue_0F-5bLWpnM3NnOvV9Ur4w=",
       },
       {
         "sub_category_id":"Jeans2",
         "sub_category_name":"Sports",
+        "sub_category_img":"https://media.istockphoto.com/id/527236518/photo/mans-legs.jpg?s=612x612&w=0&k=20&c=lczyG0ZkWelpn_o-I_VpjAMo_sA3WpdWHMlgZjCSE-k=",
       },
       {
         "sub_category_id":"Jeans3",
         "sub_category_name":"Casual",
+        "sub_category_img":"https://toddshelton.com/blog/wp-content/uploads/2021/02/2021_0213_jeans_businesscasual4.jpg",
       },
       {
         "sub_category_id":"Jeans4",
         "sub_category_name":"EcoFriendly",
+        "sub_category_img":"https://i.pinimg.com/736x/07/e1/f9/07e1f980bdc86ed6e1c55c34610822d0.jpg",
       },
     ],
   },
@@ -90,18 +100,22 @@ final List categoryData = [
       {
         "sub_category_id":"Shoes1",
         "sub_category_name":"Oversize",
+        "sub_category_img":"https://media.istockphoto.com/id/113030995/photo/big-shoes-to-fill-childs-feet-in-large-black-shoe.jpg?s=612x612&w=0&k=20&c=VRiiHCKTmh26RlM1og2W-nE6TrbZ5XBwm7jrV5enGOA=",
       },
       {
         "sub_category_id":"Shoes2",
         "sub_category_name":"Sports",
+        "sub_category_img":"https://www.shutterstock.com/image-photo/hologram-shoes-sports-fitness-run-600nw-2240460409.jpg",
       },
       {
         "sub_category_id":"Shoes3",
         "sub_category_name":"Casual",
+        "sub_category_img":"https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/00/863577/1.jpg?9046",
       },
       {
         "sub_category_id":"Shoes4",
         "sub_category_name":"EcoFriendly",
+        "sub_category_img":"https://www.shutterstock.com/image-photo/colorful-sport-shoes-on-green-260nw-1626294106.jpg",
       },
     ],
 
@@ -115,18 +129,22 @@ final List categoryData = [
       {
         "sub_category_id":"Jackets1",
         "sub_category_name":"Oversize",
+        "sub_category_img":"https://media.gettyimages.com/id/1457820057/photo/paris-france-j-balvin-wears-a-gray-with-embroidered-laces-print-pattern-cap-a-pale-and-dark.jpg?s=612x612&w=gi&k=20&c=VHSRzemJf-TP_J-V-X8gxcGXsKpW_QgrjaSALfpJMh0=",
       },
       {
         "sub_category_id":"Jackets2",
         "sub_category_name":"Sports",
+        "sub_category_img":"https://media.istockphoto.com/id/1152838910/photo/male-dark-blue-blazer-on-isolated-background.jpg?s=612x612&w=0&k=20&c=B-hs6BnK3YMGEqZcoV1MLZ6mPf3HJMHABui0ZwUaKhU=",
       },
       {
         "sub_category_id":"Jackets3",
         "sub_category_name":"Casual",
+        "sub_category_img":"https://media.istockphoto.com/id/494349086/photo/confident-and-handsome.jpg?s=612x612&w=0&k=20&c=980_nP-60-8zxhA1AputWa-0ZULEbXcIVDZe0uX_H_M=",
       },
       {
         "sub_category_id":"Jackets4",
         "sub_category_name":"EcoFriendly",
+        "sub_category_img":"https://picture.ultro.dev/wp-content/uploads/2021/04/jacket.jpg",
       },
     ],
   },

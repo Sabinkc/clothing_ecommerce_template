@@ -12,6 +12,7 @@ import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
 
+import '../../category/controllers/category_controller.dart';
 import '../../reusable_widgets/filter_view/filter_view.dart';
 import '../controllers/home_controller.dart';
 import 'home_section_tabBar/home_section_tabBar.dart';
@@ -20,10 +21,11 @@ import 'home_section_tabBar/home_section_tabBar_tabs.dart';
 // ignore: must_be_immutable
 class HomeView extends GetView<HomeController> {
   List<int> list = [1, 2, 3, 4, 5];
-  final search = TextEditingController();
+  final searchController = TextEditingController();
   var index = 0.obs;
-  var searchQuery = ''.obs;
+
   final homeViewController = Get.put(HomeController());
+  final categoryController = Get.put(CategoryController());
 
   final List<String> imgList = [
     // 'https://i.ytimg.com/vi/V4K5yuPEDRM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBHQaEbs51ZMV3juYqbYxy7KdcNUw',
@@ -53,16 +55,6 @@ class HomeView extends GetView<HomeController> {
   final controllerAddToCart = Get.put(AddToCartController());
   final controllerFavorite = Get.put(FavouritesController());
   HomeView({Key? key}) : super(key: key);
-  List<String> filteredList(List<String> originalList) {
-    if (searchQuery.isEmpty) {
-      return originalList;
-    } else {
-      return originalList
-          .where(
-              (item) => item.toLowerCase().contains(searchQuery.toLowerCase()))
-          .toList();
-    }
-  }
 
   @override
   Widget build(BuildContext context) => KeyboardDismisser(
@@ -87,14 +79,66 @@ class HomeView extends GetView<HomeController> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          // TextFormField(
+                          //   controller: searchController,
+                          //   decoration: InputDecoration(
+                          //     hintText: "What are you looking for?",
+                          //     prefixIcon: const Icon(Icons.search),
+                          //     suffixIcon: GestureDetector(
+                          //       onTap: () {
+                          //         showModalBottomSheet(
+                          //             shape: const RoundedRectangleBorder(
+                          //               borderRadius: BorderRadius.vertical(
+                          //                 top: Radius.circular(20),
+                          //               ),
+                          //             ),
+                          //             context: context,
+                          //             builder: (BuildContext context) =>
+                          //                 FilterView());
+                          //       },
+                          //       child: const Icon(Icons.filter_list),
+                          //     ),
+                          //   ),
+                          //   onChanged: (value) {
+                          //     homeViewController.searchCategory(value);
+                          //   },
+                          // ),
+                          // SizedBox(
+                          //   height: 100,
+                          //   child: Obx(() {
+                          //     if (homeViewController.searchResults.isEmpty) {
+                          //       return Center(
+                          //         child: Text("No results found"),
+                          //       );
+                          //     }
+
+                          //     return ListView.builder(
+                          //       itemCount:
+                          //           homeViewController.searchResults.length,
+                          //       itemBuilder: (context, index) {
+                          //         var category =
+                          //             homeViewController.searchResults[index];
+                          //         return ListTile(
+                          //           title: Text(category['category_name']),
+                          //           subtitle: Text(
+                          //             (category['sub_category'] as List)
+                          //                 .map(
+                          //                     (sub) => sub['sub_category_name'])
+                          //                 .join(", "),
+                          //           ),
+                          //           leading: Image.network(
+                          //             category['category_image'],
+                          //           ),
+                          //         );
+                          //       },
+                          //     );
+                          //   }),
+                          // ),
+
                           Padding(
                             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                             child: TextFormField(
-                              onChanged: (value) {
-                                searchQuery.value =
-                                    value; // Update search query in controller
-                              },
-                              controller: search,
+                              controller: searchController,
                               decoration: InputDecoration(
                                 hintText: "What are you looking for?",
                                 prefixIcon: const Icon(Icons.search),
@@ -102,11 +146,11 @@ class HomeView extends GetView<HomeController> {
                                     onTap: () {
                                       // Get.to(FilterView());
                                       showModalBottomSheet(
-                                          shape: const RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.vertical(
-                                              top: Radius.circular(20),
-                                            ),
-                                          ),
+                                          // shape: const RoundedRectangleBorder(
+                                          //   borderRadius: BorderRadius.vertical(
+                                          //     top: Radius.circular(20),
+                                          //   ),
+                                          // ),
                                           context: context,
                                           builder: (BuildContext context) =>
                                               FilterView());
@@ -133,12 +177,6 @@ class HomeView extends GetView<HomeController> {
                                 ),
                               ),
                             ),
-                            // TextFormFieldReusable(
-                            //   hint: "What are you looking for?",
-                            //   icon: const Icon(Icons.search),
-                            //   suffixIcon: const Icon(Icons.filter_list),
-                            //   textEditingController: search,
-                            // ),
                           ),
                           const SizedBox(height: 20),
                           CarouselSliderReusable(imgList: imgList),

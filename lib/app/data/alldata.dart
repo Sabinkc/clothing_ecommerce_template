@@ -2,15 +2,17 @@ final List products = [
   {
     "featured": "For You",
     "product_id": "3",
-    "name": "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "name":
+        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
-    "title": "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
-    "sub_category_id":"Hoodie1",
+    "sub_category_id": "Hoodie1",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
@@ -40,37 +42,34 @@ final List products = [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
         ]
-
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
         ]
-
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         // "reviews_img": [
         //   "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
         //   "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
         //   "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
         //   "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
         // ]
-
       }
     ],
     "attributes": {
@@ -93,6 +92,7 @@ final List products = [
     "description":
         "A classic fit formal shirt made from high-quality cotton, perfect for professional or formal occasions.",
     "category": "Shirts",
+    "sub_category_id": "Shirts1",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/71aKidQJwhL._AC_SX679_.jpg",
@@ -104,23 +104,22 @@ final List products = [
       ],
     },
     "size": ["S", "M", "L", "XL", "XXL"],
-
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -148,6 +147,7 @@ final List products = [
     "description":
         "This premium leather Jeans offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Jeans",
+    "sub_category_id": "Jeans1",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/61AUJQmC+3L._AC_SY879_.jpg",
@@ -162,19 +162,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -201,6 +201,7 @@ final List products = [
     "description":
         "This premium leather travel Air Force offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Shoes",
+    "sub_category_id": "Shoes1",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/517w5lVaUjL._AC_SY695_.jpg",
@@ -215,19 +216,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -251,10 +252,11 @@ final List products = [
     "price": 8000,
     "realprice": 9000,
     "discount": 10,
-    "title": "Bag",
+    "title": "Jackets",
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
-    "category": "Bags",
+    "category": "Jackets",
+    "sub_category_id": "Jackets1",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/71OBa9zAL2L._AC_SX679_.jpg",
@@ -269,19 +271,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -308,7 +310,7 @@ final List products = [
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Hoodie",
-    "sub_category_id":"Hoodie2",
+    "sub_category_id": "Hoodie2",
     "color": {
       0xff000000: [
         "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
@@ -318,19 +320,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -356,6 +358,7 @@ final List products = [
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Shirts",
+    "sub_category_id": "Shirts2",
     "color": {
       0xffFF0000: [
         "https://plus.unsplash.com/premium_photo-1708274147720-abd218b3a3bd?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -365,19 +368,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -403,6 +406,7 @@ final List products = [
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Jeans",
+    "sub_category_id": "Shirts3",
     "color": {
       0xffFF0000: [
         "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=3426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -412,19 +416,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -450,6 +454,7 @@ final List products = [
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Jackets",
+    "sub_category_id": "Jackets2",
     "color": {
       0xffFF0000: [
         "https://images.unsplash.com/photo-1649178466381-8fc163d344fd?q=80&w=3168&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -459,19 +464,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -497,6 +502,7 @@ final List products = [
     "description":
         "This premium leather travel Jacket offers durability and ample space, perfect for weekend getaways or business trips.",
     "category": "Shoes",
+    "sub_category_id": "Jackets3",
     "color": {
       0xffFF0000: [
         "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -506,19 +512,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -533,7 +539,7 @@ final List products = [
       "Item id": "BAG001"
     },
   },
-  //NEW DATA 
+  //NEW DATA
   {
     "featured": "Latest Product",
     "product_id": "12",
@@ -545,6 +551,7 @@ final List products = [
     "description":
         "Stay comfortable with breathable fabric that wicks sweat away.",
     "category": "Shirts",
+    "sub_category_id": "Shirts4",
     "color": {
       0xff000000: [
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1caf6ac0-ac69-4eea-b2c3-1c36dabc9d35/U+NK+SB+BOWLER+SSBTNUP+O+AGN.png',
@@ -560,19 +567,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -599,6 +606,7 @@ final List products = [
     "title": "Comfortable Slim Fit Jeans with Stretch",
     "description": "Classic slim-fit jeans, perfect for everyday wear.",
     "category": "Jeans",
+    "sub_category_id": "Jeans2",
     "color": {
       0xff1F1F1F: [
         "https://lsco.scene7.com/is/image/lsco/045116003-dynamic1-pdp?fmt=webp&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=1148&hei=1531",
@@ -613,19 +621,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -653,6 +661,7 @@ final List products = [
     "description":
         "Designed for comfort and speed, these shoes offer great support for running.",
     "category": "Shoes",
+    "sub_category_id": "Shoes2",
     "color": {
       0xff808080: [
         "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/5797dfecc81b4d4fbf9b8d5e16406a89_9366/ultraboost-5x-shoes.jpg",
@@ -667,19 +676,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -706,7 +715,8 @@ final List products = [
     "title": "Warm and Lightweight Puffer Jacket",
     "description":
         "Insulated and lightweight, this jacket is perfect for cold weather.",
-    "category": "Jackets",
+    "category": "Jackets1",
+    "sub_category_id": "",
     "color": {
       0xff2F4F4F: [
         "https://assets.thenorthface.com/images/t_img/c_pad,b_white,f_auto,h_650,w_555,e_sharpen:70/NF0A3C8D4G3-HERO/Mens-1996-Retro-Nuptse-Jacket-in-TNF-Black.png",
@@ -721,19 +731,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -761,7 +771,7 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
-    "sub_category_id":"Hoodie3",
+    "sub_category_id": "Hoodie3",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/51UStNtA3RL._AC_SX679_.jpg",
@@ -780,19 +790,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -821,6 +831,7 @@ final List products = [
     "description":
         "Stay comfortable with breathable fabric that wicks sweat away.",
     "category": "Shirts",
+    "sub_category_id": "Shirts5",
     "color": {
       0xff000000: [
         'https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-crystal-embellished-cotton-t-shirt-ready-to-wear--HSY03WNPG900_PM2_Front%20view.png?wid=1440&hei=1440',
@@ -837,19 +848,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -876,6 +887,7 @@ final List products = [
     "title": "Comfortable Slim Fit Jeans with Stretch",
     "description": "Classic slim-fit jeans, perfect for everyday wear.",
     "category": "Jeans",
+    "sub_category_id": "Jeans3",
     "color": {
       0xff1F1F1F: [
         "https://slimages.macysassets.com/is/image/MCY/products/5/optimized/9831075_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&fmt=webp",
@@ -890,19 +902,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -930,6 +942,7 @@ final List products = [
     "description":
         "Designed for comfort and speed, these shoes offer great support for running.",
     "category": "Shoes",
+    "sub_category_id": "Shoes3",
     "color": {
       0xff808080: [
         "https://www.goldstarshoes.com/MediaThumb/medium/Media/concordair_black_white-1.jpg",
@@ -944,19 +957,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -984,6 +997,7 @@ final List products = [
     "description":
         "Insulated and lightweight, this jacket is perfect for cold weather.",
     "category": "Jackets",
+    "sub_category_id": "Jackets4",
     "color": {
       0xff2F4F4F: [
         "https://m.media-amazon.com/images/I/71gnMeN6XSL._SY879_.jpg",
@@ -998,19 +1012,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
@@ -1030,7 +1044,8 @@ final List products = [
   {
     "featured": "Latest Product",
     "product_id": "16",
-    "name": "Popfunk Looney Tunes Catch Phrases Collection Official Premium Ultrasoft Tri-Blend Hoodie",
+    "name":
+        "Popfunk Looney Tunes Catch Phrases Collection Official Premium Ultrasoft Tri-Blend Hoodie",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1038,7 +1053,7 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Hoodie",
-    "sub_category_id":"Hoodie4",
+    "sub_category_id": "Hoodie4",
     "color": {
       0xffFF0000: [
         "https://m.media-amazon.com/images/I/61hBWi8erpL._AC_SX679_.jpg",
@@ -1057,19 +1072,19 @@ final List products = [
     "reviews": [
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
       },
       {
         "profile_pic":
-        "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
         "name": "John Doe",
         "date": "12/1/2023",
         "review":
-        "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
         "reviews_img": [
           "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
           "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
