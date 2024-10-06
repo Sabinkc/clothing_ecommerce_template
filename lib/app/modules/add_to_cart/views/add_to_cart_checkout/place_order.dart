@@ -1,0 +1,71 @@
+import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
+
+import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
+
+import '../../../bottom_navigation/buttom_navigation.dart';
+
+class PlaceOrder extends StatelessWidget {
+  const PlaceOrder({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.lightSilver,
+      appBar: AppBar(
+        title: Image.asset(
+          'assets/images/successful.gif', // Replace with your asset or use Image.network for a URL
+          fit: BoxFit.contain,
+          height: 100, // Adjust the height according to your needs
+        ),
+        backgroundColor: AppColors.lightSilver,
+        centerTitle: false,
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              Stack(
+                children: [
+                  SizedBox(
+                    height: Adaptive.h(45),
+                    child: Image.network(
+                        'https://d-s-two.vercel.app/images/cart/order-confirm.gif'),
+                  ),
+                  // Positioned(
+                  //   top: 0,
+                  //   right: 0,
+                  //   child: Image.asset(
+                  //     'assets/images/successful.gif', // Replace with your asset or use Image.network for a URL
+                  //     fit: BoxFit.contain,
+                  //     height: 100, // Adjust the height according to your needs
+                  //   ),
+                  // ),
+                ],
+              ),
+              const SizedBox(height: 20),
+              Text(
+                "Product Order Successfully!",
+                style: TextStyle(fontSize: TextSize.normal),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Get.to(const BottomNavBar());
+                },
+                child: const LargeButtonReusable(
+                  title: "Continue Shopping",
+                  color: Colors.black,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

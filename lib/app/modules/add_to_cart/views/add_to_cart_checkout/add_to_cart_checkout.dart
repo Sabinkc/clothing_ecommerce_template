@@ -1,6 +1,7 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt/add_to_cart_receipt.dart';
+import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/place_order.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -151,47 +152,49 @@ class AddToCartCheckout extends StatelessWidget {
                 ),
                 AddToCartReceipt(),
                 const SizedBox(height: 20),
-                Container(
-                  decoration: const BoxDecoration(
-                    // borderRadius: BorderRadius.circular(16),
-                    color: Colors.white,
-                  ),
-                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-                  child: Row(
-                    children: [
-                      Image.asset(
-                        "assets/images/cashondelivery.png",
-                        height: 25,
-                      ),
-                      const SizedBox(width: 10),
-                      const Text("Cash On Delivery"),
-                      const Spacer(),
-                      GestureDetector(
-                        onTap: () {
-                          showModalBottomSheet(
-                              context: context,
-                              builder: (BuildContext context) =>
-                                  const AddToCartPaymentSelection());
-                        },
-                        child: const Icon(
-                          Icons.arrow_forward_ios,
+                GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (BuildContext context) =>
+                            const AddToCartPaymentSelection());
+                  },
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      // borderRadius: BorderRadius.circular(16),
+                      color: Colors.white,
+                    ),
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          "assets/images/cashondelivery.png",
+                          height: 25,
                         ),
-                      )
-                    ],
+                        const SizedBox(width: 10),
+                        const Text("Cash On Delivery"),
+                        const Spacer(),
+                        const Icon(
+                          Icons.arrow_forward_ios,
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(height: 40),
                 GestureDetector(
-                    onTap: () {
-                      // controller.totalPrice.value = 0;
-                    },
-                    child: const Padding(
-                      padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                      child: LargeButtonReusable(
-                        title: "Place Order",
-                        color: Colors.black,
-                      ),
-                    )),
+                  onTap: () {
+                    Get.to(const PlaceOrder());
+                    // controller.totalPrice.value = 0;
+                  },
+                  child: const Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: LargeButtonReusable(
+                      title: "Place Order",
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -231,71 +234,71 @@ class CheckoutUserInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-          // borderRadius: BorderRadius.circular(16),
-          color: Colors.white),
-      padding: const EdgeInsets.all(16),
+    return GestureDetector(
+      onTap: () {
+        showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) => const AddToCartAddress());
+      },
+      child: Container(
+        decoration: const BoxDecoration(
+            // borderRadius: BorderRadius.circular(16),
+            color: Colors.white),
+        padding: const EdgeInsets.all(16),
 
-      // width: double.infinity,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Padding(
-            padding: EdgeInsets.only(top: 8.0),
-            child: Icon(
-              Icons.location_off_outlined,
-              color: Colors.green,
+        // width: double.infinity,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(top: 8.0),
+              child: Icon(
+                Icons.location_off_outlined,
+                color: Colors.green,
+              ),
             ),
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            // width: Adaptive.w(50),
-            // // color: Colors.red,
-            // height: 100,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "Brenna Cotton",
-                      style: TextStyle(
-                          fontSize: TextSize.normal,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(width: 10),
-                    Text(
-                      "+977-1234567890",
-                      style: TextStyle(
-                          fontSize: TextSize.small, color: Colors.grey),
-                    ),
-                  ],
-                ),
-                Text(
-                  "123 Main Street, London, 123 Main Street, London, 123 Main Street, London",
-                  // overflow: TextOverflow.ellipsis,
-                  // maxLines: 2,
-                  style: TextStyle(fontSize: TextSize.small),
-                )
-              ],
+            const SizedBox(width: 10),
+            Expanded(
+              // width: Adaptive.w(50),
+              // // color: Colors.red,
+              // height: 100,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Brenna Cotton",
+                        style: TextStyle(
+                            fontSize: TextSize.normal,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(width: 10),
+                      Text(
+                        "+977-1234567890",
+                        style: TextStyle(
+                            fontSize: TextSize.small, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                  Text(
+                    "123 Main Street, London, 123 Main Street, London, 123 Main Street, London",
+                    // overflow: TextOverflow.ellipsis,
+                    // maxLines: 2,
+                    style: TextStyle(fontSize: TextSize.small),
+                  )
+                ],
+              ),
             ),
-          ),
-          // const Spacer(),
-          GestureDetector(
-            onTap: () {
-              showModalBottomSheet(
-                  context: context,
-                  builder: (BuildContext context) => const AddToCartAddress());
-            },
-            child: const Icon(
+            // const Spacer(),
+            const Icon(
               Icons.arrow_forward_ios,
               size: 20,
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

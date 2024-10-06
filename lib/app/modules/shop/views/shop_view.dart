@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
+import 'package:d_and_s/app/modules/search_view/views/search_view_view.dart';
 import 'package:d_and_s/app/modules/shop/views/shop_view_sub_category.dart';
 import 'package:flutter/material.dart';
 
@@ -55,9 +56,16 @@ class ShopView extends GetView<ShopController> {
           child: Column(
             children: [
               // ShopViewSubCategory(),
-              TextFormFieldReusable(
-                hint: "Search",
-                textEditingController: searchController,
+              GestureDetector(
+                onTap: () {
+                  Get.to(SearchViewView());
+                },
+                child: AbsorbPointer(
+                  child: TextFormFieldReusable(
+                    hint: "Search",
+                    textEditingController: searchController,
+                  ),
+                ),
               ),
 
               const SizedBox(height: 20),
