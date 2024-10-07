@@ -17,7 +17,7 @@ class LoginBlueContainer extends StatelessWidget {
         height: Adaptive.h(50),
         child: Column(
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 35),
             Center(
               child: Text(
                 "Sign in to your\n     Account",

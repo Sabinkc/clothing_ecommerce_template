@@ -44,7 +44,10 @@ class SearchGridView extends StatelessWidget {
             List test = images.entries.first.value;
             controllerProduct.selectedImages.assignAll(test);
             Get.to(
-              ProductDetailView(data: selectedSearchResult),
+              ProductDetailView(
+                  data: selectedSearchResult['name'] == "NO MATCH FOUND !!"
+                      ? []
+                      : selectedSearchResult),
 
               transition:
                   Transition.leftToRightWithFade, // Professional fade-in effect
