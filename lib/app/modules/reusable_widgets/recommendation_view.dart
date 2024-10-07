@@ -171,7 +171,7 @@ class RecommendationView extends StatelessWidget {
                               child: Padding(
                                 padding: const EdgeInsets.all(5.0),
                                 child: Icon(
-                                  Icons.remove_red_eye_outlined,
+                                  Icons.shopping_cart_outlined,
                                   size: 20,
                                   color: Colors.black.withOpacity(0.7),
                                 ),

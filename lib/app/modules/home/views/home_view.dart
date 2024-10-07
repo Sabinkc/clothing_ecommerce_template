@@ -61,6 +61,7 @@ class HomeView extends GetView<HomeController> {
         ),
         body: Container(
           color: AppColors.lightSilver,
+          // color: Colors.white,
           child: NestedScrollView(
             headerSliverBuilder:
                 (BuildContext context, bool innerBoxIsScrolled) {
@@ -126,7 +127,7 @@ class HomeView extends GetView<HomeController> {
                                 style: TextStyle(
                                   fontFamily: 'Bai Jamjuree',
                                   fontSize: 16,
-                                  fontWeight: FontWeight.w500,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ],

@@ -20,6 +20,8 @@ class SearchViewController extends GetxController {
   }
 
   final count = 0.obs;
+  @override
+
   // @override
   // void onInit() {
   //   super.onInit();

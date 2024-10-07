@@ -1,4 +1,3 @@
-
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -15,11 +14,11 @@ import '../../product_detail/views/product_detail_view.dart';
 import '../controllers/category_controller.dart';
 
 class CategoryDetailGridView extends StatelessWidget {
-    final controller = Get.put(HomeController());
+  final controller = Get.put(HomeController());
   final controllerProduct = Get.put(ProductDetailController());
   final controllerFavorites = Get.put(FavouritesController());
   final controllerCategory = Get.put(CategoryController());
-   CategoryDetailGridView({super.key});
+  CategoryDetailGridView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +26,9 @@ class CategoryDetailGridView extends StatelessWidget {
       () {
         // Get the selected tab's products list
         List selectedProducts = products
-            .where((element) => element["sub_category_id"] == controllerCategory.subCategory.value)
+            .where((element) =>
+                element["sub_category_id"] ==
+                controllerCategory.subCategory.value)
             .toList();
 
         return GridView.builder(
@@ -38,7 +39,7 @@ class CategoryDetailGridView extends StatelessWidget {
             crossAxisCount: 2,
             crossAxisSpacing: 8.0,
             mainAxisSpacing: 10.0,
-            childAspectRatio: 0.7,
+            childAspectRatio: 0.65,
           ),
           itemBuilder: (BuildContext context, index) {
             Map product = selectedProducts[index];
@@ -91,7 +92,7 @@ class CategoryDetailGridView extends StatelessWidget {
                   // borderRadius: BorderRadius.circular(16),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(0.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -105,7 +106,7 @@ class CategoryDetailGridView extends StatelessWidget {
                                 fit: BoxFit.cover,
                               ),
                             ),
-                            height: Adaptive.h(20),
+                            height: Adaptive.h(25),
                           ),
                           Positioned(
                             right: 0,
@@ -138,53 +139,59 @@ class CategoryDetailGridView extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 10),
-                      Text(
-                        product["name"] ?? "",
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            fontSize: TextSize.small,
-                            fontWeight: FontWeight.w700),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5),
+                        child: Text(
+                          product["name"] ?? "",
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                              fontSize: TextSize.small,
+                              fontWeight: FontWeight.w700),
+                        ),
                       ),
                       const SizedBox(height: 5),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Rs. ${product["price"] ?? ""}",
-                            style: TextStyle(
-                              fontSize: TextSize.small,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              showModalBottomSheet<void>(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return HomeSectionTabBarTabsBottomSheet(
-                                    homeSectionTabsData: product,
-                                    homeSectionTabsImg: imageUrl,
-                                  );
-                                },
-                              );
-                            },
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                color: AppColors.lightSilver,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Rs. ${product["price"] ?? ""}",
+                              style: TextStyle(
+                                fontSize: TextSize.small,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.red,
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(5.0),
-                                child: Icon(
-                                  Icons.remove_red_eye_outlined,
-                                  size: 20,
-                                  color: Colors.black.withOpacity(0.7),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                showModalBottomSheet<void>(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return HomeSectionTabBarTabsBottomSheet(
+                                      homeSectionTabsData: product,
+                                      homeSectionTabsImg: imageUrl,
+                                    );
+                                  },
+                                );
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: AppColors.lightSilver,
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(5.0),
+                                  child: Icon(
+                                    Icons.shopping_cart_outlined,
+                                    size: 20,
+                                    color: Colors.black.withOpacity(0.7),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),

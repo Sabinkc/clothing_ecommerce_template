@@ -1,8 +1,10 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_navBar.dart';
+import 'package:d_and_s/app/modules/login/views/login_view.dart';
 
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/recommendation_view.dart';
 
 import 'package:flutter/material.dart';
@@ -48,17 +50,31 @@ class AddedCart extends StatelessWidget {
                 controller.cartProducts.isEmpty
                     ? Padding(
                         padding: const EdgeInsets.all(20.0),
-                        child: Container(
-                          height: 400,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: const DecorationImage(
-                              image: AssetImage(
-                                  "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
-                              fit: BoxFit
-                                  .cover, // Optional: Adjust image fit if necessary
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 400,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                image: const DecorationImage(
+                                  image: AssetImage(
+                                      "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
+                                  fit: BoxFit
+                                      .cover, // Optional: Adjust image fit if necessary
+                                ),
+                              ),
                             ),
-                          ),
+                            SizedBox(height: 20),
+                            GestureDetector(
+                              onTap: () {
+                                Get.to(LoginView());
+                              },
+                              child: LargeButtonReusable(
+                                title: "Sign in/ Register",
+                                color: Colors.black,
+                              ),
+                            )
+                          ],
                         ),
                       )
                     : Column(

@@ -73,8 +73,8 @@ class CarouselSliderReusable extends StatelessWidget {
                 color: Colors.black,
                 gradient: LinearGradient(
                   colors: [
-                    Colors.black.withOpacity(0.1),
-                    Colors.black.withOpacity(0.1),
+                    Colors.black.withOpacity(0.3),
+                    Colors.black.withOpacity(0.3),
                   ],
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,

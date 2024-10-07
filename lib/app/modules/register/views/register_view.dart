@@ -1,3 +1,5 @@
+import 'package:d_and_s/app/modules/login/controllers/login_controller.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/CheckBoxReusable.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -17,6 +19,7 @@ class RegisterView extends GetView<RegisterController> {
   final contactDetails = TextEditingController();
   final password = TextEditingController();
   final confirmPassword = TextEditingController();
+  final controllerLogin = Get.put(LoginController());
   RegisterView({Key? key}) : super(key: key);
 
   @override
@@ -26,14 +29,14 @@ class RegisterView extends GetView<RegisterController> {
           GestureType.onPanUpdateDownDirection,
         ],
         child: Scaffold(
-          backgroundColor: AppColors.lightSilver,
+          backgroundColor: Colors.white,
           body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 70),
                   Center(
                     child: Text(
                       "Register Account",
@@ -51,6 +54,7 @@ class RegisterView extends GetView<RegisterController> {
                       style: TextStyle(color: AppColors.lightBlue),
                     ),
                   ),
+                  SizedBox(height: 20),
                   // Container(
                   //   height: double.infinity,
                   //   width: double.infinity,
@@ -62,7 +66,7 @@ class RegisterView extends GetView<RegisterController> {
                   const Text(
                     "Full Name",
                     style: TextStyle(
-                        color: AppColors.lightBlue,
+                        // color: AppColors.lightBlue,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
@@ -75,7 +79,7 @@ class RegisterView extends GetView<RegisterController> {
                   const Text(
                     "Email",
                     style: TextStyle(
-                        color: AppColors.lightBlue,
+                        // color: AppColors.lightBlue,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
@@ -88,7 +92,7 @@ class RegisterView extends GetView<RegisterController> {
                   const Text(
                     "Contact Details",
                     style: TextStyle(
-                        color: AppColors.lightBlue,
+                        // color: AppColors.lightBlue,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
@@ -101,7 +105,7 @@ class RegisterView extends GetView<RegisterController> {
                   const Text(
                     "Password",
                     style: TextStyle(
-                        color: AppColors.lightBlue,
+                        // color: AppColors.lightBlue,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
@@ -113,9 +117,12 @@ class RegisterView extends GetView<RegisterController> {
                   ),
                   const SizedBox(height: 10),
                   const Text(
+                      "Min. 8 char, 1 upper & lowercase, a number & a special characte."),
+                  SizedBox(height: 10),
+                  const Text(
                     "Confirm Password",
                     style: TextStyle(
-                        color: AppColors.lightBlue,
+                        // color: AppColors.lightBlue,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
@@ -125,11 +132,30 @@ class RegisterView extends GetView<RegisterController> {
                     icon: const Icon(Icons.password),
                     textEditingController: confirmPassword,
                   ),
+                  const SizedBox(height: 10),
+
+                  Row(
+                    children: [
+                      Obx(
+                        () => CheckboxReusable(
+                          checkboxFunc: () {
+                            controllerLogin.toogleIsSelected();
+                          },
+                          valueCheckBox: controllerLogin.isSelected.value,
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                            "By confirming you are agreeing our Privacy Policy & Terms of Condition"),
+                      )
+                    ],
+                  ),
 
                   const SizedBox(height: 30),
                   const LargeButtonReusable(
                     title: "Register",
-                    color: AppColors.lightBlue,
+                    // color: AppColors.lightBlue,
                   ),
                   const SizedBox(height: 20),
                   Row(

@@ -23,6 +23,7 @@ dependencies:
   flutter_rating:
   flutter_pannable_rating_bar:
   dotted_border:
+  flutter_otp_text_field:
 
 flutter_native_splash:
   background_image: assets/images/splash_screen.png # Path to your splash screen image

@@ -18,11 +18,11 @@ class AppBarMainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: AppColors.lightSilver,
+
       title: Padding(
         padding: const EdgeInsets.only(left: 10),
         child: Text(
           title,
-
         ),
       ),
       centerTitle: false,

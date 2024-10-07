@@ -29,7 +29,7 @@ class LoginView extends GetView<LoginController> {
                   Container(
                     height: double.infinity,
                     width: double.infinity,
-                    color: AppColors.lightSilver,
+                    color: Colors.grey[300],
                   ),
 
                   const LoginBlueContainer(), //THIS IS THE PART WHERE THE SIGN IN TO YOUR ACCOUNT TEXT SECTION

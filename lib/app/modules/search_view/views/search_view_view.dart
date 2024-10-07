@@ -10,13 +10,19 @@ import '../../reusable_widgets/filter_view/filter_view.dart';
 import '../controllers/search_view_controller.dart';
 
 class SearchViewView extends GetView<SearchViewController> {
-  final searchController = TextEditingController();
+  final TextEditingController searchController = TextEditingController();
+  final FocusNode searchFocusNode = FocusNode();
+  final SearchViewController controllerSearch = Get.put(SearchViewController());
 
-  final controllerSearch = Get.put(SearchViewController());
   SearchViewView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // Request focus after the widget is built
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      FocusScope.of(context).requestFocus(searchFocusNode);
+    });
+
     return KeyboardDismisser(
       child: Scaffold(
         backgroundColor: AppColors.lightSilver,
@@ -31,6 +37,7 @@ class SearchViewView extends GetView<SearchViewController> {
             ),
             child: TextField(
               controller: searchController,
+              focusNode: searchFocusNode, // Set focus node for the TextField
               decoration: InputDecoration(
                 hintText: "Search products...",
                 prefixIcon: Icon(Icons.search, color: Colors.grey[600]),
