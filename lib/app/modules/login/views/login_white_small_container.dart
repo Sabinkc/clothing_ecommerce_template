@@ -27,7 +27,7 @@ class LoginWhiteSmallContainer extends StatelessWidget {
       right: 25,
       child: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20), color: Colors.white),
+            borderRadius: BorderRadius.circular(8), color: Colors.white),
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
