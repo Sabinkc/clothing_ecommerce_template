@@ -14,7 +14,7 @@ class OTPView extends StatelessWidget {
   Widget build(BuildContext context) => KeyboardDismisser(
         child: Scaffold(
           appBar: AppBar(),
-          body: Container(
+          body: SizedBox(
             width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -24,24 +24,24 @@ class OTPView extends StatelessWidget {
                   "Verify Account",
                   style: TextStyle(fontSize: TextSize.big),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Text(
                   "Enter Verification Code",
                   style: TextStyle(
                       fontSize: TextSize.normal, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text(
                   "We've sent a cond to John@example.com",
                   style: TextStyle(fontSize: TextSize.normal),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 OtpTextField(
                   numberOfFields: 4,
                   fieldWidth: 50,
 
-                  margin: EdgeInsets.only(right: 20),
-                  borderColor: Color(0xFF512DA8),
+                  margin: const EdgeInsets.only(right: 20),
+                  borderColor: const Color(0xFF512DA8),
                   //set to true to show as box or false to show as dash
                   showFieldAsBox: true,
                   //runs when a code is typed in
@@ -54,13 +54,13 @@ class OTPView extends StatelessWidget {
                         context: context,
                         builder: (context) {
                           return AlertDialog(
-                            title: Text("Verification Code"),
+                            title: const Text("Verification Code"),
                             content: Text('Code entered is $verificationCode'),
                           );
                         });
                   }, // end onSubmit
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -75,7 +75,7 @@ class OTPView extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -88,16 +88,16 @@ class OTPView extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text("CANCEL"),
                       ),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     GestureDetector(
                       onTap: () {
                         Get.to(ChangePassword());
                       },
-                      child: LargeButtonReusable(
+                      child: const LargeButtonReusable(
                         color: Colors.black,
                         title: "VERIFY",
                         width: 150,

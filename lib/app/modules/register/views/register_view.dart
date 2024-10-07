@@ -54,7 +54,7 @@ class RegisterView extends GetView<RegisterController> {
                       style: TextStyle(color: AppColors.lightBlue),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   // Container(
                   //   height: double.infinity,
                   //   width: double.infinity,
@@ -118,7 +118,7 @@ class RegisterView extends GetView<RegisterController> {
                   const SizedBox(height: 10),
                   const Text(
                       "Min. 8 char, 1 upper & lowercase, a number & a special characte."),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   const Text(
                     "Confirm Password",
                     style: TextStyle(
@@ -144,8 +144,8 @@ class RegisterView extends GetView<RegisterController> {
                           valueCheckBox: controllerLogin.isSelected.value,
                         ),
                       ),
-                      SizedBox(width: 10),
-                      Expanded(
+                      const SizedBox(width: 10),
+                      const Expanded(
                         child: Text(
                             "By confirming you are agreeing our Privacy Policy & Terms of Condition"),
                       )

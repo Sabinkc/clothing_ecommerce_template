@@ -62,31 +62,35 @@ class SearchViewView extends GetView<SearchViewController> {
         ),
         body: Obx(
           () => Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: controllerSearch.searchResult.isEmpty
-                  ? Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Recommended for you',
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(height: 20),
-                        Wrap(
-                          spacing: 10.0,
-                          runSpacing: 10.0,
-                          children: [
-                            _buildRecommendedItem('Shoes'),
-                            _buildRecommendedItem('Jeans'),
-                            _buildRecommendedItem('Shirts'),
-                            _buildRecommendedItem('Hoodies'),
-                            _buildRecommendedItem('Jackets'),
-                          ],
-                        ),
-                      ],
-                    )
-                  : SearchGridView()),
+            padding: const EdgeInsets.all(16.0),
+            child: controllerSearch.searchResult.isEmpty
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Recommended for you',
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(height: 20),
+                      Wrap(
+                        spacing: 10.0,
+                        runSpacing: 10.0,
+                        children: [
+                          _buildRecommendedItem('Shoes'),
+                          _buildRecommendedItem('Jeans'),
+                          _buildRecommendedItem('Shirts'),
+                          _buildRecommendedItem('Hoodies'),
+                          _buildRecommendedItem('Jackets'),
+                        ],
+                      ),
+                    ],
+                  )
+                : Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: SearchGridView(),
+                  ),
+          ),
         ),
       ),
     );

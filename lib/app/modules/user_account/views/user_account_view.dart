@@ -18,7 +18,7 @@ class UserAccountView extends GetView<UserAccountController> {
         child: Scaffold(
           backgroundColor: AppColors.lightSilver,
           body: Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
             // color: Colors.white,
 
             child: SingleChildScrollView(

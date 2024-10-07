@@ -64,12 +64,12 @@ class AddedCart extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(height: 20),
+                            const SizedBox(height: 20),
                             GestureDetector(
                               onTap: () {
-                                Get.to(LoginView());
+                                Get.to(const LoginView());
                               },
-                              child: LargeButtonReusable(
+                              child: const LargeButtonReusable(
                                 title: "Sign in/ Register",
                                 color: Colors.black,
                               ),

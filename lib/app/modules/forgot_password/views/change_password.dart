@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../../constants/text_size.dart';
@@ -52,7 +52,7 @@ class ChangePassword extends StatelessWidget {
               const SizedBox(height: 10),
               const Text(
                   "Min. 8 char, 1 upper & lowercase, a number & a special characte."),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               const Text(
                 "Confirm Password",
                 style: TextStyle(

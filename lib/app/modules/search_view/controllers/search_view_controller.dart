@@ -7,20 +7,26 @@ class SearchViewController extends GetxController {
   void searchQuery(String query) {
     if (query.isEmpty) {
       searchResult.value = [];
-    } else {
+    } else
+    {
       searchResult.value = [];
-      print(searchResult);
+      // print(searchResult);
       // Filter data based on search query
       List filteredData = products
           .where((elements) =>
               elements['name'].toLowerCase().contains(query.toLowerCase()))
           .toList();
-      searchResult.value = filteredData;
+      // searchResult.value =  filteredData;
+      searchResult.value = filteredData.isEmpty
+          ? [
+              {"name": "NO MATCH FOUND !!"}
+            ]  // Static text when no matches found
+          : filteredData;
     }
   }
 
   final count = 0.obs;
-  @override
+
 
   // @override
   // void onInit() {
@@ -37,5 +43,5 @@ class SearchViewController extends GetxController {
   //   super.onClose();
   // }
 
-  void increment() => count.value++;
+  // void increment() => count.value++;
 }

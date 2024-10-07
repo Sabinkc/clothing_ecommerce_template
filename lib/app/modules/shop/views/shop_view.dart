@@ -51,7 +51,7 @@ class ShopView extends GetView<ShopController> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
         child: SingleChildScrollView(
           child: Column(
             children: [

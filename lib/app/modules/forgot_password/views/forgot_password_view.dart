@@ -1,12 +1,12 @@
 import 'package:d_and_s/app/constants/text_size.dart';
-import 'package:d_and_s/app/modules/forgot_password/views/OTP_view.dart';
+import 'package:d_and_s/app/modules/forgot_password/views/otp_view.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../constants/colors.dart';
+
 import '../controllers/forgot_password_controller.dart';
 
 class ForgotPasswordView extends GetView<ForgotPasswordController> {
@@ -56,7 +56,7 @@ class ForgotPasswordView extends GetView<ForgotPasswordController> {
               const SizedBox(height: 40),
               GestureDetector(
                 onTap: () {
-                  Get.to(OTPView());
+                  Get.to(const OTPView());
                 },
                 child: const LargeButtonReusable(
                   title: "Submit",
