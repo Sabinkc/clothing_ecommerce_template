@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/modules/search_view/controllers/search_view_controller.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../constants/text_size.dart';
@@ -56,48 +57,56 @@ class SearchGridView extends StatelessWidget {
               curve: Curves.easeInOut, // Adds smoothness with easing in and out
             );
           },
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(16),
-              // boxShadow: [
-              //   BoxShadow(
-              //     color: Colors.black,
-              //     spreadRadius: 0,
-              //     blurRadius: 1,
-              //     offset: Offset(0, 0),
-              //   ),
-              // ],
-            ),
-            padding: EdgeInsets.all(10),
-            margin: EdgeInsets.only(bottom: 10),
-            child: Row(
-              children: [
-                Icon(
-                  Icons.search,
-                  color: selectedSearchResult['name'] == "NO MATCH FOUND !!"
-                      ? Colors.red
-                      : Colors.black,
+          child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  // color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  // border: BorderDirectional(
+                  //   bottom: BorderSide(color: Colors.grey),
+                  // ),
+                  // boxShadow: [
+                  //   BoxShadow(
+                  //     color: Colors.black,
+                  //     spreadRadius: 0,
+                  //     blurRadius: 1,
+                  //     offset: Offset(0, 0),
+                  //   ),
+                  // ],
                 ),
-                SizedBox(width: 10),
-                Expanded(
-                  child: Text(
-                    selectedSearchResult['name'],
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontSize: TextSize.small,
-                        fontWeight:
-                            selectedSearchResult['name'] == "NO MATCH FOUND !!"
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(bottom: 10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.search,
+                      color: selectedSearchResult['name'] == "NO MATCH FOUND !!"
+                          ? Colors.red
+                          : Colors.black,
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        selectedSearchResult['name'],
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            fontSize: TextSize.small,
+                            fontWeight: selectedSearchResult['name'] ==
+                                    "NO MATCH FOUND !!"
                                 ? FontWeight.w900
                                 : FontWeight.w100,
-                        color:
-                            selectedSearchResult['name'] == "NO MATCH FOUND !!"
+                            color: selectedSearchResult['name'] ==
+                                    "NO MATCH FOUND !!"
                                 ? Colors.red
                                 : Colors.black),
-                  ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+              // Divider(),
+            ],
           ),
         );
       },

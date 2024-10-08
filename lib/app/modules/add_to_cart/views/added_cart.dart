@@ -4,6 +4,7 @@ import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_navBar.dart';
 import 'package:d_and_s/app/modules/login/views/login_view.dart';
 
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
+import 'package:d_and_s/app/modules/register/views/register_view.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/recommendation_view.dart';
 
@@ -65,14 +66,31 @@ class AddedCart extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 20),
-                            GestureDetector(
-                              onTap: () {
-                                Get.to(const LoginView());
-                              },
-                              child: const LargeButtonReusable(
-                                title: "Sign in/ Register",
-                                color: Colors.black,
-                              ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                GestureDetector(
+                                  onTap: () {
+                                    Get.to(RegisterView());
+                                  },
+                                  child: const LargeButtonReusable(
+                                    width: 150,
+                                    title: "Sign in",
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                const SizedBox(width: 20),
+                                GestureDetector(
+                                  onTap: () {
+                                    Get.to(const LoginView());
+                                  },
+                                  child: const LargeButtonReusable(
+                                    width: 150,
+                                    title: "Log In",
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ],
                             )
                           ],
                         ),
@@ -227,7 +245,7 @@ class AddedCart extends StatelessWidget {
                           },
                         ).toList(),
                       ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
                 Text(
                   "Recommended Items",
                   style: TextStyle(

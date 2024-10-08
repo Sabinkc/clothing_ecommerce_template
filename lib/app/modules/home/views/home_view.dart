@@ -1,6 +1,8 @@
 import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
 
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
+import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/views/home_category_view.dart';
 
@@ -113,21 +115,32 @@ class HomeView extends GetView<HomeController> {
                         const SizedBox(height: 20),
                         CarouselSliderReusable(imgList: imgList),
                         const SizedBox(height: 20),
-                        const Padding(
-                          padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                           child: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.category_outlined,
                                 color: Colors.red,
                               ),
-                              SizedBox(width: 10),
-                              Text(
+                              const SizedBox(width: 10),
+                              const Text(
                                 "Categories",
                                 style: TextStyle(
-                                  fontFamily: 'Bai Jamjuree',
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const Spacer(),
+                              GestureDetector(
+                                onTap: () {
+                                  Get.to(CategoryView());
+                                },
+                                child: Text(
+                                  "View All",
+                                  style: TextStyle(
+                                    fontSize: TextSize.small,
+                                  ),
                                 ),
                               ),
                             ],
