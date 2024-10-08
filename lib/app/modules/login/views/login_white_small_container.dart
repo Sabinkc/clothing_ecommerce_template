@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/modules/bottom_navigation/buttom_navigation.dart';
+import 'package:d_and_s/app/modules/bottom_navigation/views/bottom_navigation_view.dart';
 import 'package:d_and_s/app/modules/forgot_password/views/forgot_password_view.dart';
 
 import 'package:d_and_s/app/modules/login/controllers/login_controller.dart';
@@ -100,7 +101,8 @@ class LoginWhiteSmallContainer extends StatelessWidget {
               const SizedBox(height: 20),
               GestureDetector(
                   onTap: () => Get.to(
-                        const BottomNavBar(),
+                        // const BottomNavBar(),
+                        BottomNavigationView(),
                         transition: Transition
                             .leftToRightWithFade, // Professional fade-in effect
                         duration: const Duration(
