@@ -158,6 +158,13 @@ class ProductDetailNavBar extends StatelessWidget {
               controllerProductDetail.clear();
               // controller.selectedProducts.add(cartId);
               controller.toggleSelected(cartId);
+              Get.snackbar(
+                'Added To Cart',
+                'Go to Cart to View Products',
+                snackPosition: SnackPosition.BOTTOM,
+                backgroundColor: Colors.green,
+                colorText: Colors.white,
+              );
               Get.to(
                 AddedCart(),
                 transition: Transition

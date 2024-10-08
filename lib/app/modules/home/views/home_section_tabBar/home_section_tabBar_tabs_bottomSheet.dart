@@ -157,7 +157,16 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                 // controller.selectedProducts.add(cartId);
                 controller.toggleSelected(cartId);
                 controllerProductDetail.clear();
+                Get.snackbar(
+                  'Added To Cart',
+                  'Go to Cart to View Products',
+                  snackPosition: SnackPosition.BOTTOM,
+                  backgroundColor: Colors.green,
+                  colorText: Colors.white,
+                );
+
                 Get.to(AddedCart(
+
                     // addedCartData: addToCartData,
 
                     // sizeList: sizeList,
