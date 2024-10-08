@@ -55,7 +55,7 @@ class PlaceOrder extends StatelessWidget {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  Get.to(const BottomNavBar());
+                  Get.to( const BottomNavBar());
                 },
                 child: const LargeButtonReusable(
                   title: "Continue Shopping",

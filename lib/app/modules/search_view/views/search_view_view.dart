@@ -1,10 +1,14 @@
 import 'package:d_and_s/app/modules/search_view/views/search_grid_view.dart';
+import 'package:d_and_s/app/modules/search_view/views/search_list_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
+
 import '../../../constants/colors.dart';
+import '../../favourites/controllers/favourites_controller.dart';
+import '../../product_detail/controllers/product_detail_controller.dart';
 
 import '../../reusable_widgets/filter_view/filter_view.dart';
 import '../controllers/search_view_controller.dart';
@@ -13,6 +17,9 @@ class SearchViewView extends GetView<SearchViewController> {
   final TextEditingController searchController = TextEditingController();
   final FocusNode searchFocusNode = FocusNode();
   final SearchViewController controllerSearch = Get.put(SearchViewController());
+  final controllerFavorites = Get.put(FavouritesController());
+
+  final controllerProduct = Get.put(ProductDetailController());
 
   SearchViewView({Key? key}) : super(key: key);
 
@@ -52,7 +59,12 @@ class SearchViewView extends GetView<SearchViewController> {
                 ),
                 border: InputBorder.none,
               ),
+              onSubmitted: (value) {
+                controllerSearch.onSubmitOrChange.value = 0;
+                controllerSearch.searchQuery(value);
+              },
               onChanged: (value) {
+                controllerSearch.onSubmitOrChange.value = 1;
                 controllerSearch.searchQuery(
                     value); // Call searchQuery on every text change
               },
@@ -61,39 +73,71 @@ class SearchViewView extends GetView<SearchViewController> {
           centerTitle: true,
         ),
         body: Obx(
-          () => Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: controllerSearch.searchResult.isEmpty
-                ? Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        'Recommended for you',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
-                      const SizedBox(height: 20),
-                      Wrap(
-                        spacing: 10.0,
-                        runSpacing: 10.0,
-                        children: [
-                          _buildRecommendedItem('Shoes'),
-                          _buildRecommendedItem('Jeans'),
-                          _buildRecommendedItem('Shirts'),
-                          _buildRecommendedItem('Hoodies'),
-                          _buildRecommendedItem('Jackets'),
-                        ],
-                      ),
-                    ],
-                  )
-                : Padding(
-                    padding: const EdgeInsets.only(left: 10),
-                    child: SearchGridView(),
-                  ),
-          ),
+          () => Padding(padding: const EdgeInsets.all(16.0), child: changeView()
+              // controllerSearch.searchResult.isEmpty
+              //     ? Column(
+              //         crossAxisAlignment: CrossAxisAlignment.start,
+              //         children: [
+              //           const Text(
+              //             'Recommended for you',
+              //             style: TextStyle(
+              //                 fontSize: 18, fontWeight: FontWeight.bold),
+              //           ),
+              //           const SizedBox(height: 20),
+              //           Wrap(
+              //             spacing: 10.0,
+              //             runSpacing: 10.0,
+              //             children: [
+              //               _buildRecommendedItem('Shoes'),
+              //               _buildRecommendedItem('Jeans'),
+              //               _buildRecommendedItem('Shirts'),
+              //               _buildRecommendedItem('Hoodies'),
+              //               _buildRecommendedItem('Jackets'),
+              //             ],
+              //           ),
+              //         ],
+              //       )
+              //     : Padding(
+              //         padding: const EdgeInsets.only(left: 10),
+              //         child: SearchGridView(),
+              //       ),
+              ),
         ),
       ),
     );
+  }
+
+  changeView() {
+    if (controllerSearch.searchResult.isEmpty) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Recommended for you',
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 20),
+          Wrap(
+            spacing: 10.0,
+            runSpacing: 10.0,
+            children: [
+              _buildRecommendedItem('Shoes'),
+              _buildRecommendedItem('Jeans'),
+              _buildRecommendedItem('Shirts'),
+              _buildRecommendedItem('Hoodies'),
+              _buildRecommendedItem('Jackets'),
+            ],
+          ),
+        ],
+      );
+    } else if (controllerSearch.onSubmitOrChange.value == 0) {
+      return SearchGridView();
+    } else {
+      return Padding(
+        padding: const EdgeInsets.only(left: 10),
+        child: SearchListView(),
+      );
+    }
   }
 }
 

@@ -197,13 +197,12 @@ class FavouritesView extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Recommended Items', // Improved typography
-                style: TextStyle(
-                  fontSize: 18, // Slightly larger for emphasis
-                  fontWeight: FontWeight
-                      .w600, // A bit lighter than bold for a more professional look
-                  color: Colors.grey, // Softer color for the text
+              const Center(
+                child: Text(
+                  'Recommended Items', // Improved typography
+                  style: TextStyle(
+                    fontSize: 18, // Slightly larger for emphasis
+                  ),
                 ),
               ),
               const SizedBox(height: 12),

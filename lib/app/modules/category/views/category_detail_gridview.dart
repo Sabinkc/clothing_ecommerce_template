@@ -109,7 +109,8 @@ class CategoryDetailGridView extends StatelessWidget {
                             height: Adaptive.h(25),
                           ),
                           Positioned(
-                            right: 0,
+                            top: 10,
+                            right: 10,
                             child: GestureDetector(
                               onTap: () {
                                 controllerFavorites.searchProductId(
@@ -176,6 +177,7 @@ class CategoryDetailGridView extends StatelessWidget {
                                 );
                               },
                               child: Container(
+                                margin: const EdgeInsets.only(right: 10),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                   color: AppColors.lightSilver,

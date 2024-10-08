@@ -23,6 +23,7 @@ class AppBarMainPage extends StatelessWidget {
         padding: const EdgeInsets.only(left: 10),
         child: Text(
           title,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
       centerTitle: false,

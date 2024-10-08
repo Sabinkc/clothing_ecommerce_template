@@ -4,6 +4,7 @@ import '../../../data/alldata.dart';
 
 class SearchViewController extends GetxController {
   var searchResult = [].obs;
+  var onSubmitOrChange = 1.obs;
   void searchQuery(String query) {
     if (query.isEmpty) {
       searchResult.value = [];

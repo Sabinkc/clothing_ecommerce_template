@@ -57,7 +57,7 @@ class HomeView extends GetView<HomeController> {
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(50),
           child: AppBarMainPage(
-            title: 'Hi Aman',
+            title: 'D&S Fashion',
             isLeading: true,
           ),
         ),
@@ -101,10 +101,14 @@ class HomeView extends GetView<HomeController> {
                                                 FilterView());
                                       },
                                       child: const Icon(Icons.filter_list)),
-                                  border: OutlineInputBorder(
+                                  enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(6),
                                     borderSide: const BorderSide(
-                                        width: 1, color: Colors.red),
+                                      width:
+                                          0, // Border width when the TextField is enabled but not focused
+                                      color: Colors
+                                          .black, // Border color when enabled
+                                    ),
                                   ),
                                 ),
                               ),
