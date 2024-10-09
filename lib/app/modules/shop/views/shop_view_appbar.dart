@@ -10,7 +10,7 @@ class ShopViewAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      scrolledUnderElevation: 0,
+      scrolledUnderElevation: 0, 
       backgroundColor: AppColors.lightSilver,
       title: const Text('Shop'),
       centerTitle: false,

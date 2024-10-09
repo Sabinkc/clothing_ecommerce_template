@@ -165,13 +165,13 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                   colorText: Colors.white,
                 );
 
-                Get.to(AddedCart(
+                // Get.to(AddedCart(
 
-                    // addedCartData: addToCartData,
+                //     // addedCartData: addToCartData,
 
-                    // sizeList: sizeList,
-                    // sizeList: controller_two.sizeList,
-                    ));
+                //     // sizeList: sizeList,
+                //     // sizeList: controller_two.sizeList,
+                //     ));
               },
               child: const LargeButtonReusable(
                 title: "Add to Cart",

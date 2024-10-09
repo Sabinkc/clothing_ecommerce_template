@@ -48,7 +48,7 @@ class SearchBox extends StatelessWidget {
                         context: context,
                         builder: (BuildContext context) => FilterView());
                   },
-                  child: const Icon(Icons.filter_list)):SizedBox(),
+                  child: const Icon(Icons.filter_list)):const SizedBox(),
               const SizedBox(width: 10),
             ],
           ),

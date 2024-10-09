@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
-
 import '../../../constants/colors.dart';
 import '../../favourites/controllers/favourites_controller.dart';
 import '../../product_detail/controllers/product_detail_controller.dart';
@@ -26,9 +25,9 @@ class SearchViewView extends GetView<SearchViewController> {
   @override
   Widget build(BuildContext context) {
     // Request focus after the widget is built
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      FocusScope.of(context).requestFocus(searchFocusNode);
-    });
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   FocusScope.of(context).requestFocus(searchFocusNode);
+    // });
 
     return KeyboardDismisser(
       child: Scaffold(
@@ -44,7 +43,8 @@ class SearchViewView extends GetView<SearchViewController> {
             ),
             child: TextField(
               controller: searchController,
-              focusNode: searchFocusNode, // Set focus node for the TextField
+              autofocus: true,
+              // focusNode: searchFocusNode, // Set focus node for the TextField
               decoration: InputDecoration(
                 hintText: "Search products...",
                 prefixIcon: Icon(Icons.search, color: Colors.grey[600]),

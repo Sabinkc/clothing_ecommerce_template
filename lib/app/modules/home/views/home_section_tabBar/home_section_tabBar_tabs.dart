@@ -4,6 +4,7 @@ import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/tags.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -142,7 +143,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                           ),
                           const SizedBox(height: 10),
                           Padding(
-                            padding: const EdgeInsets.only(left: 10),
+                            padding: const EdgeInsets.only(left: 15, right: 20),
                             child: Text(
                               product["name"] ?? "",
                               overflow: TextOverflow.ellipsis,
@@ -153,7 +154,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                           ),
                           const SizedBox(height: 5),
                           Padding(
-                            padding: const EdgeInsets.only(left: 10),
+                            padding: const EdgeInsets.only(left: 15),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -218,24 +219,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
-                    top: 10,
-                    child: Container(
-                      width: 70,
-                      height: 30,
-                      color: AppColors.lightBlue,
-                      child: Center(
-                        child: Text(
-                          "${product["discount"]}% OFF",
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
+                  Tags(tagTitle: "${product["discount"]}%"),
                 ],
               ),
             );

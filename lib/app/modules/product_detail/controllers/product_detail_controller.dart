@@ -22,7 +22,7 @@ class ProductDetailController extends GetxController {
     selectedSize.value = '';
     quantityIndex.value = 1;
     detailViewProductCustomClickableContainer.value = 0;
-    selectedImages.clear(); // Clear the image list
+    // selectedImages.clear(); // Clear the image list
   }
 
   final count = 0.obs;

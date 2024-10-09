@@ -1,4 +1,3 @@
-
 import 'package:d_and_s/app/modules/reusable_widgets/search_box.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,7 +26,9 @@ class ShopView extends GetView<ShopController> {
         child: Column(
           children: [
             const ShopViewAppBar(),
-            SearchBox(showFilter: false,),
+            SearchBox(
+              showFilter: false,
+            ),
           ],
         ),
       ),
@@ -159,7 +160,7 @@ class ShopView extends GetView<ShopController> {
                             ),
                             const SizedBox(height: 10),
                             Padding(
-                              padding: const EdgeInsets.only(left: 10),
+                              padding: const EdgeInsets.only(left: 15),
                               child: Text(
                                 product["name"] ?? "",
                                 overflow: TextOverflow.ellipsis,
@@ -170,7 +171,7 @@ class ShopView extends GetView<ShopController> {
                             ),
                             const SizedBox(height: 5),
                             Padding(
-                              padding: const EdgeInsets.only(left: 10),
+                              padding: const EdgeInsets.only(left: 15),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
