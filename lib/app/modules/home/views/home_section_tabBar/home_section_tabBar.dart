@@ -3,8 +3,6 @@
 import 'package:d_and_s/app/data/sort_by.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../../constants/text_size.dart';
 import '../../controllers/home_controller.dart';
 
 class HomeSectionTabBar extends StatelessWidget {
@@ -40,7 +38,8 @@ class HomeSectionTabBar extends StatelessWidget {
                 child: Text(
                   sortBy[index],
                   style: TextStyle(
-                    fontSize: TextSize.small,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
                     color: controller.homeSectionindex.value == sortBy[index]
                         ? Colors.red
                         : Colors.black,

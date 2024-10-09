@@ -84,124 +84,159 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                       .easeInOut, // Adds smoothness with easing in and out
                 );
               },
-              child: Container(
-                decoration: const BoxDecoration(
-                  // border: Border.all(color: AppColors.silverBorder, width: 5),
-                  color: Colors.white,
-                  // borderRadius: BorderRadius.circular(16),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(0.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Stack(
+              child: Stack(
+                children: [
+                  Container(
+                    decoration: const BoxDecoration(
+                      // border: Border.all(color: AppColors.silverBorder, width: 5),
+                      color: Colors.white,
+                      // borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(0.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: NetworkImage(
-                                    imageUrl), // Replace with actual image URL
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            height: Adaptive.h(25),
-                          ),
-                          Positioned(
-                            top: 10,
-                            right: 10,
-                            child: GestureDetector(
-                              onTap: () {
-                                controllerFavorites.searchProductId(
-                                    product["product_id"], product);
-                              },
-                              child: Container(
+                          Stack(
+                            children: [
+                              Container(
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: AppColors.lightSilver,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        imageUrl), // Replace with actual image URL
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(5.0),
-                                  child: Obx(
-                                    () => Icon(
-                                      controllerFavorites
-                                              .isFavorite(product["product_id"])
-                                          ? Icons.favorite
-                                          : Icons.favorite_border,
-                                      color: Colors.black.withOpacity(0.7),
-                                      size: 20,
+                                height: Adaptive.h(25),
+                              ),
+                              Positioned(
+                                top: 10,
+                                right: 10,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    controllerFavorites.searchProductId(
+                                        product["product_id"], product);
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: AppColors.lightSilver,
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: Obx(
+                                        () => Icon(
+                                          controllerFavorites.isFavorite(
+                                                  product["product_id"])
+                                              ? Icons.favorite
+                                              : Icons.favorite_border,
+                                          color: Colors.black.withOpacity(0.7),
+                                          size: 20,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: Text(
+                              product["name"] ?? "",
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                  fontSize: TextSize.small,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Rs. ${product["price"] ?? ""}",
+                                  style: TextStyle(
+                                    fontSize: TextSize.small,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                                Text(
+                                  "${product["realprice"]}",
+                                  style: TextStyle(
+                                    decoration: TextDecoration.lineThrough,
+                                    decorationThickness: 2,
+                                    decorationColor: Colors.grey,
+                                    fontSize: TextSize.small,
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+
+                                // Positioned(
+                                //   right: 0,
+                                //   top: 40,
+                                //   child:
+                                GestureDetector(
+                                  onTap: () {
+                                    showModalBottomSheet<void>(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return HomeSectionTabBarTabsBottomSheet(
+                                          homeSectionTabsData: product,
+                                          homeSectionTabsImg: imageUrl,
+                                        );
+                                      },
+                                    );
+                                  },
+                                  child: Container(
+                                    margin: const EdgeInsets.only(right: 10),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: AppColors.lightSilver,
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: Icon(
+                                        Icons.shopping_cart_outlined,
+                                        size: 20,
+                                        color: Colors.black.withOpacity(0.7),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                                // ),
+                              ],
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 10),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 5),
-                        child: Text(
-                          product["name"] ?? "",
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                              fontSize: TextSize.small,
-                              fontWeight: FontWeight.w700),
-                        ),
-                      ),
-                      const SizedBox(height: 5),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 5),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "Rs. ${product["price"] ?? ""}",
-                              style: TextStyle(
-                                fontSize: TextSize.small,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.red,
-                              ),
-                            ),
-                            // Positioned(
-                            //   right: 0,
-                            //   top: 40,
-                            //   child:
-                            GestureDetector(
-                              onTap: () {
-                                showModalBottomSheet<void>(
-                                  context: context,
-                                  builder: (BuildContext context) {
-                                    return HomeSectionTabBarTabsBottomSheet(
-                                      homeSectionTabsData: product,
-                                      homeSectionTabsImg: imageUrl,
-                                    );
-                                  },
-                                );
-                              },
-                              child: Container(
-                                margin: const EdgeInsets.only(right: 10),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: AppColors.lightSilver,
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(5.0),
-                                  child: Icon(
-                                    Icons.shopping_cart_outlined,
-                                    size: 20,
-                                    color: Colors.black.withOpacity(0.7),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            // ),
-                          ],
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
+                  Positioned(
+                    top: 10,
+                    child: Container(
+                      width: 70,
+                      height: 30,
+                      color: AppColors.lightBlue,
+                      child: Center(
+                        child: Text(
+                          "${product["discount"]}% OFF",
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             );
           },

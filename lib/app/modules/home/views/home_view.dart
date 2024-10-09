@@ -1,23 +1,16 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
-
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/views/home_category_view.dart';
-
 import 'package:d_and_s/app/modules/reusable_widgets/app_bar_mainpage.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/CarouselSliderReusable.dart';
 import 'package:d_and_s/app/modules/search_view/controllers/search_view_controller.dart';
-import 'package:d_and_s/app/modules/search_view/views/search_view_view.dart';
-
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
-
 import '../../category/controllers/category_controller.dart';
-import '../../reusable_widgets/filter_view/filter_view.dart';
 import '../controllers/home_controller.dart';
 import 'home_section_tabBar/home_section_tabBar.dart';
 import 'home_section_tabBar/home_section_tabBar_tabs.dart';
@@ -54,11 +47,16 @@ class HomeView extends GetView<HomeController> {
     return KeyboardDismisser(
       // final controller = Get.put(HomeController());
       child: Scaffold(
+        backgroundColor: AppColors.lightSilver,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(50),
-          child: AppBarMainPage(
-            title: 'D&S Fashion',
-            isLeading: true,
+          preferredSize: const Size.fromHeight(110),
+          child: Column(
+            children: [
+              AppBarMainPage(
+                title: 'D&S Fashion',
+                isLeading: true,
+              ),
+            ],
           ),
         ),
         body: Container(
@@ -70,51 +68,51 @@ class HomeView extends GetView<HomeController> {
               return [
                 SliverToBoxAdapter(
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 20, 0, 20),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                          child: GestureDetector(
-                            onTap: () {
-                              controllerSearch.searchResult.value = [];
-                              Get.to(SearchViewView());
-                            },
-                            child: AbsorbPointer(
-                              child: TextField(
-                                controller: searchController,
-                                decoration: InputDecoration(
-                                  hintText: "What are you looking for?",
-                                  prefixIcon: const Icon(Icons.search),
-                                  suffixIcon: GestureDetector(
-                                      onTap: () {
-                                        // Get.to(FilterView());
-                                        showModalBottomSheet(
-                                            // shape: const RoundedRectangleBorder(
-                                            //   borderRadius: BorderRadius.vertical(
-                                            //     top: Radius.circular(20),
-                                            //   ),
-                                            // ),
-                                            context: context,
-                                            builder: (BuildContext context) =>
-                                                FilterView());
-                                      },
-                                      child: const Icon(Icons.filter_list)),
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(6),
-                                    borderSide: const BorderSide(
-                                      width:
-                                          0, // Border width when the TextField is enabled but not focused
-                                      color: Colors
-                                          .black, // Border color when enabled
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        //   child: GestureDetector(
+                        //     onTap: () {
+                        //       controllerSearch.searchResult.value = [];
+                        //       Get.to(SearchViewView());
+                        //     },
+                        //     child: AbsorbPointer(
+                        //       child: TextField(
+                        //         controller: searchController,
+                        //         decoration: InputDecoration(
+                        //           hintText: "What are you looking for?",
+                        //           prefixIcon: const Icon(Icons.search),
+                        //           suffixIcon: GestureDetector(
+                        //               onTap: () {
+                        //                 // Get.to(FilterView());
+                        //                 showModalBottomSheet(
+                        //                     // shape: const RoundedRectangleBorder(
+                        //                     //   borderRadius: BorderRadius.vertical(
+                        //                     //     top: Radius.circular(20),
+                        //                     //   ),
+                        //                     // ),
+                        //                     context: context,
+                        //                     builder: (BuildContext context) =>
+                        //                         FilterView());
+                        //               },
+                        //               child: const Icon(Icons.filter_list)),
+                        //           enabledBorder: OutlineInputBorder(
+                        //             borderRadius: BorderRadius.circular(6),
+                        //             borderSide: const BorderSide(
+                        //               width:
+                        //                   0, // Border width when the TextField is enabled but not focused
+                        //               color: Colors
+                        //                   .black, // Border color when enabled
+                        //             ),
+                        //           ),
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ),
+                        // ),
 
                         const SizedBox(height: 20),
                         CarouselSliderReusable(imgList: imgList),
@@ -161,10 +159,16 @@ class HomeView extends GetView<HomeController> {
                   ),
                 ),
                 SliverAppBar(
+                  scrolledUnderElevation: 0,
                   backgroundColor: AppColors.lightSilver,
                   title: HomeSectionTabBar(),
-                  floating: true,
-                  pinned: true,
+                  floating: false,
+                  pinned: true, // Keeps app bar visible on scroll
+                  snap: false,
+                  elevation: 0, // Prevents shadow effect
+                  expandedHeight: 0, // Disable collapsing behavior
+                  forceElevated:
+                      innerBoxIsScrolled, // Forces elevation when scrolled
                 ),
               ];
             },

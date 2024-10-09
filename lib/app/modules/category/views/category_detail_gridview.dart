@@ -141,7 +141,7 @@ class CategoryDetailGridView extends StatelessWidget {
                       ),
                       const SizedBox(height: 10),
                       Padding(
-                        padding: const EdgeInsets.only(left: 5),
+                        padding: const EdgeInsets.only(left: 10),
                         child: Text(
                           product["name"] ?? "",
                           overflow: TextOverflow.ellipsis,
@@ -152,7 +152,7 @@ class CategoryDetailGridView extends StatelessWidget {
                       ),
                       const SizedBox(height: 5),
                       Padding(
-                        padding: const EdgeInsets.only(left: 5),
+                        padding: const EdgeInsets.only(left: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

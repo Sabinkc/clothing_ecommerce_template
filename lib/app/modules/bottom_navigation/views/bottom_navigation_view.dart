@@ -1,5 +1,5 @@
-import 'package:d_and_s/app/constants/colors.dart';
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_view.dart';
+// ignore_for_file: must_be_immutable
+
 import 'package:d_and_s/app/modules/category/views/category_view.dart';
 import 'package:d_and_s/app/modules/home/views/home_view.dart';
 import 'package:d_and_s/app/modules/shop/views/shop_view.dart';
@@ -13,7 +13,7 @@ import '../../user_account/views/user_account_view.dart';
 import '../controllers/bottom_navigation_controller.dart';
 
 class BottomNavigationView extends GetView<BottomNavigationController> {
-  final controller = Get.put(BottomNavigationController());
+  final controllerBottomNav = Get.put(BottomNavigationController());
   List title = ["Home", "Category", "Shop", "Cart", "Me"];
   List icon = [
     Icons.home,
@@ -26,12 +26,13 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: Theme.of(context),
       home: Scaffold(
         body: Obx(
           () => changeView(),
         ),
         bottomNavigationBar: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               // borderRadius: BorderRadius.only(
               //   topLeft: Radius.circular(20),
               //   topRight: Radius.circular(20),
@@ -41,107 +42,111 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
             ),
 
             // color: AppColors.lightBlue,
-            height: Adaptive.h(8),
+            height: Adaptive.h(8.5),
             child: Obx(
               () => Padding(
-                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                padding: const EdgeInsets.only(top: 10, bottom: 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     GestureDetector(
                       onTap: () {
-                        controller.count.value = 0;
+                        controllerBottomNav.count.value = 0;
                       },
                       child: Column(
                         children: [
                           Icon(Icons.home,
-                              color: controller.count.value == 0
+                              color: controllerBottomNav.count.value == 0
                                   ? Colors.black
                                   : Colors.grey),
                           Text(
                             "Home",
                             style: TextStyle(
-                                color: controller.count.value == 0
+                                color: controllerBottomNav.count.value == 0
                                     ? Colors.black
                                     : Colors.grey),
                           ),
                         ],
                       ),
                     ),
+                    const SizedBox(width: 1),
                     GestureDetector(
                       onTap: () {
-                        controller.count.value = 1;
+                        controllerBottomNav.count.value = 1;
                       },
                       child: Column(
                         children: [
                           Icon(Icons.category,
-                              color: controller.count.value == 1
+                              color: controllerBottomNav.count.value == 1
                                   ? Colors.black
                                   : Colors.grey),
                           Text(
                             "Category",
                             style: TextStyle(
-                                color: controller.count.value == 1
+                                color: controllerBottomNav.count.value == 1
                                     ? Colors.black
                                     : Colors.grey),
                           ),
                         ],
                       ),
                     ),
+                    const SizedBox(width: 1),
                     GestureDetector(
                       onTap: () {
-                        controller.count.value = 2;
+                        controllerBottomNav.count.value = 2;
                       },
                       child: Column(
                         children: [
                           Icon(Icons.shop,
-                              color: controller.count.value == 2
+                              color: controllerBottomNav.count.value == 2
                                   ? Colors.black
                                   : Colors.grey),
                           Text(
                             "Shop",
                             style: TextStyle(
-                                color: controller.count.value == 2
+                                color: controllerBottomNav.count.value == 2
                                     ? Colors.black
                                     : Colors.grey),
                           ),
                         ],
                       ),
                     ),
+                    const SizedBox(width: 1),
                     GestureDetector(
                       onTap: () {
-                        controller.count.value = 3;
+                        controllerBottomNav.count.value = 3;
                       },
                       child: Column(
                         children: [
                           Icon(Icons.shopping_cart,
-                              color: controller.count.value == 3
+                              color: controllerBottomNav.count.value == 3
                                   ? Colors.black
                                   : Colors.grey),
                           Text(
                             "Cart",
                             style: TextStyle(
-                                color: controller.count.value == 3
+                                color: controllerBottomNav.count.value == 3
                                     ? Colors.black
                                     : Colors.grey),
                           ),
                         ],
                       ),
                     ),
+                    const SizedBox(width: 1),
                     GestureDetector(
                       onTap: () {
-                        controller.count.value = 4;
+                        controllerBottomNav.count.value = 4;
                       },
                       child: Column(
                         children: [
                           Icon(Icons.person,
-                              color: controller.count.value == 4
+                              color: controllerBottomNav.count.value == 4
                                   ? Colors.black
                                   : Colors.grey),
                           Text(
                             "Me",
                             style: TextStyle(
-                                color: controller.count.value == 4
+                                color: controllerBottomNav.count.value == 4
                                     ? Colors.black
                                     : Colors.grey),
                           ),
@@ -174,16 +179,16 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
   }
 
   changeView() {
-    if (controller.count.value == 0) {
+    if (controllerBottomNav.count.value == 0) {
       return HomeView();
-    } else if (controller.count.value == 1) {
+    } else if (controllerBottomNav.count.value == 1) {
       return CategoryView();
-    } else if (controller.count.value == 2) {
+    } else if (controllerBottomNav.count.value == 2) {
       return ShopView();
-    } else if (controller.count.value == 3) {
+    } else if (controllerBottomNav.count.value == 3) {
       return AddedCart();
     } else {
-      return UserAccountView();
+      return const UserAccountView();
     }
   }
 }

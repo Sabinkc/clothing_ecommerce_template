@@ -1,11 +1,8 @@
-import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
-import 'package:d_and_s/app/modules/search_view/views/search_view_view.dart';
-import 'package:d_and_s/app/modules/shop/views/shop_view_sub_category.dart';
-import 'package:flutter/material.dart';
 
+import 'package:d_and_s/app/modules/reusable_widgets/search_box.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-
 import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
 import '../../../data/shop_data.dart';
@@ -14,6 +11,7 @@ import '../../home/views/home_section_tabBar/home_section_tabBar_tabs_bottomShee
 import '../../product_detail/controllers/product_detail_controller.dart';
 import '../../product_detail/views/product_detail_view.dart';
 import '../controllers/shop_controller.dart';
+import 'shop_view_appbar.dart';
 
 class ShopView extends GetView<ShopController> {
   final searchController = TextEditingController();
@@ -24,31 +22,14 @@ class ShopView extends GetView<ShopController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.lightSilver,
-      appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
-        title: const Text('Shop'),
-        centerTitle: false,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: GestureDetector(
-              onTap: () {
-                showModalBottomSheet(
-                  isScrollControlled: true,
-                  context: context,
-                  builder: (BuildContext context) => ShopViewSubCategory(),
-                );
-              },
-              child: const Row(
-                children: [
-                  Text("Filter"),
-                  SizedBox(width: 10),
-                  Icon(Icons.filter_list),
-                ],
-              ),
-            ),
-          ),
-        ],
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(110),
+        child: Column(
+          children: [
+            const ShopViewAppBar(),
+            SearchBox(showFilter: false,),
+          ],
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -56,17 +37,17 @@ class ShopView extends GetView<ShopController> {
           child: Column(
             children: [
               // ShopViewSubCategory(),
-              GestureDetector(
-                onTap: () {
-                  Get.to(SearchViewView());
-                },
-                child: AbsorbPointer(
-                  child: TextFormFieldReusable(
-                    hint: "Search",
-                    textEditingController: searchController,
-                  ),
-                ),
-              ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Get.to(SearchViewView());
+              //   },
+              //   child: AbsorbPointer(
+              //     child: TextFormFieldReusable(
+              //       hint: "Search",
+              //       textEditingController: searchController,
+              //     ),
+              //   ),
+              // ),
 
               const SizedBox(height: 20),
               GridView.builder(
@@ -178,7 +159,7 @@ class ShopView extends GetView<ShopController> {
                             ),
                             const SizedBox(height: 10),
                             Padding(
-                              padding: const EdgeInsets.only(left: 5),
+                              padding: const EdgeInsets.only(left: 10),
                               child: Text(
                                 product["name"] ?? "",
                                 overflow: TextOverflow.ellipsis,
@@ -189,7 +170,7 @@ class ShopView extends GetView<ShopController> {
                             ),
                             const SizedBox(height: 5),
                             Padding(
-                              padding: const EdgeInsets.only(left: 5),
+                              padding: const EdgeInsets.only(left: 10),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,

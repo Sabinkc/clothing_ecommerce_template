@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/modules/bottom_navigation/buttom_navigation.dart';
+
 import 'package:d_and_s/app/modules/bottom_navigation/views/bottom_navigation_view.dart';
 import 'package:d_and_s/app/modules/forgot_password/views/forgot_password_view.dart';
 

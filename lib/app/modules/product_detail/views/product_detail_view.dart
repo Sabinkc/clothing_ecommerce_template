@@ -2,16 +2,12 @@ import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controll
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_quantity.dart';
-import 'package:d_and_s/app/modules/reusable_widgets/TextFormFieldReusable.dart';
+import 'package:d_and_s/app/modules/reusable_widgets/search_box.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
-
 import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
-
 import '../../reusable_widgets/CustomClickableContainer.dart';
 import 'ProductDetailViewReusableRow.dart';
 import '../controllers/product_detail_controller.dart';
@@ -52,13 +48,8 @@ class ProductDetailView extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.white,
-            title: SizedBox(
-              height: 45,
-              child: TextFormFieldReusable(
-                hint: ".....",
-                icon: const Icon(Icons.search),
-                textEditingController: search,
-              ),
+            title: SearchBox(
+              showFilter: true,
             ),
 
             // leading: GestureDetector(
