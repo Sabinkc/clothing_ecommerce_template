@@ -4,13 +4,9 @@ import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt/add_to_cart_receipt.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/place_order.dart';
-import 'package:dotted_border/dotted_border.dart';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../../../constants/text_size.dart';
-
 import '../../../reusable_widgets/LargeButtonReusable.dart';
 import 'add_to_cart_receipt/add_to_cart_address_selection.dart';
 import 'add_to_cart_receipt/add_to_cart_payment_selection.dart';

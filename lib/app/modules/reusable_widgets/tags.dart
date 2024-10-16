@@ -25,7 +25,7 @@ class Tags extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "-${tagTitle}", // Discount percentage
+            "-$tagTitle", // Discount percentage
             // overflow: TextOverflow.ellipsis,
             style: const TextStyle(
               color: Colors.white, // White text for contrast

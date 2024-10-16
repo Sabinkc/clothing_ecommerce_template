@@ -1,6 +1,5 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, must_be_immutable
 
-import 'package:d_and_s/app/modules/reusable_widgets/drop_down.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
@@ -61,9 +60,8 @@ class UserAccountAddAddress extends StatelessWidget {
   UserAccountAddAddress({super.key});
 
   @override
-  Widget build(BuildContext context) =>
-    // var a = locationData[0];
-    KeyboardDismisser(
+  Widget build(BuildContext context) {
+    return KeyboardDismisser(
       child: Scaffold(
         // backgroundColor: AppColors.lightSilver,
         backgroundColor: Colors.white,
@@ -122,8 +120,9 @@ class UserAccountAddAddress extends StatelessWidget {
                       itemBuilder: (BuildContext context) {
                         return country
                             .map<PopupMenuItem<String>>((String value) {
-                          return new PopupMenuItem(
-                              child: new Text(value), value: value);
+                          return PopupMenuItem(
+                              value: value,
+                              child: Text(value));
                         }).toList();
                       },
                     ),
@@ -142,10 +141,12 @@ class UserAccountAddAddress extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
+
                 TextField(
                   inputFormatters: [
                     FilteringTextInputFormatter.deny(
-                        RegExp('.*')), // This denies all input
+                      RegExp('.*'), // This denies all input
+                    ),
                   ],
                   controller: stateController,
                   decoration: InputDecoration(
@@ -163,16 +164,21 @@ class UserAccountAddAddress extends StatelessWidget {
                         stateController.text = value;
                       },
                       itemBuilder: (BuildContext context) {
-                        return stateProvince
-                            .map<PopupMenuItem<String>>((String value) {
-                          return new PopupMenuItem(
-                              child: new Text(value), value: value);
+                        return locationData
+                            .map<PopupMenuItem<String>>((location) {
+                          final String locationName =
+                              location["name"] as String;
+                          return PopupMenuItem<String>(
+                            value: locationName,
+                            child: Text(locationName),
+                          );
                         }).toList();
                       },
                     ),
                   ),
                 ),
                 const SizedBox(height: 30),
+
                 Text(
                   "City",
                   style: TextStyle(
@@ -184,7 +190,8 @@ class UserAccountAddAddress extends StatelessWidget {
                 TextField(
                   inputFormatters: [
                     FilteringTextInputFormatter.deny(
-                        RegExp('.*')), // This denies all input
+                      RegExp('.*'), // This denies all input
+                    ),
                   ],
                   controller: cityController,
                   decoration: InputDecoration(
@@ -202,9 +209,27 @@ class UserAccountAddAddress extends StatelessWidget {
                         cityController.text = value;
                       },
                       itemBuilder: (BuildContext context) {
-                        return city.map<PopupMenuItem<String>>((String value) {
-                          return new PopupMenuItem(
-                              child: new Text(value), value: value);
+                        // Find the selected state based on stateController text
+                        var selectedState = locationData.firstWhere(
+                          (element) => element["name"] == stateController.text,
+                        );
+
+                        // Check if selectedState is null or doesn't contain a valid 'city' field
+                        if (selectedState["city"] == null) {
+                          return []; // Return empty list if no state or cities are found
+                        }
+
+                        // Get the list of cities for the selected state and ensure it's a List
+                        List<dynamic> cities =
+                            selectedState["city"] as List<dynamic>;
+
+                        // Map over the cities to create PopupMenuItems
+                        return cities.map<PopupMenuItem<String>>((city) {
+                          final String cityName = city["city_name"] as String;
+                          return PopupMenuItem<String>(
+                            value: cityName,
+                            child: Text(cityName),
+                          );
                         }).toList();
                       },
                     ),
@@ -222,7 +247,8 @@ class UserAccountAddAddress extends StatelessWidget {
                 TextField(
                   inputFormatters: [
                     FilteringTextInputFormatter.deny(
-                        RegExp('.*')), // This denies all input
+                      RegExp('.*'), // This denies all input
+                    ),
                   ],
                   controller: zoneController,
                   decoration: InputDecoration(
@@ -240,9 +266,44 @@ class UserAccountAddAddress extends StatelessWidget {
                         zoneController.text = value;
                       },
                       itemBuilder: (BuildContext context) {
-                        return zone.map<PopupMenuItem<String>>((String value) {
-                          return new PopupMenuItem(
-                              child: new Text(value), value: value);
+                        // Ensure a state is selected
+                        var selectedState = locationData.firstWhere(
+                          (element) => element["name"] == stateController.text,
+                          orElse: () =>
+                              {}, // Return empty map if no state is found
+                        );
+
+                        // If no state is selected or the state has no cities, return empty list
+                        if (selectedState.isEmpty ||
+                            selectedState["city"] == null) {
+                          return [];
+                        }
+
+                        // Find the selected city from the selected state
+                        var selectedCity =
+                            (selectedState["city"] as List).firstWhere(
+                          (city) => city["city_name"] == cityController.text,
+                          // orElse: () =>
+                          //     {}, // Return empty map if no city is found
+                        );
+
+                        // If no city is selected or the city has no zones, return empty list
+                        if (selectedCity.isEmpty ||
+                            selectedCity["zones"] == null) {
+                          return [];
+                        }
+
+                        // Extract the list of zones for the selected city
+                        List<dynamic> zones =
+                            selectedCity["zones"] as List<dynamic>;
+
+                        // Map the zones to PopupMenuItems
+                        return zones.map<PopupMenuItem<String>>((zone) {
+                          final String zoneName = zone as String;
+                          return PopupMenuItem<String>(
+                            value: zoneName,
+                            child: Text(zoneName),
+                          );
                         }).toList();
                       },
                     ),
@@ -285,7 +346,7 @@ class UserAccountAddAddress extends StatelessWidget {
         ),
       ),
     );
-  
+  }
 }
 // class PopUPMenuTextField extends StatelessWidget {
 //   final  controller ;

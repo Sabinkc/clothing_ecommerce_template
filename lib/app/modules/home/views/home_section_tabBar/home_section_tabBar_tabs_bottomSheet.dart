@@ -2,14 +2,10 @@
 
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
-
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
-
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../add_to_cart/views/added_cart.dart';
 import '../../../product_detail/controllers/product_detail_controller.dart';
 import '../../../product_detail/views/product_detail_circular_colored_container.dart';
 import '../../../product_detail/views/ProductDetail_Size.dart';

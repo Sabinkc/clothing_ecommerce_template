@@ -7,7 +7,6 @@ import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../add_to_cart/views/added_cart.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../controllers/product_detail_controller.dart';
 

@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -122,8 +122,9 @@ class UserAccountEditAddress extends StatelessWidget {
                         itemBuilder: (BuildContext context) {
                           return country
                               .map<PopupMenuItem<String>>((String value) {
-                            return new PopupMenuItem(
-                                child: new Text(value), value: value);
+                            return PopupMenuItem(
+                                value: value,
+                                child: Text(value));
                           }).toList();
                         },
                       ),
@@ -165,8 +166,9 @@ class UserAccountEditAddress extends StatelessWidget {
                         itemBuilder: (BuildContext context) {
                           return stateProvince
                               .map<PopupMenuItem<String>>((String value) {
-                            return new PopupMenuItem(
-                                child: new Text(value), value: value);
+                            return PopupMenuItem(
+                                value: value,
+                                child: Text(value));
                           }).toList();
                         },
                       ),
@@ -204,8 +206,9 @@ class UserAccountEditAddress extends StatelessWidget {
                         itemBuilder: (BuildContext context) {
                           return city
                               .map<PopupMenuItem<String>>((String value) {
-                            return new PopupMenuItem(
-                                child: new Text(value), value: value);
+                            return PopupMenuItem(
+                                value: value,
+                                child: Text(value));
                           }).toList();
                         },
                       ),
@@ -243,8 +246,9 @@ class UserAccountEditAddress extends StatelessWidget {
                         itemBuilder: (BuildContext context) {
                           return zone
                               .map<PopupMenuItem<String>>((String value) {
-                            return new PopupMenuItem(
-                                child: new Text(value), value: value);
+                            return PopupMenuItem(
+                                value: value,
+                                child: Text(value));
                           }).toList();
                         },
                       ),

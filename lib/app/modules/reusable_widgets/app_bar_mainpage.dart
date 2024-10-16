@@ -1,4 +1,3 @@
-import 'package:d_and_s/app/constants/colors.dart';
 
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
