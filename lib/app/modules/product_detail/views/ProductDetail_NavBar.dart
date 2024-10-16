@@ -165,6 +165,7 @@ class ProductDetailNavBar extends StatelessWidget {
                 backgroundColor: Colors.green,
                 colorText: Colors.white,
               );
+              Navigator.pop(context);
               // Get.to(
               //   AddedCart(),
               //   transition: Transition

@@ -1,7 +1,10 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt/add_to_cart_receipt.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/place_order.dart';
+import 'package:dotted_border/dotted_border.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -156,6 +159,32 @@ class AddToCartCheckout extends StatelessWidget {
                   onTap: () {
                     showModalBottomSheet(
                         context: context,
+                        builder: (BuildContext context) => CheckoutVoucher());
+                  },
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      // borderRadius: BorderRadius.circular(16),
+                      color: Colors.white,
+                    ),
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    child: const Row(
+                      children: [
+                        Icon(Icons.card_giftcard_rounded),
+                        SizedBox(width: 10),
+                        Text("Voucher"),
+                        Spacer(),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
                         builder: (BuildContext context) =>
                             const AddToCartPaymentSelection());
                   },
@@ -299,6 +328,138 @@ class CheckoutUserInfo extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CheckoutVoucher extends StatelessWidget {
+  var selectedVoucher = 0.obs;
+  CheckoutVoucher({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 400,
+      padding: const EdgeInsets.all(16),
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Header Section
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                'Select a Voucher',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              IconButton(
+                icon: const Icon(Icons.close),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+
+          // Voucher List Section
+          Expanded(
+            child: ListView.builder(
+              itemCount: 5, // Example count of vouchers
+              itemBuilder: (context, index) {
+                return GestureDetector(
+                  onTap: () {
+                    selectedVoucher.value = index;
+                    // Handle voucher selection
+                  },
+                  child: Obx(
+                    () => Container(
+                      margin: const EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(
+                            Icons.local_offer_rounded,
+                            size: 32,
+                            color: selectedVoucher.value == index
+                                ? Colors.green
+                                : Colors.grey,
+                          ),
+                          const SizedBox(width: 16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  '10% off on orders above Rs1,000 ',
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: selectedVoucher.value == index
+                                        ? FontWeight.w600
+                                        : FontWeight.w400,
+                                    color: Colors.grey[800],
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  'Expires: Dec 31, 2024',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                    fontWeight: selectedVoucher.value == index
+                                        ? FontWeight.w900
+                                        : FontWeight.w400,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Icon(Icons.check_circle,
+                              color: selectedVoucher.value == index
+                                  ? Colors.green
+                                  : Colors.grey),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+
+          // Bottom Actions
+          const SizedBox(height: 16),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('Cancel'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  // Confirm voucher selection
+                  Get.snackbar("Voucher", "Voucher Applied Successfully",
+                      backgroundColor: Colors.green, colorText: Colors.white);
+                },
+                child: const Text('Confirm'),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

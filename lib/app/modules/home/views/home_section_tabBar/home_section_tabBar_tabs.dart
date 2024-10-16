@@ -141,7 +141,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 10),
+                          const SizedBox(height: 20),
                           Padding(
                             padding: const EdgeInsets.only(left: 15, right: 20),
                             child: Text(

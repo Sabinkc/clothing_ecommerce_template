@@ -990,8 +990,8 @@ final List products = [
     "featured": "Latest Product",
     "product_id": "15",
     "name": "Polyester Light Weight Casual Lined Standard Length Jacket",
-    "price": 180000,
-    "realprice": 200000,
+    "price": 1800,
+    "realprice": 2000,
     "discount": 10,
     "title": "Warm and Lightweight Puffer Jacket",
     "description":
