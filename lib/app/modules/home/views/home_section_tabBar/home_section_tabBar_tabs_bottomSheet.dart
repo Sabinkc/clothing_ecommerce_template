@@ -4,16 +4,18 @@ import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
+import 'package:d_and_s/app/modules/shop/views/shop_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../favourites/controllers/favourites_controller.dart';
 import '../../../product_detail/controllers/product_detail_controller.dart';
 import '../../../product_detail/views/product_detail_circular_colored_container.dart';
 import '../../../product_detail/views/ProductDetail_Size.dart';
-import '../../../product_detail/views/product_detail_quantity.dart';
 
 class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
   final controllerProductDetail = Get.put(ProductDetailController());
   final controller = Get.put(AddToCartController());
+  final controllerFavorites = Get.put(FavouritesController());
   final Map homeSectionTabsData;
   final String homeSectionTabsImg;
   HomeSectionTabBarTabsBottomSheet(
@@ -27,12 +29,12 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
     // List reviewdata = homeSectionTabsData["reviews"] ?? [];
     Map colordata = homeSectionTabsData["color"] ?? {};
     return Container(
-      height: 1000,
+      height: 480,
       width: double.infinity,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(16),
-          topRight: Radius.circular(16),
+          topLeft: Radius.circular(0),
+          topRight: Radius.circular(0),
         ),
         color: Colors.white,
       ),
@@ -42,6 +44,11 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: const Icon(Icons.cancel)),
             Container(
               height: 200,
               margin: const EdgeInsets.all(0),
@@ -99,81 +106,102 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                   )
                 : const SizedBox(),
             const SizedBox(height: 15),
-            Text(
-              "Quantity",
-              style: TextStyle(
-                fontSize: TextSize.normal,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            const SizedBox(height: 15),
-            ProductDetailQuantity(),
-            const SizedBox(height: 15),
-            GestureDetector(
-              onTap: () {
-                // controllerProductDetail.clear();
-                if (controllerProductDetail.selectedColor.value == 0) {
-                  Get.snackbar(
-                    'Selection Error',
-                    'Please select a color.',
-                    snackPosition: SnackPosition.BOTTOM,
-                    backgroundColor: Colors.redAccent,
-                    colorText: Colors.white,
-                  );
-                  return;
-                }
-
-                if (controllerProductDetail.selectedSize.value.isEmpty) {
-                  Get.snackbar(
-                    'Selection Error',
-                    'Please select a size.',
-                    snackPosition: SnackPosition.BOTTOM,
-                    backgroundColor: Colors.redAccent,
-                    colorText: Colors.white,
-                  );
-                  return;
-                }
-
-                final String cartId = UniqueKey().toString();
-                controller.cartProducts.add(
-                  {
-                    "title": homeSectionTabsData["title"],
-                    "cartId": cartId,
-                    "price": homeSectionTabsData["price"],
-                    "discount": homeSectionTabsData["discount"],
-                    "realprice": homeSectionTabsData["realprice"],
-                    "size": controllerProductDetail.selectedSize.value,
-                    "quantity": controllerProductDetail.quantityIndex.value,
-                    "image": controllerProductDetail.selectedImages[
-                        controllerProductDetail
-                            .detailViewProductCustomClickableContainer.value],
-                    "color": controllerProductDetail.selectedColor.value,
+            // Text(
+            //   "Quantity",
+            //   style: TextStyle(
+            //     fontSize: TextSize.normal,
+            //     fontWeight: FontWeight.w700,
+            //   ),
+            // ),
+            // const SizedBox(height: 15),
+            // ProductDetailQuantity(),
+            // const SizedBox(height: 15),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    controllerFavorites.searchProductId(
+                        homeSectionTabsData["product_id"], homeSectionTabsData);
                   },
-                );
-                // controller.selectedProducts.add(cartId);
-                controller.toggleSelected(cartId);
-                controllerProductDetail.clear();
-                Get.snackbar(
-                  'Added To Cart',
-                  'Go to Cart to View Products',
-                  snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.green,
-                  colorText: Colors.white,
-                );
+                  child: Obx(
+                    () => Icon(
+                      controllerFavorites
+                              .isFavorite(homeSectionTabsData["product_id"])
+                          ? Icons.favorite
+                          : Icons.favorite_border,
+                      color: Colors.green,
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    // controllerProductDetail.clear();
+                    if (controllerProductDetail.selectedColor.value == 0) {
+                      Get.snackbar(
+                        'Selection Error',
+                        'Please select a color.',
+                        snackPosition: SnackPosition.BOTTOM,
+                        backgroundColor: Colors.redAccent,
+                        colorText: Colors.white,
+                      );
+                      return;
+                    }
 
-                // Get.to(AddedCart(
+                    if (controllerProductDetail.selectedSize.value.isEmpty) {
+                      Get.snackbar(
+                        'Selection Error',
+                        'Please select a size.',
+                        snackPosition: SnackPosition.BOTTOM,
+                        backgroundColor: Colors.redAccent,
+                        colorText: Colors.white,
+                      );
+                      return;
+                    }
 
-                //     // addedCartData: addToCartData,
+                    final String cartId = UniqueKey().toString();
+                    controller.cartProducts.add(
+                      {
+                        "title": homeSectionTabsData["title"],
+                        "cartId": cartId,
+                        "price": homeSectionTabsData["price"],
+                        "discount": homeSectionTabsData["discount"],
+                        "realprice": homeSectionTabsData["realprice"],
+                        "size": controllerProductDetail.selectedSize.value,
+                        "quantity": controllerProductDetail.quantityIndex.value,
+                        "image": controllerProductDetail.selectedImages[
+                            controllerProductDetail
+                                .detailViewProductCustomClickableContainer
+                                .value],
+                        "color": controllerProductDetail.selectedColor.value,
+                      },
+                    );
+                    // controller.selectedProducts.add(cartId);
+                    controller.toggleSelected(cartId);
+                    controllerProductDetail.clear();
+                    Get.snackbar(
+                      'Added To Cart',
+                      'Go to Cart to View Products',
+                      snackPosition: SnackPosition.BOTTOM,
+                      backgroundColor: Colors.green,
+                      colorText: Colors.white,
+                    );
+                    Get.to(ShopView());
+                    // Get.to(AddedCart(
 
-                //     // sizeList: sizeList,
-                //     // sizeList: controller_two.sizeList,
-                //     ));
-              },
-              child: const LargeButtonReusable(
-                title: "Add to Cart",
-                width: double.infinity,
-                color: Colors.black,
-              ),
+                    //     // addedCartData: addToCartData,
+
+                    //     // sizeList: sizeList,
+                    //     // sizeList: controller_two.sizeList,
+                    //     ));
+                  },
+                  child: LargeButtonReusable(
+                    title: "Add to Cart",
+                    width: MediaQuery.of(context).size.width * 0.8,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
             ),
           ],
         ),

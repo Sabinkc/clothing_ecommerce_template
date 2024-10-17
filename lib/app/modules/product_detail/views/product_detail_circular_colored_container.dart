@@ -1,4 +1,3 @@
-
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,11 +26,11 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                   // controller.selectedColorIndex.value = //i want the index here
                 },
                 child: Padding(
-                  padding: const EdgeInsets.only(right: 10),
+                  padding: const EdgeInsets.only(right: 5),
                   child: Obx(
                     () => Container(
-                      height: 40,
-                      width: 40,
+                      height: 30,
+                      width: 30,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
@@ -43,8 +42,8 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                       ),
                       child: Center(
                         child: Container(
-                          height: 30,
-                          width: 30,
+                          height: 20,
+                          width: 20,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: Color(e

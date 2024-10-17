@@ -18,10 +18,10 @@ class ProductDetailPrice extends StatelessWidget {
         ),
         Text(
           "${priceDetails["price"]}",
-          style: TextStyle(
-            fontSize: TextSize.normal,
+          style: const TextStyle(
+            fontSize: 20,
             color: Colors.red,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(width: 10),

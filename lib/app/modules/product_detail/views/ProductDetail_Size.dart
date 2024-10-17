@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ProductDetailSize extends StatelessWidget {
-
   final List sizeList;
   final controller = Get.put(ProductDetailController());
   ProductDetailSize({super.key, required this.sizeList});
@@ -36,16 +35,16 @@ class ProductDetailSize extends StatelessWidget {
                     () => Container(
                       // width: 50,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(0),
                         border: Border.all(
                           color: controller.sizeIndex.value == index
                               ? AppColors.lightBlue
-                              : Colors.white,
+                              : Colors.grey,
                           // width: 5,
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
                         child: Center(
                           child: Text(sizeList[index]),
                         ),

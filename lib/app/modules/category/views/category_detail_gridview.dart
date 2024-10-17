@@ -157,27 +157,28 @@ class CategoryDetailGridView extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "Rs. ${product["price"] ?? ""}",
-                                  style: TextStyle(
-                                    fontSize: TextSize.small,
+                                  "Rs.${product["price"] ?? ""}",
+                                  style: const TextStyle(
+                                    fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
                                 ),
+                                const SizedBox(width: 5),
                                 Text(
                                   "${product["realprice"]}",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     decoration: TextDecoration.lineThrough,
                                     decorationThickness: 2,
                                     decorationColor: Colors.grey,
-                                    fontSize: TextSize.small,
+                                    fontSize: 12,
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
+                                const Spacer(),
 
                                 // Positioned(
                                 //   right: 0,

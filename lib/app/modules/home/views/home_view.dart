@@ -167,13 +167,15 @@ class HomeView extends GetView<HomeController> {
                   snap: false,
                   elevation: 0, // Prevents shadow effect
                   expandedHeight: 0, // Disable collapsing behavior
+                  toolbarHeight:
+                      15, // Removes the toolbar height to remove extra space
                   forceElevated:
                       innerBoxIsScrolled, // Forces elevation when scrolled
                 ),
               ];
             },
             body: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
               child: HomeSectionTabBarTabs(),
             ),
           ),

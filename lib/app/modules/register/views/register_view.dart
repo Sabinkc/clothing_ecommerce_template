@@ -43,7 +43,7 @@ class RegisterView extends GetView<RegisterController> {
                       style: TextStyle(
                         fontSize: TextSize.big,
                         fontWeight: FontWeight.w900,
-                        color: AppColors.lightBlue,
+                        // color: AppColors.lightBlue,
                       ),
                     ),
                   ),
@@ -51,7 +51,7 @@ class RegisterView extends GetView<RegisterController> {
                   const Center(
                     child: Text(
                       "Enter your Credentails",
-                      style: TextStyle(color: AppColors.lightBlue),
+                      // style: TextStyle(color: AppColors.lightBlue),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -155,6 +155,7 @@ class RegisterView extends GetView<RegisterController> {
                   const SizedBox(height: 30),
                   const LargeButtonReusable(
                     title: "Register",
+                    color: Colors.black,
                     // color: AppColors.lightBlue,
                   ),
                   const SizedBox(height: 20),
@@ -164,8 +165,9 @@ class RegisterView extends GetView<RegisterController> {
                       const Text(
                         "Already have an account?",
                         style: TextStyle(
-                            color: AppColors.silver,
-                            fontWeight: FontWeight.w900),
+                          color: AppColors.silver,
+                          fontWeight: FontWeight.w900,
+                        ),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
@@ -175,8 +177,9 @@ class RegisterView extends GetView<RegisterController> {
                         child: const Text(
                           "Log in",
                           style: TextStyle(
-                              color: AppColors.lightBlue,
-                              fontWeight: FontWeight.w900),
+                            color: AppColors.lightBlue,
+                            fontWeight: FontWeight.w900,
+                          ),
                         ),
                       ),
                     ],
