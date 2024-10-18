@@ -44,7 +44,7 @@ class ProductDetailSize extends StatelessWidget {
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                         child: Center(
                           child: Text(sizeList[index]),
                         ),

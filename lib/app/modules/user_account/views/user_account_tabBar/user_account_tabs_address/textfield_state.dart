@@ -2,16 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
+import '../../../../../data/alldata.dart';
 import '../../../../../data/location.dart';
+import '../../../../reusable_widgets/filter_view/filter_view.dart';
 import '../../../controllers/user_account_controller.dart';
 
 class TextFieldState extends StatelessWidget {
   final controllerUserAcc = Get.put(UserAccountController());
-
+  final searchController = TextEditingController();
+  var searchResult = [].obs;
   TextFieldState({super.key});
 
   @override
   Widget build(BuildContext context) {
+    void searchQuery(String query) {
+      if (query.isEmpty) {
+        searchResult.value = [];
+      } else {
+        // Filter data based on search query
+        List filteredData = locationData
+            .where((elements) =>
+                elements['name']!.toLowerCase().contains(query.toLowerCase()))
+            .toList();
+        searchResult.value = filteredData;
+      }
+    }
+
     return TextField(
       inputFormatters: [
         FilteringTextInputFormatter.deny(
@@ -65,6 +81,45 @@ class TextFieldState extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
+                          TextField(
+                            controller: searchController,
+                            decoration: InputDecoration(
+                              hintText: "Search products...",
+                              prefixIcon:
+                                  Icon(Icons.search, color: Colors.grey[600]),
+                              suffixIcon: GestureDetector(
+                                onTap: () {
+                                  showModalBottomSheet(
+                                    context: context,
+                                    builder: (BuildContext context) =>
+                                        FilterView(),
+                                  );
+                                },
+                                child: Icon(Icons.filter_list,
+                                    color: Colors.grey[600]),
+                              ),
+                              border: InputBorder.none,
+                            ),
+                            onChanged: (value) {
+                              searchQuery(
+                                  value); // Call searchQuery on every text change
+                            },
+                          ),
+                          // Obx(
+                          //   () => ListView.builder(
+                          //       shrinkWrap: true,
+                          //       itemCount: searchResult.length,
+                          //       itemBuilder: (BuildContext context, index) =>
+                          //           GestureDetector(
+                          //               onTap: () {
+                          //                 controllerUserAcc
+                          //                         .stateController.text =
+                          //                     searchResult[index]["name"];
+                          //                 Navigator.pop(context);
+                          //               },
+                          //               child:
+                          //                   Text(searchResult[index]["name"]))),
+                          // ),
                           Container(
                             width: 50,
                             height: 5,
@@ -74,40 +129,83 @@ class TextFieldState extends StatelessWidget {
                             ),
                             margin: const EdgeInsets.only(bottom: 10),
                           ),
-                          Expanded(
-                            child: ListView.builder(
-                              controller: scrollController,
-                              itemCount: locationData.length,
-                              itemBuilder: (BuildContext context, int index) {
-                                final locationName =
-                                    locationData[index]["name"];
-                                return Column(
-                                  children: [
-                                    ListTile(
-                                      title: Text(
-                                        locationName.toString(),
-                                        style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                          color: Colors.black87,
-                                        ),
-                                      ),
-                                      onTap: () {
-                                        // Set the selected location in the TextField
-                                        controllerUserAcc.stateController.text =
-                                            locationName.toString();
-                                        Navigator.pop(
-                                            context); // Close the bottom sheet
+                          Obx(
+                            () => searchResult.length == 0
+                                ? Expanded(
+                                    child: ListView.builder(
+                                      controller: scrollController,
+                                      itemCount: locationData.length,
+                                      itemBuilder:
+                                          (BuildContext context, int index) {
+                                        final locationName =
+                                            locationData[index]["name"];
+                                        return Column(
+                                          children: [
+                                            ListTile(
+                                              title: Text(
+                                                locationName.toString(),
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Colors.black87,
+                                                ),
+                                              ),
+                                              onTap: () {
+                                                // Set the selected location in the TextField
+                                                controllerUserAcc
+                                                        .stateController.text =
+                                                    locationName.toString();
+                                                Navigator.pop(
+                                                    context); // Close the bottom sheet
+                                              },
+                                            ),
+                                            Divider(
+                                              height: 1,
+                                              color: Colors.grey[300],
+                                            ),
+                                          ],
+                                        );
                                       },
                                     ),
-                                    Divider(
-                                      height: 1,
-                                      color: Colors.grey[300],
+                                  )
+                                : Expanded(
+                                    child: ListView.builder(
+                                      shrinkWrap: true,
+                                      controller: scrollController,
+                                      itemCount: searchResult.length,
+                                      itemBuilder:
+                                          (BuildContext context, int index) {
+                                        final locationName =
+                                            locationData[index]["name"];
+                                        return Column(
+                                          children: [
+                                            ListTile(
+                                              title: Text(
+                                                searchResult[index]["name"],
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Colors.black87,
+                                                ),
+                                              ),
+                                              onTap: () {
+                                                // Set the selected location in the TextField
+                                                controllerUserAcc
+                                                        .stateController.text =
+                                                    locationName.toString();
+                                                Navigator.pop(
+                                                    context); // Close the bottom sheet
+                                              },
+                                            ),
+                                            Divider(
+                                              height: 1,
+                                              color: Colors.grey[300],
+                                            ),
+                                          ],
+                                        );
+                                      },
                                     ),
-                                  ],
-                                );
-                              },
-                            ),
+                                  ),
                           ),
                         ],
                       ),

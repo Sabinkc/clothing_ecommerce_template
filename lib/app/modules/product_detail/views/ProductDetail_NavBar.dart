@@ -48,7 +48,7 @@ class ProductDetailNavBar extends StatelessWidget {
                     ? Icons.favorite
                     : Icons.favorite_border,
                 size: 40,
-                color: Colors.green,
+                color: Colors.black,
               ),
             ),
           ),

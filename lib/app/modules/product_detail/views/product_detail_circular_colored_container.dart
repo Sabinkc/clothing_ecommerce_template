@@ -13,6 +13,7 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Display the name of the selected color
         Obx(() => Text(

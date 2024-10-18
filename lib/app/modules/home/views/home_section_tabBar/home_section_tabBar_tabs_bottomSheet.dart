@@ -39,213 +39,217 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
         color: Colors.white,
       ),
       child: SingleChildScrollView(
-          child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            GestureDetector(
-                onTap: () {
-                  controllerProductDetail.selectedColorName.value = '';
-                  Navigator.pop(context);
-                },
-                child: const Align(
-                    alignment: Alignment.topRight, child: Icon(Icons.cancel))),
-            Obx(
-              () => SizedBox(
-                height: 200,
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  itemCount: controllerProductDetail.selectedImages.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    // Map<String, dynamic> item = coloredImgUrl[count.value][index];
-                    // String key = item.keys.first;
-                    // String value = item.values.first;
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              GestureDetector(
+                  onTap: () {
+                    controllerProductDetail.selectedColorName.value = '';
+                    Navigator.pop(context);
+                  },
+                  child: const Align(
+                      alignment: Alignment.topRight,
+                      child: Icon(Icons.cancel))),
+              Obx(
+                () => SizedBox(
+                  height: 200,
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: controllerProductDetail.selectedImages.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      // Map<String, dynamic> item = coloredImgUrl[count.value][index];
+                      // String key = item.keys.first;
+                      // String value = item.values.first;
 
-                    return Padding(
-                      padding: const EdgeInsets.only(left: 20),
-                      child: Container(
-                        // margin: EdgeInsets.symmetric(horizontal: 8),
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          image: DecorationImage(
-                            image: NetworkImage(
-                              controllerProductDetail.selectedImages[index],
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Container(
+                          // margin: EdgeInsets.symmetric(horizontal: 8),
+                          width: 200,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                controllerProductDetail.selectedImages[index],
+                              ),
+                              //   controller.selectedImages.isNotEmpty
+                              //       ? controller.selectedImages[index]
+                              //       : 'https://example.com/default-image.jpg',
+                              // ),
+                              fit: BoxFit.contain,
                             ),
-                            //   controller.selectedImages.isNotEmpty
-                            //       ? controller.selectedImages[index]
-                            //       : 'https://example.com/default-image.jpg',
-                            // ),
-                            fit: BoxFit.contain,
                           ),
                         ),
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
               ),
-            ),
-            // Container(
-            //   height: 200,
-            //   margin: const EdgeInsets.all(0),
-            //   decoration: BoxDecoration(
-            //     color: Colors.white,
-            //     borderRadius: BorderRadius.circular(16),
-            //     image: DecorationImage(
-            //       image: NetworkImage(
-            //           homeSectionTabsData["color"]['0xffFF0000'][0]),
-            //       // image: NetworkImage(
-            //       //   controller.selectedImages[count.value] ??
-            //       //       'https://example.com/static-image.jpg',
-            //       // ),
-            //       fit: BoxFit.contain,
-            //     ),
-            //   ),
-            // ),
-            const SizedBox(height: 15),
-            Text(
-              homeSectionTabsData["name"],
-              style: TextStyle(
-                  fontSize: TextSize.normal, fontWeight: FontWeight.w700),
-            ),
-            const SizedBox(height: 15),
-            ProductDetailPrice(priceDetails: homeSectionTabsData),
-            const SizedBox(height: 15),
-            // Text(
-            //   "Colors :",
-            //   style: TextStyle(
-            //     fontSize: TextSize.normal,
-            //     fontWeight: FontWeight.w700,
-            //   ),
-            // ),
-            // const SizedBox(height: 10),
-            ProductDetailCircularColoredContainer(
-              colorList: colordata.isNotEmpty
-                  ? homeSectionTabsData["color"]
-                  : {
-                      0x00000000: [
-                        'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
-                      ],
-                    },
-            ),
-            const SizedBox(height: 15),
-            Text(
-              "Size",
-              style: TextStyle(
-                fontSize: TextSize.normal,
-                fontWeight: FontWeight.w700,
+              // Container(
+              //   height: 200,
+              //   margin: const EdgeInsets.all(0),
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     borderRadius: BorderRadius.circular(16),
+              //     image: DecorationImage(
+              //       image: NetworkImage(
+              //           homeSectionTabsData["color"]['0xffFF0000'][0]),
+              //       // image: NetworkImage(
+              //       //   controller.selectedImages[count.value] ??
+              //       //       'https://example.com/static-image.jpg',
+              //       // ),
+              //       fit: BoxFit.contain,
+              //     ),
+              //   ),
+              // ),
+              const SizedBox(height: 25),
+              Text(
+                homeSectionTabsData["name"],
+                style: TextStyle(
+                    fontSize: TextSize.normal, fontWeight: FontWeight.w700),
               ),
-            ),
-            const SizedBox(height: 15),
-            size.isNotEmpty
-                ? ProductDetailSize(
-                    sizeList: homeSectionTabsData["size"],
-                  )
-                : const SizedBox(),
-            const SizedBox(height: 15),
-            // Text(
-            //   "Quantity",
-            //   style: TextStyle(
-            //     fontSize: TextSize.normal,
-            //     fontWeight: FontWeight.w700,
-            //   ),
-            // ),
-            // const SizedBox(height: 15),
-            // ProductDetailQuantity(),
-            // const SizedBox(height: 15),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    controllerFavorites.searchProductId(
-                        homeSectionTabsData["product_id"], homeSectionTabsData);
-                  },
-                  child: Obx(
-                    () => Icon(
-                      controllerFavorites
-                              .isFavorite(homeSectionTabsData["product_id"])
-                          ? Icons.favorite
-                          : Icons.favorite_border,
-                      size: 40,
-                      color: Colors.green,
+              const SizedBox(height: 15),
+              ProductDetailPrice(priceDetails: homeSectionTabsData),
+              const SizedBox(height: 15),
+              // Text(
+              //   "Colors :",
+              //   style: TextStyle(
+              //     fontSize: TextSize.normal,
+              //     fontWeight: FontWeight.w700,
+              //   ),
+              // ),
+              // const SizedBox(height: 10),
+              ProductDetailCircularColoredContainer(
+                colorList: colordata.isNotEmpty
+                    ? homeSectionTabsData["color"]
+                    : {
+                        0x00000000: [
+                          'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                        ],
+                      },
+              ),
+              const SizedBox(height: 15),
+              Text(
+                "Size",
+                style: TextStyle(
+                  fontSize: TextSize.normal,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: 15),
+              size.isNotEmpty
+                  ? ProductDetailSize(
+                      sizeList: homeSectionTabsData["size"],
+                    )
+                  : const SizedBox(),
+              const SizedBox(height: 15),
+              // Text(
+              //   "Quantity",
+              //   style: TextStyle(
+              //     fontSize: TextSize.normal,
+              //     fontWeight: FontWeight.w700,
+              //   ),
+              // ),
+              // const SizedBox(height: 15),
+              // ProductDetailQuantity(),
+              // const SizedBox(height: 15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      controllerFavorites.searchProductId(
+                          homeSectionTabsData["product_id"],
+                          homeSectionTabsData);
+                    },
+                    child: Obx(
+                      () => Icon(
+                        controllerFavorites
+                                .isFavorite(homeSectionTabsData["product_id"])
+                            ? Icons.favorite
+                            : Icons.favorite_border,
+                        size: 40,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    // controllerProductDetail.clear();
-                    if (controllerProductDetail.selectedColor.value == 0) {
+                  GestureDetector(
+                    onTap: () {
+                      // controllerProductDetail.clear();
+                      if (controllerProductDetail.selectedColor.value == 0) {
+                        Get.snackbar(
+                          'Selection Error',
+                          'Please select a color.',
+                          snackPosition: SnackPosition.BOTTOM,
+                          backgroundColor: Colors.redAccent,
+                          colorText: Colors.white,
+                        );
+                        return;
+                      }
+
+                      if (controllerProductDetail.selectedSize.value.isEmpty) {
+                        Get.snackbar(
+                          'Selection Error',
+                          'Please select a size.',
+                          snackPosition: SnackPosition.BOTTOM,
+                          backgroundColor: Colors.redAccent,
+                          colorText: Colors.white,
+                        );
+                        return;
+                      }
+
+                      final String cartId = UniqueKey().toString();
+                      controller.cartProducts.add(
+                        {
+                          "title": homeSectionTabsData["title"],
+                          "cartId": cartId,
+                          "price": homeSectionTabsData["price"],
+                          "discount": homeSectionTabsData["discount"],
+                          "realprice": homeSectionTabsData["realprice"],
+                          "size": controllerProductDetail.selectedSize.value,
+                          "quantity":
+                              controllerProductDetail.quantityIndex.value,
+                          "image": controllerProductDetail.selectedImages[
+                              controllerProductDetail
+                                  .detailViewProductCustomClickableContainer
+                                  .value],
+                          "color": controllerProductDetail.selectedColor.value,
+                        },
+                      );
+                      // controller.selectedProducts.add(cartId);
+                      controller.toggleSelected(cartId);
+                      controllerProductDetail.clear();
                       Get.snackbar(
-                        'Selection Error',
-                        'Please select a color.',
+                        'Added To Cart',
+                        'Go to Cart to View Products',
                         snackPosition: SnackPosition.BOTTOM,
-                        backgroundColor: Colors.redAccent,
+                        backgroundColor: Colors.green,
                         colorText: Colors.white,
                       );
-                      return;
-                    }
+                      Get.to(ShopView());
+                      // Get.to(AddedCart(
 
-                    if (controllerProductDetail.selectedSize.value.isEmpty) {
-                      Get.snackbar(
-                        'Selection Error',
-                        'Please select a size.',
-                        snackPosition: SnackPosition.BOTTOM,
-                        backgroundColor: Colors.redAccent,
-                        colorText: Colors.white,
-                      );
-                      return;
-                    }
+                      //     // addedCartData: addToCartData,
 
-                    final String cartId = UniqueKey().toString();
-                    controller.cartProducts.add(
-                      {
-                        "title": homeSectionTabsData["title"],
-                        "cartId": cartId,
-                        "price": homeSectionTabsData["price"],
-                        "discount": homeSectionTabsData["discount"],
-                        "realprice": homeSectionTabsData["realprice"],
-                        "size": controllerProductDetail.selectedSize.value,
-                        "quantity": controllerProductDetail.quantityIndex.value,
-                        "image": controllerProductDetail.selectedImages[
-                            controllerProductDetail
-                                .detailViewProductCustomClickableContainer
-                                .value],
-                        "color": controllerProductDetail.selectedColor.value,
-                      },
-                    );
-                    // controller.selectedProducts.add(cartId);
-                    controller.toggleSelected(cartId);
-                    controllerProductDetail.clear();
-                    Get.snackbar(
-                      'Added To Cart',
-                      'Go to Cart to View Products',
-                      snackPosition: SnackPosition.BOTTOM,
-                      backgroundColor: Colors.green,
-                      colorText: Colors.white,
-                    );
-                    Get.to(ShopView());
-                    // Get.to(AddedCart(
-
-                    //     // addedCartData: addToCartData,
-
-                    //     // sizeList: sizeList,
-                    //     // sizeList: controller_two.sizeList,
-                    //     ));
-                  },
-                  child: LargeButtonReusable(
-                    title: "Add to Cart",
-                    width: MediaQuery.of(context).size.width * 0.7,
-                    color: Colors.black,
+                      //     // sizeList: sizeList,
+                      //     // sizeList: controller_two.sizeList,
+                      //     ));
+                    },
+                    child: LargeButtonReusable(
+                      title: "Add to Cart",
+                      width: MediaQuery.of(context).size.width * 0.7,
+                      color: Colors.black,
+                    ),
                   ),
-                ),
-              ],
-            ),
-          ],
+                ],
+              ),
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
