@@ -47,6 +47,7 @@ class ProductDetailNavBar extends StatelessWidget {
                 controllerFavorites.isFavorite(navBarData["product_id"])
                     ? Icons.favorite
                     : Icons.favorite_border,
+                size: 40,
                 color: Colors.green,
               ),
             ),

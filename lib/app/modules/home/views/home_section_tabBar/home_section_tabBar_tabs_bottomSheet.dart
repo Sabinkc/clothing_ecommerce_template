@@ -46,25 +46,64 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
           children: [
             GestureDetector(
                 onTap: () {
+                  controllerProductDetail.selectedColorName.value = '';
                   Navigator.pop(context);
                 },
-                child: const Icon(Icons.cancel)),
-            Container(
-              height: 200,
-              margin: const EdgeInsets.all(0),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                  image: NetworkImage(homeSectionTabsImg),
-                  // image: NetworkImage(
-                  //   controller.selectedImages[count.value] ??
-                  //       'https://example.com/static-image.jpg',
-                  // ),
-                  fit: BoxFit.contain,
+                child: const Align(
+                    alignment: Alignment.topRight, child: Icon(Icons.cancel))),
+            Obx(
+              () => SizedBox(
+                height: 200,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemCount: controllerProductDetail.selectedImages.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    // Map<String, dynamic> item = coloredImgUrl[count.value][index];
+                    // String key = item.keys.first;
+                    // String value = item.values.first;
+
+                    return Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Container(
+                        // margin: EdgeInsets.symmetric(horizontal: 8),
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              controllerProductDetail.selectedImages[index],
+                            ),
+                            //   controller.selectedImages.isNotEmpty
+                            //       ? controller.selectedImages[index]
+                            //       : 'https://example.com/default-image.jpg',
+                            // ),
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
+            // Container(
+            //   height: 200,
+            //   margin: const EdgeInsets.all(0),
+            //   decoration: BoxDecoration(
+            //     color: Colors.white,
+            //     borderRadius: BorderRadius.circular(16),
+            //     image: DecorationImage(
+            //       image: NetworkImage(
+            //           homeSectionTabsData["color"]['0xffFF0000'][0]),
+            //       // image: NetworkImage(
+            //       //   controller.selectedImages[count.value] ??
+            //       //       'https://example.com/static-image.jpg',
+            //       // ),
+            //       fit: BoxFit.contain,
+            //     ),
+            //   ),
+            // ),
             const SizedBox(height: 15),
             Text(
               homeSectionTabsData["name"],
@@ -74,14 +113,14 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
             const SizedBox(height: 15),
             ProductDetailPrice(priceDetails: homeSectionTabsData),
             const SizedBox(height: 15),
-            Text(
-              "Colors :",
-              style: TextStyle(
-                fontSize: TextSize.normal,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            const SizedBox(height: 10),
+            // Text(
+            //   "Colors :",
+            //   style: TextStyle(
+            //     fontSize: TextSize.normal,
+            //     fontWeight: FontWeight.w700,
+            //   ),
+            // ),
+            // const SizedBox(height: 10),
             ProductDetailCircularColoredContainer(
               colorList: colordata.isNotEmpty
                   ? homeSectionTabsData["color"]
@@ -130,6 +169,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                               .isFavorite(homeSectionTabsData["product_id"])
                           ? Icons.favorite
                           : Icons.favorite_border,
+                      size: 40,
                       color: Colors.green,
                     ),
                   ),
@@ -197,7 +237,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                   },
                   child: LargeButtonReusable(
                     title: "Add to Cart",
-                    width: MediaQuery.of(context).size.width * 0.8,
+                    width: MediaQuery.of(context).size.width * 0.7,
                     color: Colors.black,
                   ),
                 ),

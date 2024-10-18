@@ -12,52 +12,60 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // controller.a.value = colorList.values.first;
-    return SizedBox(
-      height: 40,
-      child: ListView(
-        scrollDirection: Axis.horizontal, // Make it horizontal if needed
-        shrinkWrap: true,
-        children: colorList.entries
-            .map(
-              (e) => GestureDetector(
-                onTap: () {
-                  controller.updateSelectedColor(e.key, e.value);
-                  // controller.selectedColorIndex.value = //i want the index here
-                },
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 5),
-                  child: Obx(
-                    () => Container(
-                      height: 30,
-                      width: 30,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Color(controller.selectedColor.value == e.key
-                              ? e.key
-                              : 0x00000000), // Use e.key as the color for the border
-                          width: 2.0,
-                        ),
-                      ),
-                      child: Center(
-                        child: Container(
-                          height: 20,
-                          width: 20,
+    return Column(
+      children: [
+        // Display the name of the selected color
+        Obx(() => Text(
+              'Color: ${controller.selectedColorName.value}',
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            )),
+        SizedBox(
+          height: 40,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            shrinkWrap: true,
+            children: colorList.entries
+                .map(
+                  (e) => GestureDetector(
+                    onTap: () {
+                      controller.updateSelectedColor(e.key, e.value);
+                      controller.updateColor(e.key, e.value);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 0),
+                      child: Obx(
+                        () => Container(
+                          height: 30,
+                          width: 30,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Color(e
-                                .key), // Use e.value as the color for the inner circle
+                            border: Border.all(
+                              color: Color(
+                                  controller.selectedColor.value == e.key
+                                      ? e.key
+                                      : 0x00000000), // Border color
+                              width: 2.0,
+                            ),
+                          ),
+                          child: Center(
+                            child: Container(
+                              height: 20,
+                              width: 20,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(e.key), // Inner circle color
+                              ),
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ),
-            )
-            .toList(),
-      ),
+                )
+                .toList(),
+          ),
+        ),
+      ],
     );
   }
 }

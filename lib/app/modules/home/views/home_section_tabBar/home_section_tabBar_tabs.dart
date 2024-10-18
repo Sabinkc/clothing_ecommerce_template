@@ -185,7 +185,18 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                 //   child:
                                 GestureDetector(
                                   onTap: () {
-                                    showBottomSheet<void>(
+                                    Map imageStore = product["color"] ?? {};
+                                    Map images = imageStore.isNotEmpty
+                                        ? product["color"]
+                                        : {
+                                            0x00000000: [
+                                              'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                                            ],
+                                          };
+                                    List test = images.entries.first.value;
+                                    controllerProduct.selectedImages
+                                        .assignAll(test);
+                                    showModalBottomSheet<void>(
                                       context: context,
                                       builder: (BuildContext context) {
                                         return HomeSectionTabBarTabsBottomSheet(

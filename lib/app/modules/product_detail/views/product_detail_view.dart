@@ -116,6 +116,12 @@ class ProductDetailView extends StatelessWidget {
               )
             ],
             centerTitle: false,
+            leading: GestureDetector(
+                onTap: () {
+                  controller.selectedColorName.value = '';
+                  Get.back();
+                },
+                child: const Icon(Icons.arrow_back_ios)),
           ),
           body: Container(
             height: double.infinity,
@@ -206,14 +212,14 @@ class ProductDetailView extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(height: 10),
-                        Text(
-                          "Colors :",
-                          style: TextStyle(
-                            fontSize: TextSize.normal,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        const SizedBox(height: 10),
+                        // Text(
+                        //   "Colors :",
+                        //   style: TextStyle(
+                        //     fontSize: TextSize.normal,
+                        //     fontWeight: FontWeight.w700,
+                        //   ),
+                        // ),
+                        // const SizedBox(height: 10),
                         ProductDetailCircularColoredContainer(
                           colorList: colordata.isNotEmpty
                               ? data["color"]

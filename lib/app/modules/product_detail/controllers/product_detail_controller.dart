@@ -25,7 +25,40 @@ class ProductDetailController extends GetxController {
     // selectedImages.clear(); // Clear the image list
   }
 
+//THIS IS FOR PRODUCT_DETAIL_CIRCULAR_COLORED_CONTAINER
   final count = 0.obs;
+  var color = 0xffFF0000.obs; // Default color
+  var selectedColorName = ''.obs; // Default color name
+
+  Map<int, String> colorNames = {
+    0xffFF0000: 'Red',
+    0xff00FF00: 'Green',
+    0xff0000FF: 'Blue',
+    0xffFFFF00: 'Yellow',
+    0xffFFA500: 'Orange',
+    0xff800080: 'Purple',
+    0xffA52A2A: 'Brown',
+    0xffFFC0CB: 'Pink',
+    0xff808080: 'Gray',
+    0xff000000: 'Black',
+    0xffFFFFFF: 'White',
+    0xff008080: 'Teal',
+    0xff8B4513: 'SaddleBrown',
+    0xffD2691E: 'Chocolate',
+    0xffFFD700: 'Gold',
+    0xff00FFFF: 'Cyan',
+    0xff7FFF00: 'Chartreuse',
+    0xffDC143C: 'Crimson',
+    0xffFF1493: 'DeepPink',
+    0xffFF6347: 'Tomato',
+  };
+
+  void updateColor(int color, List<String> images) {
+    selectedColor.value = color;
+    selectedColorName.value = colorNames[color] ?? 'Unknown';
+  }
+}
+
   // @override
   // void onInit() {
   //   super.onInit();
@@ -41,5 +74,5 @@ class ProductDetailController extends GetxController {
   //   super.onClose();
   // }
 
-  void increment() => count.value++;
-}
+//   void increment() => count.value++;
+// }

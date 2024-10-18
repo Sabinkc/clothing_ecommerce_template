@@ -49,7 +49,7 @@ class HomeView extends GetView<HomeController> {
       child: Scaffold(
         backgroundColor: AppColors.lightSilver,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(110),
+          preferredSize: const Size.fromHeight(121),
           child: Column(
             children: [
               AppBarMainPage(
@@ -114,7 +114,7 @@ class HomeView extends GetView<HomeController> {
                         //   ),
                         // ),
 
-                        const SizedBox(height: 20),
+                        // const SizedBox(height: 20),
                         CarouselSliderReusable(imgList: imgList),
                         const SizedBox(height: 20),
                         Padding(
@@ -160,7 +160,8 @@ class HomeView extends GetView<HomeController> {
                 ),
                 SliverAppBar(
                   scrolledUnderElevation: 0,
-                  backgroundColor: AppColors.lightSilver,
+                  backgroundColor:
+                      innerBoxIsScrolled ? Colors.white : AppColors.lightSilver,
                   title: HomeSectionTabBar(),
                   floating: false,
                   pinned: true, // Keeps app bar visible on scroll
@@ -168,7 +169,7 @@ class HomeView extends GetView<HomeController> {
                   elevation: 0, // Prevents shadow effect
                   expandedHeight: 0, // Disable collapsing behavior
                   toolbarHeight:
-                      15, // Removes the toolbar height to remove extra space
+                      30, // Removes the toolbar height to remove extra space
                   forceElevated:
                       innerBoxIsScrolled, // Forces elevation when scrolled
                 ),
