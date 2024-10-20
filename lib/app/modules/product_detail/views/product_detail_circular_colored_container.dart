@@ -16,10 +16,12 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Display the name of the selected color
-        Obx(() => Text(
-              'Color: ${controller.selectedColorName.value}',
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            )),
+        Obx(
+          () => Text(
+            'Color: ${controller.selectedColorName.value}',
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
+        ),
         SizedBox(
           height: 40,
           child: ListView(

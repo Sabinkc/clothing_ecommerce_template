@@ -76,6 +76,7 @@ class ShopView extends GetView<ShopController> {
                   // : 'https://static-00.iconduck.com/assets.00/no-image-icon-512x512-lfoanl0w.png'; // First image URL of the first color
                   return GestureDetector(
                     onTap: () {
+                      controllerProduct.selectedColorName.value = '';
                       // var productColors = (product["color"] as List<dynamic>)
                       //     .map((e) => e as int)
                       //     .toList();

@@ -7,6 +7,7 @@ import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:icons_plus/icons_plus.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../controllers/product_detail_controller.dart';
 
@@ -45,10 +46,10 @@ class ProductDetailNavBar extends StatelessWidget {
             child: Obx(
               () => Icon(
                 controllerFavorites.isFavorite(navBarData["product_id"])
-                    ? Icons.favorite
-                    : Icons.favorite_border,
+                    ? AntDesign.heart_fill
+                    : AntDesign.heart_outline,
                 size: 40,
-                color: Colors.black,
+                color: Colors.black.withOpacity(0.8),
               ),
             ),
           ),
@@ -109,7 +110,7 @@ class ProductDetailNavBar extends StatelessWidget {
               );
             },
             child: const LargeButtonReusable(
-              title: "Buy Now",
+              title: "BUY NOW",
               width: 150,
               color: Colors.black,
             ),
@@ -177,7 +178,7 @@ class ProductDetailNavBar extends StatelessWidget {
               // );
             },
             child: const LargeButtonReusable(
-              title: "Add to Cart",
+              title: "ADD TO CART",
               width: 150,
               color: Colors.black,
             ),

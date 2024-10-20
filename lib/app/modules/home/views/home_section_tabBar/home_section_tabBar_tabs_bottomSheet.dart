@@ -7,6 +7,7 @@ import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/shop/views/shop_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:icons_plus/icons_plus.dart';
 import '../../../favourites/controllers/favourites_controller.dart';
 import '../../../product_detail/controllers/product_detail_controller.dart';
 import '../../../product_detail/views/product_detail_circular_colored_container.dart';
@@ -169,10 +170,10 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                       () => Icon(
                         controllerFavorites
                                 .isFavorite(homeSectionTabsData["product_id"])
-                            ? Icons.favorite
-                            : Icons.favorite_outline,
+                            ? AntDesign.heart_fill
+                            : AntDesign.heart_outline,
                         size: 40,
-                        color: Colors.grey,
+                        color: Colors.black.withOpacity(0.8),
                       ),
                     ),
                   ),
