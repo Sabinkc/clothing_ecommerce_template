@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -47,7 +49,7 @@ class TextFieldCountry extends StatelessWidget {
                                     color: Colors.grey.withOpacity(0.5),
                                     spreadRadius: 2,
                                     blurRadius: 5,
-                                    offset: Offset(0, 3), // Shadow position
+                                    offset: const Offset(0, 3), // Shadow position
                                   ),
                                 ],
                               ),
@@ -57,13 +59,13 @@ class TextFieldCountry extends StatelessWidget {
                                 children: [
                                   Text(
                                     value,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.black,
                                       fontSize: 16,
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
-                                  Icon(Icons.check,
+                                  const Icon(Icons.check,
                                       color: Colors
                                           .green), // Optional icon to indicate selection
                                 ],

@@ -169,7 +169,7 @@ class HomeView extends GetView<HomeController> {
                   elevation: 0, // Prevents shadow effect
                   expandedHeight: 0, // Disable collapsing behavior
                   toolbarHeight:
-                      30, // Removes the toolbar height to remove extra space
+                      35, // Removes the toolbar height to remove extra space
                   forceElevated:
                       innerBoxIsScrolled, // Forces elevation when scrolled
                 ),

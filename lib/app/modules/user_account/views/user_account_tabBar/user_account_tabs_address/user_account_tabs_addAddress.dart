@@ -7,12 +7,9 @@ import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_address/textfield_state.dart';
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_address/textfield_zone.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
-
 import '../../../../../constants/text_size.dart';
-import '../../../../../data/location.dart';
 import '../../../../reusable_widgets/LargeButtonReusable.dart';
 import '../../../../reusable_widgets/TextFormFieldReusable.dart';
 

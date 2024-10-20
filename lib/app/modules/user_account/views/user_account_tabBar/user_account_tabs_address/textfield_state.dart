@@ -1,8 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-
-import '../../../../../data/alldata.dart';
 import '../../../../../data/location.dart';
 import '../../../../reusable_widgets/filter_view/filter_view.dart';
 import '../../../controllers/user_account_controller.dart';
@@ -50,7 +50,7 @@ class TextFieldState extends StatelessWidget {
               context: context,
               isScrollControlled:
                   true, // Allow the bottom sheet to cover the whole screen
-              shape: RoundedRectangleBorder(
+              shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.vertical(
                   top: Radius.circular(20), // Rounded top corners
                 ),
@@ -67,7 +67,7 @@ class TextFieldState extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.vertical(
+                        borderRadius: const BorderRadius.vertical(
                           top: Radius.circular(20),
                         ),
                         boxShadow: [
@@ -75,7 +75,7 @@ class TextFieldState extends StatelessWidget {
                             color: Colors.black.withOpacity(0.1),
                             blurRadius: 10,
                             spreadRadius: 5,
-                            offset: Offset(0, -3),
+                            offset: const Offset(0, -3),
                           ),
                         ],
                       ),
@@ -130,7 +130,7 @@ class TextFieldState extends StatelessWidget {
                             margin: const EdgeInsets.only(bottom: 10),
                           ),
                           Obx(
-                            () => searchResult.length == 0
+                            () => searchResult.isEmpty
                                 ? Expanded(
                                     child: ListView.builder(
                                       controller: scrollController,
@@ -144,7 +144,7 @@ class TextFieldState extends StatelessWidget {
                                             ListTile(
                                               title: Text(
                                                 locationName.toString(),
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontSize: 16,
                                                   fontWeight: FontWeight.w500,
                                                   color: Colors.black87,
@@ -182,7 +182,7 @@ class TextFieldState extends StatelessWidget {
                                             ListTile(
                                               title: Text(
                                                 searchResult[index]["name"],
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontSize: 16,
                                                   fontWeight: FontWeight.w500,
                                                   color: Colors.black87,
