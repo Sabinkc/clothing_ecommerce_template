@@ -51,10 +51,10 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                   },
                   child: const Align(
                       alignment: Alignment.topRight,
-                      child: Icon(Icons.cancel))),
+                      child: Icon(Icons.cancel_outlined))),
               Obx(
                 () => SizedBox(
-                  height: 200,
+                  height: 250,
                   child: ListView.builder(
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
@@ -65,7 +65,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                       // String value = item.values.first;
 
                       return Padding(
-                        padding: const EdgeInsets.only(right: 10),
+                        padding: const EdgeInsets.only(right: 5),
                         child: Container(
                           // margin: EdgeInsets.symmetric(horizontal: 8),
                           width: 200,
@@ -131,7 +131,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                         ],
                       },
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               Text(
                 "Size",
                 style: TextStyle(
@@ -139,7 +139,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               size.isNotEmpty
                   ? ProductDetailSize(
                       sizeList: homeSectionTabsData["size"],
@@ -170,9 +170,9 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                         controllerFavorites
                                 .isFavorite(homeSectionTabsData["product_id"])
                             ? Icons.favorite
-                            : Icons.favorite_border,
+                            : Icons.favorite_outline,
                         size: 40,
-                        color: Colors.black,
+                        color: Colors.grey,
                       ),
                     ),
                   ),
@@ -239,7 +239,8 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                       //     ));
                     },
                     child: LargeButtonReusable(
-                      title: "Add to Cart",
+                      titleSize: 20,
+                      title: "ADD TO CART",
                       width: MediaQuery.of(context).size.width * 0.7,
                       color: Colors.black,
                     ),

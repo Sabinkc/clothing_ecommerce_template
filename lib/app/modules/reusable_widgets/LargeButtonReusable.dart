@@ -9,12 +9,14 @@ class LargeButtonReusable extends StatelessWidget {
   final String title;
   final double? width;
   final Color? color;
+  final double? titleSize;
 
   const LargeButtonReusable({
     super.key,
     required this.title,
     this.width = double.infinity,
     this.color = AppColors.lightBlue,
+    this.titleSize = 15,
   });
 
   @override
@@ -28,7 +30,7 @@ class LargeButtonReusable extends StatelessWidget {
         child: Text(
           title,
           style: TextStyle(
-              fontSize: TextSize.small,
+              fontSize: titleSize,
               color: Colors.white,
               fontWeight: FontWeight.w900),
         ),

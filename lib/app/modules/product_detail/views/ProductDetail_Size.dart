@@ -33,9 +33,10 @@ class ProductDetailSize extends StatelessWidget {
             child: sizeList[index].isNotEmpty
                 ? Obx(
                     () => Container(
+                      margin: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                       // width: 50,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(0),
+                        borderRadius: BorderRadius.circular(5),
                         border: Border.all(
                           color: controller.sizeIndex.value == index
                               ? AppColors.lightBlue
@@ -44,7 +45,7 @@ class ProductDetailSize extends StatelessWidget {
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
                         child: Center(
                           child: Text(sizeList[index]),
                         ),
