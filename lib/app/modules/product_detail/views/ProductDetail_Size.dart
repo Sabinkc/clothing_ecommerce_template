@@ -39,7 +39,7 @@ class ProductDetailSize extends StatelessWidget {
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(
                           color: controller.sizeIndex.value == index
-                              ? AppColors.lightBlue
+                              ? Color(0xffF1C338)
                               : Colors.grey,
                           // width: 5,
                         ),

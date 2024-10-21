@@ -20,7 +20,7 @@ class ProductDetailPrice extends StatelessWidget {
           "${priceDetails["price"]}",
           style: const TextStyle(
             fontSize: 20,
-            color: Colors.red,
+            color: Color(0xffDBB133),
             fontWeight: FontWeight.bold,
           ),
         ),

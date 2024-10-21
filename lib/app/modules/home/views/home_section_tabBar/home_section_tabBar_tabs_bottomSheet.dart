@@ -30,6 +30,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
     Map colordata = homeSectionTabsData["color"] ?? {};
     return Scaffold(
       body: Container(
+        
         width: double.infinity,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(

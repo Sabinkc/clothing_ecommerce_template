@@ -47,7 +47,7 @@ class HomeView extends GetView<HomeController> {
     return KeyboardDismisser(
       // final controller = Get.put(HomeController());
       child: Scaffold(
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: Colors.white,
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(121),
           child: Column(

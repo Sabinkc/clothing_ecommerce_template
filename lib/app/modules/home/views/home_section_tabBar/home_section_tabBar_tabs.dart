@@ -142,10 +142,9 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                     Text(
                                       "Rs.${product["price"] ?? ""}",
                                       style: const TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w900,
-                                        color: Colors.red,
-                                      ),
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                          color: Color(0xffDBB133)),
                                     ),
                                     const SizedBox(width: 5),
 
@@ -242,7 +241,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                     product["name"] ?? "",
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(
-                                        fontSize: TextSize.small,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w700),
                                   ),
                                 ),

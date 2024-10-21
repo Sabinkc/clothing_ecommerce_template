@@ -43,9 +43,10 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color(
-                                  controller.selectedColor.value == e.key
-                                      ? e.key
+                              color:
+                                  Color(controller.selectedColor.value == e.key
+                                      // ? e.key
+                                      ? 0xffF1C338
                                       : 0x00000000), // Border color
                               width: 2.0,
                             ),
