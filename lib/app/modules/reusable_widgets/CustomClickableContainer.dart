@@ -22,6 +22,24 @@ class CustomClickableContainer extends StatelessWidget {
     required this.coloredImgUrl,
   });
 
+  void _onSwipeLeft() {
+    if (controller.detailViewProductCustomClickableContainer.value <
+        controller.selectedImages.length - 1) {
+      controller.detailViewProductCustomClickableContainer.value++;
+    } else {
+      controller.detailViewProductCustomClickableContainer.value = 0;
+    }
+  }
+
+  void _onSwipeRight() {
+    if (controller.detailViewProductCustomClickableContainer.value > 0) {
+      controller.detailViewProductCustomClickableContainer.value--;
+    } else {
+      controller.detailViewProductCustomClickableContainer.value =
+          controller.selectedImages.length - 1;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     var count = controller.detailViewProductCustomClickableContainer;
@@ -35,78 +53,94 @@ class CustomClickableContainer extends StatelessWidget {
 //     });
 //   }
 // }
-    return Obx(
-      () => Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          // Main Image Container
-          Container(
-            height: 300,
-            margin: const EdgeInsets.all(0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(0),
-              image: DecorationImage(
-                image: NetworkImage(
-                  controller.selectedImages.isNotEmpty
-                      ? controller.selectedImages[count.value]
-                      : 'https://example.com/static-image.jpg',
+    return GestureDetector(
+      onHorizontalDragEnd: (details) {
+        // Detect swipe direction based on velocity
+        if (details.velocity.pixelsPerSecond.dx > 0) {
+          // Swiped right
+          _onSwipeRight();
+        } else if (details.velocity.pixelsPerSecond.dx < 0) {
+          // Swiped left
+          _onSwipeLeft();
+        }
+      },
+      child: Obx(
+        () => Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            // Main Image Container
+            Container(
+              height: 500,
+              margin: const EdgeInsets.all(0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(0),
+                image: DecorationImage(
+                  image: NetworkImage(
+                    controller.selectedImages.isNotEmpty
+                        ? controller.selectedImages[count.value]
+                        : 'https://example.com/static-image.jpg',
+                  ),
+                  // image: NetworkImage(
+                  //   controller.selectedImages[count.value] ??
+                  //       'https://example.com/static-image.jpg',
+                  // ),
+                  fit: BoxFit.cover,
                 ),
-                // image: NetworkImage(
-                //   controller.selectedImages[count.value] ??
-                //       'https://example.com/static-image.jpg',
-                // ),
-                fit: BoxFit.contain,
               ),
             ),
-          ),
-          const SizedBox(height: 20),
+            Column(
+              children: [
+                const SizedBox(height: 20),
 
-          // Horizontal Image Scroller
-          Container(
-            height: 80,
-            margin: const EdgeInsets.symmetric(horizontal: 0),
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: controller.selectedImages.length,
-              itemBuilder: (BuildContext context, int index) {
-                // Map<String, dynamic> item = coloredImgUrl[count.value][index];
-                // String key = item.keys.first;
-                // String value = item.values.first;
+                // Horizontal Image Scroller
+                Container(
+                  height: 80,
+                  margin: const EdgeInsets.symmetric(horizontal: 0),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: controller.selectedImages.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      // Map<String, dynamic> item = coloredImgUrl[count.value][index];
+                      // String key = item.keys.first;
+                      // String value = item.values.first;
 
-                return GestureDetector(
-                  onTap: () {
-                    count.value = index;
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Container(
-                      // margin: EdgeInsets.symmetric(horizontal: 8),
-                      width: 70,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                            color: count.value == index
-                                ? Colors.blue
-                                : Colors.white,
-                            width: 2),
-                        image: DecorationImage(
-                          image: NetworkImage(
-                            controller.selectedImages[index],
+                      return GestureDetector(
+                        onTap: () {
+                          count.value = index;
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Container(
+                            // margin: EdgeInsets.symmetric(horizontal: 8),
+                            width: 70,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                  color: count.value == index
+                                      ? Colors.blue
+                                      : Colors.white,
+                                  width: 2),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  controller.selectedImages[index],
+                                ),
+                                //   controller.selectedImages.isNotEmpty
+                                //       ? controller.selectedImages[index]
+                                //       : 'https://example.com/default-image.jpg',
+                                // ),
+                                fit: BoxFit.contain,
+                              ),
+                            ),
                           ),
-                          //   controller.selectedImages.isNotEmpty
-                          //       ? controller.selectedImages[index]
-                          //       : 'https://example.com/default-image.jpg',
-                          // ),
-                          fit: BoxFit.contain,
                         ),
-                      ),
-                    ),
+                      );
+                    },
                   ),
-                );
-              },
-            ),
-          ),
-        ],
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

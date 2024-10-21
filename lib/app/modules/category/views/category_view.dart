@@ -8,7 +8,6 @@ import 'package:icons_plus/icons_plus.dart';
 import '../../../data/category_data.dart';
 import '../../home/controllers/home_controller.dart';
 
-
 import '../controllers/category_controller.dart';
 import 'category_detail_view.dart';
 
@@ -18,7 +17,6 @@ class CategoryView extends GetView<CategoryController> {
   CategoryView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.lightSilver,
@@ -62,16 +60,16 @@ class CategoryView extends GetView<CategoryController> {
                               selectedCategory[0]["sub_category"][0]
                                   ["sub_category_id"];
                         }
-                    
+
                         Get.to(
                           CategoryDetailView(),
-                          transition: Transition
-                              .leftToRightWithFade, // Professional fade-in effect
-                          duration: const Duration(
-                              milliseconds:
-                                  500), // Smooth duration for the transition
-                          curve: Curves
-                              .easeInOut, // Adds smoothness with easing in and out
+                          // transition: Transition
+                          //     .leftToRightWithFade, // Professional fade-in effect
+                          // duration: const Duration(
+                          //     milliseconds:
+                          //         500), // Smooth duration for the transition
+                          // curve: Curves
+                          //     .easeInOut, // Adds smoothness with easing in and out
                         );
                       },
                       child:

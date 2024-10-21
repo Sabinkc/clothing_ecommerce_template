@@ -40,13 +40,13 @@ class AppBarMainPage extends StatelessWidget {
                 onTap: () {
                   Get.to(
                     FavouritesView(),
-                    transition: Transition
-                        .leftToRightWithFade, // Professional fade-in effect
-                    duration: const Duration(
-                        milliseconds:
-                            500), // Smooth duration for the transition
-                    curve: Curves
-                        .easeInOut, // Adds smoothness with easing in and out
+                    // transition: Transition
+                    //     .leftToRightWithFade, // Professional fade-in effect
+                    // duration: const Duration(
+                    //     milliseconds:
+                    //         500), // Smooth duration for the transition
+                    // curve: Curves
+                    //     .easeInOut, // Adds smoothness with easing in and out
                   );
                 },
                 child: Stack(
@@ -91,13 +91,13 @@ class AppBarMainPage extends StatelessWidget {
                 onTap: () {
                   Get.to(
                     () => AddedCart(),
-                    transition: Transition
-                        .leftToRightWithFade, // Professional fade-in effect
-                    duration: const Duration(
-                        milliseconds:
-                            500), // Smooth duration for the transition
-                    curve: Curves
-                        .easeInOut, // Adds smoothness with easing in and out
+                    // transition: Transition
+                    //     .leftToRightWithFade, // Professional fade-in effect
+                    // duration: const Duration(
+                    //     milliseconds:
+                    //         500), // Smooth duration for the transition
+                    // curve: Curves
+                    //     .easeInOut, // Adds smoothness with easing in and out
                   );
                 },
                 child: Stack(
