@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/text_size.dart';
@@ -20,7 +21,7 @@ class ProductDetailPrice extends StatelessWidget {
           "${priceDetails["price"]}",
           style: const TextStyle(
             fontSize: 20,
-            color: Color(0xffDBB133),
+            color: AppColors.primaryColor,
             fontWeight: FontWeight.bold,
           ),
         ),

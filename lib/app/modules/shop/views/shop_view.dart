@@ -98,7 +98,7 @@ class ShopView extends GetView<ShopController> {
                   return GestureDetector(
                       onTap: () {
                         controllerProduct.selectedColorName.value = '';
-                      
+
                         Map imageStore = product["color"] ?? {};
                         Map images = imageStore.isNotEmpty
                             ? product["color"]
@@ -176,7 +176,7 @@ class ShopView extends GetView<ShopController> {
                                             style: const TextStyle(
                                               fontSize: 15,
                                               fontWeight: FontWeight.w900,
-                                              color: Colors.red,
+                                              color: AppColors.primaryColor,
                                             ),
                                           ),
                                           const SizedBox(width: 5),
@@ -283,7 +283,7 @@ class ShopView extends GetView<ShopController> {
                                           product["name"] ?? "",
                                           overflow: TextOverflow.ellipsis,
                                           style: TextStyle(
-                                              fontSize: TextSize.small,
+                                              fontSize: 16,
                                               fontWeight: FontWeight.w700),
                                         ),
                                       ),

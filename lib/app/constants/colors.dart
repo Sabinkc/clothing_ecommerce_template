@@ -6,4 +6,7 @@ mixin AppColors {
   static const silver = Color(0xff808080);
   static const silverBorder = Color(0xffF6F8FA);
   static const lightSilver = Color(0xffF6F8FA);
+  static const primaryColor = Color(0xffDBB133);
+  static const defaultColor = Color(0xff353e43);
+  static const grey = Color(0xff535B5F);
 }

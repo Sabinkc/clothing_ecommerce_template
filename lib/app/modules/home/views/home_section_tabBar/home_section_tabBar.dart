@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/data/sort_by.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -41,7 +42,8 @@ class HomeSectionTabBar extends StatelessWidget {
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: controller.homeSectionindex.value == sortBy[index]
-                        ? Colors.red
+                        ? AppColors.primaryColor
+                        // : AppColors.defaultColor,
                         : Colors.black,
                   ),
                 ),

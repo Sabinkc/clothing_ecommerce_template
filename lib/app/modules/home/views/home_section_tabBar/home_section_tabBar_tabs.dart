@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, must_be_immutable
 
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/favourites/controllers/favourites_controller.dart';
 import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
@@ -142,9 +143,10 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                     Text(
                                       "Rs.${product["price"] ?? ""}",
                                       style: const TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w900,
-                                          color: Color(0xffDBB133)),
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w900,
+                                        color: AppColors.primaryColor,
+                                      ),
                                     ),
                                     const SizedBox(width: 5),
 
@@ -211,7 +213,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                         decorationThickness: 2,
                                         decorationColor: Colors.grey,
                                         fontSize: 12,
-                                        color: Colors.grey,
+                                        color: AppColors.grey,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
@@ -229,7 +231,10 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                       child: Text(
                                         "Original Price ",
                                         overflow: TextOverflow.ellipsis,
-                                        style: TextStyle(fontSize: 12),
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: AppColors.grey,
+                                        ),
                                       ),
                                     )
                                   ],
@@ -241,8 +246,10 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                     product["name"] ?? "",
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w700),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                      color: AppColors.defaultColor,
+                                    ),
                                   ),
                                 ),
                               ],
