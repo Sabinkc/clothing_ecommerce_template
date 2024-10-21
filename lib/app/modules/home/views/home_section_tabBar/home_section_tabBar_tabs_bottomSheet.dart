@@ -41,18 +41,25 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
       ),
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               GestureDetector(
-                  onTap: () {
-                    controllerProductDetail.selectedColorName.value = '';
-                    Navigator.pop(context);
-                  },
-                  child: const Align(
-                      alignment: Alignment.topRight,
-                      child: Icon(Icons.cancel_outlined))),
+                onTap: () {
+                  controllerProductDetail.selectedColorName.value = '';
+                  Navigator.pop(context);
+                },
+                child: Align(
+                  alignment: Alignment.topRight,
+                  child: Image.asset(
+                    "assets/icons/cross.png",
+                    color: Colors.black,
+                    height: 20,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
               Obx(
                 () => SizedBox(
                   height: 250,
@@ -146,7 +153,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                       sizeList: homeSectionTabsData["size"],
                     )
                   : const SizedBox(),
-              const SizedBox(height: 15),
+              const SizedBox(height: 30),
               // Text(
               //   "Quantity",
               //   style: TextStyle(

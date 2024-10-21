@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../../../../data/location.dart';
-import '../../../../reusable_widgets/filter_view/filter_view.dart';
 import '../../../controllers/user_account_controller.dart';
 
 class TextFieldState extends StatelessWidget {
@@ -87,17 +86,6 @@ class TextFieldState extends StatelessWidget {
                               hintText: "Search products...",
                               prefixIcon:
                                   Icon(Icons.search, color: Colors.grey[600]),
-                              suffixIcon: GestureDetector(
-                                onTap: () {
-                                  showModalBottomSheet(
-                                    context: context,
-                                    builder: (BuildContext context) =>
-                                        FilterView(),
-                                  );
-                                },
-                                child: Icon(Icons.filter_list,
-                                    color: Colors.grey[600]),
-                              ),
                               border: InputBorder.none,
                             ),
                             onChanged: (value) {
