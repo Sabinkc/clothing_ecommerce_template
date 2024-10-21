@@ -16,9 +16,13 @@ class ProductDetailNavBar extends StatelessWidget {
   final controllerProductDetail = Get.put(ProductDetailController());
   final controllerFavorites = Get.put(FavouritesController());
   final Map navBarData;
+  final bool show;
+  final double? buttonSize;
   ProductDetailNavBar({
     super.key,
     required this.navBarData,
+    required this.show,
+    this.buttonSize = 140,
   });
 
   @override
@@ -55,66 +59,70 @@ class ProductDetailNavBar extends StatelessWidget {
           ),
 
           // Price Section
-          GestureDetector(
-            onTap: () {
-              if (controllerProductDetail.selectedColor.value == 0) {
-                Get.snackbar(
-                  'Selection Error',
-                  'Please select a color.',
-                  snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.redAccent,
-                  colorText: Colors.white,
-                );
-                return;
-              }
+          show == true
+              ? GestureDetector(
+                  onTap: () {
+                    if (controllerProductDetail.selectedColor.value == 0) {
+                      Get.snackbar(
+                        'Selection Error',
+                        'Please select a color.',
+                        snackPosition: SnackPosition.BOTTOM,
+                        backgroundColor: Colors.redAccent,
+                        colorText: Colors.white,
+                      );
+                      return;
+                    }
 
-              if (controllerProductDetail.selectedSize.value.isEmpty) {
-                Get.snackbar(
-                  'Selection Error',
-                  'Please select a size.',
-                  snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.redAccent,
-                  colorText: Colors.white,
-                );
-                return;
-              }
+                    if (controllerProductDetail.selectedSize.value.isEmpty) {
+                      Get.snackbar(
+                        'Selection Error',
+                        'Please select a size.',
+                        snackPosition: SnackPosition.BOTTOM,
+                        backgroundColor: Colors.redAccent,
+                        colorText: Colors.white,
+                      );
+                      return;
+                    }
 
-              final String cartId = UniqueKey().toString();
-              controller.checkoutList.clear();
+                    final String cartId = UniqueKey().toString();
+                    controller.checkoutList.clear();
 
-              controller.checkoutList.add(
-                {
-                  "title": navBarData["title"],
-                  "cartId": cartId,
-                  "price": navBarData["price"],
-                  "discount": navBarData["discount"],
-                  "realprice": navBarData["realprice"],
-                  "size": controllerProductDetail.selectedSize.value,
-                  "quantity": controllerProductDetail.quantityIndex.value,
-                  "image": controllerProductDetail.selectedImages[
-                      controllerProductDetail
-                          .detailViewProductCustomClickableContainer.value],
-                  "color": controllerProductDetail.selectedColor.value,
-                },
-              );
-              controller.calculateTotalPrice("buy");
-              controllerProductDetail.clear();
-              Get.to(
-                AddToCartCheckout(),
-                transition: Transition
-                    .leftToRightWithFade, // Professional fade-in effect
-                duration: const Duration(
-                    milliseconds: 500), // Smooth duration for the transition
-                curve:
-                    Curves.easeInOut, // Adds smoothness with easing in and out
-              );
-            },
-            child: const LargeButtonReusable(
-              title: "BUY NOW",
-              width: 150,
-              color: Colors.black,
-            ),
-          ),
+                    controller.checkoutList.add(
+                      {
+                        "title": navBarData["title"],
+                        "cartId": cartId,
+                        "price": navBarData["price"],
+                        "discount": navBarData["discount"],
+                        "realprice": navBarData["realprice"],
+                        "size": controllerProductDetail.selectedSize.value,
+                        "quantity": controllerProductDetail.quantityIndex.value,
+                        "image": controllerProductDetail.selectedImages[
+                            controllerProductDetail
+                                .detailViewProductCustomClickableContainer
+                                .value],
+                        "color": controllerProductDetail.selectedColor.value,
+                      },
+                    );
+                    controller.calculateTotalPrice("buy");
+                    controllerProductDetail.clear();
+                    Get.to(
+                      AddToCartCheckout(),
+                      transition: Transition
+                          .leftToRightWithFade, // Professional fade-in effect
+                      duration: const Duration(
+                          milliseconds:
+                              500), // Smooth duration for the transition
+                      curve: Curves
+                          .easeInOut, // Adds smoothness with easing in and out
+                    );
+                  },
+                  child: const LargeButtonReusable(
+                    title: "BUY NOW",
+                    width: 140,
+                    color: Colors.black,
+                  ),
+                )
+              : const SizedBox(),
 
           GestureDetector(
             onTap: () {
@@ -177,9 +185,9 @@ class ProductDetailNavBar extends StatelessWidget {
               //       Curves.easeInOut, // Adds smoothness with easing in and out
               // );
             },
-            child: const LargeButtonReusable(
+            child: LargeButtonReusable(
               title: "ADD TO CART",
-              width: 150,
+              width: buttonSize,
               color: Colors.black,
             ),
           ),

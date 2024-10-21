@@ -337,7 +337,7 @@ class ProductDetailView extends StatelessWidget {
             ),
           ),
           bottomNavigationBar: ProductDetailNavBar(
-            navBarData: data,
+            navBarData: data, show: true,
             // price: data["price"] ?? "",
           ),
         ),

@@ -6,6 +6,7 @@ import 'package:d_and_s/app/modules/product_detail/views/ProductDetail_NavBar.da
 import 'package:d_and_s/app/modules/product_detail/views/product_detail_price.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 import '../../../favourites/controllers/favourites_controller.dart';
 import '../../../product_detail/controllers/product_detail_controller.dart';
 import '../../../product_detail/views/product_detail_circular_colored_container.dart';
@@ -29,7 +30,6 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
     Map colordata = homeSectionTabsData["color"] ?? {};
     return Scaffold(
       body: Container(
-        height: 480,
         width: double.infinity,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -261,7 +261,11 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: ProductDetailNavBar(navBarData: homeSectionTabsData),
+      bottomNavigationBar: ProductDetailNavBar(
+        navBarData: homeSectionTabsData,
+        show: false,
+        buttonSize: Adaptive.w(70),
+      ),
     );
   }
 }

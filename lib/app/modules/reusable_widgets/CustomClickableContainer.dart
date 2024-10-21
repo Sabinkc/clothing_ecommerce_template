@@ -3,6 +3,7 @@
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class CustomClickableContainer extends StatelessWidget {
   final controller = Get.put(ProductDetailController());
@@ -70,7 +71,7 @@ class CustomClickableContainer extends StatelessWidget {
           children: [
             // Main Image Container
             Container(
-              height: 500,
+              height: Adaptive.h(50),
               margin: const EdgeInsets.all(0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(0),

@@ -15,7 +15,7 @@ class ProductDetailSize extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 40,
+      height: 30,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
@@ -45,7 +45,7 @@ class ProductDetailSize extends StatelessWidget {
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
+                        padding: const EdgeInsets.fromLTRB(25, 0, 25, 0),
                         child: Center(
                           child: Text(sizeList[index]),
                         ),
