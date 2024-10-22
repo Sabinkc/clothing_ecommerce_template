@@ -1,6 +1,7 @@
-
 // ignore_for_file: file_names
 
+import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
 
 import 'ProductDetailViewReusableRow.dart';
@@ -43,14 +44,14 @@ class ProductDetailAttributes extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 8.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0),
                     child: Text(
                       'Attributes',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: TextSize.normal,
                         fontWeight: FontWeight.w700,
-                        color: Colors.black87,
+                        color: AppColors.titleColorGrey,
                       ),
                     ),
                   ),
@@ -76,10 +77,10 @@ class ProductDetailAttributes extends StatelessWidget {
                                   flex: 3,
                                   child: Text(
                                     "${attribute.key}: ",
-                                    style: const TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
-                                      color: Colors.black87,
+                                    style: TextStyle(
+                                      fontSize: TextSize.normal,
+                                      fontWeight: FontWeight.w700,
+                                      color: AppColors.titleColorGrey,
                                     ),
                                   ),
                                 ),
@@ -87,9 +88,9 @@ class ProductDetailAttributes extends StatelessWidget {
                                   flex: 7,
                                   child: Text(
                                     attribute.value ?? "",
-                                    style: const TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black54,
+                                    style: TextStyle(
+                                      fontSize: TextSize.normal,
+                                      color: AppColors.textColorGrey,
                                     ),
                                   ),
                                 ),

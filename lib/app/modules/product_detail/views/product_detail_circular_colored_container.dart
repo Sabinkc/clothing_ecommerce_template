@@ -1,3 +1,5 @@
+import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,7 +21,10 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
         Obx(
           () => Text(
             'Color: ${controller.selectedColorName.value}',
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontSize: TextSize.normal,
+                fontWeight: FontWeight.w700,
+                color: AppColors.titleColorGrey),
           ),
         ),
         SizedBox(

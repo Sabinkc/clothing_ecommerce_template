@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-
+import '../../../constants/colors.dart';
 import '../controllers/forgot_password_controller.dart';
 
 class ForgotPasswordView extends GetView<ForgotPasswordController> {
@@ -35,14 +35,17 @@ class ForgotPasswordView extends GetView<ForgotPasswordController> {
                 "Forgot Password",
                 style: TextStyle(
                   fontSize: TextSize.medium,
-                  fontWeight: FontWeight.w900,
-                  // color: AppColors.lightBlue,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.titleColorGrey,
                 ),
               ),
               const SizedBox(height: 40),
               Text(
                 "Email",
-                style: TextStyle(fontSize: TextSize.small),
+                style: TextStyle(
+                    fontSize: TextSize.small,
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 10),
               TextFormFieldReusable(
@@ -60,7 +63,7 @@ class ForgotPasswordView extends GetView<ForgotPasswordController> {
                 },
                 child: const LargeButtonReusable(
                   title: "Submit",
-                  color: Colors.black,
+                  color: AppColors.buttonColor,
                 ),
               )
             ],

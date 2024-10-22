@@ -37,16 +37,16 @@ class AddToCartNavBar extends StatelessWidget {
                 Text(
                   "Total Price",
                   style: TextStyle(
-                    fontSize: TextSize.small,
-                    fontWeight: FontWeight.w700,
-                  ),
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w500,
+                      fontSize: TextSize.small),
                 ),
                 Text(
                   "Rs. $price",
                   style: TextStyle(
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
-                      color: Colors.red),
+                      color: AppColors.primaryColor),
                 )
               ],
             ),
@@ -60,7 +60,7 @@ class AddToCartNavBar extends StatelessWidget {
                 child: const LargeButtonReusable(
                   width: 200,
                   title: "Checkout",
-                  color: Colors.black,
+                  color: AppColors.buttonColor,
                 ))
           ],
         ),

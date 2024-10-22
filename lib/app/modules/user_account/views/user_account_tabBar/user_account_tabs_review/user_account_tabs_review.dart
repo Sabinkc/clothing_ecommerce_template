@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../../../../constants/colors.dart';
 import '../../../../../constants/text_size.dart';
 
 class UserAccountTabsReview extends StatelessWidget {
@@ -69,16 +70,20 @@ class UserAccountTabsReview extends StatelessWidget {
                               name[index],
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                  fontSize: TextSize.small,
-                                  fontWeight: FontWeight.w800),
+                                fontSize: TextSize.small,
+                                fontWeight: FontWeight.w500,
+                                color: AppColors.titleColorGrey,
+                              ),
                             ),
                             const SizedBox(height: 5),
                             Text(
                               "Rs. ${price[index]}",
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                  fontSize: TextSize.small,
-                                  fontWeight: FontWeight.w800),
+                                fontSize: TextSize.small,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.primaryColor,
+                              ),
                             ),
                             const SizedBox(height: 5),
                             const SizedBox(height: 5),
@@ -98,13 +103,14 @@ class UserAccountTabsReview extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(8),
                                     // color: Colors.black,
-                                    border: Border.all(color: Colors.black)),
+                                    border: Border.all(
+                                        color: AppColors.buttonColor)),
                                 child: Text(
                                   "Review",
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
                                     fontSize: TextSize.small,
-                                    color: Colors.black,
+                                    color: AppColors.titleColorGrey,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),

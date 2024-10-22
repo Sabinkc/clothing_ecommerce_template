@@ -79,6 +79,7 @@ class AddToCartCheckout extends StatelessWidget {
                                 Text(
                                   item["title"],
                                   style: TextStyle(
+                                    color: AppColors.titleColorGrey,
                                     fontSize: TextSize.normal,
                                     fontWeight: FontWeight.w700,
                                     overflow: TextOverflow.ellipsis,
@@ -135,8 +136,8 @@ class AddToCartCheckout extends StatelessWidget {
                                       "Rs. ${item["price"]}",
                                       style: const TextStyle(
                                         fontSize: 16,
-                                        color: Colors.blue,
-                                        fontWeight: FontWeight.bold,
+                                        color: AppColors.primaryColor,
+                                        fontWeight: FontWeight.w700,
                                       ),
                                     ),
                                   ],
@@ -171,6 +172,7 @@ class AddToCartCheckout extends StatelessWidget {
                         Spacer(),
                         Icon(
                           Icons.arrow_forward_ios,
+                          color: AppColors.textColorGrey,
                         )
                       ],
                     ),
@@ -201,6 +203,7 @@ class AddToCartCheckout extends StatelessWidget {
                         const Spacer(),
                         const Icon(
                           Icons.arrow_forward_ios,
+                          color: AppColors.textColorGrey,
                         )
                       ],
                     ),
@@ -216,7 +219,7 @@ class AddToCartCheckout extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: LargeButtonReusable(
                       title: "Place Order",
-                      color: Colors.black,
+                      color: AppColors.buttonColor,
                     ),
                   ),
                 ),
@@ -242,12 +245,16 @@ class CheckoutRowReusable extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-            fontSize: TextSize.small,
-          ),
+              color: AppColors.titleColorGrey,
+              fontWeight: FontWeight.w500,
+              fontSize: TextSize.small),
         ),
         Text(
           subtitle,
-          style: TextStyle(fontSize: TextSize.small, color: Colors.grey),
+          style: TextStyle(
+              color: AppColors.textColorGrey,
+              fontWeight: FontWeight.w500,
+              fontSize: TextSize.small),
         )
       ],
     );
@@ -279,7 +286,7 @@ class CheckoutUserInfo extends StatelessWidget {
               padding: EdgeInsets.only(top: 8.0),
               child: Icon(
                 Icons.location_off_outlined,
-                color: Colors.green,
+                color: AppColors.textColorGrey,
               ),
             ),
             const SizedBox(width: 10),
@@ -297,14 +304,16 @@ class CheckoutUserInfo extends StatelessWidget {
                       Text(
                         "Brenna Cotton",
                         style: TextStyle(
+                            color: AppColors.titleColorGrey,
                             fontSize: TextSize.normal,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(width: 10),
                       Text(
                         "+977-1234567890",
                         style: TextStyle(
-                            fontSize: TextSize.small, color: Colors.grey),
+                            fontSize: TextSize.small,
+                            color: AppColors.primaryColor),
                       ),
                     ],
                   ),
@@ -312,7 +321,10 @@ class CheckoutUserInfo extends StatelessWidget {
                     "123 Main Street, London, 123 Main Street, London, 123 Main Street, London",
                     // overflow: TextOverflow.ellipsis,
                     // maxLines: 2,
-                    style: TextStyle(fontSize: TextSize.small),
+                    style: TextStyle(
+                        color: AppColors.textColorGrey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: TextSize.small),
                   )
                 ],
               ),
@@ -320,6 +332,7 @@ class CheckoutUserInfo extends StatelessWidget {
             // const Spacer(),
             const Icon(
               Icons.arrow_forward_ios,
+              color: AppColors.textColorGrey,
               size: 20,
             ),
           ],
@@ -349,9 +362,12 @@ class CheckoutVoucher extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
+              Text(
                 'Select a Voucher',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w700,
+                    fontSize: TextSize.normal),
               ),
               IconButton(
                 icon: const Icon(Icons.close),
@@ -388,8 +404,8 @@ class CheckoutVoucher extends StatelessWidget {
                             Icons.local_offer_rounded,
                             size: 32,
                             color: selectedVoucher.value == index
-                                ? Colors.green
-                                : Colors.grey,
+                                ? AppColors.primaryColor
+                                : AppColors.textColorGrey,
                           ),
                           const SizedBox(width: 16),
                           Expanded(
@@ -402,9 +418,9 @@ class CheckoutVoucher extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: selectedVoucher.value == index
-                                        ? FontWeight.w600
+                                        ? FontWeight.w700
                                         : FontWeight.w400,
-                                    color: Colors.grey[800],
+                                    color: AppColors.titleColorGrey,
                                   ),
                                 ),
                                 const SizedBox(height: 4),
@@ -412,7 +428,7 @@ class CheckoutVoucher extends StatelessWidget {
                                   'Expires: Dec 31, 2024',
                                   style: TextStyle(
                                     fontSize: 12,
-                                    color: Colors.grey,
+                                    color: AppColors.captionColorGrey,
                                     fontWeight: selectedVoucher.value == index
                                         ? FontWeight.w900
                                         : FontWeight.w400,
@@ -423,8 +439,8 @@ class CheckoutVoucher extends StatelessWidget {
                           ),
                           Icon(Icons.check_circle,
                               color: selectedVoucher.value == index
-                                  ? Colors.green
-                                  : Colors.grey),
+                                  ? AppColors.primaryColor
+                                  : AppColors.textColorGrey),
                         ],
                       ),
                     ),
@@ -443,15 +459,28 @@ class CheckoutVoucher extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Text('Cancel'),
+                child: Text(
+                  'Cancel',
+                  style: TextStyle(
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w500,
+                      fontSize: TextSize.small),
+                ),
               ),
               ElevatedButton(
                 onPressed: () {
                   // Confirm voucher selection
                   Get.snackbar("Voucher", "Voucher Applied Successfully",
-                      backgroundColor: Colors.green, colorText: Colors.white);
+                      backgroundColor: AppColors.green,
+                      colorText: Colors.white);
                 },
-                child: const Text('Confirm'),
+                child: Text(
+                  'Confirm',
+                  style: TextStyle(
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w500,
+                      fontSize: TextSize.small),
+                ),
               ),
             ],
           ),

@@ -44,7 +44,7 @@ class HomeSectionTabBar extends StatelessWidget {
                     color: controller.homeSectionindex.value == sortBy[index]
                         ? AppColors.primaryColor
                         // : AppColors.defaultColor,
-                        : Colors.black,
+                        : AppColors.titleColorGrey,
                   ),
                 ),
               ),

@@ -13,10 +13,10 @@ class UserAccountView extends GetView<UserAccountController> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.lightSilver,
+      color: Colors.white,
       child: SafeArea(
         child: Scaffold(
-          backgroundColor: AppColors.lightSilver,
+          backgroundColor: Colors.white,
           body: Container(
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
             // color: Colors.white,

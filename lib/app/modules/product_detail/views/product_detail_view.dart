@@ -155,7 +155,8 @@ class ProductDetailView extends StatelessWidget {
                           "Category: ${data["category"]}",
                           style: TextStyle(
                             fontSize: TextSize.small,
-                            color: AppColors.silver,
+                            color: AppColors.captionColorGrey,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                         const SizedBox(height: 10),
@@ -171,9 +172,10 @@ class ProductDetailView extends StatelessWidget {
                                     data["name"] ?? "No Nmae",
                                     style: TextStyle(
                                       fontSize: TextSize.normal,
+                                      color: AppColors.titleColorGrey,
                                       fontWeight: titleShow.value == true
                                           ? FontWeight.w100
-                                          : FontWeight.w800,
+                                          : FontWeight.w700,
                                       overflow: titleShow.value == true
                                           ? TextOverflow.clip
                                           : TextOverflow.ellipsis,
@@ -207,7 +209,8 @@ class ProductDetailView extends StatelessWidget {
                               "4.1 Reviews",
                               style: TextStyle(
                                 fontSize: TextSize.small,
-                                color: AppColors.silver,
+                                color: AppColors.textColorGrey,
+                                fontWeight: FontWeight.w500,
                               ),
                             )
                           ],
@@ -234,9 +237,9 @@ class ProductDetailView extends StatelessWidget {
                         Text(
                           "Size",
                           style: TextStyle(
-                            fontSize: TextSize.normal,
-                            fontWeight: FontWeight.w700,
-                          ),
+                              fontSize: TextSize.normal,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.titleColorGrey),
                         ),
                         const SizedBox(height: 10),
                         size.isNotEmpty
@@ -251,6 +254,7 @@ class ProductDetailView extends StatelessWidget {
                             Text(
                               "Quantity",
                               style: TextStyle(
+                                color: AppColors.titleColorGrey,
                                 fontSize: TextSize.normal,
                                 fontWeight: FontWeight.w700,
                               ),
@@ -262,6 +266,7 @@ class ProductDetailView extends StatelessWidget {
                         Text(
                           "Descriptions",
                           style: TextStyle(
+                            color: AppColors.titleColorGrey,
                             fontSize: TextSize.normal,
                             fontWeight: FontWeight.w700,
                           ),
@@ -274,6 +279,8 @@ class ProductDetailView extends StatelessWidget {
                               Text(
                                 data["description"] ?? "No Description",
                                 style: TextStyle(
+                                  color: AppColors.textColorGrey,
+                                  fontWeight: FontWeight.w500,
                                   fontSize: TextSize.small,
                                   overflow: descriptionShow.value == true
                                       ? TextOverflow.clip
@@ -291,8 +298,8 @@ class ProductDetailView extends StatelessWidget {
                                       : "show less",
                                   style: TextStyle(
                                       color: descriptionShow.value == false
-                                          ? Colors.blue
-                                          : Colors.red,
+                                          ? AppColors.primaryColor
+                                          : AppColors.red,
                                       fontSize: TextSize.small),
                                 ),
                               ),

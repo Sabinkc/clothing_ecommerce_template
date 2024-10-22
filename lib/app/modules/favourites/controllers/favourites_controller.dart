@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +25,7 @@ class FavouritesController extends GetxController {
               'Removed',
               'Product Is Removed',
               snackPosition: SnackPosition.BOTTOM,
-              backgroundColor: Colors.redAccent,
+              backgroundColor: AppColors.red,
               colorText: Colors.white,
             ),
           }
@@ -35,7 +36,7 @@ class FavouritesController extends GetxController {
               'Added To Favorites',
               'Go to Favorites to view products',
               snackPosition: SnackPosition.BOTTOM,
-              backgroundColor: Colors.green,
+              backgroundColor: AppColors.green,
               colorText: Colors.white,
             ),
           };

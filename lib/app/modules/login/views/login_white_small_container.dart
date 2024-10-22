@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/bottom_navigation/views/bottom_navigation_view.dart';
 import 'package:d_and_s/app/modules/forgot_password/views/forgot_password_view.dart';
 
@@ -33,10 +34,13 @@ class LoginWhiteSmallContainer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
+              Text(
                 "Email",
                 style: TextStyle(
-                    color: AppColors.lightBlue, fontWeight: FontWeight.w600),
+                  fontSize: TextSize.small,
+                  color: AppColors.titleColorGrey,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               const SizedBox(height: 10),
               TextFormFieldReusable(
@@ -45,10 +49,12 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                 textEditingController: email,
               ),
               const SizedBox(height: 10),
-              const Text(
+              Text(
                 "Password",
                 style: TextStyle(
-                    color: AppColors.lightBlue, fontWeight: FontWeight.w600),
+                    fontSize: TextSize.small,
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 10),
               TextFormFieldReusable(
@@ -69,10 +75,12 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 5),
-                  const Text(
+                  Text(
                     "Remember me",
                     style: TextStyle(
-                        color: AppColors.silver, fontWeight: FontWeight.w900),
+                        fontSize: TextSize.small,
+                        color: AppColors.titleColorGrey,
+                        fontWeight: FontWeight.w600),
                   ),
                   const Spacer(),
                   GestureDetector(
@@ -91,8 +99,8 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                     child: const Text(
                       "Forgot Password ?",
                       style: TextStyle(
-                          color: AppColors.lightBlue,
-                          fontWeight: FontWeight.w900),
+                          color: AppColors.primaryColor,
+                          fontWeight: FontWeight.w600),
                     ),
                   ),
                 ],
@@ -112,16 +120,18 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                       ),
                   child: const LargeButtonReusable(
                     title: "Log in",
-                    color: AppColors.lightBlue,
+                    color: AppColors.buttonColor,
                   )),
-              const SizedBox(height: 50),
+              const SizedBox(height: 40),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
+                  Text(
                     "Don't have an account?",
                     style: TextStyle(
-                        color: AppColors.silver, fontWeight: FontWeight.w900),
+                        fontSize: TextSize.small,
+                        color: AppColors.textColorGrey,
+                        fontWeight: FontWeight.w900),
                   ),
                   const SizedBox(width: 10),
                   GestureDetector(
@@ -137,10 +147,11 @@ class LoginWhiteSmallContainer extends StatelessWidget {
                         //     .easeInOut, // Adds smoothness with easing in and out
                       );
                     },
-                    child: const Text(
+                    child: Text(
                       "Sign UP",
                       style: TextStyle(
-                          color: AppColors.lightBlue,
+                          fontSize: TextSize.small,
+                          color: AppColors.primaryColor,
                           fontWeight: FontWeight.w900),
                     ),
                   ),

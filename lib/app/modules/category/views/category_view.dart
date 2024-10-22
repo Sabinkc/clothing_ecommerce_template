@@ -19,12 +19,12 @@ class CategoryView extends GetView<CategoryController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: Colors.white,
         title: const Text("Category"),
         centerTitle: false,
       ),
       body: Container(
-        color: AppColors.lightSilver,
+        color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
           child: Column(

@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 
+import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
 import '../../reusable_widgets/LargeButtonReusable.dart';
 import '../../reusable_widgets/TextFormFieldReusable.dart';
@@ -30,17 +30,17 @@ class ChangePassword extends StatelessWidget {
               Text(
                 "Change Password",
                 style: TextStyle(
-                  fontSize: TextSize.medium,
-                  fontWeight: FontWeight.w900,
-                  // color: AppColors.lightBlue,
-                ),
+                    fontSize: TextSize.medium,
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w700),
               ),
               const SizedBox(height: 40),
-              const Text(
+              Text(
                 "Password",
                 style: TextStyle(
-                    // color: AppColors.lightBlue,
-                    fontWeight: FontWeight.w600),
+                    fontSize: TextSize.small,
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 10),
               TextFormFieldReusable(
@@ -50,14 +50,20 @@ class ChangePassword extends StatelessWidget {
                 textEditingController: password,
               ),
               const SizedBox(height: 10),
-              const Text(
-                  "Min. 8 char, 1 upper & lowercase, a number & a special characte."),
+              Text(
+                "Min. 8 char, 1 upper & lowercase, a number & a special characte.",
+                style: TextStyle(
+                    fontSize: TextSize.small,
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w500),
+              ),
               const SizedBox(height: 10),
-              const Text(
+              Text(
                 "Confirm Password",
                 style: TextStyle(
-                    // color: AppColors.lightBlue,
-                    fontWeight: FontWeight.w600),
+                    fontSize: TextSize.small,
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 10),
               TextFormFieldReusable(
@@ -72,7 +78,7 @@ class ChangePassword extends StatelessWidget {
                 onTap: () {},
                 child: const LargeButtonReusable(
                   title: "Submit",
-                  color: Colors.black,
+                  color: AppColors.buttonColor,
                 ),
               )
             ],

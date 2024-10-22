@@ -1,12 +1,10 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
-
-
 
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-
 
 class AddToCartReceipt extends StatelessWidget {
   final controller = Get.put(AddToCartController());
@@ -41,7 +39,7 @@ class AddToCartReceipt extends StatelessWidget {
                   title: "Receipt",
                   icon: Icon(
                     Icons.receipt_outlined,
-                    color: Colors.green,
+                    color: AppColors.textColorGrey,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -177,8 +175,8 @@ class AddToCartReceiptRow extends StatelessWidget {
               fontWeight:
                   isTotal ? FontWeight.bold : FontWeight.w100, // Bold for total
               color: isTotal
-                  ? Colors.black
-                  : Colors.black, // Darker color for total
+                  ? AppColors.titleColorGrey
+                  : AppColors.textColorGrey, // Darker color for total
             ),
           ),
           const Spacer(),
@@ -188,8 +186,9 @@ class AddToCartReceiptRow extends StatelessWidget {
             style: TextStyle(
               fontSize: TextSize.small,
               fontWeight: isTotal ? FontWeight.bold : FontWeight.normal,
-              color:
-                  isTotal ? Colors.blue : Colors.grey, // Highlight total amount
+              color: isTotal
+                  ? AppColors.primaryColor
+                  : AppColors.textColorGrey, // Highlight total amount
             ),
           ),
         ],
@@ -212,10 +211,10 @@ class AddToCartTitleRow extends StatelessWidget {
         const SizedBox(width: 10),
         Text(
           title,
-          style: const TextStyle(
-            fontSize: 15, // Increased font size for header
-            // fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(
+              color: AppColors.titleColorGrey,
+              fontWeight: FontWeight.w500,
+              fontSize: TextSize.small),
         ),
       ],
     );

@@ -6,7 +6,8 @@ import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
+import '../../../../../constants/colors.dart';
+import '../../../../../constants/text_size.dart';
 
 class UserAccountTabsInfo extends StatelessWidget {
   const UserAccountTabsInfo({super.key});
@@ -19,22 +20,21 @@ class UserAccountTabsInfo extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "My Details",
             style: TextStyle(
-              fontSize: 24, // Slightly larger for better readability
-              fontWeight: FontWeight.bold,
-              color: Colors.black87, // Use a softer black
-            ),
+                color: AppColors.titleColorGrey,
+                fontWeight: FontWeight.w700,
+                fontSize: TextSize.medium),
           ),
           const SizedBox(height: 8),
           Text(
             "Feel free to edit any of your details below so your account is up to date.",
             textAlign: TextAlign.start,
             style: TextStyle(
-              fontSize: 16,
-              color: Colors.grey[700], // A subtler text color for descriptions
-            ),
+                color: AppColors.titleColorGrey,
+                fontWeight: FontWeight.w500,
+                fontSize: TextSize.small),
           ),
           const SizedBox(height: 32),
           // Personal Details Card
@@ -53,13 +53,12 @@ class UserAccountTabsInfo extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       "Personal Information",
                       style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black87,
-                      ),
+                          color: AppColors.titleColorGrey,
+                          fontWeight: FontWeight.w700,
+                          fontSize: TextSize.normal),
                     ),
                     const SizedBox(height: 16),
                     _buildDetailRow("Name", "John Doe"),
@@ -71,7 +70,7 @@ class UserAccountTabsInfo extends StatelessWidget {
                         Get.to(UserAccountTabsInfoDetail());
                       },
                       style: OutlinedButton.styleFrom(
-                        backgroundColor: Colors.black,
+                        backgroundColor: AppColors.buttonColor,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0),
                         ),
@@ -120,9 +119,9 @@ class UserAccountTabsInfo extends StatelessWidget {
                         Get.to(UserAccountTabsInfoLoginEdit());
                       },
                       style: OutlinedButton.styleFrom(
-                        backgroundColor: Colors.black,
+                        backgroundColor: AppColors.buttonColor,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(5.0),
                         ),
                       ),
                       child: const Text(
@@ -155,14 +154,16 @@ class UserAccountTabsInfo extends StatelessWidget {
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
-              color: Colors.grey[800], // Slightly darker gray for titles
+              color:
+                  AppColors.titleColorGrey, // Slightly darker gray for titles
             ),
           ),
           Text(
             value,
             style: TextStyle(
               fontSize: 16,
-              color: Colors.grey[600], // Lighter gray for values
+              fontWeight: FontWeight.w500,
+              color: AppColors.captionColorGrey, // Lighter gray for values
             ),
           ),
         ],

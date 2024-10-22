@@ -142,11 +142,10 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Rs.${product["price"] ?? ""}",
-                                      style: const TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w900,
-                                        color: AppColors.primaryColor,
-                                      ),
+                                      style: TextStyle(
+                                          fontSize: TextSize.small,
+                                          color: AppColors.primaryColor,
+                                          fontWeight: FontWeight.w700),
                                     ),
                                     const SizedBox(width: 5),
 
@@ -213,7 +212,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                         decorationThickness: 2,
                                         decorationColor: Colors.grey,
                                         fontSize: 12,
-                                        color: AppColors.grey,
+                                        // color: AppColors.grey,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
@@ -233,7 +232,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                         overflow: TextOverflow.ellipsis,
                                         style: TextStyle(
                                           fontSize: 12,
-                                          color: AppColors.grey,
+                                          // color: AppColors.grey,
                                         ),
                                       ),
                                     )
@@ -245,10 +244,11 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                   child: Text(
                                     product["name"] ?? "",
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: const TextStyle(
+                                      color: AppColors.titleColorGrey,
                                       fontSize: 16,
                                       fontWeight: FontWeight.w700,
-                                      color: AppColors.defaultColor,
+                                      // color: AppColors.defaultColor,
                                     ),
                                   ),
                                 ),

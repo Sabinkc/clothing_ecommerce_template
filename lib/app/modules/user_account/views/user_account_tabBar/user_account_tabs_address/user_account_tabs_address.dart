@@ -1,9 +1,9 @@
-
 import 'package:d_and_s/app/constants/text_size.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../../constants/colors.dart';
 import 'user_account_tabs_addAddress.dart';
 import 'user_account_tabs_editAddress.dart';
 
@@ -22,7 +22,10 @@ class UserAccountTabsAddress extends StatelessWidget {
           Text(
             "Address Book",
             style: TextStyle(
-                fontSize: TextSize.normal, fontWeight: FontWeight.w800),
+              fontSize: TextSize.normal,
+              fontWeight: FontWeight.w700,
+              color: AppColors.titleColorGrey,
+            ),
           ),
           const SizedBox(height: 20),
           Text(
@@ -30,6 +33,8 @@ class UserAccountTabsAddress extends StatelessWidget {
             textAlign: TextAlign.start,
             style: TextStyle(
               fontSize: TextSize.normal,
+              fontWeight: FontWeight.w500,
+              color: AppColors.titleColorGrey,
             ),
           ),
           const SizedBox(height: 20),
@@ -53,6 +58,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                     "New Address",
                     textAlign: TextAlign.start,
                     style: TextStyle(
+                      color: AppColors.textColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w500,
                     ),
@@ -69,8 +75,9 @@ class UserAccountTabsAddress extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.black),
-                    color: Colors.white,),
+                  border: Border.all(color: Colors.black),
+                  color: Colors.white,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -78,6 +85,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                       title,
                       textAlign: TextAlign.start,
                       style: TextStyle(
+                        color: AppColors.titleColorGrey,
                         fontSize: TextSize.normal,
                         fontWeight: FontWeight.w700,
                       ),
@@ -87,6 +95,8 @@ class UserAccountTabsAddress extends StatelessWidget {
                       subtitle,
                       textAlign: TextAlign.start,
                       style: TextStyle(
+                        color: AppColors.textColorGrey,
+                        fontWeight: FontWeight.w500,
                         fontSize: TextSize.normal,
                       ),
                     ),
@@ -101,6 +111,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                             "Edit",
                             textAlign: TextAlign.start,
                             style: TextStyle(
+                              color: AppColors.titleColorGrey,
                               fontSize: TextSize.normal,
                               fontWeight: FontWeight.w700,
                               decoration: TextDecoration.underline,
@@ -112,6 +123,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                           "Remove",
                           textAlign: TextAlign.start,
                           style: TextStyle(
+                            color: AppColors.titleColorGrey,
                             fontSize: TextSize.normal,
                             fontWeight: FontWeight.w700,
                             decoration: TextDecoration.underline,
@@ -127,7 +139,7 @@ class UserAccountTabsAddress extends StatelessWidget {
                 top: 10,
                 child: Container(
                   decoration: const BoxDecoration(
-                      shape: BoxShape.circle, color: Colors.black),
+                      shape: BoxShape.circle, color: AppColors.buttonColor),
                   child: const Icon(
                     Icons.check,
                     color: Colors.white,

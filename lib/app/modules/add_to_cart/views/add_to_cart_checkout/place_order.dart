@@ -7,8 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-
-
 class PlaceOrder extends StatelessWidget {
   const PlaceOrder({super.key});
 
@@ -56,11 +54,11 @@ class PlaceOrder extends StatelessWidget {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  Get.to(  BottomNavigationView());
+                  Get.to(BottomNavigationView());
                 },
                 child: const LargeButtonReusable(
                   title: "Continue Shopping",
-                  color: Colors.black,
+                  color: AppColors.buttonColor,
                 ),
               ),
             ],

@@ -9,6 +9,7 @@ import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
+import '../../../../../constants/colors.dart';
 import '../../../../../constants/text_size.dart';
 import '../../../../reusable_widgets/LargeButtonReusable.dart';
 import '../../../../reusable_widgets/TextFormFieldReusable.dart';
@@ -46,6 +47,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "Full Name",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -59,6 +61,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "Country",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -69,6 +72,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "State/Province",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -79,6 +83,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "City",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -89,6 +94,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "Zone",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -99,6 +105,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "Zip Code",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -112,6 +119,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 Text(
                   "Phone Number",
                   style: TextStyle(
+                    color: AppColors.titleColorGrey,
                     fontSize: TextSize.normal,
                     fontWeight: FontWeight.w700,
                   ),
@@ -124,7 +132,7 @@ class UserAccountAddAddress extends StatelessWidget {
                 const SizedBox(height: 30),
                 const LargeButtonReusable(
                   title: "Add",
-                  color: Colors.black,
+                  color: AppColors.buttonColor,
                 ),
               ],
             ),

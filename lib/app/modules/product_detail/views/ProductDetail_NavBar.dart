@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_checkout.dart';
 
@@ -67,7 +68,7 @@ class ProductDetailNavBar extends StatelessWidget {
                         'Selection Error',
                         'Please select a color.',
                         snackPosition: SnackPosition.BOTTOM,
-                        backgroundColor: Colors.redAccent,
+                        backgroundColor: AppColors.red,
                         colorText: Colors.white,
                       );
                       return;
@@ -78,7 +79,7 @@ class ProductDetailNavBar extends StatelessWidget {
                         'Selection Error',
                         'Please select a size.',
                         snackPosition: SnackPosition.BOTTOM,
-                        backgroundColor: Colors.redAccent,
+                        backgroundColor: AppColors.red,
                         colorText: Colors.white,
                       );
                       return;
@@ -107,20 +108,19 @@ class ProductDetailNavBar extends StatelessWidget {
                     controllerProductDetail.clear();
                     Get.to(
                       AddToCartCheckout(),
-                      transition: Transition
-                          .leftToRightWithFade, // Professional fade-in effect
-                      duration: const Duration(
-                          milliseconds:
-                              500), // Smooth duration for the transition
-                      curve: Curves
-                          .easeInOut, // Adds smoothness with easing in and out
+                      // transition: Transition
+                      //     .leftToRightWithFade, // Professional fade-in effect
+                      // duration: const Duration(
+                      //     milliseconds:
+                      //         500), // Smooth duration for the transition
+                      // curve: Curves
+                      //     .easeInOut, // Adds smoothness with easing in and out
                     );
                   },
                   child: const LargeButtonReusable(
-                    title: "BUY NOW",
-                    width: 140,
-                    color: Colors.black,
-                  ),
+                      title: "BUY NOW",
+                      width: 140,
+                      color: AppColors.buttonColor),
                 )
               : const SizedBox(),
 
@@ -131,7 +131,7 @@ class ProductDetailNavBar extends StatelessWidget {
                   'Selection Error',
                   'Please select a color.',
                   snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.redAccent,
+                  backgroundColor: AppColors.red,
                   colorText: Colors.white,
                 );
                 return;
@@ -142,7 +142,7 @@ class ProductDetailNavBar extends StatelessWidget {
                   'Selection Error',
                   'Please select a size.',
                   snackPosition: SnackPosition.BOTTOM,
-                  backgroundColor: Colors.redAccent,
+                  backgroundColor: AppColors.red,
                   colorText: Colors.white,
                 );
                 return;
@@ -171,7 +171,7 @@ class ProductDetailNavBar extends StatelessWidget {
                 'Added To Cart',
                 'Go to Cart to View Products',
                 snackPosition: SnackPosition.BOTTOM,
-                backgroundColor: Colors.green,
+                backgroundColor: AppColors.green,
                 colorText: Colors.white,
               );
               Navigator.pop(context);
@@ -188,7 +188,7 @@ class ProductDetailNavBar extends StatelessWidget {
             child: LargeButtonReusable(
               title: "ADD TO CART",
               width: buttonSize,
-              color: Colors.black,
+              color: AppColors.buttonColor,
             ),
           ),
           // AddToCartView(

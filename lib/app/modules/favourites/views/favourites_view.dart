@@ -88,6 +88,7 @@ class FavouritesView extends StatelessWidget {
                                         Text(
                                           item["name"],
                                           style: TextStyle(
+                                            color: AppColors.titleColorGrey,
                                             fontSize: TextSize.small,
                                             fontWeight: FontWeight.w700,
                                             overflow: TextOverflow.ellipsis,
@@ -113,7 +114,7 @@ class FavouritesView extends StatelessWidget {
                                               "Rs. ${item["price"]}",
                                               style: const TextStyle(
                                                 fontSize: 16,
-                                                color: Colors.red,
+                                                color: AppColors.primaryColor,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
@@ -121,12 +122,13 @@ class FavouritesView extends StatelessWidget {
                                             // if (item["realprice"] != null)
                                             Text(
                                               "\$${item["realprice"]}",
-                                              style: const TextStyle(
-                                                decoration:
-                                                    TextDecoration.lineThrough,
-                                                fontSize: 14,
-                                                color: Colors.grey,
-                                              ),
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                  decoration: TextDecoration
+                                                      .lineThrough,
+                                                  fontSize: TextSize.small,
+                                                  color:
+                                                      AppColors.textColorGrey),
                                             ),
                                           ],
                                         ),
@@ -154,7 +156,8 @@ class FavouritesView extends StatelessWidget {
                                                   "View Product",
                                                   style: TextStyle(
                                                       fontSize: TextSize.small,
-                                                      color: Colors.blue),
+                                                      color: AppColors
+                                                          .primaryColor),
                                                 )),
 
                                             const Spacer(),
@@ -169,7 +172,7 @@ class FavouritesView extends StatelessWidget {
                                               },
                                               child: const Icon(
                                                 Icons.delete,
-                                                color: Colors.red,
+                                                color: AppColors.textColorGrey,
                                               ),
                                             ),
                                             // Quantity Selector

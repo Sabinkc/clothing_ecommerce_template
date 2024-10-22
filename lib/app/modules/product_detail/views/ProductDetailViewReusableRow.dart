@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/text_size.dart';
@@ -21,6 +22,8 @@ class ProductDetailViewReusableRow extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
+              color: AppColors.titleColorGrey,
+              fontWeight: FontWeight.w700,
               fontSize: TextSize.normal,
             ),
           ),

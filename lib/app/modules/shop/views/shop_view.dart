@@ -173,11 +173,10 @@ class ShopView extends GetView<ShopController> {
                                         children: [
                                           Text(
                                             "Rs.${product["price"] ?? ""}",
-                                            style: const TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.w900,
-                                              color: AppColors.primaryColor,
-                                            ),
+                                            style: TextStyle(
+                                                fontSize: TextSize.small,
+                                                color: AppColors.primaryColor,
+                                                fontWeight: FontWeight.w700),
                                           ),
                                           const SizedBox(width: 5),
 
@@ -252,7 +251,7 @@ class ShopView extends GetView<ShopController> {
                                               decorationThickness: 2,
                                               decorationColor: Colors.grey,
                                               fontSize: 12,
-                                              color: Colors.grey,
+                                              // color: AppColors.grey,
                                               fontWeight: FontWeight.w500,
                                             ),
                                           ),
@@ -270,7 +269,10 @@ class ShopView extends GetView<ShopController> {
                                             child: Text(
                                               "Original Price ",
                                               overflow: TextOverflow.ellipsis,
-                                              style: TextStyle(fontSize: 12),
+                                              style: TextStyle(
+                                                fontSize: 12,
+                                                // color: AppColors.grey,
+                                              ),
                                             ),
                                           )
                                         ],
@@ -282,9 +284,12 @@ class ShopView extends GetView<ShopController> {
                                         child: Text(
                                           product["name"] ?? "",
                                           overflow: TextOverflow.ellipsis,
-                                          style: TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w700),
+                                          style: const TextStyle(
+                                            color: AppColors.titleColorGrey,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w700,
+                                            // color: AppColors.defaultColor,
+                                          ),
                                         ),
                                       ),
                                     ],

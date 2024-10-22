@@ -2,7 +2,6 @@
 
 import 'package:d_and_s/app/constants/colors.dart';
 
-
 import 'package:flutter/material.dart';
 
 class LargeButtonReusable extends StatelessWidget {
@@ -25,7 +24,7 @@ class LargeButtonReusable extends StatelessWidget {
       width: width,
       height: 50,
       decoration:
-          BoxDecoration(borderRadius: BorderRadius.circular(6), color: color),
+          BoxDecoration(borderRadius: BorderRadius.circular(5), color: color),
       child: Center(
         child: Text(
           title,

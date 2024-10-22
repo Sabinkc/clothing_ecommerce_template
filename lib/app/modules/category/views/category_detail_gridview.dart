@@ -1,9 +1,11 @@
-import 'package:d_and_s/app/constants/colors.dart';
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../../constants/colors.dart';
 import '../../../constants/text_size.dart';
 import '../../../data/alldata.dart';
 import '../../favourites/controllers/favourites_controller.dart';
@@ -11,7 +13,6 @@ import '../../home/controllers/home_controller.dart';
 import '../../home/views/home_section_tabBar/home_section_tabBar_tabs_bottomSheet.dart';
 import '../../product_detail/controllers/product_detail_controller.dart';
 import '../../product_detail/views/product_detail_view.dart';
-import '../../reusable_widgets/tags.dart';
 import '../controllers/category_controller.dart';
 
 class CategoryDetailGridView extends StatelessWidget {
@@ -146,11 +147,10 @@ class CategoryDetailGridView extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Rs.${product["price"] ?? ""}",
-                                      style: const TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w900,
-                                        color: Colors.red,
-                                      ),
+                                      style: TextStyle(
+                                          fontSize: TextSize.small,
+                                          color: AppColors.primaryColor,
+                                          fontWeight: FontWeight.w700),
                                     ),
                                     const SizedBox(width: 5),
 
@@ -217,7 +217,7 @@ class CategoryDetailGridView extends StatelessWidget {
                                         decorationThickness: 2,
                                         decorationColor: Colors.grey,
                                         fontSize: 12,
-                                        color: Colors.grey,
+                                        // color: AppColors.grey,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
@@ -235,7 +235,10 @@ class CategoryDetailGridView extends StatelessWidget {
                                       child: Text(
                                         "Original Price ",
                                         overflow: TextOverflow.ellipsis,
-                                        style: TextStyle(fontSize: 12),
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          // color: AppColors.grey,
+                                        ),
                                       ),
                                     )
                                   ],
@@ -246,9 +249,12 @@ class CategoryDetailGridView extends StatelessWidget {
                                   child: Text(
                                     product["name"] ?? "",
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                        fontSize: TextSize.small,
-                                        fontWeight: FontWeight.w700),
+                                    style: const TextStyle(
+                                      color: AppColors.titleColorGrey,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                      // color: AppColors.defaultColor,
+                                    ),
                                   ),
                                 ),
                               ],

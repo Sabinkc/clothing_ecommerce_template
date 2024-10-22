@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
 import '../../constants/text_size.dart';
 
 class DropDownReusable extends StatefulWidget {
@@ -36,7 +37,10 @@ class _DropDownReusableState extends State<DropDownReusable> {
           value: value,
           child: Text(
             value,
-            style: TextStyle(fontSize: TextSize.small),
+            style: TextStyle(
+                color: AppColors.textColorGrey,
+                fontWeight: FontWeight.w500,
+                fontSize: TextSize.small),
           ),
         );
       }).toList(),

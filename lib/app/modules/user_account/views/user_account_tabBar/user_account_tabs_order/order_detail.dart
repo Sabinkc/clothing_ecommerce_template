@@ -31,9 +31,9 @@ class OrderDetails extends StatelessWidget {
     int total = parsedPrice + 100;
 
     return Scaffold(
-      backgroundColor: AppColors.lightSilver,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: Colors.white,
         title: const Text("Order Details"),
         centerTitle: true,
       ),
@@ -75,7 +75,7 @@ class OrderDetails extends StatelessWidget {
                     child: Text(
                       status,
                       style: const TextStyle(
-                        color: Colors.red,
+                        color: AppColors.red,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -127,10 +127,10 @@ class OrderDetails extends StatelessWidget {
                           children: [
                             Text(
                               title,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontSize: TextSize.small,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.titleColorGrey,
                               ),
                               maxLines: 2,
                             ),
@@ -138,8 +138,9 @@ class OrderDetails extends StatelessWidget {
                             Text(
                               "Size: $size",
                               style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.grey[700],
+                                fontSize: TextSize.small,
+                                fontWeight: FontWeight.w500,
+                                color: AppColors.titleColorGrey,
                               ),
                             ),
                             const SizedBox(height: 6),
@@ -147,19 +148,19 @@ class OrderDetails extends StatelessWidget {
                               children: [
                                 Text(
                                   "Rs. $price",
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold,
+                                  style: TextStyle(
+                                    fontSize: TextSize.small,
+                                    fontWeight: FontWeight.w500,
+                                    color: AppColors.primaryColor,
                                   ),
                                 ),
                                 const SizedBox(width: 10),
                                 Text(
                                   "Rs. $realprice",
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     decoration: TextDecoration.lineThrough,
-                                    fontSize: 12,
-                                    color: Colors.grey,
+                                    fontSize: TextSize.small,
+                                    color: AppColors.textColorGrey,
                                   ),
                                 ),
                               ],
@@ -168,8 +169,9 @@ class OrderDetails extends StatelessWidget {
                             Text(
                               "Quantity: $quantity",
                               style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.grey[700],
+                                fontSize: TextSize.small,
+                                fontWeight: FontWeight.w500,
+                                color: AppColors.titleColorGrey,
                               ),
                             ),
                           ],
@@ -229,11 +231,12 @@ class OrderDetails extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(width: 10),
-                      const Text(
+                      Text(
                         "Cash On Delivery",
                         style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
+                          fontSize: TextSize.small,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.titleColorGrey,
                         ),
                       ),
                     ],
@@ -265,12 +268,17 @@ class OrderDetailTitleReusableRow extends StatelessWidget {
           title,
           style: TextStyle(
             fontSize: TextSize.normal,
+            fontWeight: FontWeight.w700,
+            color: AppColors.titleColorGrey,
           ),
         ),
         Text(
           subtitle,
-          style:
-              TextStyle(fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontSize: TextSize.normal,
+            fontWeight: FontWeight.w500,
+            color: AppColors.textColorGrey,
+          ),
         ),
       ],
     );
@@ -292,12 +300,16 @@ class OrderDetailReusableRow extends StatelessWidget {
           title,
           style: TextStyle(
             fontSize: TextSize.normal,
+            fontWeight: FontWeight.w700,
+            color: AppColors.titleColorGrey,
           ),
         ),
         Text(
           subtitle,
           style: TextStyle(
             fontSize: TextSize.normal,
+            fontWeight: FontWeight.w500,
+            color: AppColors.textColorGrey,
           ),
         )
       ],

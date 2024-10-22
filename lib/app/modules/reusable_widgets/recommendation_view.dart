@@ -136,8 +136,9 @@ class RecommendationView extends StatelessWidget {
                         product["name"] ?? "",
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
+                            color: AppColors.titleColorGrey,
                             fontSize: TextSize.small,
-                            fontWeight: FontWeight.w700),
+                            fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(height: 5),
                       Row(
@@ -147,8 +148,8 @@ class RecommendationView extends StatelessWidget {
                             "Rs. ${product["price"] ?? ""}",
                             style: TextStyle(
                               fontSize: TextSize.small,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.primaryColor,
                             ),
                           ),
                           GestureDetector(

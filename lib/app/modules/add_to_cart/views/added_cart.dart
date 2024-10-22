@@ -76,7 +76,7 @@ class AddedCart extends StatelessWidget {
                                   child: const LargeButtonReusable(
                                     width: 150,
                                     title: "Sign in",
-                                    color: Colors.black,
+                                    color: AppColors.buttonColor,
                                   ),
                                 ),
                                 const SizedBox(width: 20),
@@ -87,7 +87,7 @@ class AddedCart extends StatelessWidget {
                                   child: const LargeButtonReusable(
                                     width: 150,
                                     title: "Log In",
-                                    color: Colors.black,
+                                    color: AppColors.buttonColor,
                                   ),
                                 ),
                               ],
@@ -150,6 +150,7 @@ class AddedCart extends StatelessWidget {
                                         Text(
                                           item["title"] ?? "No Title",
                                           style: TextStyle(
+                                            color: AppColors.titleColorGrey,
                                             fontSize: TextSize.small,
                                             fontWeight: FontWeight.w700,
                                             overflow: TextOverflow.ellipsis,
@@ -161,9 +162,10 @@ class AddedCart extends StatelessWidget {
                                         // Product Size
                                         Text(
                                           "Size: ${item["size"]}",
-                                          style: const TextStyle(
-                                            fontSize: 14,
-                                          ),
+                                          style: TextStyle(
+                                              color: AppColors.titleColorGrey,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: TextSize.small),
                                         ),
                                         const SizedBox(height: 5),
 
@@ -174,18 +176,20 @@ class AddedCart extends StatelessWidget {
                                               "Rs. ${item["price"]}",
                                               style: const TextStyle(
                                                 fontSize: 16,
-                                                fontWeight: FontWeight.bold,
+                                                fontWeight: FontWeight.w700,
+                                                color: AppColors.primaryColor,
                                               ),
                                             ),
                                             const SizedBox(width: 10),
                                             if (item["realprice"] != null)
                                               Text(
                                                 "\$${item["realprice"]}",
-                                                style: const TextStyle(
+                                                style: TextStyle(
                                                   decoration: TextDecoration
                                                       .lineThrough,
-                                                  fontSize: 14,
-                                                  color: Colors.grey,
+                                                  fontSize: TextSize.small,
+                                                  color:
+                                                      AppColors.textColorGrey,
                                                 ),
                                               ),
                                           ],
@@ -249,8 +253,9 @@ class AddedCart extends StatelessWidget {
                 Text(
                   "Recommended Items",
                   style: TextStyle(
-                    fontSize: TextSize.normal,
-                  ),
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w700,
+                      fontSize: TextSize.normal),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20.0),

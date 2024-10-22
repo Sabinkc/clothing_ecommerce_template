@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 
 import 'package:d_and_s/app/modules/add_to_cart/views/added_cart.dart';
@@ -46,7 +47,7 @@ class UserAccountContainer extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black87,
+                  color: AppColors.titleColorGrey,
                 ),
               ),
               const SizedBox(height: 8),
@@ -64,7 +65,7 @@ class UserAccountContainer extends StatelessWidget {
                           "Wish List",
                           style: TextStyle(
                             fontSize: 14,
-                            color: Colors.grey.shade600,
+                            color: AppColors.captionColorGrey,
                           ),
                         ),
                         const SizedBox(height: 4),
@@ -74,7 +75,7 @@ class UserAccountContainer extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                              color: AppColors.primaryColor,
                             ),
                           ),
                         ),
@@ -94,7 +95,7 @@ class UserAccountContainer extends StatelessWidget {
                           "Cart",
                           style: TextStyle(
                             fontSize: 14,
-                            color: Colors.grey.shade600,
+                            color: AppColors.captionColorGrey,
                           ),
                         ),
                         const SizedBox(height: 4),
@@ -104,7 +105,7 @@ class UserAccountContainer extends StatelessWidget {
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                              color: AppColors.primaryColor,
                             ),
                           ),
                         ),
@@ -122,7 +123,7 @@ class UserAccountContainer extends StatelessWidget {
             IconButton(
               icon: const Icon(
                 Icons.logout,
-                color: Colors.black,
+                color: AppColors.textColorGrey,
               ),
               onPressed: () {
                 Get.to(const LoginView());

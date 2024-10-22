@@ -1,4 +1,3 @@
-import 'package:d_and_s/app/constants/colors.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -42,13 +41,12 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       title: "Application",
-      theme: ThemeData(
-        fontFamily: 'Bai Jamjuree',
-        // primaryTextTheme: TextTheme(
-        //   TextSize.: TextStyle(color: Colors.black),  // Example for headlines
-        //   bodyText1: TextStyle(color: Colors.grey),   // Example for body text
-        // ),
-      ),
+      theme: ThemeData(fontFamily: 'Bai Jamjuree', primaryColor: Colors.red
+          // primaryTextTheme: TextTheme(
+          //   TextSize.: TextStyle(color: Colors.black),  // Example for headlines
+          //   bodyText1: TextStyle(color: Colors.grey),   // Example for body text
+          // ),
+          ),
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,

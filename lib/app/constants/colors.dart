@@ -7,6 +7,11 @@ mixin AppColors {
   static const silverBorder = Color(0xffF6F8FA);
   static const lightSilver = Color(0xffF6F8FA);
   static const primaryColor = Color(0xffDBB133);
-  static const defaultColor = Color(0xff353e43);
-  static const grey = Color(0xff535B5F);
+  static const textColorGrey = Color(0xff353E43);
+  static const titleColorGrey = Color(0xff353E43);
+  static const captionColorGrey = Color(0xff535B5F);
+  static const red = Color(0xffe63946);
+  static const green = Color(0xff2a9d8f);
+  static const buttonColor = Color(0xff353E43);
+
 }

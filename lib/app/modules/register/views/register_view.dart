@@ -41,17 +41,21 @@ class RegisterView extends GetView<RegisterController> {
                     child: Text(
                       "Register Account",
                       style: TextStyle(
+                        color: AppColors.titleColorGrey,
                         fontSize: TextSize.big,
-                        fontWeight: FontWeight.w900,
+                        fontWeight: FontWeight.w700,
                         // color: AppColors.lightBlue,
                       ),
                     ),
                   ),
                   const SizedBox(height: 10),
-                  const Center(
+                  Center(
                     child: Text(
                       "Enter your Credentails",
-                      // style: TextStyle(color: AppColors.lightBlue),
+                      style: TextStyle(
+                        fontSize: TextSize.small,
+                        color: AppColors.textColorGrey,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -63,11 +67,12 @@ class RegisterView extends GetView<RegisterController> {
                   // const RegisterBlueContainer(), //THIS IS THE PORTION WHERE THE REGISTER ACCOUNT TEXT
                   // White container on top of the other containers
                   // RegisterWhiteSmallContainer(),
-                  const Text(
+                  Text(
                     "Full Name",
                     style: TextStyle(
-                        // color: AppColors.lightBlue,
-                        fontWeight: FontWeight.w600),
+                        fontSize: TextSize.small,
+                        color: AppColors.titleColorGrey,
+                        fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(height: 10),
                   TextFormFieldReusable(
@@ -76,11 +81,13 @@ class RegisterView extends GetView<RegisterController> {
                     textEditingController: fullName,
                   ),
                   const SizedBox(height: 10),
-                  const Text(
+                  Text(
                     "Email",
                     style: TextStyle(
-                        // color: AppColors.lightBlue,
-                        fontWeight: FontWeight.w600),
+                      fontSize: TextSize.small,
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                   const SizedBox(height: 10),
                   TextFormFieldReusable(
@@ -89,11 +96,12 @@ class RegisterView extends GetView<RegisterController> {
                     textEditingController: email,
                   ),
                   const SizedBox(height: 10),
-                  const Text(
+                  Text(
                     "Contact Details",
                     style: TextStyle(
-                        // color: AppColors.lightBlue,
-                        fontWeight: FontWeight.w600),
+                        fontSize: TextSize.small,
+                        color: AppColors.titleColorGrey,
+                        fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(height: 10),
                   TextFormFieldReusable(
@@ -102,11 +110,12 @@ class RegisterView extends GetView<RegisterController> {
                     textEditingController: contactDetails,
                   ),
                   const SizedBox(height: 10),
-                  const Text(
+                  Text(
                     "Password",
                     style: TextStyle(
-                        // color: AppColors.lightBlue,
-                        fontWeight: FontWeight.w600),
+                        fontSize: TextSize.small,
+                        color: AppColors.titleColorGrey,
+                        fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(height: 10),
                   TextFormFieldReusable(
@@ -116,14 +125,20 @@ class RegisterView extends GetView<RegisterController> {
                     textEditingController: password,
                   ),
                   const SizedBox(height: 10),
-                  const Text(
-                      "Min. 8 char, 1 upper & lowercase, a number & a special characte."),
+                  Text(
+                    "Min. 8 char, 1 upper & lowercase, a number & a special characte.",
+                    style: TextStyle(
+                        fontSize: TextSize.small,
+                        color: AppColors.titleColorGrey,
+                        fontWeight: FontWeight.w500),
+                  ),
                   const SizedBox(height: 10),
-                  const Text(
+                  Text(
                     "Confirm Password",
                     style: TextStyle(
-                        // color: AppColors.lightBlue,
-                        fontWeight: FontWeight.w600),
+                        fontSize: TextSize.small,
+                        color: AppColors.titleColorGrey,
+                        fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(height: 10),
                   TextFormFieldReusable(
@@ -145,9 +160,14 @@ class RegisterView extends GetView<RegisterController> {
                         ),
                       ),
                       const SizedBox(width: 10),
-                      const Expanded(
+                      Expanded(
                         child: Text(
-                            "By confirming you are agreeing our Privacy Policy & Terms of Condition"),
+                          "By confirming you are agreeing our Privacy Policy & Terms of Condition",
+                          style: TextStyle(
+                              fontSize: TextSize.small,
+                              color: AppColors.titleColorGrey,
+                              fontWeight: FontWeight.w500),
+                        ),
                       )
                     ],
                   ),
@@ -155,31 +175,31 @@ class RegisterView extends GetView<RegisterController> {
                   const SizedBox(height: 30),
                   const LargeButtonReusable(
                     title: "Register",
-                    color: Colors.black,
+                    color: AppColors.buttonColor,
                     // color: AppColors.lightBlue,
                   ),
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text(
+                      Text(
                         "Already have an account?",
                         style: TextStyle(
-                          color: AppColors.silver,
-                          fontWeight: FontWeight.w900,
-                        ),
+                            fontSize: TextSize.small,
+                            color: AppColors.titleColorGrey,
+                            fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
                         onTap: () {
                           Get.to(const LoginView());
                         },
-                        child: const Text(
+                        child: Text(
                           "Log in",
                           style: TextStyle(
-                            color: AppColors.lightBlue,
-                            fontWeight: FontWeight.w900,
-                          ),
+                              fontSize: TextSize.small,
+                              color: AppColors.primaryColor,
+                              fontWeight: FontWeight.w500),
                         ),
                       ),
                     ],

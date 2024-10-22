@@ -3,6 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../../../../constants/colors.dart';
+import '../../../../../constants/text_size.dart';
+
 class AddToCartPaymentSelection extends StatelessWidget {
   const AddToCartPaymentSelection({super.key});
 
@@ -37,14 +40,13 @@ class AddToCartPaymentSelection extends StatelessWidget {
                 ),
               ),
             ),
-            const Center(
+            Center(
               child: Text(
                 "Select Your Payment Method",
                 style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black87,
-                ),
+                    color: AppColors.titleColorGrey,
+                    fontWeight: FontWeight.w700,
+                    fontSize: TextSize.normal),
               ),
             ),
             const SizedBox(height: 30),
@@ -115,18 +117,18 @@ class AddToCartPaymentSelection extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w700,
+                      fontSize: TextSize.small),
                 ),
                 const SizedBox(height: 5),
                 Text(
                   subtitle,
                   style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.grey[600],
-                  ),
+                      color: AppColors.titleColorGrey,
+                      fontWeight: FontWeight.w500,
+                      fontSize: TextSize.small),
                 ),
               ],
             ),
@@ -134,7 +136,7 @@ class AddToCartPaymentSelection extends StatelessWidget {
             Icon(
               trailingIcon,
               size: 18,
-              color: Colors.grey[600],
+              color: AppColors.textColorGrey,
             ),
           ],
         ),

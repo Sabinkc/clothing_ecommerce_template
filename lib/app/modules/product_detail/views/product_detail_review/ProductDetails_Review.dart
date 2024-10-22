@@ -48,7 +48,10 @@ class ProductDetailReview extends StatelessWidget {
 
                         Text(
                           "Sort: ",
-                          style: TextStyle(fontSize: TextSize.small),
+                          style: TextStyle(
+                              color: AppColors.titleColorGrey,
+                              fontWeight: FontWeight.w500,
+                              fontSize: TextSize.small),
                         ),
                         const SizedBox(width: 10),
                         DropDownReusable(
@@ -60,7 +63,10 @@ class ProductDetailReview extends StatelessWidget {
                         // const SizedBox(width: 10),
                         Text(
                           "Filter: ",
-                          style: TextStyle(fontSize: TextSize.small),
+                          style: TextStyle(
+                              color: AppColors.titleColorGrey,
+                              fontWeight: FontWeight.w500,
+                              fontSize: TextSize.small),
                         ),
                         const SizedBox(width: 10),
                         DropDownReusable(
@@ -110,14 +116,17 @@ class ProductDetailReview extends StatelessWidget {
                                         Text(
                                           reviews[index]["name"] ?? "",
                                           overflow: TextOverflow.ellipsis,
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.w600,
-                                          ),
+                                          style: TextStyle(
+                                              color: AppColors.primaryColor,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: TextSize.small),
                                         ),
                                         Text(
                                           reviews[index]["date"] ?? "",
-                                          style: const TextStyle(
-                                              color: Colors.grey),
+                                          style: TextStyle(
+                                              color: AppColors.captionColorGrey,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: TextSize.small),
                                         ),
                                       ],
                                     ),
@@ -131,8 +140,9 @@ class ProductDetailReview extends StatelessWidget {
                                 Text(
                                   reviews[index]["review"] ?? "",
                                   style: TextStyle(
-                                    fontSize: TextSize.small,
-                                  ),
+                                      color: AppColors.textColorGrey,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: TextSize.small),
                                 ),
                                 const SizedBox(height: 10),
                                 // if (reviews[index]["reviews_img"].isNotEmpty &&

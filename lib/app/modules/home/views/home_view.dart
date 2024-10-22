@@ -123,14 +123,15 @@ class HomeView extends GetView<HomeController> {
                             children: [
                               const Icon(
                                 Icons.category_outlined,
-                                color: Colors.red,
+                                color: AppColors.primaryColor,
                               ),
                               const SizedBox(width: 10),
                               const Text(
                                 "Categories",
                                 style: TextStyle(
                                   fontSize: 16,
-                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.titleColorGrey,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                               const Spacer(),
@@ -141,8 +142,9 @@ class HomeView extends GetView<HomeController> {
                                 child: Text(
                                   "View All",
                                   style: TextStyle(
-                                    fontSize: TextSize.small,
-                                  ),
+                                      fontSize: TextSize.small,
+                                      color: AppColors.textColorGrey,
+                                      fontWeight: FontWeight.w500),
                                 ),
                               ),
                             ],

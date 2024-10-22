@@ -22,9 +22,9 @@ class UserAddReview extends StatelessWidget {
   @override
   Widget build(BuildContext context) => KeyboardDismisser(
           child: Scaffold(
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: AppColors.lightSilver,
+          backgroundColor: Colors.white,
           title: const Text("Write Review"),
           centerTitle: false,
         ),
@@ -57,16 +57,20 @@ class UserAddReview extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
                               style: TextStyle(
-                                  fontSize: TextSize.normal,
-                                  fontWeight: FontWeight.bold),
+                                fontSize: TextSize.normal,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.titleColorGrey,
+                              ),
                             ),
                             const SizedBox(height: 10),
                             Text(
                               "Rs. $price",
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                  fontSize: TextSize.normal,
-                                  color: Colors.blue),
+                                fontSize: TextSize.normal,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.primaryColor,
+                              ),
                             ),
                             const SizedBox(height: 10),
                             Obx(() => PannableRatingBar(
@@ -135,7 +139,7 @@ class UserAddReview extends StatelessWidget {
                 const SizedBox(height: 20),
                 const LargeButtonReusable(
                   title: "Submit",
-                  color: Colors.black,
+                  color: AppColors.buttonColor,
                 )
               ],
             ),

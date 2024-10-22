@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, must_be_immutable
 
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
@@ -81,6 +82,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "Full Name",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -94,6 +96,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "Country",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -123,8 +126,7 @@ class UserAccountEditAddress extends StatelessWidget {
                           return country
                               .map<PopupMenuItem<String>>((String value) {
                             return PopupMenuItem(
-                                value: value,
-                                child: Text(value));
+                                value: value, child: Text(value));
                           }).toList();
                         },
                       ),
@@ -138,6 +140,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "State/Province",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -167,8 +170,7 @@ class UserAccountEditAddress extends StatelessWidget {
                           return stateProvince
                               .map<PopupMenuItem<String>>((String value) {
                             return PopupMenuItem(
-                                value: value,
-                                child: Text(value));
+                                value: value, child: Text(value));
                           }).toList();
                         },
                       ),
@@ -178,6 +180,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "City",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -207,8 +210,7 @@ class UserAccountEditAddress extends StatelessWidget {
                           return city
                               .map<PopupMenuItem<String>>((String value) {
                             return PopupMenuItem(
-                                value: value,
-                                child: Text(value));
+                                value: value, child: Text(value));
                           }).toList();
                         },
                       ),
@@ -218,6 +220,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "Zone",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -247,8 +250,7 @@ class UserAccountEditAddress extends StatelessWidget {
                           return zone
                               .map<PopupMenuItem<String>>((String value) {
                             return PopupMenuItem(
-                                value: value,
-                                child: Text(value));
+                                value: value, child: Text(value));
                           }).toList();
                         },
                       ),
@@ -258,6 +260,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "Zip Code",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -271,6 +274,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   Text(
                     "Phone Number",
                     style: TextStyle(
+                      color: AppColors.titleColorGrey,
                       fontSize: TextSize.normal,
                       fontWeight: FontWeight.w700,
                     ),
@@ -283,7 +287,7 @@ class UserAccountEditAddress extends StatelessWidget {
                   const SizedBox(height: 30),
                   const LargeButtonReusable(
                     title: "Update",
-                    color: Colors.black,
+                    color: AppColors.buttonColor,
                   )
                 ],
               ),

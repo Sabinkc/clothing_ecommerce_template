@@ -23,16 +23,18 @@ class LoginBlueContainer extends StatelessWidget {
                 "Sign in to your\n     Account",
                 style: TextStyle(
                   fontSize: TextSize.big,
-                  fontWeight: FontWeight.w900,
+                  fontWeight: FontWeight.w700,
                   color: Colors.white,
                 ),
               ),
             ),
             const SizedBox(height: 10),
-            const Text(
+            Text(
               "Enter your email and password to log in",
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
+              style: TextStyle(
+                  fontSize: TextSize.small,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700),
             ),
           ],
         ),

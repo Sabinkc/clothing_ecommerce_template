@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/user_account/controllers/user_account_controller.dart';
 
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabs_info/user_account_tabs_Info.dart';
@@ -47,19 +48,20 @@ class UserAccountTabBar extends StatelessWidget {
                     border: Border.all(color: Colors.black),
                     borderRadius: BorderRadius.circular(16),
                     color: userAccController.tabBarIndex.value == index
-                        ? Colors.black
+                        ? AppColors.buttonColor
                         // Color(0xff6B7280)
-                        : const Color(0xffF3F4F6),
+                        : Colors.white,
                   ),
                   child: Text(
                     tabLabels[index],
                     style: TextStyle(
                       fontSize: TextSize.small,
+                      fontWeight: FontWeight.w700,
                       color:
                           //  Colors.white,
                           userAccController.tabBarIndex.value == index
                               ? Colors.white
-                              : Colors.black,
+                              : AppColors.titleColorGrey,
                     ),
                   ),
                 ),

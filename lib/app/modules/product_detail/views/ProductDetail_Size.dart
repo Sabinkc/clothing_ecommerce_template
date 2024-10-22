@@ -1,7 +1,4 @@
 // ignore_for_file: file_names
-
-import 'package:d_and_s/app/constants/colors.dart';
-
 import 'package:d_and_s/app/modules/product_detail/controllers/product_detail_controller.dart';
 
 import 'package:flutter/material.dart';
@@ -39,7 +36,7 @@ class ProductDetailSize extends StatelessWidget {
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(
                           color: controller.sizeIndex.value == index
-                              ? Color(0xffF1C338)
+                              ? const Color(0xffF1C338)
                               : Colors.grey,
                           // width: 5,
                         ),

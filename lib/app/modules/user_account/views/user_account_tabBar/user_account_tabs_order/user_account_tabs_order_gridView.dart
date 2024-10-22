@@ -148,8 +148,9 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                       "State: " + state[index],
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
+                          color: AppColors.titleColorGrey,
                           fontSize: TextSize.small,
-                          fontWeight: FontWeight.w800),
+                          fontWeight: FontWeight.w600),
                     ),
                     const SizedBox(height: 5),
                     Row(
@@ -159,8 +160,8 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                           // overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontSize: TextSize.small,
-                            // fontWeight: FontWeight.bold,
-                            // color: Colors.red,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.titleColorGrey,
                           ),
                         ),
                         Expanded(
@@ -170,8 +171,8 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                             maxLines: 2,
                             style: TextStyle(
                               fontSize: TextSize.small,
-                              fontWeight: FontWeight.bold,
-                              // color: Colors.red,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.primaryColor,
                             ),
                           ),
                         ),
@@ -213,6 +214,8 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontSize: TextSize.small,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.titleColorGrey,
                           ),
                         ),
                         Expanded(
@@ -220,8 +223,9 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                             date[index],
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
                               fontSize: TextSize.small,
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.captionColorGrey,
                             ),
                           ),
                         ),
