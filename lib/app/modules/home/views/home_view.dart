@@ -123,7 +123,7 @@ class HomeView extends GetView<HomeController> {
                             children: [
                               const Icon(
                                 Icons.category_outlined,
-                                color: AppColors.primaryColor,
+                                color: AppColors.textColorGrey,
                               ),
                               const SizedBox(width: 10),
                               const Text(
