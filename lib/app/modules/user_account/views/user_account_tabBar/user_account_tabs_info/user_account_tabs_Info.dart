@@ -151,7 +151,7 @@ class UserAccountTabsInfo extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
               color:
@@ -160,7 +160,7 @@ class UserAccountTabsInfo extends StatelessWidget {
           ),
           Text(
             value,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
               color: AppColors.captionColorGrey, // Lighter gray for values

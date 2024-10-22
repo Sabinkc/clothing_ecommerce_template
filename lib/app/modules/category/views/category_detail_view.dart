@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/category/views/category_detail_gridview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -46,11 +47,21 @@ class CategoryDetailView extends StatelessWidget {
                     builder: (BuildContext context) => ShopViewSubCategory(),
                   );
                 },
-                child: const Row(
+                child: Row(
                   children: [
-                    Text("Filter"),
-                    SizedBox(width: 5),
-                    Icon(Icons.filter_list),
+                    Text(
+                      "Filter",
+                      style: TextStyle(
+                        fontSize: TextSize.small,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.textColorGrey,
+                      ),
+                    ),
+                    const SizedBox(width: 5),
+                    const Icon(
+                      Icons.filter_list,
+                      color: AppColors.textColorGrey,
+                    ),
                   ],
                 ),
               ),
@@ -114,7 +125,7 @@ class CategoryDetailView extends StatelessWidget {
                                                                   "sub_category"]
                                                               [index]
                                                           ["sub_category_id"]
-                                                  ? Colors.blue
+                                                  ? AppColors.primaryColor
                                                   : Colors.transparent,
                                               width: 2),
                                           image: DecorationImage(
@@ -145,8 +156,8 @@ class CategoryDetailView extends StatelessWidget {
                                                   selectedSubCategory[0]
                                                           ["sub_category"]
                                                       [index]["sub_category_id"]
-                                              ? Colors.blue
-                                              : Colors.grey[700],
+                                              ? AppColors.primaryColor
+                                              : AppColors.textColorGrey,
                                           // fontWeight: FontWeight.bold,
                                           fontSize: 14,
                                         ),

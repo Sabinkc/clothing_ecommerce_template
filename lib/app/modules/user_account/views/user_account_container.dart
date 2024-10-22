@@ -61,7 +61,7 @@ class UserAccountContainer extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Wish List",
                           style: TextStyle(
                             fontSize: 14,
@@ -91,7 +91,7 @@ class UserAccountContainer extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Cart",
                           style: TextStyle(
                             fontSize: 14,

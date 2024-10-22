@@ -1,4 +1,4 @@
-
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/colors.dart';
@@ -10,7 +10,7 @@ class ShopViewAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      scrolledUnderElevation: 0, 
+      scrolledUnderElevation: 0,
       backgroundColor: AppColors.lightSilver,
       title: const Text('Shop'),
       centerTitle: false,
@@ -25,11 +25,17 @@ class ShopViewAppBar extends StatelessWidget {
                 builder: (BuildContext context) => ShopViewSubCategory(),
               );
             },
-            child: const Row(
+            child: Row(
               children: [
-                Text("Filter"),
-                SizedBox(width: 10),
-                Icon(Icons.filter_list),
+                Text(
+                  "Filter",
+                  style: TextStyle(
+                      fontSize: TextSize.small,
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.textColorGrey),
+                ),
+                const SizedBox(width: 10),
+                const Icon(Icons.filter_list, color: AppColors.textColorGrey),
               ],
             ),
           ),

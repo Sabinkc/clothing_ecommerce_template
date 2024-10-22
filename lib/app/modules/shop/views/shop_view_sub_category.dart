@@ -1,5 +1,5 @@
 // ignore_for_file: must_be_immutable
-
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';
 import 'package:d_and_s/app/modules/shop/controllers/shop_controller.dart';
@@ -71,17 +71,20 @@ class ShopViewSubCategory extends StatelessWidget {
                 ),
               ),
               // A header with a clear and apply button
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     'Filter Options',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: TextSize.normal,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Icon(Icons.filter_list),
+                  const Icon(
+                    Icons.filter_list,
+                    color: AppColors.textColorGrey,
+                  ),
                 ],
               ),
               const Divider(),
@@ -91,21 +94,27 @@ class ShopViewSubCategory extends StatelessWidget {
                   Text(
                     "Size: ",
                     style: TextStyle(
-                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                        color: AppColors.titleColorGrey,
+                        fontSize: TextSize.normal,
+                        fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
                   ShopViewReusableGridView(item: size.length, title: size),
                   Text(
                     "Brand: ",
                     style: TextStyle(
-                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                        color: AppColors.titleColorGrey,
+                        fontSize: TextSize.normal,
+                        fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
                   ShopViewReusableGridView(item: brand.length, title: brand),
                   Text(
                     "Product Type: ",
                     style: TextStyle(
-                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                        color: AppColors.titleColorGrey,
+                        fontSize: TextSize.normal,
+                        fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
                   ShopViewReusableGridView(
@@ -113,7 +122,9 @@ class ShopViewSubCategory extends StatelessWidget {
                   Text(
                     "Price: ",
                     style: TextStyle(
-                        fontSize: TextSize.normal, fontWeight: FontWeight.bold),
+                        color: AppColors.titleColorGrey,
+                        fontSize: TextSize.normal,
+                        fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 10),
                   ShopViewReusableGridView(item: price.length, title: price),
@@ -143,7 +154,7 @@ class ShopViewSubCategory extends StatelessWidget {
                   const SizedBox(height: 20),
                   const LargeButtonReusable(
                     title: "Apply Filter",
-                    color: Colors.black,
+                    color: AppColors.buttonColor,
                   )
                 ],
               ),
@@ -217,7 +228,8 @@ class ShopViewReusableGridView extends StatelessWidget {
           },
           child: Container(
             decoration: BoxDecoration(
-                color: count.value == index ? Colors.black : Colors.white,
+                color:
+                    count.value == index ? AppColors.buttonColor : Colors.white,
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(8)),
             child: Center(

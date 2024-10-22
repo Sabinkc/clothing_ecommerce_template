@@ -112,13 +112,13 @@ class ShopView extends GetView<ShopController> {
                         Get.to(
                           ProductDetailView(data: product),
 
-                          transition: Transition
-                              .leftToRightWithFade, // Professional fade-in effect
-                          duration: const Duration(
-                              milliseconds:
-                                  500), // Smooth duration for the transition
-                          curve: Curves
-                              .easeInOut, // Adds smoothness with easing in and out
+                          // transition: Transition
+                          //     .leftToRightWithFade, // Professional fade-in effect
+                          // duration: const Duration(
+                          //     milliseconds:
+                          //         500), // Smooth duration for the transition
+                          // curve: Curves
+                          //     .easeInOut, // Adds smoothness with easing in and out
                         );
                       },
                       child: Stack(children: [

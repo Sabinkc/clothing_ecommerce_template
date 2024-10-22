@@ -30,7 +30,10 @@ class AddedCart extends StatelessWidget {
         centerTitle: false,
         actions: [
           IconButton(
-            icon: const Icon(Icons.delete_outline),
+            icon: const Icon(
+              Icons.delete_outline,
+              color: AppColors.textColorGrey,
+            ),
             onPressed: () {
               // Add delete action
               controller.cartProducts.removeWhere((item) =>

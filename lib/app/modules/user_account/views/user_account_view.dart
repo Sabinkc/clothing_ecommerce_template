@@ -1,4 +1,4 @@
-import 'package:d_and_s/app/constants/colors.dart';
+
 import 'package:d_and_s/app/modules/user_account/views/user_account_container.dart';
 
 import 'package:d_and_s/app/modules/user_account/views/user_account_tabBar/user_account_tabbar.dart';
