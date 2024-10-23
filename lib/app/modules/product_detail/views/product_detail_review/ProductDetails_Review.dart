@@ -6,6 +6,7 @@ import 'package:d_and_s/app/modules/reusable_widgets/drop_down.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
+import 'package:get/get.dart';
 
 import '../../../../constants/text_size.dart';
 
@@ -27,9 +28,21 @@ class ProductDetailReview extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.lightSilver,
       appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
-        title: const Text("Reviews"),
+        backgroundColor: AppColors.appbarBg,
+        title: const Text(
+          "Reviews",
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: false,
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
       ),
       body: reviews.isNotEmpty
           ? SingleChildScrollView(

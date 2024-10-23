@@ -1,5 +1,6 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 
 import '../../../constants/colors.dart';
 import 'shop_view_sub_category.dart';
@@ -11,8 +12,12 @@ class ShopViewAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       scrolledUnderElevation: 0,
-      backgroundColor: AppColors.lightSilver,
-      title: const Text('Shop'),
+      // backgroundColor: AppColors.lightSilver,
+      backgroundColor: AppColors.appbarBg,
+      title: const Text(
+        'Shop',
+        style: TextStyle(color: Colors.white),
+      ),
       centerTitle: false,
       actions: [
         Padding(
@@ -32,10 +37,15 @@ class ShopViewAppBar extends StatelessWidget {
                   style: TextStyle(
                       fontSize: TextSize.small,
                       fontWeight: FontWeight.w500,
-                      color: AppColors.textColorGrey),
+                      // color: AppColors.textColorGrey,
+                      color: Colors.white),
                 ),
                 const SizedBox(width: 10),
-                const Icon(Icons.filter_list, color: AppColors.textColorGrey),
+                const Icon(
+                  Icons.filter_list,
+                  // color: AppColors.textColorGrey,
+                  color: Colors.white,
+                ),
               ],
             ),
           ),

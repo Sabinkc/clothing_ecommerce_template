@@ -27,14 +27,20 @@ class CategoryDetailView extends StatelessWidget {
       home: Scaffold(
         backgroundColor: AppColors.lightSilver,
         appBar: AppBar(
-          backgroundColor: AppColors.lightSilver,
-          title: Text(controllerHomeController.index.value),
+          backgroundColor: AppColors.appbarBg,
+          title: Text(
+            controllerHomeController.index.value,
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: false,
           leading: GestureDetector(
             onTap: () {
               Navigator.pop(context);
             },
-            child: const Icon(Icons.arrow_back),
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+            ),
           ),
           actions: [
             Padding(
@@ -52,15 +58,16 @@ class CategoryDetailView extends StatelessWidget {
                     Text(
                       "Filter",
                       style: TextStyle(
-                        fontSize: TextSize.small,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.textColorGrey,
-                      ),
+                          fontSize: TextSize.small,
+                          fontWeight: FontWeight.w500,
+                          // color: AppColors.textColorGrey,
+                          color: Colors.white),
                     ),
                     const SizedBox(width: 5),
                     const Icon(
                       Icons.filter_list,
-                      color: AppColors.textColorGrey,
+                      // color: AppColors.textColorGrey,
+                      color: Colors.white,
                     ),
                   ],
                 ),

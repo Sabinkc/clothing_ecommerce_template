@@ -49,7 +49,7 @@ class HomeView extends GetView<HomeController> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(121),
+          preferredSize: const Size.fromHeight(135),
           child: Column(
             children: [
               AppBarMainPage(

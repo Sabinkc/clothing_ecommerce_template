@@ -32,13 +32,16 @@ class ShopView extends GetView<ShopController> {
       backgroundColor: AppColors.lightSilver,
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(110),
-        child: Column(
-          children: [
-            const ShopViewAppBar(),
-            SearchBox(
-              showFilter: false,
-            ),
-          ],
+        child: Container(
+          color: AppColors.appbarBg,
+          child: Column(
+            children: [
+              const ShopViewAppBar(),
+              SearchBox(
+                showFilter: false,
+              ),
+            ],
+          ),
         ),
       ),
       body: Padding(

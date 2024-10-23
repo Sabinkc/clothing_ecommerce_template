@@ -25,14 +25,17 @@ class AddedCart extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.lightSilver,
       appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
-        title: const Text("My Cart"),
-        centerTitle: false,
+        backgroundColor: AppColors.appbarBg,
+        title: const Text(
+          "My Cart",
+          style: TextStyle(color: Colors.white),
+        ),
         actions: [
           IconButton(
             icon: const Icon(
               Icons.delete_outline,
-              color: AppColors.textColorGrey,
+              // color: AppColors.textColorGrey,
+              color: Colors.white,
             ),
             onPressed: () {
               // Add delete action
@@ -44,6 +47,16 @@ class AddedCart extends StatelessWidget {
             },
           ),
         ],
+        centerTitle: false,
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
       ),
       body: Obx(
         () {

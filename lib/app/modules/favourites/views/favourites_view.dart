@@ -18,8 +18,12 @@ class FavouritesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.lightSilver,
-        title: const Text('Favourites'),
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: AppColors.appbarBg,
+        title: const Text(
+          'Favourites',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: false,
       ),
       body: Container(

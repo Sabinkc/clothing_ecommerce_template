@@ -47,7 +47,7 @@ class ProductDetailView extends StatelessWidget {
         ],
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.white,
+            backgroundColor: AppColors.appbarBg,
             title: SearchBox(
               showFilter: true,
             ),
@@ -79,6 +79,7 @@ class ProductDetailView extends StatelessWidget {
                       child: Icon(
                         Icons.shopping_cart_outlined,
                         size: 30,
+                        color: Colors.white,
                         // color: Colors.grey,
                       ),
                     ),
@@ -117,12 +118,16 @@ class ProductDetailView extends StatelessWidget {
             ],
             centerTitle: false,
             leading: GestureDetector(
-                onTap: () {
-                  controller.selectedColorName.value = '';
-                  controller.clear();
-                  Get.back();
-                },
-                child: const Icon(Icons.arrow_back_ios)),
+              onTap: () {
+                controller.selectedColorName.value = '';
+                controller.clear();
+                Get.back();
+              },
+              child: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.white,
+              ),
+            ),
           ),
           body: Container(
             height: double.infinity,

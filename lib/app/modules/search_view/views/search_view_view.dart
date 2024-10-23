@@ -34,11 +34,12 @@ class SearchViewView extends GetView<SearchViewController> {
         backgroundColor: AppColors.lightSilver,
         appBar: AppBar(
           elevation: 1,
-          backgroundColor: Colors.white,
-          iconTheme: const IconThemeData(color: Colors.black),
+          backgroundColor: AppColors.appbarBg,
+          iconTheme: const IconThemeData(color: Colors.white),
           title: Container(
             decoration: BoxDecoration(
               color: Colors.grey[200],
+              // color: AppColors.appbarBg,
               borderRadius: BorderRadius.circular(10),
             ),
             child: TextField(

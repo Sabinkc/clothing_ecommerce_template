@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -17,14 +18,17 @@ class CategoryView extends GetView<CategoryController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text("Category"),
+        backgroundColor: AppColors.appbarBg,
+        title: const Text(
+          "Category",
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: false,
       ),
       body: Container(
         color: Colors.white,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+          padding: const EdgeInsets.fromLTRB(15, 20, 15, 0),
           child: Column(
             children: [
               Expanded(

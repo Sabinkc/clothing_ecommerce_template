@@ -21,9 +21,21 @@ class AddToCartCheckout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Checkout"),
+        title: const Text(
+          "Checkout",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: AppColors.appbarBg,
         centerTitle: false,
-        backgroundColor: AppColors.lightSilver,
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
       ),
       body: Container(
         height: double.infinity,

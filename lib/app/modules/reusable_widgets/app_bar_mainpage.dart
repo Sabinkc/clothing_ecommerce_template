@@ -24,13 +24,14 @@ class AppBarMainPage extends StatelessWidget {
         children: [
           AppBar(
             scrolledUnderElevation: 0,
-            backgroundColor: Colors.white,
+            backgroundColor: AppColors.appbarBg,
 
             title: Padding(
               padding: const EdgeInsets.only(left: 10),
               child: Text(
                 title,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.white),
               ),
             ),
             centerTitle: false,
@@ -57,7 +58,8 @@ class AppBarMainPage extends StatelessWidget {
                       child: Icon(
                         Icons.favorite_outline,
                         size: 30,
-                        color: AppColors.textColorGrey,
+                        // color: AppColors.textColorGrey,
+                        color: Colors.white,
                       ),
                     ),
                     Obx(
@@ -108,7 +110,8 @@ class AppBarMainPage extends StatelessWidget {
                       child: Icon(
                         Icons.shopping_cart_outlined,
                         size: 30,
-                        color: AppColors.textColorGrey,
+                        // color: AppColors.textColorGrey,
+                        color: Colors.white,
                       ),
                     ),
                     Obx(
@@ -143,6 +146,7 @@ class AppBarMainPage extends StatelessWidget {
               const SizedBox(width: 20),
             ],
           ),
+          SizedBox(height: 10),
           SearchBox(
             showFilter: true,
           ),

@@ -20,8 +20,17 @@ class PlaceOrder extends StatelessWidget {
           fit: BoxFit.contain,
           height: 100, // Adjust the height according to your needs
         ),
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: AppColors.appbarBg,
         centerTitle: false,
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
