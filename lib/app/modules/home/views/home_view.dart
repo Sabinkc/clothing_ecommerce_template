@@ -49,7 +49,7 @@ class HomeView extends GetView<HomeController> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(135),
+          preferredSize: const Size.fromHeight(131),
           child: Column(
             children: [
               AppBarMainPage(
@@ -60,7 +60,7 @@ class HomeView extends GetView<HomeController> {
           ),
         ),
         body: Container(
-          color: AppColors.lightSilver,
+          color: Colors.white,
           // color: Colors.white,
           child: NestedScrollView(
             headerSliverBuilder:
@@ -163,7 +163,7 @@ class HomeView extends GetView<HomeController> {
                 SliverAppBar(
                   scrolledUnderElevation: 0,
                   backgroundColor:
-                      innerBoxIsScrolled ? Colors.white : AppColors.lightSilver,
+                      innerBoxIsScrolled ? Colors.white : Colors.white,
                   title: HomeSectionTabBar(),
                   floating: false,
                   pinned: true, // Keeps app bar visible on scroll

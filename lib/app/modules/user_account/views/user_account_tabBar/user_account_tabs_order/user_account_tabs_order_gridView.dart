@@ -98,6 +98,12 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
                       children: [
                         Container(
                           decoration: BoxDecoration(
+                            border: const BorderDirectional(
+                              bottom: BorderSide(
+                                color: AppColors.primaryColor,
+                                width: 2,
+                              ),
+                            ),
                             image: DecorationImage(
                               image: NetworkImage(
                                   img[index]), // Replace with actual image URL

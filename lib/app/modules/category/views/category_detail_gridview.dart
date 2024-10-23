@@ -123,6 +123,12 @@ class CategoryDetailGridView extends StatelessWidget {
                                   },
                                   child: Container(
                                     decoration: BoxDecoration(
+                                      border: const BorderDirectional(
+                                        bottom: BorderSide(
+                                          color: AppColors.primaryColor,
+                                          width: 2,
+                                        ),
+                                      ),
                                       image: DecorationImage(
                                         image: NetworkImage(imageUrls[imageIndices[
                                                 index]

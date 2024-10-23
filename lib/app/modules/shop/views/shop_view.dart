@@ -29,7 +29,7 @@ class ShopView extends GetView<ShopController> {
       (index) => 0.obs,
     );
     return Scaffold(
-      backgroundColor: AppColors.lightSilver,
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(110),
         child: Container(
@@ -153,6 +153,12 @@ class ShopView extends GetView<ShopController> {
                                     },
                                     child: Container(
                                       decoration: BoxDecoration(
+                                        border: const BorderDirectional(
+                                          bottom: BorderSide(
+                                            color: AppColors.primaryColor,
+                                            width: 2,
+                                          ),
+                                        ),
                                         image: DecorationImage(
                                           image: NetworkImage(imageUrls[
                                               imageIndices[index]

@@ -25,7 +25,7 @@ class CategoryDetailView extends StatelessWidget {
         .toList();
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: AppColors.appbarBg,
           title: Text(
@@ -78,7 +78,7 @@ class CategoryDetailView extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.only(top: 20),
           child: Container(
-            color: AppColors.lightSilver,
+            color: Colors.white,
             child: SingleChildScrollView(
               child: Column(
                 children: [

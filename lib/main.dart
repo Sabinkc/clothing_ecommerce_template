@@ -20,14 +20,15 @@ void main() async {
   FlutterNativeSplash.remove();
 
   runApp(
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) => ResponsiveSizer(
-        builder: (context, orientation, screenType) {
-          return const MyApp(); // Your actual app
-        },
-      ),
+    // DevicePreview(
+    //   enabled: !kReleaseMode,
+    //   builder: (context) =>
+    ResponsiveSizer(
+      builder: (context, orientation, screenType) {
+        return const MyApp(); // Your actual app
+      },
     ),
+    // ),
   );
 }
 

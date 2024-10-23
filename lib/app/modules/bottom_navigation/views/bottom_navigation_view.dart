@@ -43,7 +43,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
             ),
 
             // color: AppColors.lightBlue,
-            height: Adaptive.h(6),
+            height: Adaptive.h(6.5),
             child: Obx(
               () => Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -57,19 +57,20 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height: 4,
+                          height: 2,
                           width: 60,
                           color: controllerBottomNav.count.value == 0
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
-                        // SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Icon(Icons.home,
                               color: controllerBottomNav.count.value == 0
                                   ? AppColors.primaryColor
                                   : Colors.white),
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Text(
                             "Home",
@@ -92,18 +93,20 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height: 4,
+                          height: 2,
                           width: 60,
                           color: controllerBottomNav.count.value == 1
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Icon(Icons.category,
                               color: controllerBottomNav.count.value == 1
                                   ? AppColors.primaryColor
                                   : Colors.white),
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Text(
                             "Category",
@@ -126,18 +129,20 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height: 4,
+                          height: 2,
                           width: 60,
                           color: controllerBottomNav.count.value == 2
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Icon(Icons.shop,
                               color: controllerBottomNav.count.value == 2
                                   ? AppColors.primaryColor
                                   : Colors.white),
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Text(
                             "Shop",
@@ -160,18 +165,20 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height: 4,
+                          height: 2,
                           width: 60,
                           color: controllerBottomNav.count.value == 3
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Icon(Icons.shopping_cart,
                               color: controllerBottomNav.count.value == 3
                                   ? AppColors.primaryColor
                                   : Colors.white),
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Text(
                             "Cart",
@@ -194,18 +201,20 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height: 4,
+                          height: 2,
                           width: 60,
                           color: controllerBottomNav.count.value == 4
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Icon(Icons.person,
                               color: controllerBottomNav.count.value == 4
                                   ? AppColors.primaryColor
                                   : Colors.white),
                         ),
+                        const SizedBox(height: 5),
                         Expanded(
                           child: Text(
                             "Me",
