@@ -21,7 +21,7 @@ class HomeSectionTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
       child: SizedBox(
         height: 15,
         child: ListView.builder(
