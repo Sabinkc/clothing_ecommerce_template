@@ -35,7 +35,7 @@ class SearchGridView extends StatelessWidget {
         crossAxisCount: 2,
         crossAxisSpacing: 8.0,
         mainAxisSpacing: 10.0,
-        childAspectRatio: 0.6,
+        childAspectRatio: 0.55,
       ),
       itemBuilder: (BuildContext context, index) {
         final selectedSearchResult = controllerSearch.searchResult[index];
@@ -114,6 +114,12 @@ class SearchGridView extends StatelessWidget {
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
+                                    border: const BorderDirectional(
+                                      bottom: BorderSide(
+                                        color: AppColors.primaryColor,
+                                        width: 2,
+                                      ),
+                                    ),
                                     image: DecorationImage(
                                       image: NetworkImage(imageUrls[imageIndices[
                                               index]
@@ -125,53 +131,42 @@ class SearchGridView extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Positioned(
-                              top: 10,
-                              right: 10,
-                              child: GestureDetector(
-                                onTap: () {
-                                  controllerFavorites.searchProductId(
-                                      selectedSearchResult["product_id"],
-                                      selectedSearchResult);
-                                },
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: AppColors.lightSilver,
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(5.0),
-                                    child: Obx(
-                                      () => Icon(
-                                        controllerFavorites.isFavorite(
-                                                selectedSearchResult[
-                                                    "product_id"])
-                                            ? Icons.favorite
-                                            : Icons.favorite_border,
-                                        color: Colors.black.withOpacity(0.7),
-                                        size: 20,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
+                            // Positioned(
+                            //   top: 10,
+                            //   right: 10,
+                            //   child: GestureDetector(
+                            //     onTap: () {
+                            //       controllerFavorites.searchProductId(
+                            //           selectedSearchResult["product_id"],
+                            //           selectedSearchResult);
+                            //     },
+                            //     child: Container(
+                            //       decoration: BoxDecoration(
+                            //         borderRadius: BorderRadius.circular(8),
+                            //         color: AppColors.lightSilver,
+                            //       ),
+                            //       child: Padding(
+                            //         padding: const EdgeInsets.all(5.0),
+                            //         child: Obx(
+                            //           () => Icon(
+                            //             controllerFavorites.isFavorite(
+                            //                     selectedSearchResult[
+                            //                         "product_id"])
+                            //                 ? Icons.favorite
+                            //                 : Icons.favorite_border,
+                            //             color: Colors.black.withOpacity(0.7),
+                            //             size: 20,
+                            //           ),
+                            //         ),
+                            //       ),
+                            //     ),
+                            //   ),
+                            // ),
                           ],
                         ),
                         const SizedBox(height: 10),
                         Padding(
-                          padding: const EdgeInsets.only(left: 10),
-                          child: Text(
-                            selectedSearchResult['name'] ?? "",
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                                fontSize: TextSize.small,
-                                fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                        const SizedBox(height: 5),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15),
+                          padding: const EdgeInsets.only(left: 0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -234,7 +229,7 @@ class SearchGridView extends StatelessWidget {
                                       margin: const EdgeInsets.only(right: 15),
                                       child: Icon(
                                         Icons.shopping_cart_outlined,
-                                        size: 18,
+                                        size: 25,
                                         color: Colors.black.withOpacity(0.7),
                                       ),
                                     ),

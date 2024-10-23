@@ -206,7 +206,7 @@ class CategoryDetailGridView extends StatelessWidget {
                                             const EdgeInsets.only(right: 15),
                                         child: Icon(
                                           Icons.shopping_cart_outlined,
-                                          size: 18,
+                                          size: 25,
                                           color: Colors.black.withOpacity(0.7),
                                         ),
                                       ),

@@ -241,7 +241,7 @@ class ShopView extends GetView<ShopController> {
                                                   right: 15),
                                               child: Icon(
                                                 Icons.shopping_cart_outlined,
-                                                size: 18,
+                                                size: 25,
                                                 color: Colors.black
                                                     .withOpacity(0.7),
                                               ),

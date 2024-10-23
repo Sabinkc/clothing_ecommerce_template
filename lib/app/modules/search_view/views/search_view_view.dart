@@ -31,7 +31,7 @@ class SearchViewView extends GetView<SearchViewController> {
 
     return KeyboardDismisser(
       child: Scaffold(
-        backgroundColor: AppColors.lightSilver,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 1,
           backgroundColor: AppColors.appbarBg,
@@ -60,8 +60,8 @@ class SearchViewView extends GetView<SearchViewController> {
                       builder: (BuildContext context) => FilterView(),
                     );
                   },
-                  child:
-                      const Icon(Icons.filter_list, color: AppColors.textColorGrey),
+                  child: const Icon(Icons.filter_list,
+                      color: AppColors.textColorGrey),
                 ),
                 border: InputBorder.none,
               ),
