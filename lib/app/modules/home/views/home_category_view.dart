@@ -41,7 +41,7 @@ class HomeCategoryView extends StatelessWidget {
             Get.to(CategoryDetailView());
           },
           child: Container(
-            margin: const EdgeInsets.only(left: 25),
+            margin: const EdgeInsets.only(left: 18),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               // boxShadow: [
@@ -58,8 +58,8 @@ class HomeCategoryView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: 80,
-                  width: 80,
+                  height: 70,
+                  width: 70,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
