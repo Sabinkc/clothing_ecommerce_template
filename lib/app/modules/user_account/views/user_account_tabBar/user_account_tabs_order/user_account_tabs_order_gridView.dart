@@ -63,7 +63,7 @@ class UserAccountTabsOrderGridView extends StatelessWidget {
           mainAxisSpacing: 10.0,
           // childAspectRatio: 0.65,
           childAspectRatio:
-              userAccController.changeListAndGrid.value ? 0.65 : 1.3,
+              userAccController.changeListAndGrid.value ? 0.6 : 1.3,
           // 1.3,
         ),
         itemBuilder: (BuildContext context, index) {
