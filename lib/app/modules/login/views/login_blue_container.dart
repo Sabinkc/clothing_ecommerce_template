@@ -12,7 +12,7 @@ class LoginBlueContainer extends StatelessWidget {
     return Align(
       alignment: Alignment.topLeft,
       child: Container(
-        color: AppColors.lightBlue, // Choose any color you want
+        color: AppColors.primaryColor, // Choose any color you want
         width: double.infinity,
         height: Adaptive.h(50),
         child: Column(

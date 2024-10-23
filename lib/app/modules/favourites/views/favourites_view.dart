@@ -20,9 +20,13 @@ class FavouritesView extends StatelessWidget {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: AppColors.appbarBg,
-        title: const Text(
+        title: Text(
           'Favourites',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: TextSize.normal,
+          ),
         ),
         centerTitle: false,
       ),
@@ -38,14 +42,14 @@ class FavouritesView extends StatelessWidget {
                 children: [
                   controller.favoritesList.isEmpty
                       ? Container(
-                          height: 400,
+                          height: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
                             image: const DecorationImage(
                               image: AssetImage(
                                   "assets/images/emptyWishList.png"), // Use AssetImage instead of Image.asset
                               fit: BoxFit
-                                  .cover, // Optional: Adjust image fit if necessary
+                                  .fill, // Optional: Adjust image fit if necessary
                             ),
                           ),
                         )
@@ -229,7 +233,7 @@ class FavouritesView extends StatelessWidget {
                 ),
                 padding:
                     const EdgeInsets.all(10), // Padding inside the container
-                height: Adaptive.h(27),
+                height: Adaptive.h(33),
                 child: RecommendationView(),
               ),
             ],

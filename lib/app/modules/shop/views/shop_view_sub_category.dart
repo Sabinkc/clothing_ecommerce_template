@@ -228,8 +228,9 @@ class ShopViewReusableGridView extends StatelessWidget {
           },
           child: Container(
             decoration: BoxDecoration(
-                color:
-                    count.value == index ? AppColors.buttonColor : Colors.white,
+                color: count.value == index
+                    ? AppColors.primaryColor
+                    : Colors.white,
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(8)),
             child: Center(

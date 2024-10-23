@@ -20,7 +20,7 @@ class LoginView extends GetView<LoginController> {
         ],
         child: Scaffold(
           body: Container(
-            color: AppColors.lightBlue,
+            color: AppColors.primaryColor,
             child: SafeArea(
               top: true,
               bottom: false,

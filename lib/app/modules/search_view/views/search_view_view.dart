@@ -39,6 +39,7 @@ class SearchViewView extends GetView<SearchViewController> {
           title: Container(
             decoration: BoxDecoration(
               color: Colors.grey[200],
+              border: Border.all(color: AppColors.primaryColor, width: 3),
               // color: AppColors.appbarBg,
               borderRadius: BorderRadius.circular(10),
             ),
@@ -48,7 +49,10 @@ class SearchViewView extends GetView<SearchViewController> {
               // focusNode: searchFocusNode, // Set focus node for the TextField
               decoration: InputDecoration(
                 hintText: "Search products...",
-                prefixIcon: Icon(Icons.search, color: Colors.grey[600]),
+                prefixIcon: const Icon(
+                  Icons.search,
+                  color: AppColors.textColorGrey,
+                ),
                 suffixIcon: GestureDetector(
                   onTap: () {
                     showModalBottomSheet(
@@ -56,10 +60,12 @@ class SearchViewView extends GetView<SearchViewController> {
                       builder: (BuildContext context) => FilterView(),
                     );
                   },
-                  child: Icon(Icons.filter_list, color: Colors.grey[600]),
+                  child:
+                      const Icon(Icons.filter_list, color: AppColors.textColorGrey),
                 ),
                 border: InputBorder.none,
               ),
+
               onSubmitted: (value) {
                 controllerSearch.onSubmitOrChange.value = 0;
                 controllerSearch.searchQuery(value);

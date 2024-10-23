@@ -1,4 +1,5 @@
 import 'package:d_and_s/app/constants/colors.dart';
+import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -18,10 +19,15 @@ class CategoryView extends GetView<CategoryController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: AppColors.appbarBg,
-        title: const Text(
+        title: Text(
           "Category",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: TextSize.normal,
+          ),
         ),
         centerTitle: false,
       ),

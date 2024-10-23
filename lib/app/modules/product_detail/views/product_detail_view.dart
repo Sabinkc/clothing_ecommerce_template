@@ -136,7 +136,7 @@ class ProductDetailView extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 5),
                   // CarouselSliderReusable(imgList: imgList),
                   CustomClickableContainer(
                     coloredImgUrl: colordata.isNotEmpty

@@ -33,9 +33,17 @@ class OrderDetails extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text("Order Details"),
-        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: AppColors.appbarBg,
+        title: Text(
+          "Order Details",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: TextSize.normal,
+          ),
+        ),
+        centerTitle: false,
       ),
       body: SingleChildScrollView(
         child: Padding(

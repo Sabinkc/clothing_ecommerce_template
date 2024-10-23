@@ -60,7 +60,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                           height: 4,
                           width: 60,
                           color: controllerBottomNav.count.value == 0
-                              ? AppColors.primaryColor
+                              ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
                         // SizedBox(height: 5),
@@ -95,7 +95,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                           height: 4,
                           width: 60,
                           color: controllerBottomNav.count.value == 1
-                              ? AppColors.primaryColor
+                              ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
                         Expanded(
@@ -129,7 +129,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                           height: 4,
                           width: 60,
                           color: controllerBottomNav.count.value == 2
-                              ? AppColors.primaryColor
+                              ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
                         Expanded(
@@ -163,7 +163,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                           height: 4,
                           width: 60,
                           color: controllerBottomNav.count.value == 3
-                              ? AppColors.primaryColor
+                              ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
                         Expanded(
@@ -197,7 +197,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                           height: 4,
                           width: 60,
                           color: controllerBottomNav.count.value == 4
-                              ? AppColors.primaryColor
+                              ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
                         Expanded(

@@ -30,7 +30,7 @@ class CategoryDetailView extends StatelessWidget {
           backgroundColor: AppColors.appbarBg,
           title: Text(
             controllerHomeController.index.value,
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
           ),
           centerTitle: false,
           leading: GestureDetector(

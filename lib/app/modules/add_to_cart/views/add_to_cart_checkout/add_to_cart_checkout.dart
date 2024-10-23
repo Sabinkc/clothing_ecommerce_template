@@ -21,9 +21,13 @@ class AddToCartCheckout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "Checkout",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: TextSize.normal,
+          ),
         ),
         backgroundColor: AppColors.appbarBg,
         centerTitle: false,

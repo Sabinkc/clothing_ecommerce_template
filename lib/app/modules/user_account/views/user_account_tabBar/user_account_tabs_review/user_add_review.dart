@@ -24,8 +24,16 @@ class UserAddReview extends StatelessWidget {
           child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: const Text("Write Review"),
+          iconTheme: const IconThemeData(color: Colors.white),
+          backgroundColor: AppColors.appbarBg,
+          title: Text(
+            "Write Review",
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w700,
+              fontSize: TextSize.normal,
+            ),
+          ),
           centerTitle: false,
         ),
         body: SingleChildScrollView(

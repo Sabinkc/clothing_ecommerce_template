@@ -1,3 +1,4 @@
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:dob_input_field/dob_input_field.dart';
 
 import 'package:flutter/material.dart';
@@ -17,9 +18,17 @@ class UserAccountTabsInfoDetail extends StatelessWidget {
           // backgroundColor: AppColors.lightSilver,
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: const Text("Edit Your Details"),
+            iconTheme: const IconThemeData(color: Colors.white),
+            title: Text(
+              "Edit Your Details",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+                fontSize: TextSize.normal,
+              ),
+            ),
             centerTitle: false,
-            backgroundColor: Colors.white,
+            backgroundColor: AppColors.appbarBg,
           ),
           body: SingleChildScrollView(
             child: Padding(

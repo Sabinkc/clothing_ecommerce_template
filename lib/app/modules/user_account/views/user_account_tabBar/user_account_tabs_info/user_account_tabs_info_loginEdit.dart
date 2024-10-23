@@ -1,4 +1,4 @@
-
+import 'package:d_and_s/app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
@@ -19,9 +19,17 @@ class UserAccountTabsInfoLoginEdit extends StatelessWidget {
           // backgroundColor: AppColors.lightSilver,
           backgroundColor: Colors.white,
           appBar: AppBar(
-            title: const Text("Edit Login Details"),
+            iconTheme: const IconThemeData(color: Colors.white),
+            title: Text(
+              "Edit Login Details",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+                fontSize: TextSize.normal,
+              ),
+            ),
             centerTitle: false,
-            backgroundColor: Colors.white,
+            backgroundColor: AppColors.appbarBg,
           ),
           body: SingleChildScrollView(
             child: Padding(

@@ -146,7 +146,7 @@ class AppBarMainPage extends StatelessWidget {
               const SizedBox(width: 20),
             ],
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           SearchBox(
             showFilter: true,
           ),

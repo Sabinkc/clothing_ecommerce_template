@@ -34,9 +34,17 @@ class UserAccountAddAddress extends StatelessWidget {
         // backgroundColor: AppColors.lightSilver,
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text("Add Your Details"),
+          iconTheme: const IconThemeData(color: Colors.white),
+          title: Text(
+            "Add Your Details",
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w700,
+              fontSize: TextSize.normal,
+            ),
+          ),
           centerTitle: false,
-          backgroundColor: Colors.white,
+          backgroundColor: AppColors.appbarBg,
         ),
         body: SingleChildScrollView(
           child: Padding(

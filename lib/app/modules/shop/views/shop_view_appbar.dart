@@ -1,7 +1,5 @@
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
-
 import '../../../constants/colors.dart';
 import 'shop_view_sub_category.dart';
 
@@ -14,9 +12,13 @@ class ShopViewAppBar extends StatelessWidget {
       scrolledUnderElevation: 0,
       // backgroundColor: AppColors.lightSilver,
       backgroundColor: AppColors.appbarBg,
-      title: const Text(
+      title: Text(
         'Shop',
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.w700,
+          fontSize: TextSize.normal,
+        ),
       ),
       centerTitle: false,
       actions: [
@@ -36,7 +38,7 @@ class ShopViewAppBar extends StatelessWidget {
                   "Filter",
                   style: TextStyle(
                       fontSize: TextSize.small,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w700,
                       // color: AppColors.textColorGrey,
                       color: Colors.white),
                 ),

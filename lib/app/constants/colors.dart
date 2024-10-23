@@ -15,4 +15,5 @@ mixin AppColors {
   static const buttonColor = Color(0xff353E43);
   static const bottomNavBg = Color(0xff161a1c);// same color as appbarbg (incase appbar need a different color)
   static const appbarBg = Color(0xff161a1c);
+  static const appbarHighlight = Color(0xffF1C338);
 }

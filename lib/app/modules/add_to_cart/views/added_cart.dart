@@ -25,10 +25,15 @@ class AddedCart extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.lightSilver,
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: AppColors.appbarBg,
-        title: const Text(
+        title: Text(
           "My Cart",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: TextSize.normal,
+          ),
         ),
         actions: [
           IconButton(
@@ -48,15 +53,15 @@ class AddedCart extends StatelessWidget {
           ),
         ],
         centerTitle: false,
-        leading: GestureDetector(
-          onTap: () {
-            Get.back();
-          },
-          child: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
-          ),
-        ),
+        // leading: GestureDetector(
+        //   onTap: () {
+        //     Get.back();
+        //   },
+        //   child: const Icon(
+        //     Icons.arrow_back_ios,
+        //     color: Colors.white,
+        //   ),
+        // ),
       ),
       body: Obx(
         () {
@@ -70,14 +75,14 @@ class AddedCart extends StatelessWidget {
                         child: Column(
                           children: [
                             Container(
-                              height: 400,
+                              height: 350,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
                                 image: const DecorationImage(
                                   image: AssetImage(
                                       "assets/images/emptyCart.png"), // Use AssetImage instead of Image.asset
                                   fit: BoxFit
-                                      .cover, // Optional: Adjust image fit if necessary
+                                      .fill, // Optional: Adjust image fit if necessary
                                 ),
                               ),
                             ),
@@ -291,7 +296,7 @@ class AddedCart extends StatelessWidget {
                     ),
                     padding: const EdgeInsets.all(
                         10), // Padding inside the container
-                    height: Adaptive.h(27),
+                    height: Adaptive.h(33),
                     child: RecommendationView(),
                   ),
                 ),

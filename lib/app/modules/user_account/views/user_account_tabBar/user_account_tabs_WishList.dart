@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../constants/colors.dart';
 import '../../../../constants/text_size.dart';
 import '../../../favourites/controllers/favourites_controller.dart';
 
@@ -72,6 +73,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                                   Text(
                                     item["name"],
                                     style: TextStyle(
+                                      color: AppColors.titleColorGrey,
                                       fontSize: TextSize.small,
                                       fontWeight: FontWeight.w700,
                                       overflow: TextOverflow.ellipsis,
@@ -97,7 +99,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                                         "Rs. ${item["price"]}",
                                         style: const TextStyle(
                                           fontSize: 16,
-                                          color: Colors.red,
+                                          color: AppColors.primaryColor,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -105,12 +107,12 @@ class UserAccountTabsWishList extends StatelessWidget {
                                       // if (item["realprice"] != null)
                                       Text(
                                         "\$${item["realprice"]}",
-                                        style: const TextStyle(
-                                          decoration:
-                                              TextDecoration.lineThrough,
-                                          fontSize: 14,
-                                          color: Colors.grey,
-                                        ),
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w500,
+                                            decoration:
+                                                TextDecoration.lineThrough,
+                                            fontSize: TextSize.small,
+                                            color: AppColors.textColorGrey),
                                       ),
                                     ],
                                   ),
@@ -138,7 +140,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                                             "View Product",
                                             style: TextStyle(
                                                 fontSize: TextSize.small,
-                                                color: Colors.blue),
+                                                color: AppColors.primaryColor),
                                           )),
 
                                       const Spacer(),
@@ -152,7 +154,7 @@ class UserAccountTabsWishList extends StatelessWidget {
                                         },
                                         child: const Icon(
                                           Icons.delete,
-                                          color: Colors.red,
+                                          color: AppColors.textColorGrey,
                                         ),
                                       ),
                                       // Quantity Selector

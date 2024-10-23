@@ -44,148 +44,227 @@ class RecommendationView extends StatelessWidget {
             // ? imageUrls[0]
             // : 'https://static-00.iconduck.com/assets.00/no-image-icon-512x512-lfoanl0w.png'; // First image URL of the first color
             return GestureDetector(
-              onTap: () {
-                // var productColors = (product["color"] as List<dynamic>)
-                //     .map((e) => e as int)
-                //     .toList();
-                // var reviews = product["reviews"];
-                // var firstReview =
-                //     reviews.isNotEmpty ? reviews[0] : null;
-                Map imageStore = product["color"] ?? {};
-                Map images = imageStore.isNotEmpty
-                    ? product["color"]
-                    : {
-                        0x00000000: [
-                          'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
-                        ],
-                      };
-                List test = images.entries.first.value;
-                controllerProduct.selectedImages.assignAll(test);
-                Get.to(
-                  ProductDetailView(
-                      // title: product["title"] ?? "NO TITLE",
-                      // description:
-                      //     product["description"] ?? "NO DESCRIPTION",
-                      // productColors: productColors,
+                onTap: () {
+                  // var productColors = (product["color"] as List<dynamic>)
+                  //     .map((e) => e as int)
+                  //     .toList();
+                  // var reviews = product["reviews"];
+                  // var firstReview =
+                  //     reviews.isNotEmpty ? reviews[0] : null;
+                  Map imageStore = product["color"] ?? {};
+                  Map images = imageStore.isNotEmpty
+                      ? product["color"]
+                      : {
+                          0x00000000: [
+                            'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                          ],
+                        };
+                  List test = images.entries.first.value;
+                  controllerProduct.selectedImages.assignAll(test);
+                  Get.to(
+                    ProductDetailView(
+                        // title: product["title"] ?? "NO TITLE",
+                        // description:
+                        //     product["description"] ?? "NO DESCRIPTION",
+                        // productColors: productColors,
 
-                      data: product
-                      // attributesdata: products,
-                      // product["color"],
-                      // productColors: productColors,
-                      ),
-                );
-              },
-              child: Container(
-                width: 200,
-                margin: const EdgeInsets.only(right: 20),
-                decoration: BoxDecoration(
-                  // border: Border.all(color: AppColors.silverBorder, width: 5),
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Stack(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: NetworkImage(
-                                    imageUrl), // Replace with actual image URL
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                            height: Adaptive.h(15),
-                            width: double.infinity,
-                          ),
-                          Positioned(
-                            right: 0,
-                            child: GestureDetector(
-                              onTap: () {
-                                controllerFavorites.searchProductId(
-                                    product["product_id"], product);
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: AppColors.lightSilver,
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(5.0),
-                                  child: Obx(
-                                    () => Icon(
-                                      controllerFavorites
-                                              .isFavorite(product["product_id"])
-                                          ? Icons.favorite
-                                          : Icons.favorite_border,
-                                      color: Colors.black.withOpacity(0.7),
-                                      size: 20,
+                        data: product
+                        // attributesdata: products,
+                        // product["color"],
+                        // productColors: productColors,
+                        ),
+                  );
+                },
+                child: Container(
+                    width: 200,
+                    margin: const EdgeInsets.only(right: 20),
+                    decoration: BoxDecoration(
+                      // border: Border.all(color: AppColors.silverBorder, width: 5),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Stack(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          imageUrl), // Replace with actual image URL
+                                      fit: BoxFit.contain,
                                     ),
                                   ),
+                                  height: Adaptive.h(15),
+                                  width: double.infinity,
                                 ),
+                                // Positioned(
+                                //   right: 0,
+                                //   child: GestureDetector(
+                                //     onTap: () {
+                                //       controllerFavorites.searchProductId(
+                                //           product["product_id"], product);
+                                //     },
+                                //     child: Container(
+                                //       decoration: BoxDecoration(
+                                //         borderRadius: BorderRadius.circular(8),
+                                //         color: AppColors.lightSilver,
+                                //       ),
+                                //       child: Padding(
+                                //         padding: const EdgeInsets.all(5.0),
+                                //         child: Obx(
+                                //           () => Icon(
+                                //             controllerFavorites.isFavorite(
+                                //                     product["product_id"])
+                                //                 ? Icons.favorite
+                                //                 : Icons.favorite_border,
+                                //             color:
+                                //                 Colors.black.withOpacity(0.7),
+                                //             size: 20,
+                                //           ),
+                                //         ),
+                                //       ),
+                                //     ),
+                                //   ),
+                                // ),
+                              ],
+                            ),
+                            const SizedBox(height: 10),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "Rs.${product["price"] ?? ""}",
+                                        style: TextStyle(
+                                            fontSize: TextSize.small,
+                                            color: AppColors.primaryColor,
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      const SizedBox(width: 5),
+
+                                      const Spacer(),
+                                      // Positioned(
+                                      //   right: 0,
+                                      //   top: 40,
+                                      //   child:
+                                      GestureDetector(
+                                        onTap: () {
+                                          controllerProduct
+                                              .selectedColorName.value = '';
+                                          Map imageStore =
+                                              product["color"] ?? {};
+                                          Map images = imageStore.isNotEmpty
+                                              ? product["color"]
+                                              : {
+                                                  0x00000000: [
+                                                    'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                                                  ],
+                                                };
+                                          List test =
+                                              images.entries.first.value;
+                                          controllerProduct.selectedImages
+                                              .assignAll(test);
+                                          showModalBottomSheet<void>(
+                                              isScrollControlled: true,
+                                              context: context,
+                                              builder: (BuildContext context) {
+                                                return DraggableScrollableSheet(
+                                                  expand: false,
+                                                  initialChildSize:
+                                                      0.8, // Set initial height of bottom sheet
+                                                  maxChildSize:
+                                                      0.8, // Max height when fully expanded
+                                                  minChildSize:
+                                                      0.3, // Minimum height of bottom sheet
+                                                  builder: (BuildContext
+                                                              context,
+                                                          scrollController) =>
+                                                      HomeSectionTabBarTabsBottomSheet(
+                                                    homeSectionTabsData:
+                                                        product,
+                                                    homeSectionTabsImg:
+                                                        imageUrl,
+                                                  ),
+                                                );
+                                              });
+                                        },
+                                        child: Container(
+                                          margin:
+                                              const EdgeInsets.only(right: 15),
+                                          child: Icon(
+                                            Icons.shopping_cart_outlined,
+                                            size: 18,
+                                            color:
+                                                Colors.black.withOpacity(0.7),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 5),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "${product["realprice"]}",
+                                        style: const TextStyle(
+                                          decoration:
+                                              TextDecoration.lineThrough,
+                                          decorationThickness: 2,
+                                          decorationColor: Colors.grey,
+                                          fontSize: 12,
+                                          // color: AppColors.grey,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 5),
+                                      Text(
+                                        "${product["discount"]}%",
+                                        style: const TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.red,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      const Expanded(
+                                        child: Text(
+                                          "Original Price ",
+                                          overflow: TextOverflow.ellipsis,
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            // color: AppColors.grey,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  const SizedBox(height: 5),
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 20),
+                                    child: Text(
+                                      product["name"] ?? "",
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                        color: AppColors.titleColorGrey,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w700,
+                                        // color: AppColors.defaultColor,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        product["name"] ?? "",
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            color: AppColors.titleColorGrey,
-                            fontSize: TextSize.small,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      const SizedBox(height: 5),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Rs. ${product["price"] ?? ""}",
-                            style: TextStyle(
-                              fontSize: TextSize.small,
-                              fontWeight: FontWeight.w700,
-                              color: AppColors.primaryColor,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              showModalBottomSheet<void>(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return HomeSectionTabBarTabsBottomSheet(
-                                    homeSectionTabsData: product,
-                                    homeSectionTabsImg: imageUrl,
-                                  );
-                                },
-                              );
-                            },
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                                color: AppColors.lightSilver,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(5.0),
-                                child: Icon(
-                                  Icons.shopping_cart_outlined,
-                                  size: 20,
-                                  color: Colors.black.withOpacity(0.7),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            );
+                          ]),
+                    )));
           },
         );
       },
