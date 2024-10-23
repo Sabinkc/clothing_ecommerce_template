@@ -85,7 +85,7 @@ class CategoryDetailView extends StatelessWidget {
                   // Text(selectedSubCategory as String),
                   selectedSubCategory.isNotEmpty
                       ? SizedBox(
-                          height: 90,
+                          height: 100,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             // itemCount: categoryData.length,

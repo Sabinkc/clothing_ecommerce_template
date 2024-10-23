@@ -23,7 +23,7 @@ class HomeSectionTabBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
       child: SizedBox(
-        height: 15,
+        height: 20,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,

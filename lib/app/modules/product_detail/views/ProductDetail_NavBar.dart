@@ -29,7 +29,7 @@ class ProductDetailNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
+      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 25.0),
       decoration: const BoxDecoration(
         color: Colors.white,
         boxShadow: [
@@ -43,6 +43,7 @@ class ProductDetailNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          SizedBox(width: 10),
           GestureDetector(
             onTap: () {
               controllerFavorites.searchProductId(

@@ -29,8 +29,8 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
     // List reviewdata = homeSectionTabsData["reviews"] ?? [];
     Map colordata = homeSectionTabsData["color"] ?? {};
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Container(
-        
         width: double.infinity,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(

@@ -45,7 +45,7 @@ class HomeSectionTabBarTabs extends StatelessWidget {
             crossAxisCount: 2,
             crossAxisSpacing: 8.0,
             mainAxisSpacing: 15.0,
-            childAspectRatio: 0.58,
+            childAspectRatio: 0.55,
           ),
           itemBuilder: (BuildContext context, index) {
             var product = selectedProducts[index];
