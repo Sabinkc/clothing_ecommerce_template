@@ -71,7 +71,7 @@ class ShopView extends GetView<ShopController> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 8.0,
                   mainAxisSpacing: 10.0,
-                  childAspectRatio: 0.6,
+                  childAspectRatio: 0.58,
                 ),
                 itemBuilder: (BuildContext context, index) {
                   var product = shopData[index];

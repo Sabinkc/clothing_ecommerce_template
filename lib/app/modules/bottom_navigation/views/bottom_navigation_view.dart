@@ -43,7 +43,7 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
             ),
 
             // color: AppColors.lightBlue,
-            height: Adaptive.h(6.5),
+            height: Adaptive.h(11),
             child: Obx(
               () => Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -53,8 +53,9 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       controllerBottomNav.count.value = 0;
                     },
                     child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      // mainAxisSize: MainAxisSize.min,
+
+                      // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Container(
                           height: 2,
@@ -63,23 +64,20 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Icon(Icons.home,
+                        const SizedBox(height: 14),
+                        Icon(Icons.home,
+                            color: controllerBottomNav.count.value == 0
+                                ? AppColors.primaryColor
+                                : Colors.white),
+                        // const SizedBox(height: 5),
+                        Text(
+                          "Home",
+                          style: TextStyle(
                               color: controllerBottomNav.count.value == 0
                                   ? AppColors.primaryColor
                                   : Colors.white),
                         ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Text(
-                            "Home",
-                            style: TextStyle(
-                                color: controllerBottomNav.count.value == 0
-                                    ? AppColors.primaryColor
-                                    : Colors.white),
-                          ),
-                        ),
+                        // SizedBox(height: 20),
                       ],
                     ),
                   ),
@@ -89,8 +87,8 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       controllerBottomNav.count.value = 1;
                     },
                     child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      // mainAxisSize: MainAxisSize.min,
+                      // mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
                           height: 2,
@@ -99,22 +97,18 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Icon(Icons.category,
+                        const SizedBox(height: 14),
+                        Icon(Icons.category,
+                            color: controllerBottomNav.count.value == 1
+                                ? AppColors.primaryColor
+                                : Colors.white),
+                        // const SizedBox(height: 5),
+                        Text(
+                          "Category",
+                          style: TextStyle(
                               color: controllerBottomNav.count.value == 1
                                   ? AppColors.primaryColor
                                   : Colors.white),
-                        ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Text(
-                            "Category",
-                            style: TextStyle(
-                                color: controllerBottomNav.count.value == 1
-                                    ? AppColors.primaryColor
-                                    : Colors.white),
-                          ),
                         ),
                       ],
                     ),
@@ -125,8 +119,8 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       controllerBottomNav.count.value = 2;
                     },
                     child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      // mainAxisSize: MainAxisSize.min,
+                      // mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
                           height: 2,
@@ -135,22 +129,18 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Icon(Icons.shop,
+                        const SizedBox(height: 14),
+                        Icon(Icons.shop,
+                            color: controllerBottomNav.count.value == 2
+                                ? AppColors.primaryColor
+                                : Colors.white),
+                        // const SizedBox(height: 5),
+                        Text(
+                          "Shop",
+                          style: TextStyle(
                               color: controllerBottomNav.count.value == 2
                                   ? AppColors.primaryColor
                                   : Colors.white),
-                        ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Text(
-                            "Shop",
-                            style: TextStyle(
-                                color: controllerBottomNav.count.value == 2
-                                    ? AppColors.primaryColor
-                                    : Colors.white),
-                          ),
                         ),
                       ],
                     ),
@@ -161,8 +151,8 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       controllerBottomNav.count.value = 3;
                     },
                     child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      // mainAxisSize: MainAxisSize.min,
+                      // mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
                           height: 2,
@@ -171,22 +161,18 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Icon(Icons.shopping_cart,
+                        const SizedBox(height: 14),
+                        Icon(Icons.shopping_cart,
+                            color: controllerBottomNav.count.value == 3
+                                ? AppColors.primaryColor
+                                : Colors.white),
+                        // const SizedBox(height: 5),
+                        Text(
+                          "Cart",
+                          style: TextStyle(
                               color: controllerBottomNav.count.value == 3
                                   ? AppColors.primaryColor
                                   : Colors.white),
-                        ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Text(
-                            "Cart",
-                            style: TextStyle(
-                                color: controllerBottomNav.count.value == 3
-                                    ? AppColors.primaryColor
-                                    : Colors.white),
-                          ),
                         ),
                       ],
                     ),
@@ -197,8 +183,8 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                       controllerBottomNav.count.value = 4;
                     },
                     child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      // mainAxisSize: MainAxisSize.min,
+                      // mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
                           height: 2,
@@ -207,22 +193,18 @@ class BottomNavigationView extends GetView<BottomNavigationController> {
                               ? AppColors.appbarHighlight
                               : AppColors.appbarBg,
                         ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Icon(Icons.person,
+                        const SizedBox(height: 14),
+                        Icon(Icons.person,
+                            color: controllerBottomNav.count.value == 4
+                                ? AppColors.primaryColor
+                                : Colors.white),
+                        // const SizedBox(height: 5),
+                        Text(
+                          "Me",
+                          style: TextStyle(
                               color: controllerBottomNav.count.value == 4
                                   ? AppColors.primaryColor
                                   : Colors.white),
-                        ),
-                        const SizedBox(height: 5),
-                        Expanded(
-                          child: Text(
-                            "Me",
-                            style: TextStyle(
-                                color: controllerBottomNav.count.value == 4
-                                    ? AppColors.primaryColor
-                                    : Colors.white),
-                          ),
                         ),
                       ],
                     ),
