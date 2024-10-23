@@ -144,7 +144,7 @@ class CategoryDetailGridView extends StatelessWidget {
                           ),
                           const SizedBox(height: 20),
                           Padding(
-                            padding: const EdgeInsets.only(left: 15),
+                            padding: const EdgeInsets.only(left: 0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
