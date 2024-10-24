@@ -2,6 +2,7 @@ import 'package:d_and_s/app/modules/home/controllers/home_controller.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../data/category_data.dart';
 import '../../category/controllers/category_controller.dart';
@@ -17,7 +18,8 @@ class HomeCategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 110,
+      height: Adaptive.h(13),
+      // height: 100,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categoryData.length,
@@ -55,7 +57,7 @@ class HomeCategoryView extends StatelessWidget {
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
                   height: 70,
@@ -73,15 +75,22 @@ class HomeCategoryView extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                Text(
-                  categoryData[index]["category_name"],
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: Colors.grey[700],
-                    // fontWeight: FontWeight.bold,
-                    fontSize: 14,
+                SizedBox(
+                  width: 100,
+                  // height: 100,
+                  child: Expanded(
+                    child: Text(
+                      categoryData[index]["category_name"],
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      style: TextStyle(
+                        color: Colors.grey[700],
+                        // fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ],
             ),

@@ -1,13 +1,9 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-import 'package:icons_plus/icons_plus.dart';
-
 import '../../../data/category_data.dart';
 import '../../home/controllers/home_controller.dart';
-
 import '../controllers/category_controller.dart';
 import 'category_detail_view.dart';
 
@@ -161,7 +157,8 @@ class LongCourseCard extends StatelessWidget {
       height: 100,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage(image),
+          image: AssetImage(image),
+          // NetworkImage(image),
           fit: BoxFit.cover, // Ensures the image covers the container
         ),
         color: background,
@@ -191,22 +188,25 @@ class LongCourseCard extends StatelessWidget {
               padding: const EdgeInsets.only(left: 15, bottom: 8),
               child: Row(
                 children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontSize:
-                          18, // You can adjust based on your design preference
-                      fontWeight: FontWeight.bold, // Bold text for clarity
-                      color: Colors.white, // White text for contrast
-                      letterSpacing: 1.2, // Slight letter spacing for elegance
+                  Expanded(
+                    child: Text(
+                      title,
+                      style: TextStyle(
+                        fontSize: TextSize
+                            .normal, // You can adjust based on your design preference
+                        fontWeight: FontWeight.bold, // Bold text for clarity
+                        color: Colors.white, // White text for contrast
+                        letterSpacing:
+                            1.2, // Slight letter spacing for elegance
+                      ),
                     ),
                   ),
-                  const SizedBox(width: 5),
-                  const Icon(
-                    EvaIcons.diagonal_arrow_right_up,
-                    size: 20,
-                    color: Colors.white,
-                  ),
+                  // const SizedBox(width: 5),
+                  // const Icon(
+                  //   EvaIcons.diagonal_arrow_right_up,
+                  //   size: 20,
+                  //   color: Colors.white,
+                  // ),
                 ],
               ),
             ),

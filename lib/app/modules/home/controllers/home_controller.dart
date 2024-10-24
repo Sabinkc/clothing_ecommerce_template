@@ -3,12 +3,8 @@ import 'package:get/get.dart';
 import '../../../data/category_data.dart';
 
 class HomeController extends GetxController {
-
   var index = 'Shoes'.obs;
-  var homeSectionindex = 'Latest Product'.obs;
-
-
-
+  var homeSectionindex = 'New Arrivals'.obs;
 
   var searchResults = [].obs;
 
@@ -18,9 +14,11 @@ class HomeController extends GetxController {
     } else {
       List filteredData = categoryData
           .where((category) =>
-              category['category_name'].toLowerCase().contains(query.toLowerCase()) ||
-              (category['sub_category'] as List)
-                  .any((sub) => sub['sub_category_name']
+              category['category_name']
+                  .toLowerCase()
+                  .contains(query.toLowerCase()) ||
+              (category['sub_category'] as List).any((sub) =>
+                  sub['sub_category_name']
                       .toLowerCase()
                       .contains(query.toLowerCase())))
           .toList();
@@ -29,13 +27,11 @@ class HomeController extends GetxController {
     }
   }
 
-
   @override
   void onInit() {
     searchResults.value = categoryData;
     super.onInit();
   }
-
 
   // @override
   // void onInit() {

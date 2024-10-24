@@ -57,7 +57,7 @@ class TextFieldState extends StatelessWidget {
               builder: (BuildContext context) {
                 return DraggableScrollableSheet(
                   expand: false,
-                  initialChildSize: 0.5, // Set initial height of bottom sheet
+                  initialChildSize: 0.8, // Set initial height of bottom sheet
                   maxChildSize: 0.8, // Max height when fully expanded
                   minChildSize: 0.3, // Minimum height of bottom sheet
                   builder: (BuildContext context,

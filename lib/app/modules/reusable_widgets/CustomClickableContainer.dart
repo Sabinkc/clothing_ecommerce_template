@@ -76,7 +76,7 @@ class CustomClickableContainer extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(0),
                 image: DecorationImage(
-                  image: NetworkImage(
+                  image: AssetImage(
                     controller.selectedImages.isNotEmpty
                         ? controller.selectedImages[count.value]
                         : 'https://example.com/static-image.jpg',
@@ -122,7 +122,7 @@ class CustomClickableContainer extends StatelessWidget {
                                       : Colors.white,
                                   width: 2),
                               image: DecorationImage(
-                                image: NetworkImage(
+                                image: AssetImage(
                                   controller.selectedImages[index],
                                 ),
                                 //   controller.selectedImages.isNotEmpty

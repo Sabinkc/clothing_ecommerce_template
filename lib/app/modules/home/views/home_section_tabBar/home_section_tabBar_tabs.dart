@@ -127,9 +127,11 @@ class HomeSectionTabBarTabs extends StatelessWidget {
                                     ),
                                   ),
                                   image: DecorationImage(
-                                    image: NetworkImage(imageUrls[imageIndices[
-                                            index]
-                                        .value]), // Replace with actual image URL
+                                    image:
+                                        // AssetImage(
+                                        //     "assets/images/emptyCart.png"),
+                                        AssetImage(imageUrls[
+                                            imageIndices[index].value]),
                                     fit: BoxFit.cover,
                                   ),
                                 ),

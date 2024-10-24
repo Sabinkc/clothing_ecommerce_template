@@ -78,7 +78,7 @@ class ProductDetailAttributes extends StatelessWidget {
                                   child: Text(
                                     "${attribute.key}: ",
                                     style: TextStyle(
-                                      fontSize: TextSize.normal,
+                                      fontSize: TextSize.small,
                                       fontWeight: FontWeight.w700,
                                       color: AppColors.titleColorGrey,
                                     ),
@@ -89,7 +89,7 @@ class ProductDetailAttributes extends StatelessWidget {
                                   child: Text(
                                     attribute.value ?? "",
                                     style: TextStyle(
-                                      fontSize: TextSize.normal,
+                                      fontSize: TextSize.small,
                                       color: AppColors.textColorGrey,
                                     ),
                                   ),

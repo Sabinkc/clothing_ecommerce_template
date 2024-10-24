@@ -4,6 +4,7 @@ import 'package:d_and_s/app/constants/text_size.dart';
 import 'package:d_and_s/app/modules/category/views/category_detail_gridview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../constants/colors.dart';
 import '../../../data/category_data.dart';
@@ -85,7 +86,8 @@ class CategoryDetailView extends StatelessWidget {
                   // Text(selectedSubCategory as String),
                   selectedSubCategory.isNotEmpty
                       ? SizedBox(
-                          height: 100,
+                          // color: Colors.black,
+                          height: Adaptive.h(12.5),
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             // itemCount: categoryData.length,
@@ -102,7 +104,7 @@ class CategoryDetailView extends StatelessWidget {
                                 // Get.to(HomeCategoryDetailView());
                               },
                               child: Container(
-                                margin: const EdgeInsets.only(left: 25),
+                                margin: const EdgeInsets.only(left: 20),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(12),
                                   // boxShadow: [
@@ -136,7 +138,7 @@ class CategoryDetailView extends StatelessWidget {
                                                   : Colors.transparent,
                                               width: 2),
                                           image: DecorationImage(
-                                            image: NetworkImage(
+                                            image: AssetImage(
                                               selectedSubCategory[0]
                                                               ["sub_category"]
                                                           [index]
@@ -148,27 +150,34 @@ class CategoryDetailView extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    const SizedBox(height: 10),
+                                    const SizedBox(height: 5),
                                     Obx(
-                                      () => Text(
-                                        selectedSubCategory[0]["sub_category"]
-                                                [index]["sub_category_name"] ??
-                                            "",
-                                        // categoryData[index]["category_name"],
-                                        // selectedSubCategory[index],
-                                        overflow: TextOverflow.ellipsis,
-                                        style: TextStyle(
-                                          color: controllerCategory
-                                                      .subCategory.value ==
-                                                  selectedSubCategory[0]
-                                                          ["sub_category"]
-                                                      [index]["sub_category_id"]
-                                              ? AppColors.primaryColor
-                                              : AppColors.textColorGrey,
-                                          // fontWeight: FontWeight.bold,
-                                          fontSize: 14,
+                                      () => SizedBox(
+                                        width: 70,
+                                        height: 40,
+                                        child: Text(
+                                          selectedSubCategory[0]["sub_category"]
+                                                      [index]
+                                                  ["sub_category_name"] ??
+                                              "",
+                                          // categoryData[index]["category_name"],
+                                          // selectedSubCategory[index],
+                                          overflow: TextOverflow.ellipsis,
+                                          style: TextStyle(
+                                            color: controllerCategory
+                                                        .subCategory.value ==
+                                                    selectedSubCategory[0]
+                                                                ["sub_category"]
+                                                            [index]
+                                                        ["sub_category_id"]
+                                                ? AppColors.primaryColor
+                                                : AppColors.textColorGrey,
+                                            // fontWeight: FontWeight.bold,
+                                            fontSize: 12,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                          maxLines: 2,
                                         ),
-                                        textAlign: TextAlign.center,
                                       ),
                                     ),
                                   ],
@@ -180,7 +189,7 @@ class CategoryDetailView extends StatelessWidget {
                       : const SizedBox(),
 
                   Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: CategoryDetailGridView(),
                   ),
                   // ShopViewSubCategory(),

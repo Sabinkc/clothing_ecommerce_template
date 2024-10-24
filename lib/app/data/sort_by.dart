@@ -1,8 +1,8 @@
 final List sortBy = [
-  "Latest Product",
-  "For You",
-  "All",
-  "Popular",
-  "Best Seller",
-  "New Product",
+  "New Arrivals",
+  "Best Sellers",
+  "D&S Exclusives",
+  "Sales",
+  "What's Upcoming?",
+  "Offers",
 ];

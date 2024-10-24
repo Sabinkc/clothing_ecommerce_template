@@ -42,6 +42,7 @@ class ProductDetailController extends GetxController {
     0xff808080: 'Gray',
     0xff000000: 'Black',
     0xffFFFFFF: 'White',
+    0xffC0C0C0:'Silver',
     0xff008080: 'Teal',
     0xff8B4513: 'SaddleBrown',
     0xffD2691E: 'Chocolate',
