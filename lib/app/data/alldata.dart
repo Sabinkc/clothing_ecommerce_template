@@ -50,6 +50,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -65,17 +72,17 @@ final List products = [
     "category": "Pants",
     "sub_category_id": "Pants1",
     "color": {
-      0xff000000: [
-        "assets/img/pants1_black_1.png",
-        "assets/img/pants1_black_2.avif",
-        "assets/img/pants1_black_3.avif",
-        "assets/img/pants1_black_4.avif",
-      ],
       0xff0000FF: [
         "assets/img/pants1_blue_1.avif",
         "assets/img/pants1_blue_2.avif",
         "assets/img/pants1_blue_3.avif",
         "assets/img/pants1_blue_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/pants1_black_1.png",
+        "assets/img/pants1_black_2.avif",
+        "assets/img/pants1_black_3.avif",
+        "assets/img/pants1_black_4.avif",
       ],
       0xffC0C0C0: [
         "assets/img/pants1_silver_1.avif",
@@ -101,6 +108,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -116,6 +130,12 @@ final List products = [
     "category": "Pants",
     "sub_category_id": "Pants1",
     "color": {
+      0xffC0C0C0: [
+        "assets/img/pants1_silver_1.avif",
+        "assets/img/pants1_silver_2.avif",
+        "assets/img/pants1_silver_3.avif",
+        "assets/img/pants1_silver_4.avif",
+      ],
       0xff000000: [
         "assets/img/pants1_black_1.png",
         "assets/img/pants1_black_2.avif",
@@ -127,12 +147,6 @@ final List products = [
         "assets/img/pants1_blue_2.avif",
         "assets/img/pants1_blue_3.avif",
         "assets/img/pants1_blue_4.avif",
-      ],
-      0xffC0C0C0: [
-        "assets/img/pants1_silver_1.avif",
-        "assets/img/pants1_silver_2.avif",
-        "assets/img/pants1_silver_3.avif",
-        "assets/img/pants1_silver_4.avif",
       ],
     },
     "size": ["30x30", "30x31", "30x32", "30x33"],
@@ -152,6 +166,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -230,6 +251,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -269,12 +297,200 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants2_4",
+    "name": "JJIEDDIE JJORIGINAL SQ 738 NOOS Loose fit jeans",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants2",
+    "color": {
+      0xff0000FF: [
+        "assets/img/pants2_4_blue_1.webp",
+        "assets/img/pants2_4_blue_2.webp",
+        "assets/img/pants2_4_blue_3.webp",
+        "assets/img/pants2_4_blue_4.webp",
+      ]
+    },
+    "size": ["26", "27", "28", "29", "30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants2_5",
+    "name": "JJIEDDIE JJORIGINAL SQ 738 NOOS Loose fit jeans",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title": "JJIGLENN JJORIGINAL SQ 223 NOOS Slim fit jeans",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants2",
+    "color": {
+      0xff0000FF: [
+        "assets/img/pants2_5_blue_1.webp",
+        "assets/img/pants2_5_blue_2.webp",
+        "assets/img/pants2_5_blue_3.webp",
+        "assets/img/pants2_5_blue_4.webp",
+        "assets/img/pants2_5_blue_4.webp",
+      ]
+    },
+    "size": ["26", "27", "28", "29", "30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants2_6",
+    "name": "JJICLARK JJORIGINAL AM 419 NOOS Regular fit jeans",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title": "JJIGLENN JJORIGINAL SQ 223 NOOS Slim fit jeans",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants2",
+    "color": {
+      0xff0000FF: [
+        "assets/img/pants2_6_1_blue_1.webp",
+        "assets/img/pants2_6_1_blue_2.webp",
+        "assets/img/pants2_6_1_blue_3.webp",
+        "assets/img/pants2_6_1_blue_4.webp",
+      ]
+    },
+    "size": ["26", "27", "28", "29", "30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants2_7",
+    "name": "JJICLARK JJORIGINAL AM 419 NOOS Regular fit jeans",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title": "JJIGLENN JJORIGINAL SQ 223 NOOS Slim fit jeans",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants2",
+    "color": {
+      0xff000000: [
+        "assets/img/pants2_7_1_black_1.webp",
+        "assets/img/pants2_7_1_black_2.webp",
+        "assets/img/pants2_7_1_black_3.webp",
+        "assets/img/pants2_7_1_black_4.webp",
+      ]
+    },
+    "size": ["26", "27", "28", "29", "30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
     "product_id": "pants3_1",
-    "name":
-        "AdiClub Cargo Pants",
+    "name": "AdiClub Cargo Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -285,7 +501,6 @@ final List products = [
     "category": "Pants",
     "sub_category_id": "Pants3",
     "color": {
-     
       0xff00FF00: [
         "assets/img/pants3_1_green_1.avif",
         "assets/img/pants3_1_green_2.avif",
@@ -294,9 +509,9 @@ final List products = [
       ],
       0xff000000: [
         "assets/img/pants3_1_black_1.avif",
-         "assets/img/pants3_1_black_2.avif",
-          "assets/img/pants3_1_black_3.avif",
-           "assets/img/pants3_1_black_4.avif",
+        "assets/img/pants3_1_black_2.avif",
+        "assets/img/pants3_1_black_3.avif",
+        "assets/img/pants3_1_black_4.avif",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -316,12 +531,18 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
     "product_id": "pants3_2",
-    "name":
-        "Premium Essentials Twill Cargo Pants",
+    "name": "Premium Essentials Twill Cargo Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -332,18 +553,17 @@ final List products = [
     "category": "Pants",
     "sub_category_id": "Pants3",
     "color": {
-     
       0xff0000FF: [
         "assets/img/pants3_2_blue_1.avif",
         "assets/img/pants3_2_blue_2.avif",
-         "assets/img/pants3_2_blue_3.avif",
-          "assets/img/pants3_2_blue_4.avif",
+        "assets/img/pants3_2_blue_3.avif",
+        "assets/img/pants3_2_blue_4.avif",
       ],
       0xff000000: [
         "assets/img/pants3_2_black_1.avif",
-       "assets/img/pants3_2_black_2.avif",
-       "assets/img/pants3_2_black_3.avif",
-       "assets/img/pants3_2_black_4.avif",
+        "assets/img/pants3_2_black_2.avif",
+        "assets/img/pants3_2_black_3.avif",
+        "assets/img/pants3_2_black_4.avif",
       ]
     },
     "size": ["30", "32", "33", "34"],
@@ -363,12 +583,18 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
-    "product_id": "pants4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "pants3_3",
+    "name": "Premium Essentials Twill Cargo Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -377,22 +603,22 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "Pants",
-    "sub_category_id": "Pants4",
+    "sub_category_id": "Pants3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/pants3_3_black_1.avif",
+        "assets/img/pants3_3_black_2.avif",
+        "assets/img/pants3_3_black_3.avif",
+        "assets/img/pants3_3_black_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/pants3_3_blue_1.avif",
+        "assets/img/pants3_3_blue_2.avif",
+        "assets/img/pants3_3_blue_3.avif",
+        "assets/img/pants3_3_blue_4.avif",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["30", "32", "33", "34"],
     "reviews": [
       {
         "profile_pic":
@@ -409,12 +635,523 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
-    "product_id": "pants5",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "pants3_4",
+    "name": "Adicolor Classics 3-Stripes Cargo Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants3",
+    "color": {
+      0xff00FF00: [
+        "assets/img/pants3_4_green_1.avif",
+        "assets/img/pants3_4_green_2.avif",
+        "assets/img/pants3_4_green_3.avif",
+        "assets/img/pants3_4_green_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/pants3_4_black_1.avif",
+        "assets/img/pants3_4_black_2.avif",
+        "assets/img/pants3_4_black_3.avif",
+        "assets/img/pants3_4_black_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants3_5",
+    "name": "Premium Essentials Twill Cargo Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants3",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/pants3_5_pink_1.avif",
+        "assets/img/pants3_5_pink_2.avif",
+        "assets/img/pants3_5_pink_3.avif",
+        "assets/img/pants3_5_pink_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/pants3_5_black_1.avif",
+        "assets/img/pants3_5_black_2.avif",
+        "assets/img/pants3_5_black_3.avif",
+        "assets/img/pants3_5_black_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants3_6",
+    "name": "Y-3 Washed Twill Cargo Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants3",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/pants3_6_silver_1.avif",
+        "assets/img/pants3_6_silver_2.avif",
+        "assets/img/pants3_6_silver_3.avif",
+        "assets/img/pants3_6_silver_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/pants3_6_black_1.avif",
+        "assets/img/pants3_6_black_2.avif",
+        "assets/img/pants3_6_black_3.avif",
+        "assets/img/pants3_6_black_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants3_7",
+    "name": "Enjoy Summer Cargo Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants3",
+    "color": {
+      0xff00FF00: [
+        "assets/img/pants3_7_green_1.avif",
+        "assets/img/pants3_7_green_2.avif",
+        "assets/img/pants3_7_green_3.avif",
+        "assets/img/pants3_7_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/pants3_7_black_1.avif",
+        "assets/img/pants3_7_black_2.avif",
+        "assets/img/pants3_7_black_3.avif",
+        "assets/img/pants3_7_black_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants4_1",
+    "name": "Adicolor Baggy Fit Firebird Track Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants4",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/pants4_1_brown_1.avif",
+        "assets/img/pants4_1_brown_2.avif",
+        "assets/img/pants4_1_brown_3.avif"
+            "assets/img/pants4_1_brown_4.avif"
+      ],
+      0xff0000FF: [
+        "assets/img/pants4_1_blue_1.avif",
+        "assets/img/pants4_1_blue_2.avif",
+        "assets/img/pants4_1_blue_3.avif",
+        "assets/img/pants4_1_blue_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants4_2",
+    "name": "Basketball Cargo Sweat Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants4",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/pants4_2_brown_1.avif",
+        "assets/img/pants4_2_brown_2.avif",
+        "assets/img/pants4_2_brown_3.avif"
+            "assets/img/pants4_2_brown_4.avif"
+      ],
+      0xff0000FF: [
+        "assets/img/pants4_2_blue_1.avif",
+        "assets/img/pants4_2_blue_2.avif",
+        "assets/img/pants4_2_blue_3.avif",
+        "assets/img/pants4_2_blue_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants4_3",
+    "name": "Adicolor Baggy Fit Firebird Track Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants4",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/pants4_3_brown_1.avif",
+        "assets/img/pants4_3_brown_2.avif",
+        "assets/img/pants4_3_brown_3.avif",
+        "assets/img/pants4_3_brown_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/pants4_3_blue_1.avif",
+        "assets/img/pants4_3_blue_2.avif",
+        "assets/img/pants4_3_blue_3.avif",
+        "assets/img/pants4_3_blue_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants4_4",
+    "name": "Adicolor Baggy Fit Firebird Track Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants4",
+    "color": {
+      0xff00FF00: [
+        "assets/img/pants4_4_green_1.avif",
+        "assets/img/pants4_4_green_2.avif",
+        "assets/img/pants4_4_green_3.avif",
+        "assets/img/pants4_4_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/pants4_4_black_1.avif",
+        "assets/img/pants4_4_black_2.avif",
+        "assets/img/pants4_4_black_3.avif",
+        "assets/img/pants4_4_black_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants4_5",
+    "name": "Argentina Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants4",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/pants4_5_silver_1.avif",
+        "assets/img/pants4_5_silver_2.avif",
+        "assets/img/pants4_5_silver_3.avif",
+        "assets/img/pants4_5_silver_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants4_6",
+    "name": "Essentials Fleece Regular Tapered Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants4",
+    "color": {
+      0xff000000: [
+        "assets/img/pants4_6_black_1.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants5_1",
+    "name": "Z.N.E. Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -426,17 +1163,17 @@ final List products = [
     "sub_category_id": "Pants5",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/pants5_1_red_1.avif",
+        "assets/img/pants5_1_red_2.avif",
+        "assets/img/pants5_1_red_3.avif",
+        "assets/img/pants5_1_red_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/pants5_1_blue_1.avif",
+        "assets/img/pants5_1_blue_2.avif",
+        "assets/img/pants5_1_blue_3.avif",
+        "assets/img/pants5_1_blue_4.avif",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -455,12 +1192,174 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
-    "product_id": "pants6",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "pants5_2",
+    "name": "Adicolor Neuclassics Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants5",
+    "color": {
+      0xff000000: [
+        "assets/img/pants5_2_black_1.avif",
+        "assets/img/pants5_2_black_2.avif",
+        "assets/img/pants5_2_black_3.avif",
+        "assets/img/pants5_2_black_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/pants5_2_green_1.avif",
+        "assets/img/pants5_2_green_2.avif",
+        "assets/img/pants5_2_green_3.avif",
+        "assets/img/pants5_2_green_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants5_3",
+    "name": "ALL SZN Fleece Regular Tapered Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants5",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/pants5_3_silver_1.avif",
+        "assets/img/pants5_3_silver_2.avif",
+        "assets/img/pants5_3_silver_3.avif",
+        "assets/img/pants5_3_silver_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/pants5_3_blue_1.avif",
+        "assets/img/pants5_3_blue_2.avif",
+        "assets/img/pants5_3_blue_3.avif",
+        "assets/img/pants5_3_blue_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants5_4",
+    "name": "Adicolor Neuclassics Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants5",
+    "color": {
+      0xff000000: [
+        "assets/img/pants5_4_black_1.avif",
+        "assets/img/pants5_4_black_2.avif",
+        "assets/img/pants5_4_black_3.avif",
+        "assets/img/pants5_4_black_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/pants5_4_green_1.avif",
+        "assets/img/pants5_4_green_2.avif",
+        "assets/img/pants5_4_green_3.avif",
+        "assets/img/pants5_4_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants6_1",
+    "name": "Z.N.E. Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -471,18 +1370,18 @@ final List products = [
     "category": "Pants",
     "sub_category_id": "Pants6",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffC0C0C0: [
+        "assets/img/pants6_1_silver_1.avif",
+        "assets/img/pants6_1_silver_2.avif"
+            "assets/img/pants6_1_silver_3.avif"
+            "assets/img/pants6_1_silver_4.avif"
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/pants6_1_blue_1.avif",
+        "assets/img/pants6_1_blue_2.avif",
+        "assets/img/pants6_1_blue_3.avif",
+        "assets/img/pants6_1_blue_4.avif",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -501,10 +1400,121 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
-    "product_id": "pants7",
+    "product_id": "pants6_2",
+    "name": "ALL SZN Fleece Regular Tapered Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants6",
+    "color": {
+      0xff00FF00: [
+        "assets/img/pants6_2_green_1.avif",
+        "assets/img/pants6_2_green_2.avif",
+        "assets/img/pants6_2_green_3.avif",
+        "assets/img/pants6_2_green_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/pants6_2_blue_1.avif",
+        "assets/img/pants6_2_blue_2.avif",
+        "assets/img/pants6_2_blue_3.avif",
+        "assets/img/pants6_2_blue_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants6_3",
+    "name": "Adicolor Neuclassics Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants6",
+    "color": {
+      0xff000000: [
+        "assets/img/pants6_3_black_1.avif",
+        "assets/img/pants6_3_black_2.avif",
+        "assets/img/pants6_3_black_3.avif",
+        "assets/img/pants6_3_black_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/pants6_3_green_1.avif",
+        "assets/img/pants6_3_green_2.avif",
+        "assets/img/pants6_3_green_3.avif",
+        "assets/img/pants6_3_green_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants7_1",
     "name":
         "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
     "price": 50000,
@@ -517,20 +1527,20 @@ final List products = [
     "category": "Pants",
     "sub_category_id": "Pants7",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/pants7_1_green_1.avif",
+        "assets/img/pants7_1_green_2.avif",
+        "assets/img/pants7_1_green_3.avif",
+        "assets/img/pants7_1_green_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+      0xff000000: [
+        "assets/img/.pants7_1_black_1.avif",
+        "assets/img/.pants7_1_black_2.avif",
+        "assets/img/.pants7_1_black_3.avif",
+        "assets/img/.pants7_1_black_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["30x30", "30x31", "35x32", "36x34", "29x30"],
     "reviews": [
       {
         "profile_pic":
@@ -547,6 +1557,163 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants7_2",
+    "name": "3-Stripes Skate Chino Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants7",
+    "color": {
+      0xff000000: [
+        "assets/img/pants7_2_black_1.avif",
+        "assets/img/pants7_1_black_2.avif",
+        "assets/img/pants7_1_black_3.avif",
+        "assets/img/pants7_1_black_4.avif",
+      ],
+    },
+    "size": ["30x30", "30x31", "35x32", "36x34", "29x30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants7_3",
+    "name": "Ultimate365 Chino Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants7",
+    "color": {
+      0xff000000: [
+        "assets/img/pants7_3_black_1.avif",
+        "assets/img/pants7_1_black_2.avif",
+        "assets/img/pants7_1_black_3.avif",
+        "assets/img/pants7_1_black_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/pants7_3_blue_1.avif",
+        "assets/img/pants7_3_blue_2.avif",
+        "assets/img/pants7_3_blue_3.avif",
+        "assets/img/pants7_3_blue_4.avif",
+      ],
+    },
+    "size": ["30x30", "30x31", "35x32", "36x34", "29x30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "pants7_4",
+    "name": "Ultimate365 Chino Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "Pants",
+    "sub_category_id": "Pants7",
+    "color": {
+      0xff0000FF: [
+        "assets/img/pants7_3_blue_1.avif",
+        "assets/img/pants7_3_blue_2.avif",
+        "assets/img/pants7_3_blue_3.avif",
+        "assets/img/pants7_3_blue_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/pants7_3_black_1.avif",
+        "assets/img/pants7_1_black_2.avif",
+        "assets/img/pants7_1_black_3.avif",
+        "assets/img/pants7_1_black_4.avif",
+      ],
+    },
+    "size": ["30x30", "30x31", "35x32", "36x34", "29x30"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //T-SHIRTS & TOPS
   {
@@ -594,6 +1761,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -640,6 +1814,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -686,6 +1867,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -732,6 +1920,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -778,6 +1973,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -824,6 +2026,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -870,6 +2079,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //JACKETS & COATS
   {
@@ -917,6 +2133,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -963,6 +2186,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1009,6 +2239,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1055,6 +2292,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1101,6 +2345,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1147,6 +2398,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1193,6 +2451,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1239,6 +2504,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //HOODIES & SWEATSHIRTS
   {
@@ -1286,6 +2558,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1332,6 +2611,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1378,6 +2664,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1424,6 +2717,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //SHORTS
   {
@@ -1471,6 +2771,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1517,6 +2824,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1563,6 +2877,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //TRACKSUITS
   {
@@ -1610,6 +2931,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1656,6 +2984,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1702,6 +3037,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1748,6 +3090,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //ACCESSORIES
   {
@@ -1795,6 +3144,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1841,6 +3197,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1887,6 +3250,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1933,6 +3303,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -1979,6 +3356,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2025,6 +3409,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2071,6 +3462,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2117,6 +3515,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2163,6 +3568,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2209,6 +3621,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //SHOES
   {
@@ -2256,6 +3675,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2302,6 +3728,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2348,6 +3781,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2394,6 +3834,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2440,6 +3887,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2486,6 +3940,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   //SPORTS
   {
@@ -2533,6 +3994,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2579,6 +4047,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2625,6 +4100,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2671,6 +4153,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2717,6 +4206,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2763,6 +4259,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2809,6 +4312,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2855,6 +4365,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
   {
     "featured": "New Arrivals",
@@ -2901,6 +4418,13 @@ final List products = [
         ]
       },
     ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
   },
 ];
 

@@ -3,51 +3,43 @@ final List categoryData = [
   {
     "category_id": "c1",
     "category_name": "Pants",
-    "category_image":
-        "assets/img/pants1_black_1.png",
+    "category_image": "assets/img/pants1_black_1.png",
     "sub_category": [
       {
         "sub_category_id": "Pants1",
         "sub_category_name": "Formal Pant",
-        "sub_category_img":
-            "assets/img/pants1_black_1.png",
+        "sub_category_img": "assets/img/pants1_black_1.png",
       },
       {
         "sub_category_id": "Pants2",
         "sub_category_name": "Denim",
-        "sub_category_img":
-            "assets/img/pants2_blue_1.webp",
-
+        "sub_category_img": "assets/img/pants2_blue_1.webp",
       },
       {
         "sub_category_id": "Pants3",
         "sub_category_name": "Cargo",
-        "sub_category_img":
-            "assets/img/pants3_1_green_1.avif",
+        "sub_category_img": "assets/img/pants3_1_green_1.avif",
       },
       {
         "sub_category_id": "Pants4",
         "sub_category_name": "Cotton Pants",
-        "sub_category_img":
-            "https://media.istockphoto.com/id/845813120/photo/blank-hoodie-sweatshirt-color-green-front-view.jpg?s=612x612&w=0&k=20&c=EeXgy6I6rQqQosF0Ic22mJK3st6FbKarthAKdBAKzfg=",
+        "sub_category_img": "assets/img/pants4_1_brown_1.avif",
       },
       {
         "sub_category_id": "Pants5",
         "sub_category_name": "Trousers",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/pants5_1_red_1.avif",
       },
       {
         "sub_category_id": "Pants6",
         "sub_category_name": "Joggers",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/pants6_1_silver_1.avif",
       },
       {
         "sub_category_id": "Pants7",
         "sub_category_name": "Chinos",
         "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+            "assets/img/pants7_1_green_1.avif",
       },
     ],
   },
@@ -373,61 +365,61 @@ final List categoryData = [
     "category_id": "c9",
     "category_name": "Sports",
     "category_image":
-    "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
+        "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
     "sub_category": [
       {
         "sub_category_id": "Sports 1",
         "sub_category_name": "Sneaker",
         "sub_category_img":
-        "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
       },
       {
         "sub_category_id": "Sports 2",
         "sub_category_name": "Slides & Sandles",
         "sub_category_img":
-        "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
       },
       {
         "sub_category_id": "Sports 3",
         "sub_category_name": "Boots",
         "sub_category_img":
-        "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
       },
       {
         "sub_category_id": "Sports 4",
         "sub_category_name": "Workout & Gym",
         "sub_category_img":
-        "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
       },
       {
         "sub_category_id": "Sports 5",
         "sub_category_name": "Running",
         "sub_category_img":
-        "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
       },
       {
         "sub_category_id": "Sports 6",
         "sub_category_name": "Hiking",
         "sub_category_img":
-        "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
       },
       {
         "sub_category_id": "Sports 7",
         "sub_category_name": "Workout & Gym",
         "sub_category_img":
-        "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
       },
       {
         "sub_category_id": "Sports 8",
         "sub_category_name": "Running",
         "sub_category_img":
-        "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
       },
       {
         "sub_category_id": "Sports 9",
         "sub_category_name": "HikingHikingHikingHiking",
         "sub_category_img":
-        "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
       },
     ],
   },
