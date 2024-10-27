@@ -52,7 +52,8 @@ class ProductDetailController extends GetxController {
     0xffDC143C: 'Crimson',
     0xffFF1493: 'DeepPink',
     0xffFF6347: 'Tomato',
-    0xffE5C8A8: 'Desert Sand'
+    0xffE5C8A8: 'Desert Sand',
+    0xffADD8E6: 'Light Blue',
   };
 
   void updateColor(int color, List<String> images) {

@@ -3490,9 +3490,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "hoodies & sweatshirts 3",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "hoodies & sweatshirts 3_1",
+    "name": "Adicolor 3-Stripes Teddy Fleece Hoodie",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -3503,17 +3502,297 @@ final List products = [
     "category": "HOODIES & SWEATSHIRTS",
     "sub_category_id": "Hoodies & Sweatshirts 3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts3_1_desertSand_1.avif",
+        "assets/img/hoodieSweatshirts3_1_desertSand_2.avif",
+        "assets/img/hoodieSweatshirts3_1_desertSand_2.avif",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/hoodieSweatshirts3_1_green_1.avif",
+        "assets/img/hoodieSweatshirts3_1_green_2.avif",
+        "assets/img/hoodieSweatshirts3_1_green_3.avif",
+        "assets/img/hoodieSweatshirts3_1_green_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 3_2",
+    "name": "ALL SZN Fleece Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 3",
+    "color": {
+      0xff000000: [
+        "assets/img/hoodieSweatshirts3_2_black_1.avif",
+        "assets/img/hoodieSweatshirts3_2_black_2.avif",
+        "assets/img/hoodieSweatshirts3_2_black_3.avif",
+        "assets/img/hoodieSweatshirts3_2_black_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/hoodieSweatshirts3_2_green_1.avif",
+        "assets/img/hoodieSweatshirts3_2_green_2.avif",
+        "assets/img/hoodieSweatshirts3_2_green_3.avif",
+        "assets/img/hoodieSweatshirts3_2_green_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/hoodieSweatshirts3_2_pink_1.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_2.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_3.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 3_3",
+    "name": "ALL SZN Fleece Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 3",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/hoodieSweatshirts3_2_pink_1.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_2.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_3.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/hoodieSweatshirts3_2_black_1.avif",
+        "assets/img/hoodieSweatshirts3_2_black_2.avif",
+        "assets/img/hoodieSweatshirts3_2_black_3.avif",
+        "assets/img/hoodieSweatshirts3_2_black_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/hoodieSweatshirts3_2_green_1.avif",
+        "assets/img/hoodieSweatshirts3_2_green_2.avif",
+        "assets/img/hoodieSweatshirts3_2_green_3.avif",
+        "assets/img/hoodieSweatshirts3_2_green_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 3_4",
+    "name": "ALL SZN Fleece Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 3",
+    "color": {
+      0xff00FF00: [
+        "assets/img/hoodieSweatshirts3_2_green_1.avif",
+        "assets/img/hoodieSweatshirts3_2_green_2.avif",
+        "assets/img/hoodieSweatshirts3_2_green_3.avif",
+        "assets/img/hoodieSweatshirts3_2_green_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/hoodieSweatshirts3_2_pink_1.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_2.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_3.avif",
+        "assets/img/hoodieSweatshirts3_2_pink_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/hoodieSweatshirts3_2_black_1.avif",
+        "assets/img/hoodieSweatshirts3_2_black_2.avif",
+        "assets/img/hoodieSweatshirts3_2_black_3.avif",
+        "assets/img/hoodieSweatshirts3_2_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 3_5",
+    "name": "Adicolor 3-Stripes Teddy Fleece Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 3",
+    "color": {
+      0xff00FF00: [
+        "assets/img/hoodieSweatshirts3_5_green_1.avif",
+        "assets/img/hoodieSweatshirts3_5_green_2.avif",
+        "assets/img/hoodieSweatshirts3_5_green_3.avif",
+        "assets/img/hoodieSweatshirts3_5_green_4.avif",
+      ],
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts3_5_desertSand_1.avif",
+        "assets/img/hoodieSweatshirts3_5_desertSand_2.avif",
+        "assets/img/hoodieSweatshirts3_5_desertSand_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 4_1",
+    "name": "Logo Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 4",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts4_1_desertSand_1.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_2.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_3.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_4.webp",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/hoodieSweatshirts4_1_blue_1.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_2.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_3.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_4.webp",
+      ],
+      0xffC0C0C0: [
+        "assets/img/hoodieSweatshirts4_1_silver_1.webp",
+        "assets/img/hoodieSweatshirts4_1_silver_2.webp",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -3543,9 +3822,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "hoodies & sweatshirts 4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "hoodies & sweatshirts 4_2",
+    "name": "Logo Sweatshirt",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -3556,18 +3834,248 @@ final List products = [
     "category": "HOODIES & SWEATSHIRTS",
     "sub_category_id": "Hoodies & Sweatshirts 4",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff0000FF: [
+        "assets/img/hoodieSweatshirts4_1_blue_1.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_2.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_3.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_4.webp",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts4_1_desertSand_1.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_2.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_3.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_4.webp",
+      ],
+      0xffC0C0C0: [
+        "assets/img/hoodieSweatshirts4_1_silver_1.webp",
+        "assets/img/hoodieSweatshirts4_1_silver_2.webp",
+      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 4_3",
+    "name": "Logo Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 4",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/hoodieSweatshirts4_1_silver_1.webp",
+        "assets/img/hoodieSweatshirts4_1_silver_2.webp",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/hoodieSweatshirts4_1_blue_1.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_2.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_3.webp",
+        "assets/img/hoodieSweatshirts4_1_blue_4.webp",
+      ],
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts4_1_desertSand_1.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_2.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_3.webp",
+        "assets/img/hoodieSweatshirts4_1_desertSand_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 4_4",
+    "name": "Plain Zip Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 4",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts4_4_desertSand_1.webp",
+        "assets/img/hoodieSweatshirts4_4_desertSand_2.webp",
+        "assets/img/hoodieSweatshirts4_4_desertSand_3.webp",
+        "assets/img/hoodieSweatshirts4_4_desertSand_4.webp",
+        "assets/img/hoodieSweatshirts4_4_desertSand_5.webp",
+      ],
+      0xff808080: [
+        "assets/img/hoodieSweatshirts4_4_grey_1.webp",
+        "assets/img/hoodieSweatshirts4_4_grey_2.webp",
+        "assets/img/hoodieSweatshirts4_4_grey_3.webp",
+        "assets/img/hoodieSweatshirts4_4_grey_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 4_5",
+    "name": "Plain Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 4",
+    "color": {
+      0xff0000FF: [
+        "assets/img/hoodieSweatshirts4_5_blue_1.webp",
+        "assets/img/hoodieSweatshirts4_5_blue_2.webp",
+        "assets/img/hoodieSweatshirts4_5_blue_3.webp",
+        "assets/img/hoodieSweatshirts4_5_blue_4.webp",
+      ],
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts4_5_desertSand_1.webp",
+        "assets/img/hoodieSweatshirts4_5_desertSand_2.webp",
+        "assets/img/hoodieSweatshirts4_5_desertSand_3.webp",
+        "assets/img/hoodieSweatshirts4_5_desertSand_4.webp",
+      ],
+      0xffADD8E6: [
+        "assets/img/hoodieSweatshirts4_5_lightBlue_1.webp",
+        "assets/img/hoodieSweatshirts4_5_lightBlue_2.webp",
+        "assets/img/hoodieSweatshirts4_5_lightBlue_3.webp",
+        "assets/img/hoodieSweatshirts4_5_lightBlue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 4_6",
+    "name": "Plain Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 4",
+    "color": {
+      0xffADD8E6: [
+        "assets/img/hoodieSweatshirts4_5_lightBlue_1.webp",
+        "assets/img/hoodieSweatshirts4_5_lightBlue_2.webp",
+        "assets/img/hoodieSweatshirts4_5_lightBlue_3.webp",
+        "assets/img/hoodieSweatshirts4_5_lightBlue_4.webp",
+      ],
+      0xff0000FF: [
+        "assets/img/hoodieSweatshirts4_5_blue_1.webp",
+        "assets/img/hoodieSweatshirts4_5_blue_2.webp",
+        "assets/img/hoodieSweatshirts4_5_blue_3.webp",
+        "assets/img/hoodieSweatshirts4_5_blue_4.webp",
+      ],
+      0xffE5C8A8: [
+        "assets/img/hoodieSweatshirts4_5_desertSand_1.webp",
+        "assets/img/hoodieSweatshirts4_5_desertSand_2.webp",
+        "assets/img/hoodieSweatshirts4_5_desertSand_3.webp",
+        "assets/img/hoodieSweatshirts4_5_desertSand_4.webp",
+      ],
+      
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [

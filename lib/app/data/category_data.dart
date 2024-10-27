@@ -168,14 +168,12 @@ final List categoryData = [
       {
         "sub_category_id": "Hoodies & Sweatshirts 3",
         "sub_category_name": "Fleece Hoodie",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/hoodieSweatshirts3_1_desertSand_1.avif",
       },
       {
         "sub_category_id": "Hoodies & Sweatshirts 4",
         "sub_category_name": "Fleece Sweatshirt",
-        "sub_category_img":
-            "https://media.istockphoto.com/id/845813120/photo/blank-hoodie-sweatshirt-color-green-front-view.jpg?s=612x612&w=0&k=20&c=EeXgy6I6rQqQosF0Ic22mJK3st6FbKarthAKdBAKzfg=",
+        "sub_category_img": "assets/img/hoodieSweatshirts4_1_desertSand_1.webp",
       },
     ],
   },
