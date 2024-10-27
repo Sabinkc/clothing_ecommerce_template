@@ -74,8 +74,8 @@ class AddToCartCheckout extends StatelessWidget {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
                                 image: DecorationImage(
-                                    image: NetworkImage(item["image"]),
-                                    fit: BoxFit.contain)
+                                    image: AssetImage(item["image"]),
+                                    fit: BoxFit.cover)
                                 // color: Colors.amber
                                 // image: DecorationImage(
                                 //   image: NetworkImage(item["image"]),

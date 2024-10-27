@@ -154,7 +154,7 @@ class AddedCart extends StatelessWidget {
                                       // borderRadius: BorderRadius.circular(16),
 
                                       image: DecorationImage(
-                                        image: NetworkImage(item["image"]),
+                                        image: AssetImage(item["image"]),
                                         fit: BoxFit.cover,
                                       ),
                                     ),

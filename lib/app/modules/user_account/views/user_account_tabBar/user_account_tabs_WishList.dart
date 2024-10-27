@@ -53,11 +53,11 @@ class UserAccountTabsWishList extends StatelessWidget {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(16),
                                 image: DecorationImage(
-                                  image: NetworkImage(
+                                  image: AssetImage(
                                       item["color"].entries.first.value[0]
                                       // .entries.first.value,
                                       ),
-                                  fit: BoxFit.contain,
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),

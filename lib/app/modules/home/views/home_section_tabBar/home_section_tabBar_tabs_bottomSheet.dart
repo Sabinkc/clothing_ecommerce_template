@@ -80,7 +80,7 @@ class HomeSectionTabBarTabsBottomSheet extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               image: DecorationImage(
-                                image: NetworkImage(
+                                image: AssetImage(
                                   controllerProductDetail.selectedImages[index],
                                 ),
                                 //   controller.selectedImages.isNotEmpty

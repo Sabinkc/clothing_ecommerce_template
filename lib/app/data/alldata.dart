@@ -1930,9 +1930,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 5",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 5_1",
+    "name": "MONO SHIRT",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1943,17 +1942,11 @@ final List products = [
     "category": "T-SHIRTS & TOPS",
     "sub_category_id": "T-Shirts & Tops 5",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/tshirts5_1_blue_1.avif",
+        "assets/img/tshirts5_1_blue_2.avif",
+        "assets/img/tshirts5_1_blue_3.avif",
+        "assets/img/tshirts5_1_blue_4.avif",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -1983,9 +1976,422 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 6",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 5_2",
+    "name": "Adicolor Polar Fleece Shirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 5",
+    "color": {
+      0xff000000: [
+        "assets/img/tshirts5_2_black_1.avif",
+        "assets/img/tshirts5_2_black_2.avif",
+        "assets/img/tshirts5_2_black_3.avif",
+        "assets/img/tshirts5_2_black_4.avif",
+      ],
+      0xffE5C8A8: [
+        "assets/img/tshirts5_2_desertsand_1.avif",
+        "assets/img/tshirts5_2_desertsand_2.avif",
+        "assets/img/tshirts5_2_desertsand_3.avif",
+        "assets/img/tshirts5_2_desertsand_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 5_3",
+    "name": "Adicolor Polar Fleece Shirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 5",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/tshirts5_2_desertsand_1.avif",
+        "assets/img/tshirts5_2_desertsand_2.avif",
+        "assets/img/tshirts5_2_desertsand_3.avif",
+        "assets/img/tshirts5_2_desertsand_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/tshirts5_2_black_1.avif",
+        "assets/img/tshirts5_2_black_2.avif",
+        "assets/img/tshirts5_2_black_3.avif",
+        "assets/img/tshirts5_2_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_1",
+    "name": "Own the Run Long Sleeve Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 6",
+    "color": {
+      0xff800080: [
+        "assets/img/tshirts6_1_purple_1.avif",
+        "assets/img/tshirts6_1_purple_2.avif",
+        "assets/img/tshirts6_1_purple_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/tshirts6_1_blue_1.avif",
+        "assets/img/tshirts6_1_blue_2.avif",
+        "assets/img/tshirts6_1_blue_3.avif",
+      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_2",
+    "name": "Adicolor Trefoil Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 6",
+    "color": {
+      0xff00FF00: [
+        "assets/img/tshirts6_2_green_1.avif",
+        "assets/img/tshirts6_2_green_2.avif",
+        "assets/img/tshirts6_2_green_3.avif",
+        "assets/img/tshirts6_2_green_4.avif",
+      ],
+      0xffE5C8A8: [
+        "assets/img/tshirts6_2_desertsand_1.avif",
+        "assets/img/tshirts6_2_desertsand_2.avif",
+        "assets/img/tshirts6_2_desertsand_3.avif",
+        "assets/img/tshirts6_2_desertsand_4.avif",
+      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_3",
+    "name": "Ottoman Polo Shirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 6",
+    "color": {
+      0xff000000: [
+        "assets/img/tshirts6_3_black_1.avif",
+        "assets/img/tshirts6_3_black_2.avif",
+        "assets/img/tshirts6_3_black_3.avif",
+        "assets/img/tshirts6_3_black_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/tshirts6_3_purple_1.avif",
+        "assets/img/tshirts6_3_purple_2.avif",
+        "assets/img/tshirts6_3_purple_3.avif",
+        "assets/img/tshirts6_3_purple_4.avif",
+      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_4",
+    "name": "Core adidas Performance Primegreen Polo Shirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 6",
+    "color": {
+      0xff000000: [
+        "assets/img/tshirts6_4_black_1.avif",
+        "assets/img/tshirts6_4_black_2.avif",
+        "assets/img/tshirts6_4_black_3.avif",
+        "assets/img/tshirts6_4_black_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/tshirts6_4_blue_1.avif",
+        "assets/img/tshirts6_4_blue_2.avif",
+        "assets/img/tshirts6_4_blue_3.avif",
+        "assets/img/tshirts6_4_blue_4.avif",
+      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_5",
+    "name": "Core adidas Performance Primegreen Polo Shirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 6",
+    "color": {
+      0xff0000FF: [
+        "assets/img/tshirts6_4_blue_1.avif",
+        "assets/img/tshirts6_4_blue_2.avif",
+        "assets/img/tshirts6_4_blue_3.avif",
+        "assets/img/tshirts6_4_blue_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/tshirts6_4_black_1.avif",
+        "assets/img/tshirts6_4_black_2.avif",
+        "assets/img/tshirts6_4_black_3.avif",
+        "assets/img/tshirts6_4_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_6",
+    "name": "CTrefoil Essentials Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 6",
+    "color": {
+      0xffFFA500: [
+        "assets/img/tshirts6_6_orange_1.avif",
+        "assets/img/tshirts6_6_orange_2.avif",
+        "assets/img/tshirts6_6_orange_3.avif",
+        "assets/img/tshirts6_6_orange_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/tshirts6_6_grey_1.avif",
+        "assets/img/tshirts6_6_grey_2.avif",
+        "assets/img/tshirts6_6_grey_3.avif",
+        "assets/img/tshirts6_6_grey_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 6_7",
+    "name": "Train Essentials Feelready Training Tee",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1997,17 +2403,17 @@ final List products = [
     "sub_category_id": "T-Shirts & Tops 6",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/tshirts6_7_red_1.avif",
+        "assets/img/tshirts6_7_red_2.avif",
+        "assets/img/tshirts6_7_red_3.avif",
+        "assets/img/tshirts6_7_red_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/tshirts6_7_blue_1.avif",
+        "assets/img/tshirts6_7_blue_2.avif",
+        "assets/img/tshirts6_7_blue_3.avif",
+        "assets/img/tshirts6_7_blue_4.avif",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -2036,9 +2442,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 7",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 7_1",
+    "name": "Tiro 23 League Training Jacket",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -2049,18 +2454,58 @@ final List products = [
     "category": "T-SHIRTS & TOPS",
     "sub_category_id": "T-Shirts & Tops 7",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xffC0C0C0: [
+        "assets/img/tshirts7_1_silver_1.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/tshirts7_1_black_1.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 7_2",
+    "name": "Tiro 23 League Training Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 7",
+    "color": {
+      0xff000000: [
+        "assets/img/tshirts7_1_black_1.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/tshirts7_1_silver_1.avif",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -2515,9 +2960,8 @@ final List products = [
   //HOODIES & SWEATSHIRTS
   {
     "featured": "New Arrivals",
-    "product_id": "hoodies & sweatshirts 1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "hoodies & sweatshirts 1_1",
+    "name": "Trefoil Essentials Hoodie",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -2528,17 +2972,283 @@ final List products = [
     "category": "HOODIES & SWEATSHIRTS",
     "sub_category_id": "Hoodies & Sweatshirts 1",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/hoodieSweatshirts1_1_black_1.avif",
+        "assets/img/hoodieSweatshirts1_1_black_2.avif",
+        "assets/img/hoodieSweatshirts1_1_black_3.avif",
+        "assets/img/hoodieSweatshirts1_1_black_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffFFC0CB: [
+        "assets/img/hoodieSweatshirts1_1_pink_1.avif",
+        "assets/img/hoodieSweatshirts1_1_pink_2.avif",
+        "assets/img/hoodieSweatshirts1_1_pink_3.avif",
+        "assets/img/hoodieSweatshirts1_1_pink_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 1_2",
+    "name": "Adicolor Neuclassics Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 1",
+    "color": {
+      0xff000000: [
+        "assets/img/hoodieSweatshirts1_2_black_1.avif",
+        "assets/img/hoodieSweatshirts1_2_black_2.avif",
+        "assets/img/hoodieSweatshirts1_2_black_3.avif",
+        "assets/img/hoodieSweatshirts1_2_black_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/hoodieSweatshirts1_2_green_1.avif",
+        "assets/img/hoodieSweatshirts1_2_green_2.avif",
+        "assets/img/hoodieSweatshirts1_2_green_3.avif",
+        "assets/img/hoodieSweatshirts1_2_green_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 1_3",
+    "name": "Trefoil Essentials Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 1",
+    "color": {
+      // 0xff800080: [
+      //   "assets/img/hoodieSweatshirts1_3_purple_1.avif",
+      //   "assets/img/hoodieSweatshirts1_3_purple_2.avif",
+      //   "assets/img/hoodieSweatshirts1_3_purple_3.avif",
+      //   "assets/img/hoodieSweatshirts1_3_purple_4.avif",
+      // ],
+      0xff808080: [
+        "assets/img/hoodieSweatshirts1_3_grey_1.avif",
+        "assets/img/hoodieSweatshirts1_3_grey_2.avif",
+        "assets/img/hoodieSweatshirts1_3_grey_3.avif",
+        "assets/img/hoodieSweatshirts1_3_grey_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 1_4",
+    "name": "Trefoil Essentials Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 1",
+    "color": {
+      0xff808080: [
+        "assets/img/hoodieSweatshirts1_3_grey_1.avif",
+        "assets/img/hoodieSweatshirts1_3_grey_2.avif",
+        "assets/img/hoodieSweatshirts1_3_grey_3.avif",
+        "assets/img/hoodieSweatshirts1_3_grey_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/hoodieSweatshirts1_3_purple_1.avif",
+        "assets/img/hoodieSweatshirts1_3_purple_2.avif",
+        "assets/img/hoodieSweatshirts1_3_purple_3.avif",
+        "assets/img/hoodieSweatshirts1_3_purple_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  // {
+  //   "featured": "New Arrivals",
+  //   "product_id": "hoodies & sweatshirts 1_5",
+  //   "name": "Trefoil Essentials Hoodie",
+  //   "price": 50000,
+  //   "realprice": 55000,
+  //   "discount": 10,
+  //   "title":
+  //       "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+  //   "description":
+  //       "This product has sustainability features recognized by trusted certifications.",
+  //   "category": "HOODIES & SWEATSHIRTS",
+  //   "sub_category_id": "Hoodies & Sweatshirts 1",
+  //   "color": {
+  //     0xff800080: [
+  //       "assets/img/hoodieSweatshirts1_3_purple_1.avif",
+  //       "assets/img/hoodieSweatshirts1_3_purple_2.avif",
+  //       "assets/img/hoodieSweatshirts1_3_purple_3.avif",
+  //       "assets/img/hoodieSweatshirts1_3_purple_4.avif",
+  //     ],
+  //     0xff808080: [
+  //       "assets/img/hoodieSweatshirts1_3_grey_1.avif",
+  //       "assets/img/hoodieSweatshirts1_3_grey_2.avif",
+  //       "assets/img/hoodieSweatshirts1_3_grey_3.avif",
+  //       "assets/img/hoodieSweatshirts1_3_grey_4.avif",
+  //     ],
+  //   },
+  //   "size": ["S", "M", "L", "XL"],
+  //   "reviews": [
+  //     {
+  //       "profile_pic":
+  //           "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+  //       "name": "John Doe",
+  //       "date": "12/1/2023",
+  //       "review":
+  //           "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+  //       "reviews_img": [
+  //         "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+  //         "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+  //         "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+  //         "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+  //       ]
+  //     },
+  //   ],
+  //   "attributes": {
+  //     "Material": "Stainless Steel",
+  //     "Water Resistance": "50 meters",
+  //     "Movement": "Quartz",
+  //     "Color": "Silver",
+  //     "Item id": "WATCH001"
+  //   },
+  // },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 2_1",
+    "name": "Trefoil Essentials Crew Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 2",
+    "color": {
+      0xff800080: [
+        "assets/img/hoodieSweatshirts2_1_purple_1.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_2.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_3.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/hoodieSweatshirts2_1_blue_1.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_2.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_3.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/hoodieSweatshirts2_1_grey_1.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_2.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_3.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_4.avif",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -2568,9 +3278,172 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "hoodies & sweatshirts 2",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "hoodies & sweatshirts 2_2",
+    "name": "Trefoil Essentials Crew Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 2",
+    "color": {
+      0xff0000FF: [
+        "assets/img/hoodieSweatshirts2_1_blue_1.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_2.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_3.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/hoodieSweatshirts2_1_purple_1.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_2.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_3.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/hoodieSweatshirts2_1_grey_1.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_2.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_3.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_4.avif",
+      ]
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 2_3",
+    "name": "Trefoil Essentials Crew Sweatshirt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 2",
+    "color": {
+      0xff808080: [
+        "assets/img/hoodieSweatshirts2_1_grey_1.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_2.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_3.avif",
+        "assets/img/hoodieSweatshirts2_1_grey_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/hoodieSweatshirts2_1_blue_1.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_2.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_3.avif",
+        "assets/img/hoodieSweatshirts2_1_blue_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/hoodieSweatshirts2_1_purple_1.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_2.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_3.avif",
+        "assets/img/hoodieSweatshirts2_1_purple_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 2_4",
+    "name": "Essentials French Terry 3-Stripes Full-Zip Hoodie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "HOODIES & SWEATSHIRTS",
+    "sub_category_id": "Hoodies & Sweatshirts 2",
+    "color": {
+      0xff000000: [
+        "assets/img/hoodieSweatshirts2_4_black_1.avif",
+        "assets/img/hoodieSweatshirts2_4_black_2.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/hoodieSweatshirts2_4_blue_1.avif",
+        "assets/img/hoodieSweatshirts2_4_blue_2.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "hoodies & sweatshirts 2_5",
+    "name": "Trefoil Essentials Crewneck",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -2582,17 +3455,13 @@ final List products = [
     "sub_category_id": "Hoodies & Sweatshirts 2",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/hoodieSweatshirts2_5_red_1.avif",
+        "assets/img/hoodieSweatshirts2_5_red_2.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffC0C0C0: [
+        "assets/img/hoodieSweatshirts2_5_silver_1.avif",
+        "assets/img/hoodieSweatshirts2_5_silver_2.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [

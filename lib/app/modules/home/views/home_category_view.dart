@@ -68,8 +68,7 @@ class HomeCategoryView extends StatelessWidget {
                     border: Border.all(
                         color: Colors.grey.withOpacity(0.3), width: 1),
                     image: DecorationImage(
-                      image:
-                          NetworkImage(categoryData[index]["category_image"]),
+                      image: AssetImage(categoryData[index]["category_image"]),
                       fit: BoxFit.cover,
                     ),
                   ),

@@ -38,8 +38,7 @@ final List categoryData = [
       {
         "sub_category_id": "Pants7",
         "sub_category_name": "Chinos",
-        "sub_category_img":
-            "assets/img/pants7_1_green_1.avif",
+        "sub_category_img": "assets/img/pants7_1_green_1.avif",
       },
     ],
   },
@@ -77,20 +76,17 @@ final List categoryData = [
       {
         "sub_category_id": "T-Shirts & Tops 5",
         "sub_category_name": "Shirts",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/tshirts5_1_blue_1.avif",
       },
       {
         "sub_category_id": "T-Shirts & Tops 6",
         "sub_category_name": "T-shirts",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/tshirts6_1_purple_1.avif",
       },
       {
         "sub_category_id": "T-Shirts & Tops 7",
         "sub_category_name": "Tops",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/tshirts7_1_silver_1.avif",
       },
     ],
   },
@@ -162,14 +158,12 @@ final List categoryData = [
       {
         "sub_category_id": "Hoodies & Sweatshirts 1",
         "sub_category_name": "Hoodies",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/hoodieSweatshirts1_1_black_1.avif",
       },
       {
         "sub_category_id": "Hoodies & Sweatshirts 2",
         "sub_category_name": "Sweatshirts",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/hoodieSweatshirts2_1_purple_1.avif",
       },
       {
         "sub_category_id": "Hoodies & Sweatshirts 3",

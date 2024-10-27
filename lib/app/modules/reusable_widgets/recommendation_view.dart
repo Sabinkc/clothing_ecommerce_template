@@ -93,9 +93,9 @@ class RecommendationView extends StatelessWidget {
                                 Container(
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
-                                      image: NetworkImage(
+                                      image: AssetImage(
                                           imageUrl), // Replace with actual image URL
-                                      fit: BoxFit.contain,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                   height: Adaptive.h(15),
