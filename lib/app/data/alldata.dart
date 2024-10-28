@@ -2535,9 +2535,8 @@ final List products = [
   //JACKETS & COATS
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "jackets & coats 1_1",
+    "name": "Tiro 24 Windbreaker",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -2548,20 +2547,14 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 1",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/jacketsCoats1_1_black_1.avif",
+        "assets/img/jacketsCoats1_1_black_2.avif",
+        "assets/img/jacketsCoats1_1_black_3.avif",
+        "assets/img/jacketsCoats1_1_black_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["2XS", "XS", "S", "L", "XL", "3XL", "4XL", "5XL", "6XL"],
     "reviews": [
       {
         "profile_pic":
@@ -2588,7 +2581,152 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 2",
+    "product_id": "jackets & coats 1_2",
+    "name": "Arsenal Seasonal Half-Zip Windbreaker",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 1",
+    "color": {
+      0xff0000FF: [
+        "assets/img/jacketsCoats1_2_blue_1.avif",
+        "assets/img/jacketsCoats1_2_blue_2.avif",
+        "assets/img/jacketsCoats1_2_blue_3.avif",
+        "assets/img/jacketsCoats1_2_blue_4.avif",
+      ],
+    },
+    "size": ["2XS", "XS", "S", "L", "XL", "3XL", "4XL", "5XL", "6XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 1_3",
+    "name": "Ultimate365 Convertible Jacketr",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 1",
+    "color": {
+      0xff808080: [
+        "assets/img/jacketsCoats1_3_grey_1.avif",
+        "assets/img/jacketsCoats1_3_grey_2.avif",
+        "assets/img/jacketsCoats1_3_grey_3.avif",
+        "assets/img/jacketsCoats1_3_grey_4.avif",
+      ],
+    },
+    "size": ["2XS", "XS", "S", "L", "XL", "3XL", "4XL", "5XL", "6XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 1_4",
+    "name": "Adicolor Woven Crewneck Windbreaker",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 1",
+    "color": {
+      0xff00FF00:[
+        "assets/img/jacketsCoats1_4_green_1.avif",
+        "assets/img/jacketsCoats1_4_green_2.avif",
+        "assets/img/jacketsCoats1_4_green_3.avif",
+        "assets/img/jacketsCoats1_4_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/jacketsCoats1_4_black_1.avif",
+        "assets/img/jacketsCoats1_4_black_2.avif",
+        "assets/img/jacketsCoats1_4_black_3.avif",
+        "assets/img/jacketsCoats1_4_black_4.avif",
+      ],
+    },
+    "size": ["2XS", "XS", "S", "L", "XL", "3XL", "4XL", "5XL", "6XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 2_1",
     "name":
         "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
     "price": 50000,
@@ -6731,7 +6869,6 @@ final List products = [
         "assets/img/shoes6_5_black_3.avif",
         "assets/img/shoes6_5_black_4.avif",
       ],
-      
     },
     "size": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5"],
     "reviews": [

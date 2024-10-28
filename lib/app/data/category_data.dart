@@ -100,7 +100,7 @@ final List categoryData = [
         "sub_category_id": "Jackets & Coats 1",
         "sub_category_name": "Windbreaker",
         "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+            "assets/img/jacketsCoats1_1_black_1.avif",
       },
       {
         "sub_category_id": "Jackets & Coats 2",
