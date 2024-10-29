@@ -2685,7 +2685,7 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 1",
     "color": {
-      0xff00FF00:[
+      0xff00FF00: [
         "assets/img/jacketsCoats1_4_green_1.avif",
         "assets/img/jacketsCoats1_4_green_2.avif",
         "assets/img/jacketsCoats1_4_green_3.avif",
@@ -2723,12 +2723,11 @@ final List products = [
       "Item id": "WATCH001"
     },
   },
-  
+
   {
     "featured": "New Arrivals",
     "product_id": "jackets & coats 2_1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "name": "Essentials 3-Stripes Insulated Hooded Hybrid Jacket",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -2739,20 +2738,273 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 2",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff808080: [
+        "assets/img/jacketsCoats2_1_grey_1.avif",
+        "assets/img/jacketsCoats2_1_grey_2.avif",
+        "assets/img/jacketsCoats2_1_grey_3.avif",
+        "assets/img/jacketsCoats2_1_grey_4.avif",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/jacketsCoats2_1_green_1.avif",
+        "assets/img/jacketsCoats2_1_green_2.avif",
+        "assets/img/jacketsCoats2_1_green_3.avif",
+        "assets/img/jacketsCoats2_1_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 2_2",
+    "name": "Big Baffle Down Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 2",
+    "color": {
+      0xff000000: [
+        "assets/img/jacketsCoats2_2_black_1.avif",
+        "assets/img/jacketsCoats2_2_black_2.avif",
+        "assets/img/jacketsCoats2_2_black_3.avif",
+        "assets/img/jacketsCoats2_2_black_4.avif",
+      ],
+      0xffE5C8A8: [
+        "assets/img/jacketsCoats2_2_desertSand_1.avif",
+        "assets/img/jacketsCoats2_2_desertSand_2.avif",
+        "assets/img/jacketsCoats2_2_desertSand_3.avif",
+        "assets/img/jacketsCoats2_2_desertSand_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 2_3",
+    "name": "Essentials 3-Stripes Light Down Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 2",
+    "color": {
+      0xff000000: [
+        "assets/img/jacketsCoats2_3_black_1.avif",
+        "assets/img/jacketsCoats2_3_black_2.avif",
+        "assets/img/jacketsCoats2_3_black_3.avif",
+        "assets/img/jacketsCoats2_3_black_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/jacketsCoats2_3_blue_1.avif",
+        "assets/img/jacketsCoats2_3_blue_2.avif",
+        "assets/img/jacketsCoats2_3_blue_3.avif",
+        "assets/img/jacketsCoats2_3_blue_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 2_4",
+    "name": "Adicolor Reversible Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 2",
+    "color": {
+      0xff000000: [
+        "assets/img/jacketsCoats2_4_black_1.avif",
+        "assets/img/jacketsCoats2_4_black_2.avif",
+        "assets/img/jacketsCoats2_4_black_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 2_5",
+    "name": "Myshelter Primaloft Lite Bomber Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 2",
+    "color": {
+      0xff00FF00: [
+        "assets/img/jacketsCoats2_5_green_1.avif",
+        "assets/img/jacketsCoats2_5_green_2.avif",
+        "assets/img/jacketsCoats2_5_green_3.avif",
+        "assets/img/jacketsCoats2_5_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/jacketsCoats2_5_black_1.avif",
+        "assets/img/jacketsCoats2_5_black_2.avif",
+        "assets/img/jacketsCoats2_5_black_3.avif",
+        "assets/img/jacketsCoats2_5_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 2_6",
+    "name": "Helionic Hooded Down Vest",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 2",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/jacketsCoats2_6_desertSand_1.avif",
+        "assets/img/jacketsCoats2_6_desertSand_2.avif",
+        "assets/img/jacketsCoats2_6_desertSand_3.avif",
+        "assets/img/jacketsCoats2_6_desertSand_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/jacketsCoats2_6_black_1.avif",
+        "assets/img/jacketsCoats2_6_black_2.avif",
+        "assets/img/jacketsCoats2_6_black_3.avif",
+        "assets/img/jacketsCoats2_6_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
     "reviews": [
       {
         "profile_pic":
@@ -4242,9 +4494,9 @@ final List products = [
   //SHORTS
   {
     "featured": "New Arrivals",
-    "product_id": "shorts 1",
+    "product_id": "shorts 1_1",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "Men's Wrangler Authentics® Loose Fit Carpenter Short in Military Khaki",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4255,20 +4507,20 @@ final List products = [
     "category": "SHORTS",
     "sub_category_id": "Shorts 1",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffC0C0C0: [
+        "assets/img/shorts1_1_silver_1.webp",
+        "assets/img/shorts1_1_silver_2.webp",
+        "assets/img/shorts1_1_silver_3.webp",
+        "assets/img/shorts1_1_silver_4.webp",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/shorts1_1_blue_1.webp",
+        "assets/img/shorts1_1_blue_2.webp",
+        "assets/img/shorts1_1_blue_3.webp",
+        "assets/img/shorts1_1_blue_4.webp",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["30", "32", "33", "34", "36", "38", "40"],
     "reviews": [
       {
         "profile_pic":
@@ -4295,9 +4547,204 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "shorts 2",
+    "product_id": "shorts 1_2",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "Wrangler® Men's Five Star Premium Denim Cargo Shorts in Medium Tint",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 1",
+    "color": {
+      0xff0000FF: [
+        "assets/img/shorts1_2_blue_1.webp",
+        "assets/img/shorts1_2_blue_2.webp",
+        "assets/img/shorts1_2_blue_3.webp",
+        "assets/img/shorts1_2_blue_4.webp",
+      ],
+    },
+    "size": ["30", "32", "33", "34", "36", "38", "40"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 1_3",
+    "name": "Men's Free To Stretch Denim Short in Mid Tint",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 1",
+    "color": {
+      0xffADD8E6: [
+        "assets/img/shorts1_3_lightBlue_1.webp",
+        "assets/img/shorts1_3_lightBlue_2.webp",
+        "assets/img/shorts1_3_lightBlue_3.webp",
+      ],
+      0xff0000FF: [
+        "assets/img/shorts1_3_blue_1.webp",
+        "assets/img/shorts1_3_blue_2.webp",
+        "assets/img/shorts1_3_blue_3.webp",
+        "assets/img/shorts1_3_blue_4.webp",
+      ],
+    },
+    "size": ["30", "32", "33", "34", "36", "38", "40"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 1_4",
+    "name": "Wrangler Rugged Wear® Relaxed Fit Short in Vintage Indigo",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 1",
+    "color": {
+      0xffADD8E6: [
+        "assets/img/shorts1_4_lightBlue_1.webp",
+        "assets/img/shorts1_4_lightBlue_2.jpeg",
+        "assets/img/shorts1_4_lightBlue_3.webp",
+        "assets/img/shorts1_4_lightBlue_4.webp",
+      ],
+    },
+    "size": ["30", "32", "33", "34", "36", "38", "40"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 1_5",
+    "name": "Wrangler® RIGGS Workwear® Carpenter Short in Vintage Indigo",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 1",
+    "color": {
+      0xff808080: [
+        "assets/img/shorts1_5_grey_1.webp",
+        "assets/img/shorts1_5_grey_2.webp",
+        "assets/img/shorts1_5_grey_3.jpeg",
+        "assets/img/shorts1_5_grey_4.webp",
+      ],
+      0xffADD8E6: [
+        "assets/img/shorts1_5_lightBlue_1.jpeg",
+        "assets/img/shorts1_5_lightBlue_2.webp",
+        "assets/img/shorts1_5_lightBlue_3.webp",
+        "assets/img/shorts1_5_lightBlue_4.webp",
+      ],
+    },
+    "size": ["30", "32", "33", "34", "36", "38", "40"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 2_1",
+    "name": "Own The Run Shorts",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4308,20 +4755,26 @@ final List products = [
     "category": "SHORTS",
     "sub_category_id": "Shorts 2",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xffFFC0CB: [
+        "assets/img/shorts2_1_pink_1.avif",
+        "assets/img/shorts2_1_pink_2.avif",
+        "assets/img/shorts2_1_pink_3.avif",
+        "assets/img/shorts2_1_pink_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/shorts2_1_black_1.avif",
+        "assets/img/shorts2_1_black_2.avif",
+        "assets/img/shorts2_1_black_3.avif",
+        "assets/img/shorts2_1_black_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/shorts2_1_blue_1.avif",
+        "assets/img/shorts2_1_blue_2.avif",
+        "assets/img/shorts2_1_blue_3.avif",
+        "assets/img/shorts2_1_blue_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS 5", "S 5", "M 5", "L 5", "XL 5", "2XL 5"],
     "reviews": [
       {
         "profile_pic":
@@ -4348,9 +4801,207 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "shorts 3",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "shorts 2_2",
+    "name": "Anthony Edwards 1 Foundation Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 2",
+    "color": {
+      0xff800080: [
+        "assets/img/shorts2_2_purple_1.avif",
+        "assets/img/shorts2_2_purple_2.avif",
+        "assets/img/shorts2_2_purple_3.avif",
+        "assets/img/shorts2_2_purple_4.avif",
+      ],
+    },
+    "size": ["XS 5", "S 5", "M 5", "L 5", "XL 5", "2XL 5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 2_3",
+    "name": "Entrada 22 Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 2",
+    "color": {
+      0xff000000: [
+        "assets/img/shorts2_3_black_1.avif",
+        "assets/img/shorts2_3_black_2.avif",
+        "assets/img/shorts2_3_black_3.avif",
+        "assets/img/shorts2_3_black_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/shorts2_3_gray_1.avif",
+        "assets/img/shorts2_3_gray_2.avif",
+        "assets/img/shorts2_3_gray_3.avif",
+        "assets/img/shorts2_3_gray_4.avif",
+      ],
+    },
+    "size": ["XS 5", "S 5", "M 5", "L 5", "XL 5", "2XL 5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 2_4",
+    "name": "Ultimate365 10-Inch Golf Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 2",
+    "color": {
+      0xff0000FF: [
+        "assets/img/shorts2_4_blue_1.avif",
+        "assets/img/shorts2_4_blue_2.avif",
+        "assets/img/shorts2_4_blue_3.avif",
+        "assets/img/shorts2_4_blue_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/shorts2_4_black_1.avif",
+      ],
+    },
+    "size": ["XS 5", "S 5", "M 5", "L 5", "XL 5", "2XL 5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 2_5",
+    "name": "Trefoil Essentials Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 2",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/shorts2_5_brown_1.avif",
+        "assets/img/shorts2_5_brown_2.avif",
+        "assets/img/shorts2_5_brown_3.avif",
+        "assets/img/shorts2_5_brown_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/shorts2_5_blue_1.avif",
+        "assets/img/shorts2_5_blue_2.avif",
+        "assets/img/shorts2_5_blue_3.avif",
+        "assets/img/shorts2_5_blue_4.avif",
+      ],
+    },
+    "size": ["XS 5", "S 5", "M 5", "L 5", "XL 5", "2XL 5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 3_1",
+    "name": "New York City Men's Running Split Shorts",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4361,20 +5012,274 @@ final List products = [
     "category": "SHORTS",
     "sub_category_id": "Shorts 3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xffFFA500: [
+        "assets/img/shorts3_1_orange_1.avif",
+        "assets/img/shorts3_1_orange_2.avif",
+        "assets/img/shorts3_1_orange_3.avif",
+        "assets/img/shorts3_1_orange_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+    },
+    "size": ["XS", "S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 3_2",
+    "name": "Designed for Training Pro Series Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 3",
+    "color": {
+      0xff0000FF: [
+        "assets/img/shorts3_2_blue_1.avif",
+        "assets/img/shorts3_2_blue_2.avif",
+        "assets/img/shorts3_2_blue_3.avif",
+        "assets/img/shorts3_2_blue_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/shorts3_2_gray_1.avif",
+        "assets/img/shorts3_2_gray_2.avif",
+        "assets/img/shorts3_2_gray_3.avif",
+        "assets/img/shorts3_2_gray_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 3_3",
+    "name": "Ultimate365 8.5-Inch Golf Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 3",
+    "color": {
+      0xffFFA500: [
+        "assets/img/shorts3_3_orange_1.avif",
+        "assets/img/shorts3_3_orange_2.avif",
+        "assets/img/shorts3_3_orange_3.avif",
+        "assets/img/shorts3_3_orange_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/shorts3_3_pink_1.avif",
+        "assets/img/shorts3_3_pink_2.avif",
+        "assets/img/shorts3_3_pink_3.avif",
+        "assets/img/shorts3_3_pink_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 3_4",
+    "name": "adidas Pro Block Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 3",
+    "color": {
+      0xff000000: [
+        "assets/img/shorts3_4_black_1.avif",
+        "assets/img/shorts3_4_black_2.avif",
+        "assets/img/shorts3_4_black_3.avif",
+        "assets/img/shorts3_4_black_4.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/shorts3_4_silver_1.avif",
+        "assets/img/shorts3_4_silver_2.avif",
+        "assets/img/shorts3_4_silver_3.avif",
+        "assets/img/shorts3_4_silver_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 3_5",
+    "name": "Adizero Running Split Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 3",
+    "color": {
+      0xffFFFF00: [
+        "assets/img/shorts3_5_yellow_1.avif",
+        "assets/img/shorts3_5_yellow_2.avif",
+        "assets/img/shorts3_5_yellow_3.avif",
+        "assets/img/shorts3_5_yellow_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/shorts3_5_blue_1.avif",
+        "assets/img/shorts3_5_blue_2.avif",
+        "assets/img/shorts3_5_blue_3.avif",
+        "assets/img/shorts3_5_blue_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "shorts 3_6",
+    "name": "Adicolor 3-Stripes Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SHORTS",
+    "sub_category_id": "Shorts 3",
+    "color": {
+      0xff808080: [
+        "assets/img/shorts3_6_gray_1.avif",
+        "assets/img/shorts3_6_gray_2.avif",
+        "assets/img/shorts3_6_gray_3.avif",
+        "assets/img/shorts3_6_gray_4.avif",
+      ],
+      0xffADD8E6: [
+        "assets/img/shorts3_6_lightBlue_1.avif",
+        "assets/img/shorts3_6_lightBlue_2.avif",
+        "assets/img/shorts3_6_lightBlue_3.avif",
+        "assets/img/shorts3_6_lightBlue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL"],
     "reviews": [
       {
         "profile_pic":

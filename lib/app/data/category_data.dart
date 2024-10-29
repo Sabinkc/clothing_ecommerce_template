@@ -94,19 +94,17 @@ final List categoryData = [
     "category_id": "c3",
     "category_name": "Jackets & Coats",
     "category_image":
-        "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
+        "assets/img/jacketsCoats1_1_black_1.avif",
     "sub_category": [
       {
         "sub_category_id": "Jackets & Coats 1",
         "sub_category_name": "Windbreaker",
-        "sub_category_img":
-            "assets/img/jacketsCoats1_1_black_1.avif",
+        "sub_category_img": "assets/img/jacketsCoats1_1_black_1.avif",
       },
       {
         "sub_category_id": "Jackets & Coats 2",
         "sub_category_name": "Puffers",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/jacketsCoats2_1_grey_1.avif",
       },
       {
         "sub_category_id": "Jackets & Coats 3",
@@ -181,25 +179,25 @@ final List categoryData = [
     "category_id": "c5",
     "category_name": "Shorts",
     "category_image":
-        "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
+         "assets/img/shorts1_1_silver_1.webp",
     "sub_category": [
       {
         "sub_category_id": "Shorts 1",
         "sub_category_name": "Denim Shorts",
         "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+            "assets/img/shorts1_1_silver_1.webp",
       },
       {
         "sub_category_id": "Shorts 2",
         "sub_category_name": "Cotton",
         "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+            "assets/img/shorts2_1_black_1.avif",
       },
       {
         "sub_category_id": "Shorts 3",
         "sub_category_name": "Sports",
         "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+             "assets/img/shorts3_1_orange_1.avif",
       },
     ],
   },
