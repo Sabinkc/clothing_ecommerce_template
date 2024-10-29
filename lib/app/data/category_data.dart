@@ -51,26 +51,22 @@ final List categoryData = [
       {
         "sub_category_id": "T-Shirts & Tops 1",
         "sub_category_name": "Cardigan",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/tshirts1_1_lightBlue_1.avif",
       },
       {
         "sub_category_id": "T-Shirts & Tops 2",
         "sub_category_name": "Outers",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/tshirts2_1_black_1.png",
       },
       {
         "sub_category_id": "T-Shirts & Tops 3",
         "sub_category_name": "Sweater",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/tshirts3_1_green_1.webp",
       },
       {
         "sub_category_id": "T-Shirts & Tops 4",
         "sub_category_name": "Highneck",
-        "sub_category_img":
-            "https://media.istockphoto.com/id/845813120/photo/blank-hoodie-sweatshirt-color-green-front-view.jpg?s=612x612&w=0&k=20&c=EeXgy6I6rQqQosF0Ic22mJK3st6FbKarthAKdBAKzfg=",
+        "sub_category_img": "assets/img/tshirts4_1_red_1.webp",
       },
       {
         "sub_category_id": "T-Shirts & Tops 5",
@@ -93,8 +89,7 @@ final List categoryData = [
   {
     "category_id": "c3",
     "category_name": "Jackets & Coats",
-    "category_image":
-        "assets/img/jacketsCoats1_1_black_1.avif",
+    "category_image": "assets/img/jacketsCoats1_1_black_1.avif",
     "sub_category": [
       {
         "sub_category_id": "Jackets & Coats 1",
@@ -114,9 +109,8 @@ final List categoryData = [
       },
       {
         "sub_category_id": "Jackets & Coats 4",
-        "sub_category_name": "Jeans",
-        "sub_category_img":
-            "https://media.istockphoto.com/id/845813120/photo/blank-hoodie-sweatshirt-color-green-front-view.jpg?s=612x612&w=0&k=20&c=EeXgy6I6rQqQosF0Ic22mJK3st6FbKarthAKdBAKzfg=",
+        "sub_category_name": "Jeans Jacket",
+        "sub_category_img": "assets/img/jacketsCoats4_1_blue_1.webp",
       },
       {
         "sub_category_id": "Jackets & Coats 5",
@@ -178,26 +172,22 @@ final List categoryData = [
   {
     "category_id": "c5",
     "category_name": "Shorts",
-    "category_image":
-         "assets/img/shorts1_1_silver_1.webp",
+    "category_image": "assets/img/shorts1_1_silver_1.webp",
     "sub_category": [
       {
         "sub_category_id": "Shorts 1",
         "sub_category_name": "Denim Shorts",
-        "sub_category_img":
-            "assets/img/shorts1_1_silver_1.webp",
+        "sub_category_img": "assets/img/shorts1_1_silver_1.webp",
       },
       {
         "sub_category_id": "Shorts 2",
         "sub_category_name": "Cotton",
-        "sub_category_img":
-            "assets/img/shorts2_1_black_1.avif",
+        "sub_category_img": "assets/img/shorts2_1_black_1.avif",
       },
       {
         "sub_category_id": "Shorts 3",
         "sub_category_name": "Sports",
-        "sub_category_img":
-             "assets/img/shorts3_1_orange_1.avif",
+        "sub_category_img": "assets/img/shorts3_1_orange_1.avif",
       },
     ],
   },

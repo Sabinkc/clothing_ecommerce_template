@@ -40,7 +40,7 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                       controller.updateColor(e.key, e.value);
                     },
                     child: Padding(
-                      padding: const EdgeInsets.only(right: 0),
+                      padding: const EdgeInsets.only(right: 5),
                       child: Obx(
                         () => Container(
                           height: 30,
@@ -52,8 +52,8 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                                   Color(controller.selectedColor.value == e.key
                                       // ? e.key
                                       ? 0xffF1C338
-                                      : 0x00000000), // Border color
-                              width: 2.0,
+                                      : e.key), // Border color
+                              width: controller.selectedColor.value == e.key?4.0:1.5,
                             ),
                           ),
                           child: Center(

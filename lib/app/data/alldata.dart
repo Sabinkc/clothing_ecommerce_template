@@ -1718,9 +1718,8 @@ final List products = [
   //T-SHIRTS & TOPS
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 1_1",
+    "name": "Topman oversized fit boucle polo in brown marl",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1731,18 +1730,18 @@ final List products = [
     "category": "T-SHIRTS & TOPS",
     "sub_category_id": "T-Shirts & Tops 1",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xffADD8E6: [
+        "assets/img/tshirts1_1_lightBlue_1.avif",
+        "assets/img/tshirts1_1_lightBlue_2.avif",
+        "assets/img/tshirts1_1_lightBlue_3.avif",
+        "assets/img/tshirts1_1_lightBlue_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/tshirts1_1_black_1.avif",
+        "assets/img/tshirts1_1_black_2.avif",
+        "assets/img/tshirts1_1_black_3.avif",
+        "assets/img/tshirts1_1_black_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -1771,9 +1770,204 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 2",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 1_2",
+    "name": "Topman essential polo in charcoal",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 1",
+    "color": {
+      0xff808080: [
+        "assets/img/tshirts1_2_gray_1.avif",
+        "assets/img/tshirts1_2_gray_2.avif",
+        "assets/img/tshirts1_2_gray_3.avif",
+        "assets/img/tshirts1_2_gray_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/tshirts1_2_black_1.avif",
+        "assets/img/tshirts1_2_black_2.avif",
+        "assets/img/tshirts1_3_black_3.avif",
+        "assets/img/tshirts1_4_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 1_3",
+    "name": "Topman relaxed fit jumper in black & white animal crew",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 1",
+    "color": {
+      0xff808080: [
+        "assets/img/tshirts1_3_gray_1.avif",
+        "assets/img/tshirts1_3_gray_2.avif",
+        "assets/img/tshirts1_3_gray_3.avif",
+        "assets/img/tshirts1_3_gray_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 1_4",
+    "name": "Topman relaxed fit jumper in light blue",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 1",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/tshirts1_4_brown_1.avif",
+        "assets/img/tshirts1_4_brown_2.avif",
+        "assets/img/tshirts1_4_brown_3.avif",
+        "assets/img/tshirts1_4_brown_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/tshirts1_4_black_1.avif",
+        "assets/img/tshirts1_4_black_2.avif",
+        "assets/img/tshirts1_4_black_3.avif",
+        "assets/img/tshirts1_4_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 1_5",
+    "name": "adidas x Malbon Cardigan",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 1",
+    "color": {
+      0xffFFFF00: [
+        "assets/img/tshirts1_5_yellow_1.avif",
+        "assets/img/tshirts1_5_yellow_2.avif",
+        "assets/img/tshirts1_5_yellow_3.avif",
+        "assets/img/tshirts1_5_yellow_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 2_1",
+    "name": "Nike Tech",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1784,18 +1978,24 @@ final List products = [
     "category": "T-SHIRTS & TOPS",
     "sub_category_id": "T-Shirts & Tops 2",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/tshirts2_1_black_1.png",
+        "assets/img/tshirts2_1_black_2.png",
+        "assets/img/tshirts2_1_black_3.jpeg",
+        "assets/img/tshirts2_1_black_4.png",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/tshirts2_1_blue_1.jpeg",
+        "assets/img/tshirts2_1_blue_2.png",
+        "assets/img/tshirts2_1_blue_3.jpeg",
+        "assets/img/tshirts2_1_blue_4.jpeg",
+      ],
+      0xff00FF00: [
+        "assets/img/tshirts2_1_green_1.jpeg",
+        "assets/img/tshirts2_1_green_2.jpeg",
+        "assets/img/tshirts2_1_green_3.jpeg",
+        "assets/img/tshirts2_1_green_4.jpeg",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -1824,9 +2024,164 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 3",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 2_2",
+    "name": "Nike Sportswear Tech Fleece",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 2",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/tshirts2_2_desertSand_1.jpeg",
+        "assets/img/tshirts2_2_desertSand_2.jpeg",
+        "assets/img/tshirts2_2_desertSand_3.jpeg",
+        "assets/img/tshirts2_2_desertSand_4.jpeg",
+      ],
+      0xffFF0000: [
+        "assets/img/tshirts2_2_red_1.jpeg",
+        "assets/img/tshirts2_2_red_2.jpeg",
+        "assets/img/tshirts2_2_red_3.jpeg",
+        "assets/img/tshirts2_2_red_4.jpeg",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 2_3",
+    "name": "Nike Unlimited",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 2",
+    "color": {
+      0xff00FF00: [
+        "assets/img/tshirts2_3_green_1.jpeg",
+        "assets/img/tshirts2_3_green_2.png",
+        "assets/img/tshirts2_3_green_3.jpeg",
+        "assets/img/tshirts2_3_green_4.png",
+      ],
+      0xffC0C0C0: [
+        "assets/img/tshirts2_3_silver_1.jpeg",
+        "assets/img/tshirts2_3_silver_2.png",
+        "assets/img/tshirts2_3_silver_3.jpeg",
+        "assets/img/tshirts2_3_silver_4.jpeg",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 2_4",
+    "name": "Nike ACG",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 2",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/tshirts2_4_brown_1.jpeg",
+        "assets/img/tshirts2_4_brown_2.jpeg",
+        "assets/img/tshirts2_4_brown_3.jpeg",
+        "assets/img/tshirts2_4_brown_4.png",
+      ],
+      0xff800080: [
+        "assets/img/tshirts2_4_purple_1.jpeg",
+        "assets/img/tshirts2_4_purple_2.jpeg",
+        "assets/img/tshirts2_4_purple_3.jpeg",
+        "assets/img/tshirts2_4_purple_4.jpeg",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 3_1",
+    "name": "Wrangler x Buffalo Trace™ Men's Sherpa Pullover in Kentucky Green",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1837,18 +2192,12 @@ final List products = [
     "category": "T-SHIRTS & TOPS",
     "sub_category_id": "T-Shirts & Tops 3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/tshirts3_1_green_1.webp",
+        "assets/img/tshirts3_1_green_2.webp",
+        "assets/img/tshirts3_1_green_3.webp",
+        "assets/img/tshirts3_1_green_4.webp",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -1877,9 +2226,201 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "t-shirts & tops 4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "t-shirts & tops 3_2",
+    "name": "Men's Jacquard Quarter Zip Hooded Popover Jacket in Sapphire Way",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 3",
+    "color": {
+      0xff800080: [
+        "assets/img/tshirts3_2_purple_1.webp",
+        "assets/img/tshirts3_2_purple_2.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 3_3",
+    "name": "Men's Wrangler Quarter Zip Waffle Fleece Pullover in Iris",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 3",
+    "color": {
+      0xff0000FF: [
+        "assets/img/tshirts3_3_blue_1.webp",
+        "assets/img/tshirts3_3_blue_2.webp",
+        "assets/img/tshirts3_3_blue_3.webp",
+        "assets/img/tshirts3_3_blue_4.webp",
+      ],
+      0xff808080: [
+        "assets/img/tshirts3_3_gray_1.jpeg",
+        "assets/img/tshirts3_3_gray_2.webp",
+        "assets/img/tshirts3_3_gray_3.webp",
+        "assets/img/tshirts3_3_gray_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 3_4",
+    "name": "Men's George Strait Quarter-Zip Quilted Pullover in Charcoal",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 3",
+    "color": {
+      0xff808080: [
+        "assets/img/tshirts3_4_gray_1.webp",
+        "assets/img/tshirts3_4_gray_2.webp",
+        "assets/img/tshirts3_4_gray_3.webp",
+        "assets/img/tshirts3_4_gray_4.webp",
+      ],
+      0xffADD8E6: [
+        "assets/img/tshirts3_4_lightBlue_1.webp",
+        "assets/img/tshirts3_4_lightBlue_2.webp",
+        "assets/img/tshirts3_4_lightBlue_3.webp",
+        "assets/img/tshirts3_4_lightBlue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 3_5",
+    "name": "Men's Wrangler® Heavyweight Quarter-Zip Sherpa Pullover in Alpine",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 3",
+    "color": {
+      0xff00FF00: [
+        "assets/img/tshirts3_5_green_1.webp",
+        "assets/img/tshirts3_5_green_2.webp",
+        "assets/img/tshirts3_5_green_3.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 4_1",
+    "name": "CARMINE MERINO HIGH NECK",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -1891,17 +2432,149 @@ final List products = [
     "sub_category_id": "T-Shirts & Tops 4",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/tshirts4_1_red_1.webp",
+        "assets/img/tshirts4_1_red_2.webp",
+        "assets/img/tshirts4_1_red_3.webp",
+        "assets/img/tshirts4_1_red_4.webp",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 4_2",
+    "name": "CARAMEL MERINO HIGHNECK",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 4",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/tshirts4_2_brown_1.webp",
+        "assets/img/tshirts4_2_brown_2.webp",
+        "assets/img/tshirts4_2_brown_3.webp",
+        "assets/img/tshirts4_2_brown_4.webp",
       ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 4_3",
+    "name": "EBONY MERINO HIGH NECK",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 4",
+    "color": {
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/tshirts4_3_blue_1.webp",
+        "assets/img/tshirts4_3_blue_2.webp",
+        "assets/img/tshirts4_3_blue_3.webp",
+        "assets/img/tshirts4_3_blue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 4_4",
+    "name": "ECRU MERINO HIGH NECK",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 4",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/tshirts4_4_white_1.webp",
+        "assets/img/tshirts4_4_white_2.webp",
+        "assets/img/tshirts4_4_white_3.webp",
+        "assets/img/tshirts4_4_white_4.webp",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -3084,9 +3757,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "jackets & coats 4_1",
+    "name": "Men's Blue Bell Raw Denim Jacket in Cooper",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -3097,18 +3769,243 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 4",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/jacketsCoats4_1_blue_1.webp",
+        "assets/img/jacketsCoats4_1_blue_2.webp",
+        "assets/img/jacketsCoats4_1_blue_3.webp",
+        "assets/img/jacketsCoats4_1_blue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 4_2",
+    "name": "Men's Western Sherpa Lined Denim Wrange Jacket in Rustic Navy",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 4",
+    "color": {
+      0xff0000FF: [
+        "assets/img/jacketsCoats4_2_blue_1.webp",
+        "assets/img/jacketsCoats4_2_blue_2.webp",
+        "assets/img/jacketsCoats4_2_blue_3.webp",
+        "assets/img/jacketsCoats4_2_blue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 4_3",
+    "name":
+        "Men's Wrangler Retro® Sherpa Lined Western Denim Jacket in Rodeo Night",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 4",
+    "color": {
+      0xffADD8E6: [
+        "assets/img/jacketsCoats4_3_lightBlue_1.webp",
+        "assets/img/jacketsCoats4_3_lightBlue_2.webp",
+        "assets/img/jacketsCoats4_3_lightBlue_3.webp",
+        "assets/img/jacketsCoats4_3_lightBlue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 4_4",
+    "name": "Wrangler® x PacSun Men's Trucker Jacket in Bolster",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 4",
+    "color": {
+      0xffADD8E6: [
+        "assets/img/jacketsCoats4_4_lightBlue_1.webp",
+        "assets/img/jacketsCoats4_4_lightBlue_2.webp",
+        "assets/img/jacketsCoats4_4_lightBlue_3.webp",
+        "assets/img/jacketsCoats4_4_lightBlue_4.webp",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 4_5",
+    "name": "Wrangler® Western Sherpa Lined Denim Trucker Jacket in Rustic",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 4",
+    "color": {
+      0xff0000FF: [
+        "assets/img/jacketsCoats4_5_blue_1.webp",
+        "assets/img/jacketsCoats4_5_blue_2.jpeg",
+        "assets/img/jacketsCoats4_5_blue_3.webp",
+        "assets/img/jacketsCoats4_5_blue_4.jpeg",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 4_6",
+    "name": "Men's Western Lined Canvas Barn Coat in Hay Bale",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 4",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/jacketsCoats4_6_brown_1.webp",
+        "assets/img/jacketsCoats4_6_brown_2.webp",
+        "assets/img/jacketsCoats4_6_brown_3.webp",
+        "assets/img/jacketsCoats4_6_brown_4.webp",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
