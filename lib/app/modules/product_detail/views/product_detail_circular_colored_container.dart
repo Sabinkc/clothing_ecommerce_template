@@ -52,7 +52,7 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                                   Color(controller.selectedColor.value == e.key
                                       // ? e.key
                                       ? 0xffF1C338
-                                      : e.key), // Border color
+                                      : 0xffC0C0C0), // Border color
                               width: controller.selectedColor.value == e.key?4.0:1.5,
                             ),
                           ),

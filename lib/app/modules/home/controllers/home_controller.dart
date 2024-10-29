@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../../../data/category_data.dart';
 
 class HomeController extends GetxController {
-  var index = 'Shoes'.obs;
+  var index = 'Pants'.obs;
   var homeSectionindex = 'New Arrivals'.obs;
 
   var searchResults = [].obs;
