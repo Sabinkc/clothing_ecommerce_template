@@ -1,5 +1,10 @@
+import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt/add_to_cart_payment_selection.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../../../constants/colors.dart';
+import '../../../../../constants/text_size.dart';
+import '../../../../reusable_widgets/LargeButtonReusable.dart';
 import '../../../../user_account/views/user_account_tabBar/user_account_tabs_address/user_account_tabs_address.dart';
 
 class AddToCartAddress extends StatelessWidget {
@@ -7,20 +12,30 @@ class AddToCartAddress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 10,
-            spreadRadius: 5,
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text(
+          "Select Address",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: TextSize.normal,
           ),
-        ],
+        ),
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: AppColors.appbarBg,
+        centerTitle: false,
       ),
-      height: 600,
-      child: SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
@@ -37,6 +52,18 @@ class AddToCartAddress extends StatelessWidget {
                 ),
               ),
               const UserAccountTabsAddress(),
+              const SizedBox(height: 40),
+              GestureDetector(
+                onTap: () {
+                  // Get.to(const PlaceOrder());
+                  Get.to( AddToCartPaymentSelection());
+                  // controller.totalPrice.value = 0;
+                },
+                child: const LargeButtonReusable(
+                  title: "Proceed To Payment",
+                  color: AppColors.buttonColor,
+                ),
+              ),
             ],
           ),
         ),

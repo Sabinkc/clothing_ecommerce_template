@@ -6204,9 +6204,8 @@ final List products = [
   //TRACKSUITS
   {
     "featured": "New Arrivals",
-    "product_id": "tracksuits 1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "tracksuits 1_1",
+    "name": "Adicolor Classics Firebird Track Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -6217,20 +6216,26 @@ final List products = [
     "category": "TRACKSUITS",
     "sub_category_id": "Tracksuits 1",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff800080: [
+        "assets/img/tracksuits1_1_purple_1.avif",
+        "assets/img/tracksuits1_1_purple_2.avif",
+        "assets/img/tracksuits1_1_purple_3.avif",
+        "assets/img/tracksuits1_1_purple_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffFFFF00: [
+        "assets/img/tracksuits1_1_yellow_1.avif",
+        "assets/img/tracksuits1_1_yellow_2.avif",
+        "assets/img/tracksuits1_1_yellow_3.avif",
+        "assets/img/tracksuits1_1_yellow_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+      0xffE5C8A8: [
+        "assets/img/tracksuits1_1_desertSand_1.avif",
+        "assets/img/tracksuits1_1_desertSand_2.avif",
+        "assets/img/tracksuits1_1_desertSand_3.avif",
+        "assets/img/tracksuits1_1_desertSand_4.avif",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -6257,9 +6262,164 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "tracksuits 2",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "tracksuits 1_2",
+    "name": "Adicolor Baggy Fit Firebird Track Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 1",
+    "color": {
+      0xff00FF00: [
+        "assets/img/tracksuits1_2_green_1.avif",
+        "assets/img/tracksuits1_2_green_2.avif",
+        "assets/img/tracksuits1_2_green_3.avif",
+        "assets/img/tracksuits1_2_green_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/tracksuits1_2_blue_1.avif",
+        "assets/img/tracksuits1_2_blue_2.avif",
+        "assets/img/tracksuits1_2_blue_3.avif",
+        "assets/img/tracksuits1_2_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 1_3",
+    "name": "Adicolor Firebird Loose Track Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 1",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/tracksuits1_3_pink_1.avif",
+        "assets/img/tracksuits1_3_pink_2.avif",
+        "assets/img/tracksuits1_3_pink_3.avif",
+        "assets/img/tracksuits1_3_pink_4.avif",
+      ],
+      0xffE5C8A8: [
+        "assets/img/tracksuits1_3_desertSand_1.avif",
+        "assets/img/tracksuits1_3_desertSand_2.avif",
+        "assets/img/tracksuits1_3_desertSand_3.avif",
+        "assets/img/tracksuits1_3_desertSand_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 1_4",
+    "name": "Adicolor Classics Firebird Track Pants (Plus Size)",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 1",
+    "color": {
+      0xff00FF00: [
+        "assets/img/tracksuits1_4_green_1.avif",
+        "assets/img/tracksuits1_4_green_2.avif",
+        "assets/img/tracksuits1_4_green_3.avif",
+        "assets/img/tracksuits1_4_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/tracksuits1_4_black_1.avif",
+        "assets/img/tracksuits1_4_black_2.avif",
+        "assets/img/tracksuits1_4_black_3.avif",
+        "assets/img/tracksuits1_4_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 2_1",
+    "name": "MONTIREX Peak Grid 1/4 Zip Top",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -6270,20 +6430,14 @@ final List products = [
     "category": "TRACKSUITS",
     "sub_category_id": "Tracksuits 2",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/tracksuits2_1_blue_1.webp",
+        "assets/img/tracksuits2_1_blue_2.webp",
+        "assets/img/tracksuits2_1_blue_3.webp",
+        "assets/img/tracksuits2_1_blue_4.webp",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -6310,9 +6464,159 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "tracksuits 3",
+    "product_id": "tracksuits 2_2",
+    "name": "adidas Originals SST Track Top",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 2",
+    "color": {
+      0xff00FF00: [
+        "assets/img/tracksuits2_2_green_1.webp",
+        "assets/img/tracksuits2_2_green_2.webp",
+        "assets/img/tracksuits2_2_green_3.webp",
+        "assets/img/tracksuits2_2_green_4.webp",
+      ],
+      0xffADD8E6: [
+        "assets/img/tracksuits2_2_lightBlue_1.webp",
+        "assets/img/tracksuits2_2_lightBlue_2.webp",
+        "assets/img/tracksuits2_2_lightBlue_3.webp",
+        "assets/img/tracksuits2_2_lightBlue_4.webp",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 2_3",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "adidas Originals Adicolor Classics Beckenbauer Primeblue Track Top",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 2",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/tracksuits2_3_brown_1.webp",
+        "assets/img/tracksuits2_3_brown_2.webp",
+        "assets/img/tracksuits2_3_brown_3.webp",
+        "assets/img/tracksuits2_3_brown_4.webp",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 2_4",
+    "name": "adidas Originals SST Track Top",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 2",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/tracksuits2_4_white_1.webp",
+        "assets/img/tracksuits2_4_white_2.webp",
+        "assets/img/tracksuits2_4_white_3.webp",
+        "assets/img/tracksuits2_4_white_4.webp",
+      ],
+      0xff000000: [
+        "assets/img/tracksuits2_4_black_1.webp",
+        "assets/img/tracksuits2_4_black_2.webp",
+        "assets/img/tracksuits2_4_black_3.webp",
+        "assets/img/tracksuits2_4_black_4.webp",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 3_1",
+    "name": "Z.N.E. Full-Zip Hooded Track Jacket",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -6323,20 +6627,19 @@ final List products = [
     "category": "TRACKSUITS",
     "sub_category_id": "Tracksuits 3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/tracksuits3_1_black_1.avif",
+        "assets/img/tracksuits3_1_black_2.avif",
+        "assets/img/tracksuits3_1_black_3.avif",
+        "assets/img/tracksuits3_1_black_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffFFFFFF: [
+        "assets/img/tracksuits3_1_white_1.avif",
+        "assets/img/tracksuits3_1_white_2.avif",
+        "assets/img/tracksuits3_1_white_3.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -6363,9 +6666,152 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "tracksuits 4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "tracksuits 3_2",
+    "name": "Manchester United George Best Track Top",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 3",
+    "color": {
+      0xff0000FF: [
+        "assets/img/tracksuits3_2_blue_1.avif",
+        "assets/img/tracksuits3_2_blue_2.avif",
+        "assets/img/tracksuits3_2_blue_3.avif",
+        "assets/img/tracksuits3_2_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 3_3",
+    "name": "Z.N.E. Premium Full-Zip Hooded Track Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 3",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/tracksuits3_3_white_1.avif",
+        "assets/img/tracksuits3_3_white_2.avif",
+        "assets/img/tracksuits3_3_white_3.avif",
+        "assets/img/tracksuits3_3_white_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/tracksuits3_3_black_1.avif",
+        "assets/img/tracksuits3_3_black_2.avif",
+        "assets/img/tracksuits3_3_black_3.avif",
+        "assets/img/tracksuits3_3_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 3_4",
+    "name": "Tiro 23 League Training Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 3",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/tracksuits3_4_white_1.avif",
+      ],
+      0xff000000: [
+        "assets/img/tracksuits3_4_black_1.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 4_1",
+    "name": "Adicolor 3-Stripes Pants",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -6376,20 +6822,171 @@ final List products = [
     "category": "TRACKSUITS",
     "sub_category_id": "Tracksuits 4",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff0000FF: [
+        "assets/img/tracksuits4_1_blue_1.avif",
+        "assets/img/tracksuits4_1_blue_2.avif",
+        "assets/img/tracksuits4_1_blue_3.avif",
+        "assets/img/tracksuits4_1_blue_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffC0C0C0: [
+        "assets/img/tracksuits4_1_silver_1.avif",
+        "assets/img/tracksuits4_1_silver_2.avif",
+        "assets/img/tracksuits4_1_silver_3.avif",
+        "assets/img/tracksuits4_1_silver_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 4_2",
+    "name": "Essentials Warm-Up Tapered 3-Stripes Track Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 4",
+    "color": {
+      0xff000000: [
+        "assets/img/tracksuits4_2_black_1.avif",
+        "assets/img/tracksuits4_2_black_2.avif",
+        "assets/img/tracksuits4_2_black_3.avif",
+        "assets/img/tracksuits4_2_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 4_3",
+    "name": "Essentials 3-Stripes Animal-Print 7/8 Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 4",
+    "color": {
+      0xff0000FF: [
+        "assets/img/tracksuits4_3_blue_1.avif",
+        "assets/img/tracksuits4_3_blue_2.avif",
+        "assets/img/tracksuits4_3_blue_3.avif",
+        "assets/img/tracksuits4_3_blue_4.avif",
+      ],
+      0xffA52A2A: [
+        "assets/img/tracksuits4_3_brown_1.avif",
+        "assets/img/tracksuits4_3_brown_2.avif",
+        "assets/img/tracksuits4_3_brown_3.avif",
+        "assets/img/tracksuits4_3_brown_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "tracksuits 4_4",
+    "name": "Essentials 3-Stripes Animal-Print 7/8 Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "TRACKSUITS",
+    "sub_category_id": "Tracksuits 4",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/tracksuits4_3_brown_2.avif",
+        "assets/img/tracksuits4_3_brown_1.avif",
+        
+        "assets/img/tracksuits4_3_brown_3.avif",
+        "assets/img/tracksuits4_3_brown_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/tracksuits4_3_blue_1.avif",
+        "assets/img/tracksuits4_3_blue_2.avif",
+        "assets/img/tracksuits4_3_blue_3.avif",
+        "assets/img/tracksuits4_3_blue_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":

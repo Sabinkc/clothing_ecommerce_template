@@ -22,15 +22,7 @@ class PlaceOrder extends StatelessWidget {
         ),
         backgroundColor: AppColors.appbarBg,
         centerTitle: false,
-        leading: GestureDetector(
-          onTap: () {
-            Get.back();
-          },
-          child: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
-          ),
-        ),
+        leading: const SizedBox(),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -58,9 +50,16 @@ class PlaceOrder extends StatelessWidget {
               const SizedBox(height: 20),
               Text(
                 "Product Order Successfully!",
-                style: TextStyle(fontSize: TextSize.normal),
+                style: TextStyle(
+                    fontSize: TextSize.normal, color: AppColors.primaryColor),
               ),
               const SizedBox(height: 20),
+              Text(
+                "Thank you for purchasing with us. Your order number is 0000001234445. Keep Shopping with D&S Clothing",
+                style: TextStyle(
+                    fontSize: TextSize.small, color: AppColors.textColorGrey),
+              ),
+              const SizedBox(height: 30),
               GestureDetector(
                 onTap: () {
                   Get.to(BottomNavigationView());

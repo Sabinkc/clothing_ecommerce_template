@@ -3,13 +3,12 @@
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/add_to_cart/controllers/add_to_cart_controller.dart';
 import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/add_to_cart_receipt/add_to_cart_receipt.dart';
-import 'package:d_and_s/app/modules/add_to_cart/views/add_to_cart_checkout/place_order.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../constants/text_size.dart';
 import '../../../reusable_widgets/LargeButtonReusable.dart';
 import 'add_to_cart_receipt/add_to_cart_address_selection.dart';
-import 'add_to_cart_receipt/add_to_cart_payment_selection.dart';
+
 
 class AddToCartCheckout extends StatelessWidget {
   final controller = Get.put(AddToCartController());
@@ -51,7 +50,7 @@ class AddToCartCheckout extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CheckoutUserInfo(),
+                // const CheckoutUserInfo(),
                 const SizedBox(height: 20),
                 Column(
                   children: controller.checkoutList.map((item) {
@@ -194,47 +193,48 @@ class AddToCartCheckout extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 20),
-                GestureDetector(
-                  onTap: () {
-                    showModalBottomSheet(
-                        context: context,
-                        builder: (BuildContext context) =>
-                            const AddToCartPaymentSelection());
-                  },
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      // borderRadius: BorderRadius.circular(16),
-                      color: Colors.white,
-                    ),
-                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          "assets/images/cashondelivery.png",
-                          height: 25,
-                        ),
-                        const SizedBox(width: 10),
-                        const Text("Cash On Delivery"),
-                        const Spacer(),
-                        const Icon(
-                          Icons.arrow_forward_ios,
-                          color: AppColors.textColorGrey,
-                        )
-                      ],
-                    ),
-                  ),
-                ),
+                // const SizedBox(height: 20),
+                // GestureDetector(
+                //   onTap: () {
+                //     showModalBottomSheet(
+                //         context: context,
+                //         builder: (BuildContext context) =>
+                //             const AddToCartPaymentSelection());
+                //   },
+                //   child: Container(
+                //     decoration: const BoxDecoration(
+                //       // borderRadius: BorderRadius.circular(16),
+                //       color: Colors.white,
+                //     ),
+                //     padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                //     child: Row(
+                //       children: [
+                //         Image.asset(
+                //           "assets/images/cashondelivery.png",
+                //           height: 25,
+                //         ),
+                //         const SizedBox(width: 10),
+                //         const Text("Cash On Delivery"),
+                //         const Spacer(),
+                //         const Icon(
+                //           Icons.arrow_forward_ios,
+                //           color: AppColors.textColorGrey,
+                //         )
+                //       ],
+                //     ),
+                //   ),
+                // ),
                 const SizedBox(height: 40),
                 GestureDetector(
                   onTap: () {
-                    Get.to(const PlaceOrder());
+                    // Get.to(const PlaceOrder());
+                    Get.to(const AddToCartAddress());
                     // controller.totalPrice.value = 0;
                   },
                   child: const Padding(
                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: LargeButtonReusable(
-                      title: "Place Order",
+                      title: "Select Address",
                       color: AppColors.buttonColor,
                     ),
                   ),
