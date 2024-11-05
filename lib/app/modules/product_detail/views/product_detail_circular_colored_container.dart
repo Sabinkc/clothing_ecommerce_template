@@ -38,6 +38,8 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                     onTap: () {
                       controller.updateSelectedColor(e.key, e.value);
                       controller.updateColor(e.key, e.value);
+                      controller
+                          .detailViewProductCustomClickableContainer.value = 0;
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(right: 5),
@@ -53,7 +55,9 @@ class ProductDetailCircularColoredContainer extends StatelessWidget {
                                       // ? e.key
                                       ? 0xffF1C338
                                       : 0xffC0C0C0), // Border color
-                              width: controller.selectedColor.value == e.key?4.0:1.5,
+                              width: controller.selectedColor.value == e.key
+                                  ? 4.0
+                                  : 1.5,
                             ),
                           ),
                           child: Center(

@@ -218,68 +218,57 @@ final List categoryData = [
   {
     "category_id": "c7",
     "category_name": "Accessories",
-    "category_image":
-        "https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg?cs=srgb&dl=pexels-lilartsy-1192335.jpg&fm=jpg",
+    "category_image": "assets/img/accessories.jpeg",
     "sub_category": [
       {
         "sub_category_id": "Accessories 1",
         "sub_category_name": "Socks",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/accessories1_1_blue_1.jpg",
       },
       {
         "sub_category_id": "Accessories 2",
         "sub_category_name": "Belts",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/accessories2_1_gray_1.avif",
       },
       {
         "sub_category_id": "Accessories 3",
         "sub_category_name": "Hat & Caps",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/accessories3_1_black_1.avif",
       },
       {
         "sub_category_id": "Accessories 4",
         "sub_category_name": "Bags",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/accessories4_1_black_1.avif",
       },
       {
         "sub_category_id": "Accessories 5",
         "sub_category_name": "Gloves",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/accessories5_1_black_1.jpg",
       },
       {
         "sub_category_id": "Accessories 6",
         "sub_category_name": "Muflers",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/accessories6_1_silver_1.jpg",
       },
       {
         "sub_category_id": "Accessories 7",
         "sub_category_name": "Water Bottles",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/accessories7_1_blue_1.jpg",
       },
       {
         "sub_category_id": "Accessories 8",
         "sub_category_name": "Sunglasses",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/accessories8_1_blue_1.jpg",
       },
       {
         "sub_category_id": "Accessories 9",
         "sub_category_name": "Boxer",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/accessories9_1_green_1.avif",
       },
       {
         "sub_category_id": "Accessories 10",
         "sub_category_name": "Trunks",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/accessories10_1_blue_1.avif",
       },
     ],
   },

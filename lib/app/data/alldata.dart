@@ -1,3 +1,5 @@
+import 'dart:math';
+
 final List products = [
   //PANTS
   {
@@ -7642,9 +7644,8 @@ final List products = [
   //ACCESSORIES
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "Accessories 1_1",
+    "name": "Athletic Cushioned Crew Socks 6 Pairs",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7655,18 +7656,21 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 1",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/accessories1_1_blue_1.jpg",
+        "assets/img/accessories1_1_blue_2.jpg",
+        "assets/img/accessories1_1_blue_3.avif",
+        "assets/img/accessories1_1_blue_4.avif",
+      ],
+      0xffFFFFFF: [
+        "assets/img/accessories1_1_white_1.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories1_1_black_1.avif",
+        "assets/img/accessories1_1_black_2.jpg",
+        "assets/img/accessories1_1_black_3.jpg",
+        "assets/img/accessories1_1_black_4.jpg",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -7695,9 +7699,146 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 2",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "Accessories 1_2",
+    "name": "Samba Mid Ankle Socks 2 Pairs",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 1",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/accessories1_2_white_1.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 1_3",
+    "name": "Originals Trefoil 2.0 3-Pack High Quarter Socks",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 1",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/accessories1_3_white_1.avif",
+        "assets/img/accessories1_3_white_2.avif",
+        "assets/img/accessories1_3_white_3.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/accessories1_3_pink_1.avif",
+        "assets/img/accessories1_3_pink_2.avif",
+        "assets/img/accessories1_3_pink_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 1_4",
+    "name": "Kseniaschnaider Triple Cuff Socks 1 Pair",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 1",
+    "color": {
+      0xff800080: [
+        "assets/img/accessories1_4_purple_1.avif",
+        "assets/img/accessories1_4_purple_2.jpg",
+        "assets/img/accessories1_4_purple_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 2_1",
+    "name": "Reversible Webbing Belt",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7708,18 +7849,11 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 2",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff808080: [
+        "assets/img/accessories2_1_gray_1.avif",
+        "assets/img/accessories2_1_gray_2.avif",
+        "assets/img/accessories2_1_gray_3.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -7748,9 +7882,149 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 3",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "Accessories 2_2",
+    "name": "Braided Stretch Belt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 2",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/accessories2_2_brown_1.avif",
+        "assets/img/accessories2_2_brown_2.avif",
+        "assets/img/accessories2_2_brown_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/accessories2_2_blue_1.avif",
+        "assets/img/accessories2_2_blue_2.avif",
+        "assets/img/accessories2_2_blue_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 2_3",
+    "name": "Y-3 Belt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 2",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/accessories2_3_white_1.avif",
+        "assets/img/accessories2_3_white_2.avif",
+        "assets/img/accessories2_3_white_3.avif",
+        "assets/img/accessories2_3_white_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 2_4",
+    "name": "SILVER ADIDAS Belt",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 2",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/accessories2_4_silver_1.avif",
+        "assets/img/accessories2_4_silver_2.avif",
+        "assets/img/accessories2_4_silver_3.jpg",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 3_1",
+    "name": "Solid Bucket Hat",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7761,18 +8035,12 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/accessories3_1_black_1.avif",
+        "assets/img/accessories3_1_black_2.avif",
+        "assets/img/accessories3_1_black_3.avif",
+        "assets/img/accessories3_1_black_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -7801,9 +8069,158 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "Accessories 3_2",
+    "name": "Vista Boonie Hat",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 3",
+    "color": {
+      0xffFFA500: [
+        "assets/img/accessories3_2_orange_1.avif",
+        "assets/img/accessories3_2_orange_2.avif",
+        "assets/img/accessories3_2_orange_3.avif",
+        "assets/img/accessories3_2_orange_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories3_2_black_1.avif",
+        "assets/img/accessories3_2_black_2.avif",
+        "assets/img/accessories3_2_black_3.avif",
+        "assets/img/accessories3_2_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 3_3",
+    "name": "Superlite 3 Hat",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 3",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories3_3_black_1.avif",
+        "assets/img/accessories3_3_black_2.avif",
+        "assets/img/accessories3_3_black_3.avif",
+        "assets/img/accessories3_3_black_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/accessories3_3_gray_1.avif",
+        "assets/img/accessories3_3_gray_2.avif",
+        "assets/img/accessories3_3_gray_3.avif",
+        "assets/img/accessories3_3_gray_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 3_4",
+    "name": "Five-Panel Trucker Cap",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 3",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories3_4_black_1.avif",
+        "assets/img/accessories3_4_black_2.avif",
+        "assets/img/accessories3_4_black_3.avif",
+        "assets/img/accessories3_4_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 4_1",
+    "name": "adidas by Stella McCartney Gym Sack",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7814,17 +8231,66 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 4",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/accessories4_1_black_1.avif",
+        "assets/img/accessories4_1_black_2.avif",
+        "assets/img/accessories4_1_black_3.avif",
+        "assets/img/accessories4_1_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 4_2",
+    "name": "Defender Duffel Bag Medium",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 4",
+    "color": {
+      0xff0000FF: [
+        "assets/img/accessories4_2_blue_1.avif",
+        "assets/img/accessories4_2_blue_2.avif",
+        "assets/img/accessories4_2_blue_3.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/accessories4_2_pink_1.avif",
+        "assets/img/accessories4_2_pink_2.avif",
+        "assets/img/accessories4_2_pink_3.avif",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/accessories4_2_green_1.avif",
+        "assets/img/accessories4_2_green_2.avif",
+        "assets/img/accessories4_2_green_3.avif",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -7854,9 +8320,112 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 5",
+    "product_id": "Accessories 4_3",
+    "name": "Terrex Rain.Rdy Expedition Duffel Bag S - 50 L",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 4",
+    "color": {
+      0xffFFA500: [
+        "assets/img/accessories4_3_orange_1.avif",
+        "assets/img/accessories4_3_orange_2.avif",
+        "assets/img/accessories4_3_orange_3.avif",
+        "assets/img/accessories4_3_orange_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories4_3_black_1.avif",
+        "assets/img/accessories4_3_black_2.avif",
+        "assets/img/accessories4_3_black_3.avif",
+        "assets/img/accessories4_3_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 4_4",
+    "name": "Terrex Rain.Rdy Expedition Duffel Bag S - 50 L",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 4",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/accessories4_4_white_1.avif",
+        "assets/img/accessories4_4_white_2.avif",
+        "assets/img/accessories4_4_white_3.avif",
+        "assets/img/accessories4_4_white_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories4_4_black_1.avif",
+        "assets/img/accessories4_4_black_2.avif",
+        "assets/img/accessories4_4_black_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 5_1",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "ihuan Winter Waterproof Ski Gloves Men Women, Snow Warm Cycling Gloves Cold Weather, Driving Biking Running",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7867,20 +8436,20 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 5",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/accessories5_1_black_1.jpg",
+        "assets/img/accessories5_1_black_2.jpg",
+        "assets/img/accessories5_1_black_3.jpg",
+        "assets/img/accessories5_1_black_4.jpg",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff808080: [
+        "assets/img/accessories5_1_gray_1.jpg",
+        "assets/img/accessories5_1_gray_2.jpg",
+        "assets/img/accessories5_1_gray_3.jpg",
+        "assets/img/accessories5_1_gray_4.jpg",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["NO SIZE"],
     "reviews": [
       {
         "profile_pic":
@@ -7907,9 +8476,250 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 6",
+    "product_id": "Accessories 5_2",
+    "name": "Mechanix Wear",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 5",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories5_2_black_1.jpg",
+        "assets/img/accessories5_2_black_2.jpg",
+        "assets/img/accessories5_2_black_3.jpg",
+        "assets/img/accessories5_2_black_4.jpg",
+      ],
+      0xff0000FF: [
+        "assets/img/accessories5_2_blue_1.jpg",
+        "assets/img/accessories5_2_blue_2.jpg",
+        "assets/img/accessories5_2_blue_3.jpg",
+        "assets/img/accessories5_2_blue_4.jpg",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 5_3",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "Alpinestars Men's SMX-1 Air v2 Motorcycle Riding Glove, Black, Large",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 5",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories5_3_black_1.jpg",
+        "assets/img/accessories5_3_black_2.jpg",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 5_4",
+    "name": "ADIZERO 14 ELECTRIC FLORAL",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 5",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/accessories5_4_white_1.avif",
+        "assets/img/accessories5_4_white_2.avif",
+        "assets/img/accessories5_4_white_3.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 6_1",
+    "name":
+        "Cashmere Ultra-Fine Merino Wool and Cashmere Blend Woven Scarf -Luxe fabric-Lightweight- 72 x 12",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 6",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/accessories6_1_silver_1.jpg",
+        "assets/img/accessories6_1_silver_2.jpg",
+      ],
+      0xff0000FF: [
+        "assets/img/accessories6_1_blue_1.jpg",
+      ],
+      0xffE5C8A8: [
+        "assets/img/accessories6_1_desertSand_1.jpg",
+      ]
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 6_2",
+    "name":
+        "FULLRON Men Winter Merino Wool Knit Scarf - Warm Soft Cashmere Feel Neck Scarves",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 6",
+    "color": {
+      0xff808080: [
+        "assets/img/accessories6_2_gray_1.jpg",
+        "assets/img/accessories6_2_gray_2.jpg",
+        "assets/img/accessories6_2_gray_3.jpg",
+        "assets/img/accessories6_2_gray_4.jpg",
+        "assets/img/accessories6_2_gray_5.jpg",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 6_3",
+    "name":
+        "Alpine Swiss Mens Plaid Scarf Ultra-Soft Winter Shawl Warm Lightweight Cold-Weather Gear",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7921,19 +8731,18 @@ final List products = [
     "sub_category_id": "Accessories 6",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/accessories6_3_red_1.jpg",
+        "assets/img/accessories6_3_red_2.jpg",
+        "assets/img/accessories6_3_red_3.jpg",
+        "assets/img/accessories6_3_red_4.jpg",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/accessories6_3_green_1.jpg",
+        "assets/img/accessories6_3_green_2.jpg",
+        "assets/img/accessories6_3_green_3.jpg",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["NO SIZE"],
     "reviews": [
       {
         "profile_pic":
@@ -7960,9 +8769,62 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 7",
+    "product_id": "Accessories 6_4",
+    "name": "FULLRON Men Winter Scarf Soft Warm Long Cashmere Feel Scarves",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 6",
+    "color": {
+      0xffFF0000: [
+        "assets/img/accessories6_4_red_1.jpg",
+        "assets/img/accessories6_4_red_2.jpg",
+        "assets/img/accessories6_4_red_3.jpg",
+        "assets/img/accessories6_4_red_4.jpg",
+      ],
+      0xffE5C8A8: [
+        "assets/img/accessories6_4_desertSand_1.jpg",
+        "assets/img/accessories6_4_desertSand_2.jpg",
+        "assets/img/accessories6_4_desertSand_3.jpg",
+        "assets/img/accessories6_4_desertSand_4.jpg",
+        "assets/img/accessories6_4_desertSand_5.jpg",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 7_1",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "Nalgene Wide Mouth Water Bottle, Spring Green, Tritan Material, Loop Top",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -7974,19 +8836,18 @@ final List products = [
     "sub_category_id": "Accessories 7",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        // "assets/img/accessories7_1_red_1.jpg",
+        "assets/img/accessories7_1_red_2.jpg",
       ],
+      // 0xff0000FF: [
+      //   "assets/img/accessories7_1_blue_1.jpg",
+      // ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        // "assets/img/accessories7_1_green_1.jpg",
+        "assets/img/accessories7_1_green_2.jpg",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["NO SIZE"],
     "reviews": [
       {
         "profile_pic":
@@ -8013,9 +8874,59 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 8",
+    "product_id": "Accessories 7_2",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "IRON °FLASK Camping & Hiking Hydration Canteens - 3 Lids (Narrow Straw Lid) Leak Proof Vacuum Insulated Stainless Steel - Hot & Cold Double Walled Sports Water Bottle - Sage, 24 Oz",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 7",
+    "color": {
+      0xff0000FF: [
+        "assets/img/accessories7_2_blue_1.jpg",
+      ],
+      0xffFF0000: [
+        "assets/img/accessories7_2_red_1.jpg",
+      ],
+      0xff00FF00: [
+        "assets/img/accessories7_2_green_1.jpg",
+      ]
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 8_1",
+    "name":
+        "Dolce & Gabbana DG6134 Men's Sunglasses Transparent Blue/Black/Dark Blue 57",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -8026,20 +8937,14 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 8",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/accessories8_1_blue_1.jpg",
+        "assets/img/accessories8_1_blue_2.jpg",
+        "assets/img/accessories8_1_blue_3.jpg",
+        "assets/img/accessories8_1_blue_4.jpg",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["NO SIZE"],
     "reviews": [
       {
         "profile_pic":
@@ -8066,9 +8971,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 9",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "Accessories 9_1",
+    "name": "Performance Mesh Graphic Boxer Briefs 3-Pack",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -8079,17 +8983,17 @@ final List products = [
     "category": "ACCESSORIES",
     "sub_category_id": "Accessories 9",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/accessories9_1_green_1.avif",
+        "assets/img/accessories9_1_green_2.avif",
+        "assets/img/accessories9_1_green_3.avif",
+        "assets/img/accessories9_1_green_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+      0xffFF0000: [
+        "assets/img/accessories9_1_red_1.avif",
+        "assets/img/accessories9_1_red_2.avif",
+        "assets/img/accessories9_1_red_3.avif",
+        "assets/img/accessories9_1_red_4.avif",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -8119,9 +9023,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "Accessories 10",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "Accessories 9_2",
+    "name": "Performance Mesh Graphic Boxer Briefs 3-Pack",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -8130,19 +9033,19 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "ACCESSORIES",
-    "sub_category_id": "Accessories 10",
+    "sub_category_id": "Accessories 9",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/accessories9_2_blue_1.avif",
+        "assets/img/accessories9_2_blue_2.avif",
+        "assets/img/accessories9_2_blue_3.avif",
+        "assets/img/accessories9_2_blue_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories9_2_black_1.avif",
+        "assets/img/accessories9_2_black_2.avif",
+        "assets/img/accessories9_2_black_3.avif",
+        "assets/img/accessories9_2_black_4.avif",
       ]
     },
     "size": ["S", "M", "L", "XL"],
@@ -8170,6 +9073,249 @@ final List products = [
       "Item id": "WATCH001"
     },
   },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 9_3",
+    "name": "Stretch Cotton Boxer Briefs 3-pack",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 9",
+    "color": {
+      0xff808080: [
+        "assets/img/accessories9_3_gray_1.avif",
+        "assets/img/accessories9_3_gray_2.avif",
+        "assets/img/accessories9_3_gray_3.avif",
+        "assets/img/accessories9_3_gray_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 9_4",
+    "name": "Stretch Cotton Boxer Briefs 3-pack",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 9",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories9_4_black_1.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 10_1",
+    "name": "Adicolor 3-Stripes Swim Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 10",
+    "color": {
+      0xff0000FF: [
+        "assets/img/accessories10_1_blue_1.avif",
+        "assets/img/accessories10_1_blue_2.avif",
+        "assets/img/accessories10_1_blue_3.avif",
+        "assets/img/accessories10_1_blue_4.avif",
+      ],
+      0xffFFA500: [
+        "assets/img/accessories10_1_orange_1.avif",
+        "assets/img/accessories10_1_orange_2.avif",
+        "assets/img/accessories10_1_orange_3.avif",
+        "assets/img/accessories10_1_orange_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 10_2",
+    "name": "3-Stripes CLX Swim Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 10",
+    "color": {
+      0xff00FF00: [
+        "assets/img/accessories10_2_green_1.avif",
+        "assets/img/accessories10_2_green_2.avif",
+        "assets/img/accessories10_2_green_3.avif",
+        "assets/img/accessories10_2_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories10_2_black_1.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 10_3",
+    "name": "Adicolor 3-Stripes Swim Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 10",
+    "color": {
+      0xffFFA500: [
+        "assets/img/accessories10_1_orange_1.avif",
+        "assets/img/accessories10_1_orange_2.avif",
+        "assets/img/accessories10_1_orange_3.avif",
+        "assets/img/accessories10_1_orange_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/accessories10_1_blue_1.avif",
+        "assets/img/accessories10_1_blue_2.avif",
+        "assets/img/accessories10_1_blue_3.avif",
+        "assets/img/accessories10_1_blue_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+
   //SHOES
   {
     "featured": "New Arrivals",
