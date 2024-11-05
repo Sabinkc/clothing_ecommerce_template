@@ -11071,9 +11071,8 @@ final List products = [
   //SPORTS
   {
     "featured": "New Arrivals",
-    "product_id": "sports 1",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 1_1",
+    "name": "SAMBA OG W",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11084,20 +11083,23 @@ final List products = [
     "category": "SPORTS",
     "sub_category_id": "Sports 1",
     "color": {
+      0xff000000: [
+        "assets/img/sports1_1_black_1.avif",
+        "assets/img/sports1_1_black_2.avif",
+        "assets/img/sports1_1_black_3.avif",
+      ],
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/sports1_1_red_1.avif",
+        "assets/img/sports1_1_red_2.avif",
+        "assets/img/sports1_1_red_3.avif",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/sports1_1_green_1.avif",
+        "assets/img/sports1_1_green_2.avif",
+        "assets/img/sports1_1_green_3.avif",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7", "M6.5/W7.5"],
     "reviews": [
       {
         "profile_pic":
@@ -11124,9 +11126,175 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 2",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 1_2",
+    "name": "Samba OG Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 1",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/sports1_2_white_1.avif",
+        "assets/img/sports1_2_white_2.avif",
+        "assets/img/sports1_2_white_3.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports1_2_black_1.avif",
+        "assets/img/sports1_2_black_2.avif",
+        "assets/img/sports1_2_black_3.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports1_1_green_1.avif",
+        "assets/img/sports1_1_green_2.avif",
+        "assets/img/sports1_1_green_3.avif",
+      ]
+    },
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7", "M6.5/W7.5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 1_3",
+    "name": "Gazelle Indoor Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 1",
+    "color": {
+      0xff00FF00: [
+        "assets/img/sports1_3_green_1.avif",
+        "assets/img/sports1_3_green_2.avif",
+        "assets/img/sports1_3_green_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports1_3_blue_1.avif",
+        "assets/img/sports1_3_blue_2.avif",
+        "assets/img/sports1_3_blue_3.avif",
+      ],
+      0xffFFFF00: [
+        "assets/img/sports1_3_yellow_1.avif",
+        "assets/img/sports1_3_yellow_2.avif",
+        "assets/img/sports1_3_yellow_3.avif",
+        "assets/img/sports1_3_yellow_4.avif",
+      ]
+    },
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7", "M6.5/W7.5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 1_4",
+    "name": " Indoor Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 1",
+    "color": {
+      0xffFFFF00: [
+        "assets/img/sports1_3_yellow_1.avif",
+        "assets/img/sports1_3_yellow_2.avif",
+        "assets/img/sports1_3_yellow_3.avif",
+        "assets/img/sports1_3_yellow_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports1_3_green_1.avif",
+        "assets/img/sports1_3_green_2.avif",
+        "assets/img/sports1_3_green_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports1_3_blue_1.avif",
+        "assets/img/sports1_3_blue_2.avif",
+        "assets/img/sports1_3_blue_3.avif",
+      ],
+    },
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7", "M6.5/W7.5"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 2_1",
+    "name": "Adifom Stan Smith Hello Kitty Mules",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11137,20 +11305,176 @@ final List products = [
     "category": "SPORTS",
     "sub_category_id": "Sports 2",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/sports2_1_black_1.avif",
+        "assets/img/sports2_1_black_2.avif",
+        "assets/img/sports2_1_black_3.avif",
+        "assets/img/sports2_1_black_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/sports2_1_pink_1.avif",
+        "assets/img/sports2_1_pink_2.avif",
+        "assets/img/sports2_1_pink_3.avif",
+        "assets/img/sports2_1_pink_4.avif",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+        "assets/img/sports2_1_green_1.avif",
+        "assets/img/sports2_1_green_2.avif",
+        "assets/img/sports2_1_green_3.avif",
+        "assets/img/sports2_1_green_4.avif",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["5", "6", "7", "8", "9", "10"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 2_2",
+    "name": "Adilette Sandals",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 2",
+    "color": {
+      0xff000000: [
+        "assets/img/sports2_2_black_1.avif",
+        "assets/img/sports2_2_black_2.avif",
+        "assets/img/sports2_2_black_3.avif",
+        "assets/img/sports2_2_black_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/sports2_2_pink_1.avif",
+        "assets/img/sports2_2_pink_2.avif",
+        "assets/img/sports2_2_pink_3.avif",
+        "assets/img/sports2_2_pink_4.avif",
+      ],
+    },
+    "size": ["5", "6", "7", "8", "9", "10"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 2_3",
+    "name": "Adifom Stan Smith Mules",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 2",
+    "color": {
+      0xff808080: [
+        "assets/img/sports2_3_gray_1.avif",
+        "assets/img/sports2_3_gray_2.avif",
+        "assets/img/sports2_3_gray_3.avif",
+        "assets/img/sports2_3_gray_4.avif",
+      ],
+    },
+    "size": ["5", "6", "7", "8", "9", "10"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 2_4",
+    "name": "Adilette Comfort Sandals",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 2",
+    "color": {
+      0xff000000: [
+        "assets/img/sports2_4_black_1.avif",
+        "assets/img/sports2_4_black_2.avif",
+        "assets/img/sports2_4_black_3.avif",
+        "assets/img/sports2_4_black_4.avif",
+      ],
+      0xffADD8E6: [
+        "assets/img/sports2_4_lightBlue_1.avif",
+        "assets/img/sports2_4_lightBlue_2.avif",
+        "assets/img/sports2_4_lightBlue_3.avif",
+        "assets/img/sports2_4_lightBlue_4.avif",
+      ],
+    },
+    "size": ["5", "6", "7", "8", "9", "10"],
     "reviews": [
       {
         "profile_pic":
