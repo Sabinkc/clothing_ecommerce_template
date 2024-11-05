@@ -3704,31 +3704,159 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 3",
+    "product_id": "jackets & coats 3_1",
     "name":
         "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
-    "title":
-        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "title": "Y-3 Sport Uniform Blazer",
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 3",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/jacketsCoats3_1_black_1.avif",
+        "assets/img/jacketsCoats3_1_black_2.avif",
+        "assets/img/jacketsCoats3_1_black_3.avif",
+        "assets/img/jacketsCoats3_1_black_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 3_2",
+    "name": "Reclaimed Vintage collarless blazer in grey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title": "Y-3 Sport Uniform Blazer",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 3",
+    "color": {
+      0xff808080: [
+        "assets/img/jacketsCoats3_2_gray_1.avif",
+        "assets/img/jacketsCoats3_2_gray_2.avif",
+        "assets/img/jacketsCoats3_2_gray_3.avif",
+        "assets/img/jacketsCoats3_2_gray_4.avif",
       ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 3_3",
+    "name": "AllSaints Andrius leather blazer in black",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title": "Y-3 Sport Uniform Blazer",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 3",
+    "color": {
+      0xff000000: [
+        "assets/img/jacketsCoats3_3_black_1.avif",
+        "assets/img/jacketsCoats3_3_black_2.avif",
+        "assets/img/jacketsCoats3_3_black_3.avif",
+        "assets/img/jacketsCoats3_3_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 3_4",
+    "name": "ONLY & SONS slim fit blazer in navy",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title": "Y-3 Sport Uniform Blazer",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 3",
+    "color": {
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/jacketsCoats3_4_blue_1.avif",
+        "assets/img/jacketsCoats3_4_blue_2.avif",
+        "assets/img/jacketsCoats3_4_blue_3.avif",
+        "assets/img/jacketsCoats3_4_blue_4.avif",
+      ],
     },
     "size": ["S", "M", "L", "XL"],
     "reviews": [
@@ -4034,9 +4162,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 5",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "jackets & coats 5_1",
+    "name": "Myshelter Primaloft Lite Bomber Jacketß",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4047,20 +4174,14 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 5",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/jacketsCoats5_1_black_1.avif",
+        "assets/img/jacketsCoats5_1_black_2.avif",
+        "assets/img/jacketsCoats5_1_black_3.avif",
+        "assets/img/jacketsCoats5_1_black_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -4087,9 +4208,151 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 6",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "jackets & coats 5_2",
+    "name": "Lite Bomber Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 5",
+    "color": {
+      0xff00FF00: [
+        "assets/img/jacketsCoats5_2_green_1.avif",
+        "assets/img/jacketsCoats5_2_green_2.avif",
+        "assets/img/jacketsCoats5_2_green_3.avif",
+        "assets/img/jacketsCoats5_2_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 5_3",
+    "name": "Adilenium Season 2 Washed Bomber Jacket (Gender Neutral)",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 5",
+    "color": {
+      0xff808080: [
+        "assets/img/jacketsCoats5_3_gray_1.avif",
+        "assets/img/jacketsCoats5_3_gray_2.avif",
+        "assets/img/jacketsCoats5_3_gray_3.avif",
+        "assets/img/jacketsCoats5_3_gray_4.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/jacketsCoats5_3_silver_1.avif",
+        "assets/img/jacketsCoats5_3_silver_2.avif",
+        "assets/img/jacketsCoats5_3_silver_3.avif",
+        "assets/img/jacketsCoats5_3_silver_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 5_4",
+    "name": "70s Reversible Oversized Bomber Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 5",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/jacketsCoats5_4_pink_1.avif",
+        "assets/img/jacketsCoats5_4_pink_2.avif",
+        "assets/img/jacketsCoats5_4_pink_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 6_1",
+    "name": "Adicolor Trench Coat Twill",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4100,20 +4363,14 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 6",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xffE5C8A8: [
+        "assets/img/jacketsCoats6_1_desertSand_1.avif",
+        "assets/img/jacketsCoats6_1_desertSand_2.avif",
+        "assets/img/jacketsCoats6_1_desertSand_3.avif",
+        "assets/img/jacketsCoats6_1_desertSand_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -4140,9 +4397,146 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 7",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "jackets & coats 6_2",
+    "name": "ASOS DESIGN hooded short trench coat in navy",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 6",
+    "color": {
+      0xff0000FF: [
+        "assets/img/jacketsCoats6_2_blue_1.avif",
+        "assets/img/jacketsCoats6_2_blue_2.avif",
+        "assets/img/jacketsCoats6_2_blue_3.avif",
+        "assets/img/jacketsCoats6_2_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 6_3",
+    "name": "Jack & Jones cotton trench coat in beige",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 6",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/jacketsCoats6_3_silver_1.avif",
+        "assets/img/jacketsCoats6_3_silver_2.avif",
+        "assets/img/jacketsCoats6_3_silver_3.avif",
+        "assets/img/jacketsCoats6_3_silver_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 6_4",
+    "name": "ASOS DESIGN Premium real leather trench coat in black",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 6",
+    "color": {
+      0xff000000: [
+        "assets/img/jacketsCoats6_4_black_1.avif",
+        "assets/img/jacketsCoats6_4_black_2.avif",
+        "assets/img/jacketsCoats6_4_black_3.avif",
+        "assets/img/jacketsCoats6_4_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 7_1",
+    "name": "LATEST CHIKAN Men's Traditional Cotton",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4153,20 +4547,14 @@ final List products = [
     "category": "JACKETS & COATS",
     "sub_category_id": "Jackets & Coats 7",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff808080: [
+        "assets/img/jacketsCoats7_1_gray_1.jpg",
+        "assets/img/jacketsCoats7_1_gray_2.jpg",
+        "assets/img/jacketsCoats7_1_gray_3.jpg",
+        "assets/img/jacketsCoats7_1_gray_4.jpg",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -4193,9 +4581,147 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "jackets & coats 8",
+    "product_id": "jackets & coats 7_2",
     "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+        "ROCKSY Bandi Modi Koti, Nehru Jacket for Men, Cotton Waistcoat for All Occasion: ",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 7",
+    "color": {
+      0xff808080: [
+        "assets/img/jacketsCoats7_2_blue_1.jpg",
+        "assets/img/jacketsCoats7_2_blue_2.jpg",
+        "assets/img/jacketsCoats7_2_blue_3.jpg",
+        "assets/img/jacketsCoats7_2_blue_4.jpg",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 7_3",
+    "name": "Veera Paridhaan Plain Chinese Collar Sleeveless Cotton Poly ",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 7",
+    "color": {
+      0xff000000: [
+        "assets/img/jacketsCoats7_3_black_1.jpg",
+        "assets/img/jacketsCoats7_3_black_2.jpg",
+        "assets/img/jacketsCoats7_3_black_3.jpg",
+        "assets/img/jacketsCoats7_3_black_4.jpg",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 8_1",
+    "name": "Mexico Beckenbauer Track Top",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 8",
+    "color": {
+      0xff00FF00: [
+        "assets/img/jacketsCoats8_1_green_1.avif",
+        "assets/img/jacketsCoats8_1_green_2.avif",
+        "assets/img/jacketsCoats8_1_green_3.avif",
+        "assets/img/jacketsCoats8_1_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 8_2",
+    "name": "Z.N.E. Full-Zip Hooded Track Jacket",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -4207,19 +4733,122 @@ final List products = [
     "sub_category_id": "Jackets & Coats 8",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/jacketsCoats8_2_red_1.avif",
+        "assets/img/jacketsCoats8_2_red_2.avif",
+        "assets/img/jacketsCoats8_2_red_3.avif",
+        "assets/img/jacketsCoats8_2_red_4.avif",
+      ],
+      0xffFFFFFF: [
+        "assets/img/jacketsCoats8_2_white_1.avif",
+        "assets/img/jacketsCoats8_2_white_2.avif",
+        "assets/img/jacketsCoats8_2_white_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 8_3",
+    "name": "Adicolor Classics Firebird Track Jacket",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 8",
+    "color": {
+      0xff0000FF: [
+        "assets/img/jacketsCoats8_3_blue_1.avif",
+        "assets/img/jacketsCoats8_3_blue_2.avif",
+        "assets/img/jacketsCoats8_3_blue_3.avif",
+        "assets/img/jacketsCoats8_3_blue_4.avif",
       ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/jacketsCoats8_3_green_1.avif",
+        "assets/img/jacketsCoats8_3_green_2.avif",
+        "assets/img/jacketsCoats8_3_green_3.avif",
+        "assets/img/jacketsCoats8_3_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "jackets & coats 8_4",
+    "name": "J NP TTOP",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "JACKETS & COATS",
+    "sub_category_id": "Jackets & Coats 8",
+    "color": {
+      0xffFFFF00: [
+        "assets/img/jacketsCoats8_4_yellow_1.avif",
+        "assets/img/jacketsCoats8_4_yellow_2.avif",
+        "assets/img/jacketsCoats8_4_yellow_3.avif",
+        "assets/img/jacketsCoats8_4_yellow_4.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/jacketsCoats8_4_blue_1.avif",
+        "assets/img/jacketsCoats8_4_blue_2.avif",
+        "assets/img/jacketsCoats8_4_blue_3.avif",
+        "assets/img/jacketsCoats8_4_blue_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -6975,7 +7604,6 @@ final List products = [
       0xffA52A2A: [
         "assets/img/tracksuits4_3_brown_2.avif",
         "assets/img/tracksuits4_3_brown_1.avif",
-        
         "assets/img/tracksuits4_3_brown_3.avif",
         "assets/img/tracksuits4_3_brown_4.avif",
       ],

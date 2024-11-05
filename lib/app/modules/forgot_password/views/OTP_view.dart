@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:d_and_s/app/constants/colors.dart';
 import 'package:d_and_s/app/modules/forgot_password/views/change_password.dart';
 import 'package:d_and_s/app/modules/reusable_widgets/LargeButtonReusable.dart';

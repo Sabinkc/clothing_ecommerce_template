@@ -12,7 +12,7 @@ dependencies:
   get: 4.6.6
   keyboard_dismisser:
   flutter_svg:
-  device_preview:
+  # device_preview:
   responsive_sizer:
   carousel_slider:
   molten_navigationbar_flutter:

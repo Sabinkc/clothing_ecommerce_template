@@ -85,7 +85,7 @@ class HomeCategoryView extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.grey[700],
                         // fontWeight: FontWeight.bold,
-                        fontSize: 14,
+                        fontSize: 12,
                       ),
                       textAlign: TextAlign.center,
                     ),

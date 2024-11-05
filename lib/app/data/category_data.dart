@@ -104,8 +104,7 @@ final List categoryData = [
       {
         "sub_category_id": "Jackets & Coats 3",
         "sub_category_name": "Blazer",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/jacketsCoats3_1_black_1.avif",
       },
       {
         "sub_category_id": "Jackets & Coats 4",
@@ -115,26 +114,22 @@ final List categoryData = [
       {
         "sub_category_id": "Jackets & Coats 5",
         "sub_category_name": "Bomber Jacket",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/jacketsCoats5_1_black_1.avif",
       },
       {
         "sub_category_id": "Jackets & Coats 6",
         "sub_category_name": "Trench Coat",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/jacketsCoats6_1_desertSand_1.avif",
       },
       {
         "sub_category_id": "Jackets & Coats 7",
         "sub_category_name": "Half Coat",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/jacketsCoats7_1_gray_1.jpg",
       },
       {
         "sub_category_id": "Jackets & Coats 8",
         "sub_category_name": "Track Jackets",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/jacketsCoats8_1_green_1.avif",
       },
     ],
   },
@@ -195,32 +190,27 @@ final List categoryData = [
   {
     "category_id": "c6",
     "category_name": "Tracksuits",
-    "category_image":
-       "assets/img/tracksuits1_1_purple_1.avif",
+    "category_image": "assets/img/tracksuits1_1_purple_1.avif",
     "sub_category": [
       {
         "sub_category_id": "Tracksuits 1",
         "sub_category_name": "Track Pants",
-        "sub_category_img":
-            "assets/img/tracksuits1_1_purple_1.avif",
+        "sub_category_img": "assets/img/tracksuits1_1_purple_1.avif",
       },
       {
         "sub_category_id": "Tracksuits 2",
         "sub_category_name": "Track Top",
-        "sub_category_img":
-            "assets/img/tracksuits2_1_blue_1.webp",
+        "sub_category_img": "assets/img/tracksuits2_1_blue_1.webp",
       },
       {
         "sub_category_id": "Tracksuits 3",
         "sub_category_name": "Track Jackets",
-        "sub_category_img":
-            "assets/img/tracksuits3_1_black_1.avif",
+        "sub_category_img": "assets/img/tracksuits3_1_black_1.avif",
       },
       {
         "sub_category_id": "Tracksuits 4",
         "sub_category_name": "Stripe Pants",
-        "sub_category_img":
-            "assets/img/tracksuits4_1_blue_1.avif",
+        "sub_category_img": "assets/img/tracksuits4_1_blue_1.avif",
       },
     ],
   },
