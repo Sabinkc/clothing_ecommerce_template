@@ -329,26 +329,22 @@ final List categoryData = [
       {
         "sub_category_id": "Sports 3",
         "sub_category_name": "Boots",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/sports3_1_red_1.avif",
       },
       {
         "sub_category_id": "Sports 4",
         "sub_category_name": "Workout & Gym",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/woman-concentrated-away-being-deep-thoughts-wears-casual-sweatshirt-poses-outdoors-strolls-city-people-lifestyle-free-time_273609-55948.jpg",
+        "sub_category_img": "assets/img/sports4_1_purple_1.avif",
       },
       {
         "sub_category_id": "Sports 5",
         "sub_category_name": "Running",
-        "sub_category_img":
-            "https://img.freepik.com/free-photo/young-lady-showing-ok-gesture-oversized-hoodie-pants-looking-confident-front-view_176474-58542.jpg",
+        "sub_category_img": "assets/img/sports5_1_green_1.avif",
       },
       {
         "sub_category_id": "Sports 6",
         "sub_category_name": "Hiking",
-        "sub_category_img":
-            "https://img.freepik.com/premium-photo/man-gray-hoodie-jogging-cardio-exercise-sports-stadium-concept-fitness-cardio-exercise-sports-stadium-jogging-gray-hoodie_918839-242526.jpg",
+        "sub_category_img": "assets/img/sports5_3_black_1.avif",
       },
     ],
   },

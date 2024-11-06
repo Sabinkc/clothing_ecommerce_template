@@ -11501,9 +11501,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 3",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 3_1",
+    "name": "Terrex Hydro Lace Boots",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11515,19 +11514,13 @@ final List products = [
     "sub_category_id": "Sports 3",
     "color": {
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/sports3_1_red_1.avif",
+        "assets/img/sports3_1_red_2.avif",
+        "assets/img/sports3_1_red_3.avif",
+        "assets/img/sports3_1_red_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7"],
     "reviews": [
       {
         "profile_pic":
@@ -11554,9 +11547,162 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 4",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 3_2",
+    "name": "Terrex Winter Slip-On Cold.Rdy Boots",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 3",
+    "color": {
+      0xff808080: [
+        "assets/img/sports3_2_gray_1.avif",
+        "assets/img/sports3_2_gray_2.avif",
+        "assets/img/sports3_2_gray_3.avif",
+        "assets/img/sports3_2_gray_4.avif",
+      ],
+      0xffFFA500: [
+        "assets/img/sports3_2_orange_1.avif",
+        "assets/img/sports3_2_orange_2.avif",
+        "assets/img/sports3_2_orange_3.avif",
+        "assets/img/sports3_2_orange_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports3_2_black_1.avif",
+        "assets/img/sports3_2_black_2.avif",
+        "assets/img/sports3_2_black_3.avif",
+        "assets/img/sports3_2_black_4.avif",
+      ],
+    },
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 3_3",
+    "name": "Terrex Winter Leather Mid Cut Rain.Rdy Cold.Rdy Boots",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 3",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/sports3_3_desertSand_1.avif",
+        "assets/img/sports3_3_desertSand_2.avif",
+        "assets/img/sports3_3_desertSand_3.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports3_3_black_1.avif",
+        "assets/img/sports3_3_black_2.avif",
+        "assets/img/sports3_3_black_3.avif",
+      ],
+    },
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 3_4",
+    "name": "adidas by Stella McCartney x Terrex Free Hiker Gore-Tex Boots",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 3",
+    "color": {
+      0xff808080: [
+        "assets/img/sports3_4_gray_1.avif",
+        "assets/img/sports3_4_gray_2.avif",
+        "assets/img/sports3_4_gray_3.avif",
+        "assets/img/sports3_4_gray_4.avif",
+      ],
+    },
+    "size": ["M4/W5", "M4.5/W5.5", "M5/W6", "M5.5/W6.5", "M6/W7"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 4_1",
+    "name": "Designed for Training Workout Shorts",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11567,20 +11713,26 @@ final List products = [
     "category": "SPORTS",
     "sub_category_id": "Sports 4",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff800080: [
+        "assets/img/sports4_1_purple_1.avif",
+        "assets/img/sports4_1_purple_2.avif",
+        "assets/img/sports4_1_purple_3.avif",
+        "assets/img/sports4_1_purple_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffFFC0CB: [
+        "assets/img/sports4_1_pink_1.avif",
+        "assets/img/sports4_1_pink_2.avif",
+        "assets/img/sports4_1_pink_3.avif",
+        "assets/img/sports4_1_pink_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+      0xffA52A2A: [
+        "assets/img/sports4_1_brown_1.avif",
+        "assets/img/sports4_1_brown_2.avif",
+        "assets/img/sports4_1_brown_3.avif",
+        "assets/img/sports4_1_brown_4.avif",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -11607,9 +11759,167 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 5",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 4_2",
+    "name": "Everyset Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 4",
+    "color": {
+      0xff0000FF: [
+        "assets/img/sports4_2_blue_1.avif",
+        "assets/img/sports4_2_blue_2.avif",
+        "assets/img/sports4_2_blue_3.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports4_2_red_1.avif",
+        "assets/img/sports4_2_red_2.avif",
+        "assets/img/sports4_2_red_3.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/sports4_2_silver_1.avif",
+        "assets/img/sports4_2_silver_2.avif",
+        "assets/img/sports4_2_silver_3.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 4_3",
+    "name": "Power Workout Two-in-One Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 4",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/sports4_3_pink_1.avif",
+        "assets/img/sports4_3_pink_2.avif",
+        "assets/img/sports4_3_pink_3.avif",
+        "assets/img/sports4_3_pink_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/sports4_3_purple_1.avif",
+        "assets/img/sports4_3_purple_2.avif",
+        "assets/img/sports4_3_purple_3.avif",
+        "assets/img/sports4_3_purple_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 4_4",
+    "name": "Workout Crewneck Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 4",
+    "color": {
+      0xffE5C8A8: [
+        "assets/img/sports4_4_desertSand_1.avif",
+        "assets/img/sports4_4_desertSand_2.avif",
+        "assets/img/sports4_4_desertSand_3.avif",
+        "assets/img/sports4_4_desertSand_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/sports4_4_purple_1.avif",
+        "assets/img/sports4_4_purple_2.avif",
+        "assets/img/sports4_4_purple_3.avif",
+        "assets/img/sports4_4_purple_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 5_1",
+    "name": "Ultimate Jacket",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11620,20 +11930,20 @@ final List products = [
     "category": "SPORTS",
     "sub_category_id": "Sports 5",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
       0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+        "assets/img/sports5_1_green_1.avif",
+        "assets/img/sports5_1_green_2.avif",
+        "assets/img/sports5_1_green_3.avif",
+        "assets/img/sports5_1_green_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+      0xff000000: [
+        "assets/img/sports5_1_black_1.avif",
+        "assets/img/sports5_1_black_2.avif",
+        "assets/img/sports5_1_black_3.avif",
+        "assets/img/sports5_1_black_4.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -11660,9 +11970,161 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 6",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 5_2",
+    "name": "Running UB HEAT.RDY Socks",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 5",
+    "color": {
+      0xff000000: [
+        "assets/img/sports5_2_black_1.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/sports5_2_pink_1.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports5_2_green_1.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/sports5_2_silver_1.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 5_3",
+    "name": "Own the Run Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 5",
+    "color": {
+      0xff000000: [
+        "assets/img/sports5_3_black_1.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports5_3_red_1.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 5_4",
+    "name": "Adizero Adios Pro 3 Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 5",
+    "color": {
+      0xff000000: [
+        "assets/img/sports5_4_black_1.avif",
+        "assets/img/sports5_4_black_2.avif",
+        "assets/img/sports5_4_black_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports5_4_blue_1.avif",
+        "assets/img/sports5_4_blue_2.avif",
+        "assets/img/sports5_4_blue_3.avif",
+      ],
+      0xffADD8E6: [
+        "assets/img/sports5_4_lightBlue_1.avif",
+        "assets/img/sports5_4_lightBlue_2.avif",
+        "assets/img/sports5_4_lightBlue_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 6_1",
+    "name": "HIKING BOOTS",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11673,20 +12135,18 @@ final List products = [
     "category": "SPORTS",
     "sub_category_id": "Sports 6",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xff000000: [
+        "assets/img/shoes6_1_black_1.avif",
+        "assets/img/shoes6_1_black_2.avif",
+        "assets/img/shoes6_1_black_2.avif",
       ],
       0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
+        "assets/img/shoes6_1_blue_1.avif",
+        "assets/img/shoes6_1_blue_2.avif",
+        "assets/img/shoes6_1_blue_3.avif",
+      ],
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5"],
     "reviews": [
       {
         "profile_pic":
@@ -11713,9 +12173,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 7",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 6_2",
+    "name": "HIKING SHORTS",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11724,22 +12183,16 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "SPORTS",
-    "sub_category_id": "Sports 7",
+    "sub_category_id": "Sports 6",
     "color": {
+      0xff000000: [
+        "assets/img/sports5_3_black_1.avif",
+      ],
       0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+        "assets/img/sports5_3_red_1.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
     },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":
@@ -11766,9 +12219,8 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
-    "product_id": "sports 8",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
+    "product_id": "sports 6_3",
+    "name": "HIKING SHORTS very comfortable for hiking and such",
     "price": 50000,
     "realprice": 55000,
     "discount": 10,
@@ -11777,75 +12229,28 @@ final List products = [
     "description":
         "This product has sustainability features recognized by trusted certifications.",
     "category": "SPORTS",
-    "sub_category_id": "Sports 8",
+    "sub_category_id": "Sports 6",
     "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
+      0xff800080: [
+        "assets/img/sports4_1_purple_1.avif",
+        "assets/img/sports4_1_purple_2.avif",
+        "assets/img/sports4_1_purple_3.avif",
+        "assets/img/sports4_1_purple_4.avif",
       ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
+      0xffFFC0CB: [
+        "assets/img/sports4_1_pink_1.avif",
+        "assets/img/sports4_1_pink_2.avif",
+        "assets/img/sports4_1_pink_3.avif",
+        "assets/img/sports4_1_pink_4.avif",
       ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
+      0xffA52A2A: [
+        "assets/img/sports4_1_brown_1.avif",
+        "assets/img/sports4_1_brown_2.avif",
+        "assets/img/sports4_1_brown_3.avif",
+        "assets/img/sports4_1_brown_4.avif",
       ]
     },
-    "size": ["S", "M", "L", "XL"],
-    "reviews": [
-      {
-        "profile_pic":
-            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
-        "name": "John Doe",
-        "date": "12/1/2023",
-        "review":
-            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
-        "reviews_img": [
-          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        ]
-      },
-    ],
-    "attributes": {
-      "Material": "Stainless Steel",
-      "Water Resistance": "50 meters",
-      "Movement": "Quartz",
-      "Color": "Silver",
-      "Item id": "WATCH001"
-    },
-  },
-  {
-    "featured": "New Arrivals",
-    "product_id": "sports 9",
-    "name":
-        "Fruit of the Loom Unisex Adult Eversoft Fleece Hoodie Luxury Watch with Stainless Steel",
-    "price": 50000,
-    "realprice": 55000,
-    "discount": 10,
-    "title":
-        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
-    "description":
-        "This product has sustainability features recognized by trusted certifications.",
-    "category": "SPORTS",
-    "sub_category_id": "Sports 9",
-    "color": {
-      0xffFF0000: [
-        "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/614TaLu695L._AC_SY879_.jpg",
-      ],
-      0xff00FF00: [
-        "https://m.media-amazon.com/images/I/71XwoHi57-L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71hp94a7oXL._AC_SY879_.jpg",
-      ],
-      0xff0000FF: [
-        "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
-        "https://m.media-amazon.com/images/I/71yhH-4L-jL._AC_SY879_.jpg",
-      ]
-    },
-    "size": ["S", "M", "L", "XL"],
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
     "reviews": [
       {
         "profile_pic":

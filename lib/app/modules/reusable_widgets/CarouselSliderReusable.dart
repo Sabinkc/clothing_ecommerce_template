@@ -88,7 +88,7 @@ class CarouselSliderReusable extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 image: DecorationImage(
-                  image: NetworkImage(imgList[index.value]),
+                  image: AssetImage(imgList[index.value]),
                   fit: BoxFit.cover,
                 ),
               ),
