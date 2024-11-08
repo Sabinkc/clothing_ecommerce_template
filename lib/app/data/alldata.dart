@@ -61,7 +61,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Best Sellers",
     "product_id": "pants1_2",
     "name": "Chino Pants",
     "price": 50000,
@@ -119,7 +119,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "D&S Exclusives",
     "product_id": "pants1_3",
     "name": "Pants Ultimate365",
     "price": 50000,
@@ -177,7 +177,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Sales",
     "product_id": "pants2_1",
     "name": "JJIGLENN JJORIGINAL SQ 349 NOOS Slim fit jeans",
     "price": 50000,
@@ -216,7 +216,7 @@ final List products = [
     ],
   },
   {
-    "featured": "New Arrivals",
+    "featured": "What's Upcoming?",
     "product_id": "pants2_2",
     "name": "JJIGLENN JJORIGINAL SQ 349 NOOS Slim fit jeans",
     "price": 50000,
@@ -262,7 +262,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Offers",
     "product_id": "pants2_3",
     "name": "491 NOOS Loose fit jeans",
     "price": 50000,
@@ -1771,7 +1771,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Best Sellers",
     "product_id": "t-shirts & tops 1_2",
     "name": "Topman essential polo in charcoal",
     "price": 50000,
@@ -1823,7 +1823,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "D&S Exclusives",
     "product_id": "t-shirts & tops 1_3",
     "name": "Topman relaxed fit jumper in black & white animal crew",
     "price": 50000,
@@ -1869,7 +1869,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Sales",
     "product_id": "t-shirts & tops 1_4",
     "name": "Topman relaxed fit jumper in light blue",
     "price": 50000,
@@ -1921,7 +1921,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "What's Upcoming?",
     "product_id": "t-shirts & tops 1_5",
     "name": "adidas x Malbon Cardigan",
     "price": 50000,
@@ -1967,7 +1967,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Offers",
     "product_id": "t-shirts & tops 2_1",
     "name": "Nike Tech",
     "price": 50000,
@@ -3255,7 +3255,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Best Sellers",
     "product_id": "jackets & coats 1_2",
     "name": "Arsenal Seasonal Half-Zip Windbreaker",
     "price": 50000,
@@ -3301,7 +3301,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "D&S Exclusives",
     "product_id": "jackets & coats 1_3",
     "name": "Ultimate365 Convertible Jacketr",
     "price": 50000,
@@ -3347,7 +3347,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Sales",
     "product_id": "jackets & coats 1_4",
     "name": "Adicolor Woven Crewneck Windbreaker",
     "price": 50000,
@@ -3400,7 +3400,7 @@ final List products = [
   },
 
   {
-    "featured": "New Arrivals",
+    "featured": "What's Upcoming?",
     "product_id": "jackets & coats 2_1",
     "name": "Essentials 3-Stripes Insulated Hooded Hybrid Jacket",
     "price": 50000,
@@ -3452,7 +3452,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Offers",
     "product_id": "jackets & coats 2_2",
     "name": "Big Baffle Down Jacket",
     "price": 50000,
@@ -4929,7 +4929,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Best Sellers",
     "product_id": "hoodies & sweatshirts 1_2",
     "name": "Adicolor Neuclassics Hoodie",
     "price": 50000,
@@ -5033,7 +5033,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "D&S Exclusives",
     "product_id": "hoodies & sweatshirts 1_4",
     "name": "Trefoil Essentials Hoodie",
     "price": 50000,
@@ -5137,7 +5137,7 @@ final List products = [
   //   },
   // },
   {
-    "featured": "New Arrivals",
+    "featured": "Sales",
     "product_id": "hoodies & sweatshirts 2_1",
     "name": "Trefoil Essentials Crew Sweatshirt",
     "price": 50000,
@@ -5195,7 +5195,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "What's Upcoming?",
     "product_id": "hoodies & sweatshirts 2_2",
     "name": "Trefoil Essentials Crew Sweatshirt",
     "price": 50000,
@@ -5253,7 +5253,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Offers",
     "product_id": "hoodies & sweatshirts 2_3",
     "name": "Trefoil Essentials Crew Sweatshirt",
     "price": 50000,
@@ -7698,7 +7698,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Best Sellers",
     "product_id": "Accessories 1_2",
     "name": "Samba Mid Ankle Socks 2 Pairs",
     "price": 50000,
@@ -7741,7 +7741,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "D&S Exclusives",
     "product_id": "Accessories 1_3",
     "name": "Originals Trefoil 2.0 3-Pack High Quarter Socks",
     "price": 50000,
@@ -7791,7 +7791,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Sales",
     "product_id": "Accessories 1_4",
     "name": "Kseniaschnaider Triple Cuff Socks 1 Pair",
     "price": 50000,
@@ -7836,7 +7836,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "What's Upcoming?",
     "product_id": "Accessories 2_1",
     "name": "Reversible Webbing Belt",
     "price": 50000,
@@ -7881,7 +7881,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Offers",
     "product_id": "Accessories 2_2",
     "name": "Braided Stretch Belt",
     "price": 50000,
@@ -9374,7 +9374,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Best Sellers",
     "product_id": "Shoes 1_2",
     "name": "Samba OG Shoes",
     "price": 50000,
@@ -9431,7 +9431,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "D&S Exclusives",
     "product_id": "Shoes 1_3",
     "name": "Samba OG Shoes",
     "price": 50000,
@@ -9488,7 +9488,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Sales",
     "product_id": "Shoes 1_4",
     "name": "Samba OG Shoes",
     "price": 50000,
@@ -9545,7 +9545,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "What's Upcoming?",
     "product_id": "Shoes 1_5",
     "name": "VL Court 3.0 Dia de los Muertos Shoes",
     "price": 50000,
@@ -9597,7 +9597,7 @@ final List products = [
     },
   },
   {
-    "featured": "New Arrivals",
+    "featured": "Offers",
     "product_id": "Shoes 1_6",
     "name": "Campus 00s Shoes",
     "price": 50000,

@@ -121,7 +121,7 @@ class SearchGridView extends StatelessWidget {
                                       ),
                                     ),
                                     image: DecorationImage(
-                                      image: NetworkImage(imageUrls[imageIndices[
+                                      image: AssetImage(imageUrls[imageIndices[
                                               index]
                                           .value]), // Replace with actual image URL
                                       fit: BoxFit.cover,

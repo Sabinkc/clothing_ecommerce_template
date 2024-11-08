@@ -160,9 +160,9 @@ class ShopView extends GetView<ShopController> {
                                           ),
                                         ),
                                         image: DecorationImage(
-                                          image: NetworkImage(imageUrls[
-                                              imageIndices[index]
-                                                  .value]), // Replace with actual image URL
+                                          image: AssetImage(imageUrls[imageIndices[
+                                                  index]
+                                              .value]), // Replace with actual image URL
                                           fit: BoxFit.cover,
                                         ),
                                       ),
