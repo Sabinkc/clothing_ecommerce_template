@@ -346,6 +346,36 @@ final List categoryData = [
         "sub_category_name": "Hiking",
         "sub_category_img": "assets/img/sports5_3_black_1.avif",
       },
+      {
+        "sub_category_id": "Sports 7",
+        "sub_category_name": "Gym Wears",
+        "sub_category_img": "assets/img/sports7_1_black_1.avif",
+      },
+      {
+        "sub_category_id": "Sports 8",
+        "sub_category_name": "Jerseys",
+        "sub_category_img": "assets/img/sports8_1_white_1.avif",
+      },
+      {
+        "sub_category_id": "Sports 9",
+        "sub_category_name": "Running",
+        "sub_category_img": "assets/img/sports9_1_black_1.avif",
+      },
+      {
+        "sub_category_id": "Sports 10",
+        "sub_category_name": "Sport T-shirts",
+        "sub_category_img": "assets/img/sports10_1_green_1.avif",
+      },
+      {
+        "sub_category_id": "Sports 11",
+        "sub_category_name": "Trousers",
+        "sub_category_img": "assets/img/sports11_1_black_1.avif",
+      },
+      {
+        "sub_category_id": "Sports 12",
+        "sub_category_name": "Sport Accessories",
+        "sub_category_img": "assets/img/sports12_1_black_1.avif",
+      },
     ],
   },
 //OLD DATA

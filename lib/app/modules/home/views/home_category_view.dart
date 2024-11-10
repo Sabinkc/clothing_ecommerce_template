@@ -18,7 +18,7 @@ class HomeCategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: Adaptive.h(13),
+      height: Adaptive.h(13.5),
       // height: 100,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,

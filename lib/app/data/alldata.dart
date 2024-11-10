@@ -3207,6 +3207,62 @@ final List products = [
       "Item id": "WATCH001"
     },
   },
+  {
+    "featured": "New Arrivals",
+    "product_id": "t-shirts & tops 7_3",
+    "name": "Own the Run Long Sleeve Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "T-SHIRTS & TOPS",
+    "sub_category_id": "T-Shirts & Tops 7",
+    "color": {
+      0xffA52A2A: [
+        "assets/img/tshirts7_3_brown_1.avif",
+        "assets/img/tshirts7_3_brown_2.avif",
+        "assets/img/tshirts7_3_brown_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/tshirts7_3_blue_1.avif",
+        "assets/img/tshirts7_3_blue_2.avif",
+        "assets/img/tshirts7_3_blue_3.avif",
+      ],
+      0xff000000: [
+        "assets/img/tshirts7_3_black_1.avif",
+        "assets/img/tshirts7_3_black_2.avif",
+        "assets/img/tshirts7_3_black_3.avif",
+        "assets/img/tshirts7_3_black_4.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
   //JACKETS & COATS
   {
     "featured": "New Arrivals",
@@ -8924,6 +8980,222 @@ final List products = [
   },
   {
     "featured": "New Arrivals",
+    "product_id": "Accessories 7_3",
+    "name": "Steel Metal Bottle 600 ML",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 7",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/accessories7_3_silver_1.avif",
+        "assets/img/accessories7_3_silver_2.avif",
+        "assets/img/accessories7_3_silver_3.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories7_3_black_1.avif",
+        "assets/img/accessories7_3_black_2.avif",
+        "assets/img/accessories7_3_black_3.avif",
+        "assets/img/accessories7_3_black_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/accessories7_3_gray_1.avif",
+        "assets/img/accessories7_3_gray_2.avif",
+        "assets/img/accessories7_3_gray_3.avif",
+        "assets/img/accessories7_3_gray_4.avif",
+      ]
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 7_4",
+    "name": "Steel Metal Bottle 1L",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 7",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/accessories7_4_silver_1.avif",
+        "assets/img/accessories7_4_silver_2.avif",
+        "assets/img/accessories7_4_silver_3.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories7_4_black_1.avif",
+        "assets/img/accessories7_4_black_2.avif",
+        "assets/img/accessories7_4_black_3.avif",
+        "assets/img/accessories7_4_black_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 7_5",
+    "name": "Steel Metal Bottle 1L",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 7",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories7_4_black_1.avif",
+        "assets/img/accessories7_4_black_2.avif",
+        "assets/img/accessories7_4_black_3.avif",
+        "assets/img/accessories7_4_black_4.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/accessories7_4_silver_1.avif",
+        "assets/img/accessories7_4_silver_2.avif",
+        "assets/img/accessories7_4_silver_3.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 7_6",
+    "name": "Steel Metal Bottle 600 ML",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 7",
+    "color": {
+      0xff808080: [
+        "assets/img/accessories7_3_gray_1.avif",
+        "assets/img/accessories7_3_gray_2.avif",
+        "assets/img/accessories7_3_gray_3.avif",
+        "assets/img/accessories7_3_gray_4.avif",
+      ],
+      0xffC0C0C0: [
+        "assets/img/accessories7_3_silver_1.avif",
+        "assets/img/accessories7_3_silver_2.avif",
+        "assets/img/accessories7_3_silver_3.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories7_3_black_1.avif",
+        "assets/img/accessories7_3_black_2.avif",
+        "assets/img/accessories7_3_black_3.avif",
+        "assets/img/accessories7_3_black_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
     "product_id": "Accessories 8_1",
     "name":
         "Dolce & Gabbana DG6134 Men's Sunglasses Transparent Blue/Black/Dark Blue 57",
@@ -8942,6 +9214,238 @@ final List products = [
         "assets/img/accessories8_1_blue_2.jpg",
         "assets/img/accessories8_1_blue_3.jpg",
         "assets/img/accessories8_1_blue_4.jpg",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 8_2",
+    "name": "CLUBMASTER CLASSIC",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 8",
+    "color": {
+      0xff808080: [
+        "assets/img/accessories8_2_gray_1.avif",
+        "assets/img/accessories8_2_gray_2.avif",
+        "assets/img/accessories8_2_gray_3.avif",
+        "assets/img/accessories8_2_gray_4.avif",
+      ],
+      0xffA52A2A: [
+        "assets/img/accessories8_2_brown_1.avif",
+        "assets/img/accessories8_2_brown_2.avif",
+        "assets/img/accessories8_2_brown_3.avif",
+        "assets/img/accessories8_2_brown_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/accessories8_2_green_1.avif",
+        "assets/img/accessories8_2_green_2.avif",
+        "assets/img/accessories8_2_green_3.avif",
+        "assets/img/accessories8_2_green_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 8_3",
+    "name": "AVIATOR CLASSIC",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 8",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories8_3_black_1.avif",
+        "assets/img/accessories8_3_black_2.avif",
+        "assets/img/accessories8_3_black_3.avif",
+        "assets/img/accessories8_3_black_4.avif",
+      ],
+      0xffA52A2A: [
+        "assets/img/accessories8_3_brown_1.avif",
+        "assets/img/accessories8_3_brown_2.avif",
+        "assets/img/accessories8_3_brown_3.avif",
+        "assets/img/accessories8_3_brown_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/accessories8_3_green_1.avif",
+        "assets/img/accessories8_3_green_2.avif",
+        "assets/img/accessories8_3_green_3.avif",
+        "assets/img/accessories8_3_green_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 8_4",
+    "name": "HEXAGONAL FLAT LENSES",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 8",
+    "color": {
+      0xff00FF00: [
+        "assets/img/accessories8_4_green_1.avif",
+        "assets/img/accessories8_4_green_2.avif",
+        "assets/img/accessories8_4_green_3.avif",
+        "assets/img/accessories8_4_green_4.avif",
+      ],
+      0xffADD8E6: [
+        "assets/img/accessories8_4_lightBlue_1.avif",
+        "assets/img/accessories8_4_lightBlue_2.avif",
+        "assets/img/accessories8_4_lightBlue_3.avif",
+        "assets/img/accessories8_4_lightBlue_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/accessories8_4_pink_1.avif",
+        "assets/img/accessories8_4_pink_2.avif",
+        "assets/img/accessories8_4_pink_3.avif",
+        "assets/img/accessories8_4_pink_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "Accessories 8_5",
+    "name": "ROUND METAL",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "ACCESSORIES",
+    "sub_category_id": "Accessories 8",
+    "color": {
+      0xff000000: [
+        "assets/img/accessories8_5_black_1.avif",
+        "assets/img/accessories8_5_black_2.avif",
+        "assets/img/accessories8_5_black_3.avif",
+        "assets/img/accessories8_5_black_4.avif",
+      ],
+      0xffA52A2A: [
+        "assets/img/accessories8_5_brown_1.avif",
+        "assets/img/accessories8_5_brown_2.avif",
+        "assets/img/accessories8_5_brown_3.avif",
+        "assets/img/accessories8_5_brown_4.avif",
+      ],
+      0xffADD8E6: [
+        "assets/img/accessories8_5_lightBlue_1.avif",
+        "assets/img/accessories8_5_lightBlue_2.avif",
+        "assets/img/accessories8_5_lightBlue_3.avif",
+        "assets/img/accessories8_5_lightBlue_4.avif",
       ],
     },
     "size": ["NO SIZE"],
@@ -12275,7 +12779,1706 @@ final List products = [
       "Item id": "WATCH001"
     },
   },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 7_1",
+    "name": "TECHFIT Compression Training Long Tights",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 7",
+    "color": {
+      0xff000000: [
+        "assets/img/sports7_1_black_1.avif",
+        "assets/img/sports7_1_black_2.avif",
+        "assets/img/sports7_1_black_3.avif",
+        "assets/img/sports7_1_black_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/sports7_1_gray_1.avif",
+        "assets/img/sports7_1_gray_2.avif",
+        "assets/img/sports7_1_gray_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports7_1_blue_1.avif",
+        "assets/img/sports7_1_blue_2.avif",
+        "assets/img/sports7_1_blue_3.avif",
+        "assets/img/sports7_1_blue_4.avif",
+      ]
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 7_2",
+    "name": "Designed for Training Workout Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 7",
+    "color": {
+      0xff0000FF: [
+        "assets/img/sports7_2_blue_1.avif",
+        "assets/img/sports7_2_blue_2.avif",
+        "assets/img/sports7_2_blue_3.avif",
+        "assets/img/sports7_2_blue_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports7_2_black_1.avif",
+        "assets/img/sports7_2_black_2.avif",
+        "assets/img/sports7_3_black_3.avif",
+        "assets/img/sports7_4_black_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/sports7_2_gray_1.avif",
+        "assets/img/sports7_2_gray_2.avif",
+        "assets/img/sports7_2_gray_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 7_3",
+    "name": "adidas Designed to Move 3-Stripes Primeblue Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 7",
+    "color": {
+      0xff000000: [
+        "assets/img/sports7_3_black_1.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports7_3_green_1.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 7_4",
+    "name": "Designed for Training Workout Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 7",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/sports7_4_pink_1.avif",
+        "assets/img/sports7_4_pink_2.avif",
+        "assets/img/sports7_4_pink_3.avif",
+        "assets/img/sports7_4_pink_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/sports7_4_purple_1.avif",
+        "assets/img/sports7_4_purple_2.avif",
+        "assets/img/sports7_4_purple_3.avif",
+        "assets/img/sports7_4_purple_4.avif",
+      ],
+      0xffA52A2A: [
+        "assets/img/sports7_4_brown_1.avif",
+        "assets/img/sports7_4_brown_2.avif",
+        "assets/img/sports7_4_brown_3.avif",
+        "assets/img/sports7_4_brown_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 7_5",
+    "name": "Workout Crewneck Tee",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 7",
+    "color": {
+      0xff000000: [
+        "assets/img/sports7_5_black_1.avif",
+        "assets/img/sports7_5_black_2.avif",
+        "assets/img/sports7_5_black_3.avif",
+        "assets/img/sports7_5_black_4.avif",
+      ],
+      0xffE5C8A8: [
+        "assets/img/sports7_5_desertSand_1.avif",
+        "assets/img/sports7_5_desertSand_2.avif",
+        "assets/img/sports7_5_desertSand_3.avif",
+        "assets/img/sports7_5_desertSand_4.avif",
+      ],
+      0xff800080: [
+        "assets/img/sports7_5_purple_1.avif",
+        "assets/img/sports7_5_purple_2.avif",
+        "assets/img/sports7_5_purple_3.avif",
+        "assets/img/sports7_5_purple_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 8_1",
+    "name": "Real Madrid 24/25 Home Authentic Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 8",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/sports8_1_white_1.avif",
+        "assets/img/sports8_1_white_2.avif",
+        "assets/img/sports8_1_white_3.avif",
+        "assets/img/sports8_1_white_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 8_2",
+    "name": "Inter Miami CF 24/25 Messi Home Authentic Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 8",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/sports8_2_pink_1.avif",
+        "assets/img/sports8_2_pink_2.avif",
+        "assets/img/sports8_2_pink_3.avif",
+        "assets/img/sports8_2_pink_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 8_3",
+    "name": "Argentina 24 Messi Home Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 8",
+    "color": {
+      0xffADD8E6: [
+        "assets/img/sports8_3_lightBlue_1.avif",
+        "assets/img/sports8_3_lightBlue_2.avif",
+        "assets/img/sports8_3_lightBlue_3.avif",
+        "assets/img/sports8_3_lightBlue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 8_4",
+    "name": "Inter Miami CF 23/24 Messi Away Authentic Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 8",
+    "color": {
+      0xff000000: [
+        "assets/img/sports8_4_black_1.avif",
+        "assets/img/sports8_4_black_2.avif",
+        "assets/img/sports8_4_black_3.avif",
+        "assets/img/sports8_4_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 8_5",
+    "name": "Real Madrid Kylian Mbappé 24/25 Home Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 8",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/sports8_5_white_1.avif",
+        "assets/img/sports8_5_white_2.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 9_1",
+    "name": "Own The Run Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 9",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/sports9_1_pink_1.avif",
+        "assets/img/sports9_1_pink_2.avif",
+        "assets/img/sports9_1_pink_3.avif",
+        "assets/img/sports9_1_pink_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports9_1_black_1.avif",
+        "assets/img/sports9_1_black_2.avif",
+        "assets/img/sports9_1_black_3.avif",
+        "assets/img/sports9_1_black_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports9_1_blue_1.avif",
+        "assets/img/sports9_1_blue_2.avif",
+        "assets/img/sports9_1_blue_3.avif",
+        "assets/img/sports9_1_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 9_2",
+    "name": "Own The Run Shorts",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 9",
+    "color": {
+      0xff0000FF: [
+        "assets/img/sports9_1_blue_1.avif",
+        "assets/img/sports9_1_blue_2.avif",
+        "assets/img/sports9_1_blue_3.avif",
+        "assets/img/sports9_1_blue_4.avif",
+      ],
+      0xffFFC0CB: [
+        "assets/img/sports9_1_pink_1.avif",
+        "assets/img/sports9_1_pink_2.avif",
+        "assets/img/sports9_1_pink_3.avif",
+        "assets/img/sports9_1_pink_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports9_1_black_1.avif",
+        "assets/img/sports9_1_black_2.avif",
+        "assets/img/sports9_1_black_3.avif",
+        "assets/img/sports9_1_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 9_3",
+    "name": "Ultraboost 5X Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 9",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/sports9_3_white_1.avif",
+        "assets/img/sports9_3_white_2.avif",
+        "assets/img/sports9_3_white_3.avif",
+        "assets/img/sports9_3_white_4.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports9_3_red_1.avif",
+        "assets/img/sports9_3_red_2.avif",
+        "assets/img/sports9_3_red_3.avif",
+        "assets/img/sports9_3_red_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports9_3_black_1.avif",
+        "assets/img/sports9_3_black_2.avif",
+        "assets/img/sports9_3_black_3.avif",
+      ],
+      0xff808080: [
+        "assets/img/sports9_3_gray_1.avif",
+        "assets/img/sports9_3_gray_2.avif",
+        "assets/img/sports9_3_gray_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 9_4",
+    "name": "Ultraboost 5X Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 9",
+    "color": {
+      0xffFF0000: [
+        "assets/img/sports9_3_red_1.avif",
+        "assets/img/sports9_3_red_2.avif",
+        "assets/img/sports9_3_red_3.avif",
+        "assets/img/sports9_3_red_4.avif",
+      ],
+      0xffFFFFFF: [
+        "assets/img/sports9_3_white_1.avif",
+        "assets/img/sports9_3_white_2.avif",
+        "assets/img/sports9_3_white_3.avif",
+        "assets/img/sports9_3_white_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports9_3_black_1.avif",
+        "assets/img/sports9_3_black_2.avif",
+        "assets/img/sports9_3_black_3.avif",
+      ],
+      0xff808080: [
+        "assets/img/sports9_3_gray_1.avif",
+        "assets/img/sports9_3_gray_2.avif",
+        "assets/img/sports9_3_gray_3.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 9_5",
+    "name": "4DFWD 4 Running Shoes",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 9",
+    "color": {
+      0xff00FF00: [
+        "assets/img/sports9_5_green_1.avif",
+        "assets/img/sports9_5_green_2.avif",
+        "assets/img/sports9_5_green_3.avif",
+        "assets/img/sports9_5_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports9_5_black_1.avif",
+        "assets/img/sports9_5_black_2.avif",
+        "assets/img/sports9_5_black_3.avif",
+        "assets/img/sports9_5_black_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports9_5_blue_1.avif",
+        "assets/img/sports9_5_blue_2.avif",
+        "assets/img/sports9_5_blue_3.avif",
+        "assets/img/sports9_5_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 10_1",
+    "name": "Mexico 24 Away Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 10",
+    "color": {
+      0xff00FF00: [
+        "assets/img/sports10_1_green_1.avif",
+        "assets/img/sports10_1_green_2.avif",
+        "assets/img/sports10_1_green_3.avif",
+        "assets/img/sports10_1_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 10_2",
+    "name": "2024 Inter Miami CF adidas Archive Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 10",
+    "color": {
+      0xff00FF00: [
+        "assets/img/sports10_2_green_1.avif",
+        "assets/img/sports10_2_green_2.avif",
+        "assets/img/sports10_3_green_3.avif",
+        "assets/img/sports10_4_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 10_3",
+    "name": "Italy 24 Home Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 10",
+    "color": {
+      0xff0000FF: [
+        "assets/img/sports10_3_blue_1.avif",
+        "assets/img/sports10_3_blue_2.avif",
+        "assets/img/sports10_3_blue_3.avif",
+        "assets/img/sports10_3_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 10_4",
+    "name": "Al Nassr FC 24/25 Ronaldo Home Jersey",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 10",
+    "color": {
+      0xffFFFF00: [
+        "assets/img/sports10_4_yellow_1.avif",
+        "assets/img/sports10_4_yellow_2.avif",
+        "assets/img/sports10_4_yellow_3.avif",
+        "assets/img/sports10_4_yellow_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 11_1",
+    "name": "Tiro 24 Training Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 11",
+    "color": {
+      0xff000000: [
+        "assets/img/sports11_1_black_1.avif",
+        "assets/img/sports11_1_black_2.avif",
+        "assets/img/sports11_1_black_3.avif",
+        "assets/img/sports11_1_black_4.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports11_1_red_1.avif",
+        "assets/img/sports11_1_red_2.avif",
+        "assets/img/sports11_1_red_3.avif",
+        "assets/img/sports11_1_red_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports11_1_blue_1.avif",
+        "assets/img/sports11_1_blue_2.avif",
+        "assets/img/sports11_1_blue_3.avif",
+        "assets/img/sports11_1_blue_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports11_1_green_1.avif",
+        "assets/img/sports11_1_green_2.avif",
+        "assets/img/sports11_1_green_3.avif",
+        "assets/img/sports11_1_green_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 11_2",
+    "name": "Tiro 24 Training Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 11",
+    "color": {
+      0xff00FF00: [
+        "assets/img/sports11_1_green_1.avif",
+        "assets/img/sports11_1_green_2.avif",
+        "assets/img/sports11_1_green_3.avif",
+        "assets/img/sports11_1_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports11_1_black_1.avif",
+        "assets/img/sports11_1_black_2.avif",
+        "assets/img/sports11_1_black_3.avif",
+        "assets/img/sports11_1_black_4.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports11_1_red_1.avif",
+        "assets/img/sports11_1_red_2.avif",
+        "assets/img/sports11_1_red_3.avif",
+        "assets/img/sports11_1_red_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports11_1_blue_1.avif",
+        "assets/img/sports11_1_blue_2.avif",
+        "assets/img/sports11_1_blue_3.avif",
+        "assets/img/sports11_1_blue_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 11_3",
+    "name": "Tiro 24 Training Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 11",
+    "color": {
+      0xff0000FF: [
+        "assets/img/sports11_1_blue_1.avif",
+        "assets/img/sports11_1_blue_2.avif",
+        "assets/img/sports11_1_blue_3.avif",
+        "assets/img/sports11_1_blue_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports11_1_green_1.avif",
+        "assets/img/sports11_1_green_2.avif",
+        "assets/img/sports11_1_green_3.avif",
+        "assets/img/sports11_1_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports11_1_black_1.avif",
+        "assets/img/sports11_1_black_2.avif",
+        "assets/img/sports11_1_black_3.avif",
+        "assets/img/sports11_1_black_4.avif",
+      ],
+      0xffFF0000: [
+        "assets/img/sports11_1_red_1.avif",
+        "assets/img/sports11_1_red_2.avif",
+        "assets/img/sports11_1_red_3.avif",
+        "assets/img/sports11_1_red_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 11_4",
+    "name": "Tiro 24 Training Pants",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 11",
+    "color": {
+      0xffFF0000: [
+        "assets/img/sports11_1_red_1.avif",
+        "assets/img/sports11_1_red_2.avif",
+        "assets/img/sports11_1_red_3.avif",
+        "assets/img/sports11_1_red_4.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports11_1_blue_1.avif",
+        "assets/img/sports11_1_blue_2.avif",
+        "assets/img/sports11_1_blue_3.avif",
+        "assets/img/sports11_1_blue_4.avif",
+      ],
+      0xff00FF00: [
+        "assets/img/sports11_1_green_1.avif",
+        "assets/img/sports11_1_green_2.avif",
+        "assets/img/sports11_1_green_3.avif",
+        "assets/img/sports11_1_green_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports11_1_black_1.avif",
+        "assets/img/sports11_1_black_2.avif",
+        "assets/img/sports11_1_black_3.avif",
+        "assets/img/sports11_1_black_4.avif",
+      ],
+    },
+    "size": ["XS", "S", "M", "L", "XL", "2XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_1",
+    "name": "Excel Lunch Bag",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xff000000: [
+        "assets/img/sports12_1_black_1.avif",
+        "assets/img/sports12_1_black_2.avif",
+        "assets/img/sports12_1_black_3.avif",
+      ],
+      0xff0000FF: [
+        "assets/img/sports12_1_blue_1.avif",
+        "assets/img/sports12_1_blue_2.avif",
+        "assets/img/sports12_1_blue_3.avif",
+      ],
+    },
+    "size": [
+      "NO SIZE",
+    ],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_2",
+    "name": "Select Basketball Crew Socks",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xff000000: [
+        "assets/img/sports12_2_black_1.avif",
+        "assets/img/sports12_2_black_2.avif",
+        "assets/img/sports12_2_black_3.avif",
+        "assets/img/sports12_2_black_4.avif",
+      ],
+      0xffFFFFFF: [
+        "assets/img/sports12_2_white_1.avif",
+        "assets/img/sports12_2_white_2.avif",
+        "assets/img/sports12_2_white_3.avif",
+        "assets/img/sports12_2_white_4.avif",
+      ],
+    },
+    "size": [
+      "NO SIZE",
+    ],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_3",
+    "name": "adidas by Stella McCartney Beanie",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xff000000: [
+        "assets/img/sports12_3_black_1.avif",
+        "assets/img/sports12_3_black_2.avif",
+        "assets/img/sports12_3_black_3.avif",
+      ],
+      0xffFFA500: [
+        "assets/img/sports12_3_orange_1.avif",
+        "assets/img/sports12_3_orange_2.avif",
+        "assets/img/sports12_3_orange_3.avif",
+      ],
+    },
+    "size": [
+      "NO SIZE",
+    ],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_4",
+    "name": "UCL League 24/25 League Phase Ball",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xffFFFFFF: [
+        "assets/img/sports12_4_white_1.avif",
+        "assets/img/sports12_4_white_2.avif",
+        "assets/img/sports12_4_white_3.avif",
+      ],
+    },
+    "size": [
+      "NO SIZE",
+    ],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_5",
+    "name": "Terrex Merino Wool Gloves",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xff000000: [
+        "assets/img/sports12_5_black_1.avif",
+        "assets/img/sports12_5_black_2.avif",
+        "assets/img/sports12_5_black_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XL"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_6",
+    "name": "Steel Metal Bottle 600 ML",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/accessories7_3_silver_1.avif",
+        "assets/img/accessories7_3_silver_2.avif",
+        "assets/img/accessories7_3_silver_3.avif",
+      ],
+      0xff000000: [
+        "assets/img/accessories7_3_black_1.avif",
+        "assets/img/accessories7_3_black_2.avif",
+        "assets/img/accessories7_3_black_3.avif",
+        "assets/img/accessories7_3_black_4.avif",
+      ],
+      0xff808080: [
+        "assets/img/accessories7_3_gray_1.avif",
+        "assets/img/accessories7_3_gray_2.avif",
+        "assets/img/accessories7_3_gray_3.avif",
+        "assets/img/accessories7_3_gray_4.avif",
+      ]
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_7",
+    "name": "Superlite 3 Hat",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/sports12_7_pink_1.avif",
+        "assets/img/sports12_7_pink_2.avif",
+        "assets/img/sports12_7_pink_3.avif",
+        "assets/img/sports12_7_pink_4.avif",
+      ],
+      0xff000000: [
+        "assets/img/sports12_7_black_1.avif",
+        "assets/img/sports12_7_black_2.avif",
+        "assets/img/sports12_7_black_3.avif",
+        "assets/img/sports12_7_black_4.avif",
+      ],
+      0xffADD8E6: [
+        "assets/img/sports12_7_lightBlue_1.avif",
+        "assets/img/sports12_7_lightBlue_2.avif",
+        "assets/img/sports12_7_lightBlue_3.avif",
+        "assets/img/sports12_7_lightBlue_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_8",
+    "name": "STiro Shin Guards MTC",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xffFFC0CB: [
+        "assets/img/sports12_8_black_1.avif",
+        "assets/img/sports12_8_black_2.avif",
+        "assets/img/sports12_8_black_3.avif",
+      ],
+    },
+    "size": ["S", "M", "L", "XLS"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
+  {
+    "featured": "New Arrivals",
+    "product_id": "sports 12_9",
+    "name": "One-Shoulder Backpack",
+    "price": 50000,
+    "realprice": 55000,
+    "discount": 10,
+    "title":
+        "Luxury Watch with Stainless Steel Band Luxury Watch with Stainless Steel Band",
+    "description":
+        "This product has sustainability features recognized by trusted certifications.",
+    "category": "SPORTS",
+    "sub_category_id": "Sports 12",
+    "color": {
+      0xffC0C0C0: [
+        "assets/img/sports12_9_silver_1.avif",
+        "assets/img/sports12_9_silver_2.avif",
+        "assets/img/sports12_9_silver_3.avif",
+        "assets/img/sports12_9_silver_4.avif",
+      ],
+    },
+    "size": ["NO SIZE"],
+    "reviews": [
+      {
+        "profile_pic":
+            "https://as1.ftcdn.net/v2/jpg/07/49/63/66/1000_F_749636629_P8NFQgXz7SjF7zI70zhNHGxW9fTddq0w.jpg",
+        "name": "John Doe",
+        "date": "12/1/2023",
+        "review":
+            "A beautiful and well-crafted luxury hoodie. The design and functionality are outstanding!",
+        "reviews_img": [
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71PmVQNCv-L._AC_SY879_.jpg",
+          "https://m.media-amazon.com/images/I/71rb-+G4g2L._AC_SY879_.jpg",
+        ]
+      },
+    ],
+    "attributes": {
+      "Material": "Stainless Steel",
+      "Water Resistance": "50 meters",
+      "Movement": "Quartz",
+      "Color": "Silver",
+      "Item id": "WATCH001"
+    },
+  },
 ];
+
 
 //OLD DATA
 // {

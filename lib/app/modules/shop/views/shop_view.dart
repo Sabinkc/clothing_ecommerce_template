@@ -99,32 +99,33 @@ class ShopView extends GetView<ShopController> {
                   }
 
                   return GestureDetector(
-                      onTap: () {
-                        controllerProduct.selectedColorName.value = '';
+                    onTap: () {
+                      controllerProduct.selectedColorName.value = '';
 
-                        Map imageStore = product["color"] ?? {};
-                        Map images = imageStore.isNotEmpty
-                            ? product["color"]
-                            : {
-                                0x00000000: [
-                                  'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
-                                ],
-                              };
-                        List test = images.entries.first.value;
-                        controllerProduct.selectedImages.assignAll(test);
-                        Get.to(
-                          ProductDetailView(data: product),
+                      Map imageStore = product["color"] ?? {};
+                      Map images = imageStore.isNotEmpty
+                          ? product["color"]
+                          : {
+                              0x00000000: [
+                                'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+                              ],
+                            };
+                      List test = images.entries.first.value;
+                      controllerProduct.selectedImages.assignAll(test);
+                      Get.to(
+                        ProductDetailView(data: product),
 
-                          // transition: Transition
-                          //     .leftToRightWithFade, // Professional fade-in effect
-                          // duration: const Duration(
-                          //     milliseconds:
-                          //         500), // Smooth duration for the transition
-                          // curve: Curves
-                          //     .easeInOut, // Adds smoothness with easing in and out
-                        );
-                      },
-                      child: Stack(children: [
+                        // transition: Transition
+                        //     .leftToRightWithFade, // Professional fade-in effect
+                        // duration: const Duration(
+                        //     milliseconds:
+                        //         500), // Smooth duration for the transition
+                        // curve: Curves
+                        //     .easeInOut, // Adds smoothness with easing in and out
+                      );
+                    },
+                    child: Stack(
+                      children: [
                         Container(
                           decoration: const BoxDecoration(
                             // border: Border.all(color: AppColors.silverBorder, width: 5),
@@ -308,8 +309,27 @@ class ShopView extends GetView<ShopController> {
                             ),
                             // Tags(tagTitle: "${product["discount"]}%"),
                           ),
-                        )
-                      ]));
+                        ),
+                        // Container(
+                        //   decoration: BoxDecoration(
+                        //       color: AppColors.primaryColor,
+                        //       borderRadius: BorderRadius.only(
+                        //           topRight: Radius.circular(8),
+                        //           bottomRight: Radius.circular(8))),
+                        //   child: Padding(
+                        //     padding: const EdgeInsets.fromLTRB(5, 0, 7, 0),
+                        //     child: Text(
+                        //       product["featured"],
+                        //       style: TextStyle(
+                        //           fontSize: TextSize.small,
+                        //           fontWeight: FontWeight.w900,
+                        //           color: AppColors.titleColorGrey),
+                        //     ),
+                        //   ),
+                        // ),
+                      ],
+                    ),
+                  );
                 },
               ),
             ],
